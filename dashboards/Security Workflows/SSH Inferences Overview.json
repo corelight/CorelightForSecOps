@@ -1,0 +1,768 @@
+{
+    "dashboards": [
+        {
+            "dashboard": {
+                "name": "e3c4a4f5-157c-44c3-9ad6-aa4275a7b5db",
+                "displayName": "Corelight → Security Workflows → SSH Inferences Overview",
+                "definition": {
+                    "filters": [
+                        {
+                            "id": "GlobalTimeFilter",
+                            "dataSource": "GLOBAL",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "PAST",
+                                    "fieldValues": [
+                                        "1",
+                                        "DAY"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Global Time Filter",
+                            "chartIds": [
+                                "b5c57d5d-d142-4953-b06c-f45c5ce30867",
+                                "55ee0bf7-9642-4314-baac-68b1418020fd",
+                                "dc7ce31c-f045-498c-8155-b9cc115aa6d3",
+                                "eef2dd95-0da6-4599-a843-943f87653d5c",
+                                "3ce2b862-e64b-4738-a4ee-bf81f80f3a8c",
+                                "ea8cdad9-8320-429f-b055-8cebb8f5a4ed"
+                            ],
+                            "isStandardTimeRangeFilter": true,
+                            "isStandardTimeRangeFilterEnabled": true
+                        },
+                        {
+                            "id": "c3d5fc33-4da7-4119-8da7-94b7f5e34661",
+                            "dataSource": "UDM",
+                            "fieldPath": "security_result.summary",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "SSH Inferences",
+                            "chartIds": [
+                                "b5c57d5d-d142-4953-b06c-f45c5ce30867",
+                                "55ee0bf7-9642-4314-baac-68b1418020fd",
+                                "dc7ce31c-f045-498c-8155-b9cc115aa6d3",
+                                "3ce2b862-e64b-4738-a4ee-bf81f80f3a8c",
+                                "eef2dd95-0da6-4599-a843-943f87653d5c",
+                                "ea8cdad9-8320-429f-b055-8cebb8f5a4ed"
+                            ]
+                        }
+                    ],
+                    "charts": [
+                        {
+                            "dashboardChart": "ea8cdad9-8320-429f-b055-8cebb8f5a4ed",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 0,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "c3d5fc33-4da7-4119-8da7-94b7f5e34661"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "dc7ce31c-f045-498c-8155-b9cc115aa6d3",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 0,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "c3d5fc33-4da7-4119-8da7-94b7f5e34661"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "eef2dd95-0da6-4599-a843-943f87653d5c",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 27,
+                                "spanY": 21
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "c3d5fc33-4da7-4119-8da7-94b7f5e34661"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "55ee0bf7-9642-4314-baac-68b1418020fd",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 27,
+                                "spanY": 21
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "c3d5fc33-4da7-4119-8da7-94b7f5e34661"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "b5c57d5d-d142-4953-b06c-f45c5ce30867",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 48,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "c3d5fc33-4da7-4119-8da7-94b7f5e34661"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "3ce2b862-e64b-4738-a4ee-bf81f80f3a8c",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 75,
+                                "spanY": 28
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "c3d5fc33-4da7-4119-8da7-94b7f5e34661"
+                            ]
+                        }
+                    ]
+                },
+                "type": "CUSTOM",
+                "etag": "e00474a2dcccc6ea67fa22cc3d6b8810f41c01bdcfbbd0cf9a6aeead5f5883d1",
+                "access": "DASHBOARD_PRIVATE"
+            },
+            "dashboardCharts": [
+                {
+                    "name": "55ee0bf7-9642-4314-baac-68b1418020fd",
+                    "displayName": "SSH Host Details",
+                    "chartDatasource": {
+                        "dashboardQuery": "f7500738-a0a9-4ca9-b7f0-a7906397e5aa",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "principal.ip",
+                                "header": "Source IP"
+                            },
+                            {
+                                "field": "target.ip",
+                                "header": "Destination IP"
+                            },
+                            {
+                                "field": "inferences",
+                                "header": "Inferences"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Count"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "4870b68c6bc2392ae3ef1c5b015616ff295f8228c0428b0850f72e6d962fbe75"
+                },
+                {
+                    "name": "b5c57d5d-d142-4953-b06c-f45c5ce30867",
+                    "displayName": "Inferences for Hosts with Host Key",
+                    "chartDatasource": {
+                        "dashboardQuery": "a50451f6-e984-4cc2-9e7e-1e92f15cfb8c",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "principal.ip",
+                                "header": "Source IP"
+                            },
+                            {
+                                "field": "target.ip",
+                                "header": "Destination IP"
+                            },
+                            {
+                                "field": "host_keys",
+                                "header": "Host Key"
+                            },
+                            {
+                                "field": "inferences",
+                                "header": "Inferences"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Count"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "5d27dcf35e89f9c1220976ade653ebb7673ebbc11d0a6459495d5515ee44afde"
+                },
+                {
+                    "name": "eef2dd95-0da6-4599-a843-943f87653d5c",
+                    "displayName": "HASSH Fingerprint Details",
+                    "chartDatasource": {
+                        "dashboardQuery": "b54338ee-cdb3-496a-888e-8bf83c013533",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "principal_ip",
+                                "header": "Source IP"
+                            },
+                            {
+                                "field": "hassh",
+                                "header": "HASSH Client"
+                            },
+                            {
+                                "field": "target_ip",
+                                "header": "Destination IP"
+                            },
+                            {
+                                "field": "hassh_server",
+                                "header": "HASSH Server"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Total Events"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "c0294b17305d1898f529e239535fdf971b07c4f32fc2f60740061f99d62690e4"
+                },
+                {
+                    "name": "ea8cdad9-8320-429f-b055-8cebb8f5a4ed",
+                    "displayName": "SSH Inferences",
+                    "chartDatasource": {
+                        "dashboardQuery": "fdbb3e58-4223-422b-90aa-c1b752be5664",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "inferences"
+                                },
+                                "dataLabel": {},
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "undefined"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "Client Trusted Server",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "Client Trusted Server"
+                                            }
+                                        },
+                                        {
+                                            "key": "Public Key Authentication",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "Public Key Authentication"
+                                            }
+                                        },
+                                        {
+                                            "key": "Automated Interaction",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "Automated Interaction"
+                                            }
+                                        },
+                                        {
+                                            "key": "Large Client File Donwload",
+                                            "value": {
+                                                "color": "#d15f6b",
+                                                "label": "Large Client File Donwload"
+                                            }
+                                        },
+                                        {
+                                            "key": "Other Scanning",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "Other Scanning"
+                                            }
+                                        },
+                                        {
+                                            "key": "Keystrokes",
+                                            "value": {
+                                                "color": "#923ef9",
+                                                "label": "Keystrokes"
+                                            }
+                                        },
+                                        {
+                                            "key": "Authentication Scanning",
+                                            "value": {
+                                                "color": "#4aa207",
+                                                "label": "Authentication Scanning"
+                                            }
+                                        },
+                                        {
+                                            "key": "Small Client File Download",
+                                            "value": {
+                                                "color": "#5350fb",
+                                                "label": "Small Client File Download"
+                                            }
+                                        },
+                                        {
+                                            "key": "Client Authentication Bypass",
+                                            "value": {
+                                                "color": "#009886",
+                                                "label": "Client Authentication Bypass"
+                                            }
+                                        },
+                                        {
+                                            "key": "Client Untrusted Server",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "Client Untrusted Server"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "1e361ef5c993aed2d78ae831bc364205d4f14d42ab3be32620501001828cfd81"
+                },
+                {
+                    "name": "3ce2b862-e64b-4738-a4ee-bf81f80f3a8c",
+                    "displayName": "Log Data",
+                    "description": "SSH Inference Log Data",
+                    "chartDatasource": {
+                        "dashboardQuery": "3a6bd01f-18dd-4e9b-acf8-7a884dc2aeaa",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "time",
+                                "header": "Data Time"
+                            },
+                            {
+                                "field": "principal.ip",
+                                "header": "Source IP"
+                            },
+                            {
+                                "field": "target.ip",
+                                "header": "Destination IP"
+                            },
+                            {
+                                "field": "inferences",
+                                "header": "Inferences"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "741f55fbda52339c50ac5b4b651b1a954de9d3af927bdcb3057a2c5c8ecc21af"
+                },
+                {
+                    "name": "dc7ce31c-f045-498c-8155-b9cc115aa6d3",
+                    "displayName": "SSH Inferences Over Time",
+                    "chartDatasource": {
+                        "dashboardQuery": "676b67f0-6957-4b5e-992a-d186fb009cae",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "Other Scanning",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#009886"
+                                },
+                                "seriesUniqueValue": "Other Scanning",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "Public Key Authentication",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "Public Key Authentication",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "Client Trusted Server",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#d15f6b"
+                                },
+                                "seriesUniqueValue": "Client Trusted Server",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "Keystrokes",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#4aa207"
+                                },
+                                "seriesUniqueValue": "Keystrokes",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "Interactive Password Authentication",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#923ef9"
+                                },
+                                "seriesUniqueValue": "Interactive Password Authentication",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "Large Client File Donwload",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#e51f8f"
+                                },
+                                "seriesUniqueValue": "Large Client File Donwload",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "Automated Interaction",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "Automated Interaction",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "Small Client File Upload",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#5350fb"
+                                },
+                                "seriesUniqueValue": "Small Client File Upload",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "Authentication Scanning",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#009886"
+                                },
+                                "seriesUniqueValue": "Authentication Scanning",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "Client Untrusted Server",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#5350fb"
+                                },
+                                "seriesUniqueValue": "Client Untrusted Server",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "Small Client File Download",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#10a3b7"
+                                },
+                                "seriesUniqueValue": "Small Client File Download",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "Client Authentication Bypass",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#10a3b7"
+                                },
+                                "seriesUniqueValue": "Client Authentication Bypass",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "Large Client File Upload",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#d15f6b"
+                                },
+                                "seriesUniqueValue": "Large Client File Upload",
+                                "areaStyle": {}
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "Count"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "bottom": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "seriesColumn": [
+                            "inferences"
+                        ],
+                        "groupingType": "Stacked"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "dacf309e8f858f3c0047b9d738ef80ea605cf616c009282e6e04ef0c4593b250"
+                }
+            ],
+            "dashboardQueries": [
+                {
+                    "name": "3a6bd01f-18dd-4e9b-acf8-7a884dc2aeaa",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssh\"\r\nsecurity_result.summary !=\"\"\r\n$inference_name=if(security_result.summary = \"Client Authentication Bypass\", \"ABP\",\r\nif(security_result.summary = \"SSH Agent Forwarding Requested\", \"AFR\",\r\nif(security_result.summary = \"Automated Password Authentication\", \"APWA\",\r\nif(security_result.summary = \"Automated Interaction\", \"AUTO\",\r\nif(security_result.summary = \"Server Banner\", \"BAN\",\r\nif(security_result.summary = \"Client Brute Force Guessing\", \"BF\",\r\nif(security_result.summary = \"Client Brute Force Success\", \"BFS\",\r\nif(security_result.summary = \"Client Trusted Server\", \"CTS\",\r\nif(security_result.summary = \"Client Untrusted Server\", \"CUS\",\r\nif(security_result.summary = \"Interactive Password Authentication\", \"IPWA\",\r\nif(security_result.summary = \"Keystrokes\", \"KS\",\r\nif(security_result.summary = \"Large Client File Donwload\", \"LFD\",\r\nif(security_result.summary = \"Large Client File Upload\", \"LFU\",\r\nif(security_result.summary = \"Multifactor Authentication\", \"MFA\",\r\nif(security_result.summary = \"None Authentication\", \"NA\",\r\nif(security_result.summary = \"No Remote Command\", \"NRC\",\r\nif(security_result.summary = \"Public Key Authentication\", \"PKA\",\r\nif(security_result.summary = \"Reverse SSH Initiated\", \"RSI\",\r\nif(security_result.summary = \"Reverse SSH Initiated Automate\", \"RSIA\",\r\nif(security_result.summary = \"Reverse SSH Keystrokes\", \"RSK\",\r\nif(security_result.summary = \"Reverse SSH Logged In\", \"RSL\",\r\nif(security_result.summary = \"Reverse SSH Providioned\", \"RSP\",\r\nif(security_result.summary = \"Authentication Scanning\", \"SA\",\r\nif(security_result.summary = \"Capabilities Scanning\", \"SC\",\r\nif(security_result.summary = \"Small Client File Download\", \"SFD\",\r\nif(security_result.summary = \"Small Client File Upload\", \"SFU\",\r\nif(security_result.summary = \"Other Scanning\", \"SP\",\r\nif(security_result.summary = \"Version Scanning\", \"SV\",\r\nif(security_result.summary = \"Unknown Authentication\", \"UA\", \"Unknown\"\r\n)))))))))))))))))))))))))))))\r\n$time=timestamp.get_timestamp(metadata.event_timestamp.seconds)\r\nmatch:\r\n    $time, principal.ip, target.ip\r\noutcome:\r\n    $inferences=array_distinct($inference_name)\r\norder:\r\n    $time desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "e16db89bd3927be4a9bb087d57ef7b07c08e02578d0798af6ae499d180986807"
+                },
+                {
+                    "name": "676b67f0-6957-4b5e-992a-d186fb009cae",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssh\"\r\n$inferences=security_result.summary\r\n$inferences!=\"\"\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour, $inferences\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $date_hour asc\r\n\r\n",
+                    "input": {
+                        "timeWindow": {
+                            "startTime": "2025-03-26T00:00:00Z",
+                            "endTime": "2025-03-27T09:23:23.777Z"
+                        }
+                    },
+                    "etag": "c04f3c9b74bbb506a27b62bbd25c032e99a382e87356839772e2907908afe9bd"
+                },
+                {
+                    "name": "f7500738-a0a9-4ca9-b7f0-a7906397e5aa",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssh\"\r\nsecurity_result.summary !=\"\"\r\n$inference_name=if(security_result.summary = \"Client Authentication Bypass\", \"ABP\",\r\nif(security_result.summary = \"SSH Agent Forwarding Requested\", \"AFR\",\r\nif(security_result.summary = \"Automated Password Authentication\", \"APWA\",\r\nif(security_result.summary = \"Automated Interaction\", \"AUTO\",\r\nif(security_result.summary = \"Server Banner\", \"BAN\",\r\nif(security_result.summary = \"Client Brute Force Guessing\", \"BF\",\r\nif(security_result.summary = \"Client Brute Force Success\", \"BFS\",\r\nif(security_result.summary = \"Client Trusted Server\", \"CTS\",\r\nif(security_result.summary = \"Client Untrusted Server\", \"CUS\",\r\nif(security_result.summary = \"Interactive Password Authentication\", \"IPWA\",\r\nif(security_result.summary = \"Keystrokes\", \"KS\",\r\nif(security_result.summary = \"Large Client File Donwload\", \"LFD\",\r\nif(security_result.summary = \"Large Client File Upload\", \"LFU\",\r\nif(security_result.summary = \"Multifactor Authentication\", \"MFA\",\r\nif(security_result.summary = \"None Authentication\", \"NA\",\r\nif(security_result.summary = \"No Remote Command\", \"NRC\",\r\nif(security_result.summary = \"Public Key Authentication\", \"PKA\",\r\nif(security_result.summary = \"Reverse SSH Initiated\", \"RSI\",\r\nif(security_result.summary = \"Reverse SSH Initiated Automate\", \"RSIA\",\r\nif(security_result.summary = \"Reverse SSH Keystrokes\", \"RSK\",\r\nif(security_result.summary = \"Reverse SSH Logged In\", \"RSL\",\r\nif(security_result.summary = \"Reverse SSH Providioned\", \"RSP\",\r\nif(security_result.summary = \"Authentication Scanning\", \"SA\",\r\nif(security_result.summary = \"Capabilities Scanning\", \"SC\",\r\nif(security_result.summary = \"Small Client File Download\", \"SFD\",\r\nif(security_result.summary = \"Small Client File Upload\", \"SFU\",\r\nif(security_result.summary = \"Other Scanning\", \"SP\",\r\nif(security_result.summary = \"Version Scanning\", \"SV\",\r\nif(security_result.summary = \"Unknown Authentication\", \"UA\", \"Unknown\"\r\n)))))))))))))))))))))))))))))\r\nmatch:\r\n    principal.ip, target.ip\r\noutcome:\r\n    $inferences=array_distinct(strings.concat($inference_name, \" : \", security_result.summary))\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    5",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "12f22133f29655146573a4a87f4c13601cbdb243de46581e7a280f9eeb262562"
+                },
+                {
+                    "name": "a50451f6-e984-4cc2-9e7e-1e92f15cfb8c",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssh\"\r\nsecurity_result.summary !=\"\"\r\n$inference_name=if(security_result.summary = \"Client Authentication Bypass\", \"ABP\",\r\nif(security_result.summary = \"SSH Agent Forwarding Requested\", \"AFR\",\r\nif(security_result.summary = \"Automated Password Authentication\", \"APWA\",\r\nif(security_result.summary = \"Automated Interaction\", \"AUTO\",\r\nif(security_result.summary = \"Server Banner\", \"BAN\",\r\nif(security_result.summary = \"Client Brute Force Guessing\", \"BF\",\r\nif(security_result.summary = \"Client Brute Force Success\", \"BFS\",\r\nif(security_result.summary = \"Client Trusted Server\", \"CTS\",\r\nif(security_result.summary = \"Client Untrusted Server\", \"CUS\",\r\nif(security_result.summary = \"Interactive Password Authentication\", \"IPWA\",\r\nif(security_result.summary = \"Keystrokes\", \"KS\",\r\nif(security_result.summary = \"Large Client File Donwload\", \"LFD\",\r\nif(security_result.summary = \"Large Client File Upload\", \"LFU\",\r\nif(security_result.summary = \"Multifactor Authentication\", \"MFA\",\r\nif(security_result.summary = \"None Authentication\", \"NA\",\r\nif(security_result.summary = \"No Remote Command\", \"NRC\",\r\nif(security_result.summary = \"Public Key Authentication\", \"PKA\",\r\nif(security_result.summary = \"Reverse SSH Initiated\", \"RSI\",\r\nif(security_result.summary = \"Reverse SSH Initiated Automate\", \"RSIA\",\r\nif(security_result.summary = \"Reverse SSH Keystrokes\", \"RSK\",\r\nif(security_result.summary = \"Reverse SSH Logged In\", \"RSL\",\r\nif(security_result.summary = \"Reverse SSH Providioned\", \"RSP\",\r\nif(security_result.summary = \"Authentication Scanning\", \"SA\",\r\nif(security_result.summary = \"Capabilities Scanning\", \"SC\",\r\nif(security_result.summary = \"Small Client File Download\", \"SFD\",\r\nif(security_result.summary = \"Small Client File Upload\", \"SFU\",\r\nif(security_result.summary = \"Other Scanning\", \"SP\",\r\nif(security_result.summary = \"Version Scanning\", \"SV\",\r\nif(security_result.summary = \"Unknown Authentication\", \"UA\", \"Unknown\"\r\n)))))))))))))))))))))))))))))\r\n$host_key=security_result.detection_fields[\"host_key\"]\r\n$host_key!=\"\"\r\nmatch:\r\n    principal.ip, target.ip\r\noutcome:\r\n    $host_keys=array_distinct($host_key)\r\n    $inferences=array_distinct(strings.concat($inference_name, \" : \", security_result.summary))\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "44abfb4b143c7d7d663d4cc85a7c0332cefa25730e684e71232089fe660635b3"
+                },
+                {
+                    "name": "b54338ee-cdb3-496a-888e-8bf83c013533",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssh\"\r\n\r\n$date=timestamp.get_date(metadata.event_timestamp.seconds)\r\n$hassh=if(principal.labels[\"hassh\"]!=\"\", principal.labels[\"hassh\"], \"Unknown\")\r\n$hassh_server=if(target.labels[\"hassh_server\"]!=\"\", target.labels[\"hassh_server\"], \"Unknown\")\r\n$principal_ip=if(principal.ip!=\"\", principal.ip, \"Unknown\")\r\n$target_ip=if(target.ip!=\"\", target.ip, \"Unknown\")\r\n\r\nmatch:\r\n    $principal_ip, $hassh, $target_ip, $hassh_server\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    5",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "6907e619a5817a8824d953ee2be2c0fd936f452eacd59cfef1ecc96c0b2fa529"
+                },
+                {
+                    "name": "fdbb3e58-4223-422b-90aa-c1b752be5664",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssh\"\r\n$inferences=security_result.summary\r\n$inferences!=\"\"\r\nmatch:\r\n    $inferences\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "4c4e0fdbeab53bbfc58414119bf4be39b09ace9d996044e37314c754e771a52f"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,366 @@
+{
+    "dashboards": [
+        {
+            "dashboard": {
+                "name": "aa842855-77e3-41c3-89f1-33a296879371",
+                "displayName": "Corelight → Sensor Overview → System",
+                "definition": {
+                    "filters": [
+                        {
+                            "id": "GlobalTimeFilter",
+                            "dataSource": "GLOBAL",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "PAST",
+                                    "fieldValues": [
+                                        "1",
+                                        "DAY"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Global Time Filter",
+                            "chartIds": [
+                                "2f648bd2-763d-4237-aea3-aa1a3ab083aa",
+                                "dfba9696-6c08-411b-adfd-1b5d4bccb033",
+                                "73c9c120-4d8a-4e5a-9e88-270252930d40",
+                                "b287eacd-dd3b-4d12-ba8e-4cc6d3c93e98"
+                            ],
+                            "isStandardTimeRangeFilter": true,
+                            "isStandardTimeRangeFilterEnabled": true
+                        },
+                        {
+                            "id": "697fe8bb-6561-4b89-a3ab-2a57a2fd00a8",
+                            "dataSource": "UDM",
+                            "fieldPath": "observer.hostname",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Corelight Sensor",
+                            "chartIds": [
+                                "2f648bd2-763d-4237-aea3-aa1a3ab083aa",
+                                "dfba9696-6c08-411b-adfd-1b5d4bccb033",
+                                "73c9c120-4d8a-4e5a-9e88-270252930d40",
+                                "b287eacd-dd3b-4d12-ba8e-4cc6d3c93e98"
+                            ]
+                        }
+                    ],
+                    "charts": [
+                        {
+                            "dashboardChart": "dfba9696-6c08-411b-adfd-1b5d4bccb033",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 0,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "697fe8bb-6561-4b89-a3ab-2a57a2fd00a8"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "b287eacd-dd3b-4d12-ba8e-4cc6d3c93e98",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 0,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "697fe8bb-6561-4b89-a3ab-2a57a2fd00a8"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "73c9c120-4d8a-4e5a-9e88-270252930d40",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 27,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "697fe8bb-6561-4b89-a3ab-2a57a2fd00a8"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "2f648bd2-763d-4237-aea3-aa1a3ab083aa",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 27,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "697fe8bb-6561-4b89-a3ab-2a57a2fd00a8"
+                            ]
+                        }
+                    ]
+                },
+                "type": "CUSTOM",
+                "etag": "28e113939d631db0987b3764e133719f45554a744a3cd011057a9c15eb140a15",
+                "access": "DASHBOARD_PRIVATE"
+            },
+            "dashboardCharts": [
+                {
+                    "name": "2f648bd2-763d-4237-aea3-aa1a3ab083aa",
+                    "displayName": "Disk Usage",
+                    "chartDatasource": {
+                        "dashboardQuery": "0a294f59-141c-4261-b856-2238a3c74eed",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "Disk Usage OS Avg",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg_disk_usage"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "Disk Usage OS Avg"
+                            },
+                            {
+                                "seriesName": "Disk Usage Data Avg",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg_disk_usage"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "Disk Usage Data Avg"
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "Percent(%)"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "bottom": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "seriesColumn": [
+                            "disk_usage"
+                        ],
+                        "groupingType": "Grouped"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "23bda24739e36f8dcaaaa662bb707c43ee5e0bd045df97ba3df67015a556994b"
+                },
+                {
+                    "name": "73c9c120-4d8a-4e5a-9e88-270252930d40",
+                    "displayName": "System Temperature",
+                    "chartDatasource": {
+                        "dashboardQuery": "02f04c3c-2bc3-444a-95f4-79ade4f45d90",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "Unspecified",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg_bro_cpu_usage"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "undefined"
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "Degree Celsius"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "ac59be0b73e3fad9be2f76395b70384df31594b69e04076ecc70e916c86afa9b"
+                },
+                {
+                    "name": "dfba9696-6c08-411b-adfd-1b5d4bccb033",
+                    "displayName": "Memory Usage",
+                    "chartDatasource": {
+                        "dashboardQuery": "6a015c3f-25ac-4296-bab9-26699eb30903",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "Unspecified",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg_tcp_retransmission"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "undefined"
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "Percent(%)"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "e62132d6c9927701c4914863f6f6b48e7de44d268ea72e31699ddbad52f370e7"
+                },
+                {
+                    "name": "b287eacd-dd3b-4d12-ba8e-4cc6d3c93e98",
+                    "displayName": "Bro CPU Usage",
+                    "chartDatasource": {
+                        "dashboardQuery": "693e61bb-5e2c-4026-a9f0-81a0e89e40a4",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "Unspecified",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg_bro_cpu_usage"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "undefined"
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "Percent(%)"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "c9b013a11b9f88f649ea770b7d7092bab0f135e4e6eb5be5f36cf69c0aa39e96"
+                }
+            ],
+            "dashboardQueries": [
+                {
+                    "name": "693e61bb-5e2c-4026-a9f0-81a0e89e40a4",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"corelight_metrics_bro\"\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour\r\noutcome:\r\n    $avg_bro_cpu_usage=math.round(window.avg(cast.as_float(about.labels[\"cpu\"])), 3)\r\norder:\r\n    $date_hour asc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "bd171b403f04f1815ad372f8d75d883dc5675c04378754c12f594a2d94e38532"
+                },
+                {
+                    "name": "0a294f59-141c-4261-b856-2238a3c74eed",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"corelight_metrics_disk\"\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\n$disk_usage=if(about.labels.key=\"usage_data\", \"Disk Usage Data Avg\", \r\n       if(about.labels.key=\"usage_os\", \"Disk Usage OS Avg\", \r\n       \"Unknown\"))\r\n$disk_usage!=\"Unknown\"\r\nmatch:\r\n    $date_hour, $disk_usage\r\noutcome:\r\n    $avg_disk_usage=math.round(window.avg(cast.as_float(about.labels.value)), 3)\r\norder:\r\n    $date_hour asc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "2cedb86ce9e7afb08e0da96c448ed15e0397348e6818a038a1f702b13cd27e99"
+                },
+                {
+                    "name": "02f04c3c-2bc3-444a-95f4-79ade4f45d90",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"corelight_metrics_system\"\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nabout.labels.key=\"cpu_1_temperature\"\r\nmatch:\r\n    $date_hour\r\noutcome:\r\n    $avg_bro_cpu_usage=math.round(window.avg(cast.as_float(about.labels.value)), 3)\r\norder:\r\n    $date_hour asc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "03d556c8b97fa29bfcc2ed31451a29b1655445492e5538404f7a4474085b78e8"
+                },
+                {
+                    "name": "6a015c3f-25ac-4296-bab9-26699eb30903",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"corelight_metrics_memory\"\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour\r\noutcome:\r\n    $avg_tcp_retransmission=math.round(window.avg(cast.as_float(about.labels[\"usage\"])), 3)\r\norder:\r\n    $date_hour asc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "0de8775d92a42e05e83ba28cd16d25a2cec3668f283d2b0842a265323a3257ec"
+                }
+            ]
+        }
+    ]
+}

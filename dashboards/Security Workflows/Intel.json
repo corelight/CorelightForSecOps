@@ -1,0 +1,410 @@
+{
+    "dashboards": [
+        {
+            "dashboard": {
+                "name": "ca9187ec-1bc7-4b05-b3bf-2336c2ae10cf",
+                "displayName": "Corelight → Security Workflows → Intel",
+                "definition": {
+                    "filters": [
+                        {
+                            "id": "GlobalTimeFilter",
+                            "dataSource": "GLOBAL",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "PAST",
+                                    "fieldValues": [
+                                        "1",
+                                        "DAY"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Global Time Filter",
+                            "chartIds": [
+                                "e5130090-50fe-42d0-8679-12ec9bf473af",
+                                "715315bb-0915-4841-ab2a-625528710cba",
+                                "8eeb414e-3cf8-45cf-a097-f859c91ab9f7",
+                                "610e7254-1efd-4da8-9203-66fd23620dd6"
+                            ],
+                            "isStandardTimeRangeFilter": true,
+                            "isStandardTimeRangeFilterEnabled": true
+                        },
+                        {
+                            "id": "2e704648-1712-4b6d-836e-cb4c9ca34197",
+                            "dataSource": "UDM",
+                            "fieldPath": "principal.ip",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Source IP",
+                            "chartIds": [
+                                "e5130090-50fe-42d0-8679-12ec9bf473af",
+                                "715315bb-0915-4841-ab2a-625528710cba",
+                                "8eeb414e-3cf8-45cf-a097-f859c91ab9f7",
+                                "610e7254-1efd-4da8-9203-66fd23620dd6"
+                            ]
+                        },
+                        {
+                            "id": "045ce7f1-dc84-45a8-a899-63b068d7fc0a",
+                            "dataSource": "UDM",
+                            "fieldPath": "target.ip",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Destination IP",
+                            "chartIds": [
+                                "715315bb-0915-4841-ab2a-625528710cba",
+                                "610e7254-1efd-4da8-9203-66fd23620dd6",
+                                "8eeb414e-3cf8-45cf-a097-f859c91ab9f7",
+                                "e5130090-50fe-42d0-8679-12ec9bf473af"
+                            ]
+                        },
+                        {
+                            "id": "f200f4d1-a16a-4120-b7ec-c175b7939334",
+                            "dataSource": "UDM",
+                            "fieldPath": "target.port",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Destination Port",
+                            "chartIds": [
+                                "715315bb-0915-4841-ab2a-625528710cba",
+                                "610e7254-1efd-4da8-9203-66fd23620dd6",
+                                "8eeb414e-3cf8-45cf-a097-f859c91ab9f7",
+                                "e5130090-50fe-42d0-8679-12ec9bf473af"
+                            ]
+                        }
+                    ],
+                    "charts": [
+                        {
+                            "dashboardChart": "715315bb-0915-4841-ab2a-625528710cba",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 47,
+                                "startY": 0,
+                                "spanY": 21
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2e704648-1712-4b6d-836e-cb4c9ca34197",
+                                "045ce7f1-dc84-45a8-a899-63b068d7fc0a",
+                                "f200f4d1-a16a-4120-b7ec-c175b7939334"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "8eeb414e-3cf8-45cf-a097-f859c91ab9f7",
+                            "chartLayout": {
+                                "startX": 47,
+                                "spanX": 49,
+                                "startY": 0,
+                                "spanY": 21
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2e704648-1712-4b6d-836e-cb4c9ca34197",
+                                "045ce7f1-dc84-45a8-a899-63b068d7fc0a",
+                                "f200f4d1-a16a-4120-b7ec-c175b7939334"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "e5130090-50fe-42d0-8679-12ec9bf473af",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 42,
+                                "spanY": 30
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2e704648-1712-4b6d-836e-cb4c9ca34197",
+                                "045ce7f1-dc84-45a8-a899-63b068d7fc0a",
+                                "f200f4d1-a16a-4120-b7ec-c175b7939334"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "610e7254-1efd-4da8-9203-66fd23620dd6",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 21,
+                                "spanY": 21
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2e704648-1712-4b6d-836e-cb4c9ca34197",
+                                "045ce7f1-dc84-45a8-a899-63b068d7fc0a",
+                                "f200f4d1-a16a-4120-b7ec-c175b7939334"
+                            ]
+                        }
+                    ]
+                },
+                "type": "CUSTOM",
+                "etag": "6111c2bcaac87fda5775e5a237768e5bf1c0f7a0b92d014fbbb58269b6444286",
+                "access": "DASHBOARD_PRIVATE"
+            },
+            "dashboardCharts": [
+                {
+                    "name": "8eeb414e-3cf8-45cf-a097-f859c91ab9f7",
+                    "displayName": "Indicators",
+                    "chartDatasource": {
+                        "dashboardQuery": "7ff7d05f-f2f7-423b-8300-c72e2a54a273",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "category"
+                                },
+                                "dataLabel": {},
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ]
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "bottom": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "3307cb7f310a636d83cdbc85bcb0c9d5b5ea17a2412b3e4731eeba9c35292e98"
+                },
+                {
+                    "name": "610e7254-1efd-4da8-9203-66fd23620dd6",
+                    "displayName": "Intel Details",
+                    "chartDatasource": {
+                        "dashboardQuery": "a4f0d62f-608c-497a-858b-55ca5c8b87eb",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "principal.ip",
+                                "header": "Source IP"
+                            },
+                            {
+                                "field": "target.ip",
+                                "header": "Destination IP"
+                            },
+                            {
+                                "field": "target.port",
+                                "header": "Destination Port"
+                            },
+                            {
+                                "field": "indicator_type",
+                                "header": "Indicator Type"
+                            },
+                            {
+                                "field": "indicator",
+                                "header": "Indicator"
+                            },
+                            {
+                                "field": "seen_where",
+                                "header": "Where"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Count"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "8d5e8633fe2bcc2e614d09a6652b1548774b5f9f7f4431a0f4c35d870952824b"
+                },
+                {
+                    "name": "715315bb-0915-4841-ab2a-625528710cba",
+                    "displayName": "Intel Logs Over Time",
+                    "chartDatasource": {
+                        "dashboardQuery": "cdc787fb-fd25-4a35-9534-d1bdff4a2dea",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "Unspecified",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "undefined",
+                                "areaStyle": {}
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "Corelight Intel"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "eff2e161a0dc3913d17da4fa9429a3bfed35929e9eaf9878587a3b94dd9b3f08"
+                },
+                {
+                    "name": "e5130090-50fe-42d0-8679-12ec9bf473af",
+                    "displayName": "Log Data",
+                    "chartDatasource": {
+                        "dashboardQuery": "66c536a5-7a0e-44eb-8d7e-a18b6bd2ed1e",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "time",
+                                "header": "Timestamp"
+                            },
+                            {
+                                "field": "principal.ip",
+                                "header": "Source IP"
+                            },
+                            {
+                                "field": "target.ip",
+                                "header": "Destination IP"
+                            },
+                            {
+                                "field": "target.port",
+                                "header": "Target Port"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "742cc1c87b770cf9f82348fe11f46ac85f0588c0def7ed3ed3ca2540a72c3310"
+                }
+            ],
+            "dashboardQueries": [
+                {
+                    "name": "7ff7d05f-f2f7-423b-8300-c72e2a54a273",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"intel\"\r\n$category=about.labels[\"indicator_type\"]\r\n$category!=\"\"\r\nmatch:\r\n    $category\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "b9aac2c23deec2856a5d9d1dfe6604c72f2e6559efab79b5b481da00bf4c3c22"
+                },
+                {
+                    "name": "a4f0d62f-608c-497a-858b-55ca5c8b87eb",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"intel\"\r\n$indicator_type=about.labels[\"indicator_type\"]\r\n$indicator=about.labels[\"indicator\"]\r\n$seen_where=about.labels[\"where\"]\r\nmatch:\r\n    principal.ip, target.ip, target.port, $indicator_type, $indicator, $seen_where\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    5",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "83cde63bcb2beacc389db9763c6739a88039b9dbdd383533270775b364e8ccf2"
+                },
+                {
+                    "name": "cdc787fb-fd25-4a35-9534-d1bdff4a2dea",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"intel\"\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $date_hour asc\r\n",
+                    "input": {
+                        "timeWindow": {
+                            "startTime": "2025-03-11T00:00:00Z",
+                            "endTime": "2025-03-11T23:30:00Z"
+                        }
+                    },
+                    "etag": "9c3164eb412c6b66745b376b44cb60725d68c02b7cfcddc419dd8952baae64ae"
+                },
+                {
+                    "name": "66c536a5-7a0e-44eb-8d7e-a18b6bd2ed1e",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"intel\"\r\n$time=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:%M:%S\")\r\nmatch:\r\n    $time, principal.ip, target.ip, target.port\r\norder:\r\n    $time desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "406a58b6018b1357be49f2f2066862079288f58799859c76279f8f31c9ce28ba"
+                }
+            ]
+        }
+    ]
+}

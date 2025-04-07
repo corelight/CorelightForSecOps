@@ -1,0 +1,320 @@
+{
+    "dashboards": [
+        {
+            "dashboard": {
+                "name": "1cd8bd18-cb93-4dd3-a900-fa68973f97f5",
+                "displayName": "Corelight → Security Workflows → Log Hunting",
+                "definition": {
+                    "filters": [
+                        {
+                            "id": "GlobalTimeFilter",
+                            "dataSource": "GLOBAL",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "PAST",
+                                    "fieldValues": [
+                                        "1",
+                                        "DAY"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Global Time Filter",
+                            "chartIds": [
+                                "2157ce7e-8f9f-4209-9215-9d8af3b131f5",
+                                "d3ba9402-63bc-49f1-9049-5264da6433e8",
+                                "8a7c61ea-bcd2-465d-a3ec-0ec5453eb283"
+                            ],
+                            "isStandardTimeRangeFilter": true,
+                            "isStandardTimeRangeFilterEnabled": true
+                        },
+                        {
+                            "id": "2e65874d-fe4c-44f5-8e1d-2db779868c7f",
+                            "dataSource": "UDM",
+                            "fieldPath": "metadata.product_event_type",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Event Type",
+                            "chartIds": [
+                                "2157ce7e-8f9f-4209-9215-9d8af3b131f5",
+                                "8a7c61ea-bcd2-465d-a3ec-0ec5453eb283"
+                            ]
+                        },
+                        {
+                            "id": "fc31ef73-16b7-491c-8018-4c997d1edd0f",
+                            "dataSource": "UDM",
+                            "fieldPath": "principal.ip",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Source IP",
+                            "chartIds": [
+                                "8a7c61ea-bcd2-465d-a3ec-0ec5453eb283",
+                                "2157ce7e-8f9f-4209-9215-9d8af3b131f5"
+                            ]
+                        },
+                        {
+                            "id": "435456c8-9351-494e-a943-076b6733d3d5",
+                            "dataSource": "UDM",
+                            "fieldPath": "target.ip",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Destination IP",
+                            "chartIds": [
+                                "2157ce7e-8f9f-4209-9215-9d8af3b131f5",
+                                "8a7c61ea-bcd2-465d-a3ec-0ec5453eb283"
+                            ]
+                        }
+                    ],
+                    "charts": [
+                        {
+                            "dashboardChart": "8a7c61ea-bcd2-465d-a3ec-0ec5453eb283",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 42,
+                                "startY": 0,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2e65874d-fe4c-44f5-8e1d-2db779868c7f",
+                                "fc31ef73-16b7-491c-8018-4c997d1edd0f",
+                                "435456c8-9351-494e-a943-076b6733d3d5"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "d3ba9402-63bc-49f1-9049-5264da6433e8",
+                            "chartLayout": {
+                                "startX": 42,
+                                "spanX": 54,
+                                "startY": 0,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "2157ce7e-8f9f-4209-9215-9d8af3b131f5",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 27,
+                                "spanY": 39
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2e65874d-fe4c-44f5-8e1d-2db779868c7f",
+                                "fc31ef73-16b7-491c-8018-4c997d1edd0f",
+                                "435456c8-9351-494e-a943-076b6733d3d5"
+                            ]
+                        }
+                    ]
+                },
+                "type": "CUSTOM",
+                "etag": "fbcdabd7fed3b5acbd498658918e9ce34dbc21f9e1533191cc8a6222bc8f2547",
+                "access": "DASHBOARD_PRIVATE"
+            },
+            "dashboardCharts": [
+                {
+                    "name": "d3ba9402-63bc-49f1-9049-5264da6433e8",
+                    "displayName": "All Corelight Data for This Unique Entity",
+                    "description": "ONLY Time Range Filter Applies to This Graph",
+                    "chartDatasource": {
+                        "dashboardQuery": "7833df8e-e3ec-4bac-b8bc-f27c4b902a9f",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "BAR",
+                                "encode": {
+                                    "x": "metadata.product_event_type",
+                                    "y": "count"
+                                },
+                                "dataLabel": {}
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Event Type"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "Count"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "2d793d8716aff2791541179067741b65c80faf2fb9a338a85ec6615feaccb45e"
+                },
+                {
+                    "name": "8a7c61ea-bcd2-465d-a3ec-0ec5453eb283",
+                    "displayName": "Filtered Corelight data for this unique entity",
+                    "chartDatasource": {
+                        "dashboardQuery": "09d37fdf-2fde-4474-9c93-ed43e3ebba30",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "metadata.product_event_type"
+                                },
+                                "dataLabel": {},
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "undefined"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "bottom": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "3f4310f27e6e85949093fa4f72560d697e9f67bf74d5ec10cc8c8504b1cced9c"
+                },
+                {
+                    "name": "2157ce7e-8f9f-4209-9215-9d8af3b131f5",
+                    "displayName": "Log Data",
+                    "chartDatasource": {
+                        "dashboardQuery": "06c7b013-be47-444e-9646-beea77cb293c",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "time",
+                                "header": "Time"
+                            },
+                            {
+                                "field": "metadata.product_event_type",
+                                "header": "Event Type"
+                            },
+                            {
+                                "field": "principal.ip",
+                                "header": "Source IP"
+                            },
+                            {
+                                "field": "target.ip",
+                                "header": "Destination IP"
+                            },
+                            {
+                                "field": "target.port",
+                                "header": "Destination Port"
+                            },
+                            {
+                                "field": "uid",
+                                "header": "UID"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "669bcdc8bbdc558af170e7bd47b494f2842e799b3813d46ec211911b992dcc76"
+                }
+            ],
+            "dashboardQueries": [
+                {
+                    "name": "09d37fdf-2fde-4474-9c93-ed43e3ebba30",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type!=/^corelight/\r\nprincipal.ip != \"\" OR target.ip != \"\" OR about.labels[\"uid\"] != \"\"\r\nmatch:\r\n    metadata.product_event_type\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "0683dc99e0365974e6be55e3ec0e45e0aa577f12eedbbf6476522b73599a945f"
+                },
+                {
+                    "name": "06c7b013-be47-444e-9646-beea77cb293c",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type!=/^corelight/\r\nprincipal.ip != \"\" OR target.ip != \"\" OR about.labels[\"uid\"] != \"\"\r\n$time=timestamp.get_timestamp(metadata.event_timestamp.seconds)\r\n$uid=about.labels[\"uid\"]\r\nmatch:\r\n    $time, metadata.product_event_type, principal.ip, target.ip, target.port, $uid\r\norder: \r\n    $time asc ",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "9bbbf8ad4699507f96aa7c82d96cc5f62546d5e0acb7c171909f4f36667d32b7"
+                },
+                {
+                    "name": "7833df8e-e3ec-4bac-b8bc-f27c4b902a9f",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type!=/^corelight/\r\nprincipal.ip != \"\" OR target.ip != \"\" OR about.labels[\"uid\"] != \"\"\r\nmatch:\r\n    metadata.product_event_type\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc",
+                    "input": {
+                        "timeWindow": {
+                            "startTime": "2025-03-26T00:00:00Z",
+                            "endTime": "2025-03-27T06:45:55.938Z"
+                        }
+                    },
+                    "etag": "9f2d2bd0ffccbf327fe6effbc489bd70d6a562710a66ee7d1045e84467aef1b0"
+                }
+            ]
+        }
+    ]
+}

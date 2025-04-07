@@ -1,0 +1,941 @@
+{
+    "dashboards": [
+        {
+            "dashboard": {
+                "name": "f63062df-8a8f-444b-955c-164242571ab7",
+                "displayName": "Corelight → Sensor Overview → Zeek Doctor",
+                "definition": {
+                    "filters": [
+                        {
+                            "id": "GlobalTimeFilter",
+                            "dataSource": "GLOBAL",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "PAST",
+                                    "fieldValues": [
+                                        "1",
+                                        "DAY"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Global Time Filter",
+                            "chartIds": [
+                                "f8098ca3-1004-4a2a-84f5-2bb360681f4f",
+                                "bd475a46-593a-46e5-aff4-0862b53258af",
+                                "b391af45-4db7-466b-89a5-3917eb18a004",
+                                "ad7af508-bf55-44a7-b3d9-832a1e78e3b2",
+                                "dfdc7edc-1454-4e0f-bcba-18e1d7c1f8b7",
+                                "f8b448de-47f2-48b7-ae80-192c99a10918",
+                                "b8ef9f6c-13f8-4504-8723-479af33d6c16",
+                                "c32504cc-fb51-4c64-8a9a-7c010d49129b",
+                                "a082af39-1040-4ae2-beb6-3b6dbef0baad",
+                                "667f990d-6b2b-4cb0-aea7-8bae9f14c305",
+                                "2c567426-9b0b-4419-bef4-fe6b4c8625e1",
+                                "68e9ea33-e408-4a48-a058-5cda50754b18",
+                                "89f9806f-ecc3-4e0b-b6e5-d555025f1838"
+                            ],
+                            "isStandardTimeRangeFilter": true,
+                            "isStandardTimeRangeFilterEnabled": true
+                        },
+                        {
+                            "id": "2b012626-9600-4dd0-ae81-b3d2a4f25176",
+                            "dataSource": "UDM",
+                            "fieldPath": "observer.hostname",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Corelight Sensor",
+                            "chartIds": [
+                                "f8098ca3-1004-4a2a-84f5-2bb360681f4f",
+                                "bd475a46-593a-46e5-aff4-0862b53258af",
+                                "b391af45-4db7-466b-89a5-3917eb18a004",
+                                "ad7af508-bf55-44a7-b3d9-832a1e78e3b2",
+                                "dfdc7edc-1454-4e0f-bcba-18e1d7c1f8b7",
+                                "f8b448de-47f2-48b7-ae80-192c99a10918",
+                                "b8ef9f6c-13f8-4504-8723-479af33d6c16",
+                                "c32504cc-fb51-4c64-8a9a-7c010d49129b",
+                                "667f990d-6b2b-4cb0-aea7-8bae9f14c305",
+                                "a082af39-1040-4ae2-beb6-3b6dbef0baad",
+                                "2c567426-9b0b-4419-bef4-fe6b4c8625e1",
+                                "68e9ea33-e408-4a48-a058-5cda50754b18",
+                                "89f9806f-ecc3-4e0b-b6e5-d555025f1838"
+                            ]
+                        }
+                    ],
+                    "charts": [
+                        {
+                            "dashboardChart": "667f990d-6b2b-4cb0-aea7-8bae9f14c305",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 32,
+                                "startY": 0,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2b012626-9600-4dd0-ae81-b3d2a4f25176"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "89f9806f-ecc3-4e0b-b6e5-d555025f1838",
+                            "chartLayout": {
+                                "startX": 32,
+                                "spanX": 32,
+                                "startY": 0,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2b012626-9600-4dd0-ae81-b3d2a4f25176"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "ad7af508-bf55-44a7-b3d9-832a1e78e3b2",
+                            "chartLayout": {
+                                "startX": 64,
+                                "spanX": 32,
+                                "startY": 0,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2b012626-9600-4dd0-ae81-b3d2a4f25176"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "68e9ea33-e408-4a48-a058-5cda50754b18",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 32,
+                                "startY": 16,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2b012626-9600-4dd0-ae81-b3d2a4f25176"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "dfdc7edc-1454-4e0f-bcba-18e1d7c1f8b7",
+                            "chartLayout": {
+                                "startX": 32,
+                                "spanX": 32,
+                                "startY": 16,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2b012626-9600-4dd0-ae81-b3d2a4f25176"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "f8b448de-47f2-48b7-ae80-192c99a10918",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 32,
+                                "startY": 32,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2b012626-9600-4dd0-ae81-b3d2a4f25176"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "c32504cc-fb51-4c64-8a9a-7c010d49129b",
+                            "chartLayout": {
+                                "startX": 64,
+                                "spanX": 32,
+                                "startY": 16,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2b012626-9600-4dd0-ae81-b3d2a4f25176"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "bd475a46-593a-46e5-aff4-0862b53258af",
+                            "chartLayout": {
+                                "startX": 32,
+                                "spanX": 32,
+                                "startY": 32,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2b012626-9600-4dd0-ae81-b3d2a4f25176"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "b8ef9f6c-13f8-4504-8723-479af33d6c16",
+                            "chartLayout": {
+                                "startX": 64,
+                                "spanX": 32,
+                                "startY": 32,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2b012626-9600-4dd0-ae81-b3d2a4f25176"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "2c567426-9b0b-4419-bef4-fe6b4c8625e1",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 48,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2b012626-9600-4dd0-ae81-b3d2a4f25176"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "f8098ca3-1004-4a2a-84f5-2bb360681f4f",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 48,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2b012626-9600-4dd0-ae81-b3d2a4f25176"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "b391af45-4db7-466b-89a5-3917eb18a004",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 64,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2b012626-9600-4dd0-ae81-b3d2a4f25176"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "a082af39-1040-4ae2-beb6-3b6dbef0baad",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 64,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2b012626-9600-4dd0-ae81-b3d2a4f25176"
+                            ]
+                        }
+                    ]
+                },
+                "type": "CUSTOM",
+                "etag": "6e660afd8f9475fd17126257518e1c7d958e282442ec5c2fd6e966012495849d",
+                "access": "DASHBOARD_PRIVATE"
+            },
+            "dashboardCharts": [
+                {
+                    "name": "ad7af508-bf55-44a7-b3d9-832a1e78e3b2",
+                    "displayName": "Avg Local to Local",
+                    "chartDatasource": {
+                        "dashboardQuery": "26f77c65-9ed3-425f-99d0-9f0ae2512054",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "avg_local_to_local",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "7f229844d33f85b1ad6e761c1e04e6075e88211de17265d2c215992af149ca15"
+                },
+                {
+                    "name": "bd475a46-593a-46e5-aff4-0862b53258af",
+                    "displayName": "Avg Bursty",
+                    "chartDatasource": {
+                        "dashboardQuery": "4b67ed53-a685-4b45-a886-54be661818cf",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "avg_bursty",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "329c14a84803db84f350b444caa13b1beb168628d71aa6a78e8570b56ab301df"
+                },
+                {
+                    "name": "f8b448de-47f2-48b7-ae80-192c99a10918",
+                    "displayName": "Avg NO SSL ON 443",
+                    "chartDatasource": {
+                        "dashboardQuery": "a6ab0fb7-fe90-4e9a-bf15-3d12d1c0522c",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "avg_tcp_no_ssl_on_443",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "9c168138e063b0c199b6d763b0a62bc7774ad798105b02d3a20b14661032d977"
+                },
+                {
+                    "name": "dfdc7edc-1454-4e0f-bcba-18e1d7c1f8b7",
+                    "displayName": "Avg TCP Scan",
+                    "chartDatasource": {
+                        "dashboardQuery": "f457ab96-f07e-4edf-8a22-aa41e5e19617",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "avg_tcp_scan",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "e2ea464b3a16338a817e1256ca4b84e9702e230f9f882d1a4519a47e2d7651ae"
+                },
+                {
+                    "name": "c32504cc-fb51-4c64-8a9a-7c010d49129b",
+                    "displayName": "Avg TCP Backscatter",
+                    "chartDatasource": {
+                        "dashboardQuery": "696a07a2-1508-4cbc-881f-e1c09951fd01",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "avg_tcp_backscatter",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "0a17998bd46a22352192ce7f979dc5b7ec354b4572ae56fdc0ed57b74ba3c0d1"
+                },
+                {
+                    "name": "667f990d-6b2b-4cb0-aea7-8bae9f14c305",
+                    "displayName": " Avg TCP Retransmissions",
+                    "chartDatasource": {
+                        "dashboardQuery": "2369d102-4657-41b1-98a0-a3ef958675d0",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "avg_tcp_retransmission",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "81fd927a1a8b40a48e97cc43cf56b9471f424b6e6c877105b45f2c1767fe7886"
+                },
+                {
+                    "name": "89f9806f-ecc3-4e0b-b6e5-d555025f1838",
+                    "displayName": "Avg Remote to Remote",
+                    "chartDatasource": {
+                        "dashboardQuery": "d8f96fe6-cbed-40b4-ad01-ce3b53703fe7",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "avg_remote_to_remote",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "5c371f6e5858d46eb3e9d4c2d76dcd0623fe261e5f02d0c2773338870e98226b"
+                },
+                {
+                    "name": "b391af45-4db7-466b-89a5-3917eb18a004",
+                    "displayName": "Avg TCP No Three Way Handshake",
+                    "chartDatasource": {
+                        "dashboardQuery": "65277955-33e0-43cd-a29c-62e60fcfb14b",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "avg_tcp_no_three_way_handshake",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "3a6940c0599db9fbaa861c74dd6a7908e4fdfba1b4d4ff68f842c065e46205df"
+                },
+                {
+                    "name": "a082af39-1040-4ae2-beb6-3b6dbef0baad",
+                    "displayName": "Avg TCP Byte Counts Wrong",
+                    "chartDatasource": {
+                        "dashboardQuery": "a6c11286-374e-4b83-b6b8-5bb3cfd20b51",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "avg_tcp_byte_counts_wrong",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "d5a0484a2fa118ce0ff750626f60024b54bcbffc847e5c915baa64bf2c338d04"
+                },
+                {
+                    "name": "2c567426-9b0b-4419-bef4-fe6b4c8625e1",
+                    "displayName": "Avg DNS Half Duplex Resp",
+                    "chartDatasource": {
+                        "dashboardQuery": "03d0bb43-11ae-444f-b5b1-72c2c3a34a12",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "avg_dns_half_duplex_resp",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "890061175409872eb45b776d50d3532726b1c4462f526756fccf3d57ed4b899e"
+                },
+                {
+                    "name": "b8ef9f6c-13f8-4504-8723-479af33d6c16",
+                    "displayName": "Avg DNS Half Duplex Orig",
+                    "chartDatasource": {
+                        "dashboardQuery": "c3eaa06c-6a28-4541-81a1-002b91432827",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "avg_dns_half_duplex_orig",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "b370ab44bc7773b27d46d137c4a4f03ca9ddd401f4992f9b9e83684fe2f7aa9b"
+                },
+                {
+                    "name": "68e9ea33-e408-4a48-a058-5cda50754b18",
+                    "displayName": "Avg TCP Missed Bytes",
+                    "chartDatasource": {
+                        "dashboardQuery": "714978cb-0936-4009-9485-246e9a2e19e0",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "avg_tcp_missed_bytes",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "715d088e5af0769acf705195e79d1fff28539271d2399ec033a81d5b9d50fa11"
+                },
+                {
+                    "name": "f8098ca3-1004-4a2a-84f5-2bb360681f4f",
+                    "displayName": "Avg TCP Half Duplex",
+                    "chartDatasource": {
+                        "dashboardQuery": "8ed54726-4c2a-48e0-b9b5-1d3cf4eb7fd4",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "avg_tcp_half_duplex",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "045aca63234c287876fc5b90f45505aabb9bb1a6fff8055e50edcc1d94c39568"
+                }
+            ],
+            "dashboardQueries": [
+                {
+                    "name": "c3eaa06c-6a28-4541-81a1-002b91432827",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"corelight_metrics_zeek_doctor\"\r\n$dns_half_duplex_orig=cast.as_float(about.labels[\"check_dns_half_duplex_orig_percent\"])\r\noutcome:\r\n    $avg_dns_half_duplex_orig=strings.concat(math.round(if(window.avg($dns_half_duplex_orig) > 0, window.avg($dns_half_duplex_orig), 0), 2), \"%\")",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "192af346199cc12c6e6eb17e5e0ea0ab0f5f6c7c8897333d0fc18449cae18f0d"
+                },
+                {
+                    "name": "a6ab0fb7-fe90-4e9a-bf15-3d12d1c0522c",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"corelight_metrics_zeek_doctor\"\r\n$tcp_no_ssl_on_443=cast.as_float(about.labels[\"check_tcp_no_ssl_on_443_percent\"])\r\noutcome:\r\n    $avg_tcp_no_ssl_on_443=strings.concat(math.round(if(window.avg($tcp_no_ssl_on_443) > 0, window.avg($tcp_no_ssl_on_443), 0), 2), \"%\")",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "0dd2cee5ed35b8a6d727cc7f4a5e47713b2af2b03ec94f1d9ec5cc35076af688"
+                },
+                {
+                    "name": "2369d102-4657-41b1-98a0-a3ef958675d0",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"corelight_metrics_zeek_doctor\"\r\n$tcp_retransmission=cast.as_float(about.labels[\"check_tcp_retransmissions_percent\"])\r\noutcome:\r\n    $avg_tcp_retransmission=strings.concat(math.round(if(window.avg($tcp_retransmission) > 0, window.avg($tcp_retransmission), 0), 2), \"%\")",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "90"
+                        }
+                    },
+                    "etag": "b1ab0b507cb6880233ded6b2d0c882e88c7d92e28115350785c09a098b4b3f5e"
+                },
+                {
+                    "name": "714978cb-0936-4009-9485-246e9a2e19e0",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"corelight_metrics_zeek_doctor\"\r\n$tcp_missed_bytes=cast.as_float(about.labels[\"check_tcp_missed_bytes_percent\"])\r\noutcome:\r\n    $avg_tcp_missed_bytes=strings.concat(math.round(if(window.avg($tcp_missed_bytes) > 0, window.avg($tcp_missed_bytes), 0), 2), \"%\")",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "098569d26592dbbd9709d8188958d43849c242a53a0f5cc2751072a5f9ed8ca1"
+                },
+                {
+                    "name": "a6c11286-374e-4b83-b6b8-5bb3cfd20b51",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"corelight_metrics_zeek_doctor\"\r\n$tcp_byte_counts_wrong=cast.as_float(about.labels[\"check_tcp_byte_counts_wrong_percent\"])\r\noutcome:\r\n    $avg_tcp_byte_counts_wrong=strings.concat(math.round(if(window.avg($tcp_byte_counts_wrong) > 0, window.avg($tcp_byte_counts_wrong), 0), 2), \"%\")",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "82ebdcb56a71fadee92d048d8b919e0165e96d811226dda345871bdfa0fa5179"
+                },
+                {
+                    "name": "03d0bb43-11ae-444f-b5b1-72c2c3a34a12",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"corelight_metrics_zeek_doctor\"\r\n$dns_half_duplex_resp=cast.as_float(about.labels[\"check_dns_half_duplex_resp_percent\"])\r\noutcome:\r\n    $avg_dns_half_duplex_resp=strings.concat(math.round(if(window.avg($dns_half_duplex_resp) > 0, window.avg($dns_half_duplex_resp), 0), 2), \"%\")",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "249f8535708d675beddee18155f0e5d752e576a839e545ef01708f8498ab99c8"
+                },
+                {
+                    "name": "26f77c65-9ed3-425f-99d0-9f0ae2512054",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"corelight_metrics_zeek_doctor\"\r\n$local_to_local=cast.as_float(about.labels[\"check_local_to_local_percent\"])\r\noutcome:\r\n    $avg_local_to_local=strings.concat(math.round(if(window.avg($local_to_local) > 0, window.avg($local_to_local), 0), 2), \"%\")",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "f57bd5e09f0722e26658caf7da79355f037b1b2714e0568fb6bb0e35c4147ddd"
+                },
+                {
+                    "name": "f457ab96-f07e-4edf-8a22-aa41e5e19617",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"corelight_metrics_zeek_doctor\"\r\n$tcp_scan=cast.as_float(about.labels[\"check_tcp_scan_percent\"])\r\noutcome:\r\n    $avg_tcp_scan=strings.concat(math.round(if(window.avg($tcp_scan) > 0, window.avg($tcp_scan), 0), 2), \"%\")",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "a5565d2b01aee6bba43df7ac0b8c4773625e0bcbe082bd580b23ffe1eef4daec"
+                },
+                {
+                    "name": "696a07a2-1508-4cbc-881f-e1c09951fd01",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"corelight_metrics_zeek_doctor\"\r\n$tcp_backscatter=cast.as_float(about.labels[\"check_tcp_backscatter_percent\"])\r\noutcome:\r\n    $avg_tcp_backscatter=strings.concat(math.round(if(window.avg($tcp_backscatter) > 0, window.avg($tcp_backscatter), 0), 2), \"%\")",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "ca6c8ce94db6b77ba8186c0f516b263cdf798359e1d8e949e2d8a1b3512199e6"
+                },
+                {
+                    "name": "d8f96fe6-cbed-40b4-ad01-ce3b53703fe7",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"corelight_metrics_zeek_doctor\"\r\n$remote_to_remote=cast.as_float(about.labels[\"check_remote_to_remote_percent\"])\r\noutcome:\r\n    $avg_remote_to_remote=strings.concat(math.round(if(window.avg($remote_to_remote) > 0, window.avg($remote_to_remote), 0), 2), \"%\")",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "523a61c6faf37813148c7d4f96aba51fea45eaa5b779f5b1bcefde970936f893"
+                },
+                {
+                    "name": "65277955-33e0-43cd-a29c-62e60fcfb14b",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"corelight_metrics_zeek_doctor\"\r\n$tcp_no_three_way_handshake=cast.as_float(about.labels[\"check_tcp_no_three_way_handshake_percent\"])\r\noutcome:\r\n    $avg_tcp_no_three_way_handshake=strings.concat(math.round(if(window.avg($tcp_no_three_way_handshake) > 0, window.avg($tcp_no_three_way_handshake), 0), 2), \"%\")",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "4133db836616df35162bb1cc7aedb4bf02d71d45ba323d0d558a266f5fd2c7d2"
+                },
+                {
+                    "name": "8ed54726-4c2a-48e0-b9b5-1d3cf4eb7fd4",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"corelight_metrics_zeek_doctor\"\r\n$tcp_half_duplex=cast.as_float(about.labels[\"check_tcp_half_duplex_percent\"])\r\noutcome:\r\n    $avg_tcp_half_duplex=strings.concat(math.round(if(window.avg($tcp_half_duplex) > 0, window.avg($tcp_half_duplex), 0), 2), \"%\")",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "3e8c034af374149e3ef55664b90b8bd22ce0c7bf1070825fadad9c75f6688e42"
+                },
+                {
+                    "name": "4b67ed53-a685-4b45-a886-54be661818cf",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"corelight_metrics_zeek_doctor\"\r\n$bursty=cast.as_float(about.labels[\"check_bursty_percent\"])\r\noutcome:\r\n    $avg_bursty=strings.concat(math.round(if(window.avg($bursty) > 0, window.avg($bursty), 0), 2), \"%\")",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "bf56f314a796c10712816ce54e6628971e3e6c5f49f390191418475b131f3760"
+                }
+            ]
+        }
+    ]
+}

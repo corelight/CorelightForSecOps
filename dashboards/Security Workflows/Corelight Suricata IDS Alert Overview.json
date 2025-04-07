@@ -1,0 +1,724 @@
+{
+    "dashboards": [
+        {
+            "dashboard": {
+                "name": "df6e2ff0-eb86-4cc7-b3d2-bc03b83fd0fa",
+                "displayName": "  Corelight → Security Workflows → Corelight Suricata IDS Alert Overview",
+                "definition": {
+                    "filters": [
+                        {
+                            "id": "GlobalTimeFilter",
+                            "dataSource": "GLOBAL",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "PAST",
+                                    "fieldValues": [
+                                        "1",
+                                        "DAY"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Global Time Filter",
+                            "chartIds": [
+                                "da69bc13-92c0-4e6a-a4aa-b1c3572eb00d",
+                                "b54b4deb-a13f-4eb7-8dca-bcd3023224c0",
+                                "6896485f-9f6c-4fc7-873d-6b52be88521c",
+                                "27f529bf-b51d-4acf-a46a-4bfec161b02e",
+                                "c9b8df94-46b9-4bd9-bb5d-c85b6e2eaaba",
+                                "a7b8ca99-e754-42b5-8808-c20e68075773",
+                                "eccd28f2-59dd-40b4-9109-9dfe6c14a525",
+                                "591a02ac-4ca0-48cf-9adb-78186ad99a32"
+                            ],
+                            "isStandardTimeRangeFilter": true,
+                            "isStandardTimeRangeFilterEnabled": true
+                        },
+                        {
+                            "id": "2e88a95b-d9c7-4546-a524-1a73bec1299c",
+                            "dataSource": "UDM",
+                            "fieldPath": "principal.ip",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Source IP",
+                            "chartIds": [
+                                "da69bc13-92c0-4e6a-a4aa-b1c3572eb00d",
+                                "b54b4deb-a13f-4eb7-8dca-bcd3023224c0",
+                                "6896485f-9f6c-4fc7-873d-6b52be88521c",
+                                "27f529bf-b51d-4acf-a46a-4bfec161b02e",
+                                "c9b8df94-46b9-4bd9-bb5d-c85b6e2eaaba",
+                                "a7b8ca99-e754-42b5-8808-c20e68075773",
+                                "eccd28f2-59dd-40b4-9109-9dfe6c14a525",
+                                "591a02ac-4ca0-48cf-9adb-78186ad99a32"
+                            ]
+                        },
+                        {
+                            "id": "be25ce03-7ae1-4607-9402-d9d9d9eb1b97",
+                            "dataSource": "UDM",
+                            "fieldPath": "security_result.severity_details",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Severity",
+                            "chartIds": [
+                                "da69bc13-92c0-4e6a-a4aa-b1c3572eb00d",
+                                "b54b4deb-a13f-4eb7-8dca-bcd3023224c0",
+                                "6896485f-9f6c-4fc7-873d-6b52be88521c",
+                                "27f529bf-b51d-4acf-a46a-4bfec161b02e",
+                                "c9b8df94-46b9-4bd9-bb5d-c85b6e2eaaba",
+                                "a7b8ca99-e754-42b5-8808-c20e68075773",
+                                "eccd28f2-59dd-40b4-9109-9dfe6c14a525",
+                                "591a02ac-4ca0-48cf-9adb-78186ad99a32"
+                            ]
+                        },
+                        {
+                            "id": "aeb206f3-e242-4c0e-8f5a-1787b38a50ec",
+                            "dataSource": "UDM",
+                            "fieldPath": "security_result.category_details",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Category",
+                            "chartIds": [
+                                "da69bc13-92c0-4e6a-a4aa-b1c3572eb00d",
+                                "b54b4deb-a13f-4eb7-8dca-bcd3023224c0",
+                                "6896485f-9f6c-4fc7-873d-6b52be88521c",
+                                "27f529bf-b51d-4acf-a46a-4bfec161b02e",
+                                "c9b8df94-46b9-4bd9-bb5d-c85b6e2eaaba",
+                                "a7b8ca99-e754-42b5-8808-c20e68075773",
+                                "eccd28f2-59dd-40b4-9109-9dfe6c14a525",
+                                "591a02ac-4ca0-48cf-9adb-78186ad99a32"
+                            ]
+                        },
+                        {
+                            "id": "07655670-f409-46e6-8fae-c83c0338b9bd",
+                            "dataSource": "UDM",
+                            "fieldPath": "security_result.rule_id",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "SID (For Log Details)",
+                            "chartIds": [
+                                "eccd28f2-59dd-40b4-9109-9dfe6c14a525"
+                            ]
+                        }
+                    ],
+                    "charts": [
+                        {
+                            "dashboardChart": "6896485f-9f6c-4fc7-873d-6b52be88521c",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 0,
+                                "spanY": 26
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2e88a95b-d9c7-4546-a524-1a73bec1299c",
+                                "be25ce03-7ae1-4607-9402-d9d9d9eb1b97",
+                                "aeb206f3-e242-4c0e-8f5a-1787b38a50ec"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "c9b8df94-46b9-4bd9-bb5d-c85b6e2eaaba",
+                            "chartLayout": {
+                                "startX": 32,
+                                "spanX": 32,
+                                "startY": 26,
+                                "spanY": 19
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2e88a95b-d9c7-4546-a524-1a73bec1299c",
+                                "be25ce03-7ae1-4607-9402-d9d9d9eb1b97",
+                                "aeb206f3-e242-4c0e-8f5a-1787b38a50ec"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "da69bc13-92c0-4e6a-a4aa-b1c3572eb00d",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 32,
+                                "startY": 26,
+                                "spanY": 19
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2e88a95b-d9c7-4546-a524-1a73bec1299c",
+                                "be25ce03-7ae1-4607-9402-d9d9d9eb1b97",
+                                "aeb206f3-e242-4c0e-8f5a-1787b38a50ec"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "27f529bf-b51d-4acf-a46a-4bfec161b02e",
+                            "chartLayout": {
+                                "startX": 64,
+                                "spanX": 32,
+                                "startY": 26,
+                                "spanY": 19
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2e88a95b-d9c7-4546-a524-1a73bec1299c",
+                                "be25ce03-7ae1-4607-9402-d9d9d9eb1b97",
+                                "aeb206f3-e242-4c0e-8f5a-1787b38a50ec"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "591a02ac-4ca0-48cf-9adb-78186ad99a32",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 45,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2e88a95b-d9c7-4546-a524-1a73bec1299c",
+                                "be25ce03-7ae1-4607-9402-d9d9d9eb1b97",
+                                "aeb206f3-e242-4c0e-8f5a-1787b38a50ec"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "b54b4deb-a13f-4eb7-8dca-bcd3023224c0",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 45,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2e88a95b-d9c7-4546-a524-1a73bec1299c",
+                                "be25ce03-7ae1-4607-9402-d9d9d9eb1b97",
+                                "aeb206f3-e242-4c0e-8f5a-1787b38a50ec"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "a7b8ca99-e754-42b5-8808-c20e68075773",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 72,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2e88a95b-d9c7-4546-a524-1a73bec1299c",
+                                "be25ce03-7ae1-4607-9402-d9d9d9eb1b97",
+                                "aeb206f3-e242-4c0e-8f5a-1787b38a50ec"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "eccd28f2-59dd-40b4-9109-9dfe6c14a525",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 99,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2e88a95b-d9c7-4546-a524-1a73bec1299c",
+                                "be25ce03-7ae1-4607-9402-d9d9d9eb1b97",
+                                "aeb206f3-e242-4c0e-8f5a-1787b38a50ec",
+                                "07655670-f409-46e6-8fae-c83c0338b9bd"
+                            ]
+                        }
+                    ]
+                },
+                "type": "CUSTOM",
+                "etag": "ed2212e805a010a9d368410ac8026f9eae2283c0aec5422d3af27c41e770c020",
+                "access": "DASHBOARD_PRIVATE"
+            },
+            "dashboardCharts": [
+                {
+                    "name": "c9b8df94-46b9-4bd9-bb5d-c85b6e2eaaba",
+                    "displayName": "Total IDS Hits",
+                    "chartDatasource": {
+                        "dashboardQuery": "532a6654-5947-44b1-81d9-59144e731443",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "7a69c21416e56166a53900c0ebc6499d52428b0ec5b05d3eb4ea7119ada70682"
+                },
+                {
+                    "name": "6896485f-9f6c-4fc7-873d-6b52be88521c",
+                    "displayName": "IDS Hits Over Time",
+                    "chartDatasource": {
+                        "dashboardQuery": "0359b0ff-0505-47f9-9d3a-b89818cdaf38",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "Unspecified",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "undefined"
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "Log Count"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "c27ebefaa20f3687e12f8df0f52ba2054feda25ff74a18f8ba7f1406ba64f845"
+                },
+                {
+                    "name": "a7b8ca99-e754-42b5-8808-c20e68075773",
+                    "displayName": "Signature Analysis",
+                    "chartDatasource": {
+                        "dashboardQuery": "343e9fd6-5e5a-4c9e-bf04-5b9fb43de119",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "severity",
+                                "header": "Severity"
+                            },
+                            {
+                                "field": "security_result.rule_name",
+                                "header": "Signature"
+                            },
+                            {
+                                "field": "security_result.rule_id",
+                                "header": "SID"
+                            },
+                            {
+                                "field": "source_count",
+                                "header": "# Sources"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Count of Signature"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "a0f0a79b1d3548adb3144a91671d0d45a197ca1fbb5d435da32d1d0261ea1120"
+                },
+                {
+                    "name": "eccd28f2-59dd-40b4-9109-9dfe6c14a525",
+                    "displayName": "Log Details",
+                    "chartDatasource": {
+                        "dashboardQuery": "347d1e89-6b87-401e-a016-e8f1a8bb7d5e",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "time",
+                                "header": "Timestamp"
+                            },
+                            {
+                                "field": "principal.ip",
+                                "header": "Source IP"
+                            },
+                            {
+                                "field": "target.ip",
+                                "header": "Destination IP"
+                            },
+                            {
+                                "field": "target.port",
+                                "header": "Destination Port"
+                            },
+                            {
+                                "field": "service",
+                                "header": "Service"
+                            },
+                            {
+                                "field": "severity",
+                                "header": "Severity"
+                            },
+                            {
+                                "field": "security_result.rule_name",
+                                "header": "Signature"
+                            },
+                            {
+                                "field": "security_result.rule_id",
+                                "header": "Signature ID"
+                            },
+                            {
+                                "field": "uid",
+                                "header": "Session ID"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "66881aa7b5c508a9c50746a6314e484e591342bbd2f8e1680e7e96f0c43b147f"
+                },
+                {
+                    "name": "b54b4deb-a13f-4eb7-8dca-bcd3023224c0",
+                    "displayName": "Origin Summary",
+                    "chartDatasource": {
+                        "dashboardQuery": "8fb8d410-ba6e-4565-a82f-13193313ca5c",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "principal.ip",
+                                "header": "Source IP"
+                            },
+                            {
+                                "field": "signature_count",
+                                "header": "# Rules"
+                            },
+                            {
+                                "field": "count",
+                                "header": "# Hits"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "d5d4a0910a196462711d65763ec527293cbe3156288cec034d5e0a2fe3bfed05"
+                },
+                {
+                    "name": "591a02ac-4ca0-48cf-9adb-78186ad99a32",
+                    "displayName": "Category Analysis",
+                    "chartDatasource": {
+                        "dashboardQuery": "033ebb85-ada5-40f8-899b-62cfa8d5b839",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "security_result.category_details",
+                                "header": "Category"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Count"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "5438800e3d2f534a08b237b6ab7b786fb64641f916547e559260d7484835231a"
+                },
+                {
+                    "name": "27f529bf-b51d-4acf-a46a-4bfec161b02e",
+                    "displayName": "Alerts with CVEs",
+                    "chartDatasource": {
+                        "dashboardQuery": "03936d7b-cdc0-43dc-8c1d-59eaf60cbe2b",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "3c2a5682e29f734db908bce48aab945ab7ab1e649c1b7f96bd3720eb31674713"
+                },
+                {
+                    "name": "da69bc13-92c0-4e6a-a4aa-b1c3572eb00d",
+                    "displayName": "Unique Rules Alerting",
+                    "chartDatasource": {
+                        "dashboardQuery": "87d6e16d-ba0d-4f7d-be05-b513a7d33178",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "55aff8ec342b7e0046378524a0d2281e4e3e94ee8b475369b27d74bc91b8f02d"
+                }
+            ],
+            "dashboardQueries": [
+                {
+                    "name": "347d1e89-6b87-401e-a016-e8f1a8bb7d5e",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"suricata_corelight\"\r\nprincipal.ip!=\"\"\r\n$severity=if(security_result.severity_details=\"Informational\",\"Informational\",\r\n          if(security_result.severity_details=\"Critical\",\"Critical\",\r\n          if(security_result.severity_details=\"Major\",\"Medium\",\r\n          if(security_result.severity_details=\"Minor\", \"Low\", \"Unknown\"))))\r\n$severity!=\"Unknown\"\r\nsecurity_result.category_details!=\"\"\r\n$time=timestamp.get_timestamp(metadata.event_timestamp.seconds)\r\n$service=about.labels[\"service\"]\r\n$uid=about.labels[\"uid\"]\r\nmatch:\r\n    $time, principal.ip, target.ip, target.port, $service, $severity, security_result.rule_name, security_result.rule_id, $uid\r\norder:\r\n    $time desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "2293cd9910218c02411811589689d050a58c09ff10b3efcc8e674c02ebad4b4b"
+                },
+                {
+                    "name": "8fb8d410-ba6e-4565-a82f-13193313ca5c",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"suricata_corelight\"\r\nprincipal.ip!=\"\"\r\nsecurity_result.severity_details!=\"\"\r\nsecurity_result.category_details!=\"\"\r\nmatch:\r\n    principal.ip\r\noutcome:\r\n    $signature_count=count_distinct(security_result.rule_name)\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $signature_count desc, $count desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "92fa950eff6a38107009f4ee94999a0abc866dc1a17e6f8be121bc03b90bddec"
+                },
+                {
+                    "name": "033ebb85-ada5-40f8-899b-62cfa8d5b839",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"suricata_corelight\"\r\nprincipal.ip!=\"\"\r\nsecurity_result.severity_details!=\"\"\r\nsecurity_result.category_details!=\"\"\r\nmatch:\r\n    security_result.category_details\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "b57c65718b87b995f77e931815857cc6b0bc1bd8195efdb3d6e8f37787fd791a"
+                },
+                {
+                    "name": "03936d7b-cdc0-43dc-8c1d-59eaf60cbe2b",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"suricata_corelight\"\r\nprincipal.ip!=\"\"\r\nsecurity_result.severity_details!=\"\"\r\nsecurity_result.category_details!=\"\"\r\nsecurity_result.detection_fields.key=\"alert_metadata\"\r\nstrings.contains(security_result.summary, \"CVE\") OR strings.contains(security_result.detection_fields.value, \"CVE\")\r\noutcome:\r\n    $count=count_distinct(metadata.id)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "7562656e85eee660a8f91a7d89ebdef7a130c889c005f4b614df272186dab4e3"
+                },
+                {
+                    "name": "87d6e16d-ba0d-4f7d-be05-b513a7d33178",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"suricata_corelight\"\r\nprincipal.ip!=\"\"\r\nsecurity_result.severity_details!=\"\"\r\nsecurity_result.category_details!=\"\"\r\noutcome:\r\n    $count=count_distinct(security_result.rule_name)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "5148ee182d3f7841947ec962a88256e7b941d2072410e30e81afd8647fc226f4"
+                },
+                {
+                    "name": "532a6654-5947-44b1-81d9-59144e731443",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"suricata_corelight\"\r\nprincipal.ip!=\"\"\r\nsecurity_result.severity_details!=\"\"\r\nsecurity_result.category_details!=\"\"\r\noutcome:\r\n    $count=count_distinct(metadata.id)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "ac8aba155dd8cb584db5344678b7a40f94221f5975c1d173f3de3b2c545277ac"
+                },
+                {
+                    "name": "0359b0ff-0505-47f9-9d3a-b89818cdaf38",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"suricata_corelight\"\r\nprincipal.ip!=\"\"\r\nsecurity_result.severity_details!=\"\"\r\nsecurity_result.category_details!=\"\"\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $date_hour asc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "ae22730c843e3e95a6e22c0687a53982be2f4f56376381542a4a66efbcc40ea9"
+                },
+                {
+                    "name": "343e9fd6-5e5a-4c9e-bf04-5b9fb43de119",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"suricata_corelight\"\r\nprincipal.ip!=\"\"\r\n$severity=if(security_result.severity_details=\"Informational\",\"Informational\",\r\n          if(security_result.severity_details=\"Critical\",\"Critical\",\r\n          if(security_result.severity_details=\"Major\",\"Medium\",\r\n          if(security_result.severity_details=\"Minor\", \"Low\", \"Unknown\"))))\r\n$severity!=\"Unknown\"\r\nsecurity_result.category_details!=\"\"\r\nmatch:\r\n    $severity, security_result.rule_name, security_result.rule_id\r\noutcome:\r\n    $source_count=count_distinct(principal.ip)\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $source_count desc, $count desc",
+                    "input": {
+                        "timeWindow": {
+                            "startTime": "2025-03-26T00:00:00Z",
+                            "endTime": "2025-03-27T09:44:08.998Z"
+                        }
+                    },
+                    "etag": "e5afb3671f8c96ddcc87db854e62d9470c440fc770df7a9a4248cbe237a573e0"
+                }
+            ]
+        }
+    ]
+}

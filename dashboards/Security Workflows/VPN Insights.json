@@ -1,0 +1,657 @@
+{
+    "dashboards": [
+        {
+            "dashboard": {
+                "name": "f959a07f-39de-492a-9b87-18c65765fd8c",
+                "displayName": "Corelight → Security Workflows → VPN Insights",
+                "definition": {
+                    "filters": [
+                        {
+                            "id": "GlobalTimeFilter",
+                            "dataSource": "GLOBAL",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "PAST",
+                                    "fieldValues": [
+                                        "1",
+                                        "DAY"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Global Time Filter",
+                            "chartIds": [
+                                "7c36e995-e90b-40e7-af98-87878e58b631",
+                                "64698d6d-ed3b-4600-92d4-313f71ab02cc",
+                                "a71d3fb8-578f-40d2-b771-f01120a6a7cd",
+                                "81316ce9-1bf5-4fb0-9679-0ee5c56d3258",
+                                "1421339b-fc17-4abc-bb89-f27514bc08eb",
+                                "1ff73ace-f198-4b3b-90cb-529c52e0f36c",
+                                "765ad4c7-8292-46aa-ab87-8a0dbd8829ea"
+                            ],
+                            "isStandardTimeRangeFilter": true,
+                            "isStandardTimeRangeFilterEnabled": true
+                        },
+                        {
+                            "id": "287c764f-5f47-48e0-8a46-6881be80634f",
+                            "dataSource": "UDM",
+                            "fieldPath": "observer.hostname",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Corelight Sensor",
+                            "chartIds": [
+                                "7c36e995-e90b-40e7-af98-87878e58b631",
+                                "64698d6d-ed3b-4600-92d4-313f71ab02cc",
+                                "a71d3fb8-578f-40d2-b771-f01120a6a7cd",
+                                "81316ce9-1bf5-4fb0-9679-0ee5c56d3258",
+                                "1421339b-fc17-4abc-bb89-f27514bc08eb",
+                                "1ff73ace-f198-4b3b-90cb-529c52e0f36c",
+                                "765ad4c7-8292-46aa-ab87-8a0dbd8829ea"
+                            ]
+                        }
+                    ],
+                    "charts": [
+                        {
+                            "dashboardChart": "765ad4c7-8292-46aa-ab87-8a0dbd8829ea",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 32,
+                                "startY": 0,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "287c764f-5f47-48e0-8a46-6881be80634f"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "81316ce9-1bf5-4fb0-9679-0ee5c56d3258",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 25,
+                                "spanY": 26
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "287c764f-5f47-48e0-8a46-6881be80634f"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "1421339b-fc17-4abc-bb89-f27514bc08eb",
+                            "chartLayout": {
+                                "startX": 32,
+                                "spanX": 32,
+                                "startY": 0,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "287c764f-5f47-48e0-8a46-6881be80634f"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "1ff73ace-f198-4b3b-90cb-529c52e0f36c",
+                            "chartLayout": {
+                                "startX": 64,
+                                "spanX": 32,
+                                "startY": 0,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "287c764f-5f47-48e0-8a46-6881be80634f"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "a71d3fb8-578f-40d2-b771-f01120a6a7cd",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 103,
+                                "spanY": 28
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "287c764f-5f47-48e0-8a46-6881be80634f"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "7c36e995-e90b-40e7-af98-87878e58b631",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 77,
+                                "spanY": 26
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "287c764f-5f47-48e0-8a46-6881be80634f"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "64698d6d-ed3b-4600-92d4-313f71ab02cc",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 51,
+                                "spanY": 26
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "287c764f-5f47-48e0-8a46-6881be80634f"
+                            ]
+                        }
+                    ]
+                },
+                "type": "CUSTOM",
+                "etag": "55d761e04929c109e894f7e30d6fa93d579047a36a85f219d3cd40d877e5af9c",
+                "access": "DASHBOARD_PRIVATE"
+            },
+            "dashboardCharts": [
+                {
+                    "name": "7c36e995-e90b-40e7-af98-87878e58b631",
+                    "displayName": "VPN JA3 Finger Prints",
+                    "chartDatasource": {
+                        "dashboardQuery": "dd4bde3b-2a4d-485b-b3bf-a89dd3dfbee8",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "network.tls.client.ja3",
+                                "header": "ja3"
+                            },
+                            {
+                                "field": "network.tls.server.ja3s",
+                                "header": "ja3s"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Count"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "c144b8d73340c21c774aa07136e06498d9664eccc48f9635077a551173efdd46"
+                },
+                {
+                    "name": "81316ce9-1bf5-4fb0-9679-0ee5c56d3258",
+                    "displayName": "Inferences Over Time",
+                    "chartDatasource": {
+                        "dashboardQuery": "d249c07a-2a74-4e3a-98c8-48103a38dd31",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "NSP",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "NSP",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "RSI",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "RSI",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "COM",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#10a3b7"
+                                },
+                                "seriesUniqueValue": "COM",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "SK",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#d15f6b"
+                                },
+                                "seriesUniqueValue": "SK",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "RW",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#e51f8f"
+                                },
+                                "seriesUniqueValue": "RW",
+                                "areaStyle": {}
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "Count"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "bottom": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "seriesColumn": [
+                            "inference"
+                        ],
+                        "groupingType": "Stacked"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "85090ff1193e41dc2bd338d3b2e0bed5edd95c4fcd4e9a82136d44f7d298227b"
+                },
+                {
+                    "name": "1ff73ace-f198-4b3b-90cb-529c52e0f36c",
+                    "displayName": "VPN Type",
+                    "chartDatasource": {
+                        "dashboardQuery": "d06656ce-3a3d-46d7-b08b-485494128c92",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "vpn_type"
+                                },
+                                "dataLabel": {},
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ]
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "bottom": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "39eb19d7eb34ea02ca470b84a1c77ecd3fa4cc31fa37faa23e2d9bc0e804cf5e"
+                },
+                {
+                    "name": "a71d3fb8-578f-40d2-b771-f01120a6a7cd",
+                    "displayName": "VPN Inference Log Data",
+                    "chartDatasource": {
+                        "dashboardQuery": "090e7fc3-1f50-4826-9c9b-140d98df9a10",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "time",
+                                "header": "Time"
+                            },
+                            {
+                                "field": "principal.ip",
+                                "header": "Source IP"
+                            },
+                            {
+                                "field": "target.ip",
+                                "header": "Destination IP"
+                            },
+                            {
+                                "field": "inferences",
+                                "header": "Inferences"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "108a4c6eaad800865811ea5c50b016ef017372c52bc34b82d7e2869826a158b4"
+                },
+                {
+                    "name": "1421339b-fc17-4abc-bb89-f27514bc08eb",
+                    "displayName": "Top VPN Users",
+                    "chartDatasource": {
+                        "dashboardQuery": "cbdc5f06-e8b1-47d5-8f7d-059c837fc1b7",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "principal.ip"
+                                },
+                                "dataLabel": {},
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "undefined"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "bottom": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "874e6220ceb608ad884501571c8432cba41c9f6c535de639377bc8b21580bb91"
+                },
+                {
+                    "name": "64698d6d-ed3b-4600-92d4-313f71ab02cc",
+                    "displayName": "Largest Transfers Between Host Pairs Over VPN",
+                    "chartDatasource": {
+                        "dashboardQuery": "4be405d3-98ad-4ad2-8030-1cb058d16683",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "principal.ip",
+                                "header": "Source IP"
+                            },
+                            {
+                                "field": "target.ip",
+                                "header": "Destination IP"
+                            },
+                            {
+                                "field": "target.port",
+                                "header": "Destination Port"
+                            },
+                            {
+                                "field": "protocol_string",
+                                "header": "Protocol"
+                            },
+                            {
+                                "field": "target.ip_geo_artifact.location.country_or_region",
+                                "header": "Destination Country"
+                            },
+                            {
+                                "field": "target.application",
+                                "header": "Service"
+                            },
+                            {
+                                "field": "resp_bytes_sum",
+                                "header": "Sum of Destination Bytes"
+                            },
+                            {
+                                "field": "orig_bytes_sum",
+                                "header": "Sum of Source Bytes"
+                            },
+                            {
+                                "field": "giga_bytes",
+                                "header": "Gigabytes"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Number of Connections"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "d82c653389d6b0edcc0deedecf418a3cb2dad651d10e78e02cdc739d50bbb7f1"
+                },
+                {
+                    "name": "765ad4c7-8292-46aa-ab87-8a0dbd8829ea",
+                    "displayName": "Inference Type",
+                    "chartDatasource": {
+                        "dashboardQuery": "3fc51ce5-ada0-47f6-adc2-6c6ad7a63f39",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "about.labels.value"
+                                },
+                                "dataLabel": {},
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "undefined"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "bottom": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "2daf841cc4ef046e7bfd0415ac434ecd2ee27b85248b11b3fe604706e18d0d5c"
+                }
+            ],
+            "dashboardQueries": [
+                {
+                    "name": "4be405d3-98ad-4ad2-8030-1cb058d16683",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"vpn\"\r\ntarget.application= /^spicy/\r\n$inference=about.labels[\"inference\"]\r\n$vpn_type=about.labels[\"vpn_type\"]\r\n$inference!=\"\"\r\n$vpn_type!=\"\"\r\n$protocol_string=if(network.ip_protocol=88, \"EIGRP\",\r\nif(network.ip_protocol=50, \"ESP\",\r\nif(network.ip_protocol=97, \"ETHERIP\",\r\nif(network.ip_protocol=47, \"GRE\",\r\nif(network.ip_protocol=1, \"ICMP\",\r\nif(network.ip_protocol=58, \"ICMP6\",\r\nif(network.ip_protocol=2, \"IGMP\",\r\nif(network.ip_protocol=41, \"IP6IN4\",\r\nif(network.ip_protocol=103, \"PIM\",\r\nif(network.ip_protocol=132, \"SCTP\",\r\nif(network.ip_protocol=6, \"TCP\",\r\nif(network.ip_protocol=17, \"UDP\",\r\nif(network.ip_protocol=0, \"UNKNOWN_IP_PROTOCOL\",\r\nif(network.ip_protocol=112, \"VRRP\", \"UNKNOWN_IP_PROTOCOL\"))))))))))))))\r\nmatch:\r\n    principal.ip, target.ip, target.port, $protocol_string, target.ip_geo_artifact.location.country_or_region, target.application\r\noutcome:\r\n    $resp_bytes_sum=sum(network.received_bytes)\r\n    $orig_bytes_sum=sum(network.sent_bytes)\r\n    $giga_bytes=(sum(network.received_bytes) + sum(network.sent_bytes)) / (1024 * 1024 * 1024)\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $giga_bytes desc \r\nlimit:\r\n    20",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "14d887d2f0741302965477f5f6f44dbbcac51a933e93ed8424414b6c7e1df070"
+                },
+                {
+                    "name": "3fc51ce5-ada0-47f6-adc2-6c6ad7a63f39",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"vpn\"\r\nabout.labels.key=\"inference\"\r\nabout.labels.value!=\"\"\r\nmatch:\r\n    about.labels.value\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    50",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "1374d068fbd06ada0979250ddc4cba2f2f5bb3a8eb05c12e5fbcb73a3c612264"
+                },
+                {
+                    "name": "dd4bde3b-2a4d-485b-b3bf-a89dd3dfbee8",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"vpn\"\r\n$inference=about.labels[\"inference\"]\r\n$vpn_type=about.labels[\"vpn_type\"]\r\n$inference!=\"\"\r\n$vpn_type!=\"\"\r\nnetwork.tls.client.ja3!=\"\"\r\nnetwork.tls.server.ja3s!=\"\"\r\nmatch:\r\n    network.tls.client.ja3, network.tls.server.ja3s\r\noutcome:\r\n    $count=count_distinct(metadata.id)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "a283135250f25d364cd47fe5c126acf439d63d4b26835ceeebdde0557fb0a79b"
+                },
+                {
+                    "name": "d249c07a-2a74-4e3a-98c8-48103a38dd31",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"vpn\"\r\n$inference=about.labels[\"inference\"]\r\n$vpn_type=about.labels[\"vpn_type\"]\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\n$inference!=\"\"\r\n$vpn_type!=\"\"\r\nmatch:\r\n    $date_hour, $inference\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $date_hour asc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "a18d45b9f133062f21fae0214df8b7ff9a982c4702ed5674b63de828ce1e776b"
+                },
+                {
+                    "name": "d06656ce-3a3d-46d7-b08b-485494128c92",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"vpn\"\r\n$inference=about.labels[\"inference\"]\r\n$vpn_type=about.labels[\"vpn_type\"]\r\n$inference!=\"\"\r\n$vpn_type!=\"\"\r\nmatch:\r\n    $vpn_type\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    50",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "d7892d393241d7856cbe53182173adb4c61539d7427ef9febca550b2f8e253f8"
+                },
+                {
+                    "name": "090e7fc3-1f50-4826-9c9b-140d98df9a10",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"vpn\"\r\nabout.labels.key=\"inference\"\r\n$vpn_type=about.labels[\"vpn_type\"]\r\n$time=timestamp.get_timestamp(metadata.event_timestamp.seconds)\r\nabout.labels.value!=\"\"\r\n$vpn_type!=\"\"\r\nmatch:\r\n    $time, principal.ip, target.ip\r\noutcome:\r\n    $inferences=array_distinct(about.labels.value)\r\norder:\r\n    $time asc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "b4f731d5ca2f62ab8de7b6980f3824436c30ae83f4b3ab0d95e4d922ba17781f"
+                },
+                {
+                    "name": "cbdc5f06-e8b1-47d5-8f7d-059c837fc1b7",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"vpn\"\r\n$inference=about.labels[\"inference\"]\r\n$vpn_type=about.labels[\"vpn_type\"]\r\n$inference!=\"\"\r\n$vpn_type!=\"\"\r\n$combined_fieds=strings.concat(principal.ip, about.labels[\"vpn_type\"], target.location.country_or_region)\r\nmatch:\r\n    principal.ip\r\noutcome:\r\n    $count=count_distinct($combined_fieds)\r\norder:\r\n    $count desc\r\nlimit:\r\n    20",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "cc21e464ece94123df1e387b975438f1b78f2542523455f4dd5b69da80f68bda"
+                }
+            ]
+        }
+    ]
+}
