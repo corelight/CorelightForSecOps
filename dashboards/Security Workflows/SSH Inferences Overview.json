@@ -2,7 +2,7 @@
     "dashboards": [
         {
             "dashboard": {
-                "name": "e3c4a4f5-157c-44c3-9ad6-aa4275a7b5db",
+                "name": "62285370-d95b-4b87-be7f-e543e809eb67",
                 "displayName": "Corelight → Security Workflows → SSH Inferences Overview",
                 "definition": {
                     "filters": [
@@ -20,12 +20,12 @@
                             ],
                             "displayName": "Global Time Filter",
                             "chartIds": [
-                                "b5c57d5d-d142-4953-b06c-f45c5ce30867",
-                                "55ee0bf7-9642-4314-baac-68b1418020fd",
-                                "dc7ce31c-f045-498c-8155-b9cc115aa6d3",
-                                "eef2dd95-0da6-4599-a843-943f87653d5c",
-                                "3ce2b862-e64b-4738-a4ee-bf81f80f3a8c",
-                                "ea8cdad9-8320-429f-b055-8cebb8f5a4ed"
+                                "43d5bc3d-fb49-4721-a97f-c371c4b00513",
+                                "db500a8a-8d1a-4f49-b97f-47c10675f4e2",
+                                "85c8366f-df7f-4032-86a3-3bab63181d0f",
+                                "c37cd74b-7b7d-43c5-8fdc-e37d1ae19ab7",
+                                "6c7abc53-431f-4969-9b52-2bece42202c3",
+                                "4e5603cb-4463-48a0-8a77-306bdd092edb"
                             ],
                             "isStandardTimeRangeFilter": true,
                             "isStandardTimeRangeFilterEnabled": true
@@ -44,18 +44,18 @@
                             ],
                             "displayName": "SSH Inferences",
                             "chartIds": [
-                                "b5c57d5d-d142-4953-b06c-f45c5ce30867",
-                                "55ee0bf7-9642-4314-baac-68b1418020fd",
-                                "dc7ce31c-f045-498c-8155-b9cc115aa6d3",
-                                "3ce2b862-e64b-4738-a4ee-bf81f80f3a8c",
-                                "eef2dd95-0da6-4599-a843-943f87653d5c",
-                                "ea8cdad9-8320-429f-b055-8cebb8f5a4ed"
+                                "43d5bc3d-fb49-4721-a97f-c371c4b00513",
+                                "db500a8a-8d1a-4f49-b97f-47c10675f4e2",
+                                "85c8366f-df7f-4032-86a3-3bab63181d0f",
+                                "6c7abc53-431f-4969-9b52-2bece42202c3",
+                                "c37cd74b-7b7d-43c5-8fdc-e37d1ae19ab7",
+                                "4e5603cb-4463-48a0-8a77-306bdd092edb"
                             ]
                         }
                     ],
                     "charts": [
                         {
-                            "dashboardChart": "ea8cdad9-8320-429f-b055-8cebb8f5a4ed",
+                            "dashboardChart": "4e5603cb-4463-48a0-8a77-306bdd092edb",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -68,7 +68,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "dc7ce31c-f045-498c-8155-b9cc115aa6d3",
+                            "dashboardChart": "85c8366f-df7f-4032-86a3-3bab63181d0f",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -81,7 +81,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "eef2dd95-0da6-4599-a843-943f87653d5c",
+                            "dashboardChart": "c37cd74b-7b7d-43c5-8fdc-e37d1ae19ab7",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -94,7 +94,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "55ee0bf7-9642-4314-baac-68b1418020fd",
+                            "dashboardChart": "db500a8a-8d1a-4f49-b97f-47c10675f4e2",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -107,7 +107,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "b5c57d5d-d142-4953-b06c-f45c5ce30867",
+                            "dashboardChart": "43d5bc3d-fb49-4721-a97f-c371c4b00513",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -120,7 +120,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "3ce2b862-e64b-4738-a4ee-bf81f80f3a8c",
+                            "dashboardChart": "6c7abc53-431f-4969-9b52-2bece42202c3",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -135,15 +135,15 @@
                     ]
                 },
                 "type": "CUSTOM",
-                "etag": "e00474a2dcccc6ea67fa22cc3d6b8810f41c01bdcfbbd0cf9a6aeead5f5883d1",
+                "etag": "5dce565fafbe7c1d484bed856b72145c5cebcc126531b9a5dd97cbcd01e49a49",
                 "access": "DASHBOARD_PRIVATE"
             },
             "dashboardCharts": [
                 {
-                    "name": "55ee0bf7-9642-4314-baac-68b1418020fd",
+                    "name": "db500a8a-8d1a-4f49-b97f-47c10675f4e2",
                     "displayName": "SSH Host Details",
                     "chartDatasource": {
-                        "dashboardQuery": "f7500738-a0a9-4ca9-b7f0-a7906397e5aa",
+                        "dashboardQuery": "a42ac631-7e2a-4328-9198-6cb3797e38d3",
                         "dataSources": [
                             "UDM"
                         ]
@@ -185,13 +185,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "4870b68c6bc2392ae3ef1c5b015616ff295f8228c0428b0850f72e6d962fbe75"
+                    "etag": "4016e1b366a759514b48f0f08e522ede60b187f8af31cb12e135daf63f4a0c44"
                 },
                 {
-                    "name": "b5c57d5d-d142-4953-b06c-f45c5ce30867",
+                    "name": "43d5bc3d-fb49-4721-a97f-c371c4b00513",
                     "displayName": "Inferences for Hosts with Host Key",
                     "chartDatasource": {
-                        "dashboardQuery": "a50451f6-e984-4cc2-9e7e-1e92f15cfb8c",
+                        "dashboardQuery": "74307cb8-d9ee-43ad-8a68-56057f1d8cb5",
                         "dataSources": [
                             "UDM"
                         ]
@@ -237,13 +237,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "5d27dcf35e89f9c1220976ade653ebb7673ebbc11d0a6459495d5515ee44afde"
+                    "etag": "ce3903a5b496d9faa79cdf3fd9c8ced9daa44b5745f5a5398418d50179bed73d"
                 },
                 {
-                    "name": "eef2dd95-0da6-4599-a843-943f87653d5c",
+                    "name": "c37cd74b-7b7d-43c5-8fdc-e37d1ae19ab7",
                     "displayName": "HASSH Fingerprint Details",
                     "chartDatasource": {
-                        "dashboardQuery": "b54338ee-cdb3-496a-888e-8bf83c013533",
+                        "dashboardQuery": "fd4defb8-0938-4a44-8ab8-145cfa054c42",
                         "dataSources": [
                             "UDM"
                         ]
@@ -289,13 +289,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "c0294b17305d1898f529e239535fdf971b07c4f32fc2f60740061f99d62690e4"
+                    "etag": "71dd1473b355d6daf922293bbb21f764b335b3a6e338d51cf311f189db5167a5"
                 },
                 {
-                    "name": "ea8cdad9-8320-429f-b055-8cebb8f5a4ed",
+                    "name": "4e5603cb-4463-48a0-8a77-306bdd092edb",
                     "displayName": "SSH Inferences",
                     "chartDatasource": {
-                        "dashboardQuery": "fdbb3e58-4223-422b-90aa-c1b752be5664",
+                        "dashboardQuery": "9a5d0a02-c6a5-4f56-8ea8-dd8adee9e05a",
                         "dataSources": [
                             "UDM"
                         ]
@@ -410,14 +410,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "1e361ef5c993aed2d78ae831bc364205d4f14d42ab3be32620501001828cfd81"
+                    "etag": "f661b164acd6b9f596753672bd5ad6919013feaa9feb8cb5b4b047010cfa228c"
                 },
                 {
-                    "name": "3ce2b862-e64b-4738-a4ee-bf81f80f3a8c",
+                    "name": "6c7abc53-431f-4969-9b52-2bece42202c3",
                     "displayName": "Log Data",
                     "description": "SSH Inference Log Data",
                     "chartDatasource": {
-                        "dashboardQuery": "3a6bd01f-18dd-4e9b-acf8-7a884dc2aeaa",
+                        "dashboardQuery": "0f17f742-5bdf-469e-9a31-73609e050823",
                         "dataSources": [
                             "UDM"
                         ]
@@ -441,7 +441,7 @@
                         "columnDefs": [
                             {
                                 "field": "time",
-                                "header": "Data Time"
+                                "header": "Time"
                             },
                             {
                                 "field": "principal.ip",
@@ -459,13 +459,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "741f55fbda52339c50ac5b4b651b1a954de9d3af927bdcb3057a2c5c8ecc21af"
+                    "etag": "e485737d64e5a9dd8d5889ef649808ea293199f36b64647628f1a8bf4d443766"
                 },
                 {
-                    "name": "dc7ce31c-f045-498c-8155-b9cc115aa6d3",
+                    "name": "85c8366f-df7f-4032-86a3-3bab63181d0f",
                     "displayName": "SSH Inferences Over Time",
                     "chartDatasource": {
-                        "dashboardQuery": "676b67f0-6957-4b5e-992a-d186fb009cae",
+                        "dashboardQuery": "6ebabfb9-71a5-4ea8-94d4-93a97bf96b32",
                         "dataSources": [
                             "UDM"
                         ]
@@ -692,67 +692,12 @@
                         "groupingType": "Stacked"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "dacf309e8f858f3c0047b9d738ef80ea605cf616c009282e6e04ef0c4593b250"
+                    "etag": "8f13a8517f2f3fd1aac8a5d292d26608f34aa42351359d8f8090089e1b9021c8"
                 }
             ],
             "dashboardQueries": [
                 {
-                    "name": "3a6bd01f-18dd-4e9b-acf8-7a884dc2aeaa",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssh\"\r\nsecurity_result.summary !=\"\"\r\n$inference_name=if(security_result.summary = \"Client Authentication Bypass\", \"ABP\",\r\nif(security_result.summary = \"SSH Agent Forwarding Requested\", \"AFR\",\r\nif(security_result.summary = \"Automated Password Authentication\", \"APWA\",\r\nif(security_result.summary = \"Automated Interaction\", \"AUTO\",\r\nif(security_result.summary = \"Server Banner\", \"BAN\",\r\nif(security_result.summary = \"Client Brute Force Guessing\", \"BF\",\r\nif(security_result.summary = \"Client Brute Force Success\", \"BFS\",\r\nif(security_result.summary = \"Client Trusted Server\", \"CTS\",\r\nif(security_result.summary = \"Client Untrusted Server\", \"CUS\",\r\nif(security_result.summary = \"Interactive Password Authentication\", \"IPWA\",\r\nif(security_result.summary = \"Keystrokes\", \"KS\",\r\nif(security_result.summary = \"Large Client File Donwload\", \"LFD\",\r\nif(security_result.summary = \"Large Client File Upload\", \"LFU\",\r\nif(security_result.summary = \"Multifactor Authentication\", \"MFA\",\r\nif(security_result.summary = \"None Authentication\", \"NA\",\r\nif(security_result.summary = \"No Remote Command\", \"NRC\",\r\nif(security_result.summary = \"Public Key Authentication\", \"PKA\",\r\nif(security_result.summary = \"Reverse SSH Initiated\", \"RSI\",\r\nif(security_result.summary = \"Reverse SSH Initiated Automate\", \"RSIA\",\r\nif(security_result.summary = \"Reverse SSH Keystrokes\", \"RSK\",\r\nif(security_result.summary = \"Reverse SSH Logged In\", \"RSL\",\r\nif(security_result.summary = \"Reverse SSH Providioned\", \"RSP\",\r\nif(security_result.summary = \"Authentication Scanning\", \"SA\",\r\nif(security_result.summary = \"Capabilities Scanning\", \"SC\",\r\nif(security_result.summary = \"Small Client File Download\", \"SFD\",\r\nif(security_result.summary = \"Small Client File Upload\", \"SFU\",\r\nif(security_result.summary = \"Other Scanning\", \"SP\",\r\nif(security_result.summary = \"Version Scanning\", \"SV\",\r\nif(security_result.summary = \"Unknown Authentication\", \"UA\", \"Unknown\"\r\n)))))))))))))))))))))))))))))\r\n$time=timestamp.get_timestamp(metadata.event_timestamp.seconds)\r\nmatch:\r\n    $time, principal.ip, target.ip\r\noutcome:\r\n    $inferences=array_distinct($inference_name)\r\norder:\r\n    $time desc",
-                    "input": {
-                        "relativeTime": {
-                            "timeUnit": "DAY",
-                            "startTimeVal": "1"
-                        }
-                    },
-                    "etag": "e16db89bd3927be4a9bb087d57ef7b07c08e02578d0798af6ae499d180986807"
-                },
-                {
-                    "name": "676b67f0-6957-4b5e-992a-d186fb009cae",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssh\"\r\n$inferences=security_result.summary\r\n$inferences!=\"\"\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour, $inferences\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $date_hour asc\r\n\r\n",
-                    "input": {
-                        "timeWindow": {
-                            "startTime": "2025-03-26T00:00:00Z",
-                            "endTime": "2025-03-27T09:23:23.777Z"
-                        }
-                    },
-                    "etag": "c04f3c9b74bbb506a27b62bbd25c032e99a382e87356839772e2907908afe9bd"
-                },
-                {
-                    "name": "f7500738-a0a9-4ca9-b7f0-a7906397e5aa",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssh\"\r\nsecurity_result.summary !=\"\"\r\n$inference_name=if(security_result.summary = \"Client Authentication Bypass\", \"ABP\",\r\nif(security_result.summary = \"SSH Agent Forwarding Requested\", \"AFR\",\r\nif(security_result.summary = \"Automated Password Authentication\", \"APWA\",\r\nif(security_result.summary = \"Automated Interaction\", \"AUTO\",\r\nif(security_result.summary = \"Server Banner\", \"BAN\",\r\nif(security_result.summary = \"Client Brute Force Guessing\", \"BF\",\r\nif(security_result.summary = \"Client Brute Force Success\", \"BFS\",\r\nif(security_result.summary = \"Client Trusted Server\", \"CTS\",\r\nif(security_result.summary = \"Client Untrusted Server\", \"CUS\",\r\nif(security_result.summary = \"Interactive Password Authentication\", \"IPWA\",\r\nif(security_result.summary = \"Keystrokes\", \"KS\",\r\nif(security_result.summary = \"Large Client File Donwload\", \"LFD\",\r\nif(security_result.summary = \"Large Client File Upload\", \"LFU\",\r\nif(security_result.summary = \"Multifactor Authentication\", \"MFA\",\r\nif(security_result.summary = \"None Authentication\", \"NA\",\r\nif(security_result.summary = \"No Remote Command\", \"NRC\",\r\nif(security_result.summary = \"Public Key Authentication\", \"PKA\",\r\nif(security_result.summary = \"Reverse SSH Initiated\", \"RSI\",\r\nif(security_result.summary = \"Reverse SSH Initiated Automate\", \"RSIA\",\r\nif(security_result.summary = \"Reverse SSH Keystrokes\", \"RSK\",\r\nif(security_result.summary = \"Reverse SSH Logged In\", \"RSL\",\r\nif(security_result.summary = \"Reverse SSH Providioned\", \"RSP\",\r\nif(security_result.summary = \"Authentication Scanning\", \"SA\",\r\nif(security_result.summary = \"Capabilities Scanning\", \"SC\",\r\nif(security_result.summary = \"Small Client File Download\", \"SFD\",\r\nif(security_result.summary = \"Small Client File Upload\", \"SFU\",\r\nif(security_result.summary = \"Other Scanning\", \"SP\",\r\nif(security_result.summary = \"Version Scanning\", \"SV\",\r\nif(security_result.summary = \"Unknown Authentication\", \"UA\", \"Unknown\"\r\n)))))))))))))))))))))))))))))\r\nmatch:\r\n    principal.ip, target.ip\r\noutcome:\r\n    $inferences=array_distinct(strings.concat($inference_name, \" : \", security_result.summary))\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    5",
-                    "input": {
-                        "relativeTime": {
-                            "timeUnit": "DAY",
-                            "startTimeVal": "1"
-                        }
-                    },
-                    "etag": "12f22133f29655146573a4a87f4c13601cbdb243de46581e7a280f9eeb262562"
-                },
-                {
-                    "name": "a50451f6-e984-4cc2-9e7e-1e92f15cfb8c",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssh\"\r\nsecurity_result.summary !=\"\"\r\n$inference_name=if(security_result.summary = \"Client Authentication Bypass\", \"ABP\",\r\nif(security_result.summary = \"SSH Agent Forwarding Requested\", \"AFR\",\r\nif(security_result.summary = \"Automated Password Authentication\", \"APWA\",\r\nif(security_result.summary = \"Automated Interaction\", \"AUTO\",\r\nif(security_result.summary = \"Server Banner\", \"BAN\",\r\nif(security_result.summary = \"Client Brute Force Guessing\", \"BF\",\r\nif(security_result.summary = \"Client Brute Force Success\", \"BFS\",\r\nif(security_result.summary = \"Client Trusted Server\", \"CTS\",\r\nif(security_result.summary = \"Client Untrusted Server\", \"CUS\",\r\nif(security_result.summary = \"Interactive Password Authentication\", \"IPWA\",\r\nif(security_result.summary = \"Keystrokes\", \"KS\",\r\nif(security_result.summary = \"Large Client File Donwload\", \"LFD\",\r\nif(security_result.summary = \"Large Client File Upload\", \"LFU\",\r\nif(security_result.summary = \"Multifactor Authentication\", \"MFA\",\r\nif(security_result.summary = \"None Authentication\", \"NA\",\r\nif(security_result.summary = \"No Remote Command\", \"NRC\",\r\nif(security_result.summary = \"Public Key Authentication\", \"PKA\",\r\nif(security_result.summary = \"Reverse SSH Initiated\", \"RSI\",\r\nif(security_result.summary = \"Reverse SSH Initiated Automate\", \"RSIA\",\r\nif(security_result.summary = \"Reverse SSH Keystrokes\", \"RSK\",\r\nif(security_result.summary = \"Reverse SSH Logged In\", \"RSL\",\r\nif(security_result.summary = \"Reverse SSH Providioned\", \"RSP\",\r\nif(security_result.summary = \"Authentication Scanning\", \"SA\",\r\nif(security_result.summary = \"Capabilities Scanning\", \"SC\",\r\nif(security_result.summary = \"Small Client File Download\", \"SFD\",\r\nif(security_result.summary = \"Small Client File Upload\", \"SFU\",\r\nif(security_result.summary = \"Other Scanning\", \"SP\",\r\nif(security_result.summary = \"Version Scanning\", \"SV\",\r\nif(security_result.summary = \"Unknown Authentication\", \"UA\", \"Unknown\"\r\n)))))))))))))))))))))))))))))\r\n$host_key=security_result.detection_fields[\"host_key\"]\r\n$host_key!=\"\"\r\nmatch:\r\n    principal.ip, target.ip\r\noutcome:\r\n    $host_keys=array_distinct($host_key)\r\n    $inferences=array_distinct(strings.concat($inference_name, \" : \", security_result.summary))\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc",
-                    "input": {
-                        "relativeTime": {
-                            "timeUnit": "DAY",
-                            "startTimeVal": "1"
-                        }
-                    },
-                    "etag": "44abfb4b143c7d7d663d4cc85a7c0332cefa25730e684e71232089fe660635b3"
-                },
-                {
-                    "name": "b54338ee-cdb3-496a-888e-8bf83c013533",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssh\"\r\n\r\n$date=timestamp.get_date(metadata.event_timestamp.seconds)\r\n$hassh=if(principal.labels[\"hassh\"]!=\"\", principal.labels[\"hassh\"], \"Unknown\")\r\n$hassh_server=if(target.labels[\"hassh_server\"]!=\"\", target.labels[\"hassh_server\"], \"Unknown\")\r\n$principal_ip=if(principal.ip!=\"\", principal.ip, \"Unknown\")\r\n$target_ip=if(target.ip!=\"\", target.ip, \"Unknown\")\r\n\r\nmatch:\r\n    $principal_ip, $hassh, $target_ip, $hassh_server\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    5",
-                    "input": {
-                        "relativeTime": {
-                            "timeUnit": "DAY",
-                            "startTimeVal": "1"
-                        }
-                    },
-                    "etag": "6907e619a5817a8824d953ee2be2c0fd936f452eacd59cfef1ecc96c0b2fa529"
-                },
-                {
-                    "name": "fdbb3e58-4223-422b-90aa-c1b752be5664",
+                    "name": "9a5d0a02-c6a5-4f56-8ea8-dd8adee9e05a",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssh\"\r\n$inferences=security_result.summary\r\n$inferences!=\"\"\r\nmatch:\r\n    $inferences\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10",
                     "input": {
                         "relativeTime": {
@@ -760,7 +705,62 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "4c4e0fdbeab53bbfc58414119bf4be39b09ace9d996044e37314c754e771a52f"
+                    "etag": "e938b62395a48718b17d3d863547761327e5532a5547438fa3cb08db38d8cee0"
+                },
+                {
+                    "name": "0f17f742-5bdf-469e-9a31-73609e050823",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssh\"\r\nsecurity_result.summary !=\"\"\r\n$inference_name=if(security_result.summary = \"Client Authentication Bypass\", \"ABP\",\r\nif(security_result.summary = \"SSH Agent Forwarding Requested\", \"AFR\",\r\nif(security_result.summary = \"Automated Password Authentication\", \"APWA\",\r\nif(security_result.summary = \"Automated Interaction\", \"AUTO\",\r\nif(security_result.summary = \"Server Banner\", \"BAN\",\r\nif(security_result.summary = \"Client Brute Force Guessing\", \"BF\",\r\nif(security_result.summary = \"Client Brute Force Success\", \"BFS\",\r\nif(security_result.summary = \"Client Trusted Server\", \"CTS\",\r\nif(security_result.summary = \"Client Untrusted Server\", \"CUS\",\r\nif(security_result.summary = \"Interactive Password Authentication\", \"IPWA\",\r\nif(security_result.summary = \"Keystrokes\", \"KS\",\r\nif(security_result.summary = \"Large Client File Donwload\", \"LFD\",\r\nif(security_result.summary = \"Large Client File Upload\", \"LFU\",\r\nif(security_result.summary = \"Multifactor Authentication\", \"MFA\",\r\nif(security_result.summary = \"None Authentication\", \"NA\",\r\nif(security_result.summary = \"No Remote Command\", \"NRC\",\r\nif(security_result.summary = \"Public Key Authentication\", \"PKA\",\r\nif(security_result.summary = \"Reverse SSH Initiated\", \"RSI\",\r\nif(security_result.summary = \"Reverse SSH Initiated Automate\", \"RSIA\",\r\nif(security_result.summary = \"Reverse SSH Keystrokes\", \"RSK\",\r\nif(security_result.summary = \"Reverse SSH Logged In\", \"RSL\",\r\nif(security_result.summary = \"Reverse SSH Providioned\", \"RSP\",\r\nif(security_result.summary = \"Authentication Scanning\", \"SA\",\r\nif(security_result.summary = \"Capabilities Scanning\", \"SC\",\r\nif(security_result.summary = \"Small Client File Download\", \"SFD\",\r\nif(security_result.summary = \"Small Client File Upload\", \"SFU\",\r\nif(security_result.summary = \"Other Scanning\", \"SP\",\r\nif(security_result.summary = \"Version Scanning\", \"SV\",\r\nif(security_result.summary = \"Unknown Authentication\", \"UA\", \"Unknown\"\r\n)))))))))))))))))))))))))))))\r\n$time=timestamp.get_timestamp(metadata.event_timestamp.seconds)\r\nmatch:\r\n    $time, principal.ip, target.ip\r\noutcome:\r\n    $inferences=array_distinct($inference_name)\r\norder:\r\n    $time desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "4cc86147713ed07656d87e22bba02ffb7f8490ac840171f03ffbe07659358281"
+                },
+                {
+                    "name": "6ebabfb9-71a5-4ea8-94d4-93a97bf96b32",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssh\"\r\n$inferences=security_result.summary\r\n$inferences!=\"\"\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour, $inferences\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $date_hour asc\r\n\r\n",
+                    "input": {
+                        "timeWindow": {
+                            "startTime": "2025-03-26T00:00:00Z",
+                            "endTime": "2025-03-27T09:23:23.777Z"
+                        }
+                    },
+                    "etag": "fd1553e1c1f34ffa3ca4e2f3ef91ceb570b748e9886f9421995a0260796fed2f"
+                },
+                {
+                    "name": "a42ac631-7e2a-4328-9198-6cb3797e38d3",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssh\"\r\nsecurity_result.summary !=\"\"\r\n$inference_name=if(security_result.summary = \"Client Authentication Bypass\", \"ABP\",\r\nif(security_result.summary = \"SSH Agent Forwarding Requested\", \"AFR\",\r\nif(security_result.summary = \"Automated Password Authentication\", \"APWA\",\r\nif(security_result.summary = \"Automated Interaction\", \"AUTO\",\r\nif(security_result.summary = \"Server Banner\", \"BAN\",\r\nif(security_result.summary = \"Client Brute Force Guessing\", \"BF\",\r\nif(security_result.summary = \"Client Brute Force Success\", \"BFS\",\r\nif(security_result.summary = \"Client Trusted Server\", \"CTS\",\r\nif(security_result.summary = \"Client Untrusted Server\", \"CUS\",\r\nif(security_result.summary = \"Interactive Password Authentication\", \"IPWA\",\r\nif(security_result.summary = \"Keystrokes\", \"KS\",\r\nif(security_result.summary = \"Large Client File Donwload\", \"LFD\",\r\nif(security_result.summary = \"Large Client File Upload\", \"LFU\",\r\nif(security_result.summary = \"Multifactor Authentication\", \"MFA\",\r\nif(security_result.summary = \"None Authentication\", \"NA\",\r\nif(security_result.summary = \"No Remote Command\", \"NRC\",\r\nif(security_result.summary = \"Public Key Authentication\", \"PKA\",\r\nif(security_result.summary = \"Reverse SSH Initiated\", \"RSI\",\r\nif(security_result.summary = \"Reverse SSH Initiated Automate\", \"RSIA\",\r\nif(security_result.summary = \"Reverse SSH Keystrokes\", \"RSK\",\r\nif(security_result.summary = \"Reverse SSH Logged In\", \"RSL\",\r\nif(security_result.summary = \"Reverse SSH Providioned\", \"RSP\",\r\nif(security_result.summary = \"Authentication Scanning\", \"SA\",\r\nif(security_result.summary = \"Capabilities Scanning\", \"SC\",\r\nif(security_result.summary = \"Small Client File Download\", \"SFD\",\r\nif(security_result.summary = \"Small Client File Upload\", \"SFU\",\r\nif(security_result.summary = \"Other Scanning\", \"SP\",\r\nif(security_result.summary = \"Version Scanning\", \"SV\",\r\nif(security_result.summary = \"Unknown Authentication\", \"UA\", \"Unknown\"\r\n)))))))))))))))))))))))))))))\r\nmatch:\r\n    principal.ip, target.ip\r\noutcome:\r\n    $inferences=array_distinct(strings.concat($inference_name, \" : \", security_result.summary))\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    5",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "9946f30759911e95c9f92173f3a1a512f7da9ebb1dceb282dfdadc5f7d72d134"
+                },
+                {
+                    "name": "74307cb8-d9ee-43ad-8a68-56057f1d8cb5",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssh\"\r\nsecurity_result.summary !=\"\"\r\n$inference_name=if(security_result.summary = \"Client Authentication Bypass\", \"ABP\",\r\nif(security_result.summary = \"SSH Agent Forwarding Requested\", \"AFR\",\r\nif(security_result.summary = \"Automated Password Authentication\", \"APWA\",\r\nif(security_result.summary = \"Automated Interaction\", \"AUTO\",\r\nif(security_result.summary = \"Server Banner\", \"BAN\",\r\nif(security_result.summary = \"Client Brute Force Guessing\", \"BF\",\r\nif(security_result.summary = \"Client Brute Force Success\", \"BFS\",\r\nif(security_result.summary = \"Client Trusted Server\", \"CTS\",\r\nif(security_result.summary = \"Client Untrusted Server\", \"CUS\",\r\nif(security_result.summary = \"Interactive Password Authentication\", \"IPWA\",\r\nif(security_result.summary = \"Keystrokes\", \"KS\",\r\nif(security_result.summary = \"Large Client File Donwload\", \"LFD\",\r\nif(security_result.summary = \"Large Client File Upload\", \"LFU\",\r\nif(security_result.summary = \"Multifactor Authentication\", \"MFA\",\r\nif(security_result.summary = \"None Authentication\", \"NA\",\r\nif(security_result.summary = \"No Remote Command\", \"NRC\",\r\nif(security_result.summary = \"Public Key Authentication\", \"PKA\",\r\nif(security_result.summary = \"Reverse SSH Initiated\", \"RSI\",\r\nif(security_result.summary = \"Reverse SSH Initiated Automate\", \"RSIA\",\r\nif(security_result.summary = \"Reverse SSH Keystrokes\", \"RSK\",\r\nif(security_result.summary = \"Reverse SSH Logged In\", \"RSL\",\r\nif(security_result.summary = \"Reverse SSH Providioned\", \"RSP\",\r\nif(security_result.summary = \"Authentication Scanning\", \"SA\",\r\nif(security_result.summary = \"Capabilities Scanning\", \"SC\",\r\nif(security_result.summary = \"Small Client File Download\", \"SFD\",\r\nif(security_result.summary = \"Small Client File Upload\", \"SFU\",\r\nif(security_result.summary = \"Other Scanning\", \"SP\",\r\nif(security_result.summary = \"Version Scanning\", \"SV\",\r\nif(security_result.summary = \"Unknown Authentication\", \"UA\", \"Unknown\"\r\n)))))))))))))))))))))))))))))\r\n$host_key=security_result.detection_fields[\"host_key\"]\r\n$host_key!=\"\"\r\nmatch:\r\n    principal.ip, target.ip\r\noutcome:\r\n    $host_keys=array_distinct($host_key)\r\n    $inferences=array_distinct(strings.concat($inference_name, \" : \", security_result.summary))\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "f9f88a9ddc0e24f1a7c57592ee6d16df2f421ea1a4c870f99c90e20c80ed6e38"
+                },
+                {
+                    "name": "fd4defb8-0938-4a44-8ab8-145cfa054c42",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssh\"\r\n\r\n$date=timestamp.get_date(metadata.event_timestamp.seconds)\r\n$hassh=if(principal.labels[\"hassh\"]!=\"\", principal.labels[\"hassh\"], \"Unknown\")\r\n$hassh_server=if(target.labels[\"hassh_server\"]!=\"\", target.labels[\"hassh_server\"], \"Unknown\")\r\n$principal_ip=if(principal.ip!=\"\", principal.ip, \"Unknown\")\r\n$target_ip=if(target.ip!=\"\", target.ip, \"Unknown\")\r\n\r\nmatch:\r\n    $principal_ip, $hassh, $target_ip, $hassh_server\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    5",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "88a675f1eea0f45f8740d28873fe28705ff00e8417ea27f9c6983323f126a249"
                 }
             ]
         }

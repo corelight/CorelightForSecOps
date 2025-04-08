@@ -10,7 +10,7 @@ Before you begin, ensure the following prerequisites are met:
 
 - **Google SecOps Platform Access:** You must have an active account with access to the Google SecOps platform.
 - **Google SecOps Native Dashboards Access:** Ensure you have the necessary permissions to access and create custom dashboards in the native dashboards section.
-- **GitHub Repository Access:** Confirm that you can access the [CorelightForSecOps](https://github.com/corelight/CorelightForSecOps/tree/main) GitHub repository, which contains the required dashboard configuration files.
+- **GitHub Repository Access:** Ensure you have access to the [CorelightForSecOps](https://github.com/corelight/CorelightForSecOps/tree/main) GitHub repository, which includes the necessary dashboard configuration files. Also, verify that the required parsers are enabled and logs are sent to Google Security Operations using Corelight Sensor which is stated [here](https://github.com/corelight/CorelightForSecOps/blob/main/README.md).
 
 ## Installation & Configuration
 

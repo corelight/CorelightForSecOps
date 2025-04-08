@@ -2,7 +2,7 @@
     "dashboards": [
         {
             "dashboard": {
-                "name": "2cba7dd5-6822-44c0-9321-c5cc0c68fb96",
+                "name": "c726cb96-3728-483c-9a5d-5fe877d2632d",
                 "displayName": "Corelight → Data Explorer → Files",
                 "definition": {
                     "filters": [
@@ -20,15 +20,15 @@
                             ],
                             "displayName": "Global Time Filter",
                             "chartIds": [
-                                "c565adfa-8a46-4ee7-8aac-a28a177c63f6",
-                                "8f48f8ad-b257-44b5-bdcc-c2f79d1d2fc0",
-                                "4732d536-2362-42bf-bfaa-e1ff4b945600",
-                                "ba83690d-6299-4966-b5dc-018b577b0f00",
-                                "e27e4f90-9de9-4bc3-840f-608f159abea2",
-                                "05830295-ea45-4d89-a99e-cb73ab38c205",
-                                "bbddae58-d3b5-493e-bf81-8db9ddc974c6",
-                                "96d539a7-3046-42a4-ab22-410b5619061c",
-                                "d2be86ed-a8de-4dcd-a961-8639e39476c9"
+                                "5d4ba2d7-9234-4b92-803b-65460793d105",
+                                "9a37b12f-c2ac-4d6f-9d65-fcf7e30887dc",
+                                "9a5844d0-c225-4461-8fbb-62c99760c02e",
+                                "c0aa7dba-1bda-4771-9dc8-2df86709d85c",
+                                "4fb1fab8-deaf-4bcb-b47b-98148993a672",
+                                "756e5325-c457-4fbb-b5f0-7561961d8226",
+                                "ed5fb26f-891a-4e08-b639-36e57f52998d",
+                                "5644c1ef-ed47-4f4d-8b15-fa0499baaa6f",
+                                "08b7a2bc-568a-4b4b-ad6c-16b74ef0e312"
                             ],
                             "isStandardTimeRangeFilter": true,
                             "isStandardTimeRangeFilterEnabled": true
@@ -47,21 +47,21 @@
                             ],
                             "displayName": "Corelight Sensor",
                             "chartIds": [
-                                "ba83690d-6299-4966-b5dc-018b577b0f00",
-                                "e27e4f90-9de9-4bc3-840f-608f159abea2",
-                                "c565adfa-8a46-4ee7-8aac-a28a177c63f6",
-                                "8f48f8ad-b257-44b5-bdcc-c2f79d1d2fc0",
-                                "05830295-ea45-4d89-a99e-cb73ab38c205",
-                                "96d539a7-3046-42a4-ab22-410b5619061c",
-                                "bbddae58-d3b5-493e-bf81-8db9ddc974c6",
-                                "d2be86ed-a8de-4dcd-a961-8639e39476c9",
-                                "4732d536-2362-42bf-bfaa-e1ff4b945600"
+                                "c0aa7dba-1bda-4771-9dc8-2df86709d85c",
+                                "4fb1fab8-deaf-4bcb-b47b-98148993a672",
+                                "5d4ba2d7-9234-4b92-803b-65460793d105",
+                                "9a37b12f-c2ac-4d6f-9d65-fcf7e30887dc",
+                                "756e5325-c457-4fbb-b5f0-7561961d8226",
+                                "5644c1ef-ed47-4f4d-8b15-fa0499baaa6f",
+                                "ed5fb26f-891a-4e08-b639-36e57f52998d",
+                                "08b7a2bc-568a-4b4b-ad6c-16b74ef0e312",
+                                "9a5844d0-c225-4461-8fbb-62c99760c02e"
                             ]
                         }
                     ],
                     "charts": [
                         {
-                            "dashboardChart": "c565adfa-8a46-4ee7-8aac-a28a177c63f6",
+                            "dashboardChart": "5d4ba2d7-9234-4b92-803b-65460793d105",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -74,7 +74,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "4732d536-2362-42bf-bfaa-e1ff4b945600",
+                            "dashboardChart": "9a5844d0-c225-4461-8fbb-62c99760c02e",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -87,7 +87,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "8f48f8ad-b257-44b5-bdcc-c2f79d1d2fc0",
+                            "dashboardChart": "9a37b12f-c2ac-4d6f-9d65-fcf7e30887dc",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -100,7 +100,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "05830295-ea45-4d89-a99e-cb73ab38c205",
+                            "dashboardChart": "756e5325-c457-4fbb-b5f0-7561961d8226",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -113,7 +113,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "96d539a7-3046-42a4-ab22-410b5619061c",
+                            "dashboardChart": "5644c1ef-ed47-4f4d-8b15-fa0499baaa6f",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -126,7 +126,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "e27e4f90-9de9-4bc3-840f-608f159abea2",
+                            "dashboardChart": "4fb1fab8-deaf-4bcb-b47b-98148993a672",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -139,7 +139,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "ba83690d-6299-4966-b5dc-018b577b0f00",
+                            "dashboardChart": "c0aa7dba-1bda-4771-9dc8-2df86709d85c",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -152,7 +152,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "d2be86ed-a8de-4dcd-a961-8639e39476c9",
+                            "dashboardChart": "08b7a2bc-568a-4b4b-ad6c-16b74ef0e312",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -165,7 +165,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "bbddae58-d3b5-493e-bf81-8db9ddc974c6",
+                            "dashboardChart": "ed5fb26f-891a-4e08-b639-36e57f52998d",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -180,15 +180,15 @@
                     ]
                 },
                 "type": "CUSTOM",
-                "etag": "f853c11d5a484d65a296eb654666a0b0d92811a75208bdbe4289b7c0623a5231",
+                "etag": "5cfe5ce36fd46bec4845078ea10817d1a4213cc74a8016201ca38c031b24b715",
                 "access": "DASHBOARD_PRIVATE"
             },
             "dashboardCharts": [
                 {
-                    "name": "bbddae58-d3b5-493e-bf81-8db9ddc974c6",
+                    "name": "ed5fb26f-891a-4e08-b639-36e57f52998d",
                     "displayName": "Top Receiving (rx_host) Hosts - # Files",
                     "chartDatasource": {
-                        "dashboardQuery": "53170d8c-233d-4b95-9c7b-39d0c4bc101c",
+                        "dashboardQuery": "bfaed226-1e11-402f-adc0-3aeec7919405",
                         "dataSources": [
                             "UDM"
                         ]
@@ -222,188 +222,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "c7b25bb68c88c669da288eb811ca3b86967b013758801f701b6d3397cb3b589d"
+                    "etag": "61d501365a3766da6088553d9fcfc75d18d480afc5c1cd7e4e7732bc3db003c0"
                 },
                 {
-                    "name": "ba83690d-6299-4966-b5dc-018b577b0f00",
-                    "displayName": "Top Transmitting (tx_host) Hosts - Bytes",
-                    "chartDatasource": {
-                        "dashboardQuery": "bb43d623-577d-4df1-8c46-8486af7c124d",
-                        "dataSources": [
-                            "UDM"
-                        ]
-                    },
-                    "visualization": {
-                        "xAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "yAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "legends": [
-                            {
-                                "legendOrient": "HORIZONTAL"
-                            }
-                        ],
-                        "columnDefs": [
-                            {
-                                "field": "principal.ip",
-                                "header": "Source Host"
-                            },
-                            {
-                                "field": "src_bytes",
-                                "header": "Source Bytes"
-                            }
-                        ],
-                        "groupingType": "Off"
-                    },
-                    "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "d2812cf4c3e4e6ed21b494c6480f1206f8e201191ec577a34adb305053530151"
-                },
-                {
-                    "name": "8f48f8ad-b257-44b5-bdcc-c2f79d1d2fc0",
-                    "displayName": "File Flow - # of Files",
-                    "chartDatasource": {
-                        "dashboardQuery": "a434744f-2f35-466e-8ced-28a4d70bd0f9",
-                        "dataSources": [
-                            "UDM"
-                        ]
-                    },
-                    "visualization": {
-                        "series": [
-                            {
-                                "seriesName": "internal",
-                                "seriesType": "LINE",
-                                "encode": {
-                                    "x": "date_hour",
-                                    "y": "count"
-                                },
-                                "dataLabel": {},
-                                "itemStyle": {
-                                    "color": "#10a3b7"
-                                },
-                                "seriesUniqueValue": "internal"
-                            }
-                        ],
-                        "xAxes": [
-                            {
-                                "axisType": "CATEGORY",
-                                "displayName": " "
-                            }
-                        ],
-                        "yAxes": [
-                            {
-                                "axisType": "VALUE",
-                                "displayName": "# of Files"
-                            }
-                        ],
-                        "legends": [
-                            {
-                                "bottom": 12,
-                                "legendOrient": "HORIZONTAL"
-                            }
-                        ],
-                        "seriesColumn": [
-                            "directional"
-                        ],
-                        "groupingType": "Grouped"
-                    },
-                    "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "43550987c17ae2e92f8eec602b6d91bbee3a23066d0753a873c224e5361cf02e"
-                },
-                {
-                    "name": "e27e4f90-9de9-4bc3-840f-608f159abea2",
-                    "displayName": "Top Transmitting (tx_host) Hosts - # Files",
-                    "chartDatasource": {
-                        "dashboardQuery": "512bdb5b-f09e-4015-8f6c-1601ff82e536",
-                        "dataSources": [
-                            "UDM"
-                        ]
-                    },
-                    "visualization": {
-                        "xAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "yAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "legends": [
-                            {
-                                "legendOrient": "HORIZONTAL"
-                            }
-                        ],
-                        "columnDefs": [
-                            {
-                                "field": "principal.ip",
-                                "header": "Source Host"
-                            },
-                            {
-                                "field": "count",
-                                "header": "Source File Count"
-                            }
-                        ],
-                        "groupingType": "Off"
-                    },
-                    "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "3ac95e93f74028392760471d15f245444bfe7c244577756a5fd6e8346dedbd66"
-                },
-                {
-                    "name": "4732d536-2362-42bf-bfaa-e1ff4b945600",
-                    "displayName": "Corelight Mime Type to Filename Check",
-                    "chartDatasource": {
-                        "dashboardQuery": "e93e026a-902d-4d20-ab5e-f1847970285d",
-                        "dataSources": [
-                            "UDM"
-                        ]
-                    },
-                    "visualization": {
-                        "xAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "yAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "legends": [
-                            {
-                                "legendOrient": "HORIZONTAL"
-                            }
-                        ],
-                        "columnDefs": [
-                            {
-                                "field": "mime_type",
-                                "header": "Mime Type"
-                            },
-                            {
-                                "field": "file_name",
-                                "header": "Filename"
-                            },
-                            {
-                                "field": "count",
-                                "header": "Count"
-                            }
-                        ],
-                        "groupingType": "Off"
-                    },
-                    "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "4ce97839bf1e623f78f6686645438554053679976692b93eccbadaeb3614de2d"
-                },
-                {
-                    "name": "c565adfa-8a46-4ee7-8aac-a28a177c63f6",
+                    "name": "5d4ba2d7-9234-4b92-803b-65460793d105",
                     "displayName": "Top 20 Mime Types by File Count",
                     "chartDatasource": {
-                        "dashboardQuery": "eb48225e-186e-48cb-a705-fac0292131f1",
+                        "dashboardQuery": "45b06a2f-55eb-4304-bcd6-2aa33b4275f8",
                         "dataSources": [
                             "UDM"
                         ]
@@ -439,13 +264,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "aab3e80214eb7092dbd8770ff5c65a880c0a05d7c1b9366515a5c6bd0bf71cb7"
+                    "etag": "d15cc47b87339c3f65168b951abbff10ae908bbef77a24c897e4d55a77cf7e20"
                 },
                 {
-                    "name": "05830295-ea45-4d89-a99e-cb73ab38c205",
+                    "name": "756e5325-c457-4fbb-b5f0-7561961d8226",
                     "displayName": "File Flow - Bytes",
                     "chartDatasource": {
-                        "dashboardQuery": "96de8e9f-0637-4375-a0d8-1f61e4c8fc24",
+                        "dashboardQuery": "47905af3-f51a-47e9-9a73-d76012711574",
                         "dataSources": [
                             "UDM"
                         ]
@@ -490,13 +315,228 @@
                         "groupingType": "Grouped"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "3047bc424d899aaeb6c404c6969c85b55ddb5099f9a98cc3a461bbe0afb5013e"
+                    "etag": "17abc6202c530a10edb7763a59555ec39a9d63f03f6bb87c77f895d977f90ad4"
                 },
                 {
-                    "name": "96d539a7-3046-42a4-ab22-410b5619061c",
+                    "name": "08b7a2bc-568a-4b4b-ad6c-16b74ef0e312",
+                    "displayName": "Top Receiving (rx_host) Hosts - Bytes",
+                    "chartDatasource": {
+                        "dashboardQuery": "d715f960-395e-4e47-9c3d-b1e6dd078bdb",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "target.ip",
+                                "header": "Destination Host"
+                            },
+                            {
+                                "field": "dest_bytes",
+                                "header": "Destination Bytes"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "4a719faaadb49fe4c5e3d3f25a4230da66f2cecb2e0b2104f87614329da437e2"
+                },
+                {
+                    "name": "c0aa7dba-1bda-4771-9dc8-2df86709d85c",
+                    "displayName": "Top Transmitting (tx_host) Hosts - Bytes",
+                    "chartDatasource": {
+                        "dashboardQuery": "52443456-d28b-4450-acb7-7760d5e8c006",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "principal.ip",
+                                "header": "Source Host"
+                            },
+                            {
+                                "field": "src_bytes",
+                                "header": "Source Bytes"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "d73cea8bf179f2d47244bd4b797a5f99ce8596336e831cd80f21096e3789d44d"
+                },
+                {
+                    "name": "9a37b12f-c2ac-4d6f-9d65-fcf7e30887dc",
+                    "displayName": "File Flow - # of Files",
+                    "chartDatasource": {
+                        "dashboardQuery": "126474b6-5dae-4c59-92b9-ea9e2fb6473e",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "internal",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#10a3b7"
+                                },
+                                "seriesUniqueValue": "internal"
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": " "
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "# of Files"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "bottom": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "seriesColumn": [
+                            "directional"
+                        ],
+                        "groupingType": "Grouped"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "836eaa1ae7c22da2b48ece3a83b33676e8aede6eecba0211c9004d52e68f663b"
+                },
+                {
+                    "name": "4fb1fab8-deaf-4bcb-b47b-98148993a672",
+                    "displayName": "Top Transmitting (tx_host) Hosts - # Files",
+                    "chartDatasource": {
+                        "dashboardQuery": "b6cb07a6-faef-4028-aac2-2da02f342fbe",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "principal.ip",
+                                "header": "Source Host"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Source File Count"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "5b5e8eecfd8e9ec3f32e964859bebea45a0a65f57ad609f18741541e4d2b8f0c"
+                },
+                {
+                    "name": "9a5844d0-c225-4461-8fbb-62c99760c02e",
+                    "displayName": "Corelight Mime Type to Filename Check",
+                    "chartDatasource": {
+                        "dashboardQuery": "1eb853a6-f581-4431-b4a1-4f435f35ff12",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "mime_type",
+                                "header": "Mime Type"
+                            },
+                            {
+                                "field": "file_name",
+                                "header": "Filename"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Count"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "a9c53b3a09d5551e5f50f970f25a19c250c55ee8e6da1e67edee8ec567175571"
+                },
+                {
+                    "name": "5644c1ef-ed47-4f4d-8b15-fa0499baaa6f",
                     "displayName": "Top File Protocols by File Count",
                     "chartDatasource": {
-                        "dashboardQuery": "adf3c16b-88fb-4d9e-b357-88485dfe10bf",
+                        "dashboardQuery": "daf168cd-43bc-4f55-8dce-32ee6fac6322",
                         "dataSources": [
                             "UDM"
                         ]
@@ -535,118 +575,12 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "45ffd12ae0cc5a06a3411e32ba2521278a711f02649622bca7b295e221f256b8"
-                },
-                {
-                    "name": "d2be86ed-a8de-4dcd-a961-8639e39476c9",
-                    "displayName": "Top Receiving (rx_host) Hosts - Bytes",
-                    "chartDatasource": {
-                        "dashboardQuery": "e695f7a1-eaff-40f1-91d2-54a25d34107d",
-                        "dataSources": [
-                            "UDM"
-                        ]
-                    },
-                    "visualization": {
-                        "xAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "yAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "legends": [
-                            {
-                                "legendOrient": "HORIZONTAL"
-                            }
-                        ],
-                        "columnDefs": [
-                            {
-                                "field": "target.ip",
-                                "header": "Destination Hosts"
-                            },
-                            {
-                                "field": "dest_bytes",
-                                "header": "Destination Bytes"
-                            }
-                        ],
-                        "groupingType": "Off"
-                    },
-                    "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "6d64a1bc17c97391759233981bee0b885a3307fb32f032346397e3214a8cf076"
+                    "etag": "033477f32db2d2e652983d664715459b78bd85aaf0f8bae307496e839d8e4799"
                 }
             ],
             "dashboardQueries": [
                 {
-                    "name": "512bdb5b-f09e-4015-8f6c-1601ff82e536",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$is_broadcast!=\"true\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\" \r\nmatch:\r\n    principal.ip\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
-                    "input": {
-                        "relativeTime": {
-                            "timeUnit": "DAY",
-                            "startTimeVal": "1"
-                        }
-                    },
-                    "etag": "2699c1098d7bc3acad4bd5412c44aac715477061c01c36a5c697e2c25e3082fe"
-                },
-                {
-                    "name": "e93e026a-902d-4d20-ab5e-f1847970285d",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\n$mime_type=about.file.mime_type\r\n$mime_type=\"application/x-dosexec\"\r\n$file_name=about.file.names\r\n$file_name!=/.*exe.*/\r\nmatch:\r\n    $mime_type, $file_name\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    15",
-                    "input": {
-                        "relativeTime": {
-                            "timeUnit": "DAY",
-                            "startTimeVal": "1"
-                        }
-                    },
-                    "etag": "4c6d06b9268a0cd8de3462eb7d12c69f8ada0aded0cb32f78f2c151396fd303d"
-                },
-                {
-                    "name": "adf3c16b-88fb-4d9e-b357-88485dfe10bf",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$is_broadcast!=\"true\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\" OR $mime_type!=\"application/pkix-cert\"\r\n$app=about.labels[\"source\"]\r\nmatch:\r\n    $app\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
-                    "input": {
-                        "relativeTime": {
-                            "timeUnit": "DAY",
-                            "startTimeVal": "1"
-                        }
-                    },
-                    "etag": "ea05465b25db762316e269ee2f6efe6bbfc467f99df3f56f2c7604ce8a5d2f99"
-                },
-                {
-                    "name": "e695f7a1-eaff-40f1-91d2-54a25d34107d",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$is_broadcast!=\"true\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\" \r\nmatch:\r\n    target.ip\r\noutcome:\r\n    $dest_bytes= (cast.as_float(strings.concat(sum(about.file.size), \"\")) * count_distinct(metadata.id)) / count(metadata.id)\r\norder:\r\n    $dest_bytes desc \r\nlimit:\r\n    10",
-                    "input": {
-                        "relativeTime": {
-                            "timeUnit": "DAY",
-                            "startTimeVal": "1"
-                        }
-                    },
-                    "etag": "be79cbc5bcffeb28c358d2c8556ceff1bfa6f21a221f642d68b498dd3c35a291"
-                },
-                {
-                    "name": "96de8e9f-0637-4375-a0d8-1f61e4c8fc24",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$is_broadcast!=\"true\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\"\r\n$is_src_internal=if(principal.ip in cidr %internal_cidr_list , \"true\", \"false\")\r\n$is_dest_internal=if(target.ip in cidr %internal_cidr_list , \"true\", \"false\")\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour, $is_src_internal, $is_dest_internal\r\noutcome:\r\n    $directional=array_distinct(if($is_src_internal=\"true\" AND $is_dest_internal=\"false\", \"sent\", \r\n             if($is_src_internal=\"false\" AND $is_dest_internal=\"true\",\"received\", \r\n             if($is_src_internal=\"true\" AND $is_dest_internal=\"true\", \"internal\", \"unknown\"\r\n              ))))\r\n    $event_ratio = (count(metadata.id) / count_distinct(metadata.id))\r\n    $file_size_sum=sum(about.file.size)\r\n    $actual_file_size = $file_size_sum / $event_ratio\r\norder:\r\n    $date_hour asc",
-                    "input": {
-                        "relativeTime": {
-                            "timeUnit": "DAY",
-                            "startTimeVal": "1"
-                        }
-                    },
-                    "etag": "f2d15877f6a53fab529656660ea983e2bba860f6a13387ef1c97c84fdb3840e1"
-                },
-                {
-                    "name": "53170d8c-233d-4b95-9c7b-39d0c4bc101c",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$is_broadcast!=\"true\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\" \r\nmatch:\r\n    target.ip\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
-                    "input": {
-                        "relativeTime": {
-                            "timeUnit": "DAY",
-                            "startTimeVal": "1"
-                        }
-                    },
-                    "etag": "10f6463b3779c3a87ca0e27318e2f33b8962942fd9c6b37159acf6f5b2aebe64"
-                },
-                {
-                    "name": "bb43d623-577d-4df1-8c46-8486af7c124d",
+                    "name": "52443456-d28b-4450-acb7-7760d5e8c006",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$is_broadcast!=\"true\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\" \r\nmatch:\r\n    principal.ip\r\noutcome:\r\n    $src_bytes = (cast.as_float(strings.concat(sum(about.file.size), \"\")) * count_distinct(metadata.id)) / count(metadata.id)\r\norder:\r\n    $src_bytes desc \r\nlimit:\r\n    10",
                     "input": {
                         "relativeTime": {
@@ -654,10 +588,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "921c81441f220bc6873b02cec4dd2ef958da95dc31bfbb38067bdd7a6f3dec54"
+                    "etag": "f5bd32801fa801306d84f1a6b8dec1161410d4ce612d272ddc1d593595b8da97"
                 },
                 {
-                    "name": "a434744f-2f35-466e-8ced-28a4d70bd0f9",
+                    "name": "126474b6-5dae-4c59-92b9-ea9e2fb6473e",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$is_broadcast!=\"true\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\"\r\n$is_src_internal=if(principal.ip in cidr %internal_cidr_list , \"true\", \"false\")\r\n$is_dest_internal=if(target.ip in cidr %internal_cidr_list , \"true\", \"false\")\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour, $is_src_internal, $is_dest_internal\r\noutcome:\r\n    $directional=array_distinct(if($is_src_internal=\"true\" AND $is_dest_internal=\"false\", \"sent\", \r\n             if($is_src_internal=\"false\" AND $is_dest_internal=\"true\",\"received\", \r\n             if($is_src_internal=\"true\" AND $is_dest_internal=\"true\", \"internal\", \"unknown\"\r\n              ))))\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $date_hour asc",
                     "input": {
                         "relativeTime": {
@@ -665,10 +599,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "9a5d79fb1b6faa14c029ec8d23c364dc6c47c947165b49ad97520ce7ca86a07b"
+                    "etag": "a907bc4422d3587bbfec164286e18c45b63348776e1c6ddf950db0c2a39944b3"
                 },
                 {
-                    "name": "eb48225e-186e-48cb-a705-fac0292131f1",
+                    "name": "45b06a2f-55eb-4304-bcd6-2aa33b4275f8",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\nobserver.hostname!=\"\"\r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$is_broadcast!=\"true\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\" AND $mime_type!=\"application/pkix-cert\"\r\nmatch:\r\n    $mime_type\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    20",
                     "input": {
                         "relativeTime": {
@@ -676,7 +610,73 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "7aa6b896a8947ce8e6a25423b078ce4df3abba12a354038fccbdf860f3aac323"
+                    "etag": "9e13a796fa4231623c889f6102a1b81f08548b6c2397074bb6a1e26762ce30dd"
+                },
+                {
+                    "name": "47905af3-f51a-47e9-9a73-d76012711574",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$is_broadcast!=\"true\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\"\r\n$is_src_internal=if(principal.ip in cidr %internal_cidr_list , \"true\", \"false\")\r\n$is_dest_internal=if(target.ip in cidr %internal_cidr_list , \"true\", \"false\")\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour, $is_src_internal, $is_dest_internal\r\noutcome:\r\n    $directional=array_distinct(if($is_src_internal=\"true\" AND $is_dest_internal=\"false\", \"sent\", \r\n             if($is_src_internal=\"false\" AND $is_dest_internal=\"true\",\"received\", \r\n             if($is_src_internal=\"true\" AND $is_dest_internal=\"true\", \"internal\", \"unknown\"\r\n              ))))\r\n    $event_ratio = (count(metadata.id) / count_distinct(metadata.id))\r\n    $file_size_sum=sum(about.file.size)\r\n    $actual_file_size = $file_size_sum / $event_ratio\r\norder:\r\n    $date_hour asc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "663fcbc5a24b8e2eab7b971be14e5952d344d90ef8bbbc866e4f450a9e920194"
+                },
+                {
+                    "name": "1eb853a6-f581-4431-b4a1-4f435f35ff12",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\n$mime_type=about.file.mime_type\r\n$mime_type=\"application/x-dosexec\"\r\n$file_name=about.file.names\r\n$file_name!=/.*exe.*/\r\nmatch:\r\n    $mime_type, $file_name\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    15",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "e08f667d0612e154683bb946e343dc9af6f9dd6491ec281b64ebcac6470b0dab"
+                },
+                {
+                    "name": "d715f960-395e-4e47-9c3d-b1e6dd078bdb",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$is_broadcast!=\"true\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\" \r\nmatch:\r\n    target.ip\r\noutcome:\r\n    $dest_bytes= (cast.as_float(strings.concat(sum(about.file.size), \"\")) * count_distinct(metadata.id)) / count(metadata.id)\r\norder:\r\n    $dest_bytes desc \r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "6079e1b28982485bdf95ccadde985b932926c9ca8f72624af314ede3592d55ea"
+                },
+                {
+                    "name": "bfaed226-1e11-402f-adc0-3aeec7919405",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$is_broadcast!=\"true\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\" \r\nmatch:\r\n    target.ip\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "ebd2c54ea1fd537f9676ed44b063bd56c8d7d21026a823e1a72ef2b3fb8ac104"
+                },
+                {
+                    "name": "b6cb07a6-faef-4028-aac2-2da02f342fbe",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$is_broadcast!=\"true\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\" \r\nmatch:\r\n    principal.ip\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "b6e8826113d125aff2a88753c38ef71771a09b42087e71e4e0070d1e933abfef"
+                },
+                {
+                    "name": "daf168cd-43bc-4f55-8dce-32ee6fac6322",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$is_broadcast!=\"true\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\" OR $mime_type!=\"application/pkix-cert\"\r\n$app=about.labels[\"source\"]\r\nmatch:\r\n    $app\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "829fe0d9297b896a6fe386ae664e60c9b6a2c04acd2419b6b51448d2f5f473d7"
                 }
             ]
         }
