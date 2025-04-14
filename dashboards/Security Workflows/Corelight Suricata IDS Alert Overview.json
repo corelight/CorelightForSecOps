@@ -3,7 +3,7 @@
         {
             "dashboard": {
                 "name": "58d2309a-9b60-4d24-927b-d386909a157d",
-                "displayName": "  Corelight → Security Workflows → Corelight Suricata IDS Alert Overview",
+                "displayName": "Corelight → Security Workflows → Corelight Suricata IDS Alert Overview",
                 "definition": {
                     "filters": [
                         {

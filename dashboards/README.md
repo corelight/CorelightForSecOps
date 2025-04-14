@@ -32,7 +32,7 @@ Before you begin, ensure the following prerequisites are met:
 
 ![image](https://github.com/user-attachments/assets/461f3d11-c773-4560-b54f-6087e3994024)
 
-5. Finally, Click on Save and your list will be created.
+5. Finally, Click on **Save Edits** from the bottom right corner and your CIDR list will be created.
 
 ![image](https://github.com/user-attachments/assets/4af98b59-a14b-4604-be6f-87571c066235)
 
@@ -74,11 +74,11 @@ To set up the SecOps Native Dashboards, you'll need to deploy them from the [Cor
 
 ### Step 5: Rename the Imported Dashboard (Optional)
 
-- When importing a dashboard from your local machine, after selecting the file in the pop-up window, click the **Edit** button next to the selected dashboard file and rename it according to your preference.
-- Also, you can change the access of your dashboard to public or private based on your preferences. 
-- Lastly, click on **Save** after editing the name.
+- When importing a dashboard from your local machine, after selecting the file in the pop-up window, click the **Edit** button next to the selected dashboard file and rename it according to your preference and click on **Save** button.
+- Also, you can change the access of your dashboard to public or private based on your preferences.
+- Lastly, click on **Import** after editing the name.
 
-![image](https://github.com/user-attachments/assets/7577e7cd-0932-425c-ad71-b383e9d5eb72)
+![image](https://github.com/user-attachments/assets/1e8ae580-9851-4618-a13a-85b494f65a11)
 
 ![image](https://github.com/user-attachments/assets/e1b33f21-461c-4a8c-8eb8-ae37e1683b44)
 
@@ -87,6 +87,8 @@ To set up the SecOps Native Dashboards, you'll need to deploy them from the [Cor
 - Use the search bar to locate the newly imported dashboard by name.
 - Click on the dashboard to view its contents, including charts, graphs, and real-time data visualizations.
 
-![image](https://github.com/user-attachments/assets/6433989e-6c1d-4d22-a90b-4d37b62a577e)
+![image](https://github.com/user-attachments/assets/7caf9f95-21a7-4de2-9063-934902280bd3)
+
+![image](https://github.com/user-attachments/assets/41a43024-4004-4f21-a84b-2a0c5f7dcb18)
 
 After clicking on the dashboard you imported, you will be able to view your dashboard based on your instance data.
