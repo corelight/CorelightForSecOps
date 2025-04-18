@@ -1,0 +1,1130 @@
+{
+    "dashboards": [
+        {
+            "dashboard": {
+                "name": "05c96840-ffbb-49c4-a382-02759271b8f4",
+                "displayName": "Corelight → Sensor Overview → Rates",
+                "definition": {
+                    "filters": [
+                        {
+                            "id": "GlobalTimeFilter",
+                            "dataSource": "GLOBAL",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "PAST",
+                                    "fieldValues": [
+                                        "1",
+                                        "DAY"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Global Time Filter",
+                            "chartIds": [
+                                "6a000861-484d-41d3-a64e-78481e1c2bdb",
+                                "4eeeea31-3021-4151-9788-96f5e3076670",
+                                "706dde23-0dae-424a-aaff-94a34168c954",
+                                "fde7ba24-4a0a-4a48-8c69-cef8954b5953",
+                                "3057432d-faa9-434c-a482-060b0cd6ae8e",
+                                "867c5fdf-da3c-409d-9c28-9c9767144022",
+                                "d189cb88-ca86-4b08-aca2-88f696f9edda"
+                            ],
+                            "isStandardTimeRangeFilter": true,
+                            "isStandardTimeRangeFilterEnabled": true
+                        },
+                        {
+                            "id": "32200b02-4604-400a-b7db-f8dc4ae1a0bd",
+                            "dataSource": "UDM",
+                            "fieldPath": "observer.hostname",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Corelight Sensor",
+                            "chartIds": [
+                                "6a000861-484d-41d3-a64e-78481e1c2bdb",
+                                "4eeeea31-3021-4151-9788-96f5e3076670",
+                                "706dde23-0dae-424a-aaff-94a34168c954",
+                                "3057432d-faa9-434c-a482-060b0cd6ae8e",
+                                "fde7ba24-4a0a-4a48-8c69-cef8954b5953",
+                                "867c5fdf-da3c-409d-9c28-9c9767144022",
+                                "d189cb88-ca86-4b08-aca2-88f696f9edda"
+                            ]
+                        }
+                    ],
+                    "charts": [
+                        {
+                            "dashboardChart": "d189cb88-ca86-4b08-aca2-88f696f9edda",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 0,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "32200b02-4604-400a-b7db-f8dc4ae1a0bd"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "6a000861-484d-41d3-a64e-78481e1c2bdb",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 47,
+                                "startY": 25,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "32200b02-4604-400a-b7db-f8dc4ae1a0bd"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "867c5fdf-da3c-409d-9c28-9c9767144022",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 47,
+                                "startY": 52,
+                                "spanY": 26
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "32200b02-4604-400a-b7db-f8dc4ae1a0bd"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "706dde23-0dae-424a-aaff-94a34168c954",
+                            "chartLayout": {
+                                "startX": 47,
+                                "spanX": 49,
+                                "startY": 52,
+                                "spanY": 26
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "32200b02-4604-400a-b7db-f8dc4ae1a0bd"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "fde7ba24-4a0a-4a48-8c69-cef8954b5953",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 47,
+                                "startY": 78,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "32200b02-4604-400a-b7db-f8dc4ae1a0bd"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "4eeeea31-3021-4151-9788-96f5e3076670",
+                            "chartLayout": {
+                                "startX": 47,
+                                "spanX": 49,
+                                "startY": 78,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "32200b02-4604-400a-b7db-f8dc4ae1a0bd"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "3057432d-faa9-434c-a482-060b0cd6ae8e",
+                            "chartLayout": {
+                                "startX": 47,
+                                "spanX": 49,
+                                "startY": 25,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "32200b02-4604-400a-b7db-f8dc4ae1a0bd"
+                            ]
+                        }
+                    ]
+                },
+                "type": "CUSTOM",
+                "etag": "8317e89345fc9832824c7cab8e8a89bf7fbcf6f76bc2ed3e1983e825a2f2f6db",
+                "access": "DASHBOARD_PRIVATE"
+            },
+            "dashboardCharts": [
+                {
+                    "name": "706dde23-0dae-424a-aaff-94a34168c954",
+                    "displayName": "Traffic Volume - Management Interface - Packets",
+                    "chartDatasource": {
+                        "dashboardQuery": "35a5ef85-aa0c-4c34-89df-b64542e85fc4",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "Outbound Traffic Packet Rate",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg_rate"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "Outbound Traffic Packet Rate"
+                            },
+                            {
+                                "seriesName": "Inbound Traffic Packet Rate",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg_rate"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "Inbound Traffic Packet Rate"
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "KPackets per Second"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "bottom": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "seriesColumn": [
+                            "rate_name"
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "ca02a47f41dbf08a18652191f2350fd1549c2b3a4a73e79435caede5ab3439f5"
+                },
+                {
+                    "name": "867c5fdf-da3c-409d-9c28-9c9767144022",
+                    "displayName": "Traffic Volume - Management Interface",
+                    "chartDatasource": {
+                        "dashboardQuery": "1ff793e2-3cc6-43b3-b9a2-25cde3906556",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "Outbound Traffic Rate",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg_rate"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "Outbound Traffic Rate"
+                            },
+                            {
+                                "seriesName": "Inbound Traffic Rate",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg_rate"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "Inbound Traffic Rate"
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "Kbps per Second"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "bottom": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "seriesColumn": [
+                            "rate_name"
+                        ],
+                        "groupingType": "Grouped"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "3d3da0ee82813f12ed7163b68086586dd67ac601aa9638aef8abe94ad4d16a5e"
+                },
+                {
+                    "name": "3057432d-faa9-434c-a482-060b0cd6ae8e",
+                    "displayName": "Combined Traffic Volume - Monitor Interfaces - Packets",
+                    "chartDatasource": {
+                        "dashboardQuery": "ac54c3a8-de83-4482-817a-98ea2757496a",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "Monitor Traffic Packet Rate",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "rate"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "Monitor Traffic Packet Rate"
+                            },
+                            {
+                                "seriesName": "Monitor Traffic Drop Rate",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "rate"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "Monitor Traffic Drop Rate"
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "KPackets per Second"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "bottom": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "seriesColumn": [
+                            "kpps"
+                        ],
+                        "groupingType": "Grouped"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "149e8882ef3a3aa404d34677b24df396af044f99ad63941e0937b05dbdbf35d5"
+                },
+                {
+                    "name": "fde7ba24-4a0a-4a48-8c69-cef8954b5953",
+                    "displayName": "File Extraction",
+                    "chartDatasource": {
+                        "dashboardQuery": "9eae7924-1fa1-4d40-8b6d-d58641ddfaae",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "Queued Files for Amazon S3",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "files_avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "Queued Files for Amazon S3"
+                            },
+                            {
+                                "seriesName": "Extracted Files",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "files_avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "Extracted Files"
+                            },
+                            {
+                                "seriesName": "Queued Files for SFTP",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "files_avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#10a3b7"
+                                },
+                                "seriesUniqueValue": "Queued Files for SFTP"
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "# of FIles"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "bottom": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "seriesColumn": [
+                            "files"
+                        ],
+                        "groupingType": "Grouped"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "16be11c1db39bf797e89e6cd8ba17951f5d5eaf1273f0685e3f2f754f5671ee5"
+                },
+                {
+                    "name": "4eeeea31-3021-4151-9788-96f5e3076670",
+                    "displayName": "Log Entries Export Queue",
+                    "chartDatasource": {
+                        "dashboardQuery": "2b1ae163-1a05-499c-a29a-eb3dcd0da212",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "Syslog",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "logs_avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "Syslog"
+                            },
+                            {
+                                "seriesName": "Splunk",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "logs_avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "Splunk"
+                            },
+                            {
+                                "seriesName": "Investigator",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "logs_avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#10a3b7"
+                                },
+                                "seriesUniqueValue": "Investigator"
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "Avg # of Entries in Queue"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "bottom": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "seriesColumn": [
+                            "logs"
+                        ],
+                        "groupingType": "Grouped"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "02f2fca1fb8451c1689582fe14fef9ef9654ecc8938b58f4b308efb809de257a"
+                },
+                {
+                    "name": "6a000861-484d-41d3-a64e-78481e1c2bdb",
+                    "displayName": "Combined Traffic Volume - Monitor Interfaces",
+                    "chartDatasource": {
+                        "dashboardQuery": "8b14de28-ee1e-434d-88c6-f6e24473b4a7",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "monitor_traffic_rate"
+                                },
+                                "dataLabel": {}
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "Mbps per Second"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "6367f83a096772cf688514d7c4efac5266cc8b7763a1799f210e83d1a894d86f"
+                },
+                {
+                    "name": "d189cb88-ca86-4b08-aca2-88f696f9edda",
+                    "displayName": "Log Rates",
+                    "chartDatasource": {
+                        "dashboardQuery": "9185ab07-1c2c-41cb-b1b2-76f02b2f3856",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "DNP3",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "DNP3",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "Software",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "Software",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "Weird",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#10a3b7"
+                                },
+                                "seriesUniqueValue": "Weird",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "PE",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#d15f6b"
+                                },
+                                "seriesUniqueValue": "PE",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "Conn",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#e51f8f"
+                                },
+                                "seriesUniqueValue": "Conn",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "SMB_Mapping",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#923ef9"
+                                },
+                                "seriesUniqueValue": "SMB_Mapping",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "Kerberos",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#4aa207"
+                                },
+                                "seriesUniqueValue": "Kerberos",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "SSL",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#5350fb"
+                                },
+                                "seriesUniqueValue": "SSL",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "Tunnel",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#009886"
+                                },
+                                "seriesUniqueValue": "Tunnel",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "SMTP",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "SMTP",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "SIP",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "SIP",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "SSH",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#10a3b7"
+                                },
+                                "seriesUniqueValue": "SSH",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "RDP",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#d15f6b"
+                                },
+                                "seriesUniqueValue": "RDP",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "IRC",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#e51f8f"
+                                },
+                                "seriesUniqueValue": "IRC",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "SOCKS",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#923ef9"
+                                },
+                                "seriesUniqueValue": "SOCKS",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "DCE_RPC",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#4aa207"
+                                },
+                                "seriesUniqueValue": "DCE_RPC",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "Traceroute",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#5350fb"
+                                },
+                                "seriesUniqueValue": "Traceroute",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "SNMP",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#009886"
+                                },
+                                "seriesUniqueValue": "SNMP",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "FTP",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "FTP",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "SMB_Files",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "SMB_Files",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "Syslog",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#10a3b7"
+                                },
+                                "seriesUniqueValue": "Syslog",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "NTLM",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#d15f6b"
+                                },
+                                "seriesUniqueValue": "NTLM",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "HTTP",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#e51f8f"
+                                },
+                                "seriesUniqueValue": "HTTP",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "RFB",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#923ef9"
+                                },
+                                "seriesUniqueValue": "RFB",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "DNS",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#4aa207"
+                                },
+                                "seriesUniqueValue": "DNS",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "Radius",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#5350fb"
+                                },
+                                "seriesUniqueValue": "Radius",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "Modbus",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#009886"
+                                },
+                                "seriesUniqueValue": "Modbus",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "DPD",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "DPD",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "X509",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "X509",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "MYSQL",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#10a3b7"
+                                },
+                                "seriesUniqueValue": "MYSQL",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "Files",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "avg"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#d15f6b"
+                                },
+                                "seriesUniqueValue": "Files",
+                                "areaStyle": {}
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "Entries per Second"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "bottom": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "seriesColumn": [
+                            "logs"
+                        ],
+                        "groupingType": "Stacked"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "8d5e441780f026431e9dfb0736857c4a001e6d4d3d4d65a3c88a515df695129f"
+                }
+            ],
+            "dashboardQueries": [
+                {
+                    "name": "9185ab07-1c2c-41cb-b1b2-76f02b2f3856",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"corelight_metrics_bro\"\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\n$logs=if(about.labels.key=\"logs_conn_entries_per_second\", \"Conn\", \r\n      if(about.labels.key=\"logs_dce_rpc_entries_per_second\",\"DCE_RPC\",\r\n      if(about.labels.key=\"logs_DHCP_entries_per_second\",\"DHCP\",\r\n      if(about.labels.key=\"logs_dnp3_entries_per_second\",\"DNP3\",\r\n      if(about.labels.key=\"logs_dns_entries_per_second\",\"DNS\",\r\n      if(about.labels.key=\"logs_dpd_entries_per_second\",\"DPD\",\r\n      if(about.labels.key=\"logs_files_entries_per_second\",\"Files\",\r\n      if(about.labels.key=\"logs_ftp_entries_per_second\",\"FTP\",\r\n      if(about.labels.key=\"logs_http_entries_per_second\",\"HTTP\",\r\n      if(about.labels.key=\"logs_irc_entries_per_second\",\"IRC\",\r\n      if(about.labels.key=\"logs_kerberos_entries_per_second\",\"Kerberos\",\r\n      if(about.labels.key=\"logs_modbus_entries_per_second\",\"Modbus\",\r\n      if(about.labels.key=\"logs_mysql_entries_per_second\",\"MYSQL\",\r\n      if(about.labels.key=\"logs_ntlm_entries_per_second\",\"NTLM\",\r\n      if(about.labels.key=\"logs_pe_entries_per_second\",\"PE\",\r\n      if(about.labels.key=\"logs_radius_entries_per_second\",\"Radius\",\r\n      if(about.labels.key=\"logs_rdp_entries_per_second\",\"RDP\",\r\n      if(about.labels.key=\"logs_rfb_entries_per_second\",\"RFB\",\r\n      if(about.labels.key=\"logs_sip_entries_per_second\",\"SIP\",\r\n      if(about.labels.key=\"logs_smb_files_entries_per_second\",\"SMB_Files\",\r\n      if(about.labels.key=\"logs_smb_mapping_entries_per_second\",\"SMB_Mapping\",\r\n      if(about.labels.key=\"logs_smtp_entries_per_second\",\"SMTP\",\r\n      if(about.labels.key=\"logs_snmp_entries_per_second\",\"SNMP\",\r\n      if(about.labels.key=\"logs_socks_entries_per_second\",\"SOCKS\",\r\n      if(about.labels.key=\"logs_software_entries_per_second\",\"Software\",\r\n      if(about.labels.key=\"logs_ssh_entries_per_second\",\"SSH\",\r\n      if(about.labels.key=\"logs_ssl_entries_per_second\",\"SSL\",\r\n      if(about.labels.key=\"logs_syslog_entries_per_second\",\"Syslog\",\r\n      if(about.labels.key=\"logs_traceroute_entries_per_second\",\"Traceroute\",\r\n      if(about.labels.key=\"logs_tunnel_entries_per_second\",\"Tunnel\",\r\n      if(about.labels.key=\"logs_weird_entries_per_second\",\"Weird\",\r\n      if(about.labels.key=\"logs_x509_entries_per_second\",\"X509\", \"Unknown\"\r\n      ))))))))))))))))))))))))))))))))\r\n$logs != \"Unknown\"\r\nmatch:\r\n    $date_hour, $logs\r\noutcome:\r\n    $avg=math.round(window.avg(cast.as_float(about.labels.value)), 3)\r\norder: \r\n    $date_hour asc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "d39bf5b8fc65ca0bb27b3e0ed56ab6a0efdf697d713ff8f0af481b0708ffba05"
+                },
+                {
+                    "name": "35a5ef85-aa0c-4c34-89df-b64542e85fc4",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"corelight_metrics_iface\"\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\n$rate_name=if(about.labels.key=\"mgmt_in_packets_kpps\", \"Inbound Traffic Packet Rate\", \r\n      if(about.labels.key=\"mgmt_out_packets_kpps\", \"Outbound Traffic Packet Rate\", \"Unknown\"))\r\n$rate_name!=\"Unknown\"\r\nmatch:\r\n    $date_hour, $rate_name\r\noutcome:\r\n    $avg_rate=math.round(window.avg(cast.as_float(about.labels.value)), 3)\r\norder:\r\n    $date_hour asc ",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "2d495dfdf4428e5e8ddca50854499766266c9d311b997c55ce2e27da2573cf2b"
+                },
+                {
+                    "name": "1ff793e2-3cc6-43b3-b9a2-25cde3906556",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"corelight_metrics_iface\"\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\n$rate_name=if(about.labels.key=\"mgmt_in_bytes_mbps\", \"Inbound Traffic Rate\", \r\n      if(about.labels.key=\"mgmt_out_bytes_mbps\", \"Outbound Traffic Rate\", \"Unknown\"))\r\n$rate_name!=\"Unknown\"\r\nmatch:\r\n    $date_hour, $rate_name\r\noutcome:\r\n    $avg_rate=math.round(window.avg(cast.as_float(about.labels.value)), 3)\r\norder:\r\n    $date_hour asc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "e554253076b405376528034800b0c24ed89c7bc00dc7f1d8290f3ba4f5aa3948"
+                },
+                {
+                    "name": "ac54c3a8-de83-4482-817a-98ea2757496a",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"corelight_metrics_iface\"\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\n$kpps=if(about.labels.key=\"monitor_total_kpps\", \"Monitor Traffic Packet Rate\", \r\n      if(about.labels.key=\"monitor_total_drops_kpps\", \"Monitor Traffic Drop Rate\", \"Unknown\"))\r\n$kpps!=\"Unknown\"\r\nmatch:\r\n    $date_hour, $kpps\r\noutcome:\r\n    $rate=math.round(window.avg(cast.as_float(about.labels.value)), 3)\r\norder:\r\n    $date_hour asc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "b92436c216338eab50a0b78f1931406f63f713706a45271b604c1534150b8a5a"
+                },
+                {
+                    "name": "9eae7924-1fa1-4d40-8b6d-d58641ddfaae",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"corelight_metrics_bro\"\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\n$files=if(about.labels.key=\"files_total\", \"Extracted Files\", \r\n       if(about.labels.key=\"files_queued_sftp\", \"Queued Files for SFTP\", \r\n       if(about.labels.key=\"files_queued_s3\", \"Queued Files for Amazon S3\", \"Unknown\")))\r\n$files!=\"Unknown\"\r\nmatch:\r\n    $date_hour, $files\r\noutcome:\r\n    $files_avg=math.round(window.avg(cast.as_float(about.labels.value)), 3)\r\norder:\r\n    $date_hour asc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "8e14216a64df3a4e965b02d22a5cd5e9de1ae77f936481bdcebb960ac90a9c74"
+                },
+                {
+                    "name": "2b1ae163-1a05-499c-a29a-eb3dcd0da212",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"corelight_metrics_bro\"\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\n$logs=if(about.labels.key=\"logs_splunk_export_lag\", \"Splunk\", \r\n       if(about.labels.key=\"logs_syslog_export_lag\", \"Syslog\", \r\n       if(about.labels.key=\"logs_json_export_lag\", \"JSON\",\r\n       if(about.labels.key=\"logs_kafka_export_lag\", \"Kafka\",\r\n       if(about.labels.key=\"logs_investigator_export_lag\", \"Investigator\",\r\n       if(about.labels.key=\"logs_kinesis_export_lag\", \"Kinesis\",\r\n       if(about.labels.key=\"logs_hec_export_lag\", \"HEC\",\r\n       if(about.labels.key=\"logs_elasticsearch_export_lag\", \"Elastic Search\",\r\n       \"Unknown\"))))))))\r\n$logs!=\"Unknown\"\r\nmatch:\r\n    $date_hour, $logs\r\noutcome:\r\n    $logs_avg=math.round(avg(cast.as_float(about.labels.value)), 3)\r\norder:\r\n    $date_hour asc\r\n",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "ae2f4f4f61e47f25d0bb65c11ca7255e7b92dfb83f323fd9200b267efe431e58"
+                },
+                {
+                    "name": "8b14de28-ee1e-434d-88c6-f6e24473b4a7",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"corelight_metrics_iface\"\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour\r\noutcome:\r\n    $monitor_traffic_rate=math.round(window.avg(cast.as_float(about.labels[\"monitor_total_mbps\"])), 3)\r\norder:\r\n    $date_hour asc\r\n",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "8155168e1b4dfdc21669139f2fc20de38688d0b1ed6af52f9945f43bec089a9f"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,410 @@
+{
+    "dashboards": [
+        {
+            "dashboard": {
+                "name": "7ed0658e-e6bb-4d56-ae2c-2d4c030cc07e",
+                "displayName": "Corelight → Data Explorer → Software",
+                "definition": {
+                    "filters": [
+                        {
+                            "id": "GlobalTimeFilter",
+                            "dataSource": "GLOBAL",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "PAST",
+                                    "fieldValues": [
+                                        "1",
+                                        "DAY"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Global Time Filter",
+                            "chartIds": [
+                                "0636a909-c936-4dde-84a9-ab4531d0407b",
+                                "e10377e3-c51a-4312-a3cc-45c30adb8d9d",
+                                "09a38c9a-4f51-46c1-b4f9-5ee156c0f639",
+                                "4c98d9fc-8b9d-4745-abaf-ff3836b2436e"
+                            ],
+                            "isStandardTimeRangeFilter": true,
+                            "isStandardTimeRangeFilterEnabled": true
+                        },
+                        {
+                            "id": "645772c5-49f4-4f0f-9621-3c27798cae00",
+                            "dataSource": "UDM",
+                            "fieldPath": "observer.hostname",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Corelight Sensor",
+                            "chartIds": [
+                                "0636a909-c936-4dde-84a9-ab4531d0407b",
+                                "e10377e3-c51a-4312-a3cc-45c30adb8d9d",
+                                "09a38c9a-4f51-46c1-b4f9-5ee156c0f639",
+                                "4c98d9fc-8b9d-4745-abaf-ff3836b2436e"
+                            ]
+                        },
+                        {
+                            "id": "a7b1586c-908b-43f4-9d14-a273db01aecd",
+                            "dataSource": "UDM",
+                            "fieldPath": "target.asset.software.description",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Software Type",
+                            "chartIds": [
+                                "0636a909-c936-4dde-84a9-ab4531d0407b",
+                                "e10377e3-c51a-4312-a3cc-45c30adb8d9d",
+                                "09a38c9a-4f51-46c1-b4f9-5ee156c0f639",
+                                "4c98d9fc-8b9d-4745-abaf-ff3836b2436e"
+                            ]
+                        },
+                        {
+                            "id": "5c74ecb4-2612-40e2-8899-bacc7013b353",
+                            "dataSource": "UDM",
+                            "fieldPath": "target.asset.ip",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Host (For Software Details)",
+                            "chartIds": [
+                                "4c98d9fc-8b9d-4745-abaf-ff3836b2436e"
+                            ]
+                        },
+                        {
+                            "id": "2a72afac-f5ef-4d55-9f8e-a2049c2ebb8d",
+                            "dataSource": "UDM",
+                            "fieldPath": "target.asset.software.name",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Software (For Software Details)",
+                            "chartIds": [
+                                "4c98d9fc-8b9d-4745-abaf-ff3836b2436e"
+                            ]
+                        }
+                    ],
+                    "charts": [
+                        {
+                            "dashboardChart": "09a38c9a-4f51-46c1-b4f9-5ee156c0f639",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 0,
+                                "spanY": 24
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "645772c5-49f4-4f0f-9621-3c27798cae00",
+                                "a7b1586c-908b-43f4-9d14-a273db01aecd"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "e10377e3-c51a-4312-a3cc-45c30adb8d9d",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 24,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "645772c5-49f4-4f0f-9621-3c27798cae00",
+                                "a7b1586c-908b-43f4-9d14-a273db01aecd"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "0636a909-c936-4dde-84a9-ab4531d0407b",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 24,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "645772c5-49f4-4f0f-9621-3c27798cae00",
+                                "a7b1586c-908b-43f4-9d14-a273db01aecd"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "4c98d9fc-8b9d-4745-abaf-ff3836b2436e",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 51,
+                                "spanY": 34
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "645772c5-49f4-4f0f-9621-3c27798cae00",
+                                "a7b1586c-908b-43f4-9d14-a273db01aecd",
+                                "5c74ecb4-2612-40e2-8899-bacc7013b353",
+                                "2a72afac-f5ef-4d55-9f8e-a2049c2ebb8d"
+                            ]
+                        }
+                    ]
+                },
+                "type": "CUSTOM",
+                "etag": "1ab6822d8c83771821580b5153429d56cc5824e9d08178d15157cf88d1a0ff13",
+                "access": "DASHBOARD_PRIVATE"
+            },
+            "dashboardCharts": [
+                {
+                    "name": "09a38c9a-4f51-46c1-b4f9-5ee156c0f639",
+                    "displayName": "Top Software",
+                    "chartDatasource": {
+                        "dashboardQuery": "9b19b77f-f4b5-45af-b148-43a5baa989df",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "name"
+                                },
+                                "dataLabel": {},
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ]
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "bottom": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "eb9c9cc557bd379cd01c28bf04540137bd8e985c3e648383725d2d3b843855b7"
+                },
+                {
+                    "name": "0636a909-c936-4dde-84a9-ab4531d0407b",
+                    "displayName": "Top Software Types",
+                    "chartDatasource": {
+                        "dashboardQuery": "e5aba11d-a760-4c8a-b1a0-7bd60e5f6454",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "software_type",
+                                "header": "Software Type"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Count"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "78184dd7928d665e5af749d8c360a0126d119102af0b727920781ddc6e6cd85d"
+                },
+                {
+                    "name": "e10377e3-c51a-4312-a3cc-45c30adb8d9d",
+                    "displayName": "Top Software Versions",
+                    "chartDatasource": {
+                        "dashboardQuery": "83a824e8-bc44-4078-8ada-4bf7c6f76bfb",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "name",
+                                "header": "Name"
+                            },
+                            {
+                                "field": "version",
+                                "header": "Version"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Count"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "d887241df132bca88fb219783a0e903e7c31f252441f81cee1accd429025b3e5"
+                },
+                {
+                    "name": "4c98d9fc-8b9d-4745-abaf-ff3836b2436e",
+                    "displayName": "Software Details",
+                    "chartDatasource": {
+                        "dashboardQuery": "d8b0a08e-e112-4b0a-bbfc-ff8e2ebb274c",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "time",
+                                "header": "Time"
+                            },
+                            {
+                                "field": "observer.hostname",
+                                "header": "Sensor Name"
+                            },
+                            {
+                                "field": "target.asset.ip",
+                                "header": "Source Host"
+                            },
+                            {
+                                "field": "target.asset.software.name",
+                                "header": "Name"
+                            },
+                            {
+                                "field": "version",
+                                "header": "Version"
+                            },
+                            {
+                                "field": "version_details",
+                                "header": "Version Details"
+                            },
+                            {
+                                "field": "target.asset.software.description",
+                                "header": "Software Type"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "a4e7fe44ecd1103a95a740d2a5756dd5404cbfc874a6be721646746331f9265b"
+                }
+            ],
+            "dashboardQueries": [
+                {
+                    "name": "9b19b77f-f4b5-45af-b148-43a5baa989df",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"software\" \r\n$name=target.asset.software.name\r\nmatch:\r\n    $name\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "34ba5382e521e9016a56ee91950494976fd45ffc9586116ab53bc15687614455"
+                },
+                {
+                    "name": "e5aba11d-a760-4c8a-b1a0-7bd60e5f6454",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"software\" \r\n$software_type=target.asset.software.description\r\n$software_type!=\"\"\r\nmatch:\r\n    $software_type\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "1276b346a640e98d28ec4cbeb60c47332548021cb4449dec7515409171144203"
+                },
+                {
+                    "name": "83a824e8-bc44-4078-8ada-4bf7c6f76bfb",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"software\" \r\n$name=target.asset.software.name\r\n$name!=\"\"\r\n$version= strings.concat(if(target.asset.software.version!=\"\", target.asset.software.version, \"\"), \r\n          if(target.asset.attribute.labels[\"version_minor\"]!=\"\", strings.concat(\".\", target.asset.attribute.labels[\"version_minor\"]), \"\"), \r\n          if(target.asset.attribute.labels[\"version_minor2\"]!=\"\", strings.concat(\".\", target.asset.attribute.labels[\"version_minor2\"]), \"\"))\r\nmatch:\r\n    $name, $version\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "933f2caa18763e5f1081d3430f099652a643ef01eca6aaf8006f91680bfe4524"
+                },
+                {
+                    "name": "d8b0a08e-e112-4b0a-bbfc-ff8e2ebb274c",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"software\" \r\n$time=timestamp.get_timestamp(metadata.event_timestamp.seconds)\r\n$version= strings.concat(if(target.asset.software.version!=\"\", target.asset.software.version, \"\"), \r\n          if(target.asset.attribute.labels[\"version_minor\"]!=\"\", strings.concat(\".\", target.asset.attribute.labels[\"version_minor\"]), \"\"), \r\n          if(target.asset.attribute.labels[\"version_minor2\"]!=\"\", strings.concat(\".\", target.asset.attribute.labels[\"version_minor2\"]), \"\"))\r\n$version_details=target.asset.attribute.labels[\"version_addl\"]\r\nmatch:\r\n    $time, observer.hostname, target.asset.ip, target.asset.software.name, $version, $version_details, target.asset.software.description\r\norder:\r\n    $time desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "c05f272a737e2d833c061b5d12847dd7f9e7b954d9e9548ef5c51f1d338847d3"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,719 @@
+{
+    "dashboards": [
+        {
+            "dashboard": {
+                "name": "2f867066-f515-4c62-9406-d235a6e49d5b",
+                "displayName": "Corelight → Security Workflows → RDP Inferences Overview",
+                "definition": {
+                    "filters": [
+                        {
+                            "id": "GlobalTimeFilter",
+                            "dataSource": "GLOBAL",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "PAST",
+                                    "fieldValues": [
+                                        "1",
+                                        "DAY"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Global Time Filter",
+                            "chartIds": [
+                                "8f1aa4a3-5147-4290-93c9-aed45eb192e9",
+                                "11d63f93-1f03-4c7d-9a2b-a77ee3b5a9de",
+                                "16d1f0f6-05de-4716-b943-87a69dee0790",
+                                "dce413d0-a150-4734-b231-03b5685fb1c5",
+                                "866f21db-97ee-4b5f-acb0-1a46de57697e",
+                                "2f11538b-d78a-4723-99ac-0d149d69fb95",
+                                "00140505-2dab-47cf-8f32-3201f136858d"
+                            ],
+                            "isStandardTimeRangeFilter": true,
+                            "isStandardTimeRangeFilterEnabled": true
+                        },
+                        {
+                            "id": "7009c415-49e5-436f-a90a-8641e56d52f6",
+                            "dataSource": "UDM",
+                            "fieldPath": "observer.hostname",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Corelight Sensor",
+                            "chartIds": [
+                                "11d63f93-1f03-4c7d-9a2b-a77ee3b5a9de",
+                                "8f1aa4a3-5147-4290-93c9-aed45eb192e9",
+                                "16d1f0f6-05de-4716-b943-87a69dee0790",
+                                "dce413d0-a150-4734-b231-03b5685fb1c5",
+                                "866f21db-97ee-4b5f-acb0-1a46de57697e",
+                                "2f11538b-d78a-4723-99ac-0d149d69fb95",
+                                "00140505-2dab-47cf-8f32-3201f136858d"
+                            ]
+                        }
+                    ],
+                    "charts": [
+                        {
+                            "dashboardChart": "8f1aa4a3-5147-4290-93c9-aed45eb192e9",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 0,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "7009c415-49e5-436f-a90a-8641e56d52f6"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "11d63f93-1f03-4c7d-9a2b-a77ee3b5a9de",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 0,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "7009c415-49e5-436f-a90a-8641e56d52f6"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "866f21db-97ee-4b5f-acb0-1a46de57697e",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 21,
+                                "startY": 27,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "7009c415-49e5-436f-a90a-8641e56d52f6"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "00140505-2dab-47cf-8f32-3201f136858d",
+                            "chartLayout": {
+                                "startX": 21,
+                                "spanX": 21,
+                                "startY": 27,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "7009c415-49e5-436f-a90a-8641e56d52f6"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "2f11538b-d78a-4723-99ac-0d149d69fb95",
+                            "chartLayout": {
+                                "startX": 42,
+                                "spanX": 54,
+                                "startY": 27,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "7009c415-49e5-436f-a90a-8641e56d52f6"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "dce413d0-a150-4734-b231-03b5685fb1c5",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 43,
+                                "spanY": 20
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "7009c415-49e5-436f-a90a-8641e56d52f6"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "16d1f0f6-05de-4716-b943-87a69dee0790",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 63,
+                                "spanY": 34
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "7009c415-49e5-436f-a90a-8641e56d52f6"
+                            ]
+                        }
+                    ]
+                },
+                "type": "CUSTOM",
+                "etag": "dd06c34167780254b23b21d90c82c74aa02ddca306cfe3a5d18d241e04721dc7",
+                "access": "DASHBOARD_PRIVATE"
+            },
+            "dashboardCharts": [
+                {
+                    "name": "8f1aa4a3-5147-4290-93c9-aed45eb192e9",
+                    "displayName": "Inferences Name",
+                    "chartDatasource": {
+                        "dashboardQuery": "76d80a58-778f-4f7a-9545-f93dc078f338",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "about.labels.value"
+                                },
+                                "dataLabel": {},
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "undefined"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "APWA",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "APWA"
+                                            }
+                                        },
+                                        {
+                                            "key": "SOC",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "SOC"
+                                            }
+                                        },
+                                        {
+                                            "key": "IPWA",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "IPWA"
+                                            }
+                                        },
+                                        {
+                                            "key": "HBC",
+                                            "value": {
+                                                "color": "#d15f6b",
+                                                "label": "HBC"
+                                            }
+                                        },
+                                        {
+                                            "key": "MSC",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "MSC"
+                                            }
+                                        },
+                                        {
+                                            "key": "RAMA",
+                                            "value": {
+                                                "color": "#923ef9",
+                                                "label": "RAMA"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "bottom": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "d4a3c9adfa4194f7a40cac1da070b373fb114539ca7c9b92c040e747d0ffb66d"
+                },
+                {
+                    "name": "11d63f93-1f03-4c7d-9a2b-a77ee3b5a9de",
+                    "displayName": "Inferences Over Time",
+                    "chartDatasource": {
+                        "dashboardQuery": "5a17003c-e127-4101-bb8d-329e987cddf6",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "MMM",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "MMM",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "SOC",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "SOC",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "PWA",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#10a3b7"
+                                },
+                                "seriesUniqueValue": "PWA",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "APW",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#d15f6b"
+                                },
+                                "seriesUniqueValue": "APW",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "APWA",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#e51f8f"
+                                },
+                                "seriesUniqueValue": "APWA",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "IPWA",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#923ef9"
+                                },
+                                "seriesUniqueValue": "IPWA",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "RAMA",
+                                "stack": "stack",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#4aa207"
+                                },
+                                "seriesUniqueValue": "RAMA",
+                                "areaStyle": {}
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "Count"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "bottom": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "seriesColumn": [
+                            "about.labels.value"
+                        ],
+                        "groupingType": "Stacked"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "0169ad6d4c11a8e348ea7bfc2ac469c6d8d5a3b3ff209117677c0347d7a3dfd8"
+                },
+                {
+                    "name": "866f21db-97ee-4b5f-acb0-1a46de57697e",
+                    "displayName": "Successful Connections",
+                    "description": "Successful Connections",
+                    "chartDatasource": {
+                        "dashboardQuery": "8edc2e1e-2603-4f27-a045-c6734df656d4",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "1ab2dd4794db95960b9c098b4689eb7882b64752646e2b124194ad0be028e170"
+                },
+                {
+                    "name": "00140505-2dab-47cf-8f32-3201f136858d",
+                    "displayName": "Failed Connections",
+                    "description": "Failed Connections",
+                    "chartDatasource": {
+                        "dashboardQuery": "4ccea094-862e-4f1a-bc6a-55b8a9b5d0e1",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "4654c1f82545af71164a7bfbca17192e506b38ce108c3b4b45a44d1e07dfc774"
+                },
+                {
+                    "name": "16d1f0f6-05de-4716-b943-87a69dee0790",
+                    "displayName": "RDP Connection Detail",
+                    "chartDatasource": {
+                        "dashboardQuery": "977eb089-eee5-4a5e-8e7e-45c5538e7a48",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "time",
+                                "header": "Time"
+                            },
+                            {
+                                "field": "connecting_user",
+                                "header": "Connecting User"
+                            },
+                            {
+                                "field": "observer.hostname",
+                                "header": "Corelight Sensor"
+                            },
+                            {
+                                "field": "principal.ip",
+                                "header": "Source IP"
+                            },
+                            {
+                                "field": "target.ip",
+                                "header": "Destination IP"
+                            },
+                            {
+                                "field": "target.port",
+                                "header": "Destination Port"
+                            },
+                            {
+                                "field": "auth_success",
+                                "header": "Auth Success"
+                            },
+                            {
+                                "field": "about.labels.value",
+                                "header": "Inferences"
+                            },
+                            {
+                                "field": "inference_name",
+                                "header": "Inferences Name"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "0edaecd858251847ab717e16e735f1b7ec69b9e4fb8c9ede1d93fb864838410d"
+                },
+                {
+                    "name": "dce413d0-a150-4734-b231-03b5685fb1c5",
+                    "displayName": "Security Protocols Used",
+                    "chartDatasource": {
+                        "dashboardQuery": "0ba5a446-9247-4ac1-ac73-b949f545f2b2",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "security_protocol"
+                                },
+                                "dataLabel": {},
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ]
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "bottom": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "53858e45c5d5818c87f089a2645c342f5fa01aba5a0bd915db6155e144a0f647"
+                },
+                {
+                    "name": "2f11538b-d78a-4723-99ac-0d149d69fb95",
+                    "displayName": "Connecting Users",
+                    "chartDatasource": {
+                        "dashboardQuery": "16e5a953-3a42-4482-bf75-a23c0c2994b5",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "connecting_user",
+                                "header": "Connecting User"
+                            },
+                            {
+                                "field": "auth_success",
+                                "header": "Auth Success"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Count"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "fef068772e908b1f99149ad2aa7dcef3b94ad54a23dfe60ba5eeceaf5b89e303"
+                }
+            ],
+            "dashboardQueries": [
+                {
+                    "name": "16e5a953-3a42-4482-bf75-a23c0c2994b5",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"rdp\"\r\n$auth_success=if(about.labels[\"auth_success\"]!=\"\", about.labels[\"auth_success\"], \"No Value\")\r\n$connecting_user=about.labels[\"cookie\"]\r\n$connecting_user!=\"\"\r\nmatch:\r\n    $connecting_user, $auth_success\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    20",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "7a584f4a8ccf7e07134533ea4d2cb1fc67d65c072eeffb462c7d793b75acacf6"
+                },
+                {
+                    "name": "76d80a58-778f-4f7a-9545-f93dc078f338",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"rdp\"\r\nabout.labels.key=\"inferences\"\r\nabout.labels.value!=\"\"\r\nmatch:\r\n    about.labels.value\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    50",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "b1fce1a37f9a158fea88d506ca69ce744640227b31fab09a8c13be3f11cd8679"
+                },
+                {
+                    "name": "5a17003c-e127-4101-bb8d-329e987cddf6",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"rdp\"\r\nabout.labels.key=\"inferences\"\r\nabout.labels.value!=\"\"\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour, about.labels.value\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $date_hour asc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "8bc695b45087cc48e9a38cc03b23a4a0109b9046e5318327065936e0f8160ea9"
+                },
+                {
+                    "name": "8edc2e1e-2603-4f27-a045-c6734df656d4",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"rdp\"\r\nabout.labels[\"auth_success\"]=\"true\"\r\noutcome:\r\n    $count=count_distinct(metadata.id)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "bdbf624200f53c2bc5d5c71a72cb21d36acb7a294dfbfd8a6402ef0e176f4a34"
+                },
+                {
+                    "name": "4ccea094-862e-4f1a-bc6a-55b8a9b5d0e1",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"rdp\"\r\nabout.labels[\"auth_success\"]!=\"true\"\r\noutcome:\r\n    $count=count_distinct(metadata.id)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "e6a608cedba4121a4c979a1ca896d288344b59af51881a06ef4daea32bb1d769"
+                },
+                {
+                    "name": "977eb089-eee5-4a5e-8e7e-45c5538e7a48",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"rdp\"\r\n$connecting_user=about.labels[\"cookie\"]\r\n$auth_success=about.labels[\"auth_success\"]\r\nabout.labels.key=\"inferences\"\r\n$inference_name=if(about.labels.value=\"ABP\", \"Client Authentication Bypass\",\r\nif(about.labels.value=\"BF\", \"Client Brute Force Guessing\",\r\nif(about.labels.value=\"BFS\", \"Client Brute Force Success\",\r\nif(about.labels.value=\"SFD\", \"Small Client File Download\",\r\nif(about.labels.value=\"LFD\", \"Large Client File Download\",\r\nif(about.labels.value=\"SFU\", \"Small Client File Upload\",\r\nif(about.labels.value=\"LFU\", \"Large Client File Upload\",\r\nif(about.labels.value=\"KS\", \"Keystrokes\",\r\nif(about.labels.value=\"SC\", \"Capabilities Scan- ning\",\r\nif(about.labels.value=\"SP\", \"Other Scanning\",\r\nif(about.labels.value=\"SV\", \"Version Scanning\",\r\nif(about.labels.value=\"SA\", \"Authentication Scanning\",\r\nif(about.labels.value=\"APWA\", \"Automated Password Authentication\",\r\nif(about.labels.value=\"IPWA\", \"Interactive Password Authentication\",\r\nif(about.labels.value=\"PKA\", \"Public Key Authentication\",\r\nif(about.labels.value=\"NA\", \"None Authentication\",\r\nif(about.labels.value=\"MFA\", \"Multifactor authentication\",\r\nif(about.labels.value=\"UA\", \"Unknown authentication\",\r\nif(about.labels.value=\"AUTO\", \"Automated interaction\",\r\nif(about.labels.value=\"BAN\", \"Server Banner\",\r\nif(about.labels.value=\"CTS\", \"Client trusted server\",\r\nif(about.labels.value=\"CUS\", \"Client untrusted server\",\r\nif(about.labels.value=\"RSP\", \"Reverse SSH Provisioned\",\r\nif(about.labels.value=\"RSI\", \"Reverse SSH Initiated\",\r\nif(about.labels.value=\"RSIA\", \"Reverse SSH Initiation Automated\",\r\nif(about.labels.value=\"RSL\", \"Reverse SSH Logged In\",\r\nif(about.labels.value=\"RSK\", \"Reverse SSH Keystrokes\",\r\nif(about.labels.value=\"NRC\", \"No Remote Com- mand\",\r\nif(about.labels.value=\"AFR\", \"SSH Agent For- warding Requested\", \"Unknown\"\r\n)))))))))))))))))))))))))))))\r\n$time=timestamp.get_timestamp(metadata.event_timestamp.seconds)\r\nmatch:\r\n    $time, $connecting_user, observer.hostname, principal.ip, target.ip, target.port,  $auth_success, about.labels.value, $inference_name\r\norder:\r\n    $time asc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "2b2c04732a914a886df045fa6cd5185386b36871821cd8c713818104582aa0cc"
+                },
+                {
+                    "name": "0ba5a446-9247-4ac1-ac73-b949f545f2b2",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"rdp\"\r\n$security_protocol=target.labels[\"security_protocol\"]\r\nmatch:\r\n    $security_protocol\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    50",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "82c9e6a19c0d53c610b5915a9a764337b16615154fabfcd8d87e937aa2825f0d"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1031 @@
+{
+    "dashboards": [
+        {
+            "dashboard": {
+                "name": "f132e3dc-c336-4043-9801-d559477c9e54",
+                "displayName": "Corelight → Data Explorer → Connections",
+                "definition": {
+                    "filters": [
+                        {
+                            "id": "GlobalTimeFilter",
+                            "dataSource": "GLOBAL",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "PAST",
+                                    "fieldValues": [
+                                        "1",
+                                        "DAY"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Global Time Filter",
+                            "chartIds": [
+                                "6e01adf6-cf51-4dd2-b163-def9c1d42cc4",
+                                "02264d60-901f-4536-abc7-722e15267018",
+                                "f7ec7549-bb3b-46c9-ba97-0f22a0014f2b",
+                                "2ba447bd-1957-4311-814b-6533477cab49",
+                                "c8f25206-761c-46ba-a3ca-e1776c6067ce",
+                                "b6233c14-d50a-4f90-abbf-28966265c47d",
+                                "0b312879-5491-4465-934a-d84c68467370"
+                            ],
+                            "isStandardTimeRangeFilter": true,
+                            "isStandardTimeRangeFilterEnabled": true
+                        },
+                        {
+                            "id": "63f72959-42b7-4a44-9578-2cb3fff28399",
+                            "dataSource": "UDM",
+                            "fieldPath": "observer.hostname",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Corelight Sensor",
+                            "chartIds": [
+                                "6e01adf6-cf51-4dd2-b163-def9c1d42cc4",
+                                "02264d60-901f-4536-abc7-722e15267018",
+                                "f7ec7549-bb3b-46c9-ba97-0f22a0014f2b",
+                                "2ba447bd-1957-4311-814b-6533477cab49",
+                                "c8f25206-761c-46ba-a3ca-e1776c6067ce",
+                                "b6233c14-d50a-4f90-abbf-28966265c47d",
+                                "0b312879-5491-4465-934a-d84c68467370"
+                            ]
+                        },
+                        {
+                            "id": "65726920-9169-4824-bdb8-e06f418d5abf",
+                            "dataSource": "UDM",
+                            "fieldPath": "principal.ip",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Source IP",
+                            "chartIds": [
+                                "6e01adf6-cf51-4dd2-b163-def9c1d42cc4",
+                                "02264d60-901f-4536-abc7-722e15267018",
+                                "f7ec7549-bb3b-46c9-ba97-0f22a0014f2b",
+                                "2ba447bd-1957-4311-814b-6533477cab49",
+                                "c8f25206-761c-46ba-a3ca-e1776c6067ce",
+                                "b6233c14-d50a-4f90-abbf-28966265c47d",
+                                "0b312879-5491-4465-934a-d84c68467370"
+                            ]
+                        },
+                        {
+                            "id": "8d459d40-ac35-42f5-bdbd-e5b9de506a14",
+                            "dataSource": "UDM",
+                            "fieldPath": "principal.port",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Source Port",
+                            "chartIds": [
+                                "6e01adf6-cf51-4dd2-b163-def9c1d42cc4",
+                                "02264d60-901f-4536-abc7-722e15267018",
+                                "f7ec7549-bb3b-46c9-ba97-0f22a0014f2b",
+                                "2ba447bd-1957-4311-814b-6533477cab49",
+                                "c8f25206-761c-46ba-a3ca-e1776c6067ce",
+                                "b6233c14-d50a-4f90-abbf-28966265c47d",
+                                "0b312879-5491-4465-934a-d84c68467370"
+                            ]
+                        },
+                        {
+                            "id": "b0958632-2ec8-485f-b462-6ae11c74ab4f",
+                            "dataSource": "UDM",
+                            "fieldPath": "target.ip",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Destination IP",
+                            "chartIds": [
+                                "6e01adf6-cf51-4dd2-b163-def9c1d42cc4",
+                                "f7ec7549-bb3b-46c9-ba97-0f22a0014f2b",
+                                "02264d60-901f-4536-abc7-722e15267018",
+                                "2ba447bd-1957-4311-814b-6533477cab49",
+                                "c8f25206-761c-46ba-a3ca-e1776c6067ce",
+                                "b6233c14-d50a-4f90-abbf-28966265c47d",
+                                "0b312879-5491-4465-934a-d84c68467370"
+                            ]
+                        },
+                        {
+                            "id": "0bdf2189-706a-4f08-b16f-7b9c9aa64e06",
+                            "dataSource": "UDM",
+                            "fieldPath": "target.port",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Destination Port",
+                            "chartIds": [
+                                "6e01adf6-cf51-4dd2-b163-def9c1d42cc4",
+                                "02264d60-901f-4536-abc7-722e15267018",
+                                "f7ec7549-bb3b-46c9-ba97-0f22a0014f2b",
+                                "2ba447bd-1957-4311-814b-6533477cab49",
+                                "c8f25206-761c-46ba-a3ca-e1776c6067ce",
+                                "b6233c14-d50a-4f90-abbf-28966265c47d",
+                                "0b312879-5491-4465-934a-d84c68467370"
+                            ]
+                        }
+                    ],
+                    "charts": [
+                        {
+                            "dashboardChart": "6e01adf6-cf51-4dd2-b163-def9c1d42cc4",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 0,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "63f72959-42b7-4a44-9578-2cb3fff28399",
+                                "65726920-9169-4824-bdb8-e06f418d5abf",
+                                "8d459d40-ac35-42f5-bdbd-e5b9de506a14",
+                                "b0958632-2ec8-485f-b462-6ae11c74ab4f",
+                                "0bdf2189-706a-4f08-b16f-7b9c9aa64e06"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "0b312879-5491-4465-934a-d84c68467370",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 0,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "63f72959-42b7-4a44-9578-2cb3fff28399",
+                                "65726920-9169-4824-bdb8-e06f418d5abf",
+                                "8d459d40-ac35-42f5-bdbd-e5b9de506a14",
+                                "b0958632-2ec8-485f-b462-6ae11c74ab4f",
+                                "0bdf2189-706a-4f08-b16f-7b9c9aa64e06"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "c8f25206-761c-46ba-a3ca-e1776c6067ce",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 25,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "63f72959-42b7-4a44-9578-2cb3fff28399",
+                                "65726920-9169-4824-bdb8-e06f418d5abf",
+                                "8d459d40-ac35-42f5-bdbd-e5b9de506a14",
+                                "b0958632-2ec8-485f-b462-6ae11c74ab4f",
+                                "0bdf2189-706a-4f08-b16f-7b9c9aa64e06"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "02264d60-901f-4536-abc7-722e15267018",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 25,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "63f72959-42b7-4a44-9578-2cb3fff28399",
+                                "65726920-9169-4824-bdb8-e06f418d5abf",
+                                "8d459d40-ac35-42f5-bdbd-e5b9de506a14",
+                                "b0958632-2ec8-485f-b462-6ae11c74ab4f",
+                                "0bdf2189-706a-4f08-b16f-7b9c9aa64e06"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "b6233c14-d50a-4f90-abbf-28966265c47d",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 52,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "63f72959-42b7-4a44-9578-2cb3fff28399",
+                                "65726920-9169-4824-bdb8-e06f418d5abf",
+                                "8d459d40-ac35-42f5-bdbd-e5b9de506a14",
+                                "b0958632-2ec8-485f-b462-6ae11c74ab4f",
+                                "0bdf2189-706a-4f08-b16f-7b9c9aa64e06"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "f7ec7549-bb3b-46c9-ba97-0f22a0014f2b",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 52,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "63f72959-42b7-4a44-9578-2cb3fff28399",
+                                "65726920-9169-4824-bdb8-e06f418d5abf",
+                                "8d459d40-ac35-42f5-bdbd-e5b9de506a14",
+                                "b0958632-2ec8-485f-b462-6ae11c74ab4f",
+                                "0bdf2189-706a-4f08-b16f-7b9c9aa64e06"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "2ba447bd-1957-4311-814b-6533477cab49",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 79,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "63f72959-42b7-4a44-9578-2cb3fff28399",
+                                "65726920-9169-4824-bdb8-e06f418d5abf",
+                                "8d459d40-ac35-42f5-bdbd-e5b9de506a14",
+                                "b0958632-2ec8-485f-b462-6ae11c74ab4f",
+                                "0bdf2189-706a-4f08-b16f-7b9c9aa64e06"
+                            ]
+                        }
+                    ]
+                },
+                "type": "CUSTOM",
+                "etag": "00455ffb77d0f564ece0c84a17f9d9c6019dfa378c7da1c4606dbc1b9f156841",
+                "access": "DASHBOARD_PRIVATE"
+            },
+            "dashboardCharts": [
+                {
+                    "name": "b6233c14-d50a-4f90-abbf-28966265c47d",
+                    "displayName": "Top Outbound Data Flow by Originator (id_orig_h) Bytes",
+                    "chartDatasource": {
+                        "dashboardQuery": "e12dbc7e-7fab-44b2-9cc5-dadc15eebe4e",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "principal.ip",
+                                "header": "Source IP"
+                            },
+                            {
+                                "field": "target.ip",
+                                "header": "Destination IP"
+                            },
+                            {
+                                "field": "target.ip_geo_artifact.location.country_or_region",
+                                "header": "Destination Country"
+                            },
+                            {
+                                "field": "hostname",
+                                "header": "Destination Hostname"
+                            },
+                            {
+                                "field": "proto",
+                                "header": "Proto"
+                            },
+                            {
+                                "field": "orig_byte_sum",
+                                "header": "Bytes"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "9f433dc4e539eb46486c0440df5cd658e21e1a9cd1e8d12671bfe4f4c47b39b5"
+                },
+                {
+                    "name": "2ba447bd-1957-4311-814b-6533477cab49",
+                    "displayName": "Open/Active Long Lived Connections (requires Long Connections Pkg)",
+                    "chartDatasource": {
+                        "dashboardQuery": "5b101363-1de7-41ae-a254-7a93283d48f4",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "uid",
+                                "header": "UID"
+                            },
+                            {
+                                "field": "duration",
+                                "header": "Duration"
+                            },
+                            {
+                                "field": "principal_ip",
+                                "header": "Source IP"
+                            },
+                            {
+                                "field": "target_ip",
+                                "header": "Destination IP"
+                            },
+                            {
+                                "field": "proto",
+                                "header": "Proto"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "c26c2c9554efd808943c65529d42a7f821f7dfb85be0c2477ecfc60c77b57198"
+                },
+                {
+                    "name": "c8f25206-761c-46ba-a3ca-e1776c6067ce",
+                    "displayName": "Top Originators by (sources) by # of  connections",
+                    "chartDatasource": {
+                        "dashboardQuery": "ed23fdcd-6e35-4e8f-b52f-1bb068739116",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "principal.ip"
+                                },
+                                "dataLabel": {},
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "undefined"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "96.35.155.226",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "96.35.155.226"
+                                            }
+                                        },
+                                        {
+                                            "key": "192.168.12.10",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "192.168.12.10"
+                                            }
+                                        },
+                                        {
+                                            "key": "192.168.12.223",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "192.168.12.223"
+                                            }
+                                        },
+                                        {
+                                            "key": "192.168.12.9",
+                                            "value": {
+                                                "color": "#d15f6b",
+                                                "label": "192.168.12.9"
+                                            }
+                                        },
+                                        {
+                                            "key": "192.168.12.212",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "192.168.12.212"
+                                            }
+                                        },
+                                        {
+                                            "key": "192.168.10.175",
+                                            "value": {
+                                                "color": "#923ef9",
+                                                "label": "192.168.10.175"
+                                            }
+                                        },
+                                        {
+                                            "key": "192.168.12.220",
+                                            "value": {
+                                                "color": "#4aa207",
+                                                "label": "192.168.12.220"
+                                            }
+                                        },
+                                        {
+                                            "key": "192.168.12.16",
+                                            "value": {
+                                                "color": "#5350fb",
+                                                "label": "192.168.12.16"
+                                            }
+                                        },
+                                        {
+                                            "key": "192.168.12.170",
+                                            "value": {
+                                                "color": "#009886",
+                                                "label": "192.168.12.170"
+                                            }
+                                        },
+                                        {
+                                            "key": "192.168.10.177",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "192.168.10.177"
+                                            }
+                                        },
+                                        {
+                                            "key": "10.0.2.243",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "10.0.2.243"
+                                            }
+                                        },
+                                        {
+                                            "key": "192.168.10.161",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "192.168.10.161"
+                                            }
+                                        },
+                                        {
+                                            "key": "192.168.13.9",
+                                            "value": {
+                                                "color": "#d15f6b",
+                                                "label": "192.168.13.9"
+                                            }
+                                        },
+                                        {
+                                            "key": "10.0.2.103",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "10.0.2.103"
+                                            }
+                                        },
+                                        {
+                                            "key": "192.168.10.5",
+                                            "value": {
+                                                "color": "#923ef9",
+                                                "label": "192.168.10.5"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "f8f53efb2b0e2a54b63ce524fa53cc6b085be168d9bc7768a186628b60d053db"
+                },
+                {
+                    "name": "6e01adf6-cf51-4dd2-b163-def9c1d42cc4",
+                    "displayName": "Top Services",
+                    "chartDatasource": {
+                        "dashboardQuery": "a7fee2aa-eccc-4315-bdc6-9e03b048f540",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "service"
+                                },
+                                "dataLabel": {},
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "undefined"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "dns",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "dns"
+                                            }
+                                        },
+                                        {
+                                            "key": "ssl",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "ssl"
+                                            }
+                                        },
+                                        {
+                                            "key": "ntp",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "ntp"
+                                            }
+                                        },
+                                        {
+                                            "key": "http",
+                                            "value": {
+                                                "color": "#d15f6b",
+                                                "label": "http"
+                                            }
+                                        },
+                                        {
+                                            "key": "quic",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "quic"
+                                            }
+                                        },
+                                        {
+                                            "key": "mysql",
+                                            "value": {
+                                                "color": "#923ef9",
+                                                "label": "mysql"
+                                            }
+                                        },
+                                        {
+                                            "key": "xmpp,ssl",
+                                            "value": {
+                                                "color": "#4aa207",
+                                                "label": "xmpp,ssl"
+                                            }
+                                        },
+                                        {
+                                            "key": "vxlan",
+                                            "value": {
+                                                "color": "#5350fb",
+                                                "label": "vxlan"
+                                            }
+                                        },
+                                        {
+                                            "key": "spicy_ssdp",
+                                            "value": {
+                                                "color": "#009886",
+                                                "label": "spicy_ssdp"
+                                            }
+                                        },
+                                        {
+                                            "key": "ssl,xmpp",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "ssl,xmpp"
+                                            }
+                                        },
+                                        {
+                                            "key": "quic,ssl",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "quic,ssl"
+                                            }
+                                        },
+                                        {
+                                            "key": "ssl,quic",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "ssl,quic"
+                                            }
+                                        },
+                                        {
+                                            "key": "dce_rpc",
+                                            "value": {
+                                                "color": "#d15f6b",
+                                                "label": "dce_rpc"
+                                            }
+                                        },
+                                        {
+                                            "key": "krb_tcp",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "krb_tcp"
+                                            }
+                                        },
+                                        {
+                                            "key": "dnp3_tcp",
+                                            "value": {
+                                                "color": "#923ef9",
+                                                "label": "dnp3_tcp"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "7013c3920af39f53f0243dfee0212dbc9bfe66e29d98fca8bb03275c1e67f306"
+                },
+                {
+                    "name": "0b312879-5491-4465-934a-d84c68467370",
+                    "displayName": "Top Responder Ports",
+                    "chartDatasource": {
+                        "dashboardQuery": "7f53e793-81dc-4b9e-bdd6-baca57af2182",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "target.port",
+                                "header": "Destination Port"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Count"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "f907bdf858227edf75019e0809dbd29c25215392b388d21bf29038d51f9dd70a"
+                },
+                {
+                    "name": "f7ec7549-bb3b-46c9-ba97-0f22a0014f2b",
+                    "displayName": "Top Inbound Data Flows by Originator (id_orig_h) Bytes",
+                    "chartDatasource": {
+                        "dashboardQuery": "637f0056-603f-436d-8990-45186ea43faf",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "principal.ip",
+                                "header": "Source IP"
+                            },
+                            {
+                                "field": "target.ip",
+                                "header": "Destination IP"
+                            },
+                            {
+                                "field": "principal.ip_geo_artifact.location.country_or_region",
+                                "header": "Source Country"
+                            },
+                            {
+                                "field": "hostname",
+                                "header": "Source Hostname"
+                            },
+                            {
+                                "field": "proto",
+                                "header": "Proto"
+                            },
+                            {
+                                "field": "orig_byte_sum",
+                                "header": "Bytes"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "7ae045f58d8576e438944383fb37974189fae50d897de889a03fa6888e4959cd"
+                },
+                {
+                    "name": "02264d60-901f-4536-abc7-722e15267018",
+                    "displayName": "Top Responders (destinations) by # of  connections",
+                    "chartDatasource": {
+                        "dashboardQuery": "c47911ad-ac90-4bde-a8ca-06133bf5715d",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "target.ip"
+                                },
+                                "dataLabel": {},
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "undefined"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "192.168.12.9",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "192.168.12.9"
+                                            }
+                                        },
+                                        {
+                                            "key": "192.168.12.10",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "192.168.12.10"
+                                            }
+                                        },
+                                        {
+                                            "key": "8.8.8.8",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "8.8.8.8"
+                                            }
+                                        },
+                                        {
+                                            "key": "192.168.10.1",
+                                            "value": {
+                                                "color": "#d15f6b",
+                                                "label": "192.168.10.1"
+                                            }
+                                        },
+                                        {
+                                            "key": "52.21.18.219",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "52.21.18.219"
+                                            }
+                                        },
+                                        {
+                                            "key": "52.21.3.59",
+                                            "value": {
+                                                "color": "#923ef9",
+                                                "label": "52.21.3.59"
+                                            }
+                                        },
+                                        {
+                                            "key": "34.193.168.81",
+                                            "value": {
+                                                "color": "#4aa207",
+                                                "label": "34.193.168.81"
+                                            }
+                                        },
+                                        {
+                                            "key": "71.10.216.1",
+                                            "value": {
+                                                "color": "#5350fb",
+                                                "label": "71.10.216.1"
+                                            }
+                                        },
+                                        {
+                                            "key": "1.1.1.1",
+                                            "value": {
+                                                "color": "#009886",
+                                                "label": "1.1.1.1"
+                                            }
+                                        },
+                                        {
+                                            "key": "10.4.0.56",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "10.4.0.56"
+                                            }
+                                        },
+                                        {
+                                            "key": "216.239.34.10",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "216.239.34.10"
+                                            }
+                                        },
+                                        {
+                                            "key": "10.0.0.2",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "10.0.0.2"
+                                            }
+                                        },
+                                        {
+                                            "key": "172.28.0.18",
+                                            "value": {
+                                                "color": "#d15f6b",
+                                                "label": "172.28.0.18"
+                                            }
+                                        },
+                                        {
+                                            "key": "172.28.0.19",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "172.28.0.19"
+                                            }
+                                        },
+                                        {
+                                            "key": "172.28.0.20",
+                                            "value": {
+                                                "color": "#923ef9",
+                                                "label": "172.28.0.20"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "e9e5c6110e2d5b4e76940e537fa8c67840bc09355644a0af7d54573c0cc0b7ad"
+                }
+            ],
+            "dashboardQueries": [
+                {
+                    "name": "ed23fdcd-6e35-4e8f-b52f-1bb068739116",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" \r\nobserver.hostname!=\"\"\r\nprincipal.ip!=\"\"\r\ntarget.ip!=\"\"\r\n$service=about.labels[\"service\"]\r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$service!=\"\"\r\n$is_broadcast!=\"true\"\r\nmatch:\r\n    principal.ip\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    15",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "2f023b7ac91b68c09c520a92bbb19539fc247d70b814d8c3c2877eafd2f28293"
+                },
+                {
+                    "name": "a7fee2aa-eccc-4315-bdc6-9e03b048f540",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" \r\nobserver.hostname!=\"\"\r\nprincipal.ip!=\"\"\r\ntarget.ip!=\"\"\r\n$service=about.labels[\"service\"]\r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$service!=\"\"\r\n$is_broadcast!=\"true\"\r\nmatch:\r\n    $service\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    15",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "2eb1952004851f4cc313afa33122df9c8ff19e5284d7d37800c63c5796f6bc7c"
+                },
+                {
+                    "name": "7f53e793-81dc-4b9e-bdd6-baca57af2182",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" \r\nobserver.hostname!=\"\"\r\nprincipal.ip!=\"\"\r\ntarget.ip!=\"\"\r\n$service=about.labels[\"service\"]\r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$service!=\"\"\r\n$is_broadcast!=\"true\"\r\nmatch:\r\n    target.port\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    15",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "f3a469af23c923177baba3e498e0c734b0537172eb3d1a14fea65988e1a4d018"
+                },
+                {
+                    "name": "637f0056-603f-436d-8990-45186ea43faf",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" \r\nobserver.hostname!=\"\"\r\nprincipal.ip!=\"\"\r\ntarget.ip!=\"\"\r\n$country_len=strings.length(principal.ip_geo_artifact.location.country_or_region)\r\n$host_len=strings.length(principal.ip_geo_artifact.network.dns_domain)\r\n($host_len=0 AND $country_len=0) OR $host_len > 0\r\n$service=about.labels[\"service\"]\r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$service!=\"\"\r\n$is_broadcast!=\"true\"\r\n$direction=if(about.labels[\"local_orig\"]=\"true\" AND about.labels[\"local_resp\"]=\"true\", \"internal\", \r\n           if(about.labels[\"local_orig\"]=\"true\" and about.labels[\"local_resp\"]=\"false\", \"outbound\",\r\n           if(about.labels[\"local_orig\"]=\"false\" and about.labels[\"local_resp\"]=\"false\", \"external\", \r\n           if(about.labels[\"local_orig\"]=\"false\" and about.labels[\"local_resp\"]=\"true\", \"inbound\", \"unknown\"\r\n           ))))\r\n$direction=\"inbound\"\r\n$protocol_string=if(network.ip_protocol=88, \"EIGRP\",\r\nif(network.ip_protocol=50, \"ESP\",\r\nif(network.ip_protocol=97, \"ETHERIP\",\r\nif(network.ip_protocol=47, \"GRE\",\r\nif(network.ip_protocol=1, \"ICMP\",\r\nif(network.ip_protocol=58, \"ICMP6\",\r\nif(network.ip_protocol=2, \"IGMP\",\r\nif(network.ip_protocol=41, \"IP6IN4\",\r\nif(network.ip_protocol=103, \"PIM\",\r\nif(network.ip_protocol=132, \"SCTP\",\r\nif(network.ip_protocol=6, \"TCP\",\r\nif(network.ip_protocol=17, \"UDP\",\r\nif(network.ip_protocol=0, \"UNKNOWN_IP_PROTOCOL\",\r\nif(network.ip_protocol=112, \"VRRP\", \"UNKNOWN_IP_PROTOCOL\"))))))))))))))\r\n$hostname=if(principal.ip_geo_artifact.network.dns_domain!=\"\", principal.ip_geo_artifact.network.dns_domain, \"Unknown\")\r\nmatch:\r\n    principal.ip, target.ip, $hostname,principal.ip_geo_artifact.location.country_or_region\r\noutcome:\r\n    $proto=array_distinct($protocol_string)\r\n    $orig_byte_sum=sum(network.sent_bytes)\r\norder:\r\n    $orig_byte_sum desc \r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "67cb55dd42f8bb3eb431c6b995d557d96497299d5c1a0007c5a2836d042a1eb4"
+                },
+                {
+                    "name": "c47911ad-ac90-4bde-a8ca-06133bf5715d",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" \r\nobserver.hostname!=\"\"\r\nprincipal.ip!=\"\"\r\ntarget.ip!=\"\"\r\n$service=about.labels[\"service\"]\r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$service!=\"\"\r\n$is_broadcast!=\"true\"\r\nmatch:\r\n    target.ip\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    15",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "74454d29f37b21575f244f9f99be28071a0f2d7abf4d136e51f425776b11e4e7"
+                },
+                {
+                    "name": "e12dbc7e-7fab-44b2-9cc5-dadc15eebe4e",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" \r\nobserver.hostname!=\"\"\r\nprincipal.ip!=\"\"\r\ntarget.ip!=\"\"\r\n$country_len=strings.length(target.ip_geo_artifact.location.country_or_region)\r\n$host_len=strings.length(target.ip_geo_artifact.network.dns_domain)\r\n($host_len=0 AND $country_len=0) OR $host_len > 0\r\n$service=about.labels[\"service\"]\r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$service!=\"\"\r\n$is_broadcast!=\"true\"\r\n$direction=if(about.labels[\"local_orig\"]=\"true\" AND about.labels[\"local_resp\"]=\"true\", \"internal\", \r\n           if(about.labels[\"local_orig\"]=\"true\" and about.labels[\"local_resp\"]=\"false\", \"outbound\",\r\n           if(about.labels[\"local_orig\"]=\"false\" and about.labels[\"local_resp\"]=\"false\", \"external\", \r\n           if(about.labels[\"local_orig\"]=\"false\" and about.labels[\"local_resp\"]=\"true\", \"inbound\", \"unknown\"\r\n           ))))\r\n$direction=\"outbound\"\r\n$protocol_string=if(network.ip_protocol=88, \"EIGRP\",\r\nif(network.ip_protocol=50, \"ESP\",\r\nif(network.ip_protocol=97, \"ETHERIP\",\r\nif(network.ip_protocol=47, \"GRE\",\r\nif(network.ip_protocol=1, \"ICMP\",\r\nif(network.ip_protocol=58, \"ICMP6\",\r\nif(network.ip_protocol=2, \"IGMP\",\r\nif(network.ip_protocol=41, \"IP6IN4\",\r\nif(network.ip_protocol=103, \"PIM\",\r\nif(network.ip_protocol=132, \"SCTP\",\r\nif(network.ip_protocol=6, \"TCP\",\r\nif(network.ip_protocol=17, \"UDP\",\r\nif(network.ip_protocol=0, \"UNKNOWN_IP_PROTOCOL\",\r\nif(network.ip_protocol=112, \"VRRP\", \"UNKNOWN_IP_PROTOCOL\"))))))))))))))\r\n$hostname=if(target.ip_geo_artifact.network.dns_domain!=\"\", target.ip_geo_artifact.network.dns_domain, \"Unknown\")\r\nmatch:\r\n    principal.ip, target.ip, $hostname,target.ip_geo_artifact.location.country_or_region\r\noutcome:\r\n    $proto=array_distinct($protocol_string)\r\n    $orig_byte_sum=sum(network.sent_bytes)\r\norder:\r\n    $orig_byte_sum desc \r\nlimit:\r\n    10",
+                    "input": {
+                        "timeWindow": {
+                            "startTime": "2025-03-28T00:00:00Z",
+                            "endTime": "2025-03-29T00:00:00Z"
+                        }
+                    },
+                    "etag": "6434652f3ffcdbad91487a37d94dfa5888161317c709b178404417c1ebe27731"
+                },
+                {
+                    "name": "5b101363-1de7-41ae-a254-7a93283d48f4",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" \r\nobserver.hostname!=\"\"\r\nprincipal.ip!=\"\"\r\ntarget.ip!=\"\"\r\n$service=about.labels[\"service\"]\r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$service!=\"\"\r\n$uid=about.labels[\"uid\"]\r\n$protocol_string=if(network.ip_protocol=88, \"EIGRP\",\r\nif(network.ip_protocol=50, \"ESP\",\r\nif(network.ip_protocol=97, \"ETHERIP\",\r\nif(network.ip_protocol=47, \"GRE\",\r\nif(network.ip_protocol=1, \"ICMP\",\r\nif(network.ip_protocol=58, \"ICMP6\",\r\nif(network.ip_protocol=2, \"IGMP\",\r\nif(network.ip_protocol=41, \"IP6IN4\",\r\nif(network.ip_protocol=103, \"PIM\",\r\nif(network.ip_protocol=132, \"SCTP\",\r\nif(network.ip_protocol=6, \"TCP\",\r\nif(network.ip_protocol=17, \"UDP\",\r\nif(network.ip_protocol=0, \"UNKNOWN_IP_PROTOCOL\",\r\nif(network.ip_protocol=112, \"VRRP\", \"UNKNOWN_IP_PROTOCOL\"))))))))))))))\r\n\r\nmatch:\r\n    $uid\r\noutcome:\r\n    $duration=math.round(window.avg(network.session_duration.seconds), 3)\r\n    $principal_ip=array_distinct(principal.ip)\r\n    $target_ip=array_distinct(target.ip)\r\n    $proto=array_distinct($protocol_string)\r\norder:\r\n    $duration desc \r\nlimit:\r\n    10",
+                    "input": {
+                        "timeWindow": {
+                            "startTime": "2025-03-28T00:00:00Z",
+                            "endTime": "2025-03-29T00:00:00Z"
+                        }
+                    },
+                    "etag": "89fd11311939a1968187dbeb4747f56eedbef409d5db71981b30e2790665b266"
+                }
+            ]
+        }
+    ]
+}
