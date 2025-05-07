@@ -359,7 +359,7 @@
                             {
                                 "seriesType": "TEXT",
                                 "label": " ",
-                                "field": "http_refferer",
+                                "field": "http_referrer",
                                 "metricTrendConfig": {
                                     "metricFormat": "METRIC_FORMAT_NUMBER",
                                     "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
@@ -823,7 +823,7 @@
                             {
                                 "seriesType": "TEXT",
                                 "label": " ",
-                                "field": "http_refferer",
+                                "field": "http_referrer",
                                 "metricTrendConfig": {
                                     "metricFormat": "METRIC_FORMAT_NUMBER",
                                     "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
@@ -1105,7 +1105,7 @@
                 },
                 {
                     "name": "f2b1f6d4-9a28-40a6-9340-e88f502b896e",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http\" \r\nnetwork.http.referral_url != \"\"\r\noutcome:\r\n    $http_refferer=count_distinct(network.http.referral_url)",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http\" \r\nnetwork.http.referral_url != \"\"\r\noutcome:\r\n    $http_referrer=count_distinct(network.http.referral_url)",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
@@ -1116,7 +1116,7 @@
                 },
                 {
                     "name": "197ea32c-87e9-421f-baa4-213a7a60ebef",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http\" \r\noutcome:\r\n    $http_refferer=count_distinct(about.labels[\"uid\"])",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http\" \r\noutcome:\r\n    $http_referrer=count_distinct(about.labels[\"uid\"])",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",

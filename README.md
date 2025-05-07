@@ -33,7 +33,7 @@ The architecture diagram shows the following components:
 
 ### Configure the Corelight log Exporter for Google SecOps 
 
-1. Sign into Corelight Sensor as an adminstrator.
+1. Sign into Corelight Sensor as an administrator.
 
 2. Select the **Exporters (Dynamic)** tab and select Google SecOps.
 
@@ -98,7 +98,7 @@ To configure the Google Security Operations forwarder, do the following:
 
 ### Configure the Corelight Sensor exporter 
 
-1. Log into Corelight Sensor as an adminstrator.
+1. Log into Corelight Sensor as an administrator.
 2. Select the **Export** tab.
 3. Find and enable **EXPORT TO SYSLOG** option.
 4. Under **EXPORT TO SYSLOG**, configure the following fields:
@@ -2214,7 +2214,7 @@ The following table lists the log fields of the <code>intel</code> log type and 
 <tr>
 <td><code>seen.indicator (string)</code></td>
 <td><code>entity.resource.name</code></td>
-<td>If the <code>metadata.entity_type</code> log field value is equal to <code>RESOURCE</code>, then the <code>seen.indicatior</code> log field is mapped to the <code>entity.resource.name</code> UDM field.</td>
+<td>If the <code>metadata.entity_type</code> log field value is equal to <code>RESOURCE</code>, then the <code>seen.indicator</code> log field is mapped to the <code>entity.resource.name</code> UDM field.</td>
 </tr>
 <tr>
 <td></td>
@@ -2224,7 +2224,7 @@ The following table lists the log fields of the <code>intel</code> log type and 
 <tr>
 <td><code>seen.indicator_type (string - enum)</code></td>
 <td><code>entity.resource.resource_sub_type</code></td>
-<td>If the <code>metadata.entity_type</code> log field value is equal to <code>RESOURCE</code>, then the <code>seen.indicatior_type</code> log field is mapped to the <code>entity.resource.resource_sub_type</code> UDM field.</td>
+<td>If the <code>metadata.entity_type</code> log field value is equal to <code>RESOURCE</code>, then the <code>seen.indicator_type</code> log field is mapped to the <code>entity.resource.resource_sub_type</code> UDM field.</td>
 </tr>
 <tr>
 <td><code>seen.where (string - enum)</code></td>

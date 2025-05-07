@@ -642,7 +642,7 @@
                 },
                 {
                     "name": "cbdc5f06-e8b1-47d5-8f7d-059c837fc1b7",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"vpn\"\r\n$inference=about.labels[\"inference\"]\r\n$vpn_type=about.labels[\"vpn_type\"]\r\n$inference!=\"\"\r\n$vpn_type!=\"\"\r\n$combined_fieds=strings.concat(principal.ip, about.labels[\"vpn_type\"], target.location.country_or_region)\r\nmatch:\r\n    principal.ip\r\noutcome:\r\n    $count=count_distinct($combined_fieds)\r\norder:\r\n    $count desc\r\nlimit:\r\n    20",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"vpn\"\r\n$inference=about.labels[\"inference\"]\r\n$vpn_type=about.labels[\"vpn_type\"]\r\n$inference!=\"\"\r\n$vpn_type!=\"\"\r\n$combined_fields=strings.concat(principal.ip, about.labels[\"vpn_type\"], target.location.country_or_region)\r\nmatch:\r\n    principal.ip\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc\r\nlimit:\r\n    20",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
