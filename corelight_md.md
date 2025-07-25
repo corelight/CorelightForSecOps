@@ -35,6 +35,7 @@ The Corelight parser supports the following log types:
     <li>conn</li>
     <li>conn_long</li>
     <li>conn_red</li>
+    <li>conn_agg</li>
     <li>dce_rpc</li>
     <li>dns</li>
     <li>dns_red</li>
