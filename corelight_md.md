@@ -138,6 +138,11 @@ The Corelight parser supports the following log types:
     <li>wireguard</li>
     <li>x509</li>
     <li>x509_red</li>
+    <li>dns_agg</li>
+    <li>files_agg</li>
+    <li>http_agg</li>
+    <li>ssl_agg</li>
+    <li>weird_agg</li>
   </ul>
 </div>
 
@@ -219,7 +224,7 @@ The following table lists common fields of the <code>CORELIGHT</code> log and th
 </tr>
 <tr>
 <td><code>uid (string)</code></td>
-<td><code>about.labels [uid]</code></td>
+<td><code>about.labels [uid], additional.fields [uid]</code></td>
 <td></td>
 </tr>
 <tr>
@@ -242,13 +247,27 @@ The following table lists common fields of the <code>CORELIGHT</code> log and th
 <td><code>target.port</code></td>
 <td></td>
 </tr>
+<tr>
+<td><code>uids (array[string] - vector of string)</code></td>
+<td><code>additional.fields [uid]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>count (integer - int)</code></td>
+<td><code>additional.fields [count]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>ts_last</code></td>
+<td><code>additional.fields [ts_last]</code></td>
+<td></td>
 </tbody>
 </table>
 </devsite-filter>
 </div>
-<h3>Field mapping reference: CORELIGHT - conn, conn_red, conn_long</h3>
+<h3>Field mapping reference: CORELIGHT - conn, conn_red, conn_long, conn_agg</h3>
 
-The following table lists the log fields of the <code>conn, conn_red, conn_long</code> log type and their corresponding UDM fields.
+The following table lists the log fields of the <code>conn, conn_red, conn_long, conn_agg</code> log type and their corresponding UDM fields.
 
 <div translate="no">
 <devsite-filter sortable="0">
@@ -462,6 +481,41 @@ The following table lists the log fields of the <code>conn, conn_red, conn_long<
 <td><code>about.labels [service]</code></td>
 <td></td>
 </tr>
+<tr>
+<td><code>id_orig_h_n</code></td>
+<td><code>principal.ip</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>id_resp_h_n</code></td>
+<td><code>target.ip</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>netskope_site_ids</code></td>
+<td><code>additional.fields[netskope_site_ids]</code></td>
+<td>Iterate through log field <code>netskope_site_ids</code>, then <br><code>netskope_site_id_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>netskope_site_id</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>netskope_user_ids</code></td>
+<td><code>additional.fields[netskope_user_ids]</code></td>
+<td>Iterate through log field <code>netskope_user_ids</code>, then <br><code>netskope_user_id_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>netskope_user_id</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>write_ts</code></td>
+<td><code>additional.fields[write_ts]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>spcap.urls (array[string] - vector of string)</code></td>
+<td><code>security_result.url_back_to_product</code></td>
+<td>Iterate through log field <code>spcap.urls</code>, then <br><code>spcap.urls</code> log field is mapped to the <code>security_result.url_back_to_product</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>community_ids (array[string] - vector of string)</code></td>
+<td><code>network.community_id</code></td>
+<td>Iterate through log field <code>community_ids</code>, then<br> if index is equal to <code>0</code> then, <code>community_id</code> log field is mapped to the <code>network.community_id</code> UDM field. <br> Else, <code>community_id_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>community_id</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+
 </tbody>
 </table>
 </devsite-filter>
@@ -541,9 +595,9 @@ The following table lists the log fields of the <code>dce_rpc</code> log type an
 </table>
 </devsite-filter>
 </div>
-<h3>Field mapping reference: CORELIGHT - dns, dns_red</h3>
+<h3>Field mapping reference: CORELIGHT - dns, dns_red, dns_agg</h3>
 
-The following table lists the log fields of the <code>dns, dns_red</code> log type and their corresponding UDM fields.
+The following table lists the log fields of the <code>dns, dns_red, dns_agg</code> log type and their corresponding UDM fields.
 
 <div translate="no">
 <devsite-filter sortable="0">
@@ -691,9 +745,9 @@ The following table lists the log fields of the <code>dns, dns_red</code> log ty
 </table>
 </devsite-filter>
 </div>
-<h3>Field mapping reference: CORELIGHT - http, http_red, http2</h3>
+<h3>Field mapping reference: CORELIGHT - http, http_red, http2, http_agg</h3>
 
-The following table lists the log fields of the <code>http, http_red, http2</code> log type and their corresponding UDM fields.
+The following table lists the log fields of the <code>http, http_red, http2, http_agg</code> log type and their corresponding UDM fields.
 
 <div translate="no">
 <devsite-filter sortable="0">
@@ -861,6 +915,16 @@ The following table lists the log fields of the <code>http, http_red, http2</cod
 <td><code>about.labels [push]</code></td>
 <td></td>
 </tr>
+<tr>
+<td><code>versions (array[float] - vector of float)</code></td>
+<td><code>network.application_protocol_version</code></td>
+<td>Iterate through log field <code>versions</code>, then<br> if index is equal to <code>0</code> then, <code>version</code> log field is mapped to the <code>network.application_protocol_version</code> UDM field. <br> Else, <code>version_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>version</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>user_agents (array[string] - vector of string)</code></td>
+<td><code>network.http.user_agent</code></td>
+<td>Iterate through log field <code>user_agents</code>, then<br> if index is equal to <code>0</code> then, <code>user_agent</code> log field is mapped to the <code>network.http.user_agent</code> UDM field. <br> Else, <code>user_agent_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>user_agent</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
 </tbody>
 </table>
 </devsite-filter>
@@ -980,9 +1044,9 @@ The following table lists the log fields of the <code>irc</code> log type and th
 </table>
 </devsite-filter>
 </div>
-<h3>Field mapping reference: CORELIGHT - files, files_red</h3>
+<h3>Field mapping reference: CORELIGHT - files, files_red, files_agg</h3>
 
-The following table lists the log fields of the <code>files, files_red</code> log type and their corresponding UDM fields.
+The following table lists the log fields of the <code>files, files_red, files_agg</code> log type and their corresponding UDM fields.
 
 <div translate="no">
 <devsite-filter sortable="0">
@@ -1131,6 +1195,16 @@ The following table lists the log fields of the <code>files, files_red</code> lo
 <td><code>about.labels [num]</code></td>
 <td></td>
 </tr>
+<tr>
+<td><code>mime_types (array[string] - vector of string)</code></td>
+<td><code>target.file.mime_type</code></td>
+<td>Iterate through log field <code>mime_type</code>, then<br> if index is equal to <code>0</code> then, <code>mime_type</code> log field is mapped to the <code>target.file.mime_type</code> UDM field. <br> Else, <code>mime_type_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>mime_type</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>timedouts (array[boolean] - vector of bool)</code></td>
+<td><code>additional.fields[timedouts]</code></td>
+<td>Iterate through log field <code>timedouts</code>, then <br><code>timedout_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>timedouts</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
 </tbody>
 </table>
 </devsite-filter>
@@ -1274,6 +1348,11 @@ The following table lists the log fields of the <code>notice</code> log type and
 <tr>
 <td><code>severity.level</code></td>
 <td><code>security_result.detection_fields [severity_level]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>orig_vulnerable_host.cve (array[string] - vector of string)</code></td>
+<td><code>principal.asset.vulnerabilities.cve_id</code></td>
 <td></td>
 </tr>
 </tbody>
@@ -1475,9 +1554,9 @@ The following table lists the log fields of the <code>smb_mapping</code> log typ
 </table>
 </devsite-filter>
 </div>
-<h3>Field mapping reference: CORELIGHT - ssl, ssl_red</h3>
+<h3>Field mapping reference: CORELIGHT - ssl, ssl_red, ssl_agg</h3>
 
-The following table lists the log fields of the <code>ssl, ssl_red</code> log type and their corresponding UDM fields.
+The following table lists the log fields of the <code>ssl, ssl_red, ssl_agg</code> log type and their corresponding UDM fields.
 
 <div translate="no">
 <devsite-filter sortable="0">
@@ -2580,7 +2659,7 @@ The following table lists the log fields of the <code>suricata_corelight</code> 
 <td>The <code>security_result.severity</code> UDM field is set to <code>INFORMATIONAL</code>.</td>
 </tr>
 <tr>
-<td><code>orig_vulnerable_host.cve (string)</code></td>
+<td><code>orig_vulnerable_host.cve (array[string] - vector of string)</code></td>
 <td><code>principal.asset.vulnerabilities.cve_id</code></td>
 <td></td>
 </tr>
@@ -3959,9 +4038,9 @@ The following table lists the log fields of the <code>tunnel</code> log type and
 </table>
 </devsite-filter>
 </div>
-<h3>Field mapping reference: CORELIGHT - weird, weird_red</h3>
+<h3>Field mapping reference: CORELIGHT - weird, weird_red, weird_agg</h3>
 
-The following table lists the log fields of the <code>weird, weird_red</code> log type and their corresponding UDM fields.
+The following table lists the log fields of the <code>weird, weird_red, weird_agg</code> log type and their corresponding UDM fields.
 
 <div translate="no">
 <devsite-filter sortable="0">
