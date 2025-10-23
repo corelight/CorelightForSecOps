@@ -143,6 +143,12 @@ The Corelight parser supports the following log types:
     <li>http_agg</li>
     <li>ssl_agg</li>
     <li>weird_agg</li>
+    <li>analyzer</li>
+    <li>anomaly</li>
+    <li>ssdp</li>
+    <li>telnet</li>
+    <li>websocket</li>
+    <li>first_seen</li>
   </ul>
 </div>
 
@@ -224,7 +230,7 @@ The following table lists common fields of the <code>CORELIGHT</code> log and th
 </tr>
 <tr>
 <td><code>uid (string)</code></td>
-<td><code>about.labels [uid], additional.fields [uid]</code></td>
+<td><code>about.labels [uid], network.session_id</code></td>
 <td></td>
 </tr>
 <tr>
@@ -1662,7 +1668,7 @@ The following table lists the log fields of the <code>ssl, ssl_red, ssl_agg</cod
 </tr>
 <tr>
 <td><code>validation_status (string)</code></td>
-<td><code>security_result.detection_fields [validation_status]</code></td>
+<td><code>security_result.description</code></td>
 <td></td>
 </tr>
 <tr>
@@ -1707,7 +1713,7 @@ The following table lists the log fields of the <code>rdp</code> log type and th
 </tr>
 <tr>
 <td><code>cookie (string)</code></td>
-<td><code>about.labels [cookie]</code></td>
+<td><code>principal.user.userid</code></td>
 <td></td>
 </tr>
 <tr>
@@ -1732,7 +1738,7 @@ The following table lists the log fields of the <code>rdp</code> log type and th
 </tr>
 <tr>
 <td><code>client_build (string)</code></td>
-<td><code>principal.labels [client_build]</code></td>
+<td><code>principal.asset.software.version</code></td>
 <td></td>
 </tr>
 <tr>
@@ -1742,7 +1748,7 @@ The following table lists the log fields of the <code>rdp</code> log type and th
 </tr>
 <tr>
 <td><code>client_dig_product_id (string)</code></td>
-<td><code>principal.labels [client_dig_product_id ]</code></td>
+<td><code>principal.asset.product_object_id</code></td>
 <td></td>
 </tr>
 <tr>
@@ -1788,7 +1794,8 @@ The following table lists the log fields of the <code>rdp</code> log type and th
 <tr>
 <td><code>auth_success (boolean - bool)</code></td>
 <td><code>about.labels [auth_success]</code></td>
-<td></td>
+<td>security_result.action</code></td>
+<td>If the <code>auth_success</code> log field value is equal to <code>true</code> then, the <code>security_result.action</code> UDM field is set to <code>ALLOW</code>. <br> Else, the <code>security_result.action</code> UDM field is set to <code>FAIL</code>.</td>
 </tr>
 <tr>
 <td><code>channels_joined (integer - int)</code></td>
@@ -2192,7 +2199,7 @@ The following table lists the log fields of the <code>smtp</code> log type and t
 </tr>
 <tr>
 <td><code>helo (string)</code></td>
-<td><code>target.domain.name</code></td>
+<td><code>network.smtp.helo</code></td>
 <td></td>
 </tr>
 <tr>
@@ -2267,12 +2274,12 @@ The following table lists the log fields of the <code>smtp</code> log type and t
 </tr>
 <tr>
 <td><code>path (array[string] - vector of addr)</code></td>
-<td><code>intermediary.ip</code></td>
-<td></td>
+<td><code>network.smtp.message_path</code></td>
+<td>Iterate through log field <code>path</code>, then<br> if the <code>index</code> value is equal to <code>0</code> then, <code>path</code> log field is mapped to the <code>network.smtp.message_path</code> UDM field. <br> Else, <code>path</code> log field is mapped to the <code>intermediary.ip</code> UDM field.<br></td>
 </tr>
 <tr>
 <td><code>user_agent (string)</code></td>
-<td><code>about.labels [user_agent]</code></td>
+<td><code>principal.application</code></td>
 <td></td>
 </tr>
 <tr>
@@ -2362,12 +2369,12 @@ The following table lists the log fields of the <code>ssh</code> log type and th
 </tr>
 <tr>
 <td><code>client (string)</code></td>
-<td><code>principal.application</code></td>
+<td><code>principal.asset.software.version</code></td>
 <td></td>
 </tr>
 <tr>
 <td><code>server (string)</code></td>
-<td><code>target.application</code></td>
+<td><code>target.asset.software.version</code></td>
 <td></td>
 </tr>
 <tr>
@@ -2392,12 +2399,12 @@ The following table lists the log fields of the <code>ssh</code> log type and th
 </tr>
 <tr>
 <td><code>host_key_alg (string)</code></td>
-<td><code>security_result.detection_fields [host_key_alg]</code></td>
+<td><code>network.tls.server.certificate.version</code></td>
 <td></td>
 </tr>
 <tr>
 <td><code>host_key (string)</code></td>
-<td><code>security_result.detection_fields [host_key]</code></td>
+<td><code>network.tls.server.certificate.sha256</code></td>
 <td></td>
 </tr>
 <tr>
@@ -2462,9 +2469,9 @@ The following table lists the log fields of the <code>ssh</code> log type and th
 </tr>
 <tr>
 <td><code>inferences (array[string] - set[string])</code></td>
-<td><code>security_result.summary, security_result.description</code></td>
-<td>If the <code>inferences</code> log field value is equal to <code>ABP</code>, then the <code>security_result.summary</code> UDM field is set to <code>Client Authentication Bypass</code> and the <code>security_result.description</code> UDM field is set to <code>A client wasn't adhering to expectations of SSH either through server exploit or by the client and server switching to a protocol other than SSH after enctyption begins</code>.<br><br>
-  If the <code>inferences</code> log field value is equal to <code>AFR</code>, then the <code>security_result.summary</code> UDM field is set to <code>SSH Agent Forwarding Requested</code> and the <code>security_result.description</code> UDM field is set to <code>Agent Forwarding is requested by tge Client</code>.<br><br>
+<td><code>security_result.summary, security_result.description,security_result.detection_fields[inferences]</code></td>
+<td>If the <code>inferences</code> log field value is equal to <code>ABP</code>, then the <code>security_result.summary</code> UDM field is set to <code>Client Authentication Bypass</code> and the <code>security_result.description</code> UDM field is set to <code>A client wasn't adhering to expectations of SSH either through server exploit or by the client and server switching to a protocol other than SSH after encryption begins</code>.<br><br>
+  If the <code>inferences</code> log field value is equal to <code>AFR</code>, then the <code>security_result.summary</code> UDM field is set to <code>SSH Agent Forwarding Requested</code> and the <code>security_result.description</code> UDM field is set to <code>Agent Forwarding is requested by the Client</code>.<br><br>
   If the <code>inferences</code> log field value is equal to <code>APWA</code>, then the <code>security_result.summary</code> UDM field is set to <code>Automated Password Authentication</code> and the <code>security_result.description</code> UDM field is set to <code>The client authenticated with an automated password tool (like sshpass)</code>.<br><br>
   If the <code>inferences</code> log field value is equal to <code>AUTO</code>, then the <code>security_result.summary</code> UDM field is set to <code>Automated Interaction</code> and the <code>security_result.description</code> UDM field is set to <code>The client is a script automated utility and not driven by a user</code>.<br><br>
   If the <code>inferences</code> log field value is equal to <code>BAN</code>, then the <code>security_result.summary</code> UDM field is set to <code>Server Banner</code> and the <code>security_result.description</code> UDM field is set to <code>The server sent the client a pre-authentication banner, likely for legal reasons</code>.<br><br>
@@ -2585,7 +2592,7 @@ The following table lists the log fields of the <code>suricata_corelight</code> 
 </tr>
 <tr>
 <td><code>alert.rev (integer - count)</code></td>
-<td><code>security_result.detection_fields [alert_rev]</code></td>
+<td><code>security_result.rule_version</code></td>
 <td></td>
 </tr>
 <tr>
@@ -2610,7 +2617,7 @@ The following table lists the log fields of the <code>suricata_corelight</code> 
 </tr>
 <tr>
 <td><code>alert.metadata (array[string] - vector of string)</code></td>
-<td><code>security_result.detection_fields [alert_metadata]</code></td>
+<td><code>security_result.rule_labels[alert_metadata]</code></td>
 <td></td>
 </tr>
 <tr>
@@ -2630,7 +2637,7 @@ The following table lists the log fields of the <code>suricata_corelight</code> 
 </tr>
 <tr>
 <td><code>metadata (array[string] - vector of string)</code></td>
-<td><code>security_result.detection_fields [metadata]</code></td>
+<td><code>security_result.rule_labels[metadata]</code></td>
 <td></td>
 </tr>
 <tr>
@@ -3386,7 +3393,7 @@ The following table lists the log fields of the <code>kerberos</code> log type a
 </tr>
 <tr>
 <td><code>request_type (string)</code></td>
-<td><code>principal.application</code></td>
+<td><code>extensions.auth.auth_details</code></td>
 <td></td>
 </tr>
 <tr>
@@ -3406,7 +3413,7 @@ The following table lists the log fields of the <code>kerberos</code> log type a
 </tr>
 <tr>
 <td><code>error_msg (string)</code></td>
-<td><code>security_result.action_details</code></td>
+<td><code>security_result.description</code></td>
 <td></td>
 </tr>
 <tr>
@@ -3511,8 +3518,8 @@ The following table lists the log fields of the <code>ldap</code> log type and t
 </tr>
 <tr>
 <td><code>result (array[string] - set[string])</code></td>
-<td><code>security_result.detection_fields [result]</code></td>
-<td></td>
+<td><code>security_result.detection_fields [result], security_result.action</code></td>
+<td>Iterate through log field <code>result</code>, then<br> if the <code>result</code> log field value contain one of the following values<div style='margin-top: -0.8em;'></div><ul><li><code>ALLOW</code></li><li><code>ALLOW_WITH_MODIFICATION</code></li><li><code>BLOCK</code></li><li><code>CHALLENGE</code></li><li><code>FAIL</code></li><li><code>QUARANTINE</code></li><li><code>UNKNOWN_ACTION</code></li></ul><div style='margin-top: -0.8em;'></div> then, <code>result</code> log field is mapped to the <code>security_result.action</code> UDM field.</td>
 </tr>
 <tr>
 <td><code>diagnostic_message (array[string] - vector of string)</code></td>
@@ -3521,8 +3528,8 @@ The following table lists the log fields of the <code>ldap</code> log type and t
 </tr>
 <tr>
 <td><code>object (array[string] - vector of string)</code></td>
-<td><code>about.labels [object]</code></td>
-<td></td>
+<td><code>target.resource.name, about.labels [object]</code></td>
+<td>Iterate through log field <code>object</code>, then<br> if the <code>index</code> value is equal to <code>0</code> then, <code>object</code> log field is mapped to the <code>target.resource.name</code> UDM field. <br> Else, the <code>about.labels.key</code> UDM field is set to <code>object</code> and <code>%{object}</code> log field is mapped to the <code>about.labels.value</code> UDM field.<br></td>
 </tr>
 <tr>
 <td><code>argument (array[string] - vector of string)</code></td>
@@ -3816,8 +3823,8 @@ The following table lists the log fields of the <code>syslog</code> log type and
 </tr>
 <tr>
 <td><code>severity (string)</code></td>
-<td><code>about.labels [severity]</code></td>
-<td></td>
+<td><code>security_result.severity, security_result.severity_details</code></td>
+<td>If the <code>severity</code> log field value contain one of the following values<div style='margin-top: -0.8em;'></div><ul><li><code>CRITICAL</code></li><li><code>ERROR</code></li><li><code>HIGH</code></li><li><code>INFORMATIONAL</code></li><li><code>LOW</code></li><li><code>MEDIUM</code></li></ul><div style='margin-top: -0.8em;'></div> then, <code>severity</code> log field is mapped to the <code>security_result.severity</code> UDM field.</td>
 </tr>
 <tr>
 <td><code>message (string)</code></td>
@@ -4066,12 +4073,12 @@ The following table lists the log fields of the <code>weird, weird_red, weird_ag
 </tr>
 <tr>
 <td><code>name (string)</code></td>
-<td><code>about.labels [name]</code></td>
+<td><code>metadata.product_event_type</code></td>
 <td></td>
 </tr>
 <tr>
 <td><code>addl (string)</code></td>
-<td><code>about.labels [addl]</code></td>
+<td><code>metadata.description</code></td>
 <td></td>
 </tr>
 <tr>
@@ -4081,12 +4088,12 @@ The following table lists the log fields of the <code>weird, weird_red, weird_ag
 </tr>
 <tr>
 <td><code>source (string)</code></td>
-<td><code>about.labels [source]</code></td>
+<td><code>metadata.product_name</code></td>
 <td></td>
 </tr>
 <tr>
 <td><code>peer (string)</code></td>
-<td><code>about.labels [peer]</code></td>
+<td><code>observer.hostname</code></td>
 <td></td>
 </tr>
 </tbody>
@@ -4181,8 +4188,8 @@ The following table lists the log fields of the <code>vpn</code> log type and th
 </tr>
 <tr>
 <td><code>inferences (array[string] - set[string])</code></td>
-<td><code>about.labels [inference]</code></td>
-<td></td>
+<td><code>metadata.description, about.labels [inference]</code></td>
+<td>Iterate through log field <code>inferences</code>, then<br> if the <code>index</code> value is equal to <code>0</code> then, <code>inferences</code> log field is mapped to the <code>metadata.description</code> UDM field. <br> Else, the <code>about.labels.key</code> UDM field is set to <code>inferences</code> and <code>inferences</code> log field is mapped to the <code>about.labels.value</code> UDM field.<br></td>
 </tr>
 <tr>
 <td><code>server_name (string)</code></td>
@@ -4191,7 +4198,7 @@ The following table lists the log fields of the <code>vpn</code> log type and th
 </tr>
 <tr>
 <td><code>client_info (string)</code></td>
-<td><code>principal.labels [client_info]</code></td>
+<td><code>network.http.user_agent</code></td>
 <td></td>
 </tr>
 <tr>
@@ -4291,72 +4298,72 @@ The following table lists the log fields of the <code>x509, x509_red</code> log 
 </tr>
 <tr>
 <td><code>fingerprint (string)</code></td>
-<td><code>about.labels [fingerprint]</code></td>
+<td><code>about.domain.last_https_certificate.thumbprint</code></td>
 <td></td>
 </tr>
 <tr>
 <td><code>certificate.version (integer - count)</code></td>
-<td><code>network.tls.server.certificate.version</code></td>
+<td><code>about.domain.last_https_certificate.version</code></td>
 <td></td>
 </tr>
 <tr>
 <td><code>certificate.serial (string)</code></td>
-<td><code>network.tls.server.certificate.serial</code></td>
+<td><code>about.domain.last_https_certificate.serial_number</code></td>
 <td></td>
 </tr>
 <tr>
 <td><code>certificate.subject (string)</code></td>
-<td><code>network.tls.server.certificate.subject</code></td>
+<td><code>about.domain.last_https_certificate.subject</code></td>
 <td></td>
 </tr>
 <tr>
 <td><code>certificate.issuer (string)</code></td>
-<td><code>network.tls.server.certificate.issuer</code></td>
-<td></td>
+<td><code>about.domain.last_https_certificate.issuer</code></td>
+<td>If <code>certificate.issuer</code> log field value matches the grok pattern <code>CN=%{GREEDYDATA:common_name},OU=%{GREEDYDATA:organizational_unit},O=%{GREEDYDATA:organization},C=%{DATA:country}$</code> then the extracted <code>common_name</code>, <code>organizational_unit</code>, <code>organization</code> and <code>country</code> fields are mapped to <code>about.domain.last_https_certificate.issuer.common_name</code>, <code>about.domain.last_https_certificate.issuer.organizational_unit</code>, <code>about.domain.last_https_certificate.issuer.organization</code>, and <code>about.domain.last_https_certificate.issuer.country_name</code> UDM fields respectively. <br></td>
 </tr>
 <tr>
 <td><code>certificate.not_valid_before (time)</code></td>
-<td><code>network.tls.server.certificate.not_before</code></td>
+<td><code>about.domain.last_https_certificate.validity.issue_time</code></td>
 <td></td>
 </tr>
 <tr>
 <td><code>certificate.not_valid_after (time)</code></td>
-<td><code>network.tls.server.certificate.not_after</code></td>
+<td><code>about.domain.last_https_certificate.validity.expiry_time</code></td>
 <td></td>
 </tr>
 <tr>
 <td><code>certificate.key_alg (string)</code></td>
-<td><code>about.labels [certificate_key_alg]</code></td>
+<td><code>about.labels [public_key_algorithm]</code></td>
 <td></td>
 </tr>
 <tr>
 <td><code>certificate.sig_alg (string)</code></td>
-<td><code>about.labels [certificate_sig_alg]</code></td>
+<td><code>about.domain.last_https_certificate.signature_algorithm</code></td>
 <td></td>
 </tr>
 <tr>
 <td><code>certificate.key_type (string)</code></td>
-<td><code>about.labels [certificate_key_type]</code></td>
+<td><code>about.domain.last_https_certificate.public_key.algorithm</code></td>
 <td></td>
 </tr>
 <tr>
 <td><code>certificate.key_length (integer - count)</code></td>
-<td><code>about.labels [certificate_key_length]</code></td>
+<td><code>about.domain.last_https_certificate.rsa.key_size</code></td>
 <td></td>
 </tr>
 <tr>
 <td><code>certificate.exponent (string)</code></td>
-<td><code>about.labels [certificate_exponent]</code></td>
+<td><code>about.domain.last_https_certificate.rsa.exponent</code></td>
 <td></td>
 </tr>
 <tr>
 <td><code>certificate.curve (string)</code></td>
-<td><code>network.tls.curve</code></td>
+<td><code>about.domain.last_https_certificate.ec.oid</code></td>
 <td></td>
 </tr>
 <tr>
 <td><code>san.dns (array[string] - vector of string)</code></td>
-<td><code>about.labels [san_dns]</code></td>
+<td><code>about.domain.last_https_certificate.cert_extensions.subject_alternative_name</code></td>
 <td></td>
 </tr>
 <tr>
@@ -4376,7 +4383,7 @@ The following table lists the log fields of the <code>x509, x509_red</code> log 
 </tr>
 <tr>
 <td><code>basic_constraints.ca (boolean - bool)</code></td>
-<td><code>about.labels [basic_constraints_ca]</code></td>
+<td><code>about.domain.last_https_certificate.cert_extensions.ca</code></td>
 <td></td>
 </tr>
 <tr>
@@ -4651,7 +4658,7 @@ The following table lists the log fields of the <code>pe</code> log type and the
 </tr>
 <tr>
 <td><code>compile_ts (time)</code></td>
-<td><code>about.labels [compile_ts]</code></td>
+<td><code>target.file.pe_file.section</code></td>
 <td></td>
 </tr>
 <tr>
@@ -4716,8 +4723,8 @@ The following table lists the log fields of the <code>pe</code> log type and the
 </tr>
 <tr>
 <td><code>section_names (array[string] - vector of string)</code></td>
-<td><code>about.labels [section_names]</code></td>
-<td></td>
+<td><code>target.file.pe_file.section</code></td>
+<td>Iterate through log field <code>section_names</code>, then <br><code>section_names</code> log field is mapped to the <code>target.file.pe_file.section</code> UDM field.<br></td>
 </tr>
 </tbody>
 </table>
@@ -4893,13 +4900,13 @@ The following table lists the log fields of the <code>radius</code> log type and
 </tr>
 <tr>
 <td><code>reply_msg (string)</code></td>
-<td><code>about.labels [reply_msg]</code></td>
+<td><code>extensions.auth.auth_details</code></td>
 <td></td>
 </tr>
 <tr>
 <td><code>result (string)</code></td>
-<td><code>extensions.auth.auth_details</code></td>
-<td></td>
+<td><code>security_result.action</code></td>
+<td>If the <code>result</code> log field value is equal to <code>true</code> then, the <code>security_result.action</code> UDM field is set to <code>ALLOW</code>. <br> Else, the <code>security_result.action</code> UDM field is set to <code>FAIL</code>.</td>
 </tr>
 <tr>
 <td><code>ttl (number - interval)</code></td>
@@ -5148,7 +5155,7 @@ The following table lists the log fields of the <code>mqtt_connect</code> log ty
 </tr>
 <tr>
 <td><code>will_topic (string)</code></td>
-<td><code>about.labels [will_topic]</code></td>
+<td><code>target.resource.name</code></td>
 <td></td>
 </tr>
 <tr>
@@ -5213,7 +5220,7 @@ The following table lists the log fields of the <code>mqtt_publish</code> log ty
 </tr>
 <tr>
 <td><code>topic (string)</code></td>
-<td><code>about.labels [topic]</code></td>
+<td><code>target.resource.name</code></td>
 <td></td>
 </tr>
 <tr>
@@ -5268,8 +5275,8 @@ The following table lists the log fields of the <code>mqtt_subscribe</code> log 
 </tr>
 <tr>
 <td><code>topics (array[string] - vector of string)</code></td>
-<td><code>about.labels [topics]</code></td>
-<td></td>
+<td><code>target.resource.name</code></td>
+<td>Iterate through log field <code>topics</code>, then<br> if the <code>index</code> value is equal to <code>0</code> then, <code>topics</code> log field is mapped to the <code>target.resource.name</code> UDM field. <br> Else, the <code>about.labels.key</code> UDM field is set to <code>topics</code> and <code>%{topics}</code> log field is mapped to the <code>about.labels.value</code> UDM field.</td>
 </tr>
 <tr>
 <td><code>qos_levels (array[integer] - vector of count)</code></td>
@@ -5283,8 +5290,8 @@ The following table lists the log fields of the <code>mqtt_subscribe</code> log 
 </tr>
 <tr>
 <td><code>ack (boolean - bool)</code></td>
-<td><code>security_result.detection_fields [ack]</code></td>
-<td></td>
+<td><code>security_result.action, security_result.detection_fields [ack]</code></td>
+<td>If the <code>ack</code> log field value is equal to <code>true</code> then, the <code>security_result.action</code> UDM field is set to <code>ALLOW</code>. <br> Else, if the <code>ack</code> log field value is equal to <code>false</code> then, the <code>security_result.action</code> UDM field is set to <code>BLOCK</code>. <br> Else, the <code>security_result.detection_fields.key</code> UDM field is set to <code>ack</code> and <code>ack</code> log field is mapped to the <code>security_result.detection_fields.value</code> UDM field.<br></td>
 </tr>
 </tbody>
 </table>
@@ -5614,7 +5621,7 @@ The following table lists the log fields of the <code>etc_viz</code> log type an
 </tr>
 <tr>
 <td><code>c2s_viz.size (integer - count)</code></td>
-<td><code>about.labels [c2s_viz_size]</code></td>
+<td><code>network.sent_bytes</code></td>
 <td></td>
 </tr>
 <tr>
@@ -5644,7 +5651,7 @@ The following table lists the log fields of the <code>etc_viz</code> log type an
 </tr>
 <tr>
 <td><code>s2c_viz.size (integer - count)</code></td>
-<td><code>about.labels [s2c_viz_size]</code></td>
+<td><code>network.received_bytes</code></td>
 <td></td>
 </tr>
 <tr>
@@ -5819,7 +5826,7 @@ The following table lists the log fields of the <code>generic_dns_tunnels</code>
 </tr>
 <tr>
 <td><code>capture_secs (number - interval)</code></td>
-<td><code>about.labels [capture_secs]</code></td>
+<td><code>network.session_duration</code></td>
 <td></td>
 </tr>
 </tbody>
@@ -6529,7 +6536,7 @@ The following table lists the log fields of the <code>known_devices</code> log t
 </tr>
 <tr>
 <td><code>protocols (array[string] - set[string])</code></td>
-<td><code>entity.labels [protocol]</code></td>
+<td><code>entity.network.application_protocol</code></td>
 <td></td>
 </tr>
 <tr>
@@ -6614,7 +6621,7 @@ The following table lists the log fields of the <code>known_domains</code> log t
 </tr>
 <tr>
 <td><code>protocols (array[string] - set[string])</code></td>
-<td><code>entity.labels [protocol]</code></td>
+<td><code>entity.network.application_protocol</code></td>
 <td></td>
 </tr>
 <tr>
@@ -6919,7 +6926,7 @@ The following table lists the log fields of the <code>known_services</code> log 
 </tr>
 <tr>
 <td><code>protocol (string - enum)</code></td>
-<td><code>entity.labels [protocol]</code></td>
+<td><code>entity.network.application_protocol</code></td>
 <td></td>
 </tr>
 <tr>
@@ -7200,7 +7207,7 @@ The following table lists the log fields of the <code>snmp</code> log type and t
 </tr>
 <tr>
 <td><code>up_since (time)</code></td>
-<td><code>about.labels [up_since]</code></td>
+<td><code>target.asset.last_boot_time</code></td>
 <td></td>
 </tr>
 </tbody>
@@ -7235,7 +7242,7 @@ The following table lists the log fields of the <code>socks</code> log type and 
 </tr>
 <tr>
 <td><code>version (integer - count)</code></td>
-<td><code>about.labels [version]</code></td>
+<td><code>network.application_protocol_version</code></td>
 <td></td>
 </tr>
 <tr>
@@ -7430,7 +7437,7 @@ The following table lists the log fields of the <code>specific_dns_tunnels</code
 </tr>
 <tr>
 <td><code>detection (string)</code></td>
-<td><code>security_result.detection_fields [detection]</code></td>
+<td><code>security_result.description</code></td>
 <td></td>
 </tr>
 <tr>
@@ -7500,32 +7507,32 @@ The following table lists the log fields of the <code>stepping</code> log type a
 </tr>
 <tr>
 <td><code>server1_h (string - addr)</code></td>
-<td><code>target.ip</code></td>
+<td><code>intermediary.ip</code></td>
 <td></td>
 </tr>
 <tr>
 <td><code>server1_p (integer - port)</code></td>
-<td><code>target.port</code></td>
+<td><code>intermediary.port</code></td>
 <td></td>
 </tr>
 <tr>
 <td><code>client2_h (string - addr)</code></td>
-<td><code>principal.ip</code></td>
+<td><code>intermediary.ip</code></td>
 <td></td>
 </tr>
 <tr>
 <td><code>client2_p (integer - port)</code></td>
-<td><code>principal.labels [client2_p]</code></td>
+<td><code>intermediary.port</code></td>
 <td></td>
 </tr>
 <tr>
 <td><code>server2_h (string - addr)</code></td>
-<td><code>target.labels [server2_h]</code></td>
+<td><code>target.ip</code></td>
 <td></td>
 </tr>
 <tr>
 <td><code>server2_p (integer - port)</code></td>
-<td><code>target.labels [server2_p]</code></td>
+<td><code>target.port</code></td>
 <td></td>
 </tr>
 </tbody>
@@ -9716,6 +9723,1189 @@ The following table lists the log fields of the <code>corelight_metrics_zeek_doc
 <td></td>
 </tr>
 </tbody>
+</table>
+</devsite-filter>
+</div>
+<h3>Field mapping reference: CORELIGHT - analyzer</h3>
+
+The following table lists the log fields of the <code>analyzer</code> log type and their corresponding UDM fields.
+
+<div translate="no">
+<devsite-filter sortable="0">
+<input type="text" placeholder="Type a keyword to find a value.">
+<table class="fixed">
+<thead>
+<tr>
+<th>Log field</th>
+<th>UDM mapping</th>
+<th>Logic</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr>
+<td><code>cause (string)</code></td>
+<td><code>metadata.description</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>analyzer_kind (string)</code></td>
+<td><code>additional.fields[analyzer_kind]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>analyzer_name (string)</code></td>
+<td><code>additional.fields[analyzer_name]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>fuid (string)</code></td>
+<td><code>additional.fields[fuid]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>failure_reason (string)</code></td>
+<td><code>security_result.summary</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>failure_data (string)</code></td>
+<td><code>security_result.description</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code></code></td>
+<td><code>metadata.event_type</code></td>
+<td>The <code>metadata.event_type</code> UDM field is set to <code>SCAN_UNCATEGORIZED</code>.</td>
+</tr>
+</tbody>
+</table>
+</devsite-filter>
+</div>
+<h3>Field mapping reference: CORELIGHT - anomaly</h3>
+
+The following table lists the log fields of the <code>anomaly</code> log type and their corresponding UDM fields.
+
+<div translate="no">
+<devsite-filter sortable="0">
+<input type="text" placeholder="Type a keyword to find a value.">
+<table class="fixed">
+<thead>
+<tr>
+<th>Log field</th>
+<th>UDM mapping</th>
+<th>Logic</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr>
+<td><code>use_case (string)</code></td>
+<td><code>security_result.rule_name</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>use_case_description (string)</code></td>
+<td><code>security_result.description</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>entity (string)</code></td>
+<td><code>additional.fields[entity]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>original_entity (string)</code></td>
+<td><code>additional.fields[original_entity]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>entity_training_items (array[string] - vector of string)</code></td>
+<td><code>additional.fields[entity_training_item]</code></td>
+<td>Iterate through log field <code>entity_training_items</code>, then <br><code>entity_training_item_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>entity_training_item</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>item (string)</code></td>
+<td><code>security_result.detection_fields[item]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>item_score (number - double)</code></td>
+<td><code>security_result.detection_fields[item_score]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>item_assoc_entities (array[string] - vector of string)</code></td>
+<td><code>security_result.detection_fields[item_assoc_entities]</code></td>
+<td>Iterate through log field <code>item_assoc_entities</code>, then <br><code>item_assoc_entities_%{index}</code> log field is mapped to the <code>security_result.detection_fields.key</code> UDM field and <code>item_assoc_entities</code> log field is mapped to the <code>security_result.detection_fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>item_assoc_entities_similarity (array[number] - vector of double)</code></td>
+<td><code>security_result.detection_fields[item_assoc_entities_similarity]</code></td>
+<td>Iterate through log field <code>item_assoc_entities_similarity</code>, then <br><code>item_assoc_entities_similarity_%{index}</code> log field is mapped to the <code>security_result.detection_fields.key</code> UDM field and <code>item_assoc_entities_similarity</code> log field is mapped to the <code>security_result.detection_fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>ignorable (boolean - bool)</code></td>
+<td><code>security_result.detection_fields[ignorable]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>history_days (integer - count)</code></td>
+<td><code>security_result.detection_fields[history_days]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>history (number - interval)</code></td>
+<td><code>security_result.detection_fields[history]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>nn1_entities (array[string] - vector of string)</code></td>
+<td><code>additional.fields[nn1_entities]</code></td>
+<td>Iterate through log field <code>nn1_entities</code>, then <br><code>nn1_entities_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn1_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn1_entity_similarity (number - double)</code></td>
+<td><code>additional.fields[nn1_entity_similarity]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>nn1_train_items (array[string] - vector of string)</code></td>
+<td><code>additional.fields[nn1_train_item]</code></td>
+<td>Iterate through log field <code>nn1_train_items</code>, then <br><code>nn1_train_item_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn1_train_items</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn1_pred_items (array[string] - set[string])</code></td>
+<td><code>additional.fields[nn1_pred_item]</code></td>
+<td>Iterate through log field <code>nn1_pred_items</code>, then <br><code>nn1_pred_item_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn1_pred_items</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn2_entities (array[string] - vector of string)</code></td>
+<td><code>additional.fields[nn2_entities]</code></td>
+<td>Iterate through log field <code>nn2_entities</code>, then <br><code>nn2_entities_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn2_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn2_entity_similarity (number - double)</code></td>
+<td><code>additional.fields[nn2_entity_similarity]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>nn2_train_items (array[string] - vector of string)</code></td>
+<td><code>additional.fields[nn2_train_item]</code></td>
+<td>Iterate through log field <code>nn2_train_items</code>, then <br><code>nn2_train_item_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn2_train_items</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn2_pred_items (array[string] - set[string])</code></td>
+<td><code>additional.fields[nn2_pred_item]</code></td>
+<td>Iterate through log field <code>nn2_pred_items</code>, then <br><code>nn2_pred_item_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn2_pred_items</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn3_entities (array[string] - vector of string)</code></td>
+<td><code>additional.fields[nn3_entities]</code></td>
+<td>Iterate through log field <code>nn3_entities</code>, then <br><code>nn3_entities_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn3_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn3_entity_similarity (number - double)</code></td>
+<td><code>additional.fields[nn3_entity_similarity]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>nn3_train_items (array[string] - vector of string)</code></td>
+<td><code>additional.fields[nn3_train_item]</code></td>
+<td>Iterate through log field <code>nn3_train_items</code>, then <br><code>nn3_train_item_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn3_train_items</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn3_pred_items (array[string] - set[string])</code></td>
+<td><code>additional.fields[nn3_pred_item]</code></td>
+<td>Iterate through log field <code>nn3_pred_items</code>, then <br><code>nn3_pred_item_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn3_pred_items</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn4_entities (array[string] - vector of string)</code></td>
+<td><code>additional.fields[nn4_entities]</code></td>
+<td>Iterate through log field <code>nn4_entities</code>, then <br><code>nn4_entities_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn4_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn4_entity_similarity (number - double)</code></td>
+<td><code>additional.fields[nn4_entity_similarity]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>nn4_train_items (array[string] - vector of string)</code></td>
+<td><code>additional.fields[nn4_train_item]</code></td>
+<td>Iterate through log field <code>nn4_train_items</code>, then <br><code>nn4_train_item_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn4_train_items</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn4_pred_items (array[string] - set[string])</code></td>
+<td><code>additional.fields[nn4_pred_item]</code></td>
+<td>Iterate through log field <code>nn4_pred_items</code>, then <br><code>nn4_pred_item_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn4_pred_items</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn5_entities (array[string] - vector of string)</code></td>
+<td><code>additional.fields[nn5_entities]</code></td>
+<td>Iterate through log field <code>nn5_entities</code>, then <br><code>nn5_entities_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn5_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn5_entity_similarity (number - double)</code></td>
+<td><code>additional.fields[nn5_entity_similarity]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>nn5_train_items (array[string] - vector of string)</code></td>
+<td><code>additional.fields[nn5_train_item]</code></td>
+<td>Iterate through log field <code>nn5_train_items</code>, then <br><code>nn5_train_item_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn5_train_items</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn5_pred_items (array[string] - set[string])</code></td>
+<td><code>additional.fields[nn5_pred_item]</code></td>
+<td>Iterate through log field <code>nn5_pred_items</code>, then <br><code>nn5_pred_item_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn5_pred_items</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn6_entities (array[string] - vector of string)</code></td>
+<td><code>additional.fields[nn6_entities]</code></td>
+<td>Iterate through log field <code>nn6_entities</code>, then <br><code>nn6_entities_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn6_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn6_entity_similarity (number - double)</code></td>
+<td><code>additional.fields[nn6_entity_similarity]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>nn6_train_items (array[string] - vector of string)</code></td>
+<td><code>additional.fields[nn6_train_item]</code></td>
+<td>Iterate through log field <code>nn6_train_items</code>, then <br><code>nn6_train_item_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn6_train_items</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn6_pred_items (array[string] - set[string])</code></td>
+<td><code>additional.fields[nn6_pred_item]</code></td>
+<td>Iterate through log field <code>nn6_pred_items</code>, then <br><code>nn6_pred_item_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn6_pred_items</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn7_entities (array[string] - vector of string)</code></td>
+<td><code>additional.fields[nn7_entities]</code></td>
+<td>Iterate through log field <code>nn7_entities</code>, then <br><code>nn7_entities_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn7_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn7_entity_similarity (number - double)</code></td>
+<td><code>additional.fields[nn7_entity_similarity]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>nn7_train_items (array[string] - vector of string)</code></td>
+<td><code>additional.fields[nn7_train_item]</code></td>
+<td>Iterate through log field <code>nn7_train_items</code>, then <br><code>nn7_train_item_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn7_train_items</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn7_pred_items (array[string] - set[string])</code></td>
+<td><code>additional.fields[nn7_pred_item]</code></td>
+<td>Iterate through log field <code>nn7_pred_items</code>, then <br><code>nn7_pred_item_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn7_pred_items</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn8_entities (array[string] - vector of string)</code></td>
+<td><code>additional.fields[nn8_entities]</code></td>
+<td>Iterate through log field <code>nn8_entities</code>, then <br><code>nn8_entities_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn8_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn8_entity_similarity (number - double)</code></td>
+<td><code>additional.fields[nn8_entity_similarity]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>nn8_train_items (array[string] - vector of string)</code></td>
+<td><code>additional.fields[nn8_train_item]</code></td>
+<td>Iterate through log field <code>nn8_train_items</code>, then <br><code>nn8_train_item_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn8_train_items</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn8_pred_items (array[string] - set[string])</code></td>
+<td><code>additional.fields[nn8_pred_item]</code></td>
+<td>Iterate through log field <code>nn8_pred_items</code>, then <br><code>nn8_pred_item_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn8_pred_items</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn9_entities (array[string] - vector of string)</code></td>
+<td><code>additional.fields[nn9_entities]</code></td>
+<td>Iterate through log field <code>nn9_entities</code>, then <br><code>nn9_entities_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn9_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn9_entity_similarity (number - double)</code></td>
+<td><code>additional.fields[nn9_entity_similarity]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>nn9_train_items (array[string] - vector of string)</code></td>
+<td><code>additional.fields[nn9_train_item]</code></td>
+<td>Iterate through log field <code>nn9_train_items</code>, then <br><code>nn9_train_item_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn9_train_items</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn9_pred_items (array[string] - set[string])</code></td>
+<td><code>additional.fields[nn9_pred_item]</code></td>
+<td>Iterate through log field <code>nn9_pred_items</code>, then <br><code>nn9_pred_item_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn9_pred_items</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn10_entities (array[string] - vector of string)</code></td>
+<td><code>additional.fields[nn10_entities]</code></td>
+<td>Iterate through log field <code>nn10_entities</code>, then <br><code>nn10_entities_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn10_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn10_entity_similarity (number - double)</code></td>
+<td><code>additional.fields[nn10_entity_similarity]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>nn10_train_items (array[string] - vector of string)</code></td>
+<td><code>additional.fields[nn10_train_item]</code></td>
+<td>Iterate through log field <code>nn10_train_items</code>, then <br><code>nn10_train_item_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn10_train_items</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>nn10_pred_items (array[string] - set[string])</code></td>
+<td><code>additional.fields[nn10_pred_item]</code></td>
+<td>Iterate through log field <code>nn10_pred_items</code>, then <br><code>nn10_pred_item_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn10_pred_items</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code></code></td>
+<td><code>metadata.event_type</code></td>
+<td>The <code>metadata.event_type</code> UDM field is set to <code>GENERIC_EVENT</code>.</td>
+</tr>
+</tbody>
+</table>
+</devsite-filter>
+</div>
+<h3>Field mapping reference: CORELIGHT - ssdp</h3>
+
+The following table lists the log fields of the <code>ssdp</code> log type and their corresponding UDM fields.
+
+<div translate="no">
+<devsite-filter sortable="0">
+<input type="text" placeholder="Type a keyword to find a value.">
+<table class="fixed">
+<thead>
+<tr>
+<th>Log field</th>
+<th>UDM mapping</th>
+<th>Logic</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr>
+<td><code>is_orig (boolean - bool)</code></td>
+<td><code>additional.fields[is_orig]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>operation (string)</code></td>
+<td><code>additional.fields[operation]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>host (string)</code></td>
+<td><code>additional.fields[host]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>usn (string)</code></td>
+<td><code>additional.fields[usn]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>target (string)</code></td>
+<td><code>about.resource.name</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>target_sub (string)</code></td>
+<td><code>additional.fields[target_sub]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>location (string)</code></td>
+<td><code>target.location.name</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>user_agent (string)</code></td>
+<td><code>network.http.user_agent</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>server (string)</code></td>
+<td><code>additional.fields[server]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>man (string)</code></td>
+<td><code>additional.fields[man]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>mx (string)</code></td>
+<td><code>additional.fields[mx]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cache_control (string)</code></td>
+<td><code>additional.fields[cache_control]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>remaining_header_names (array[string] - vector of string)</code></td>
+<td><code>additional.fields[remaining_header_name]</code></td>
+<td>Iterate through log field <code>remaining_header_names</code>, then <br><code>remaining_header_name_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>remaining_header_names</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>remaining_header_values (array[string] - vector of string)</code></td>
+<td><code>additional.fields[remaining_header_value]</code></td>
+<td>Iterate through log field <code>remaining_header_values</code>, then <br><code>remaining_header_value_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>remaining_header_values</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code></code></td>
+<td><code>metadata.event_type</code></td>
+<td>The <code>metadata.event_type</code> UDM field is set to <code>NETWORK_CONNECTION</code>.</td>
+</tr>
+</tbody>
+</table>
+</devsite-filter>
+</div>
+<h3>Field mapping reference: CORELIGHT - telnet</h3>
+
+The following table lists the log fields of the <code>telnet</code> log type and their corresponding UDM fields.
+
+<div translate="no">
+<devsite-filter sortable="0">
+<input type="text" placeholder="Type a keyword to find a value.">
+<table class="fixed">
+<thead>
+<tr>
+<th>Log field</th>
+<th>UDM mapping</th>
+<th>Logic</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr>
+<td><code>tn3270 (boolean - bool)</code></td>
+<td><code>additional.fields[tn3270]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>tn3270e (boolean - bool)</code></td>
+<td><code>additional.fields[tn3270e]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>terminal_type (string)</code></td>
+<td><code>additional.fields[terminal_type]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>terminal_speed (string)</code></td>
+<td><code>additional.fields[terminal_speed]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>x_display_location (string)</code></td>
+<td><code>additional.fields[x_display_location]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>environ_value_names (array[string] - vector of string)</code></td>
+<td><code>additional.fields[environ_value_name]</code></td>
+<td>Iterate through log field <code>environ_value_names</code>, then <br><code>environ_value_name_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>environ_value_names</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>environ_value_values (array[string] - vector of string)</code></td>
+<td><code>additional.fields[environ_value_value]</code></td>
+<td>Iterate through log field <code>environ_value_values</code>, then <br><code>environ_value_value_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>environ_value_values</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>tn3270e_device_type_request (string)</code></td>
+<td><code>additional.fields[tn3270e_device_type_request]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>tn3270e_device_type_request_associate (string)</code></td>
+<td><code>additional.fields[tn3270e_device_type_request_associate]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>tn3270e_device_type_request_connect (string)</code></td>
+<td><code>additional.fields[tn3270e_device_type_request_connect]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>tn3270e_device_type_is (string)</code></td>
+<td><code>additional.fields[tn3270e_device_type_is]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>tn3270e_device_type_is_associate (string)</code></td>
+<td><code>additional.fields[tn3270e_device_type_is_associate]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>tn3270e_device_type_is_connect (string)</code></td>
+<td><code>additional.fields[tn3270e_device_type_is_connect]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>data (string)</code></td>
+<td><code>additional.fields[data]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code></code></td>
+<td><code>metadata.event_type</code></td>
+<td>The <code>metadata.event_type</code> UDM field is set to <code>NETWORK_CONNECTION</code>.</td>
+</tr>
+</tbody>
+</table>
+</devsite-filter>
+</div>
+<h3>Field mapping reference: CORELIGHT - websocket</h3>
+
+The following table lists the log fields of the <code>websocket</code> log type and their corresponding UDM fields.
+
+<div translate="no">
+<devsite-filter sortable="0">
+<input type="text" placeholder="Type a keyword to find a value.">
+<table class="fixed">
+<thead>
+<tr>
+<th>Log field</th>
+<th>UDM mapping</th>
+<th>Logic</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr>
+<td><code>host (string)</code></td>
+<td><code>target.hostname</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>uri (string)</code></td>
+<td><code>target.url</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>user_agent (string)</code></td>
+<td><code>network.http.user_agent</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>subprotocol (string)</code></td>
+<td><code>additional.fields[subprotocol]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>client_protocols (array[string] - vector of string)</code></td>
+<td><code>additional.fields[client_protocol]</code></td>
+<td>Iterate through log field <code>client_protocols</code>, then <br><code>client_protocol_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>client_protocols</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>server_extensions (array[string] - vector of string)</code></td>
+<td><code>additional.fields[server_extension]</code></td>
+<td>Iterate through log field <code>server_extensions</code>, then <br><code>server_extension_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>server_extensions</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>client_extensions (array[string] - vector of string)</code></td>
+<td><code>additional.fields[client_extensions]</code></td>
+<td>Iterate through log field <code>client_extensions</code>, then <br><code>client_extension_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>client_extensions</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code></code></td>
+<td><code>metadata.event_type</code></td>
+<td>The <code>metadata.event_type</code> UDM field is set to <code>NETWORK_CONNECTION</code>.</td>
+</tr>
+</tbody>
+</table>
+</devsite-filter>
+</div>
+<h3>Field mapping reference: CORELIGHT - first_seen</h3>
+
+The following table lists the log fields of the <code>first_seen</code> log type and their corresponding UDM fields.
+
+<div translate="no">
+<devsite-filter sortable="0">
+<input type="text" placeholder="Type a keyword to find a value.">
+<table class="fixed">
+<thead>
+<tr>
+<th>Log field</th>
+<th>UDM mapping</th>
+<th>Logic</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr>
+<td><code>use_case (string)</code></td>
+<td><code>security_result.rule_name</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>use_case_description (string)</code></td>
+<td><code>security_result.description</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>entity (string)</code></td>
+<td><code>additional.fields[entity]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>original_entity (string)</code></td>
+<td><code>additional.fields[original_entity]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>entity_training_items (array[string] - vector of string)</code></td>
+<td><code>additional.fields[entity_training_item]</code></td>
+<td>Iterate through log field <code>entity_training_items</code>, then <br><code>entity_training_item_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>entity_training_item</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>item (string)</code></td>
+<td><code>security_result.detection_fields[item]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>first_seen_type (string - enum AnomalyDetection::AnomalyTypes)</code></td>
+<td><code>security_result.detection_fields[first_seen_type]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>history_days (integer - count)</code></td>
+<td><code>security_result.detection_fields[history_days]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>history (number - interval)</code></td>
+<td><code>security_result.detection_fields[history]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code></code></td>
+<td><code>metadata.event_type</code></td>
+<td>The <code>metadata.event_type</code> UDM field is set to <code>GENERIC_EVENT</code>.</td>
+</tr>
+</tbody>
+</table>
+</devsite-filter>
+</div>
+
+<h3>UDM Mapping Delta reference: Corelight</h3>
+
+The following table lists delta for Default parser of <code>Corelight</code>.
+
+<div translate="no">
+<devsite-filter sortable="0">
+<table class="fixed">
+<thead>
+<tr>
+<th>Log Name</th>
+<th>Log Field</th>
+<th>Previous UDM Mapping</th>
+<th>Updated UDM Mapping</th>
+</tr>
+<tr>
+<td></td>
+<td>uid</td>
+<td>additional.fields[uid]</td>
+<td>network.session_id</td>
+</tr>
+<tr>
+<td>cip</td>
+<td>direction</td>
+<td>additional.fields[direction]</td>
+<td>network.direction</td>
+</tr>
+<tr>
+<td>cip</td>
+<td>cip_status</td>
+<td>additional.fields[cip_status]</td>
+<td>security_result.description</td>
+</tr>
+<tr>
+<td>etc_viz</td>
+<td>c2s_viz.size</td>
+<td>about.labels [c2s_viz_size]</td>
+<td>network.sent_bytes</td>
+</tr>
+<tr>
+<td>etc_viz</td>
+<td>s2c_viz.size</td>
+<td>about.labels [s2c_viz_size]</td>
+<td>network.received_bytes</td>
+</tr>
+<tr>
+<td>generic_dns_tunnels</td>
+<td>capture_secs</td>
+<td>about.labels [capture_secs]</td>
+<td>network.session_duration</td>
+</tr>
+<tr>
+<td>kerberos</td>
+<td>request_type</td>
+<td>principal.application</td>
+<td>extensions.auth.auth_details</td>
+</tr>
+<tr>
+<td>kerberos</td>
+<td>error_msg</td>
+<td>security_result.action_details</td>
+<td>security_result.description</td>
+</tr>
+<tr>
+<td>known_devices</td>
+<td>protocols</td>
+<td>entity.labels [protocol]</td>
+<td>entity.network.application_protocol</td>
+</tr>
+<tr>
+<td>known_domains</td>
+<td>protocols</td>
+<td>entity.labels [protocol]</td>
+<td>entity.network.application_protocol</td>
+</tr>
+<tr>
+<td>known_services</td>
+<td>protocol</td>
+<td>entity.labels [protocol]</td>
+<td>entity.network.application_protocol</td>
+</tr>
+<tr>
+<td>ldap</td>
+<td>result</td>
+<td>security_result.detection_fields [result]</td>
+<td>security_result.action</td>
+</tr>
+<tr>
+<td>ldap</td>
+<td>object</td>
+<td>about.labels [object]</td>
+<td>target.resource.name</td>
+</tr>
+<tr>
+<td>mqtt_connect</td>
+<td>will_topic</td>
+<td>about.labels [will_topic]</td>
+<td>target.resource.name</td>
+</tr>
+<tr>
+<td>mqtt_publish</td>
+<td>topic</td>
+<td>about.labels [topic]</td>
+<td>target.resource.name</td>
+</tr>
+<tr>
+<td>mqtt_subscribe</td>
+<td>topics</td>
+<td>about.labels [topics]</td>
+<td>target.resource.name</td>
+</tr>
+<tr>
+<td>mqtt_subscribe</td>
+<td>ack</td>
+<td>security_result.detection_fields [ack]</td>
+<td>security_result.action</td>
+</tr>
+<tr>
+<td>pe</td>
+<td>compile_ts</td>
+<td>about.labels [compile_ts]</td>
+<td>target.file.pe_file.compilation_time</td>
+</tr>
+<tr>
+<td>pe</td>
+<td>section_names</td>
+<td>about.labels [section_names]</td>
+<td>target.file.pe_file.section</td>
+</tr>
+<tr>
+<td>radius</td>
+<td>reply_msg</td>
+<td>about.labels [reply_msg]</td>
+<td>extensions.auth.auth_details</td>
+</tr>
+<tr>
+<td>radius</td>
+<td>result</td>
+<td>extensions.auth.auth_details</td>
+<td>security_result.action</td>
+</tr>
+<tr>
+<td>rdp</td>
+<td>cookie</td>
+<td>about.labels [cookie]</td>
+<td>principal.user.userid</td>
+</tr>
+<tr>
+<td>rdp</td>
+<td>client_build</td>
+<td>principal.labels [client_build]</td>
+<td>principal.asset.software.version</td>
+</tr>
+<tr>
+<td>rdp</td>
+<td>client_dig_product_id</td>
+<td>principal.labels [client_dig_product_id ]</td>
+<td>principal.asset.product_object_id</td>
+</tr>
+<tr>
+<td>rdp</td>
+<td>auth_success</td>
+<td>about.labels [auth_success]</td>
+<td>security_result.action</td>
+</tr>
+<tr>
+<td>smtp</td>
+<td>helo</td>
+<td>target.domain.name</td>
+<td>network.smtp.helo</td>
+</tr>
+<tr>
+<td>smtp</td>
+<td>path</td>
+<td>intermediary.ip</td>
+<td>network.smtp.message_path</td>
+</tr>
+<tr>
+<td>smtp</td>
+<td>user_agent</td>
+<td>about.labels [user_agent]</td>
+<td>principal.application</td>
+</tr>
+<tr>
+<td>snmp</td>
+<td>up_since</td>
+<td>about.labels [up_since]</td>
+<td>target.asset.last_boot_time</td>
+</tr>
+<tr>
+<td>socks</td>
+<td>version</td>
+<td>about.labels [version]</td>
+<td>network.application_protocol_version</td>
+</tr>
+<tr>
+<td>specific_dns_tunnels</td>
+<td>detection</td>
+<td>security_result.detection_fields [detection]</td>
+<td>security_result.description</td>
+</tr>
+<tr>
+<td>ssh</td>
+<td>client</td>
+<td>principal.application</td>
+<td>principal.asset.software.version</td>
+</tr>
+<tr>
+<td>ssh</td>
+<td>server</td>
+<td>target.application</td>
+<td>target.asset.software.version</td>
+</tr>
+<tr>
+<td>ssh</td>
+<td>host_key_alg</td>
+<td>security_result.detection_fields [host_key_alg]</td>
+<td>network.tls.server.certificate.version</td>
+</tr>
+<tr>
+<td>ssh</td>
+<td>host_key</td>
+<td>security_result.detection_fields [host_key]</td>
+<td>network.tls.server.certificate.sha256</td>
+</tr>
+<tr>
+<td>ssh</td>
+<td>inferences</td>
+<td>security_result.summary, security_result.description</td>
+<td>security_result.summary, security_result.description, security_result.detection_fields</td>
+</tr>
+<tr>
+<td>ssl</td>
+<td>validation_status</td>
+<td>security_result.detection_fields [validation_status]</td>
+<td>security_result.description</td>
+</tr>
+<tr>
+<td>ssl_red</td>
+<td>validation_status</td>
+<td>security_result.detection_fields [validation_status]</td>
+<td>security_result.description</td>
+</tr>
+<tr>
+<td>stepping</td>
+<td>server1_h</td>
+<td>target.ip</td>
+<td>intermediary.ip</td>
+</tr>
+<tr>
+<td>stepping</td>
+<td>server1_p</td>
+<td>target.port</td>
+<td>intermediary.port</td>
+</tr>
+<tr>
+<td>stepping</td>
+<td>client2_h</td>
+<td>principal.ip</td>
+<td>intermediary.ip</td>
+</tr>
+<tr>
+<td>stepping</td>
+<td>client2_p</td>
+<td>principal.labels [client2_p]</td>
+<td>intermediary.port</td>
+</tr>
+<tr>
+<td>stepping</td>
+<td>server2_h</td>
+<td>target.labels [server2_h]</td>
+<td>target.ip</td>
+</tr>
+<tr>
+<td>stepping</td>
+<td>server2_p</td>
+<td>target.labels [server2_p]</td>
+<td>target.port</td>
+</tr>
+<tr>
+<td>suricata_corelight</td>
+<td>alert.rev</td>
+<td>security_result.detection_fields [alert_rev]</td>
+<td>security_result.rule_version</td>
+</tr>
+<tr>
+<td>suricata_corelight</td>
+<td>alert.metadata</td>
+<td>security_result.detection_fields [alert_metadata]</td>
+<td>security_result.rule_labels</td>
+</tr>
+<tr>
+<td>suricata_corelight</td>
+<td>metadata</td>
+<td>security_result.detection_fields [alert_metadata]</td>
+<td>security_result.rule_labels</td>
+</tr>
+<tr>
+<td>syslog</td>
+<td>severity</td>
+<td>about.labels [severity]</td>
+<td>security_result.severity, security_result.severity_details</td>
+</tr>
+<tr>
+<td>vpn</td>
+<td>inferences</td>
+<td>about.labels [inference]</td>
+<td>metadata.description</td>
+</tr>
+<tr>
+<td>vpn</td>
+<td>client_info</td>
+<td>principal.labels [client_info]</td>
+<td>network.http.user_agent</td>
+</tr>
+<tr>
+<td>weird</td>
+<td>name</td>
+<td>about.labels [name]</td>
+<td>metadata.product_event_type</td>
+</tr>
+<tr>
+<td>weird</td>
+<td>addl</td>
+<td>about.labels [addl]</td>
+<td>metadata.description</td>
+</tr>
+<tr>
+<td>weird</td>
+<td>peer</td>
+<td>about.labels [peer]</td>
+<td>observer.hostname</td>
+</tr>
+<tr>
+<td>weird</td>
+<td>source</td>
+<td>about.labels [source]</td>
+<td>metadata.product_name</td>
+</tr>
+<tr>
+<td>x509</td>
+<td>fingerprint</td>
+<td>about.labels [fingerprint]</td>
+<td>about.domain.last_https_certificate.thumbprint</td>
+</tr>
+<tr>
+<td>x509</td>
+<td>certificate.version</td>
+<td>network.tls.server.certificate.version</td>
+<td>about.domain.last_https_certificate.version</td>
+</tr>
+<tr>
+<td>x509</td>
+<td>certificate.serial</td>
+<td>network.tls.server.certificate.serial</td>
+<td>about.domain.last_https_certificate.serial_number</td>
+</tr>
+<tr>
+<td>x509</td>
+<td>certificate.subject</td>
+<td>network.tls.server.certificate.subject</td>
+<td>about.domain.last_https_certificate.subject.common_name</td>
+</tr>
+<tr>
+<td>x509</td>
+<td>certificate.issuer</td>
+<td>network.tls.server.certificate.issuer</td>
+<td>about.domain.last_https_certificate.issuer</td>
+</tr>
+<tr>
+<td>x509</td>
+<td>certificate.not_valid_before</td>
+<td>network.tls.server.certificate.not_before</td>
+<td>about.domain.last_https_certificate.validity.issue_time</td>
+</tr>
+<tr>
+<td>x509</td>
+<td>certificate.not_valid_after</td>
+<td>network.tls.server.certificate.not_after</td>
+<td>about.domain.last_https_certificate.validity.expiry_time</td>
+</tr>
+<tr>
+<td>x509</td>
+<td>certificate.key_alg</td>
+<td>about.labels [certificate_key_alg]</td>
+<td>about.labels [public_key_algorithm]</td>
+</tr>
+<tr>
+<td>x509</td>
+<td>certificate.sig_alg</td>
+<td>about.labels [certificate_sig_alg]</td>
+<td>about.domain.last_https_certificate.signature_algorithm</td>
+</tr>
+<tr>
+<td>x509</td>
+<td>certificate.key_type</td>
+<td>about.labels [certificate_key_type]</td>
+<td>about.domain.last_https_certificate.public_key.algorithm</td>
+</tr>
+<tr>
+<td>x509</td>
+<td>certificate.key_length</td>
+<td>about.labels [certificate_key_length]</td>
+<td>about.domain.last_https_certificate.public_key.rsa.key_size</td>
+</tr>
+<tr>
+<td>x509</td>
+<td>certificate.exponent</td>
+<td>about.labels [certificate_exponent]</td>
+<td>about.domain.last_https_certificate.public_key.rsa.exponent</td>
+</tr>
+<tr>
+<td>x509</td>
+<td>certificate.curve</td>
+<td>network.tls.curve</td>
+<td>about.domain.last_https_certificate.ec.oid</td>
+</tr>
+<tr>
+<td>x509</td>
+<td>san.dns</td>
+<td>about.labels [san_dns]</td>
+<td>about.domain.last_https_certificate.extension.subject_alternative_name</td>
+</tr>
+<tr>
+<td>x509</td>
+<td>basic_constraints.ca</td>
+<td>about.labels [basic_constraints_ca]</td>
+<td>about.domain.last_https_certificate.extension.ca</td>
+</tr>
+<tr>
+<td>x509_red</td>
+<td>fingerprint</td>
+<td>about.labels [fingerprint]</td>
+<td>about.domain.last_https_certificate.thumbprint</td>
+</tr>
+<tr>
+<td>x509_red</td>
+<td>certificate.version</td>
+<td>network.tls.server.certificate.version</td>
+<td>about.domain.last_https_certificate.version</td>
+</tr>
+<tr>
+<td>x509_red</td>
+<td>certificate.serial</td>
+<td>network.tls.server.certificate.serial</td>
+<td>about.domain.last_https_certificate.serial_number</td>
+</tr>
+<tr>
+<td>x509_red</td>
+<td>certificate.subject</td>
+<td>network.tls.server.certificate.subject</td>
+<td>about.domain.last_https_certificate.subject.common_name</td>
+</tr>
+<tr>
+<td>x509_red</td>
+<td>certificate.issuer</td>
+<td>network.tls.server.certificate.issuer</td>
+<td>about.domain.last_https_certificate.issuer</td>
+</tr>
+<tr>
+<td>x509_red</td>
+<td>certificate.not_valid_before</td>
+<td>network.tls.server.certificate.not_before</td>
+<td>about.domain.last_https_certificate.validity.issue_time</td>
+</tr>
+<tr>
+<td>x509_red</td>
+<td>certificate.not_valid_after</td>
+<td>network.tls.server.certificate.not_after</td>
+<td>about.domain.last_https_certificate.validity.expiry_time</td>
+</tr>
+<tr>
+<td>x509_red</td>
+<td>certificate.key_alg</td>
+<td>about.labels [certificate_key_alg]</td>
+<td>about.labels [public_key_algorithm]</td>
+</tr>
+<tr>
+<td>x509_red</td>
+<td>certificate.sig_alg</td>
+<td>about.labels [certificate_sig_alg]</td>
+<td>about.domain.last_https_certificate.signature_algorithm</td>
+</tr>
+<tr>
+<td>x509_red</td>
+<td>certificate.key_type</td>
+<td>about.labels [certificate_key_type]</td>
+<td>about.domain.last_https_certificate.public_key.algorithm</td>
+</tr>
+<tr>
+<td>x509_red</td>
+<td>certificate.key_length</td>
+<td>about.labels [certificate_key_length]</td>
+<td>about.domain.last_https_certificate.public_key.rsa.key_size</td>
+</tr>
+<tr>
+<td>x509_red</td>
+<td>certificate.exponent</td>
+<td>about.labels [certificate_exponent]</td>
+<td>about.domain.last_https_certificate.public_key.rsa.exponent</td>
+</tr>
+<tr>
+<td>x509_red</td>
+<td>certificate.curve</td>
+<td>network.tls.curve</td>
+<td>about.domain.last_https_certificate.ec.oid</td>
+</tr>
+<tr>
+<td>x509_red</td>
+<td>san.dns</td>
+<td>about.labels [san_dns]</td>
+<td>about.domain.last_https_certificate.extension.subject_alternative_name</td>
+</tr>
+<tr>
+<td>x509_red</td>
+<td>basic_constraints.ca</td>
+<td>about.labels [basic_constraints_ca]</td>
+<td>about.domain.last_https_certificate.extension.ca</td>
+</tr>
+</thead>
 </table>
 </devsite-filter>
 </div>
