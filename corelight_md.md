@@ -2470,8 +2470,8 @@ The following table lists the log fields of the <code>ssh</code> log type and th
 <tr>
 <td><code>inferences (array[string] - set[string])</code></td>
 <td><code>security_result.summary, security_result.description,security_result.detection_fields[inferences]</code></td>
-<td>If the <code>inferences</code> log field value is equal to <code>ABP</code>, then the <code>security_result.summary</code> UDM field is set to <code>Client Authentication Bypass</code> and the <code>security_result.description</code> UDM field is set to <code>A client wasn't adhering to expectations of SSH either through server exploit or by the client and server switching to a protocol other than SSH after enctyption begins</code>.<br><br>
-  If the <code>inferences</code> log field value is equal to <code>AFR</code>, then the <code>security_result.summary</code> UDM field is set to <code>SSH Agent Forwarding Requested</code> and the <code>security_result.description</code> UDM field is set to <code>Agent Forwarding is requested by tge Client</code>.<br><br>
+<td>If the <code>inferences</code> log field value is equal to <code>ABP</code>, then the <code>security_result.summary</code> UDM field is set to <code>Client Authentication Bypass</code> and the <code>security_result.description</code> UDM field is set to <code>A client wasn't adhering to expectations of SSH either through server exploit or by the client and server switching to a protocol other than SSH after encryption begins</code>.<br><br>
+  If the <code>inferences</code> log field value is equal to <code>AFR</code>, then the <code>security_result.summary</code> UDM field is set to <code>SSH Agent Forwarding Requested</code> and the <code>security_result.description</code> UDM field is set to <code>Agent Forwarding is requested by the Client</code>.<br><br>
   If the <code>inferences</code> log field value is equal to <code>APWA</code>, then the <code>security_result.summary</code> UDM field is set to <code>Automated Password Authentication</code> and the <code>security_result.description</code> UDM field is set to <code>The client authenticated with an automated password tool (like sshpass)</code>.<br><br>
   If the <code>inferences</code> log field value is equal to <code>AUTO</code>, then the <code>security_result.summary</code> UDM field is set to <code>Automated Interaction</code> and the <code>security_result.description</code> UDM field is set to <code>The client is a script automated utility and not driven by a user</code>.<br><br>
   If the <code>inferences</code> log field value is equal to <code>BAN</code>, then the <code>security_result.summary</code> UDM field is set to <code>Server Banner</code> and the <code>security_result.description</code> UDM field is set to <code>The server sent the client a pre-authentication banner, likely for legal reasons</code>.<br><br>
@@ -4319,7 +4319,7 @@ The following table lists the log fields of the <code>x509, x509_red</code> log 
 <tr>
 <td><code>certificate.issuer (string)</code></td>
 <td><code>about.domain.last_https_certificate.issuer</code></td>
-<td>If <code>certificate.issuer</code> log field value matches the grok pattern <code>CN=%{GREEDYDATA:comman_name},OU=%{GREEDYDATA:organizational_unit},O=%{GREEDYDATA:organization},C=%{DATA:country}$</code> then the extracted <code>comman_name</code>, <code>organizational_unit</code>, <code>organization</code> and <code>country</code> fields are mapped to <code>about.domain.last_https_certificate.issuer.common_name</code>, <code>about.domain.last_https_certificate.issuer.organizational_unit</code>, <code>about.domain.last_https_certificate.issuer.organization</code>, and <code>about.domain.last_https_certificate.issuer.country_name</code> UDM fields respectively. <br></td>
+<td>If <code>certificate.issuer</code> log field value matches the grok pattern <code>CN=%{GREEDYDATA:common_name},OU=%{GREEDYDATA:organizational_unit},O=%{GREEDYDATA:organization},C=%{DATA:country}$</code> then the extracted <code>common_name</code>, <code>organizational_unit</code>, <code>organization</code> and <code>country</code> fields are mapped to <code>about.domain.last_https_certificate.issuer.common_name</code>, <code>about.domain.last_https_certificate.issuer.organizational_unit</code>, <code>about.domain.last_https_certificate.issuer.organization</code>, and <code>about.domain.last_https_certificate.issuer.country_name</code> UDM fields respectively. <br></td>
 </tr>
 <tr>
 <td><code>certificate.not_valid_before (time)</code></td>
@@ -9834,8 +9834,8 @@ The following table lists the log fields of the <code>anomaly</code> log type an
 </tr>
 <tr>
 <td><code>item_assoc_entities (array[string] - vector of string)</code></td>
-<td><code>security_result.detection_fields[item_assoc_entitie]</code></td>
-<td>Iterate through log field <code>item_assoc_entities</code>, then <br><code>item_assoc_entitie_%{index}</code> log field is mapped to the <code>security_result.detection_fields.key</code> UDM field and <code>item_assoc_entities</code> log field is mapped to the <code>security_result.detection_fields.value</code> UDM field.<br></td>
+<td><code>security_result.detection_fields[item_assoc_entities]</code></td>
+<td>Iterate through log field <code>item_assoc_entities</code>, then <br><code>item_assoc_entities_%{index}</code> log field is mapped to the <code>security_result.detection_fields.key</code> UDM field and <code>item_assoc_entities</code> log field is mapped to the <code>security_result.detection_fields.value</code> UDM field.<br></td>
 </tr>
 <tr>
 <td><code>item_assoc_entities_similarity (array[number] - vector of double)</code></td>
@@ -9859,8 +9859,8 @@ The following table lists the log fields of the <code>anomaly</code> log type an
 </tr>
 <tr>
 <td><code>nn1_entities (array[string] - vector of string)</code></td>
-<td><code>additional.fields[nn1_entitie]</code></td>
-<td>Iterate through log field <code>nn1_entities</code>, then <br><code>nn1_entitie_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn1_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+<td><code>additional.fields[nn1_entities]</code></td>
+<td>Iterate through log field <code>nn1_entities</code>, then <br><code>nn1_entities_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn1_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
 </tr>
 <tr>
 <td><code>nn1_entity_similarity (number - double)</code></td>
@@ -9879,8 +9879,8 @@ The following table lists the log fields of the <code>anomaly</code> log type an
 </tr>
 <tr>
 <td><code>nn2_entities (array[string] - vector of string)</code></td>
-<td><code>additional.fields[nn2_entitie]</code></td>
-<td>Iterate through log field <code>nn2_entities</code>, then <br><code>nn2_entitie_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn2_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+<td><code>additional.fields[nn2_entities]</code></td>
+<td>Iterate through log field <code>nn2_entities</code>, then <br><code>nn2_entities_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn2_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
 </tr>
 <tr>
 <td><code>nn2_entity_similarity (number - double)</code></td>
@@ -9899,8 +9899,8 @@ The following table lists the log fields of the <code>anomaly</code> log type an
 </tr>
 <tr>
 <td><code>nn3_entities (array[string] - vector of string)</code></td>
-<td><code>additional.fields[nn3_entitie]</code></td>
-<td>Iterate through log field <code>nn3_entities</code>, then <br><code>nn3_entitie_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn3_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+<td><code>additional.fields[nn3_entities]</code></td>
+<td>Iterate through log field <code>nn3_entities</code>, then <br><code>nn3_entities_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn3_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
 </tr>
 <tr>
 <td><code>nn3_entity_similarity (number - double)</code></td>
@@ -9919,8 +9919,8 @@ The following table lists the log fields of the <code>anomaly</code> log type an
 </tr>
 <tr>
 <td><code>nn4_entities (array[string] - vector of string)</code></td>
-<td><code>additional.fields[nn4_entitie]</code></td>
-<td>Iterate through log field <code>nn4_entities</code>, then <br><code>nn4_entitie_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn4_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+<td><code>additional.fields[nn4_entities]</code></td>
+<td>Iterate through log field <code>nn4_entities</code>, then <br><code>nn4_entities_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn4_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
 </tr>
 <tr>
 <td><code>nn4_entity_similarity (number - double)</code></td>
@@ -9939,8 +9939,8 @@ The following table lists the log fields of the <code>anomaly</code> log type an
 </tr>
 <tr>
 <td><code>nn5_entities (array[string] - vector of string)</code></td>
-<td><code>additional.fields[nn5_entitie]</code></td>
-<td>Iterate through log field <code>nn5_entities</code>, then <br><code>nn5_entitie_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn5_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+<td><code>additional.fields[nn5_entities]</code></td>
+<td>Iterate through log field <code>nn5_entities</code>, then <br><code>nn5_entities_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn5_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
 </tr>
 <tr>
 <td><code>nn5_entity_similarity (number - double)</code></td>
@@ -9959,8 +9959,8 @@ The following table lists the log fields of the <code>anomaly</code> log type an
 </tr>
 <tr>
 <td><code>nn6_entities (array[string] - vector of string)</code></td>
-<td><code>additional.fields[nn6_entitie]</code></td>
-<td>Iterate through log field <code>nn6_entities</code>, then <br><code>nn6_entitie_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn6_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+<td><code>additional.fields[nn6_entities]</code></td>
+<td>Iterate through log field <code>nn6_entities</code>, then <br><code>nn6_entities_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn6_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
 </tr>
 <tr>
 <td><code>nn6_entity_similarity (number - double)</code></td>
@@ -9979,8 +9979,8 @@ The following table lists the log fields of the <code>anomaly</code> log type an
 </tr>
 <tr>
 <td><code>nn7_entities (array[string] - vector of string)</code></td>
-<td><code>additional.fields[nn7_entitie]</code></td>
-<td>Iterate through log field <code>nn7_entities</code>, then <br><code>nn7_entitie_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn7_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+<td><code>additional.fields[nn7_entities]</code></td>
+<td>Iterate through log field <code>nn7_entities</code>, then <br><code>nn7_entities_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn7_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
 </tr>
 <tr>
 <td><code>nn7_entity_similarity (number - double)</code></td>
@@ -9999,8 +9999,8 @@ The following table lists the log fields of the <code>anomaly</code> log type an
 </tr>
 <tr>
 <td><code>nn8_entities (array[string] - vector of string)</code></td>
-<td><code>additional.fields[nn8_entitie]</code></td>
-<td>Iterate through log field <code>nn8_entities</code>, then <br><code>nn8_entitie_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn8_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+<td><code>additional.fields[nn8_entities]</code></td>
+<td>Iterate through log field <code>nn8_entities</code>, then <br><code>nn8_entities_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn8_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
 </tr>
 <tr>
 <td><code>nn8_entity_similarity (number - double)</code></td>
@@ -10019,8 +10019,8 @@ The following table lists the log fields of the <code>anomaly</code> log type an
 </tr>
 <tr>
 <td><code>nn9_entities (array[string] - vector of string)</code></td>
-<td><code>additional.fields[nn9_entitie]</code></td>
-<td>Iterate through log field <code>nn9_entities</code>, then <br><code>nn9_entitie_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn9_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+<td><code>additional.fields[nn9_entities]</code></td>
+<td>Iterate through log field <code>nn9_entities</code>, then <br><code>nn9_entities_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn9_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
 </tr>
 <tr>
 <td><code>nn9_entity_similarity (number - double)</code></td>
@@ -10039,8 +10039,8 @@ The following table lists the log fields of the <code>anomaly</code> log type an
 </tr>
 <tr>
 <td><code>nn10_entities (array[string] - vector of string)</code></td>
-<td><code>additional.fields[nn10_entitie]</code></td>
-<td>Iterate through log field <code>nn10_entities</code>, then <br><code>nn10_entitie_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn10_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+<td><code>additional.fields[nn10_entities]</code></td>
+<td>Iterate through log field <code>nn10_entities</code>, then <br><code>nn10_entities_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>nn10_entities</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
 </tr>
 <tr>
 <td><code>nn10_entity_similarity (number - double)</code></td>
