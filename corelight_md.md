@@ -1794,7 +1794,7 @@ The following table lists the log fields of the <code>rdp</code> log type and th
 <tr>
 <td><code>auth_success (boolean - bool)</code></td>
 <td><code>about.labels [auth_success]</code></td>
-<td>security_result.action</code></td>
+<td><code>security_result.action</code></td>
 <td>If the <code>auth_success</code> log field value is equal to <code>true</code> then, the <code>security_result.action</code> UDM field is set to <code>ALLOW</code>. <br> Else, the <code>security_result.action</code> UDM field is set to <code>FAIL</code>.</td>
 </tr>
 <tr>
