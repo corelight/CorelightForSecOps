@@ -4676,7 +4676,7 @@ The following table lists the log fields of the <code>vpn</code> log type and th
 <tr>
 <td><code>inferences (array[string] - set[string])</code></td>
 <td><code>metadata.description, about.labels [inference]</code></td>
-<td>Iterate through log field <code>inferences</code>, then<br> if the <code>index</code> value is equal to <code>0</code> then, <code>inferences</code> log field is mapped to the <code>metadata.description</code> UDM field. <br> Else, the <code>about.labels.key</code> UDM field is set to <code>inferences</code> and <code>inferences</code> log field is mapped to the <code>about.labels.value</code> UDM field.<br></td>
+<td>Iterate through log field <code>inferences</code>, then<br> if the <code>index</code> value is equal to <code>0</code> then, <code>inferences</code> log field is mapped to the <code>metadata.description</code> UDM field.<br></td>
 </tr>
 <tr>
 <td><code>server_name (string)</code></td>
@@ -4835,12 +4835,12 @@ The following table lists the log fields of the <code>x509, x509_red</code> log 
 </tr>
 <tr>
 <td><code>certificate.key_length (integer - count)</code></td>
-<td><code>about.domain.last_https_certificate.rsa.key_size</code></td>
+<td><code>about.domain.last_https_certificate.public_key.rsa.key_size</code></td>
 <td></td>
 </tr>
 <tr>
 <td><code>certificate.exponent (string)</code></td>
-<td><code>about.domain.last_https_certificate.rsa.exponent</code></td>
+<td><code>about.domain.last_https_certificate.public_key.rsa.exponent</code></td>
 <td></td>
 </tr>
 <tr>
@@ -4850,7 +4850,7 @@ The following table lists the log fields of the <code>x509, x509_red</code> log 
 </tr>
 <tr>
 <td><code>san.dns (array[string] - vector of string)</code></td>
-<td><code>about.domain.last_https_certificate.cert_extensions.subject_alternative_name</code></td>
+<td><code>about.domain.last_https_certificate.extension.subject_alternative_name</code></td>
 <td></td>
 </tr>
 <tr>
@@ -4870,7 +4870,7 @@ The following table lists the log fields of the <code>x509, x509_red</code> log 
 </tr>
 <tr>
 <td><code>basic_constraints.ca (boolean - bool)</code></td>
-<td><code>about.domain.last_https_certificate.cert_extensions.ca</code></td>
+<td><code>about.domain.last_https_certificate.extension.ca</code></td>
 <td></td>
 </tr>
 <tr>
