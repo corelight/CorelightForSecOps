@@ -699,9 +699,9 @@
                     "name": "f47cfd3a-ca33-476c-99cc-38b61f902e4f",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssh\"\r\n$inferences=security_result.summary\r\n$inferences!=\"\"\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour, $inferences\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $date_hour asc\r\n\r\n",
                     "input": {
-                        "timeWindow": {
-                            "startTime": "2025-03-26T00:00:00Z",
-                            "endTime": "2025-03-27T09:23:23.777Z"
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
                         }
                     },
                     "etag": "4164859b032de306ac6c1a38aa37a24a2541a7e3b668b36d72864b4ba08a2379"
