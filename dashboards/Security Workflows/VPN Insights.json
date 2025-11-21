@@ -2,7 +2,7 @@
     "dashboards": [
         {
             "dashboard": {
-                "name": "f959a07f-39de-492a-9b87-18c65765fd8c",
+                "name": "84a62531-ebbd-4c3d-b81f-9d16e764fb75",
                 "displayName": "Corelight → Security Workflows → VPN Insights",
                 "definition": {
                     "filters": [
@@ -20,13 +20,13 @@
                             ],
                             "displayName": "Global Time Filter",
                             "chartIds": [
-                                "7c36e995-e90b-40e7-af98-87878e58b631",
-                                "64698d6d-ed3b-4600-92d4-313f71ab02cc",
-                                "a71d3fb8-578f-40d2-b771-f01120a6a7cd",
-                                "81316ce9-1bf5-4fb0-9679-0ee5c56d3258",
-                                "1421339b-fc17-4abc-bb89-f27514bc08eb",
-                                "1ff73ace-f198-4b3b-90cb-529c52e0f36c",
-                                "765ad4c7-8292-46aa-ab87-8a0dbd8829ea"
+                                "1fe77fe6-4fc3-4dfb-b8ed-331ee4f79cf8",
+                                "f2d5bc8e-0f38-4f8a-9b27-48c6b0dbc658",
+                                "96d4c412-8b64-48bb-8a9d-91bc04955834",
+                                "62d8bec5-c2c9-41da-9024-c1a08716387f",
+                                "81fbe454-2072-41d3-a1bb-43a8d3ebfa40",
+                                "5f5468aa-314c-4e19-baf7-adac4c1a3f96",
+                                "3d6e2632-df27-4fe4-9a5a-f6da726e06e2"
                             ],
                             "isStandardTimeRangeFilter": true,
                             "isStandardTimeRangeFilterEnabled": true
@@ -45,19 +45,19 @@
                             ],
                             "displayName": "Corelight Sensor",
                             "chartIds": [
-                                "7c36e995-e90b-40e7-af98-87878e58b631",
-                                "64698d6d-ed3b-4600-92d4-313f71ab02cc",
-                                "a71d3fb8-578f-40d2-b771-f01120a6a7cd",
-                                "81316ce9-1bf5-4fb0-9679-0ee5c56d3258",
-                                "1421339b-fc17-4abc-bb89-f27514bc08eb",
-                                "1ff73ace-f198-4b3b-90cb-529c52e0f36c",
-                                "765ad4c7-8292-46aa-ab87-8a0dbd8829ea"
+                                "1fe77fe6-4fc3-4dfb-b8ed-331ee4f79cf8",
+                                "f2d5bc8e-0f38-4f8a-9b27-48c6b0dbc658",
+                                "96d4c412-8b64-48bb-8a9d-91bc04955834",
+                                "62d8bec5-c2c9-41da-9024-c1a08716387f",
+                                "81fbe454-2072-41d3-a1bb-43a8d3ebfa40",
+                                "5f5468aa-314c-4e19-baf7-adac4c1a3f96",
+                                "3d6e2632-df27-4fe4-9a5a-f6da726e06e2"
                             ]
                         }
                     ],
                     "charts": [
                         {
-                            "dashboardChart": "765ad4c7-8292-46aa-ab87-8a0dbd8829ea",
+                            "dashboardChart": "3d6e2632-df27-4fe4-9a5a-f6da726e06e2",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 32,
@@ -70,7 +70,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "81316ce9-1bf5-4fb0-9679-0ee5c56d3258",
+                            "dashboardChart": "62d8bec5-c2c9-41da-9024-c1a08716387f",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -83,7 +83,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "1421339b-fc17-4abc-bb89-f27514bc08eb",
+                            "dashboardChart": "81fbe454-2072-41d3-a1bb-43a8d3ebfa40",
                             "chartLayout": {
                                 "startX": 32,
                                 "spanX": 32,
@@ -96,7 +96,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "1ff73ace-f198-4b3b-90cb-529c52e0f36c",
+                            "dashboardChart": "5f5468aa-314c-4e19-baf7-adac4c1a3f96",
                             "chartLayout": {
                                 "startX": 64,
                                 "spanX": 32,
@@ -109,7 +109,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "a71d3fb8-578f-40d2-b771-f01120a6a7cd",
+                            "dashboardChart": "96d4c412-8b64-48bb-8a9d-91bc04955834",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -122,7 +122,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "7c36e995-e90b-40e7-af98-87878e58b631",
+                            "dashboardChart": "1fe77fe6-4fc3-4dfb-b8ed-331ee4f79cf8",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -135,7 +135,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "64698d6d-ed3b-4600-92d4-313f71ab02cc",
+                            "dashboardChart": "f2d5bc8e-0f38-4f8a-9b27-48c6b0dbc658",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -150,15 +150,15 @@
                     ]
                 },
                 "type": "CUSTOM",
-                "etag": "55d761e04929c109e894f7e30d6fa93d579047a36a85f219d3cd40d877e5af9c",
+                "etag": "1597fbd97e5185a2d26b0d3517abbfe25b52b1077121c0ef3cf21e652e128261",
                 "access": "DASHBOARD_PRIVATE"
             },
             "dashboardCharts": [
                 {
-                    "name": "7c36e995-e90b-40e7-af98-87878e58b631",
+                    "name": "1fe77fe6-4fc3-4dfb-b8ed-331ee4f79cf8",
                     "displayName": "VPN JA3 Finger Prints",
                     "chartDatasource": {
-                        "dashboardQuery": "dd4bde3b-2a4d-485b-b3bf-a89dd3dfbee8",
+                        "dashboardQuery": "ac2a6c62-9e8e-4c1e-9efa-86e994c9e963",
                         "dataSources": [
                             "UDM"
                         ]
@@ -196,13 +196,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "c144b8d73340c21c774aa07136e06498d9664eccc48f9635077a551173efdd46"
+                    "etag": "1e332558eee46607fcbd1604ec9e6ca97efa507d9646ca34cef27e94d4b82c25"
                 },
                 {
-                    "name": "81316ce9-1bf5-4fb0-9679-0ee5c56d3258",
+                    "name": "62d8bec5-c2c9-41da-9024-c1a08716387f",
                     "displayName": "Inferences Over Time",
                     "chartDatasource": {
-                        "dashboardQuery": "d249c07a-2a74-4e3a-98c8-48103a38dd31",
+                        "dashboardQuery": "7dd0e755-e913-4f0b-bbc5-5b5e9ae0a5ef",
                         "dataSources": [
                             "UDM"
                         ]
@@ -309,13 +309,13 @@
                         "groupingType": "Stacked"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "85090ff1193e41dc2bd338d3b2e0bed5edd95c4fcd4e9a82136d44f7d298227b"
+                    "etag": "fe94e3af5f5a2890108ffd2cd667efe7c0b272f5bc31481c6e96aab251aef649"
                 },
                 {
-                    "name": "1ff73ace-f198-4b3b-90cb-529c52e0f36c",
+                    "name": "5f5468aa-314c-4e19-baf7-adac4c1a3f96",
                     "displayName": "VPN Type",
                     "chartDatasource": {
-                        "dashboardQuery": "d06656ce-3a3d-46d7-b08b-485494128c92",
+                        "dashboardQuery": "ef390c10-e16c-4077-87a7-854be7f53c0b",
                         "dataSources": [
                             "UDM"
                         ]
@@ -354,13 +354,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "39eb19d7eb34ea02ca470b84a1c77ecd3fa4cc31fa37faa23e2d9bc0e804cf5e"
+                    "etag": "5199f3845f135ef789341ce441fc040081e501392458e8236daa3fef905398eb"
                 },
                 {
-                    "name": "a71d3fb8-578f-40d2-b771-f01120a6a7cd",
+                    "name": "96d4c412-8b64-48bb-8a9d-91bc04955834",
                     "displayName": "VPN Inference Log Data",
                     "chartDatasource": {
-                        "dashboardQuery": "090e7fc3-1f50-4826-9c9b-140d98df9a10",
+                        "dashboardQuery": "068479ea-fbaa-4209-b0fc-53d45e90dcc1",
                         "dataSources": [
                             "UDM"
                         ]
@@ -402,13 +402,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "108a4c6eaad800865811ea5c50b016ef017372c52bc34b82d7e2869826a158b4"
+                    "etag": "39d870dbf2acaf331f9293ae236090c66045943f0277b53510de9bfef81f5f29"
                 },
                 {
-                    "name": "1421339b-fc17-4abc-bb89-f27514bc08eb",
+                    "name": "81fbe454-2072-41d3-a1bb-43a8d3ebfa40",
                     "displayName": "Top VPN Users",
                     "chartDatasource": {
-                        "dashboardQuery": "cbdc5f06-e8b1-47d5-8f7d-059c837fc1b7",
+                        "dashboardQuery": "08e6ce44-2800-445a-a8a6-f0b2191b9952",
                         "dataSources": [
                             "UDM"
                         ]
@@ -450,13 +450,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "874e6220ceb608ad884501571c8432cba41c9f6c535de639377bc8b21580bb91"
+                    "etag": "6fa86db235553bdf11f9892cbb26c017f83e210e1702d06284bcdfb3c71cd020"
                 },
                 {
-                    "name": "64698d6d-ed3b-4600-92d4-313f71ab02cc",
+                    "name": "f2d5bc8e-0f38-4f8a-9b27-48c6b0dbc658",
                     "displayName": "Largest Transfers Between Host Pairs Over VPN",
                     "chartDatasource": {
-                        "dashboardQuery": "4be405d3-98ad-4ad2-8030-1cb058d16683",
+                        "dashboardQuery": "24fcd942-dc70-4bce-8b55-733d74517a01",
                         "dataSources": [
                             "UDM"
                         ]
@@ -522,13 +522,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "d82c653389d6b0edcc0deedecf418a3cb2dad651d10e78e02cdc739d50bbb7f1"
+                    "etag": "9f13e3898d9b2c4c89386156d0e290915aeefb1d9f35f41b139b0db2b71d0b48"
                 },
                 {
-                    "name": "765ad4c7-8292-46aa-ab87-8a0dbd8829ea",
+                    "name": "3d6e2632-df27-4fe4-9a5a-f6da726e06e2",
                     "displayName": "Inference Type",
                     "chartDatasource": {
-                        "dashboardQuery": "3fc51ce5-ada0-47f6-adc2-6c6ad7a63f39",
+                        "dashboardQuery": "ddc6b2f0-3ce3-47dd-9fae-60658d98abd1",
                         "dataSources": [
                             "UDM"
                         ]
@@ -570,12 +570,12 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "2daf841cc4ef046e7bfd0415ac434ecd2ee27b85248b11b3fe604706e18d0d5c"
+                    "etag": "f61d4b658a10ab8edc0f999d68fd9b7a5c91358892aeaa0ca57e22e1c6f9e18e"
                 }
             ],
             "dashboardQueries": [
                 {
-                    "name": "4be405d3-98ad-4ad2-8030-1cb058d16683",
+                    "name": "24fcd942-dc70-4bce-8b55-733d74517a01",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"vpn\"\r\ntarget.application= /^spicy/\r\n$inference=about.labels[\"inference\"]\r\n$vpn_type=about.labels[\"vpn_type\"]\r\n$inference!=\"\"\r\n$vpn_type!=\"\"\r\n$protocol_string=if(network.ip_protocol=88, \"EIGRP\",\r\nif(network.ip_protocol=50, \"ESP\",\r\nif(network.ip_protocol=97, \"ETHERIP\",\r\nif(network.ip_protocol=47, \"GRE\",\r\nif(network.ip_protocol=1, \"ICMP\",\r\nif(network.ip_protocol=58, \"ICMP6\",\r\nif(network.ip_protocol=2, \"IGMP\",\r\nif(network.ip_protocol=41, \"IP6IN4\",\r\nif(network.ip_protocol=103, \"PIM\",\r\nif(network.ip_protocol=132, \"SCTP\",\r\nif(network.ip_protocol=6, \"TCP\",\r\nif(network.ip_protocol=17, \"UDP\",\r\nif(network.ip_protocol=0, \"UNKNOWN_IP_PROTOCOL\",\r\nif(network.ip_protocol=112, \"VRRP\", \"UNKNOWN_IP_PROTOCOL\"))))))))))))))\r\nmatch:\r\n    principal.ip, target.ip, target.port, $protocol_string, target.ip_geo_artifact.location.country_or_region, target.application\r\noutcome:\r\n    $resp_bytes_sum=sum(network.received_bytes)\r\n    $orig_bytes_sum=sum(network.sent_bytes)\r\n    $giga_bytes=(sum(network.received_bytes) + sum(network.sent_bytes)) / (1024 * 1024 * 1024)\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $giga_bytes desc \r\nlimit:\r\n    20",
                     "input": {
                         "relativeTime": {
@@ -583,10 +583,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "14d887d2f0741302965477f5f6f44dbbcac51a933e93ed8424414b6c7e1df070"
+                    "etag": "2dac6449b908548859665382fd8a4ec9d3a01b0022689e6d1a31ec75e749d365"
                 },
                 {
-                    "name": "3fc51ce5-ada0-47f6-adc2-6c6ad7a63f39",
+                    "name": "ddc6b2f0-3ce3-47dd-9fae-60658d98abd1",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"vpn\"\r\nabout.labels.key=\"inference\"\r\nabout.labels.value!=\"\"\r\nmatch:\r\n    about.labels.value\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    50",
                     "input": {
                         "relativeTime": {
@@ -594,10 +594,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "1374d068fbd06ada0979250ddc4cba2f2f5bb3a8eb05c12e5fbcb73a3c612264"
+                    "etag": "593342f77bd404fbe1c15500989c847542f44799a675cbff689a822f681d8362"
                 },
                 {
-                    "name": "dd4bde3b-2a4d-485b-b3bf-a89dd3dfbee8",
+                    "name": "ac2a6c62-9e8e-4c1e-9efa-86e994c9e963",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"vpn\"\r\n$inference=about.labels[\"inference\"]\r\n$vpn_type=about.labels[\"vpn_type\"]\r\n$inference!=\"\"\r\n$vpn_type!=\"\"\r\nnetwork.tls.client.ja3!=\"\"\r\nnetwork.tls.server.ja3s!=\"\"\r\nmatch:\r\n    network.tls.client.ja3, network.tls.server.ja3s\r\noutcome:\r\n    $count=count_distinct(metadata.id)",
                     "input": {
                         "relativeTime": {
@@ -605,10 +605,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "a283135250f25d364cd47fe5c126acf439d63d4b26835ceeebdde0557fb0a79b"
+                    "etag": "d3536a47119ebed8ab2a8928fc24bedd63912605c736349c45c67b6be2cba63f"
                 },
                 {
-                    "name": "d249c07a-2a74-4e3a-98c8-48103a38dd31",
+                    "name": "7dd0e755-e913-4f0b-bbc5-5b5e9ae0a5ef",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"vpn\"\r\n$inference=about.labels[\"inference\"]\r\n$vpn_type=about.labels[\"vpn_type\"]\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\n$inference!=\"\"\r\n$vpn_type!=\"\"\r\nmatch:\r\n    $date_hour, $inference\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $date_hour asc",
                     "input": {
                         "relativeTime": {
@@ -616,10 +616,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "a18d45b9f133062f21fae0214df8b7ff9a982c4702ed5674b63de828ce1e776b"
+                    "etag": "2d660fc896d34bf61414b15b993cbe643f38f0bf5bcd8153c9f79ac7becb0364"
                 },
                 {
-                    "name": "d06656ce-3a3d-46d7-b08b-485494128c92",
+                    "name": "ef390c10-e16c-4077-87a7-854be7f53c0b",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"vpn\"\r\n$inference=about.labels[\"inference\"]\r\n$vpn_type=about.labels[\"vpn_type\"]\r\n$inference!=\"\"\r\n$vpn_type!=\"\"\r\nmatch:\r\n    $vpn_type\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    50",
                     "input": {
                         "relativeTime": {
@@ -627,10 +627,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "d7892d393241d7856cbe53182173adb4c61539d7427ef9febca550b2f8e253f8"
+                    "etag": "7a2fc494b5c966157bbcbef9e10bc248ee33dd7159b2da2bb6b63f7676f1db6e"
                 },
                 {
-                    "name": "090e7fc3-1f50-4826-9c9b-140d98df9a10",
+                    "name": "068479ea-fbaa-4209-b0fc-53d45e90dcc1",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"vpn\"\r\nabout.labels.key=\"inference\"\r\n$vpn_type=about.labels[\"vpn_type\"]\r\n$time=timestamp.get_timestamp(metadata.event_timestamp.seconds)\r\nabout.labels.value!=\"\"\r\n$vpn_type!=\"\"\r\nmatch:\r\n    $time, principal.ip, target.ip\r\noutcome:\r\n    $inferences=array_distinct(about.labels.value)\r\norder:\r\n    $time asc",
                     "input": {
                         "relativeTime": {
@@ -638,10 +638,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "b4f731d5ca2f62ab8de7b6980f3824436c30ae83f4b3ab0d95e4d922ba17781f"
+                    "etag": "665d1102d608dada2551cdb46da5c39378c2fde08209a6788014f950a4906a9c"
                 },
                 {
-                    "name": "cbdc5f06-e8b1-47d5-8f7d-059c837fc1b7",
+                    "name": "08e6ce44-2800-445a-a8a6-f0b2191b9952",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"vpn\"\r\n$inference=about.labels[\"inference\"]\r\n$vpn_type=about.labels[\"vpn_type\"]\r\n$inference!=\"\"\r\n$vpn_type!=\"\"\r\n$combined_fields=strings.concat(principal.ip, about.labels[\"vpn_type\"], target.location.country_or_region)\r\nmatch:\r\n    principal.ip\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc\r\nlimit:\r\n    20",
                     "input": {
                         "relativeTime": {
@@ -649,7 +649,7 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "cc21e464ece94123df1e387b975438f1b78f2542523455f4dd5b69da80f68bda"
+                    "etag": "db9f119f12400787bb8d28dcd0750d6cfbc6c09494a320db3098ce09c3ced3d2"
                 }
             ]
         }

@@ -2,7 +2,7 @@
     "dashboards": [
         {
             "dashboard": {
-                "name": "3b122524-1f63-4143-9ded-7f060ff50a59",
+                "name": "ffa1fb58-6762-492a-9b67-4d9361ac76b7",
                 "displayName": "Corelight → Data Explorer → x509",
                 "definition": {
                     "filters": [
@@ -20,9 +20,9 @@
                             ],
                             "displayName": "Global Time Filter",
                             "chartIds": [
-                                "0a1b3796-a403-44c1-996e-c9de106672a4",
-                                "b1170e1c-ded9-44da-8a1c-882ee0c1f792",
-                                "dd19b363-c34f-4803-9886-4c09d5a4e1c1"
+                                "c981a126-162f-415a-8f8b-efa7817aa591",
+                                "799438d8-0cd7-4497-950d-c55ae1801f4e",
+                                "04b95d7d-1f95-4f6d-b27a-b5377c342b75"
                             ],
                             "isStandardTimeRangeFilter": true,
                             "isStandardTimeRangeFilterEnabled": true
@@ -41,15 +41,15 @@
                             ],
                             "displayName": "Corelight Sensor",
                             "chartIds": [
-                                "0a1b3796-a403-44c1-996e-c9de106672a4",
-                                "b1170e1c-ded9-44da-8a1c-882ee0c1f792",
-                                "dd19b363-c34f-4803-9886-4c09d5a4e1c1"
+                                "c981a126-162f-415a-8f8b-efa7817aa591",
+                                "799438d8-0cd7-4497-950d-c55ae1801f4e",
+                                "04b95d7d-1f95-4f6d-b27a-b5377c342b75"
                             ]
                         }
                     ],
                     "charts": [
                         {
-                            "dashboardChart": "b1170e1c-ded9-44da-8a1c-882ee0c1f792",
+                            "dashboardChart": "799438d8-0cd7-4497-950d-c55ae1801f4e",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -62,7 +62,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "dd19b363-c34f-4803-9886-4c09d5a4e1c1",
+                            "dashboardChart": "04b95d7d-1f95-4f6d-b27a-b5377c342b75",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -75,7 +75,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "0a1b3796-a403-44c1-996e-c9de106672a4",
+                            "dashboardChart": "c981a126-162f-415a-8f8b-efa7817aa591",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -90,15 +90,15 @@
                     ]
                 },
                 "type": "CUSTOM",
-                "etag": "698f7e77202084741ed376070eab97364ced3e1a253d8c2bad3c4a7b10fe8a39",
+                "etag": "82af039dc116b41cd574a1f936c09460b45688a54dfc4f620c9857b4f65d932f",
                 "access": "DASHBOARD_PRIVATE"
             },
             "dashboardCharts": [
                 {
-                    "name": "dd19b363-c34f-4803-9886-4c09d5a4e1c1",
+                    "name": "04b95d7d-1f95-4f6d-b27a-b5377c342b75",
                     "displayName": "x509 Rare Subjects",
                     "chartDatasource": {
-                        "dashboardQuery": "70a9285a-8b4b-4884-9519-65c0dbe75b0a",
+                        "dashboardQuery": "f1ff5ba1-24ac-4377-9f19-3c132e9baf31",
                         "dataSources": [
                             "UDM"
                         ]
@@ -132,13 +132,24 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "f545a6543092e03aba773c8eeb7caefebf0b2c048ab777530983a91edf8775e9"
+                    "etag": "e8952a56701ca683c694d52ed869b7972572c2f98f7328bc052ab7a0a501c999",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "ssl_subject",
+                                "displayName": "Run Search on SSL Subject",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            }
+                        ]
+                    }
                 },
                 {
-                    "name": "b1170e1c-ded9-44da-8a1c-882ee0c1f792",
+                    "name": "799438d8-0cd7-4497-950d-c55ae1801f4e",
                     "displayName": "x509 Top Subjects",
                     "chartDatasource": {
-                        "dashboardQuery": "a80ebbec-91d9-4781-8d31-325b7f80e528",
+                        "dashboardQuery": "bf673c4a-5f77-46aa-b748-d2dc4d29688c",
                         "dataSources": [
                             "UDM"
                         ]
@@ -172,13 +183,24 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "4ddde36192f60a5bfdd0021ec56df15110c1df6f33e7e84f903db6f0262f3695"
+                    "etag": "eec62d657f8f84df7963fd76a76416d246616e9c14f36d68bb20dd2113852ebf",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "ssl_subject",
+                                "displayName": "Run Search on SSL Subject",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            }
+                        ]
+                    }
                 },
                 {
-                    "name": "0a1b3796-a403-44c1-996e-c9de106672a4",
+                    "name": "c981a126-162f-415a-8f8b-efa7817aa591",
                     "displayName": "x509 Expired Certificates",
                     "chartDatasource": {
-                        "dashboardQuery": "d6552f7e-e8b7-43e1-a4de-5ad514bd0a32",
+                        "dashboardQuery": "a9c4b939-05a3-4733-b6f7-1064ad966069",
                         "dataSources": [
                             "UDM"
                         ]
@@ -205,49 +227,50 @@
                                 "header": "Certificate Not Valid After"
                             },
                             {
-                                "field": "network.tls.server.certificate.subject",
+                                "field": "about.domain.last_https_certificate.subject.common_name",
                                 "header": "Certificate Subject"
                             }
                         ],
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "50186c0fb15b920693c466caadbda7af8f54cd7d1a1808ddb7f96088bba323f1"
+                    "etag": "ec5013e2cca04d0e9da70a69cc4f387a9a9d414b1fbaab94d60287beecc88236",
+                    "drillDownConfig": {}
                 }
             ],
             "dashboardQueries": [
                 {
-                    "name": "70a9285a-8b4b-4884-9519-65c0dbe75b0a",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"x509\"\r\n$ssl_subject=network.tls.server.certificate.subject\r\n$ssl_subject!=\"\"\r\nmatch:\r\n    $ssl_subject\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count asc \r\nlimit:\r\n    10",
+                    "name": "f1ff5ba1-24ac-4377-9f19-3c132e9baf31",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"x509\"\r\n$ssl_subject=about.domain.last_https_certificate.subject.common_name\r\n$ssl_subject!=\"\"\r\nmatch:\r\n    $ssl_subject\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count asc \r\nlimit:\r\n    10",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "0860078ec2e932f6e27c84957be68e2b9bab168c0c758175dc89a4f3fe64b7b1"
+                    "etag": "db916f92dab0e0ba7b7adcaacde9aa749b17bfa9b6bba0ad7a6df776693ed167"
                 },
                 {
-                    "name": "a80ebbec-91d9-4781-8d31-325b7f80e528",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"x509\"\r\n$ssl_subject=network.tls.server.certificate.subject\r\n$ssl_subject!=\"\"\r\nmatch:\r\n    $ssl_subject\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
+                    "name": "bf673c4a-5f77-46aa-b748-d2dc4d29688c",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"x509\"\r\n$ssl_subject=about.domain.last_https_certificate.subject.common_name\r\n$ssl_subject!=\"\"\r\nmatch:\r\n    $ssl_subject\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "3f12816ec5e5d17c20d600a337a961820792243d2fb6ed7a4b2077f1728daefa"
+                    "etag": "db167422d9aa45138ce80fc69aa3e61af72b9305d4a31ca3c8da0311e2a6ecfc"
                 },
                 {
-                    "name": "d6552f7e-e8b7-43e1-a4de-5ad514bd0a32",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"x509\" \r\n$certificate_expired = if(timestamp.current_seconds() > network.tls.server.certificate.not_after.seconds, \"Expired\", \"Not Expired\")\r\n$certificate_expired=\"Expired\"\r\n$not_after=timestamp.get_timestamp(network.tls.server.certificate.not_after.seconds)\r\nmatch:\r\n    $not_after, network.tls.server.certificate.subject",
+                    "name": "a9c4b939-05a3-4733-b6f7-1064ad966069",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"x509\" \r\n$certificate_expired = if(timestamp.current_seconds() > network.tls.server.certificate.not_after.seconds, \"Expired\", \"Not Expired\")\r\n$certificate_expired=\"Expired\"\r\n$not_after=timestamp.get_timestamp(network.tls.server.certificate.not_after.seconds)\r\nmatch:\r\n    $not_after, about.domain.last_https_certificate.subject.common_name",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "068412d939983aa000f05b35ef6018d282f914609dbf5d04ca9c48e68d8529b2"
+                    "etag": "24e701b555182eabcd92aa0a694dac9361d0253b92af9257a9b7f1c7fe29e77c"
                 }
             ]
         }

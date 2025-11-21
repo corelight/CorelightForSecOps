@@ -2,7 +2,7 @@
     "dashboards": [
         {
             "dashboard": {
-                "name": "a99b48fa-2e2d-4288-a88e-f839b23bd8a6",
+                "name": "4da25174-be4c-47b9-94b3-3b916e54266c",
                 "displayName": "Corelight → Data Explorer → HTTP",
                 "definition": {
                     "filters": [
@@ -20,23 +20,23 @@
                             ],
                             "displayName": "Global Time Filter",
                             "chartIds": [
-                                "017f7e61-e151-4783-a6b5-4bf432cd578c",
-                                "59503346-da53-4289-b26a-1760300c6297",
-                                "978396b1-835a-4442-92f6-9795e349c178",
-                                "650b76ec-3490-4579-9d44-a52689bd4404",
-                                "e2c9dbaf-f5ff-473f-bbb7-98986dc9fc9b",
-                                "306d990d-b497-4b1f-8102-565824ee930e",
-                                "8f0ee77c-0ba9-4435-9d7e-1e48cedc6dad",
-                                "c0d30e69-d14d-4c5e-8ceb-ea4cd67acd41",
-                                "c7a90920-af64-4aaa-8c4f-7c4aa35a6ef5",
-                                "ddbd2f0d-136e-4333-85ca-956de22669a4",
-                                "428da5ce-0db6-4d97-ba43-71a9298c6a82",
-                                "8f72240f-b692-42c7-9c2f-47fb8b323af1",
-                                "f019959d-7211-4f5d-a857-17d18588f209",
-                                "e5befe3a-11ab-47f9-be37-f896b15a182b",
-                                "1d681575-61cc-484a-9c6d-66edc760035d",
-                                "65f65987-84ac-4832-878b-7e3758de1d1e",
-                                "73c5d13c-ccae-4bc2-9a7b-20fb67b08d97"
+                                "c7e27f79-cb90-4c77-be8f-e5e14c3a37e4",
+                                "23665473-d8d3-4791-9924-4f9b68a6726f",
+                                "a30e42ff-ee8d-4761-aac8-514a3964646a",
+                                "ef229110-d571-4aa6-93ac-ad7414ed5a00",
+                                "24ff8491-9222-4f99-b5a6-db3ad9671373",
+                                "b978f16b-7793-416b-b174-0e258e1056fe",
+                                "2ccac1cf-4323-4f86-86cb-c82ec07dd517",
+                                "ab9ab5ae-a0de-4786-a2c2-6dfdf1ba0cea",
+                                "d696f956-0c65-4e7c-af8c-7f2aa81e8d06",
+                                "fbfb1d23-16e7-4467-a171-de7d5f6462bf",
+                                "5daafbf5-957e-4e37-82c7-436a32651c82",
+                                "c6248b92-b67d-4665-994f-b3d5a6704a71",
+                                "05b11ee1-855d-4f31-85d3-b9a063b0c6b4",
+                                "a1fe6c57-d4b7-4635-b44a-25f2b302dc1e",
+                                "6d1e879f-4cf9-4c11-8d0c-24bef63c23da",
+                                "c8018a82-d65d-413d-8b22-99dedb1eecc4",
+                                "2915c1b4-8e2e-4837-ad0d-e980da65c967"
                             ],
                             "isStandardTimeRangeFilter": true,
                             "isStandardTimeRangeFilterEnabled": true
@@ -55,29 +55,29 @@
                             ],
                             "displayName": "Corelight Sensor",
                             "chartIds": [
-                                "c7a90920-af64-4aaa-8c4f-7c4aa35a6ef5",
-                                "c0d30e69-d14d-4c5e-8ceb-ea4cd67acd41",
-                                "8f0ee77c-0ba9-4435-9d7e-1e48cedc6dad",
-                                "306d990d-b497-4b1f-8102-565824ee930e",
-                                "e2c9dbaf-f5ff-473f-bbb7-98986dc9fc9b",
-                                "650b76ec-3490-4579-9d44-a52689bd4404",
-                                "59503346-da53-4289-b26a-1760300c6297",
-                                "978396b1-835a-4442-92f6-9795e349c178",
-                                "017f7e61-e151-4783-a6b5-4bf432cd578c",
-                                "ddbd2f0d-136e-4333-85ca-956de22669a4",
-                                "8f72240f-b692-42c7-9c2f-47fb8b323af1",
-                                "428da5ce-0db6-4d97-ba43-71a9298c6a82",
-                                "f019959d-7211-4f5d-a857-17d18588f209",
-                                "e5befe3a-11ab-47f9-be37-f896b15a182b",
-                                "1d681575-61cc-484a-9c6d-66edc760035d",
-                                "65f65987-84ac-4832-878b-7e3758de1d1e",
-                                "73c5d13c-ccae-4bc2-9a7b-20fb67b08d97"
+                                "d696f956-0c65-4e7c-af8c-7f2aa81e8d06",
+                                "ab9ab5ae-a0de-4786-a2c2-6dfdf1ba0cea",
+                                "2ccac1cf-4323-4f86-86cb-c82ec07dd517",
+                                "b978f16b-7793-416b-b174-0e258e1056fe",
+                                "24ff8491-9222-4f99-b5a6-db3ad9671373",
+                                "ef229110-d571-4aa6-93ac-ad7414ed5a00",
+                                "23665473-d8d3-4791-9924-4f9b68a6726f",
+                                "a30e42ff-ee8d-4761-aac8-514a3964646a",
+                                "c7e27f79-cb90-4c77-be8f-e5e14c3a37e4",
+                                "fbfb1d23-16e7-4467-a171-de7d5f6462bf",
+                                "c6248b92-b67d-4665-994f-b3d5a6704a71",
+                                "5daafbf5-957e-4e37-82c7-436a32651c82",
+                                "05b11ee1-855d-4f31-85d3-b9a063b0c6b4",
+                                "a1fe6c57-d4b7-4635-b44a-25f2b302dc1e",
+                                "6d1e879f-4cf9-4c11-8d0c-24bef63c23da",
+                                "c8018a82-d65d-413d-8b22-99dedb1eecc4",
+                                "2915c1b4-8e2e-4837-ad0d-e980da65c967"
                             ]
                         }
                     ],
                     "charts": [
                         {
-                            "dashboardChart": "c7a90920-af64-4aaa-8c4f-7c4aa35a6ef5",
+                            "dashboardChart": "d696f956-0c65-4e7c-af8c-7f2aa81e8d06",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 24,
@@ -90,7 +90,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "65f65987-84ac-4832-878b-7e3758de1d1e",
+                            "dashboardChart": "c8018a82-d65d-413d-8b22-99dedb1eecc4",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 24,
@@ -103,7 +103,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "306d990d-b497-4b1f-8102-565824ee930e",
+                            "dashboardChart": "b978f16b-7793-416b-b174-0e258e1056fe",
                             "chartLayout": {
                                 "startX": 24,
                                 "spanX": 24,
@@ -116,7 +116,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "f019959d-7211-4f5d-a857-17d18588f209",
+                            "dashboardChart": "05b11ee1-855d-4f31-85d3-b9a063b0c6b4",
                             "chartLayout": {
                                 "startX": 72,
                                 "spanX": 24,
@@ -129,7 +129,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "73c5d13c-ccae-4bc2-9a7b-20fb67b08d97",
+                            "dashboardChart": "2915c1b4-8e2e-4837-ad0d-e980da65c967",
                             "chartLayout": {
                                 "startX": 64,
                                 "spanX": 32,
@@ -142,7 +142,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "ddbd2f0d-136e-4333-85ca-956de22669a4",
+                            "dashboardChart": "fbfb1d23-16e7-4467-a171-de7d5f6462bf",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 32,
@@ -155,7 +155,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "017f7e61-e151-4783-a6b5-4bf432cd578c",
+                            "dashboardChart": "c7e27f79-cb90-4c77-be8f-e5e14c3a37e4",
                             "chartLayout": {
                                 "startX": 32,
                                 "spanX": 32,
@@ -168,7 +168,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "8f0ee77c-0ba9-4435-9d7e-1e48cedc6dad",
+                            "dashboardChart": "2ccac1cf-4323-4f86-86cb-c82ec07dd517",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -181,7 +181,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "978396b1-835a-4442-92f6-9795e349c178",
+                            "dashboardChart": "a30e42ff-ee8d-4761-aac8-514a3964646a",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -194,7 +194,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "59503346-da53-4289-b26a-1760300c6297",
+                            "dashboardChart": "23665473-d8d3-4791-9924-4f9b68a6726f",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -207,7 +207,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "428da5ce-0db6-4d97-ba43-71a9298c6a82",
+                            "dashboardChart": "5daafbf5-957e-4e37-82c7-436a32651c82",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -220,7 +220,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "e2c9dbaf-f5ff-473f-bbb7-98986dc9fc9b",
+                            "dashboardChart": "24ff8491-9222-4f99-b5a6-db3ad9671373",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -233,7 +233,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "8f72240f-b692-42c7-9c2f-47fb8b323af1",
+                            "dashboardChart": "c6248b92-b67d-4665-994f-b3d5a6704a71",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -246,7 +246,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "e5befe3a-11ab-47f9-be37-f896b15a182b",
+                            "dashboardChart": "a1fe6c57-d4b7-4635-b44a-25f2b302dc1e",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -259,7 +259,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "650b76ec-3490-4579-9d44-a52689bd4404",
+                            "dashboardChart": "ef229110-d571-4aa6-93ac-ad7414ed5a00",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -272,7 +272,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "1d681575-61cc-484a-9c6d-66edc760035d",
+                            "dashboardChart": "6d1e879f-4cf9-4c11-8d0c-24bef63c23da",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -285,7 +285,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "c0d30e69-d14d-4c5e-8ceb-ea4cd67acd41",
+                            "dashboardChart": "ab9ab5ae-a0de-4786-a2c2-6dfdf1ba0cea",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -300,15 +300,15 @@
                     ]
                 },
                 "type": "CUSTOM",
-                "etag": "5afc5462139b4de176604a8572594b6c043240d90b7c84052dbbf8a126b8e049",
+                "etag": "66316741f6f2c0523d03510c5c676aeb6c266b6282cdf50599806ad42cbcbe2a",
                 "access": "DASHBOARD_PRIVATE"
             },
             "dashboardCharts": [
                 {
-                    "name": "c0d30e69-d14d-4c5e-8ceb-ea4cd67acd41",
+                    "name": "ab9ab5ae-a0de-4786-a2c2-6dfdf1ba0cea",
                     "displayName": "Local User Agents - Outbound",
                     "chartDatasource": {
-                        "dashboardQuery": "437a53e6-f55b-41bc-9754-3fc5c7c2a74a",
+                        "dashboardQuery": "efd1a548-4b52-498d-b311-85346fa9a710",
                         "dataSources": [
                             "UDM"
                         ]
@@ -342,14 +342,25 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "9f2443dd1459b605bacee7fba18956029a132b7322726375594c75f1614e92b0"
+                    "etag": "cd4e4b5090e2a9550400e3d3aef28ae176dd35260dd1730f0756525fb8c4553b",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "user_agent",
+                                "displayName": "Run Search on User Agent",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            }
+                        ]
+                    }
                 },
                 {
-                    "name": "f019959d-7211-4f5d-a857-17d18588f209",
+                    "name": "05b11ee1-855d-4f31-85d3-b9a063b0c6b4",
                     "displayName": "Distinct Connections",
                     "description": "Distinct Connections",
                     "chartDatasource": {
-                        "dashboardQuery": "197ea32c-87e9-421f-baa4-213a7a60ebef",
+                        "dashboardQuery": "60feaea8-77d5-43ac-b309-1369a1b511b1",
                         "dataSources": [
                             "UDM"
                         ]
@@ -385,13 +396,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "15dc3d077fcdd6511776423dfeb814e7bce55e5803092335a1bd3fae645853f6"
+                    "etag": "734d8d1fff9e9aa8b94ae5d63058f457af765bc3533754dc1ab71a29ef5d8688",
+                    "drillDownConfig": {}
                 },
                 {
-                    "name": "017f7e61-e151-4783-a6b5-4bf432cd578c",
+                    "name": "c7e27f79-cb90-4c77-be8f-e5e14c3a37e4",
                     "displayName": "HTTP Status Code Breakdown",
                     "chartDatasource": {
-                        "dashboardQuery": "91c67a91-0162-4de0-bbb1-827a1a5553c7",
+                        "dashboardQuery": "f0db2ea1-9d4f-4c2d-a15d-1cfaaa656306",
                         "dataSources": [
                             "UDM"
                         ]
@@ -404,11 +416,41 @@
                                     "value": "count",
                                     "itemName": "status_msg"
                                 },
-                                "dataLabel": {},
+                                "dataLabel": {
+                                    "show": true
+                                },
                                 "radius": [
                                     "0%",
                                     "70%"
-                                ]
+                                ],
+                                "itemStyle": {
+                                    "color": "b=>{const {map:c}=Cyf(this.theme);b=Jzf(b,bzf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;let d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "Accepted",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "Accepted"
+                                            }
+                                        },
+                                        {
+                                            "key": "No Content",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "No Content"
+                                            }
+                                        },
+                                        {
+                                            "key": "OK",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "OK"
+                                            }
+                                        }
+                                    ]
+                                }
                             }
                         ],
                         "xAxes": [
@@ -430,13 +472,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "03cab1cfa55acd5aee2b3dac45d12f74f1b3614158ab9effff74d94498ce729c"
+                    "etag": "0a5d9b9d9d377c1fd5ddb6c5f3b3947c25bb30da5b4bbd36b43a990fa9349b6b",
+                    "drillDownConfig": {}
                 },
                 {
-                    "name": "428da5ce-0db6-4d97-ba43-71a9298c6a82",
+                    "name": "5daafbf5-957e-4e37-82c7-436a32651c82",
                     "displayName": "Host Breakdown By HTTP Status",
                     "chartDatasource": {
-                        "dashboardQuery": "2829886f-af80-4d82-855f-61acfc89f64e",
+                        "dashboardQuery": "df60790b-2707-4b5c-be55-f9f5057c2d72",
                         "dataSources": [
                             "UDM"
                         ]
@@ -478,13 +521,31 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "24e04139702dc14839c941425c0aa9ef2b6835941403a7357dcab00e10255171"
+                    "etag": "2341c106378fcc79469a0c3188ce8a40c9e556e3b2cc693338e50f47a4bc6e00",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "host_header",
+                                "displayName": "Run Search on Host Header",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            },
+                            {
+                                "id": "status_msg",
+                                "displayName": "Run Search on Status Message",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            }
+                        ]
+                    }
                 },
                 {
-                    "name": "e5befe3a-11ab-47f9-be37-f896b15a182b",
+                    "name": "a1fe6c57-d4b7-4635-b44a-25f2b302dc1e",
                     "displayName": "Local Hosts - Outbound",
                     "chartDatasource": {
-                        "dashboardQuery": "760c40ab-4837-4812-b6d5-753e83a778ec",
+                        "dashboardQuery": "7ffef937-b8e4-4543-be7c-bd527f5f15dc",
                         "dataSources": [
                             "UDM"
                         ]
@@ -518,13 +579,24 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "ca77f2e0f501f97d2d804a3b0fdcee3d40a1a345580221e904c73d8d279c6c63"
+                    "etag": "a4abc907266fe4078d001ebbdcf9ccec21c856cdfb57199d1b579371b813eaf2",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "target_hostname",
+                                "displayName": "Run Search on Host Header",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            }
+                        ]
+                    }
                 },
                 {
-                    "name": "1d681575-61cc-484a-9c6d-66edc760035d",
+                    "name": "6d1e879f-4cf9-4c11-8d0c-24bef63c23da",
                     "displayName": "Local User Agents - Inbound",
                     "chartDatasource": {
-                        "dashboardQuery": "95ca4d23-2261-43e8-b45e-06907f5e3afb",
+                        "dashboardQuery": "2ff9a546-a79c-4ed3-ac48-c6e2de7e4a86",
                         "dataSources": [
                             "UDM"
                         ]
@@ -558,13 +630,24 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "dea48de11d3e420b3ab59cde667a9194ad9e091c050b055c09d5f82cec5369ed"
+                    "etag": "acfc4c23e1a2e4b6fd126ed9a9870aa0711c0f0c69a23e11b81f8936d1414d59",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "user_agent",
+                                "displayName": "Run Search on User Agent",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            }
+                        ]
+                    }
                 },
                 {
-                    "name": "e2c9dbaf-f5ff-473f-bbb7-98986dc9fc9b",
+                    "name": "24ff8491-9222-4f99-b5a6-db3ad9671373",
                     "displayName": "Distinct Host Headers - Inbound",
                     "chartDatasource": {
-                        "dashboardQuery": "11af5374-334c-4908-9818-244f89781a84",
+                        "dashboardQuery": "ca16591c-0542-42da-a9c7-2f8256a72b25",
                         "dataSources": [
                             "UDM"
                         ]
@@ -600,14 +683,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "47e7445dc3e4a681bfcaa4a915d52e84db0f2a9f3b6820f6d8b5941041602de0"
+                    "etag": "9d064ff29ba6a570e398dce1f7191ba46b27ff27721fd747deafa35b7a08d8d4"
                 },
                 {
-                    "name": "306d990d-b497-4b1f-8102-565824ee930e",
+                    "name": "b978f16b-7793-416b-b174-0e258e1056fe",
                     "displayName": "Distinct User Agents",
                     "description": "Distinct User Agents",
                     "chartDatasource": {
-                        "dashboardQuery": "3f8bef3e-57ad-4821-997f-0d83d503277f",
+                        "dashboardQuery": "01340035-6f4f-4270-b4ca-13e88ea0b8ea",
                         "dataSources": [
                             "UDM"
                         ]
@@ -643,13 +726,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "b53ede6df0912ef9af77b2847c6fcbadf3f1e8ae38ecf36e7a00907f9590842f"
+                    "etag": "0c55371b2a336fda5627f0b174448a182456f13cefe05839f36e71b9153a512a"
                 },
                 {
-                    "name": "ddbd2f0d-136e-4333-85ca-956de22669a4",
+                    "name": "fbfb1d23-16e7-4467-a171-de7d5f6462bf",
                     "displayName": "Top Host Headers by Count",
                     "chartDatasource": {
-                        "dashboardQuery": "94976701-7b8b-478d-a702-3cc0cfbe8736",
+                        "dashboardQuery": "62b9b743-99c0-4a92-8c63-5f156c6a9c06",
                         "dataSources": [
                             "UDM"
                         ]
@@ -683,13 +766,24 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "73f3723a3b6fd46ff408122787e0bff464aa6d7aa400ad6cdcb4c36182740809"
+                    "etag": "7a90308b1d7f00f387b48a1a44a58bf63e0ba0aa5fd8a16525b328de81069396",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "target_hostname",
+                                "displayName": "Run Search on Host Header",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            }
+                        ]
+                    }
                 },
                 {
-                    "name": "73c5d13c-ccae-4bc2-9a7b-20fb67b08d97",
+                    "name": "2915c1b4-8e2e-4837-ad0d-e980da65c967",
                     "displayName": "Top Originators",
                     "chartDatasource": {
-                        "dashboardQuery": "170728ed-35e4-41a2-83e4-5e39d4982878",
+                        "dashboardQuery": "0da4b34e-9273-496f-a752-7766b0461de7",
                         "dataSources": [
                             "UDM"
                         ]
@@ -723,13 +817,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "0ca85d771ed488aa084a2aa152461b1c8a8930b3ef19823579edb23fca558a33"
+                    "etag": "5956ad0f6b494a7b8c6af0b32ab4a30833a19b7759318b075c63eb37b6eeb36b"
                 },
                 {
-                    "name": "978396b1-835a-4442-92f6-9795e349c178",
+                    "name": "a30e42ff-ee8d-4761-aac8-514a3964646a",
                     "displayName": "Rare Host Headers",
                     "chartDatasource": {
-                        "dashboardQuery": "e9ce9c36-54c3-4bba-9b2d-939e14704eb1",
+                        "dashboardQuery": "9a479479-ac11-4b3b-a275-1e9a52961cd2",
                         "dataSources": [
                             "UDM"
                         ]
@@ -763,14 +857,25 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "4fa8d55a388447fc056f3d86737d3cd231cc5bdf18c14cf74220bd75adb68a7b"
+                    "etag": "dfe386ec361b91ea3e94ab3952ea023d2d8a412f65868d0f664b8111e4e8030e",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "host_header",
+                                "displayName": "Run Search on Host Header",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            }
+                        ]
+                    }
                 },
                 {
-                    "name": "65f65987-84ac-4832-878b-7e3758de1d1e",
+                    "name": "c8018a82-d65d-413d-8b22-99dedb1eecc4",
                     "displayName": "Distinct Hosts",
                     "description": "Distinct Hosts",
                     "chartDatasource": {
-                        "dashboardQuery": "17a494e6-a517-4216-9489-a6e4e17fda1b",
+                        "dashboardQuery": "7c7c7df5-701c-4d99-95a7-0bb4ae5b937b",
                         "dataSources": [
                             "UDM"
                         ]
@@ -806,14 +911,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "f5618a38603fb06acd2b27b835419eef8ec6808afe6bdeb2b40ce366069b4468"
+                    "etag": "a980c37d3e89e361899e5f20eb12297117996d872d1326b27beb7fec6a8eccb1"
                 },
                 {
-                    "name": "c7a90920-af64-4aaa-8c4f-7c4aa35a6ef5",
+                    "name": "d696f956-0c65-4e7c-af8c-7f2aa81e8d06",
                     "displayName": "Distinct Referrers",
                     "description": "Distinct Referrers",
                     "chartDatasource": {
-                        "dashboardQuery": "f2b1f6d4-9a28-40a6-9340-e88f502b896e",
+                        "dashboardQuery": "e799876d-3903-400d-b02a-9ad5423ab716",
                         "dataSources": [
                             "UDM"
                         ]
@@ -849,13 +954,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "aa930983354f251ebb70a6d3ce662448e31555640603f4dd912663b633e6cf01"
+                    "etag": "0d9dac7da4bfd5702f9d00ee209a73bca14b0fc5e0c92bfa3eb8b7670dcc2305"
                 },
                 {
-                    "name": "59503346-da53-4289-b26a-1760300c6297",
+                    "name": "23665473-d8d3-4791-9924-4f9b68a6726f",
                     "displayName": "Host Breakdown By HTTP Method",
                     "chartDatasource": {
-                        "dashboardQuery": "eb9b8615-6c36-4e2a-a9d2-269638aa574d",
+                        "dashboardQuery": "953073b3-ca28-4190-aaa0-0a40c0d16b31",
                         "dataSources": [
                             "UDM"
                         ]
@@ -889,13 +994,24 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "132c008d696d8f8578f903fd31c75f8999cc97723cebdf046a9068b004f29282"
+                    "etag": "ff0dad2dd8fe8fb07af711de845b8e779b8c56dd3b0a28caa070f991cef55e40",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "host_header",
+                                "displayName": "Run Search on Host Header",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            }
+                        ]
+                    }
                 },
                 {
-                    "name": "650b76ec-3490-4579-9d44-a52689bd4404",
+                    "name": "ef229110-d571-4aa6-93ac-ad7414ed5a00",
                     "displayName": "Local Hosts - Inbound",
                     "chartDatasource": {
-                        "dashboardQuery": "ad0c6cdd-e49c-440a-8e40-411438d71585",
+                        "dashboardQuery": "4b47c51b-eeb2-43db-9f53-64ac527ce7c6",
                         "dataSources": [
                             "UDM"
                         ]
@@ -929,13 +1045,24 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "2f6ab0c8a97eacc168758894ecef5e065b0f62fa01872d938c856eccae52be8f"
+                    "etag": "aa3d9f104bfce2c9c1a6897a63486cd3137be60610cc01ce2385ef85ff249a65",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "target_hostname",
+                                "displayName": "Run Search on Host Header",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            }
+                        ]
+                    }
                 },
                 {
-                    "name": "8f0ee77c-0ba9-4435-9d7e-1e48cedc6dad",
+                    "name": "2ccac1cf-4323-4f86-86cb-c82ec07dd517",
                     "displayName": "Rare User Agents",
                     "chartDatasource": {
-                        "dashboardQuery": "1f52c524-45b5-413f-8556-77cce5eb16fd",
+                        "dashboardQuery": "ca634718-f2a6-40f5-9b4b-190b94252d12",
                         "dataSources": [
                             "UDM"
                         ]
@@ -969,13 +1096,24 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "cd6a0c1b7e9e47a596fecc64e473292c1851fc9eaacffb871dced40e4d1a2742"
+                    "etag": "9e4ab6eaa98cef05bc0498b6d2196d962d75886d921b14f2305e50cd5b010482",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "user_agent",
+                                "displayName": "Run Search on HTTP  User Agent",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            }
+                        ]
+                    }
                 },
                 {
-                    "name": "8f72240f-b692-42c7-9c2f-47fb8b323af1",
+                    "name": "c6248b92-b67d-4665-994f-b3d5a6704a71",
                     "displayName": "Distinct Host Headers - Outbound",
                     "chartDatasource": {
-                        "dashboardQuery": "f1f4fbc9-118d-410a-bec1-f4a9e5f0a995",
+                        "dashboardQuery": "932d9b5c-0b93-44fa-9728-596272ae5e67",
                         "dataSources": [
                             "UDM"
                         ]
@@ -1011,34 +1149,34 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "f19e8380030cac59af807bf1de4bbebd57c50b470555fb31b9946740807dec14"
+                    "etag": "20874ecd3237400f41133752df05d6892af96268e69df4e6b7eb9be2cb09de91"
                 }
             ],
             "dashboardQueries": [
                 {
-                    "name": "e9ce9c36-54c3-4bba-9b2d-939e14704eb1",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n$host_header=target.hostname\r\n$host_header!=\"\"\r\n$combined_fields=strings.concat(about.labels[\"uid\"], target.ip, principal.ip)\r\nmatch:\r\n    $host_header\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count asc \r\nlimit:\r\n    10\r\n",
+                    "name": "9a479479-ac11-4b3b-a275-1e9a52961cd2",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n$host_header=target.hostname\r\n$host_header!=\"\"\r\n$combined_fields=strings.concat(network.session_id, target.ip, principal.ip)\r\nmatch:\r\n    $host_header\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count asc \r\nlimit:\r\n    10\r\n",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "976088df1340f34e7578705b1fcfac01577ee984d13fdad6c43e2313f70ce5c8"
+                    "etag": "1e7c8c35188469aa86b45d260588c1dac360b32500e2e7bb78402ca8d01e0b76"
                 },
                 {
-                    "name": "95ca4d23-2261-43e8-b45e-06907f5e3afb",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n$local_orig=if(principal.ip in cidr %internal_cidr_list, \"true\", \"false\")\r\n$local_resp=if(target.ip in cidr %internal_cidr_list, \"true\", \"false\") \r\n($local_orig=\"true\" AND $local_resp=\"true\") OR ($local_orig=\"false\" AND $local_resp=\"true\")\r\n$user_agent=network.http.user_agent\r\n$user_agent!=\"\"\r\n$combined_fields=strings.concat(about.labels[\"uid\"], target.ip, principal.ip)\r\nmatch:\r\n    $user_agent\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc ",
+                    "name": "2ff9a546-a79c-4ed3-ac48-c6e2de7e4a86",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n$local_orig=if(principal.ip in cidr %internal_cidr_list, \"true\", \"false\")\r\n$local_resp=if(target.ip in cidr %internal_cidr_list, \"true\", \"false\") \r\n($local_orig=\"true\" AND $local_resp=\"true\") OR ($local_orig=\"false\" AND $local_resp=\"true\")\r\n$user_agent=network.http.user_agent\r\n$user_agent!=\"\"\r\n$combined_fields=strings.concat(network.session_id target.ip, principal.ip)\r\nmatch:\r\n    $user_agent\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc ",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "331b4abb880c323636e85b12bbd6061f11dbabafc83e72488d644954ca851087"
+                    "etag": "1d8e0f9d8f4810d7958fc2d575712efe9c49f690c4ad78a99a20a2ab3719d59f"
                 },
                 {
-                    "name": "f1f4fbc9-118d-410a-bec1-f4a9e5f0a995",
+                    "name": "932d9b5c-0b93-44fa-9728-596272ae5e67",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n$local_orig=if(principal.ip in cidr %internal_cidr_list, \"true\", \"false\")\r\n$local_resp=if(target.ip in cidr %internal_cidr_list, \"true\", \"false\") \r\n($local_orig=\"true\" AND $local_resp=\"false\") OR ($local_orig=\"false\" AND $local_resp=\"false\")\r\n$host_header=target.hostname\r\n$host_header!=\"\"\r\noutcome:\r\n    $count=count_distinct($host_header)\r\n",
                     "input": {
                         "relativeTime": {
@@ -1046,10 +1184,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "20b4f59f2b0fea5d43918f405b0b74c494cab8f76596ab289b5c685640a23bc2"
+                    "etag": "a17a512cb91ce56698b42e496e34c41a8eff73f70cc8772d5f769cc02494f195"
                 },
                 {
-                    "name": "3f8bef3e-57ad-4821-997f-0d83d503277f",
+                    "name": "01340035-6f4f-4270-b4ca-13e88ea0b8ea",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http\" \r\noutcome:\r\n    $user_agent=count_distinct(network.http.user_agent)",
                     "input": {
                         "relativeTime": {
@@ -1057,32 +1195,32 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "0a59a7e49d0d40b896a9054fa187644ce50128d3f044b45604e6cf1f0ee06702"
+                    "etag": "4929d43a460c6594031f727f065b27510daf0c877b190f7e7d380f7d34ffb6e4"
                 },
                 {
-                    "name": "ad0c6cdd-e49c-440a-8e40-411438d71585",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n$local_orig=if(principal.ip in cidr %internal_cidr_list, \"true\", \"false\")\r\n$local_resp=if(target.ip in cidr %internal_cidr_list, \"true\", \"false\") \r\n($local_orig=\"true\" AND $local_resp=\"true\") OR ($local_orig=\"false\" AND $local_resp=\"true\")\r\n$target_hostname=target.hostname\r\n$target_hostname!=\"\"\r\n$combined_fields=strings.concat(about.labels[\"uid\"], target.ip, principal.ip)\r\nmatch:\r\n    $target_hostname\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc ",
+                    "name": "4b47c51b-eeb2-43db-9f53-64ac527ce7c6",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n$local_orig=if(principal.ip in cidr %internal_cidr_list, \"true\", \"false\")\r\n$local_resp=if(target.ip in cidr %internal_cidr_list, \"true\", \"false\") \r\n($local_orig=\"true\" AND $local_resp=\"true\") OR ($local_orig=\"false\" AND $local_resp=\"true\")\r\n$target_hostname=target.hostname\r\n$target_hostname!=\"\"\r\n$combined_fields=strings.concat(network.session_id, target.ip, principal.ip)\r\nmatch:\r\n    $target_hostname\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc ",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "b885c9b4c9ed7be80ac892b2edaafc54d6285af8d9a034ef9f174a1549b7bf54"
+                    "etag": "ba5c024670ef34f301040929676ecf8191c7b9659d9ef8a959af52e48e8d4f89"
                 },
                 {
-                    "name": "437a53e6-f55b-41bc-9754-3fc5c7c2a74a",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n$local_orig=if(principal.ip in cidr %internal_cidr_list, \"true\", \"false\")\r\n$local_resp=if(target.ip in cidr %internal_cidr_list, \"true\", \"false\") \r\n($local_orig=\"true\" AND $local_resp=\"false\") OR ($local_orig=\"false\" AND $local_resp=\"false\")\r\n$user_agent=network.http.user_agent\r\n$user_agent!=\"\"\r\n$combined_fields=strings.concat(about.labels[\"uid\"], target.ip, principal.ip)\r\nmatch:\r\n    $user_agent\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc",
+                    "name": "efd1a548-4b52-498d-b311-85346fa9a710",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n$local_orig=if(principal.ip in cidr %internal_cidr_list, \"true\", \"false\")\r\n$local_resp=if(target.ip in cidr %internal_cidr_list, \"true\", \"false\") \r\n($local_orig=\"true\" AND $local_resp=\"false\") OR ($local_orig=\"false\" AND $local_resp=\"false\")\r\n$user_agent=network.http.user_agent\r\n$user_agent!=\"\"\r\n$combined_fields=strings.concat(network.session_id, target.ip, principal.ip)\r\nmatch:\r\n    $user_agent\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "ba3d90de571772258eb4fc944315bc7a96360bc937548340fe01ad86d6fd9edb"
+                    "etag": "cce78b31e1079e954d9c205760bba6d4f9e5cc9803fb2eb06fbf68b0c67a37f6"
                 },
                 {
-                    "name": "170728ed-35e4-41a2-83e4-5e39d4982878",
+                    "name": "0da4b34e-9273-496f-a752-7766b0461de7",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"conn\"\r\nnetwork.application_protocol=\"HTTP\"\r\n$principal_ip=principal.ip\r\n$principal_ip!=\"\"\r\nmatch:\r\n    $principal_ip\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10\r\n",
                     "input": {
                         "relativeTime": {
@@ -1090,10 +1228,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "c0d7e7e7990b2496752dd21565a6c999932d81235e996d4cbe3d8502081a467f"
+                    "etag": "02bf77fec545a453b0bfe19060fa1553ba311964a1c66c9d9d23cf5d31f95a71"
                 },
                 {
-                    "name": "11af5374-334c-4908-9818-244f89781a84",
+                    "name": "ca16591c-0542-42da-a9c7-2f8256a72b25",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n$local_orig=if(principal.ip in cidr %internal_cidr_list, \"true\", \"false\")\r\n$local_resp=if(target.ip in cidr %internal_cidr_list, \"true\", \"false\") \r\n($local_orig=\"true\" AND $local_resp=\"true\") OR ($local_orig=\"false\" AND $local_resp=\"true\")\r\n$host_header=target.hostname\r\n$host_header!=\"\"\r\noutcome:\r\n    $count=count_distinct($host_header)\r\n",
                     "input": {
                         "relativeTime": {
@@ -1101,10 +1239,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "adf3364b9156e40f2e896dbd6064330d06bbaca0006929c56d12a8ebe47cd421"
+                    "etag": "289bf532084582a425b51f36288c5903000d5ceebd223b044b8c7482d7a5b9a5"
                 },
                 {
-                    "name": "f2b1f6d4-9a28-40a6-9340-e88f502b896e",
+                    "name": "e799876d-3903-400d-b02a-9ad5423ab716",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http\" \r\nnetwork.http.referral_url != \"\"\r\noutcome:\r\n    $http_referrer=count_distinct(network.http.referral_url)",
                     "input": {
                         "relativeTime": {
@@ -1112,76 +1250,76 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "8072cafc521da7550b4e36ea4a39b0fb204897d9fc97b837d0cdbd213fbb7cc0"
+                    "etag": "ab788439fd95a242a491a903b9bea3d4f4fb385b2b5a9c66b5ae00e5c2c2041c"
                 },
                 {
-                    "name": "197ea32c-87e9-421f-baa4-213a7a60ebef",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http\" \r\noutcome:\r\n    $http_referrer=count_distinct(about.labels[\"uid\"])",
+                    "name": "60feaea8-77d5-43ac-b309-1369a1b511b1",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http\" \r\noutcome:\r\n    $http_referrer=count_distinct(network.session_id)",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "ea6a298cb623201b6d28c883c6f0e83e10ee97a65655cdf782321a59d9b6afac"
+                    "etag": "0d4cc86e346c0f4ee7b7dbbb0271f68712cc65c5e2ba1b3065910513e1af95bc"
                 },
                 {
-                    "name": "760c40ab-4837-4812-b6d5-753e83a778ec",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n$local_orig=if(principal.ip in cidr %internal_cidr_list, \"true\", \"false\")\r\n$local_resp=if(target.ip in cidr %internal_cidr_list, \"true\", \"false\") \r\n($local_orig=\"true\" AND $local_resp=\"false\") OR ($local_orig=\"false\" AND $local_resp=\"false\")\r\n$target_hostname=target.hostname\r\n$target_hostname!=\"\"\r\n$combined_fields=strings.concat(about.labels[\"uid\"], target.ip, principal.ip)\r\nmatch:\r\n    $target_hostname\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc ",
+                    "name": "7ffef937-b8e4-4543-be7c-bd527f5f15dc",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n$local_orig=if(principal.ip in cidr %internal_cidr_list, \"true\", \"false\")\r\n$local_resp=if(target.ip in cidr %internal_cidr_list, \"true\", \"false\") \r\n($local_orig=\"true\" AND $local_resp=\"false\") OR ($local_orig=\"false\" AND $local_resp=\"false\")\r\n$target_hostname=target.hostname\r\n$target_hostname!=\"\"\r\n$combined_fields=strings.concat(network.session_id, target.ip, principal.ip)\r\nmatch:\r\n    $target_hostname\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc ",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "4a9355729cd16a19052f2f3d5257d1b5b06d2ed6a6ae7f3df9643b0c443fc407"
+                    "etag": "9fd6f19b35461013e93b32075db9da6d2b1ae5f012f91cd1b3479ce4857f268e"
                 },
                 {
-                    "name": "eb9b8615-6c36-4e2a-a9d2-269638aa574d",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n$host_header=target.hostname\r\n$host_header!=\"\"\r\n$combined_fields=strings.concat(about.labels[\"uid\"], target.ip, principal.ip)\r\nmatch:\r\n    $host_header\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc ",
+                    "name": "953073b3-ca28-4190-aaa0-0a40c0d16b31",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n$host_header=target.hostname\r\n$host_header!=\"\"\r\n$combined_fields=strings.concat(network.session_id, target.ip, principal.ip)\r\nmatch:\r\n    $host_header\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc ",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "99f47061834836a05851e0697ecc5f00ef758e44461594b7176a06c754533dc6"
+                    "etag": "13a0be3fe9281c937f7c3bab3bf3718e8d5f6d75550d555daffb6a58faddb833"
                 },
                 {
-                    "name": "1f52c524-45b5-413f-8556-77cce5eb16fd",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n$user_agent=network.http.user_agent\r\n$user_agent!=\"\"\r\n$combined_fields=strings.concat(about.labels[\"uid\"], target.ip, principal.ip)\r\nmatch:\r\n    $user_agent\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count asc \r\nlimit:\r\n    10\r\n",
+                    "name": "ca634718-f2a6-40f5-9b4b-190b94252d12",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n$user_agent=network.http.user_agent\r\n$user_agent!=\"\"\r\n$combined_fields=strings.concat(network.session_id, target.ip, principal.ip)\r\nmatch:\r\n    $user_agent\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count asc \r\nlimit:\r\n    10\r\n",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "f47eabdac5ecfacb47d710e61b07373f9401225cdf8847b6c19643b1d53bec25"
+                    "etag": "ef50c7988c4d370d77fb27b87d802f41167ccb52cf504198b64784ea8421d5fd"
                 },
                 {
-                    "name": "94976701-7b8b-478d-a702-3cc0cfbe8736",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n$target_hostname=target.hostname\r\n$target_hostname!=\"\"\r\n$combined_fields=strings.concat(about.labels[\"uid\"], target.ip, principal.ip)\r\nmatch:\r\n    $target_hostname\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10\r\n",
+                    "name": "62b9b743-99c0-4a92-8c63-5f156c6a9c06",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n$target_hostname=target.hostname\r\n$target_hostname!=\"\"\r\n$combined_fields=strings.concat(network.session_id, target.ip, principal.ip)\r\nmatch:\r\n    $target_hostname\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10\r\n",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "9aa68a2ac0da10f9773e868f3de5424b95ab12c4d8787ce3cf5c891ab4a75edb"
+                    "etag": "85d3da4821ad557a655555b4ac7cd6bb3aff6fd65d2a60c7516ba3ffabb58cdf"
                 },
                 {
-                    "name": "91c67a91-0162-4de0-bbb1-827a1a5553c7",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n$status_msg=about.labels[\"status_msg\"]\r\n$status_msg!=\"\"\r\n$combined_fields=strings.concat(about.labels[\"uid\"], target.ip, principal.ip)\r\nmatch:\r\n    $status_msg\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10\r\n",
+                    "name": "f0db2ea1-9d4f-4c2d-a15d-1cfaaa656306",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n$status_msg=about.labels[\"status_msg\"]\r\n$status_msg!=\"\"\r\n$combined_fields=strings.concat(network.session_id, target.ip, principal.ip)\r\nmatch:\r\n    $status_msg\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10\r\n",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "5b20d2c605ee95bf1f0523c58e7929003b01eb0e4739050cef70fb723110b44b"
+                    "etag": "0e9c2801b4c98167cb449ce2caa8222a102a237777b56d477fe0e7e8daa6fb66"
                 },
                 {
-                    "name": "17a494e6-a517-4216-9489-a6e4e17fda1b",
+                    "name": "7c7c7df5-701c-4d99-95a7-0bb4ae5b937b",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http\" \r\noutcome:\r\n    $host_header=count_distinct(target.hostname)",
                     "input": {
                         "relativeTime": {
@@ -1189,18 +1327,18 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "3ffdc9e80be56c9b793ab5eb2ffa46b2dc872cf881337b0a2ed9036ddeb5ed90"
+                    "etag": "bc88d44a79162891f67f155cef25fe28d5ee3eae5ed1e69893ff5bdadb2fe004"
                 },
                 {
-                    "name": "2829886f-af80-4d82-855f-61acfc89f64e",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\nnetwork.http.method!=\"\"\r\n$host_header=target.hostname\r\n$host_header!=\"\"\r\n$status_code=strings.concat(network.http.response_code, \"\")\r\n$status_code!=\"\"\r\n$status_msg=about.labels[\"status_msg\"]\r\n$combined_fields=strings.concat(about.labels[\"uid\"], target.ip, principal.ip)\r\nmatch:\r\n    $host_header, $status_code, $status_msg\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc ",
+                    "name": "df60790b-2707-4b5c-be55-f9f5057c2d72",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\nnetwork.http.method!=\"\"\r\n$host_header=target.hostname\r\n$host_header!=\"\"\r\n$status_code=strings.concat(network.http.response_code, \"\")\r\n$status_code!=\"\"\r\n$status_msg=about.labels[\"status_msg\"]\r\n$combined_fields=strings.concat(network.session_id, target.ip, principal.ip)\r\nmatch:\r\n    $host_header, $status_code, $status_msg\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc ",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "a5537fd5f2bd593bb56a06924314a33bb987595deefaa481a903c27fd67dd272"
+                    "etag": "84238fa34df03f8696dde6602a1b07f11b3d1561a04249a7221d4012d614ae2e"
                 }
             ]
         }

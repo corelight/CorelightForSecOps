@@ -2,7 +2,7 @@
     "dashboards": [
         {
             "dashboard": {
-                "name": "1cd8bd18-cb93-4dd3-a900-fa68973f97f5",
+                "name": "0e5c4e41-a4b9-41b2-91e1-c24e52b8cb06",
                 "displayName": "Corelight → Security Workflows → Log Hunting",
                 "definition": {
                     "filters": [
@@ -20,9 +20,9 @@
                             ],
                             "displayName": "Global Time Filter",
                             "chartIds": [
-                                "2157ce7e-8f9f-4209-9215-9d8af3b131f5",
-                                "d3ba9402-63bc-49f1-9049-5264da6433e8",
-                                "8a7c61ea-bcd2-465d-a3ec-0ec5453eb283"
+                                "5bbc72fc-ea6c-4fec-8c72-d1f13a04a7e8",
+                                "ea05a21f-8bdd-422f-842c-59b4edc66604",
+                                "120f3c36-6f37-4e2b-a411-8c6dc85f3804"
                             ],
                             "isStandardTimeRangeFilter": true,
                             "isStandardTimeRangeFilterEnabled": true
@@ -41,8 +41,8 @@
                             ],
                             "displayName": "Event Type",
                             "chartIds": [
-                                "2157ce7e-8f9f-4209-9215-9d8af3b131f5",
-                                "8a7c61ea-bcd2-465d-a3ec-0ec5453eb283"
+                                "5bbc72fc-ea6c-4fec-8c72-d1f13a04a7e8",
+                                "120f3c36-6f37-4e2b-a411-8c6dc85f3804"
                             ]
                         },
                         {
@@ -59,8 +59,8 @@
                             ],
                             "displayName": "Source IP",
                             "chartIds": [
-                                "8a7c61ea-bcd2-465d-a3ec-0ec5453eb283",
-                                "2157ce7e-8f9f-4209-9215-9d8af3b131f5"
+                                "120f3c36-6f37-4e2b-a411-8c6dc85f3804",
+                                "5bbc72fc-ea6c-4fec-8c72-d1f13a04a7e8"
                             ]
                         },
                         {
@@ -77,14 +77,14 @@
                             ],
                             "displayName": "Destination IP",
                             "chartIds": [
-                                "2157ce7e-8f9f-4209-9215-9d8af3b131f5",
-                                "8a7c61ea-bcd2-465d-a3ec-0ec5453eb283"
+                                "5bbc72fc-ea6c-4fec-8c72-d1f13a04a7e8",
+                                "120f3c36-6f37-4e2b-a411-8c6dc85f3804"
                             ]
                         }
                     ],
                     "charts": [
                         {
-                            "dashboardChart": "8a7c61ea-bcd2-465d-a3ec-0ec5453eb283",
+                            "dashboardChart": "120f3c36-6f37-4e2b-a411-8c6dc85f3804",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 42,
@@ -99,7 +99,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "d3ba9402-63bc-49f1-9049-5264da6433e8",
+                            "dashboardChart": "ea05a21f-8bdd-422f-842c-59b4edc66604",
                             "chartLayout": {
                                 "startX": 42,
                                 "spanX": 54,
@@ -111,7 +111,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "2157ce7e-8f9f-4209-9215-9d8af3b131f5",
+                            "dashboardChart": "5bbc72fc-ea6c-4fec-8c72-d1f13a04a7e8",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -128,16 +128,16 @@
                     ]
                 },
                 "type": "CUSTOM",
-                "etag": "fbcdabd7fed3b5acbd498658918e9ce34dbc21f9e1533191cc8a6222bc8f2547",
+                "etag": "99638f63fb831762607e66338421252c22184d1f60038bdcb5ceaf4ce719acc3",
                 "access": "DASHBOARD_PRIVATE"
             },
             "dashboardCharts": [
                 {
-                    "name": "d3ba9402-63bc-49f1-9049-5264da6433e8",
+                    "name": "ea05a21f-8bdd-422f-842c-59b4edc66604",
                     "displayName": "All Corelight Data for This Unique Entity",
                     "description": "ONLY Time Range Filter Applies to This Graph",
                     "chartDatasource": {
-                        "dashboardQuery": "7833df8e-e3ec-4bac-b8bc-f27c4b902a9f",
+                        "dashboardQuery": "3054065e-8269-476f-8dc3-ae4b330e8e21",
                         "dataSources": [
                             "UDM"
                         ]
@@ -145,12 +145,17 @@
                     "visualization": {
                         "series": [
                             {
+                                "seriesName": "none",
                                 "seriesType": "BAR",
                                 "encode": {
                                     "x": "metadata.product_event_type",
                                     "y": "count"
                                 },
-                                "dataLabel": {}
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "undefined"
+                                },
+                                "seriesUniqueValue": "none"
                             }
                         ],
                         "xAxes": [
@@ -173,13 +178,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "2d793d8716aff2791541179067741b65c80faf2fb9a338a85ec6615feaccb45e"
+                    "etag": "330c7a8257d5812ab4779550461b172b07d426ca791e955cb90a5eda11d31b03",
+                    "drillDownConfig": {}
                 },
                 {
-                    "name": "8a7c61ea-bcd2-465d-a3ec-0ec5453eb283",
+                    "name": "120f3c36-6f37-4e2b-a411-8c6dc85f3804",
                     "displayName": "Filtered Corelight data for this unique entity",
                     "chartDatasource": {
-                        "dashboardQuery": "09d37fdf-2fde-4474-9c93-ed43e3ebba30",
+                        "dashboardQuery": "6d449b63-1aff-4884-a9b3-0b0404fd6b8d",
                         "dataSources": [
                             "UDM"
                         ]
@@ -192,13 +198,89 @@
                                     "value": "count",
                                     "itemName": "metadata.product_event_type"
                                 },
-                                "dataLabel": {},
+                                "dataLabel": {
+                                    "show": true
+                                },
                                 "radius": [
                                     "0%",
                                     "70%"
                                 ],
                                 "itemStyle": {
-                                    "color": "undefined"
+                                    "color": "b=>{const {map:c}=Cyf(this.theme);b=Jzf(b,bzf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;let d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "ssl",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "ssl"
+                                            }
+                                        },
+                                        {
+                                            "key": "dns",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "dns"
+                                            }
+                                        },
+                                        {
+                                            "key": "conn",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "conn"
+                                            }
+                                        },
+                                        {
+                                            "key": "notice",
+                                            "value": {
+                                                "color": "#ec453b",
+                                                "label": "notice"
+                                            }
+                                        },
+                                        {
+                                            "key": "rdp",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "rdp"
+                                            }
+                                        },
+                                        {
+                                            "key": "vpn",
+                                            "value": {
+                                                "color": "#923ef9",
+                                                "label": "vpn"
+                                            }
+                                        },
+                                        {
+                                            "key": "ssh",
+                                            "value": {
+                                                "color": "#4aa207",
+                                                "label": "ssh"
+                                            }
+                                        },
+                                        {
+                                            "key": "http",
+                                            "value": {
+                                                "color": "#5350fb",
+                                                "label": "http"
+                                            }
+                                        },
+                                        {
+                                            "key": "files",
+                                            "value": {
+                                                "color": "#009886",
+                                                "label": "files"
+                                            }
+                                        },
+                                        {
+                                            "key": "suricata_corelight",
+                                            "value": {
+                                                "color": "#0c67df",
+                                                "label": "suricata_corelight"
+                                            }
+                                        }
+                                    ]
                                 }
                             }
                         ],
@@ -221,13 +303,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "3f4310f27e6e85949093fa4f72560d697e9f67bf74d5ec10cc8c8504b1cced9c"
+                    "etag": "fa33ac72b5bed96f03d08c49249ef3000349db528d27880f8a9f058048bc5e00",
+                    "drillDownConfig": {}
                 },
                 {
-                    "name": "2157ce7e-8f9f-4209-9215-9d8af3b131f5",
+                    "name": "5bbc72fc-ea6c-4fec-8c72-d1f13a04a7e8",
                     "displayName": "Log Data",
                     "chartDatasource": {
-                        "dashboardQuery": "06c7b013-be47-444e-9646-beea77cb293c",
+                        "dashboardQuery": "8dac4599-9dfe-4c3a-abb5-689ae521f426",
                         "dataSources": [
                             "UDM"
                         ]
@@ -277,42 +360,81 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "669bcdc8bbdc558af170e7bd47b494f2842e799b3813d46ec211911b992dcc76"
+                    "etag": "526303bd2dda7815a09dffa7c8206979e5734e3edf72fa68f0a1f69e9fc8df97",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "metadata.product_event_type",
+                                "displayName": "Run Search on metadata.product_event_type",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            },
+                            {
+                                "id": "principal.ip",
+                                "displayName": "Run Search on principal.ip",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            },
+                            {
+                                "id": "target.ip",
+                                "displayName": "Run Search on target.ip",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            },
+                            {
+                                "id": "target.port",
+                                "displayName": "Run Search on target.port",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            },
+                            {
+                                "id": "uid",
+                                "displayName": "Run Search on UID",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            }
+                        ]
+                    }
                 }
             ],
             "dashboardQueries": [
                 {
-                    "name": "09d37fdf-2fde-4474-9c93-ed43e3ebba30",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type!=/^corelight/\r\nprincipal.ip != \"\" OR target.ip != \"\" OR about.labels[\"uid\"] != \"\"\r\nmatch:\r\n    metadata.product_event_type\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
+                    "name": "6d449b63-1aff-4884-a9b3-0b0404fd6b8d",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type!=/^corelight/\r\nprincipal.ip != \"\" OR target.ip != \"\" OR network.session_id != \"\"\r\nmatch:\r\n    metadata.product_event_type\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "0683dc99e0365974e6be55e3ec0e45e0aa577f12eedbbf6476522b73599a945f"
+                    "etag": "a28f3f06e0c0f899dfd8621baa4db6c3a6f555bf1c09f4a76fe8d2798795fb8e"
                 },
                 {
-                    "name": "06c7b013-be47-444e-9646-beea77cb293c",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type!=/^corelight/\r\nprincipal.ip != \"\" OR target.ip != \"\" OR about.labels[\"uid\"] != \"\"\r\n$time=timestamp.get_timestamp(metadata.event_timestamp.seconds)\r\n$uid=about.labels[\"uid\"]\r\nmatch:\r\n    $time, metadata.product_event_type, principal.ip, target.ip, target.port, $uid\r\norder: \r\n    $time asc ",
+                    "name": "8dac4599-9dfe-4c3a-abb5-689ae521f426",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type!=/^corelight/\r\nprincipal.ip != \"\" OR target.ip != \"\" OR network.session_id != \"\"\r\n$time=timestamp.get_timestamp(metadata.event_timestamp.seconds)\r\n$uid=network.session_id\r\nmatch:\r\n    $time, metadata.product_event_type, principal.ip, target.ip, target.port, $uid\r\norder: \r\n    $time asc ",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "9bbbf8ad4699507f96aa7c82d96cc5f62546d5e0acb7c171909f4f36667d32b7"
+                    "etag": "0764240e497ed5035a6d81fc2e99c74c148f0a1966599900c89a22f7021eeacd"
                 },
                 {
-                    "name": "7833df8e-e3ec-4bac-b8bc-f27c4b902a9f",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type!=/^corelight/\r\nprincipal.ip != \"\" OR target.ip != \"\" OR about.labels[\"uid\"] != \"\"\r\nmatch:\r\n    metadata.product_event_type\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc",
+                    "name": "3054065e-8269-476f-8dc3-ae4b330e8e21",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type!=/^corelight/\r\nprincipal.ip != \"\" OR target.ip != \"\" OR network.session_id != \"\"\r\nmatch:\r\n    metadata.product_event_type\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc",
                     "input": {
-                        "timeWindow": {
-                            "startTime": "2025-03-26T00:00:00Z",
-                            "endTime": "2025-03-27T06:45:55.938Z"
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
                         }
                     },
-                    "etag": "9f2d2bd0ffccbf327fe6effbc489bd70d6a562710a66ee7d1045e84467aef1b0"
+                    "etag": "4c2792d8b2b7632a1cb80146685eeb2914668dc54a37f1b2bc3a0c3c38d7badb"
                 }
             ]
         }
