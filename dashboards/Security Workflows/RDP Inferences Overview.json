@@ -2,7 +2,7 @@
     "dashboards": [
         {
             "dashboard": {
-                "name": "2f867066-f515-4c62-9406-d235a6e49d5b",
+                "name": "d9a8c3c7-1bfc-4882-96c7-c9c27855bc35",
                 "displayName": "Corelight → Security Workflows → RDP Inferences Overview",
                 "definition": {
                     "filters": [
@@ -20,13 +20,13 @@
                             ],
                             "displayName": "Global Time Filter",
                             "chartIds": [
-                                "8f1aa4a3-5147-4290-93c9-aed45eb192e9",
-                                "11d63f93-1f03-4c7d-9a2b-a77ee3b5a9de",
-                                "16d1f0f6-05de-4716-b943-87a69dee0790",
-                                "dce413d0-a150-4734-b231-03b5685fb1c5",
-                                "866f21db-97ee-4b5f-acb0-1a46de57697e",
-                                "2f11538b-d78a-4723-99ac-0d149d69fb95",
-                                "00140505-2dab-47cf-8f32-3201f136858d"
+                                "24fe829d-8be2-45e3-b6e1-19f5584edfb4",
+                                "0ae7b24b-503c-466c-b26d-0ba2629b5bd2",
+                                "b1b3a272-b958-4f28-afa9-e0b5f3c89e01",
+                                "2cf9beb9-b7b1-48d4-8c4c-aac0361e0e85",
+                                "9ff04d68-6c6b-4064-aead-8e2de0f0a70c",
+                                "c3cc6d94-c82a-4c17-a84e-94d61d1e34c5",
+                                "01bd2637-7f83-4ac8-92fe-0a05e100cb50"
                             ],
                             "isStandardTimeRangeFilter": true,
                             "isStandardTimeRangeFilterEnabled": true
@@ -45,19 +45,19 @@
                             ],
                             "displayName": "Corelight Sensor",
                             "chartIds": [
-                                "11d63f93-1f03-4c7d-9a2b-a77ee3b5a9de",
-                                "8f1aa4a3-5147-4290-93c9-aed45eb192e9",
-                                "16d1f0f6-05de-4716-b943-87a69dee0790",
-                                "dce413d0-a150-4734-b231-03b5685fb1c5",
-                                "866f21db-97ee-4b5f-acb0-1a46de57697e",
-                                "2f11538b-d78a-4723-99ac-0d149d69fb95",
-                                "00140505-2dab-47cf-8f32-3201f136858d"
+                                "0ae7b24b-503c-466c-b26d-0ba2629b5bd2",
+                                "24fe829d-8be2-45e3-b6e1-19f5584edfb4",
+                                "b1b3a272-b958-4f28-afa9-e0b5f3c89e01",
+                                "2cf9beb9-b7b1-48d4-8c4c-aac0361e0e85",
+                                "9ff04d68-6c6b-4064-aead-8e2de0f0a70c",
+                                "c3cc6d94-c82a-4c17-a84e-94d61d1e34c5",
+                                "01bd2637-7f83-4ac8-92fe-0a05e100cb50"
                             ]
                         }
                     ],
                     "charts": [
                         {
-                            "dashboardChart": "8f1aa4a3-5147-4290-93c9-aed45eb192e9",
+                            "dashboardChart": "24fe829d-8be2-45e3-b6e1-19f5584edfb4",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -70,7 +70,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "11d63f93-1f03-4c7d-9a2b-a77ee3b5a9de",
+                            "dashboardChart": "0ae7b24b-503c-466c-b26d-0ba2629b5bd2",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -83,7 +83,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "866f21db-97ee-4b5f-acb0-1a46de57697e",
+                            "dashboardChart": "9ff04d68-6c6b-4064-aead-8e2de0f0a70c",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 21,
@@ -96,7 +96,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "00140505-2dab-47cf-8f32-3201f136858d",
+                            "dashboardChart": "01bd2637-7f83-4ac8-92fe-0a05e100cb50",
                             "chartLayout": {
                                 "startX": 21,
                                 "spanX": 21,
@@ -109,7 +109,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "2f11538b-d78a-4723-99ac-0d149d69fb95",
+                            "dashboardChart": "c3cc6d94-c82a-4c17-a84e-94d61d1e34c5",
                             "chartLayout": {
                                 "startX": 42,
                                 "spanX": 54,
@@ -122,7 +122,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "dce413d0-a150-4734-b231-03b5685fb1c5",
+                            "dashboardChart": "2cf9beb9-b7b1-48d4-8c4c-aac0361e0e85",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -135,7 +135,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "16d1f0f6-05de-4716-b943-87a69dee0790",
+                            "dashboardChart": "b1b3a272-b958-4f28-afa9-e0b5f3c89e01",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -150,15 +150,15 @@
                     ]
                 },
                 "type": "CUSTOM",
-                "etag": "dd06c34167780254b23b21d90c82c74aa02ddca306cfe3a5d18d241e04721dc7",
+                "etag": "2630a6347e95dc4879da7249b70bd629d546439a51c8269920e9c8cd1eb36bcc",
                 "access": "DASHBOARD_PRIVATE"
             },
             "dashboardCharts": [
                 {
-                    "name": "8f1aa4a3-5147-4290-93c9-aed45eb192e9",
+                    "name": "24fe829d-8be2-45e3-b6e1-19f5584edfb4",
                     "displayName": "Inferences Name",
                     "chartDatasource": {
-                        "dashboardQuery": "76d80a58-778f-4f7a-9545-f93dc078f338",
+                        "dashboardQuery": "eefef98d-49c6-47ea-b617-1a7e89e75739",
                         "dataSources": [
                             "UDM"
                         ]
@@ -246,13 +246,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "d4a3c9adfa4194f7a40cac1da070b373fb114539ca7c9b92c040e747d0ffb66d"
+                    "etag": "7ac60945910b732511a929a8e06537a1a262dae851e164c41977b88f039d77bd"
                 },
                 {
-                    "name": "11d63f93-1f03-4c7d-9a2b-a77ee3b5a9de",
+                    "name": "0ae7b24b-503c-466c-b26d-0ba2629b5bd2",
                     "displayName": "Inferences Over Time",
                     "chartDatasource": {
-                        "dashboardQuery": "5a17003c-e127-4101-bb8d-329e987cddf6",
+                        "dashboardQuery": "5fc23a0b-21fd-4990-8e69-97ce78c994c8",
                         "dataSources": [
                             "UDM"
                         ]
@@ -389,14 +389,14 @@
                         "groupingType": "Stacked"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "0169ad6d4c11a8e348ea7bfc2ac469c6d8d5a3b3ff209117677c0347d7a3dfd8"
+                    "etag": "56a983a27fa5867041f959dcd722a32a3506c5afe106602907e971b7dede8d25"
                 },
                 {
-                    "name": "866f21db-97ee-4b5f-acb0-1a46de57697e",
+                    "name": "9ff04d68-6c6b-4064-aead-8e2de0f0a70c",
                     "displayName": "Successful Connections",
                     "description": "Successful Connections",
                     "chartDatasource": {
-                        "dashboardQuery": "8edc2e1e-2603-4f27-a045-c6734df656d4",
+                        "dashboardQuery": "f9542357-bf92-4b4d-b30f-66b38b17df9e",
                         "dataSources": [
                             "UDM"
                         ]
@@ -432,14 +432,15 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "1ab2dd4794db95960b9c098b4689eb7882b64752646e2b124194ad0be028e170"
+                    "etag": "434481bd971df232b18b906c922ed73ea44282df0b6b20004c8375b985aa044b",
+                    "drillDownConfig": {}
                 },
                 {
-                    "name": "00140505-2dab-47cf-8f32-3201f136858d",
+                    "name": "01bd2637-7f83-4ac8-92fe-0a05e100cb50",
                     "displayName": "Failed Connections",
                     "description": "Failed Connections",
                     "chartDatasource": {
-                        "dashboardQuery": "4ccea094-862e-4f1a-bc6a-55b8a9b5d0e1",
+                        "dashboardQuery": "bd453f87-46a3-48d6-af5d-44e326e40bb5",
                         "dataSources": [
                             "UDM"
                         ]
@@ -475,13 +476,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "4654c1f82545af71164a7bfbca17192e506b38ce108c3b4b45a44d1e07dfc774"
+                    "etag": "c60aa1d25b3dbeb2b13f5ff2fb7a6cd1b1829608b1f4c44cef70858165be7066",
+                    "drillDownConfig": {}
                 },
                 {
-                    "name": "16d1f0f6-05de-4716-b943-87a69dee0790",
+                    "name": "b1b3a272-b958-4f28-afa9-e0b5f3c89e01",
                     "displayName": "RDP Connection Detail",
                     "chartDatasource": {
-                        "dashboardQuery": "977eb089-eee5-4a5e-8e7e-45c5538e7a48",
+                        "dashboardQuery": "ae15226d-f9b4-4982-9877-e4475716ffb4",
                         "dataSources": [
                             "UDM"
                         ]
@@ -543,13 +545,66 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "0edaecd858251847ab717e16e735f1b7ec69b9e4fb8c9ede1d93fb864838410d"
+                    "etag": "d9037fe0757d105e1271a35930f4297049348d227aae32ce22628d9c873e3dcb",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "connecting_user",
+                                "displayName": "Run Search on Connecting User",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            },
+                            {
+                                "id": "observer.hostname",
+                                "displayName": "Run Search on observer.hostname",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            },
+                            {
+                                "id": "principal.ip",
+                                "displayName": "Run Search on principal.ip",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            },
+                            {
+                                "id": "target.ip",
+                                "displayName": "Run Search on target.ip",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            },
+                            {
+                                "id": "target.port",
+                                "displayName": "Run Search on target.port",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            },
+                            {
+                                "id": "auth_success",
+                                "displayName": "Run Search on Auth Success",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            },
+                            {
+                                "id": "about.labels.value",
+                                "displayName": "Run Search on about.labels.value",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            }
+                        ]
+                    }
                 },
                 {
-                    "name": "dce413d0-a150-4734-b231-03b5685fb1c5",
+                    "name": "2cf9beb9-b7b1-48d4-8c4c-aac0361e0e85",
                     "displayName": "Security Protocols Used",
                     "chartDatasource": {
-                        "dashboardQuery": "0ba5a446-9247-4ac1-ac73-b949f545f2b2",
+                        "dashboardQuery": "10fb4bbd-eba0-4f83-8377-8b77e45ef754",
                         "dataSources": [
                             "UDM"
                         ]
@@ -588,13 +643,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "53858e45c5d5818c87f089a2645c342f5fa01aba5a0bd915db6155e144a0f647"
+                    "etag": "ab035ef92874c02e68325cffacc08cf6f7104b504bd91dea63595113e96ac848"
                 },
                 {
-                    "name": "2f11538b-d78a-4723-99ac-0d149d69fb95",
+                    "name": "c3cc6d94-c82a-4c17-a84e-94d61d1e34c5",
                     "displayName": "Connecting Users",
                     "chartDatasource": {
-                        "dashboardQuery": "16e5a953-3a42-4482-bf75-a23c0c2994b5",
+                        "dashboardQuery": "80da40e1-a6c6-4c9f-87ec-960c883d61aa",
                         "dataSources": [
                             "UDM"
                         ]
@@ -632,23 +687,24 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "fef068772e908b1f99149ad2aa7dcef3b94ad54a23dfe60ba5eeceaf5b89e303"
+                    "etag": "23073a1457cf1249bd5b7d3e2e48b0b248cacaac370f86d634ff36ad2b6f43c9",
+                    "drillDownConfig": {}
                 }
             ],
             "dashboardQueries": [
                 {
-                    "name": "16e5a953-3a42-4482-bf75-a23c0c2994b5",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"rdp\"\r\n$auth_success=if(about.labels[\"auth_success\"]!=\"\", about.labels[\"auth_success\"], \"No Value\")\r\n$connecting_user=about.labels[\"cookie\"]\r\n$connecting_user!=\"\"\r\nmatch:\r\n    $connecting_user, $auth_success\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    20",
+                    "name": "80da40e1-a6c6-4c9f-87ec-960c883d61aa",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"rdp\"\r\n$auth_success=if(security_result.action=\"ALLOW\", \"True\", if(security_result.action=\"FAIL\", \"False\", \"No Value\"))\r\n$connecting_user=about.labels[\"cookie\"]\r\n$connecting_user!=\"\"\r\nmatch:\r\n    $connecting_user, $auth_success\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    20",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "7a584f4a8ccf7e07134533ea4d2cb1fc67d65c072eeffb462c7d793b75acacf6"
+                    "etag": "49e602b5ccb8db71178aa664fb4c92d9b240b316db3e771210703c2ed6bf34da"
                 },
                 {
-                    "name": "76d80a58-778f-4f7a-9545-f93dc078f338",
+                    "name": "eefef98d-49c6-47ea-b617-1a7e89e75739",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"rdp\"\r\nabout.labels.key=\"inferences\"\r\nabout.labels.value!=\"\"\r\nmatch:\r\n    about.labels.value\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    50",
                     "input": {
                         "relativeTime": {
@@ -656,10 +712,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "b1fce1a37f9a158fea88d506ca69ce744640227b31fab09a8c13be3f11cd8679"
+                    "etag": "8c75267dec04df78047d5f9331d147ef5a21358108e8e5f5bbd829936d48855c"
                 },
                 {
-                    "name": "5a17003c-e127-4101-bb8d-329e987cddf6",
+                    "name": "5fc23a0b-21fd-4990-8e69-97ce78c994c8",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"rdp\"\r\nabout.labels.key=\"inferences\"\r\nabout.labels.value!=\"\"\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour, about.labels.value\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $date_hour asc",
                     "input": {
                         "relativeTime": {
@@ -667,43 +723,43 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "8bc695b45087cc48e9a38cc03b23a4a0109b9046e5318327065936e0f8160ea9"
+                    "etag": "76eb6e99dfa90d3aadf3dcb0c86c2544dc2051a11e009518a495de5f30f8feed"
                 },
                 {
-                    "name": "8edc2e1e-2603-4f27-a045-c6734df656d4",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"rdp\"\r\nabout.labels[\"auth_success\"]=\"true\"\r\noutcome:\r\n    $count=count_distinct(metadata.id)",
+                    "name": "f9542357-bf92-4b4d-b30f-66b38b17df9e",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"rdp\"\r\nsecurity_result.action=\"ALLOW\"\r\noutcome:\r\n    $count=count_distinct(metadata.id)",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "bdbf624200f53c2bc5d5c71a72cb21d36acb7a294dfbfd8a6402ef0e176f4a34"
+                    "etag": "cbadc67f819a2742f6b0fd501ffee7eaa107e17b3e102d921dee6197702556e3"
                 },
                 {
-                    "name": "4ccea094-862e-4f1a-bc6a-55b8a9b5d0e1",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"rdp\"\r\nabout.labels[\"auth_success\"]!=\"true\"\r\noutcome:\r\n    $count=count_distinct(metadata.id)",
+                    "name": "bd453f87-46a3-48d6-af5d-44e326e40bb5",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"rdp\"\r\nsecurity_result.action!=\"ALLOW\"\r\noutcome:\r\n    $count=count_distinct(metadata.id)",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "e6a608cedba4121a4c979a1ca896d288344b59af51881a06ef4daea32bb1d769"
+                    "etag": "1b875f7e8e9398c64f4b454814b4f164f629d0e33a7b9c024ad61792676a6c2e"
                 },
                 {
-                    "name": "977eb089-eee5-4a5e-8e7e-45c5538e7a48",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"rdp\"\r\n$connecting_user=about.labels[\"cookie\"]\r\n$auth_success=about.labels[\"auth_success\"]\r\nabout.labels.key=\"inferences\"\r\n$inference_name=if(about.labels.value=\"FC\", \"FreeRDP Driven Client\",\r\nif(about.labels.value=\"MSC\", \"Metasploit Scanner Client\",\r\nif(about.labels.value=\"HBC\", \"THC-Hydra Bruteforce Client\",\r\nif(about.labels.value=\"CBC\", \"Crowbar Bruteforce Client\",\r\nif(about.labels.value=\"SLC\", \"SharpRDP Lateral Movement Client\",\r\nif(about.labels.value=\"SOC\", \"Scanner Other Client\",\r\nif(about.labels.value=\"RCGA\", \"Remote Credential Guard Authentication\",\r\nif(about.labels.value=\"RAMA\", \"Restricted Admin Mode Authentication\",\r\nif(about.labels.value=\"APWA\", \"Automated NTLM Password Authentication\",\r\nif(about.labels.value=\"IPWA\", \"Interactive NTLM Password Authentication\",\r\nif(about.labels.value=\"SLH\", \"Slow Handshake\", \"Unknown\"\r\n)))))))))))\r\n$time=timestamp.get_timestamp(metadata.event_timestamp.seconds)\r\nmatch:\r\n    $time, $connecting_user, observer.hostname, principal.ip, target.ip, target.port, $auth_success, about.labels.value, $inference_name\r\norder:\r\n    $time asc",
+                    "name": "ae15226d-f9b4-4982-9877-e4475716ffb4",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"rdp\"\r\n$connecting_user=about.labels[\"cookie\"]\r\n$auth_success=security_result.action\r\nabout.labels.key=\"inferences\"\r\n$inference_name=if(about.labels.value=\"FC\", \"FreeRDP Driven Client\",\r\nif(about.labels.value=\"MSC\", \"Metasploit Scanner Client\",\r\nif(about.labels.value=\"HBC\", \"THC-Hydra Bruteforce Client\",\r\nif(about.labels.value=\"CBC\", \"Crowbar Bruteforce Client\",\r\nif(about.labels.value=\"SLC\", \"SharpRDP Lateral Movement Client\",\r\nif(about.labels.value=\"SOC\", \"Scanner Other Client\",\r\nif(about.labels.value=\"RCGA\", \"Remote Credential Guard Authentication\",\r\nif(about.labels.value=\"RAMA\", \"Restricted Admin Mode Authentication\",\r\nif(about.labels.value=\"APWA\", \"Automated NTLM Password Authentication\",\r\nif(about.labels.value=\"IPWA\", \"Interactive NTLM Password Authentication\",\r\nif(about.labels.value=\"SLH\", \"Slow Handshake\", \"Unknown\"\r\n)))))))))))\r\n$time=timestamp.get_timestamp(metadata.event_timestamp.seconds)\r\nmatch:\r\n    $time, $connecting_user, observer.hostname, principal.ip, target.ip, target.port, $auth_success, about.labels.value, $inference_name\r\norder:\r\n    $time asc",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "2b2c04732a914a886df045fa6cd5185386b36871821cd8c713818104582aa0cc"
+                    "etag": "a0f8a2eee120289ad1e573da2dc9696cb9418ac727d4c96e3290ce0563242fb3"
                 },
                 {
-                    "name": "0ba5a446-9247-4ac1-ac73-b949f545f2b2",
+                    "name": "10fb4bbd-eba0-4f83-8377-8b77e45ef754",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"rdp\"\r\n$security_protocol=target.labels[\"security_protocol\"]\r\nmatch:\r\n    $security_protocol\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    50",
                     "input": {
                         "relativeTime": {
@@ -711,7 +767,7 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "82c9e6a19c0d53c610b5915a9a764337b16615154fabfcd8d87e937aa2825f0d"
+                    "etag": "31cedf2e1d05185a94377bfb8a39112ca4bac2173c841bbe754d68b5c6f151fe"
                 }
             ]
         }

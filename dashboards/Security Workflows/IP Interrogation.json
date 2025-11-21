@@ -2,7 +2,7 @@
     "dashboards": [
         {
             "dashboard": {
-                "name": "13b80f92-6f9e-4b68-a0e2-6f5d9cbe25a4",
+                "name": "81579185-817b-4ec8-b522-70fdafabaa4f",
                 "displayName": "Corelight → Security Workflows → IP Interrogation",
                 "definition": {
                     "filters": [
@@ -20,13 +20,13 @@
                             ],
                             "displayName": "Global Time Filter",
                             "chartIds": [
-                                "e70e853e-740c-466b-a470-17936b150cff",
-                                "d59608ab-2ae8-4ecf-8a1a-2f1d407429e7",
-                                "25140598-34b1-4481-a3c3-01b2dcfbdea6",
-                                "13d0308f-38fb-47b1-8728-7909a3eb182d",
-                                "5f33e99d-fc0b-4ad1-bddd-30711418830a",
-                                "ad96f879-07be-489c-8186-acd6aa57d63b",
-                                "30b696d2-07af-4c8a-9343-1c31f89db213"
+                                "dc35771b-2b24-41bc-b41a-af54b8733c46",
+                                "92a31f16-453e-4f37-810d-761c5e0c8027",
+                                "ec71d919-aeb9-4191-92a1-17c6c327c825",
+                                "9aff7e56-9cf0-4a42-9e73-99278d4c5cb9",
+                                "8a236d64-3ec8-4b46-bb60-11223cba9d27",
+                                "554624f4-c079-4a91-a87e-66ace378a9b4",
+                                "d7f27045-0054-4eae-b43f-b8bb9a559d06"
                             ],
                             "isStandardTimeRangeFilter": true,
                             "isStandardTimeRangeFilterEnabled": true
@@ -45,13 +45,13 @@
                             ],
                             "displayName": "Source IP",
                             "chartIds": [
-                                "e70e853e-740c-466b-a470-17936b150cff",
-                                "d59608ab-2ae8-4ecf-8a1a-2f1d407429e7",
-                                "25140598-34b1-4481-a3c3-01b2dcfbdea6",
-                                "13d0308f-38fb-47b1-8728-7909a3eb182d",
-                                "5f33e99d-fc0b-4ad1-bddd-30711418830a",
-                                "ad96f879-07be-489c-8186-acd6aa57d63b",
-                                "30b696d2-07af-4c8a-9343-1c31f89db213"
+                                "dc35771b-2b24-41bc-b41a-af54b8733c46",
+                                "92a31f16-453e-4f37-810d-761c5e0c8027",
+                                "ec71d919-aeb9-4191-92a1-17c6c327c825",
+                                "9aff7e56-9cf0-4a42-9e73-99278d4c5cb9",
+                                "8a236d64-3ec8-4b46-bb60-11223cba9d27",
+                                "554624f4-c079-4a91-a87e-66ace378a9b4",
+                                "d7f27045-0054-4eae-b43f-b8bb9a559d06"
                             ]
                         },
                         {
@@ -68,19 +68,19 @@
                             ],
                             "displayName": "Destination IP",
                             "chartIds": [
-                                "d59608ab-2ae8-4ecf-8a1a-2f1d407429e7",
-                                "e70e853e-740c-466b-a470-17936b150cff",
-                                "25140598-34b1-4481-a3c3-01b2dcfbdea6",
-                                "13d0308f-38fb-47b1-8728-7909a3eb182d",
-                                "5f33e99d-fc0b-4ad1-bddd-30711418830a",
-                                "ad96f879-07be-489c-8186-acd6aa57d63b",
-                                "30b696d2-07af-4c8a-9343-1c31f89db213"
+                                "92a31f16-453e-4f37-810d-761c5e0c8027",
+                                "dc35771b-2b24-41bc-b41a-af54b8733c46",
+                                "ec71d919-aeb9-4191-92a1-17c6c327c825",
+                                "9aff7e56-9cf0-4a42-9e73-99278d4c5cb9",
+                                "8a236d64-3ec8-4b46-bb60-11223cba9d27",
+                                "554624f4-c079-4a91-a87e-66ace378a9b4",
+                                "d7f27045-0054-4eae-b43f-b8bb9a559d06"
                             ]
                         }
                     ],
                     "charts": [
                         {
-                            "dashboardChart": "ad96f879-07be-489c-8186-acd6aa57d63b",
+                            "dashboardChart": "554624f4-c079-4a91-a87e-66ace378a9b4",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 47,
@@ -94,7 +94,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "25140598-34b1-4481-a3c3-01b2dcfbdea6",
+                            "dashboardChart": "ec71d919-aeb9-4191-92a1-17c6c327c825",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -108,7 +108,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "e70e853e-740c-466b-a470-17936b150cff",
+                            "dashboardChart": "dc35771b-2b24-41bc-b41a-af54b8733c46",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -122,7 +122,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "5f33e99d-fc0b-4ad1-bddd-30711418830a",
+                            "dashboardChart": "8a236d64-3ec8-4b46-bb60-11223cba9d27",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -136,7 +136,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "d59608ab-2ae8-4ecf-8a1a-2f1d407429e7",
+                            "dashboardChart": "92a31f16-453e-4f37-810d-761c5e0c8027",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -150,7 +150,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "13d0308f-38fb-47b1-8728-7909a3eb182d",
+                            "dashboardChart": "9aff7e56-9cf0-4a42-9e73-99278d4c5cb9",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -164,7 +164,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "30b696d2-07af-4c8a-9343-1c31f89db213",
+                            "dashboardChart": "d7f27045-0054-4eae-b43f-b8bb9a559d06",
                             "chartLayout": {
                                 "startX": 47,
                                 "spanX": 49,
@@ -180,15 +180,15 @@
                     ]
                 },
                 "type": "CUSTOM",
-                "etag": "ae22ec5f9ea38347666425e5ea163d47856d87e07850cbd75398bde777c79913",
+                "etag": "dbfd83bfe2e238d30c839625ee748652c2ea2df3cb679fba8a59a4d41dd74dc4",
                 "access": "DASHBOARD_PRIVATE"
             },
             "dashboardCharts": [
                 {
-                    "name": "13d0308f-38fb-47b1-8728-7909a3eb182d",
+                    "name": "9aff7e56-9cf0-4a42-9e73-99278d4c5cb9",
                     "displayName": "HTTP: Web Ports Breakdown",
                     "chartDatasource": {
-                        "dashboardQuery": "bdce0c4e-6ccf-4e68-bd59-acb18f9b90ee",
+                        "dashboardQuery": "3c9cc012-2110-43f1-8b30-d2487ce96a12",
                         "dataSources": [
                             "UDM"
                         ]
@@ -222,13 +222,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "f8a41c770bc91332630164c6d438768a0c88248c7a6a33bd64f45f1d69b729fc"
+                    "etag": "38c8ab7e3a1c05c6bfd71749905bfb0916887a3b5b394d3cb8f2d96beaa73a7a"
                 },
                 {
-                    "name": "30b696d2-07af-4c8a-9343-1c31f89db213",
+                    "name": "d7f27045-0054-4eae-b43f-b8bb9a559d06",
                     "displayName": "Connections:  Internal vs External",
                     "chartDatasource": {
-                        "dashboardQuery": "a8dc584e-34b4-4345-a02d-7f12838f16ec",
+                        "dashboardQuery": "2b126217-9e93-4012-9e08-1954ccfd19b6",
                         "dataSources": [
                             "UDM"
                         ]
@@ -270,13 +270,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "7c57af670455e91b84ac2adae7e281c963936580773068549dab5f1b9ba8d3c2"
+                    "etag": "5a402ee73e48000496399ede4f0d0cf98d8b73eff22ac058fd557cc72b9abe71"
                 },
                 {
-                    "name": "d59608ab-2ae8-4ecf-8a1a-2f1d407429e7",
+                    "name": "92a31f16-453e-4f37-810d-761c5e0c8027",
                     "displayName": "HTTP: Rare User Agents",
                     "chartDatasource": {
-                        "dashboardQuery": "9f0ddba6-f579-49eb-9ccc-fd2b4f112c5c",
+                        "dashboardQuery": "fa01e337-69af-480e-bcf5-9e058ef56d35",
                         "dataSources": [
                             "UDM"
                         ]
@@ -318,14 +318,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "4ad187576e0e48af522b29515f52e02189173e93d321e8e5f556f5014c691f13"
+                    "etag": "d9422a58ed585a54777befb7b8581e938b606ae672c8ca0a9ab373315bd20c8c"
                 },
                 {
-                    "name": "5f33e99d-fc0b-4ad1-bddd-30711418830a",
+                    "name": "8a236d64-3ec8-4b46-bb60-11223cba9d27",
                     "displayName": "Corelight Data Sets",
                     "description": "Corelight Supporting Data Sources for Source",
                     "chartDatasource": {
-                        "dashboardQuery": "6381d749-4b6e-48f7-8383-1f10217a50a6",
+                        "dashboardQuery": "d8684b03-2bf9-4d8b-af5b-b8ebbc848fb8",
                         "dataSources": [
                             "UDM"
                         ]
@@ -367,13 +367,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "fdfcae1a352cc578ce18a7a4eedf409c75b2cf58419ed87c72dba01024a1371b"
+                    "etag": "99c62bbb836ae46d2ff09f2c09e2294a3f576204f766d99348939a4a0cda9edd"
                 },
                 {
-                    "name": "ad96f879-07be-489c-8186-acd6aa57d63b",
+                    "name": "554624f4-c079-4a91-a87e-66ace378a9b4",
                     "displayName": "Connections: Top Non-Web Protocol Usage",
                     "chartDatasource": {
-                        "dashboardQuery": "d3fafa91-141b-4f65-8618-84d7d35a75bf",
+                        "dashboardQuery": "e5444f7b-136c-4d46-8987-f940185b7f44",
                         "dataSources": [
                             "UDM"
                         ]
@@ -409,13 +409,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "80985971dc8836ca87b159e229575d456a473a703366a8566aa263e266724ec8"
+                    "etag": "669decb2f1ceff0d4e592dc374111d9340f8c55e9c549a356bbc3afeb32017af"
                 },
                 {
-                    "name": "25140598-34b1-4481-a3c3-01b2dcfbdea6",
+                    "name": "ec71d919-aeb9-4191-92a1-17c6c327c825",
                     "displayName": "Connections: Top Connections/Services by Bytes Transferred",
                     "chartDatasource": {
-                        "dashboardQuery": "b077e865-84df-43ea-926e-8b0bf62b49c9",
+                        "dashboardQuery": "6cf78168-e340-471d-b18c-99b57535f32d",
                         "dataSources": [
                             "UDM"
                         ]
@@ -469,13 +469,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "4626e884eb431c5c04e83e6bc692ee58619019c3aa2a96f306a3a22f25ab28df"
+                    "etag": "3465246fbfdff589fd74a920d75c7efac158e50e1c86437342e71d8e89287d8a",
+                    "drillDownConfig": {}
                 },
                 {
-                    "name": "e70e853e-740c-466b-a470-17936b150cff",
+                    "name": "dc35771b-2b24-41bc-b41a-af54b8733c46",
                     "displayName": "HTTP: Top Destination IP, Method & URI",
                     "chartDatasource": {
-                        "dashboardQuery": "852637f1-28f9-4317-a962-86f41dd684be",
+                        "dashboardQuery": "cafbec59-13a2-4f6f-bbbd-88b8ab6da7bc",
                         "dataSources": [
                             "UDM"
                         ]
@@ -521,23 +522,23 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "09dc7d656c23c90e708b29c87f22d8a9eb9d9c0169500da4df37367c1a54a01c"
+                    "etag": "391b4d9ddfa4baf931d3bc13beca5b8fb52a4dbc04464c130d9da068d1f719d0"
                 }
             ],
             "dashboardQueries": [
                 {
-                    "name": "b077e865-84df-43ea-926e-8b0bf62b49c9",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = /^conn/\r\nprincipal.ip != \"\" OR target.ip != \"\"\r\n$country_len=strings.length(target.ip_geo_artifact.location.country_or_region)\r\n$host_len=strings.length(target.ip_geo_artifact.network.dns_domain)\r\n($host_len=0 AND $country_len=0) OR $host_len > 0\r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$is_broadcast=\"false\"\r\n$principal_ip=principal.ip\r\n$target_ip=target.ip\r\n$target_ip != \"192.168.0.255\"\r\n$uid=about.labels[\"uid\"]\r\n$protocol=if(network.ip_protocol = 88, strings.concat(\"EIGRP/\",target.port),\r\n    if(network.ip_protocol = 50, strings.concat(\"ESP/\",target.port),\r\n    if(network.ip_protocol = 97, strings.concat(\"ETHERIP/\",target.port),\r\n    if(network.ip_protocol = 47, strings.concat(\"GRE/\",target.port),\r\n    if(network.ip_protocol = 1, strings.concat(\"ICMP/\",target.port),\r\n    if(network.ip_protocol = 58, strings.concat(\"ICMP6/\",target.port),\r\n    if(network.ip_protocol = 2, strings.concat(\"IGMP/\",target.port),\r\n    if(network.ip_protocol = 41, strings.concat(\"IP6IN4/\",target.port),\r\n    if(network.ip_protocol = 103, strings.concat(\"PIM/\",target.port),\r\n    if(network.ip_protocol = 132, strings.concat(\"SCTP/\",target.port),\r\n    if(network.ip_protocol = 6, strings.concat(\"TCP/\",target.port),\r\n    if(network.ip_protocol = 17, strings.concat(\"UDP/\",target.port),\r\n    if(network.ip_protocol = 0, strings.concat(\"UNKNOWN_IP_PROTOCOL/\",target.port),\r\n    if(network.ip_protocol = 112, strings.concat(\"VRRP/\",target.port),\r\n       strings.concat(\"UNKNOWN_IP_PROTOCOL/\",target.port)))))))))))))))\r\n$hostname=if(target.ip_geo_artifact.network.dns_domain=\"\", \"Unknown\", target.ip_geo_artifact.network.dns_domain)\r\nmatch:\r\n    $principal_ip, $target_ip, $protocol, $uid, $hostname,target.ip_geo_artifact.location.country_or_region\r\noutcome:\r\n    $total_bytes=sum(cast.as_float(principal.labels[\"orig_ip_bytes\"]) + cast.as_float(target.labels[\"resp_ip_bytes\"]))\r\norder:\r\n    $total_bytes desc\r\nlimit:\r\n    10",
+                    "name": "6cf78168-e340-471d-b18c-99b57535f32d",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = /^conn/\r\nprincipal.ip != \"\" OR target.ip != \"\"\r\n$country_len=strings.length(target.ip_geo_artifact.location.country_or_region)\r\n$host_len=strings.length(target.ip_geo_artifact.network.dns_domain)\r\n($host_len=0 AND $country_len=0) OR $host_len > 0\r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$is_broadcast=\"false\"\r\n$principal_ip=principal.ip\r\n$target_ip=target.ip\r\n$target_ip != \"192.168.0.255\"\r\n$uid=network.session_id\r\n$protocol=if(network.ip_protocol = 88, strings.concat(\"EIGRP/\",target.port),\r\n    if(network.ip_protocol = 50, strings.concat(\"ESP/\",target.port),\r\n    if(network.ip_protocol = 97, strings.concat(\"ETHERIP/\",target.port),\r\n    if(network.ip_protocol = 47, strings.concat(\"GRE/\",target.port),\r\n    if(network.ip_protocol = 1, strings.concat(\"ICMP/\",target.port),\r\n    if(network.ip_protocol = 58, strings.concat(\"ICMP6/\",target.port),\r\n    if(network.ip_protocol = 2, strings.concat(\"IGMP/\",target.port),\r\n    if(network.ip_protocol = 41, strings.concat(\"IP6IN4/\",target.port),\r\n    if(network.ip_protocol = 103, strings.concat(\"PIM/\",target.port),\r\n    if(network.ip_protocol = 132, strings.concat(\"SCTP/\",target.port),\r\n    if(network.ip_protocol = 6, strings.concat(\"TCP/\",target.port),\r\n    if(network.ip_protocol = 17, strings.concat(\"UDP/\",target.port),\r\n    if(network.ip_protocol = 0, strings.concat(\"UNKNOWN_IP_PROTOCOL/\",target.port),\r\n    if(network.ip_protocol = 112, strings.concat(\"VRRP/\",target.port),\r\n       strings.concat(\"UNKNOWN_IP_PROTOCOL/\",target.port)))))))))))))))\r\n$hostname=if(target.ip_geo_artifact.network.dns_domain=\"\", \"Unknown\", target.ip_geo_artifact.network.dns_domain)\r\nmatch:\r\n    $principal_ip, $target_ip, $protocol, $uid, $hostname,target.ip_geo_artifact.location.country_or_region\r\noutcome:\r\n    $total_bytes=sum(cast.as_float(principal.labels[\"orig_ip_bytes\"]) + cast.as_float(target.labels[\"resp_ip_bytes\"]))\r\norder:\r\n    $total_bytes desc\r\nlimit:\r\n    10",
                     "input": {
-                        "timeWindow": {
-                            "startTime": "2025-03-26T00:00:00Z",
-                            "endTime": "2025-03-27T00:00:00Z"
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
                         }
                     },
-                    "etag": "10fbc0f3c0e1071293efb28565e8734a7311f1b0adeaa55f49fb6f1613640bed"
+                    "etag": "58cc060af942ebdbe1c9f42bad275f183cee21c7dc646d55619f009f855f2e53"
                 },
                 {
-                    "name": "852637f1-28f9-4317-a962-86f41dd684be",
+                    "name": "cafbec59-13a2-4f6f-bbbd-88b8ab6da7bc",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = /^http/\r\nprincipal.ip != \"\" OR target.ip != \"\"\r\n$principal_ip=principal.ip\r\n$target_ip=target.ip\r\n$method=network.http.method\r\n$uri=target.url\r\nmatch:\r\n    $target_ip, $principal_ip, $method, $uri\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
                     "input": {
                         "timeWindow": {
@@ -545,10 +546,10 @@
                             "endTime": "2025-03-27T06:27:04.388Z"
                         }
                     },
-                    "etag": "454d6f242f0a5d17b417a1b09c5f2eb3a84b8aa9a84ff15e93669f30e9e2586d"
+                    "etag": "a5a962889992b6f2e1d4eeca189c6bcf3c9c9dbc948d8d5d32549242d9553b4f"
                 },
                 {
-                    "name": "bdce0c4e-6ccf-4e68-bd59-acb18f9b90ee",
+                    "name": "3c9cc012-2110-43f1-8b30-d2487ce96a12",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http\"\r\nprincipal.ip != \"\" OR target.ip != \"\"\r\ntarget.port = 80 OR target.port = 8080 OR target.port = 443\r\nmatch:\r\n    target.port\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
                     "input": {
                         "timeWindow": {
@@ -556,10 +557,10 @@
                             "endTime": "2025-03-27T06:30:07.579Z"
                         }
                     },
-                    "etag": "ee76fba68163eee5480b88e2929dd1e9ed5678d84856ef3c254b5e808a96d6fb"
+                    "etag": "750212de724c174ad14976a62f93db545114a9afd6c8e627feabad19d6e4da86"
                 },
                 {
-                    "name": "a8dc584e-34b4-4345-a02d-7f12838f16ec",
+                    "name": "2b126217-9e93-4012-9e08-1954ccfd19b6",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" \r\nprincipal.ip != \"\" OR target.ip != \"\"\r\n$is_internal_external=if(about.labels[\"local_resp\"] = \"true\"  AND about.labels[\"local_orig\"] = \"true\", \"Internal\", \r\n                      if(about.labels[\"local_resp\"] = \"false\"  AND about.labels[\"local_orig\"] = \"false\", \"External\",\r\n                      if(about.labels[\"local_resp\"] = \"true\"  AND about.labels[\"local_orig\"] = \"false\", \"Inbound\",\r\n                      if(about.labels[\"local_resp\"] = \"false\"  AND about.labels[\"local_orig\"] = \"true\", \"Outbound\", \"Unknown\"\r\n                      ))))\r\n$is_internal_external!=\"Unknown\"\r\nmatch:\r\n    $is_internal_external\r\noutcome:\r\n    $count=count_distinct(metadata.id)",
                     "input": {
                         "relativeTime": {
@@ -567,10 +568,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "486701555e1c144d4d288025c754599f5ccd78e4e50648e34f9f7e4a5f7d43b3"
+                    "etag": "7e2f1410f850c2af2bd6d8dade037b5bb79fd33c1c73fe5e59d5f99b7adb0c98"
                 },
                 {
-                    "name": "9f0ddba6-f579-49eb-9ccc-fd2b4f112c5c",
+                    "name": "fa01e337-69af-480e-bcf5-9e058ef56d35",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = /^http/ \r\nmatch:\r\n    network.http.user_agent\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count asc \r\nlimit:\r\n    10",
                     "input": {
                         "relativeTime": {
@@ -578,10 +579,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "b43f50c1bc3d1df21a7b3a0afa0fe7908f146da88936f752a832b2815ebe93e8"
+                    "etag": "a98d4c75a8a537d8602bc54ef266cbe46f9b86633d3f4910c00b991c933a551b"
                 },
                 {
-                    "name": "6381d749-4b6e-48f7-8383-1f10217a50a6",
+                    "name": "d8684b03-2bf9-4d8b-af5b-b8ebbc848fb8",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type != /^conn/ \r\nmetadata.product_event_type != \"http\"\r\nmetadata.product_event_type != \"asoc:nba:event\"\r\nprincipal.ip != \"\" OR target.ip != \"\"\r\nmatch:\r\n    metadata.product_event_type\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
                     "input": {
                         "relativeTime": {
@@ -589,10 +590,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "cf53cad827a5c8f8636a65fe3091e261f997c9937ddd3a346534078270475dc1"
+                    "etag": "7e2e76332869e33ce77f1ebd2e488b50db216ed13d5780fd12e1a159b81e1031"
                 },
                 {
-                    "name": "d3fafa91-141b-4f65-8618-84d7d35a75bf",
+                    "name": "e5444f7b-136c-4d46-8987-f940185b7f44",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = /^conn/\r\nprincipal.ip != \"\" OR target.ip != \"\"\r\ntarget.port != 80\r\ntarget.port != 8080\r\ntarget.port != 443\r\n$protocol = if(network.ip_protocol = 88, strings.concat(\"EIGRP/\",target.port),\r\n    if(network.ip_protocol = 50, strings.concat(\"ESP/\",target.port),\r\n    if(network.ip_protocol = 97, strings.concat(\"ETHERIP/\",target.port),\r\n    if(network.ip_protocol = 47, strings.concat(\"GRE/\",target.port),\r\n    if(network.ip_protocol = 1, strings.concat(\"ICMP/\",target.port),\r\n    if(network.ip_protocol = 58, strings.concat(\"ICMP6/\",target.port),\r\n    if(network.ip_protocol = 2, strings.concat(\"IGMP/\",target.port),\r\n    if(network.ip_protocol = 41, strings.concat(\"IP6IN4/\",target.port),\r\n    if(network.ip_protocol = 103, strings.concat(\"PIM/\",target.port),\r\n    if(network.ip_protocol = 132, strings.concat(\"SCTP/\",target.port),\r\n    if(network.ip_protocol = 6, strings.concat(\"TCP/\",target.port),\r\n    if(network.ip_protocol = 17, strings.concat(\"UDP/\",target.port),\r\n    if(network.ip_protocol = 0, strings.concat(\"UNKNOWN_IP_PROTOCOL/\",target.port),\r\n    if(network.ip_protocol = 112, strings.concat(\"VRRP/\",target.port),\r\n       strings.concat(\"UNKNOWN_IP_PROTOCOL/\",target.port)))))))))))))))\r\nmatch:\r\n  $protocol\r\noutcome:\r\n  $count = count(metadata.id)\r\norder:\r\n  $count desc \r\nlimit:\r\n    10",
                     "input": {
                         "timeWindow": {
@@ -600,7 +601,7 @@
                             "endTime": "2025-03-27T06:25:01.388Z"
                         }
                     },
-                    "etag": "4634a69e5f7d1f40101b51b572ecacffc30ec746420cc396a07f48964fccfd5d"
+                    "etag": "f43c1b60f80fee6a6452f1adac469de2d59f1b13a1add56ad00c952e242519dc"
                 }
             ]
         }

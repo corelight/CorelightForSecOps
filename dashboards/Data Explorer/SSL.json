@@ -2,7 +2,7 @@
     "dashboards": [
         {
             "dashboard": {
-                "name": "bca982dc-cbc3-4c02-80ab-cd07a5606505",
+                "name": "1610311b-37d2-458f-98d5-b45b9b3d4e45",
                 "displayName": "Corelight → Data Explorer → SSL",
                 "definition": {
                     "filters": [
@@ -20,9 +20,9 @@
                             ],
                             "displayName": "Global Time Filter",
                             "chartIds": [
-                                "aa402740-a5bc-4773-a1b3-d0f72813d960",
-                                "18cd4047-b4ca-47f3-8c52-baf2373d4484",
-                                "79399332-ed80-4eea-96d1-7ac85733aa34"
+                                "ca8da243-8a64-47c8-b281-45a7cfbf36ba",
+                                "10edc301-015c-4107-a798-5724ab26224b",
+                                "af4da1d3-eb70-4858-8841-5d5885bc0599"
                             ],
                             "isStandardTimeRangeFilter": true,
                             "isStandardTimeRangeFilterEnabled": true
@@ -41,15 +41,15 @@
                             ],
                             "displayName": "Corelight Sensor",
                             "chartIds": [
-                                "18cd4047-b4ca-47f3-8c52-baf2373d4484",
-                                "aa402740-a5bc-4773-a1b3-d0f72813d960",
-                                "79399332-ed80-4eea-96d1-7ac85733aa34"
+                                "10edc301-015c-4107-a798-5724ab26224b",
+                                "ca8da243-8a64-47c8-b281-45a7cfbf36ba",
+                                "af4da1d3-eb70-4858-8841-5d5885bc0599"
                             ]
                         }
                     ],
                     "charts": [
                         {
-                            "dashboardChart": "18cd4047-b4ca-47f3-8c52-baf2373d4484",
+                            "dashboardChart": "10edc301-015c-4107-a798-5724ab26224b",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -62,7 +62,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "aa402740-a5bc-4773-a1b3-d0f72813d960",
+                            "dashboardChart": "ca8da243-8a64-47c8-b281-45a7cfbf36ba",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -75,7 +75,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "79399332-ed80-4eea-96d1-7ac85733aa34",
+                            "dashboardChart": "af4da1d3-eb70-4858-8841-5d5885bc0599",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -90,15 +90,15 @@
                     ]
                 },
                 "type": "CUSTOM",
-                "etag": "39e62cebbf3c4ed0f941f7aa56de2f49098b75ac3702aad56e7318cdf87a178e",
+                "etag": "6f3ee367cfc9080206cb173f9ee55765d03796d9b30aa746a8f0637dd7471057",
                 "access": "DASHBOARD_PRIVATE"
             },
             "dashboardCharts": [
                 {
-                    "name": "18cd4047-b4ca-47f3-8c52-baf2373d4484",
+                    "name": "10edc301-015c-4107-a798-5724ab26224b",
                     "displayName": "Top Ciphers",
                     "chartDatasource": {
-                        "dashboardQuery": "a8afb534-79c9-41a6-b8c1-50cd85b9f444",
+                        "dashboardQuery": "87f0902c-d06d-4d8d-8aa4-466e883486e7",
                         "dataSources": [
                             "UDM"
                         ]
@@ -137,13 +137,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "b92f72ad37c6a90babdd371357c661bdfdc8615ce21ed804b5bfa24591f414d3"
+                    "etag": "6f03304bc2f879762eefb9d7f36e7cc30596c35cc1ea8f423843534966959207"
                 },
                 {
-                    "name": "aa402740-a5bc-4773-a1b3-d0f72813d960",
+                    "name": "ca8da243-8a64-47c8-b281-45a7cfbf36ba",
                     "displayName": "Top Certificate Subjects",
                     "chartDatasource": {
-                        "dashboardQuery": "2c90d626-fd1e-4ec7-b15e-502545e58c91",
+                        "dashboardQuery": "45760ea9-ea20-4b10-a6e0-42d58eb845d3",
                         "dataSources": [
                             "UDM"
                         ]
@@ -177,13 +177,24 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "bf5aa91420eb884d6f320b9e6f77040797982ec1a68ca46166e5b5e24ef4e238"
+                    "etag": "de4a39461b5fe26fce18b60b038ab0f1cc1daacf7a4ecbb36fdee0af6a8d972a",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "server_name",
+                                "displayName": "Run Search on Certificate ID",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            }
+                        ]
+                    }
                 },
                 {
-                    "name": "79399332-ed80-4eea-96d1-7ac85733aa34",
+                    "name": "af4da1d3-eb70-4858-8841-5d5885bc0599",
                     "displayName": "Top Local Responders - Validation Status",
                     "chartDatasource": {
-                        "dashboardQuery": "e4c9daf8-3d6d-482a-afbb-1d5611fe6d07",
+                        "dashboardQuery": "9bfc0d96-1d37-4f26-b0e2-9d2ccd1a7183",
                         "dataSources": [
                             "UDM"
                         ]
@@ -217,23 +228,34 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "4f534ed40b9e54309c27372f74a97a0c8a609d0ddfa2310ecd8a8536498e8882"
+                    "etag": "03b7b8fdcd3e54ed0a5f15337034275058fa0ec0ec19a9298d02be4b4af95787",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "validation_status",
+                                "displayName": "Run Search on Validation Status",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            }
+                        ]
+                    }
                 }
             ],
             "dashboardQueries": [
                 {
-                    "name": "e4c9daf8-3d6d-482a-afbb-1d5611fe6d07",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"ssl\"\r\n$validation_status=security_result.detection_fields[\"validation_status\"]\r\n$validation_status!=\"\"\r\n$local_orig=if(principal.ip in cidr %internal_cidr_list, \"true\", \"false\")\r\n$local_resp=if(target.ip in cidr %internal_cidr_list, \"true\", \"false\") \r\n($local_orig=\"true\" AND $local_resp=\"true\") OR ($local_orig=\"false\" AND $local_resp=\"true\")\r\nmatch:\r\n    $validation_status\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10\r\n",
+                    "name": "9bfc0d96-1d37-4f26-b0e2-9d2ccd1a7183",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"ssl\"\r\n$validation_status=security_result.description\r\n$validation_status!=\"\"\r\n$local_orig=if(principal.ip in cidr %internal_cidr_list, \"true\", \"false\")\r\n$local_resp=if(target.ip in cidr %internal_cidr_list, \"true\", \"false\") \r\n($local_orig=\"true\" AND $local_resp=\"true\") OR ($local_orig=\"false\" AND $local_resp=\"true\")\r\nmatch:\r\n    $validation_status\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10\r\n",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "9e95f63a5aa2ce4a9e5cb08134d3b9bbcf9049bcd7273aeba3feee48e06e0524"
+                    "etag": "2794e30c732e5abef1835d6a6da85aeaf9f7a39edbbfd13d22ab4e6ac9de9d1b"
                 },
                 {
-                    "name": "a8afb534-79c9-41a6-b8c1-50cd85b9f444",
+                    "name": "87f0902c-d06d-4d8d-8aa4-466e883486e7",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"ssl\"\r\n$cipher=network.tls.cipher\r\n$cipher!=\"\"\r\nmatch:\r\n    $cipher\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10\r\n",
                     "input": {
                         "relativeTime": {
@@ -241,10 +263,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "b14356562f35ab418dde2915de12d0ef75783dc7f2413db9286bceec0eba8b0f"
+                    "etag": "e12f5534e07a14a47e663f1b12ecc94c33da306b9e5f39c0d769c94a48753a6d"
                 },
                 {
-                    "name": "2c90d626-fd1e-4ec7-b15e-502545e58c91",
+                    "name": "45760ea9-ea20-4b10-a6e0-42d58eb845d3",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"ssl\"\r\n$server_name=network.tls.client.server_name\r\n$server_name!=\"\"\r\nmatch:\r\n    $server_name\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10\r\n",
                     "input": {
                         "relativeTime": {
@@ -252,7 +274,7 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "3c630e8369052398ac8fa633653b3817ee1dd5f7a09a47a317b830a9f407e7ee"
+                    "etag": "740c03b0242f08b27dfa95e264996aed6f7ed2c5d2410cd49ed2c4a950e0c783"
                 }
             ]
         }
