@@ -308,7 +308,7 @@
                                 "areaStyle": {}
                             },
                             {
-                                "seriesName": "Large Client File Donwload",
+                                "seriesName": "Large Client File Download",
                                 "stack": "stack",
                                 "seriesType": "LINE",
                                 "encode": {
@@ -319,7 +319,7 @@
                                 "itemStyle": {
                                     "color": "#5350fb"
                                 },
-                                "seriesUniqueValue": "Large Client File Donwload",
+                                "seriesUniqueValue": "Large Client File Download",
                                 "areaStyle": {}
                             },
                             {
