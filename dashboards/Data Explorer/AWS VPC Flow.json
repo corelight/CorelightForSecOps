@@ -1,0 +1,3175 @@
+{
+    "dashboards": [
+        {
+            "dashboard": {
+                "name": "2daea321-d146-4551-9579-d18077383af8",
+                "displayName": "Corelight → Data Explorer → AWS VPC Flow",
+                "definition": {
+                    "filters": [
+                        {
+                            "id": "GlobalTimeFilter",
+                            "dataSource": "GLOBAL",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "PAST",
+                                    "fieldValues": [
+                                        "1",
+                                        "DAY"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Global Time Filter",
+                            "chartIds": [
+                                "5cd1f577-d7dd-4a39-96f6-17b7ab358281",
+                                "51a38bb8-b3f8-4a06-9ab2-96112b779c13",
+                                "b87a4481-b100-4617-805e-72445b5a5c0c",
+                                "3e8540a5-3ee8-4520-8f45-d371ef5c9cb3",
+                                "49da3bb7-7bad-4c7f-b15a-90efeb959388",
+                                "13e72c89-6b0c-479a-ae94-99ddd1019b9e",
+                                "9f2761d4-2f4b-4e6e-9151-c4ea0df1717d",
+                                "0da11e32-bc50-4819-9442-571b4c721784",
+                                "2bfe0677-ed81-4d12-99fc-c1421dd8b498",
+                                "12576e75-ab82-400e-ad6d-017f9ab95735",
+                                "6676ac88-2e11-4ce0-970a-d2869bc83db8",
+                                "b9365c41-8ee3-497b-8965-cdd53bc55fb5",
+                                "2631fb80-499b-4f97-9578-8eafc76ea23d",
+                                "037d597c-2d88-4ac4-8c8d-fbfb9313a0a5",
+                                "60ed8d64-e57d-411d-8060-964bb57b3640",
+                                "4b783225-8c70-4400-a7b8-2324262d506c",
+                                "2072c73b-3fa1-468c-bb85-769c85e55119",
+                                "7e4156f9-44c7-4d94-b6fa-6c276d60dfb2",
+                                "060d7610-4a50-4304-8067-e2b725262ad0",
+                                "a4c36dd1-8964-4422-ad69-6392f1dbf5bd",
+                                "f8af546e-0756-48ff-822f-bd45995ff2b3",
+                                "2d1ed672-f776-4b58-9b36-22dfc796f393",
+                                "338ba913-2620-4f9e-af41-a209752e1cb6",
+                                "3d1a7f33-3438-4c8a-9099-a75aa07f31db",
+                                "94024995-85fe-433a-bebd-3f2d3733108b",
+                                "58532191-20db-4307-a42b-fb9601e1fffd",
+                                "b3b7da40-5c21-4284-9ced-51f56dfb2c4c",
+                                "1df26207-4d03-4846-9574-18876dcefbf9",
+                                "a11ac70d-72eb-4bb0-b521-6616574f4419",
+                                "e760f074-e47a-4758-8b33-748876e665a3",
+                                "83fbed94-c2f2-43f7-8669-6e124629eb60",
+                                "4f71cabd-e4a6-4836-a8f2-8c9bd3db0976"
+                            ],
+                            "isStandardTimeRangeFilter": true,
+                            "isStandardTimeRangeFilterEnabled": true
+                        },
+                        {
+                            "id": "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                            "dataSource": "UDM",
+                            "fieldPath": "about.resource.product_object_id",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "VPC ID",
+                            "chartIds": [
+                                "3e8540a5-3ee8-4520-8f45-d371ef5c9cb3",
+                                "51a38bb8-b3f8-4a06-9ab2-96112b779c13",
+                                "5cd1f577-d7dd-4a39-96f6-17b7ab358281",
+                                "49da3bb7-7bad-4c7f-b15a-90efeb959388",
+                                "b87a4481-b100-4617-805e-72445b5a5c0c",
+                                "9f2761d4-2f4b-4e6e-9151-c4ea0df1717d",
+                                "13e72c89-6b0c-479a-ae94-99ddd1019b9e",
+                                "12576e75-ab82-400e-ad6d-017f9ab95735",
+                                "2bfe0677-ed81-4d12-99fc-c1421dd8b498",
+                                "b9365c41-8ee3-497b-8965-cdd53bc55fb5",
+                                "6676ac88-2e11-4ce0-970a-d2869bc83db8",
+                                "60ed8d64-e57d-411d-8060-964bb57b3640",
+                                "2631fb80-499b-4f97-9578-8eafc76ea23d",
+                                "037d597c-2d88-4ac4-8c8d-fbfb9313a0a5",
+                                "4b783225-8c70-4400-a7b8-2324262d506c",
+                                "2072c73b-3fa1-468c-bb85-769c85e55119",
+                                "7e4156f9-44c7-4d94-b6fa-6c276d60dfb2",
+                                "060d7610-4a50-4304-8067-e2b725262ad0",
+                                "f8af546e-0756-48ff-822f-bd45995ff2b3",
+                                "2d1ed672-f776-4b58-9b36-22dfc796f393",
+                                "338ba913-2620-4f9e-af41-a209752e1cb6",
+                                "3d1a7f33-3438-4c8a-9099-a75aa07f31db",
+                                "94024995-85fe-433a-bebd-3f2d3733108b",
+                                "58532191-20db-4307-a42b-fb9601e1fffd",
+                                "b3b7da40-5c21-4284-9ced-51f56dfb2c4c",
+                                "1df26207-4d03-4846-9574-18876dcefbf9",
+                                "a11ac70d-72eb-4bb0-b521-6616574f4419",
+                                "e760f074-e47a-4758-8b33-748876e665a3",
+                                "83fbed94-c2f2-43f7-8669-6e124629eb60",
+                                "4f71cabd-e4a6-4836-a8f2-8c9bd3db0976"
+                            ]
+                        },
+                        {
+                            "id": "a90e122c-fc95-4930-a313-0082081da1a7",
+                            "dataSource": "UDM",
+                            "fieldPath": "observer.hostname",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Corelight Sensor",
+                            "chartIds": [
+                                "3e8540a5-3ee8-4520-8f45-d371ef5c9cb3",
+                                "51a38bb8-b3f8-4a06-9ab2-96112b779c13",
+                                "5cd1f577-d7dd-4a39-96f6-17b7ab358281",
+                                "49da3bb7-7bad-4c7f-b15a-90efeb959388",
+                                "b87a4481-b100-4617-805e-72445b5a5c0c",
+                                "9f2761d4-2f4b-4e6e-9151-c4ea0df1717d",
+                                "13e72c89-6b0c-479a-ae94-99ddd1019b9e",
+                                "12576e75-ab82-400e-ad6d-017f9ab95735",
+                                "2bfe0677-ed81-4d12-99fc-c1421dd8b498",
+                                "b9365c41-8ee3-497b-8965-cdd53bc55fb5",
+                                "6676ac88-2e11-4ce0-970a-d2869bc83db8",
+                                "60ed8d64-e57d-411d-8060-964bb57b3640",
+                                "2631fb80-499b-4f97-9578-8eafc76ea23d",
+                                "037d597c-2d88-4ac4-8c8d-fbfb9313a0a5",
+                                "4b783225-8c70-4400-a7b8-2324262d506c",
+                                "2072c73b-3fa1-468c-bb85-769c85e55119",
+                                "7e4156f9-44c7-4d94-b6fa-6c276d60dfb2",
+                                "060d7610-4a50-4304-8067-e2b725262ad0",
+                                "a4c36dd1-8964-4422-ad69-6392f1dbf5bd",
+                                "f8af546e-0756-48ff-822f-bd45995ff2b3",
+                                "2d1ed672-f776-4b58-9b36-22dfc796f393",
+                                "338ba913-2620-4f9e-af41-a209752e1cb6",
+                                "3d1a7f33-3438-4c8a-9099-a75aa07f31db",
+                                "94024995-85fe-433a-bebd-3f2d3733108b",
+                                "58532191-20db-4307-a42b-fb9601e1fffd",
+                                "b3b7da40-5c21-4284-9ced-51f56dfb2c4c",
+                                "1df26207-4d03-4846-9574-18876dcefbf9",
+                                "a11ac70d-72eb-4bb0-b521-6616574f4419",
+                                "e760f074-e47a-4758-8b33-748876e665a3",
+                                "83fbed94-c2f2-43f7-8669-6e124629eb60",
+                                "4f71cabd-e4a6-4836-a8f2-8c9bd3db0976"
+                            ]
+                        },
+                        {
+                            "id": "f0b73dbf-6cfe-4a87-b967-53b7c70c0205",
+                            "dataSource": "UDM",
+                            "fieldPath": "principal.resource.attribute.labels.value",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Source AWS Organization ID",
+                            "chartIds": [
+                                "e760f074-e47a-4758-8b33-748876e665a3"
+                            ]
+                        },
+                        {
+                            "id": "a907a629-c2a8-4221-9f76-eb02b76ddbe3",
+                            "dataSource": "UDM",
+                            "fieldPath": "additional.fields.value.string_value",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Direction",
+                            "chartIds": [
+                                "3e8540a5-3ee8-4520-8f45-d371ef5c9cb3",
+                                "51a38bb8-b3f8-4a06-9ab2-96112b779c13",
+                                "5cd1f577-d7dd-4a39-96f6-17b7ab358281",
+                                "49da3bb7-7bad-4c7f-b15a-90efeb959388",
+                                "b87a4481-b100-4617-805e-72445b5a5c0c",
+                                "9f2761d4-2f4b-4e6e-9151-c4ea0df1717d",
+                                "13e72c89-6b0c-479a-ae94-99ddd1019b9e",
+                                "12576e75-ab82-400e-ad6d-017f9ab95735",
+                                "2bfe0677-ed81-4d12-99fc-c1421dd8b498",
+                                "b9365c41-8ee3-497b-8965-cdd53bc55fb5",
+                                "7e4156f9-44c7-4d94-b6fa-6c276d60dfb2",
+                                "060d7610-4a50-4304-8067-e2b725262ad0",
+                                "2d1ed672-f776-4b58-9b36-22dfc796f393",
+                                "3d1a7f33-3438-4c8a-9099-a75aa07f31db",
+                                "94024995-85fe-433a-bebd-3f2d3733108b",
+                                "58532191-20db-4307-a42b-fb9601e1fffd",
+                                "b3b7da40-5c21-4284-9ced-51f56dfb2c4c"
+                            ]
+                        },
+                        {
+                            "id": "6e6b3547-b76d-4445-91c0-08edc2978e37",
+                            "dataSource": "UDM",
+                            "fieldPath": "principal.ip",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Source IP",
+                            "chartIds": [
+                                "4b783225-8c70-4400-a7b8-2324262d506c",
+                                "2072c73b-3fa1-468c-bb85-769c85e55119",
+                                "51a38bb8-b3f8-4a06-9ab2-96112b779c13",
+                                "49da3bb7-7bad-4c7f-b15a-90efeb959388",
+                                "b87a4481-b100-4617-805e-72445b5a5c0c",
+                                "5cd1f577-d7dd-4a39-96f6-17b7ab358281",
+                                "13e72c89-6b0c-479a-ae94-99ddd1019b9e",
+                                "9f2761d4-2f4b-4e6e-9151-c4ea0df1717d",
+                                "7e4156f9-44c7-4d94-b6fa-6c276d60dfb2",
+                                "060d7610-4a50-4304-8067-e2b725262ad0",
+                                "a4c36dd1-8964-4422-ad69-6392f1dbf5bd",
+                                "f8af546e-0756-48ff-822f-bd45995ff2b3",
+                                "338ba913-2620-4f9e-af41-a209752e1cb6",
+                                "3d1a7f33-3438-4c8a-9099-a75aa07f31db"
+                            ]
+                        },
+                        {
+                            "id": "39a7d510-e328-4e65-bdce-6db0060cf742",
+                            "dataSource": "UDM",
+                            "fieldPath": "target.ip",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Destination IP",
+                            "chartIds": [
+                                "4b783225-8c70-4400-a7b8-2324262d506c",
+                                "2072c73b-3fa1-468c-bb85-769c85e55119",
+                                "51a38bb8-b3f8-4a06-9ab2-96112b779c13",
+                                "b87a4481-b100-4617-805e-72445b5a5c0c",
+                                "49da3bb7-7bad-4c7f-b15a-90efeb959388",
+                                "5cd1f577-d7dd-4a39-96f6-17b7ab358281",
+                                "13e72c89-6b0c-479a-ae94-99ddd1019b9e",
+                                "9f2761d4-2f4b-4e6e-9151-c4ea0df1717d",
+                                "7e4156f9-44c7-4d94-b6fa-6c276d60dfb2",
+                                "060d7610-4a50-4304-8067-e2b725262ad0",
+                                "a4c36dd1-8964-4422-ad69-6392f1dbf5bd",
+                                "f8af546e-0756-48ff-822f-bd45995ff2b3",
+                                "338ba913-2620-4f9e-af41-a209752e1cb6",
+                                "3d1a7f33-3438-4c8a-9099-a75aa07f31db"
+                            ]
+                        },
+                        {
+                            "id": "617216f3-efb7-4295-9cc5-88558f17b0be",
+                            "dataSource": "UDM",
+                            "fieldPath": "target.resource.attribute.labels.value",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Destination AWS Organization ID",
+                            "chartIds": [
+                                "e760f074-e47a-4758-8b33-748876e665a3"
+                            ]
+                        }
+                    ],
+                    "charts": [
+                        {
+                            "dashboardChart": "3e8540a5-3ee8-4520-8f45-d371ef5c9cb3",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 40,
+                                "startY": 0,
+                                "spanY": 14
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7",
+                                "a907a629-c2a8-4221-9f76-eb02b76ddbe3"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "51a38bb8-b3f8-4a06-9ab2-96112b779c13",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 32,
+                                "startY": 202,
+                                "spanY": 15
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7",
+                                "a907a629-c2a8-4221-9f76-eb02b76ddbe3",
+                                "6e6b3547-b76d-4445-91c0-08edc2978e37",
+                                "39a7d510-e328-4e65-bdce-6db0060cf742"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "5cd1f577-d7dd-4a39-96f6-17b7ab358281",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 32,
+                                "startY": 217,
+                                "spanY": 19
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7",
+                                "a907a629-c2a8-4221-9f76-eb02b76ddbe3",
+                                "6e6b3547-b76d-4445-91c0-08edc2978e37",
+                                "39a7d510-e328-4e65-bdce-6db0060cf742"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "49da3bb7-7bad-4c7f-b15a-90efeb959388",
+                            "chartLayout": {
+                                "startX": 32,
+                                "spanX": 32,
+                                "startY": 202,
+                                "spanY": 15
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7",
+                                "a907a629-c2a8-4221-9f76-eb02b76ddbe3",
+                                "6e6b3547-b76d-4445-91c0-08edc2978e37",
+                                "39a7d510-e328-4e65-bdce-6db0060cf742"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "b87a4481-b100-4617-805e-72445b5a5c0c",
+                            "chartLayout": {
+                                "startX": 32,
+                                "spanX": 32,
+                                "startY": 217,
+                                "spanY": 19
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7",
+                                "a907a629-c2a8-4221-9f76-eb02b76ddbe3",
+                                "6e6b3547-b76d-4445-91c0-08edc2978e37",
+                                "39a7d510-e328-4e65-bdce-6db0060cf742"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "9f2761d4-2f4b-4e6e-9151-c4ea0df1717d",
+                            "chartLayout": {
+                                "startX": 64,
+                                "spanX": 32,
+                                "startY": 202,
+                                "spanY": 15
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7",
+                                "a907a629-c2a8-4221-9f76-eb02b76ddbe3",
+                                "6e6b3547-b76d-4445-91c0-08edc2978e37",
+                                "39a7d510-e328-4e65-bdce-6db0060cf742"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "13e72c89-6b0c-479a-ae94-99ddd1019b9e",
+                            "chartLayout": {
+                                "startX": 64,
+                                "spanX": 32,
+                                "startY": 217,
+                                "spanY": 19
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7",
+                                "a907a629-c2a8-4221-9f76-eb02b76ddbe3",
+                                "6e6b3547-b76d-4445-91c0-08edc2978e37",
+                                "39a7d510-e328-4e65-bdce-6db0060cf742"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "0da11e32-bc50-4819-9442-571b4c721784",
+                            "chartLayout": {
+                                "startX": 40,
+                                "spanX": 56,
+                                "startY": 0,
+                                "spanY": 14
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "12576e75-ab82-400e-ad6d-017f9ab95735",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 29,
+                                "startY": 14,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7",
+                                "a907a629-c2a8-4221-9f76-eb02b76ddbe3"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "2bfe0677-ed81-4d12-99fc-c1421dd8b498",
+                            "chartLayout": {
+                                "startX": 29,
+                                "spanX": 32,
+                                "startY": 14,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7",
+                                "a907a629-c2a8-4221-9f76-eb02b76ddbe3"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "b9365c41-8ee3-497b-8965-cdd53bc55fb5",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 59,
+                                "spanY": 19
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7",
+                                "a907a629-c2a8-4221-9f76-eb02b76ddbe3"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "6676ac88-2e11-4ce0-970a-d2869bc83db8",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 62,
+                                "startY": 100,
+                                "spanY": 24
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "60ed8d64-e57d-411d-8060-964bb57b3640",
+                            "chartLayout": {
+                                "startX": 62,
+                                "spanX": 34,
+                                "startY": 100,
+                                "spanY": 24
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "2631fb80-499b-4f97-9578-8eafc76ea23d",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 62,
+                                "startY": 124,
+                                "spanY": 24
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "037d597c-2d88-4ac4-8c8d-fbfb9313a0a5",
+                            "chartLayout": {
+                                "startX": 62,
+                                "spanX": 34,
+                                "startY": 124,
+                                "spanY": 24
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "4b783225-8c70-4400-a7b8-2324262d506c",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 32,
+                                "startY": 236,
+                                "spanY": 12
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7",
+                                "6e6b3547-b76d-4445-91c0-08edc2978e37",
+                                "39a7d510-e328-4e65-bdce-6db0060cf742"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "2072c73b-3fa1-468c-bb85-769c85e55119",
+                            "chartLayout": {
+                                "startX": 32,
+                                "spanX": 32,
+                                "startY": 236,
+                                "spanY": 12
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7",
+                                "6e6b3547-b76d-4445-91c0-08edc2978e37",
+                                "39a7d510-e328-4e65-bdce-6db0060cf742"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "7e4156f9-44c7-4d94-b6fa-6c276d60dfb2",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 270,
+                                "spanY": 22
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7",
+                                "a907a629-c2a8-4221-9f76-eb02b76ddbe3",
+                                "6e6b3547-b76d-4445-91c0-08edc2978e37",
+                                "39a7d510-e328-4e65-bdce-6db0060cf742"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "060d7610-4a50-4304-8067-e2b725262ad0",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 270,
+                                "spanY": 22
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7",
+                                "a907a629-c2a8-4221-9f76-eb02b76ddbe3",
+                                "6e6b3547-b76d-4445-91c0-08edc2978e37",
+                                "39a7d510-e328-4e65-bdce-6db0060cf742"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "f8af546e-0756-48ff-822f-bd45995ff2b3",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 32,
+                                "startY": 248,
+                                "spanY": 22
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7",
+                                "6e6b3547-b76d-4445-91c0-08edc2978e37",
+                                "39a7d510-e328-4e65-bdce-6db0060cf742"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "a4c36dd1-8964-4422-ad69-6392f1dbf5bd",
+                            "chartLayout": {
+                                "startX": 64,
+                                "spanX": 32,
+                                "startY": 236,
+                                "spanY": 34
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "a90e122c-fc95-4930-a313-0082081da1a7",
+                                "6e6b3547-b76d-4445-91c0-08edc2978e37",
+                                "39a7d510-e328-4e65-bdce-6db0060cf742"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "2d1ed672-f776-4b58-9b36-22dfc796f393",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 39,
+                                "spanY": 20
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7",
+                                "a907a629-c2a8-4221-9f76-eb02b76ddbe3"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "3d1a7f33-3438-4c8a-9099-a75aa07f31db",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 292,
+                                "spanY": 23
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7",
+                                "a907a629-c2a8-4221-9f76-eb02b76ddbe3",
+                                "6e6b3547-b76d-4445-91c0-08edc2978e37",
+                                "39a7d510-e328-4e65-bdce-6db0060cf742"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "338ba913-2620-4f9e-af41-a209752e1cb6",
+                            "chartLayout": {
+                                "startX": 32,
+                                "spanX": 32,
+                                "startY": 248,
+                                "spanY": 22
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7",
+                                "6e6b3547-b76d-4445-91c0-08edc2978e37",
+                                "39a7d510-e328-4e65-bdce-6db0060cf742"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "c178996e-b467-4fc7-9337-dd281df4634f",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 197,
+                                "spanY": 5
+                            }
+                        },
+                        {
+                            "dashboardChart": "ba148b13-9f43-433e-9475-5a918ea1c1fb",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 148,
+                                "spanY": 5
+                            }
+                        },
+                        {
+                            "dashboardChart": "94024995-85fe-433a-bebd-3f2d3733108b",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 39,
+                                "spanY": 39
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7",
+                                "a907a629-c2a8-4221-9f76-eb02b76ddbe3"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "58532191-20db-4307-a42b-fb9601e1fffd",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 78,
+                                "spanY": 22
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7",
+                                "a907a629-c2a8-4221-9f76-eb02b76ddbe3"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "b3b7da40-5c21-4284-9ced-51f56dfb2c4c",
+                            "chartLayout": {
+                                "startX": 61,
+                                "spanX": 35,
+                                "startY": 14,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7",
+                                "a907a629-c2a8-4221-9f76-eb02b76ddbe3"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "1df26207-4d03-4846-9574-18876dcefbf9",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 78,
+                                "spanY": 22
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "a11ac70d-72eb-4bb0-b521-6616574f4419",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 34,
+                                "startY": 175,
+                                "spanY": 22
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "e760f074-e47a-4758-8b33-748876e665a3",
+                            "chartLayout": {
+                                "startX": 34,
+                                "spanX": 62,
+                                "startY": 153,
+                                "spanY": 22
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7",
+                                "f0b73dbf-6cfe-4a87-b967-53b7c70c0205",
+                                "617216f3-efb7-4295-9cc5-88558f17b0be"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "83fbed94-c2f2-43f7-8669-6e124629eb60",
+                            "chartLayout": {
+                                "startX": 34,
+                                "spanX": 62,
+                                "startY": 175,
+                                "spanY": 22
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "4f71cabd-e4a6-4836-a8f2-8c9bd3db0976",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 34,
+                                "startY": 153,
+                                "spanY": 22
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "72e0c7a4-00fc-4c0c-8f2d-7b55362e7c1d",
+                                "a90e122c-fc95-4930-a313-0082081da1a7"
+                            ]
+                        }
+                    ]
+                },
+                "type": "CUSTOM",
+                "etag": "0d8af351b3dd8ce8cd5dd8f10f099a3a2b0032958091324971f12404648572ce",
+                "access": "DASHBOARD_PRIVATE"
+            },
+            "dashboardCharts": [
+                {
+                    "name": "12576e75-ab82-400e-ad6d-017f9ab95735",
+                    "displayName": "Top 10 Source IPs with Most Sent Data",
+                    "chartDatasource": {
+                        "dashboardQuery": "75b019a3-84f4-4d91-a765-d7ad1bf677a4",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "principal.ip",
+                                "header": "Source IP"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Total Bytes Sent (GB)"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "9af8f5f93b8f1aecf82b56bdcfb01bc98526f95a867c374607d3f88325736051",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "6676ac88-2e11-4ce0-970a-d2869bc83db8",
+                    "displayName": "Inbound Connections by Source Country",
+                    "chartDatasource": {
+                        "dashboardQuery": "faf3f1bf-467a-4eb0-becc-a8cdf0505b6d",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "MAP",
+                                "encode": {},
+                                "dataLabel": {}
+                            }
+                        ],
+                        "googleMapsConfig": {
+                            "dataSettings": {
+                                "latitudeColumn": "latitude",
+                                "longitudeColumn": "longitude",
+                                "countColumn": "count"
+                            },
+                            "plotMode": "PLOT_MODE_POINTS",
+                            "mapPosition": {
+                                "fitData": true,
+                                "latitudeValue": 37.421995,
+                                "longitudeValue": -122.084092,
+                                "zoomScaleValue": 3.3795771222625293
+                            },
+                            "pointSettings": {
+                                "pointSizeType": "POINT_SIZE_TYPE_FIXED",
+                                "color": "#1a73e8"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "a0234544bfe1b0b49664ec30ee09774e3d403f79454871d3f5650a1dc817ccf3",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "51a38bb8-b3f8-4a06-9ab2-96112b779c13",
+                    "displayName": "Total Connections",
+                    "chartDatasource": {
+                        "dashboardQuery": "6d1c2f8e-b783-4efc-b1b8-5879479215a3",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "Connections",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "2617bd5c8c701bc88d759c2fcdfa6f5f4352efbebc733ab69267b5ea40f82da3",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "a4c36dd1-8964-4422-ad69-6392f1dbf5bd",
+                    "displayName": "Corelight Data Sets",
+                    "chartDatasource": {
+                        "dashboardQuery": "d799a8e1-d753-45d1-8c63-9fb6fbc54140",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "metadata.product_event_type"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "40%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "b=>{const {map:c}=Cyf(this.theme);b=Jzf(b,bzf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;let d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "ssl",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "ssl"
+                                            }
+                                        },
+                                        {
+                                            "key": "dns",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "dns"
+                                            }
+                                        },
+                                        {
+                                            "key": "x509",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "x509"
+                                            }
+                                        },
+                                        {
+                                            "key": "notice",
+                                            "value": {
+                                                "color": "#ec453b",
+                                                "label": "notice"
+                                            }
+                                        },
+                                        {
+                                            "key": "rdp",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "rdp"
+                                            }
+                                        },
+                                        {
+                                            "key": "vpn",
+                                            "value": {
+                                                "color": "#923ef9",
+                                                "label": "vpn"
+                                            }
+                                        },
+                                        {
+                                            "key": "ssh",
+                                            "value": {
+                                                "color": "#4aa207",
+                                                "label": "ssh"
+                                            }
+                                        },
+                                        {
+                                            "key": "http",
+                                            "value": {
+                                                "color": "#5350fb",
+                                                "label": "http"
+                                            }
+                                        },
+                                        {
+                                            "key": "files",
+                                            "value": {
+                                                "color": "#009886",
+                                                "label": "files"
+                                            }
+                                        },
+                                        {
+                                            "key": "suricata_corelight",
+                                            "value": {
+                                                "color": "#6f7585",
+                                                "label": "suricata_corelight"
+                                            }
+                                        },
+                                        {
+                                            "key": "intel",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "intel"
+                                            }
+                                        },
+                                        {
+                                            "key": "corelight_metrics_zeek_doctor",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "corelight_metrics_zeek_doctor"
+                                            }
+                                        },
+                                        {
+                                            "key": "software",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "software"
+                                            }
+                                        },
+                                        {
+                                            "key": "corelight_metrics_memory",
+                                            "value": {
+                                                "color": "#ec453b",
+                                                "label": "corelight_metrics_memory"
+                                            }
+                                        },
+                                        {
+                                            "key": "corelight_metrics_disk",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "corelight_metrics_disk"
+                                            }
+                                        },
+                                        {
+                                            "key": "corelight_metrics_system",
+                                            "value": {
+                                                "color": "#923ef9",
+                                                "label": "corelight_metrics_system"
+                                            }
+                                        },
+                                        {
+                                            "key": "ftp",
+                                            "value": {
+                                                "color": "#4aa207",
+                                                "label": "ftp"
+                                            }
+                                        },
+                                        {
+                                            "key": "corelight_metrics_bro",
+                                            "value": {
+                                                "color": "#5350fb",
+                                                "label": "corelight_metrics_bro"
+                                            }
+                                        },
+                                        {
+                                            "key": "corelight_metrics_iface",
+                                            "value": {
+                                                "color": "#009886",
+                                                "label": "corelight_metrics_iface"
+                                            }
+                                        },
+                                        {
+                                            "key": "etc_viz",
+                                            "value": {
+                                                "color": "#6f7585",
+                                                "label": "etc_viz"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "b4d3ce78a95da8f56e941b7542e0b5c1e18bd56cf4511b7f47363c428be2cabc",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "ba148b13-9f43-433e-9475-5a918ea1c1fb",
+                    "displayName": "markdown",
+                    "visualization": {
+                        "markdown": {
+                            "content": "## Additional VPC Insights will display data only if Cloud Enrichment Conn Logs are present within the selected time range",
+                            "properties": {
+                                "backgroundColor": "#671440"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_MARKDOWN",
+                    "etag": "30d50883a422b6610d94b7226157413606669d0d53a6509454fdce290b945422"
+                },
+                {
+                    "name": "49da3bb7-7bad-4c7f-b15a-90efeb959388",
+                    "displayName": "Unique Source IPs",
+                    "chartDatasource": {
+                        "dashboardQuery": "0f74add2-6cf5-4793-ad20-7bc86642e433",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "cd26066db84a801ad01d0fb02f707290dfe8eb987663c07a9b9a9d3123ce21dd",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "9f2761d4-2f4b-4e6e-9151-c4ea0df1717d",
+                    "displayName": "Unique Destination IPs",
+                    "chartDatasource": {
+                        "dashboardQuery": "589df87c-f85e-4328-ab7f-9abd73136b21",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "cf59a3a615f3744337104617889bc907cdce31aa4e55ba5382327474678ee024",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "83fbed94-c2f2-43f7-8669-6e124629eb60",
+                    "displayName": "Lateral Traffic between Availability Zones",
+                    "chartDatasource": {
+                        "dashboardQuery": "dd3b00d9-993e-4a30-a6e2-32d1667142f4",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "principal.location.name",
+                                "header": "Originating Availability Zone"
+                            },
+                            {
+                                "field": "target.location.name",
+                                "header": "Responding Availability Zone"
+                            },
+                            {
+                                "field": "total_bytes_sent",
+                                "header": "Total Bytes Sent (GB)"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Connections"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "57b2ed8698cbf338a3f1a7b5798f5374259ebd085b18718a8d11838b80d67b82",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "5cd1f577-d7dd-4a39-96f6-17b7ab358281",
+                    "displayName": "Total Connections over Time",
+                    "chartDatasource": {
+                        "dashboardQuery": "3f86466e-d221-4179-a3d7-f14e77d4e17b",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "none",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "none",
+                                "areaStyle": {}
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "Connections"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "3393eef1bd714ad7254b19d4671dca0865abb4532c5466abc3308d71664be0a5",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "338ba913-2620-4f9e-af41-a209752e1cb6",
+                    "displayName": "Top Outbound Ports & Protocols",
+                    "chartDatasource": {
+                        "dashboardQuery": "ae28cb8e-ab5b-4174-9890-2f824a0c6481",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "transport_port"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "40%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "b=>{const {map:c}=Cyf(this.theme);b=Jzf(b,bzf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;let d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "TCP/443",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "TCP/443"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "ed61bc00e2bb4cb08063de549a98e8d8904a5ea75cb03f79fb074cfe4fbde232",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "a11ac70d-72eb-4bb0-b521-6616574f4419",
+                    "displayName": "Traffic By AWS Account",
+                    "description": "Top 10 Total Connections",
+                    "chartDatasource": {
+                        "dashboardQuery": "59645b01-d19c-44e8-9450-339ebc8c0a49",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "principal.resource.attribute.labels[org_id]_1042712447_value"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "40%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "b=>{const {map:c}=bDf(this.theme);b=iEf(b,BDf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;let d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "084254457348",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "084254457348"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "73ddc460de9e4aeaab7e2d9480a059100d415ba9ccf382fe0a11578844d3447e",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "2072c73b-3fa1-468c-bb85-769c85e55119",
+                    "displayName": "Total Data Outbound",
+                    "chartDatasource": {
+                        "dashboardQuery": "da91240d-2b0f-4bd8-9db3-83654b5be2fb",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "GB",
+                                "field": "total_bytes",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "2ebdf344e825612cf2b390ba72e113414c24a1b4d63e8b9b44b17e67f89d84b1",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "13e72c89-6b0c-479a-ae94-99ddd1019b9e",
+                    "displayName": "Unique Destination IPs over Time",
+                    "chartDatasource": {
+                        "dashboardQuery": "50e352f6-1a86-4672-9d5f-d59d18a60517",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "Unspecified",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "undefined",
+                                "areaStyle": {}
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "Unique Destinations"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "706de798bb7495e5dd756e1b6387df40a3ff6ea4db00f0d4d1dfa3acfa211631",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "7e4156f9-44c7-4d94-b6fa-6c276d60dfb2",
+                    "displayName": "VPC IDs by Connection Count",
+                    "chartDatasource": {
+                        "dashboardQuery": "75a3aeee-3454-421c-a2c4-61f0fc19da06",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "about.resource.product_object_id"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "40%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "b=>{const {map:c}=bDf(this.theme);b=iEf(b,BDf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;let d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "capture_metadata.vpc.vpc_id",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "capture_metadata.vpc.vpc_id"
+                                            }
+                                        },
+                                        {
+                                            "key": "vpc-tr09af3911re5945464f",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "vpc-tr09af3911re5945464f"
+                                            }
+                                        },
+                                        {
+                                            "key": "vpc-09af39115947e54f",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "vpc-09af39115947e54f"
+                                            }
+                                        },
+                                        {
+                                            "key": "vpc-09af39115945464f",
+                                            "value": {
+                                                "color": "#ec453b",
+                                                "label": "vpc-09af39115945464f"
+                                            }
+                                        },
+                                        {
+                                            "key": "vpc-tr09af39115945464f",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "vpc-tr09af39115945464f"
+                                            }
+                                        },
+                                        {
+                                            "key": "vpc-09af39115947e4a2f",
+                                            "value": {
+                                                "color": "#923ef9",
+                                                "label": "vpc-09af39115947e4a2f"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "2b565a0ea5cea638943f4ce97c18b2ee2d90977b9400f2f7a9b2360f0ea0cab4",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "060d7610-4a50-4304-8067-e2b725262ad0",
+                    "displayName": "Connections by Direction",
+                    "chartDatasource": {
+                        "dashboardQuery": "420ebc98-fe67-4d0e-b01b-525728b13209",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "direction"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "40%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "b=>{const {map:c}=Cyf(this.theme);b=Jzf(b,bzf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;let d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "inbound",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "inbound"
+                                            }
+                                        },
+                                        {
+                                            "key": "outbound",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "outbound"
+                                            }
+                                        },
+                                        {
+                                            "key": "external",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "external"
+                                            }
+                                        },
+                                        {
+                                            "key": "unknown",
+                                            "value": {
+                                                "color": "#ec453b",
+                                                "label": "unknown"
+                                            }
+                                        },
+                                        {
+                                            "key": "internal",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "internal"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "2378eaafd16131f47288a1187be4989be9df879e36826b612b8219a84bb36578",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "60ed8d64-e57d-411d-8060-964bb57b3640",
+                    "displayName": "Inbound Connections by Source Country",
+                    "chartDatasource": {
+                        "dashboardQuery": "65f564e3-fe3b-482d-9a14-0f195a4885c3",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "country",
+                                "header": "Country"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Connections"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "2f87a01e5d6716b31845caa6102637e66cdc88f7cfe4f4a41e40634d07b21b75",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "country",
+                                "displayName": "Run Search on Country",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "2d1ed672-f776-4b58-9b36-22dfc796f393",
+                    "displayName": "Traffic by Direction for Bytes_In over Time",
+                    "chartDatasource": {
+                        "dashboardQuery": "c8747a03-559c-4e76-b95e-4c14f3f7595b",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "inbound",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "bytes_in"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#ec453b"
+                                },
+                                "seriesUniqueValue": "inbound",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "external",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "bytes_in"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#10a3b7"
+                                },
+                                "seriesUniqueValue": "external",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "outbound",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "bytes_in"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "outbound",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "internal",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "bytes_in"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "internal",
+                                "areaStyle": {}
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Month"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "Bytes In (GB)"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "bottom": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "seriesColumn": [
+                            "direction"
+                        ],
+                        "groupingType": "Grouped"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "611d5bcb2fc76405d41a08f96ed7912b697000ce97846d3c539ef6700fd487ca",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "1df26207-4d03-4846-9574-18876dcefbf9",
+                    "displayName": "Outbound Connection Outliers",
+                    "chartDatasource": {
+                        "dashboardQuery": "67588ccf-cc2e-4cce-b713-2fcd3e3d1bfb",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "12.14.5.6",
+                                "seriesType": "SCATTERPLOT",
+                                "encode": {
+                                    "x": "bytes_out",
+                                    "y": "duration"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "12.14.5.6"
+                            },
+                            {
+                                "seriesName": "1.1.2.2",
+                                "seriesType": "SCATTERPLOT",
+                                "encode": {
+                                    "x": "bytes_out",
+                                    "y": "duration"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "1.1.2.2"
+                            },
+                            {
+                                "seriesName": "34.52.2.4",
+                                "seriesType": "SCATTERPLOT",
+                                "encode": {
+                                    "x": "bytes_out",
+                                    "y": "duration"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#10a3b7"
+                                },
+                                "seriesUniqueValue": "34.52.2.4"
+                            },
+                            {
+                                "seriesName": "2.78.4.6",
+                                "seriesType": "SCATTERPLOT",
+                                "encode": {
+                                    "x": "bytes_out",
+                                    "y": "duration"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#ec453b"
+                                },
+                                "seriesUniqueValue": "2.78.4.6"
+                            },
+                            {
+                                "seriesName": "45.52.2.4",
+                                "seriesType": "SCATTERPLOT",
+                                "encode": {
+                                    "x": "bytes_out",
+                                    "y": "duration"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#923ef9"
+                                },
+                                "seriesUniqueValue": "45.52.2.4"
+                            },
+                            {
+                                "seriesName": "34.5.6.4",
+                                "seriesType": "SCATTERPLOT",
+                                "encode": {
+                                    "x": "bytes_out",
+                                    "y": "duration"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#e51f8f"
+                                },
+                                "seriesUniqueValue": "34.5.6.4"
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Bytes (MB)"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "Duration (s)"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "seriesColumn": [
+                            "src_ip"
+                        ],
+                        "groupingType": "Grouped"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "4664853a69e8099344889672edcc1aa4c5a140d79ef2d38a50ecc577028e361b",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "4b783225-8c70-4400-a7b8-2324262d506c",
+                    "displayName": "Total Data Inbound",
+                    "chartDatasource": {
+                        "dashboardQuery": "743b6312-1766-4d62-ba1a-4edadd20f01e",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "GB",
+                                "field": "total_bytes",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "387204f8cda5a6982f7b24d5f628c032402cf99b6b84c3fc643c87d7bca1766f",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "037d597c-2d88-4ac4-8c8d-fbfb9313a0a5",
+                    "displayName": "Outbound Connections by Destination Country",
+                    "chartDatasource": {
+                        "dashboardQuery": "164c4ed7-c4c7-4180-95a2-03f179f7d9ea",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "country",
+                                "header": "Country"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Connections"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "8d785942bad7f83857e94c0c0309ba9a851ea09ec89f19ff6ba0aa44607ca0ef",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "country",
+                                "displayName": "Run Search on Country",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "b9365c41-8ee3-497b-8965-cdd53bc55fb5",
+                    "displayName": "Traffic by Direction for Bytes_Out over Time",
+                    "chartDatasource": {
+                        "dashboardQuery": "f8e1e208-0b86-4f91-a33b-e32f2721946c",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "inbound",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "bytes_out"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#ec453b"
+                                },
+                                "seriesUniqueValue": "inbound",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "external",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "bytes_out"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "external",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "outbound",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "bytes_out"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#10a3b7"
+                                },
+                                "seriesUniqueValue": "outbound",
+                                "areaStyle": {}
+                            },
+                            {
+                                "seriesName": "internal",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "bytes_out"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "internal",
+                                "areaStyle": {}
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Month"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "Bytes Out (GB)"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "bottom": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "seriesColumn": [
+                            "direction"
+                        ],
+                        "groupingType": "Grouped"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "fce333f9cb22179a6737c851e47a5ae5b95139326d83477016a41c0fc7ba4280",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "2bfe0677-ed81-4d12-99fc-c1421dd8b498",
+                    "displayName": "Top 10 Destination IPs with Most Received Data",
+                    "chartDatasource": {
+                        "dashboardQuery": "b4276263-e2bf-44aa-a3c3-29dcc064b05f",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "target.ip",
+                                "header": "Destination IP"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Total Bytes Received (GB)"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "fa018f77a29dce10a229ff9f9e4e0f31e519c70058da7abed1ee4218ea9c5596",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "2631fb80-499b-4f97-9578-8eafc76ea23d",
+                    "displayName": "Outbound Connections by Destination Country",
+                    "chartDatasource": {
+                        "dashboardQuery": "9546f570-b54c-4f38-9a98-7941daba0456",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "MAP",
+                                "encode": {},
+                                "dataLabel": {}
+                            }
+                        ],
+                        "googleMapsConfig": {
+                            "dataSettings": {
+                                "latitudeColumn": "latitude",
+                                "longitudeColumn": "longitude",
+                                "countColumn": "count"
+                            },
+                            "plotMode": "PLOT_MODE_POINTS",
+                            "mapPosition": {
+                                "fitData": true,
+                                "latitudeValue": 59.18186914799675,
+                                "longitudeValue": 14.953895632774943,
+                                "zoomScaleValue": 5.5593846865525745
+                            },
+                            "pointSettings": {
+                                "pointSizeType": "POINT_SIZE_TYPE_FIXED",
+                                "color": "#1a73e8"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "d1c92d52d8505b030e1f194b085373e13958ce93d7058103b2681206a6211257",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "b87a4481-b100-4617-805e-72445b5a5c0c",
+                    "displayName": "Unique Source IPs over Time",
+                    "chartDatasource": {
+                        "dashboardQuery": "c9ef2d39-14a4-4f38-a95b-83692c8595e0",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "none",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "none",
+                                "areaStyle": {}
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "Unique Sources"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "0fa41d02853802a224d2a2e7621bbed10cbaf032f01d84ac6e0ab8e1ad424e43",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "b3b7da40-5c21-4284-9ced-51f56dfb2c4c",
+                    "displayName": "Top 20 Largest Byte Transfers",
+                    "chartDatasource": {
+                        "dashboardQuery": "18b4c738-57a8-4082-9888-b46812faeb0d",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "principal.ip",
+                                "header": "Source IP"
+                            },
+                            {
+                                "field": "target.port",
+                                "header": "Destination Port"
+                            },
+                            {
+                                "field": "volume",
+                                "header": "Total Volume (GB)"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "2883ef45b4e69e57233765b24f41188a680f3d01ed7656b69591c05653619df3",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "c178996e-b467-4fc7-9337-dd281df4634f",
+                    "displayName": "markdown",
+                    "visualization": {
+                        "markdown": {
+                            "content": "## IP Interrogation",
+                            "properties": {
+                                "backgroundColor": "#671440"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_MARKDOWN",
+                    "etag": "8d084bb431a369caa326ab8d92d6bdea6f6482dfc7c160a5f6efe1b6d2f098bc"
+                },
+                {
+                    "name": "4f71cabd-e4a6-4836-a8f2-8c9bd3db0976",
+                    "displayName": "Inbound Traffic by Security Group",
+                    "description": "External Source Inbound to Internal Responding Security Group",
+                    "chartDatasource": {
+                        "dashboardQuery": "fa16c5a2-2aa4-421b-9a18-828735c7ee4d",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "target.resource.attribute.labels[sg_id]_3505132893_value",
+                                "header": "AWS Security Group"
+                            },
+                            {
+                                "field": "target.port",
+                                "header": "Destination Port"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Connections"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "a819347069798d25327b0073ffa670d1acc15acc1ca8628e0860b7b992135aac",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "0da11e32-bc50-4819-9442-571b4c721784",
+                    "displayName": "Cloud Enrichment",
+                    "chartDatasource": {
+                        "dashboardQuery": "8c2d07a2-4752-41d9-b8c9-0e08fa6c8148",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "output",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "cab68632d1e9ebd2ed3e8550c4e127171231e9fe95f356de6cad45037b701b37",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "3e8540a5-3ee8-4520-8f45-d371ef5c9cb3",
+                    "displayName": "Total Volume",
+                    "chartDatasource": {
+                        "dashboardQuery": "9303b481-647f-4334-87a7-d052a71bec4b",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "GB",
+                                "field": "total_bytes",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "dcad82befee303256b570d388e278591762003907cd5abf6aa88772ab8539e6e",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "58532191-20db-4307-a42b-fb9601e1fffd",
+                    "displayName": "Top 20 Protocol and Port Distribution",
+                    "chartDatasource": {
+                        "dashboardQuery": "84633e85-7cf7-4d28-af8a-9205ee10e1be",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "transport_port"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "40%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "b=>{const {map:c}=bDf(this.theme);b=iEf(b,BDf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;let d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "TCP/443",
+                                            "value": {
+                                                "color": "#0c67df",
+                                                "label": "TCP/443"
+                                            }
+                                        },
+                                        {
+                                            "key": "UDP/1113",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "UDP/1113"
+                                            }
+                                        },
+                                        {
+                                            "key": "UDP/443",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "UDP/443"
+                                            }
+                                        },
+                                        {
+                                            "key": "TCP/111",
+                                            "value": {
+                                                "color": "#d93025",
+                                                "label": "TCP/111"
+                                            }
+                                        },
+                                        {
+                                            "key": "UDP/13",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "UDP/13"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "46d54a0383334e804d1220b2449fc7cb75b6a135d983973cdc67cceeb03077f4",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "3d1a7f33-3438-4c8a-9099-a75aa07f31db",
+                    "displayName": "Connections",
+                    "description": "Top Connections/Services by Bytes Transferred",
+                    "chartDatasource": {
+                        "dashboardQuery": "2955bfa6-5912-41c8-b242-59af87d33941",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "principal.ip",
+                                "header": "Source IP"
+                            },
+                            {
+                                "field": "target.ip",
+                                "header": "Destination IP"
+                            },
+                            {
+                                "field": "transport_port",
+                                "header": "Destination Port"
+                            },
+                            {
+                                "field": "first_alert_time",
+                                "header": "First Seen"
+                            },
+                            {
+                                "field": "last_alert_time",
+                                "header": "Last Seen"
+                            },
+                            {
+                                "field": "total_duration",
+                                "header": "Total Duration"
+                            },
+                            {
+                                "field": "total_bytes_sent",
+                                "header": "Bytes Sent"
+                            },
+                            {
+                                "field": "total_bytes_recv",
+                                "header": "Bytes Received"
+                            },
+                            {
+                                "field": "total_connections",
+                                "header": "Total Connections"
+                            },
+                            {
+                                "field": "direction",
+                                "header": "Direction"
+                            },
+                            {
+                                "field": "vpc_id",
+                                "header": "AWS VPC ID"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "20bdd95409aa7d58df32b600133467db51c8cadce78323937fef31841cb4f8b0",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "f8af546e-0756-48ff-822f-bd45995ff2b3",
+                    "displayName": "Top Inbound Ports & Protocols",
+                    "chartDatasource": {
+                        "dashboardQuery": "657364d2-e19c-4363-95b7-0731e852ed34",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "transport_port"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "40%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "b=>{const {map:c}=Cyf(this.theme);b=Jzf(b,bzf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;let d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "TCP/443",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "TCP/443"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "45887e02cc8be3d1ad70042dbbbba8ef41bbbdb9bd26bce1c1071831e825410e",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "e760f074-e47a-4758-8b33-748876e665a3",
+                    "displayName": "Outbound Traffic by EC2 Instance Names",
+                    "description": "Top 10 Total Bytes Sent",
+                    "chartDatasource": {
+                        "dashboardQuery": "b888717d-c418-4063-90e1-45a4552c3010",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "principal.resource.name",
+                                "header": "EC2 Instance Name"
+                            },
+                            {
+                                "field": "principal.ip",
+                                "header": "Source IP"
+                            },
+                            {
+                                "field": "target.ip",
+                                "header": "Destination IP"
+                            },
+                            {
+                                "field": "bytes_out",
+                                "header": "Total Data Outbound"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "408d37bd78c4bad7813b9f7fa4150fcb8f4be749b991a69125990f4ce98fea3d",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "94024995-85fe-433a-bebd-3f2d3733108b",
+                    "displayName": "Connections between Source IPs and Destination IPs",
+                    "chartDatasource": {
+                        "dashboardQuery": "bfa5dc64-0a0c-47a7-8afe-ae85782f9055",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "principal.ip",
+                                "header": "Source IP"
+                            },
+                            {
+                                "field": "transport",
+                                "header": "Transport"
+                            },
+                            {
+                                "field": "target.port",
+                                "header": "Destination Port"
+                            },
+                            {
+                                "field": "target.ip",
+                                "header": "Destination IP"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Connections"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "1945f7015a89ba3101684d1034a2e99a5f08494b981921e868a300c295877702",
+                    "drillDownConfig": {}
+                }
+            ],
+            "dashboardQueries": [
+                {
+                    "name": "c9ef2d39-14a4-4f38-a95b-83692c8595e0",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nnetwork.ip_protocol != \"ICMP\" OR (network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`))\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\n\r\nmatch:\r\n    $date_hour\r\noutcome:\r\n    $count = count_distinct(principal.ip)\r\norder:\r\n    $date_hour asc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "569d6bd10b386bfe93a7c001687c1e965af2f0d313428b779c77a7261db51b30"
+                },
+                {
+                    "name": "dd3b00d9-993e-4a30-a6e2-32d1667142f4",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nnetwork.ip_protocol != \"ICMP\" OR (network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`))\r\n((principal.location.name!=\"\" OR principal.resource.product_object_id!=\"\" OR principal.resource.name!=\"\" OR principal.resource.attribute.labels.key = \"org_id\" OR\r\n principal.resource.attribute.labels.key = \"sg_id\" OR principal.resource.attribute.labels.key =\"subnet_id\" OR principal.resource.attribute.labels.key = \"vpc_id\" OR\r\n principal.resource.attribute.labels.key = \"profile\") OR\r\n (target.location.name!=\"\" OR target.resource.product_object_id!=\"\" OR target.resource.name!=\"\" OR target.resource.attribute.labels.key = \"org_id\" OR\r\n target.resource.attribute.labels.key = \"sg_id\" OR target.resource.attribute.labels.key =\"subnet_id\" OR target.resource.attribute.labels.key = \"vpc_id\" OR\r\n target.resource.attribute.labels.key = \"profile\"))\r\n\r\nmatch:\r\n    principal.location.name, target.location.name\r\noutcome:\r\n    $total_bytes_sent = math.round(sum(cast.as_float(principal.labels[\"orig_ip_bytes\"])/1073741824), 2)\r\n    $count = count(network.session_id)\r\norder:\r\n    $total_bytes_sent desc\r\nlimit:\r\n    20",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "6c34a0824f07ac05c5dee2b693fbe949e5839be6e7e3f2612d25a054a94be6cd"
+                },
+                {
+                    "name": "59645b01-d19c-44e8-9450-339ebc8c0a49",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nnetwork.ip_protocol != \"ICMP\" OR (network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`))\r\n((principal.location.name!=\"\" OR principal.resource.product_object_id!=\"\" OR principal.resource.name!=\"\" OR principal.resource.attribute.labels.key = \"org_id\" OR\r\n principal.resource.attribute.labels.key = \"sg_id\" OR principal.resource.attribute.labels.key =\"subnet_id\" OR principal.resource.attribute.labels.key = \"vpc_id\" OR\r\n principal.resource.attribute.labels.key = \"profile\") OR\r\n (target.location.name!=\"\" OR target.resource.product_object_id!=\"\" OR target.resource.name!=\"\" OR target.resource.attribute.labels.key = \"org_id\" OR\r\n target.resource.attribute.labels.key = \"sg_id\" OR target.resource.attribute.labels.key =\"subnet_id\" OR target.resource.attribute.labels.key = \"vpc_id\" OR\r\n target.resource.attribute.labels.key = \"profile\"))\r\n\r\nmatch:\r\n    principal.resource.attribute.labels[\"org_id\"]\r\noutcome:\r\n    $count = count(network.session_id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "9caa5521b002b77c5d711c38f7d04133308e09ba65d23a1a6dd31367ce804e35"
+                },
+                {
+                    "name": "67588ccf-cc2e-4cce-b713-2fcd3e3d1bfb",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nadditional.fields[\"direction\"] = \"outbound\"\r\nnetwork.session_duration.seconds > 0\r\n$bytes_out = math.round(cast.as_float(principal.labels[\"orig_ip_bytes\"])/1048576, 2)\r\n$duration = network.session_duration.seconds\r\n$src_ip = principal.ip\r\n\r\nmatch:\r\n    $bytes_out, $duration, $src_ip\r\norder:\r\n    $bytes_out asc\r\nlimit:\r\n    10000",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "377d692b2dfafec0815f9489d5e701647e012f7a64ce0496e4a88772361a5e82"
+                },
+                {
+                    "name": "da91240d-2b0f-4bd8-9db3-83654b5be2fb",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nnetwork.ip_protocol != \"ICMP\" OR (network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`))\r\nadditional.fields[\"direction\"] = \"outbound\"\r\n\r\noutcome:\r\n    $bytes_in = sum(cast.as_float(target.labels[\"resp_ip_bytes\"]))\r\n    $bytes_out = sum(cast.as_float(principal.labels[\"orig_ip_bytes\"]))\r\n    $total_bytes = math.round(($bytes_in + $bytes_out)/1073741824, 2)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "e7f8208aede3cd70eab4b3d726bb69352c79c338c0f74fa8c355b9a36e04ffdb"
+                },
+                {
+                    "name": "2955bfa6-5912-41c8-b242-59af87d33941",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nnetwork.ip_protocol != \"ICMP\" OR (network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`))\r\nadditional.fields[\"direction\"] != \"\"\r\n$transport_port = strings.concat(if(network.ip_protocol = \"EIGRP\", \"EIGRP\", if(network.ip_protocol = \"ESP\", \"ESP\", if(network.ip_protocol = \"ETHERIP\", \"ETHERIP\",\r\n            if(network.ip_protocol = \"GRE\", \"GRE\", if(network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`), \"ICMP6\", if(network.ip_protocol = \"ICMP\", \"ICMP\",\r\n            if(network.ip_protocol = \"IGMP\", \"IGMP\", if(network.ip_protocol = \"IP6IN4\", \"IP6IN4\", if(network.ip_protocol = \"PIM\", \"PIM\", if(network.ip_protocol = \"SCTP\", \"SCTP\",\r\n            if(network.ip_protocol = \"TCP\", \"TCP\", if(network.ip_protocol = \"UDP\", \"UDP\", if(network.ip_protocol = \"VRRP\", \"VRRP\", \"UNKNOWN_IP_PROTOCOL\"\r\n            ))))))))))))), \"/\", cast.as_string(target.port))\r\n\r\nmatch:\r\n    principal.ip, target.ip, $transport_port\r\n\r\noutcome:\r\n    $first_alert_time = timestamp.get_timestamp(min(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M:%S\")\r\n    $last_alert_time = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M:%S\")\r\n    $total_duration = sum(network.session_duration.seconds)\r\n    $total_bytes_sent = math.round(sum(cast.as_float(principal.labels[\"orig_ip_bytes\"]))/1073741824, 2)\r\n    $total_bytes_recv = math.round(sum(cast.as_float(target.labels[\"resp_ip_bytes\"]))/1073741824, 2)\r\n    $total_connections = count(network.session_id)\r\n    $direction = array_distinct(additional.fields[\"direction\"])\r\n    $vpc_id = array(about.resource.product_object_id)\r\n\r\norder:\r\n    $total_connections desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "a4c50c62adbc727af567e251a2290bffc63f0ea0652a54915db4a437acaf4b18"
+                },
+                {
+                    "name": "420ebc98-fe67-4d0e-b01b-525728b13209",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nnetwork.ip_protocol != \"ICMP\" OR (network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`))\r\n$direction = additional.fields[\"direction\"]\r\n$direction != \"\"\r\n\r\nmatch:\r\n    $direction\r\noutcome:\r\n    $count = count(network.session_id)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "c1ac8935f72466e849ff271fc4564849e0b0c94ca87041cdfce409e61860a324"
+                },
+                {
+                    "name": "3f86466e-d221-4179-a3d7-f14e77d4e17b",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nnetwork.ip_protocol != \"ICMP\" OR (network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`))\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\n\r\nmatch:\r\n    $date_hour\r\noutcome:\r\n    $count = count(network.session_id)\r\norder:\r\n    $date_hour asc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "1d3adbb294f6d5569fca743465439b39682036002d27b8eadcd27c28f99d4f8a"
+                },
+                {
+                    "name": "164c4ed7-c4c7-4180-95a2-03f179f7d9ea",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nadditional.fields[\"direction\"] = \"outbound\"\r\n$country = target.location.country_or_region\r\n$country != \"\"\r\n\r\nmatch:\r\n    $country\r\noutcome:\r\n    $count = count(network.session_id)\r\norder:\r\n    $count desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "1e6a1174bc2c64d81f48b72cfbf230508b596fb979cebcfdef7bb005c39cb128"
+                },
+                {
+                    "name": "84633e85-7cf7-4d28-af8a-9205ee10e1be",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nnetwork.ip_protocol != \"ICMP\" OR (network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`))\r\n$transport_port = strings.concat(if(network.ip_protocol = \"EIGRP\", \"EIGRP\", if(network.ip_protocol = \"ESP\", \"ESP\", if(network.ip_protocol = \"ETHERIP\", \"ETHERIP\",\r\n            if(network.ip_protocol = \"GRE\", \"GRE\", if(network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`), \"ICMP6\", if(network.ip_protocol = \"ICMP\", \"ICMP\",\r\n            if(network.ip_protocol = \"IGMP\", \"IGMP\", if(network.ip_protocol = \"IP6IN4\", \"IP6IN4\", if(network.ip_protocol = \"PIM\", \"PIM\", if(network.ip_protocol = \"SCTP\", \"SCTP\",\r\n            if(network.ip_protocol = \"TCP\", \"TCP\", if(network.ip_protocol = \"UDP\", \"UDP\", if(network.ip_protocol = \"VRRP\", \"VRRP\", \"UNKNOWN_IP_PROTOCOL\"\r\n            ))))))))))))), \"/\", cast.as_string(target.port))\r\n\r\nmatch:\r\n    $transport_port\r\noutcome:\r\n    $count = count(network.session_id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    20",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "796633215e7df5340b6cda63fa8900ed9193e88cfc73194ab6d2cf362617e561"
+                },
+                {
+                    "name": "f8e1e208-0b86-4f91-a33b-e32f2721946c",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nnetwork.ip_protocol != \"ICMP\" OR (network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`))\r\n$date_hour = timestamp.get_date(metadata.event_timestamp.seconds)\r\n$direction = additional.fields[\"direction\"]\r\n$direction != \"\"\r\n$direction != \"unknown\"\r\n\r\nmatch:\r\n    $date_hour, $direction\r\noutcome:\r\n    $bytes_out = math.round(sum(cast.as_float(principal.labels[\"orig_ip_bytes\"])/1073741824), 2)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "fc123e8524c759d7610ff32c119c393746907e25078b340d62835ca1ce7105a0"
+                },
+                {
+                    "name": "743b6312-1766-4d62-ba1a-4edadd20f01e",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nnetwork.ip_protocol != \"ICMP\" OR (network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`))\r\nadditional.fields[\"direction\"] = \"inbound\"\r\n\r\noutcome:\r\n    $bytes_in = sum(cast.as_float(target.labels[\"resp_ip_bytes\"]))\r\n    $bytes_out = sum(cast.as_float(principal.labels[\"orig_ip_bytes\"]))\r\n    $total_bytes = math.round(($bytes_in + $bytes_out)/1073741824, 2)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "b42687b42df906c3ba646d1a4252460d6496da87ff635d9652411438eb0a375b"
+                },
+                {
+                    "name": "50e352f6-1a86-4672-9d5f-d59d18a60517",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nnetwork.ip_protocol != \"ICMP\" OR (network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`))\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\n\r\nmatch:\r\n    $date_hour\r\noutcome:\r\n    $count = count_distinct(target.ip)\r\norder:\r\n    $date_hour asc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "930976d40c60eef83fd376e12acc603eacc8b85bd56ad1e8e6f8f2badb183620"
+                },
+                {
+                    "name": "0f74add2-6cf5-4793-ad20-7bc86642e433",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nnetwork.ip_protocol != \"ICMP\" OR (network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`))\r\n\r\noutcome:\r\n    $count = count_distinct(principal.ip)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "d502f9235b0452c80e226e858b3f13dd80516544c720355a6ed2972c7dd6d285"
+                },
+                {
+                    "name": "65f564e3-fe3b-482d-9a14-0f195a4885c3",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nadditional.fields[\"direction\"] = \"inbound\"\r\n$country = principal.location.country_or_region\r\n$country != \"\"\r\n\r\nmatch:\r\n    $country\r\noutcome:\r\n    $count = count(network.session_id)\r\norder:\r\n    $count desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "30a57b803e015cd1cafd56e3444b9ab256f0a0fca1f2420fcb57097fe06dd64a"
+                },
+                {
+                    "name": "b4276263-e2bf-44aa-a3c3-29dcc064b05f",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nnetwork.ip_protocol != \"ICMP\" OR (network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`))\r\n\r\nmatch:\r\n    target.ip\r\noutcome:\r\n    $count = math.round(sum(cast.as_float(target.labels[\"resp_ip_bytes\"]))/1073741824, 2)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "43948b9ca58fbc9a704b751b58abf52c5d7f3a39651569ace7ff722b9072dc57"
+                },
+                {
+                    "name": "75a3aeee-3454-421c-a2c4-61f0fc19da06",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nnetwork.ip_protocol != \"ICMP\" OR (network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`))\r\n\r\nmatch:\r\n    about.resource.product_object_id\r\noutcome:\r\n    $count = count(network.session_id)\r\norder:\r\n    $count desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "60"
+                        }
+                    },
+                    "etag": "35e56c37b9dd008afa6a5a3e135f099b00c6b7c9d51b680baf78f88e44440ada"
+                },
+                {
+                    "name": "18b4c738-57a8-4082-9888-b46812faeb0d",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nnetwork.ip_protocol != \"ICMP\" OR (network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`))\r\n\r\nmatch:\r\n    principal.ip, target.port\r\noutcome:\r\n    $volume = math.round((sum(cast.as_float(target.labels[\"resp_ip_bytes\"])) + sum(cast.as_float(principal.labels[\"orig_ip_bytes\"])))/1073741824, 2)\r\norder:\r\n    $volume desc\r\nlimit:\r\n    20",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "4679640a14c839a9978294116b7992c445e5c6e3e1d7bbc58a8956157a91e01d"
+                },
+                {
+                    "name": "9303b481-647f-4334-87a7-d052a71bec4b",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nnetwork.ip_protocol != \"ICMP\" OR (network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`))\r\n\r\noutcome:\r\n    $bytes_in = sum(cast.as_float(target.labels[\"resp_ip_bytes\"]))\r\n    $bytes_out = sum(cast.as_float(principal.labels[\"orig_ip_bytes\"]))\r\n    $total_bytes = math.round(($bytes_in + $bytes_out)/1073741824, 2)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "2895ab6b0b519cb27b3e83910080fa6e45451078b15fb3d672763c75a41f6e77"
+                },
+                {
+                    "name": "6d1c2f8e-b783-4efc-b1b8-5879479215a3",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nnetwork.ip_protocol != \"ICMP\" OR (network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`))\r\n\r\noutcome:\r\n    $count = count(network.session_id)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "fd502e90b83f44c2da9775f34d2de7ef0e7095163ebf06461e49ff4f13773a16"
+                },
+                {
+                    "name": "c8747a03-559c-4e76-b95e-4c14f3f7595b",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nnetwork.ip_protocol != \"ICMP\" OR (network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`))\r\n$date_hour = timestamp.get_date(metadata.event_timestamp.seconds)\r\n$direction = additional.fields[\"direction\"]\r\n$direction != \"\"\r\n$direction != \"unknown\"\r\n\r\nmatch:\r\n    $date_hour, $direction\r\noutcome:\r\n    $bytes_in = math.round(sum(cast.as_float(target.labels[\"resp_ip_bytes\"])/1073741824), 2)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "0b9027166288cb6b92cc2e0659be671ffc83e4396ff42c78697b99661031cbfd"
+                },
+                {
+                    "name": "d799a8e1-d753-45d1-8c63-9fb6fbc54140",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type != \"conn\"\r\nmetadata.product_event_type != \"conn_red\"\r\nmetadata.product_event_type != \"conn_long\"\r\nmetadata.product_event_type != \"conn_agg\"\r\n\r\nmatch:\r\n   metadata.product_event_type\r\noutcome:\r\n    $count = count(network.session_id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    20",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "31ff148266ee649740a3750badab3b0682c8eff563da151cb0ca83518a44c456"
+                },
+                {
+                    "name": "faf3f1bf-467a-4eb0-becc-a8cdf0505b6d",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nadditional.fields[\"direction\"] = \"inbound\"\r\nprincipal.ip_geo_artifact.location.country_or_region != \"\"\r\n\r\n$latitude = principal.ip_geo_artifact.location.region_coordinates.latitude\r\n$longitude = principal.ip_geo_artifact.location.region_coordinates.longitude\r\n$latitude != 0\r\n$longitude != 0\r\n\r\nmatch:\r\n    $latitude, $longitude\r\noutcome:\r\n    $count = count(network.session_id)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "65a280f977aa321dde171944e9da738090cae8f0f6e7eef1c3eba7e6f53d8608"
+                },
+                {
+                    "name": "75b019a3-84f4-4d91-a765-d7ad1bf677a4",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nnetwork.ip_protocol != \"ICMP\" OR (network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`))\r\n\r\nmatch:\r\n    principal.ip\r\noutcome:\r\n    $count = math.round(sum(cast.as_float(principal.labels[\"orig_ip_bytes\"]))/1073741824, 2)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "6a69e14a69f4e326fdf0b12e6d89c6c30793d5856104feff3fe2a8e52976f174"
+                },
+                {
+                    "name": "ae28cb8e-ab5b-4174-9890-2f824a0c6481",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nnetwork.ip_protocol != \"ICMP\" OR (network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`))\r\nadditional.fields[\"direction\"] = \"outbound\"\r\n$transport_port = strings.concat(if(network.ip_protocol = \"EIGRP\", \"EIGRP\", if(network.ip_protocol = \"ESP\", \"ESP\", if(network.ip_protocol = \"ETHERIP\", \"ETHERIP\",\r\n            if(network.ip_protocol = \"GRE\", \"GRE\", if(network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`), \"ICMP6\", if(network.ip_protocol = \"ICMP\", \"ICMP\",\r\n            if(network.ip_protocol = \"IGMP\", \"IGMP\", if(network.ip_protocol = \"IP6IN4\", \"IP6IN4\", if(network.ip_protocol = \"PIM\", \"PIM\", if(network.ip_protocol = \"SCTP\", \"SCTP\",\r\n            if(network.ip_protocol = \"TCP\", \"TCP\", if(network.ip_protocol = \"UDP\", \"UDP\", if(network.ip_protocol = \"VRRP\", \"VRRP\", \"UNKNOWN_IP_PROTOCOL\"\r\n            ))))))))))))), \"/\", cast.as_string(target.port))\r\n\r\nmatch:\r\n    $transport_port\r\noutcome:\r\n    $count = count(network.session_id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "a8e3af712b2528d3f7338d63d5530bd5c94202051a00bd8eb001798238b2e43c"
+                },
+                {
+                    "name": "fa16c5a2-2aa4-421b-9a18-828735c7ee4d",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nnetwork.ip_protocol != \"ICMP\" OR (network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`))\r\nadditional.fields[\"direction\"] = \"inbound\"\r\ntarget.resource.attribute.labels[\"sg_id\"] != \"\"\r\n\r\n((principal.location.name!=\"\" OR principal.resource.product_object_id!=\"\" OR principal.resource.name!=\"\" OR principal.resource.attribute.labels.key = \"org_id\" OR\r\n principal.resource.attribute.labels.key = \"sg_id\" OR principal.resource.attribute.labels.key =\"subnet_id\" OR principal.resource.attribute.labels.key = \"vpc_id\" OR\r\n principal.resource.attribute.labels.key = \"profile\") OR\r\n (target.location.name!=\"\" OR target.resource.product_object_id!=\"\" OR target.resource.name!=\"\" OR target.resource.attribute.labels.key = \"org_id\" OR\r\n target.resource.attribute.labels.key = \"sg_id\" OR target.resource.attribute.labels.key =\"subnet_id\" OR target.resource.attribute.labels.key = \"vpc_id\" OR\r\n target.resource.attribute.labels.key = \"profile\"))\r\n\r\nmatch:\r\n    target.resource.attribute.labels[\"sg_id\"], target.port\r\noutcome:\r\n    $count = count(network.session_id)\r\norder:\r\n    $count desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "d3aefc99e7210ed5c84749d0634f1e9be44a52a44e728b7009c683cc91b24f53"
+                },
+                {
+                    "name": "8c2d07a2-4752-41d9-b8c9-0e08fa6c8148",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\n((principal.location.name!=\"\" OR principal.resource.product_object_id!=\"\" OR principal.resource.name!=\"\" OR principal.resource.attribute.labels.key = \"org_id\" OR\r\n principal.resource.attribute.labels.key = \"sg_id\" OR principal.resource.attribute.labels.key =\"subnet_id\" OR principal.resource.attribute.labels.key = \"vpc_id\" OR\r\n principal.resource.attribute.labels.key = \"profile\") OR\r\n (target.location.name!=\"\" OR target.resource.product_object_id!=\"\" OR target.resource.name!=\"\" OR target.resource.attribute.labels.key = \"org_id\" OR\r\n target.resource.attribute.labels.key = \"sg_id\" OR target.resource.attribute.labels.key =\"subnet_id\" OR target.resource.attribute.labels.key = \"vpc_id\" OR\r\n target.resource.attribute.labels.key = \"profile\"))\r\n \r\noutcome:\r\n    $count = count(network.session_id)\r\n    $output = if($count>0, \"Enriched Conn Logs are Present\", \"Enriched Conn Logs are not Present\")",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "4353f1360449af492300a1a30e705b0730239614455ebc9785e3cde90f01881e"
+                },
+                {
+                    "name": "589df87c-f85e-4328-ab7f-9abd73136b21",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nnetwork.ip_protocol != \"ICMP\" OR (network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`))\r\n\r\noutcome:\r\n    $count = count_distinct(target.ip)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "1aa67976600b6120cf9323d0bbe8056b1108e79c7533c69846f12b1a80b2fd80"
+                },
+                {
+                    "name": "657364d2-e19c-4363-95b7-0731e852ed34",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nnetwork.ip_protocol != \"ICMP\" OR (network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`))\r\nadditional.fields[\"direction\"] = \"inbound\"\r\n$transport_port = strings.concat(if(network.ip_protocol = \"EIGRP\", \"EIGRP\", if(network.ip_protocol = \"ESP\", \"ESP\", if(network.ip_protocol = \"ETHERIP\", \"ETHERIP\",\r\n            if(network.ip_protocol = \"GRE\", \"GRE\", if(network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`), \"ICMP6\", if(network.ip_protocol = \"ICMP\", \"ICMP\",\r\n            if(network.ip_protocol = \"IGMP\", \"IGMP\", if(network.ip_protocol = \"IP6IN4\", \"IP6IN4\", if(network.ip_protocol = \"PIM\", \"PIM\", if(network.ip_protocol = \"SCTP\", \"SCTP\",\r\n            if(network.ip_protocol = \"TCP\", \"TCP\", if(network.ip_protocol = \"UDP\", \"UDP\", if(network.ip_protocol = \"VRRP\", \"VRRP\", \"UNKNOWN_IP_PROTOCOL\"\r\n            ))))))))))))), \"/\", cast.as_string(target.port))\r\n\r\nmatch:\r\n    $transport_port\r\noutcome:\r\n    $count = count(network.session_id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "4c5d632f11f92914b6d630627a3bc9e01a1fd935d9ed6819627b45fe82f5db9d"
+                },
+                {
+                    "name": "b888717d-c418-4063-90e1-45a4552c3010",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nnetwork.ip_protocol != \"ICMP\" OR (network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`))\r\nadditional.fields[\"direction\"] = \"outbound\"\r\n\r\n((principal.location.name!=\"\" OR principal.resource.product_object_id!=\"\" OR principal.resource.name!=\"\" OR principal.resource.attribute.labels.key = \"org_id\" OR\r\n principal.resource.attribute.labels.key = \"sg_id\" OR principal.resource.attribute.labels.key =\"subnet_id\" OR principal.resource.attribute.labels.key = \"vpc_id\" OR\r\n principal.resource.attribute.labels.key = \"profile\") OR\r\n (target.location.name!=\"\" OR target.resource.product_object_id!=\"\" OR target.resource.name!=\"\" OR target.resource.attribute.labels.key = \"org_id\" OR\r\n target.resource.attribute.labels.key = \"sg_id\" OR target.resource.attribute.labels.key =\"subnet_id\" OR target.resource.attribute.labels.key = \"vpc_id\" OR\r\n target.resource.attribute.labels.key = \"profile\"))\r\n \r\nmatch:\r\n    principal.resource.name, principal.ip, target.ip\r\noutcome:\r\n    $bytes_out = math.round(sum(cast.as_float(principal.labels[\"orig_ip_bytes\"])/1073741824), 2)\r\norder:\r\n    $bytes_out desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "df16aa254e2f1f9c12d7d10e0ad2387a0dd50f3618a9612a9de337bec89c958a"
+                },
+                {
+                    "name": "9546f570-b54c-4f38-9a98-7941daba0456",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nadditional.fields[\"direction\"] = \"outbound\"\r\ntarget.ip_geo_artifact.location.country_or_region != \"\"\r\n\r\n$latitude = target.ip_geo_artifact.location.region_coordinates.latitude\r\n$longitude = target.ip_geo_artifact.location.region_coordinates.longitude\r\n$latitude != 0\r\n$longitude != 0\r\n\r\nmatch:\r\n    $latitude, $longitude\r\noutcome:\r\n    $count = count(network.session_id)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "de80b05e49bc3874d925f85b7b565d66823445a78584cf52d71ecc2a1570c3bd"
+                },
+                {
+                    "name": "bfa5dc64-0a0c-47a7-8afe-ae85782f9055",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.resource.attribute.labels[\"capture_source\"] = \"vpcflow\"\r\nnetwork.ip_protocol != \"ICMP\" OR (network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`))\r\n$transport = if(network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`), \"ICMP6\", network.ip_protocol)\r\n\r\nmatch:\r\n    principal.ip, $transport, target.port, target.ip\r\noutcome:\r\n    $count = count(network.session_id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    20",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "4021b45856069924047e7283ff3ae7fbdb9029968ea515619d76bbf813d62b25"
+                }
+            ]
+        }
+    ]
+}
