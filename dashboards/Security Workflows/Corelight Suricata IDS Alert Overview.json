@@ -2,7 +2,7 @@
     "dashboards": [
         {
             "dashboard": {
-                "name": "10ff1dcb-d2c0-46fa-94e9-a14da9b459b3",
+                "name": "2023e4ca-4a0c-4e4c-940b-92253c61dc3b",
                 "displayName": "Corelight → Security Workflows → Corelight Suricata IDS Alert Overview",
                 "definition": {
                     "filters": [
@@ -20,14 +20,14 @@
                             ],
                             "displayName": "Global Time Filter",
                             "chartIds": [
-                                "424a6e28-039c-4cb5-b81e-eee1de103d23",
-                                "3c9797fa-7ca6-48db-8a22-476d47b4c6bb",
-                                "8d55883b-c536-43da-bc06-8d94563f5e4d",
-                                "af801a56-bbc6-44f6-a707-449bf46897d5",
-                                "9ae0b034-6fa2-42fa-bf80-03a554cf28e9",
-                                "e88adc05-0e74-42db-a71f-4be5540153f2",
-                                "e1c87cfb-0c18-4d0b-baeb-a032a17bf346",
-                                "f59b4ce5-799e-4b84-b388-beed72b9b0a3"
+                                "9be43278-6525-4394-b353-5c3a96e6ffb2",
+                                "68275b18-0396-4077-a932-8e9f4daa2a1a",
+                                "8df944eb-c88b-40d1-8351-f1e9c6b54843",
+                                "fefdb9c6-fe7f-4b37-8815-ce4fd06fcb04",
+                                "8a60d066-94f8-4792-bd7e-4e3cd4e2358a",
+                                "a1c5e44b-e3d3-4597-8dd0-b0b233fac461",
+                                "eccad596-573b-4290-992e-a5843492bf93",
+                                "e7fc4004-7bd1-463a-9819-5881692896fb"
                             ],
                             "isStandardTimeRangeFilter": true,
                             "isStandardTimeRangeFilterEnabled": true
@@ -46,20 +46,20 @@
                             ],
                             "displayName": "Source IP",
                             "chartIds": [
-                                "424a6e28-039c-4cb5-b81e-eee1de103d23",
-                                "3c9797fa-7ca6-48db-8a22-476d47b4c6bb",
-                                "8d55883b-c536-43da-bc06-8d94563f5e4d",
-                                "af801a56-bbc6-44f6-a707-449bf46897d5",
-                                "9ae0b034-6fa2-42fa-bf80-03a554cf28e9",
-                                "e88adc05-0e74-42db-a71f-4be5540153f2",
-                                "e1c87cfb-0c18-4d0b-baeb-a032a17bf346",
-                                "f59b4ce5-799e-4b84-b388-beed72b9b0a3"
+                                "9be43278-6525-4394-b353-5c3a96e6ffb2",
+                                "68275b18-0396-4077-a932-8e9f4daa2a1a",
+                                "8df944eb-c88b-40d1-8351-f1e9c6b54843",
+                                "fefdb9c6-fe7f-4b37-8815-ce4fd06fcb04",
+                                "8a60d066-94f8-4792-bd7e-4e3cd4e2358a",
+                                "a1c5e44b-e3d3-4597-8dd0-b0b233fac461",
+                                "eccad596-573b-4290-992e-a5843492bf93",
+                                "e7fc4004-7bd1-463a-9819-5881692896fb"
                             ]
                         },
                         {
                             "id": "be25ce03-7ae1-4607-9402-d9d9d9eb1b97",
                             "dataSource": "UDM",
-                            "fieldPath": "security_result.severity_details",
+                            "fieldPath": "security_result.severity",
                             "filterOperatorAndFieldValues": [
                                 {
                                     "filterOperator": "EQUAL",
@@ -70,14 +70,14 @@
                             ],
                             "displayName": "Severity",
                             "chartIds": [
-                                "424a6e28-039c-4cb5-b81e-eee1de103d23",
-                                "3c9797fa-7ca6-48db-8a22-476d47b4c6bb",
-                                "8d55883b-c536-43da-bc06-8d94563f5e4d",
-                                "af801a56-bbc6-44f6-a707-449bf46897d5",
-                                "9ae0b034-6fa2-42fa-bf80-03a554cf28e9",
-                                "e88adc05-0e74-42db-a71f-4be5540153f2",
-                                "e1c87cfb-0c18-4d0b-baeb-a032a17bf346",
-                                "f59b4ce5-799e-4b84-b388-beed72b9b0a3"
+                                "9be43278-6525-4394-b353-5c3a96e6ffb2",
+                                "68275b18-0396-4077-a932-8e9f4daa2a1a",
+                                "8df944eb-c88b-40d1-8351-f1e9c6b54843",
+                                "fefdb9c6-fe7f-4b37-8815-ce4fd06fcb04",
+                                "8a60d066-94f8-4792-bd7e-4e3cd4e2358a",
+                                "a1c5e44b-e3d3-4597-8dd0-b0b233fac461",
+                                "eccad596-573b-4290-992e-a5843492bf93",
+                                "e7fc4004-7bd1-463a-9819-5881692896fb"
                             ]
                         },
                         {
@@ -94,14 +94,14 @@
                             ],
                             "displayName": "Category",
                             "chartIds": [
-                                "424a6e28-039c-4cb5-b81e-eee1de103d23",
-                                "3c9797fa-7ca6-48db-8a22-476d47b4c6bb",
-                                "8d55883b-c536-43da-bc06-8d94563f5e4d",
-                                "af801a56-bbc6-44f6-a707-449bf46897d5",
-                                "9ae0b034-6fa2-42fa-bf80-03a554cf28e9",
-                                "e88adc05-0e74-42db-a71f-4be5540153f2",
-                                "e1c87cfb-0c18-4d0b-baeb-a032a17bf346",
-                                "f59b4ce5-799e-4b84-b388-beed72b9b0a3"
+                                "9be43278-6525-4394-b353-5c3a96e6ffb2",
+                                "68275b18-0396-4077-a932-8e9f4daa2a1a",
+                                "8df944eb-c88b-40d1-8351-f1e9c6b54843",
+                                "fefdb9c6-fe7f-4b37-8815-ce4fd06fcb04",
+                                "8a60d066-94f8-4792-bd7e-4e3cd4e2358a",
+                                "a1c5e44b-e3d3-4597-8dd0-b0b233fac461",
+                                "eccad596-573b-4290-992e-a5843492bf93",
+                                "e7fc4004-7bd1-463a-9819-5881692896fb"
                             ]
                         },
                         {
@@ -118,13 +118,13 @@
                             ],
                             "displayName": "SID (For Log Details)",
                             "chartIds": [
-                                "e1c87cfb-0c18-4d0b-baeb-a032a17bf346"
+                                "eccad596-573b-4290-992e-a5843492bf93"
                             ]
                         }
                     ],
                     "charts": [
                         {
-                            "dashboardChart": "8d55883b-c536-43da-bc06-8d94563f5e4d",
+                            "dashboardChart": "8df944eb-c88b-40d1-8351-f1e9c6b54843",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -139,7 +139,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "9ae0b034-6fa2-42fa-bf80-03a554cf28e9",
+                            "dashboardChart": "8a60d066-94f8-4792-bd7e-4e3cd4e2358a",
                             "chartLayout": {
                                 "startX": 32,
                                 "spanX": 32,
@@ -154,7 +154,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "424a6e28-039c-4cb5-b81e-eee1de103d23",
+                            "dashboardChart": "9be43278-6525-4394-b353-5c3a96e6ffb2",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 32,
@@ -169,7 +169,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "af801a56-bbc6-44f6-a707-449bf46897d5",
+                            "dashboardChart": "fefdb9c6-fe7f-4b37-8815-ce4fd06fcb04",
                             "chartLayout": {
                                 "startX": 64,
                                 "spanX": 32,
@@ -184,7 +184,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "f59b4ce5-799e-4b84-b388-beed72b9b0a3",
+                            "dashboardChart": "e7fc4004-7bd1-463a-9819-5881692896fb",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -199,7 +199,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "3c9797fa-7ca6-48db-8a22-476d47b4c6bb",
+                            "dashboardChart": "68275b18-0396-4077-a932-8e9f4daa2a1a",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -214,7 +214,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "e88adc05-0e74-42db-a71f-4be5540153f2",
+                            "dashboardChart": "a1c5e44b-e3d3-4597-8dd0-b0b233fac461",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -229,7 +229,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "e1c87cfb-0c18-4d0b-baeb-a032a17bf346",
+                            "dashboardChart": "eccad596-573b-4290-992e-a5843492bf93",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -247,15 +247,15 @@
                     ]
                 },
                 "type": "CUSTOM",
-                "etag": "a4c9d75b03449af1a89a79288e2caba38fcf0924e5e8893f492544f4b54e7c82",
+                "etag": "d23a12a9e33b2c05e38e66906e6a4a537043106f2b32cefffc33c8233c3c2a66",
                 "access": "DASHBOARD_PRIVATE"
             },
             "dashboardCharts": [
                 {
-                    "name": "e88adc05-0e74-42db-a71f-4be5540153f2",
+                    "name": "a1c5e44b-e3d3-4597-8dd0-b0b233fac461",
                     "displayName": "Signature Analysis",
                     "chartDatasource": {
-                        "dashboardQuery": "a360d141-f699-4125-a63e-ef48aa3059a9",
+                        "dashboardQuery": "a7ed7d9b-abf5-48aa-8469-e1167815330d",
                         "dataSources": [
                             "UDM"
                         ]
@@ -301,14 +301,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "61204c4384584c40098b0ad1b11b93c247453d5e29136c93a0d0e4f07d9469b3",
+                    "etag": "1b59c19e2bdc9c232ca2524a80ea1147c3e3cbd7de1a0dcb52adba2063ff06df",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "e1c87cfb-0c18-4d0b-baeb-a032a17bf346",
+                    "name": "eccad596-573b-4290-992e-a5843492bf93",
                     "displayName": "Log Details",
                     "chartDatasource": {
-                        "dashboardQuery": "17ed16b4-f0c3-4846-895c-408f3f898f8d",
+                        "dashboardQuery": "82a2dbd1-c548-4495-8610-6230c737227f",
                         "dataSources": [
                             "UDM"
                         ]
@@ -370,14 +370,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "15cc870ef4451e0acd8469a00613122f211939a319fc8675f247a66da8a820d3",
+                    "etag": "e9211bbff595706317bd4127a6db5905b670d3d6612657495ce050e2bc2bf5ae",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "3c9797fa-7ca6-48db-8a22-476d47b4c6bb",
+                    "name": "68275b18-0396-4077-a932-8e9f4daa2a1a",
                     "displayName": "Origin Summary",
                     "chartDatasource": {
-                        "dashboardQuery": "b4bf8ad7-d850-4722-a63f-b5b9f1c221a0",
+                        "dashboardQuery": "f55a5f8f-1a2f-4f38-b6f0-ff28ae25a028",
                         "dataSources": [
                             "UDM"
                         ]
@@ -415,14 +415,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "51b40942d1c30482e7fe14f6d83322d19f567d66d769b1fc4cfdda008aeb94b1",
+                    "etag": "8d1791a0cda37507e78e31a0da3a0a170c93c03c995b46821b17b298c90acab3",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "f59b4ce5-799e-4b84-b388-beed72b9b0a3",
+                    "name": "e7fc4004-7bd1-463a-9819-5881692896fb",
                     "displayName": "Category Analysis",
                     "chartDatasource": {
-                        "dashboardQuery": "35c611e9-ac67-4d3b-88b1-4dadc69c68eb",
+                        "dashboardQuery": "5aa38ea5-5b01-4966-86b2-181dc034ef29",
                         "dataSources": [
                             "UDM"
                         ]
@@ -456,14 +456,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "014d73c47c433ec8c4885407dc16140a673113217842f73445f66c1dc48e5298",
+                    "etag": "0a6706a06b5cb2691c12ce4b288ff5d4230f1e011402960750adebe8d01e41d9",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "af801a56-bbc6-44f6-a707-449bf46897d5",
+                    "name": "fefdb9c6-fe7f-4b37-8815-ce4fd06fcb04",
                     "displayName": "Alerts with CVEs",
                     "chartDatasource": {
-                        "dashboardQuery": "7bd3a831-215b-4cf2-8f60-ee35cfa49f58",
+                        "dashboardQuery": "1360c7cf-dc09-4b67-b906-73dae5c3a2df",
                         "dataSources": [
                             "UDM"
                         ]
@@ -499,14 +499,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "dd9aadae459caa4115a93f1396c1e0a2ec46303d0f99198deb6738850b5e812c",
+                    "etag": "6e70bf83981f6ae8d21dad364077c957b9b5cb22afa69ee78b3fb02b05ce01fc",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "424a6e28-039c-4cb5-b81e-eee1de103d23",
+                    "name": "9be43278-6525-4394-b353-5c3a96e6ffb2",
                     "displayName": "Unique Rules Alerting",
                     "chartDatasource": {
-                        "dashboardQuery": "579ce7ce-3bdf-4732-8677-31bb80ecd75d",
+                        "dashboardQuery": "51664daa-e420-42fb-84a5-1fcbc3b256b6",
                         "dataSources": [
                             "UDM"
                         ]
@@ -542,14 +542,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "46fa35ac95fd18d456ad30924a1043870ec9fd114a73b8de652e77f50e2cd003",
+                    "etag": "9a0d74e74d6a298f974a10bfe56eb0005aea7d6f8e514ff5883c1c2d1abae375",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "9ae0b034-6fa2-42fa-bf80-03a554cf28e9",
+                    "name": "8a60d066-94f8-4792-bd7e-4e3cd4e2358a",
                     "displayName": "Total IDS Hits",
                     "chartDatasource": {
-                        "dashboardQuery": "42f819ef-e910-4995-9e93-6f8b4b25df13",
+                        "dashboardQuery": "a2a3195f-9cea-46a7-bfa6-9cb09a3d42f3",
                         "dataSources": [
                             "UDM"
                         ]
@@ -585,14 +585,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "3154b42635375c7c6decc35c0bcfd5c0e59c1232d9f39f207cdeebe41ccc1df8",
+                    "etag": "150f9fd7b7a68ef8b28bb6823abcced0108eb54ff15ca903991b65a7d3d4f28f",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "8d55883b-c536-43da-bc06-8d94563f5e4d",
+                    "name": "8df944eb-c88b-40d1-8351-f1e9c6b54843",
                     "displayName": "IDS Hits Over Time",
                     "chartDatasource": {
-                        "dashboardQuery": "9a33a551-d79c-4d16-953c-6baf33d196a6",
+                        "dashboardQuery": "269b11f2-5237-4d71-9849-d177828e4dbf",
                         "dataSources": [
                             "UDM"
                         ]
@@ -633,13 +633,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "816734787f3b8369dbdd14bb4cb5d3b5d6cf7c122087c960b2739e9ab5405948",
+                    "etag": "f110e30b8ddf81db735237149ce18df291522f414e3b38d105a8a25857732bd6",
                     "drillDownConfig": {}
                 }
             ],
             "dashboardQueries": [
                 {
-                    "name": "42f819ef-e910-4995-9e93-6f8b4b25df13",
+                    "name": "a2a3195f-9cea-46a7-bfa6-9cb09a3d42f3",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"suricata_corelight\"\r\nprincipal.ip!=\"\"\r\nadditional.fields.key = \"alert_severity\"\r\nsecurity_result.category_details!=\"\"\r\noutcome:\r\n    $count=count_distinct(metadata.id)",
                     "input": {
                         "relativeTime": {
@@ -647,10 +647,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "6a56a692c7ccacf80f9e0649d3cf563c59c5d74997bf6a53a6bb65cfe1ac2b43"
+                    "etag": "c3fe1f9ba887dd26f49402b6304a7f27b01b01941bdf0235b1c7a63b10e2692c"
                 },
                 {
-                    "name": "9a33a551-d79c-4d16-953c-6baf33d196a6",
+                    "name": "269b11f2-5237-4d71-9849-d177828e4dbf",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"suricata_corelight\"\r\nprincipal.ip!=\"\"\r\nadditional.fields.key = \"alert_severity\"\r\nsecurity_result.category_details!=\"\"\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $date_hour asc",
                     "input": {
                         "relativeTime": {
@@ -658,10 +658,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "9755e159e5559cf8e1ef3c6e991e7fad95a5c39f79d3e937df6dacc8f89469ba"
+                    "etag": "46ff4698a4fa137d8ad277a1d311238740758577a75314af2cbecb2867aee160"
                 },
                 {
-                    "name": "a360d141-f699-4125-a63e-ef48aa3059a9",
+                    "name": "a7ed7d9b-abf5-48aa-8469-e1167815330d",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"suricata_corelight\"\r\nprincipal.ip!=\"\"\r\n$severity=if(security_result.rule_labels.key = \"signature_severity\" AND security_result.rule_labels.value = \"Informational\",\"Informational\",\r\n          if(security_result.rule_labels.key = \"signature_severity\" AND security_result.rule_labels.value = \"Critical\",\"Critical\",\r\n          if(security_result.rule_labels.key = \"signature_severity\" AND security_result.rule_labels.value = \"Major\",\"Medium\",\r\n          if(security_result.rule_labels.key = \"signature_severity\" AND security_result.rule_labels.value = \"Minor\", \"Low\", \"Unknown\"))))\r\n$severity!=\"Unknown\"\r\nsecurity_result.category_details!=\"\"\r\nmatch:\r\n    $severity, security_result.rule_name, security_result.rule_id\r\noutcome:\r\n    $source_count=count_distinct(principal.ip)\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $source_count desc, $count desc",
                     "input": {
                         "relativeTime": {
@@ -669,10 +669,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "3bc03161b94351b4de909b583520183ddaa67c1535e1a1082c634b43949febd0"
+                    "etag": "3b79fbabd169556fc428e99f19436b37b478c7785e42856715ed8e94960c5994"
                 },
                 {
-                    "name": "17ed16b4-f0c3-4846-895c-408f3f898f8d",
+                    "name": "82a2dbd1-c548-4495-8610-6230c737227f",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"suricata_corelight\"\r\nprincipal.ip!=\"\"\r\n$severity=if(security_result.rule_labels.key = \"signature_severity\" AND security_result.rule_labels.value = \"Informational\",\"Informational\",\r\n          if(security_result.rule_labels.key = \"signature_severity\" AND security_result.rule_labels.value = \"Critical\",\"Critical\",\r\n          if(security_result.rule_labels.key = \"signature_severity\" AND security_result.rule_labels.value = \"Major\",\"Medium\",\r\n          if(security_result.rule_labels.key = \"signature_severity\" AND security_result.rule_labels.value = \"Minor\", \"Low\", \"Unknown\"))))\r\n$severity!=\"Unknown\"\r\nsecurity_result.category_details!=\"\"\r\n$time=timestamp.get_timestamp(metadata.event_timestamp.seconds)\r\n$service=about.labels[\"service\"]\r\n$uid=network.session_id\r\nmatch:\r\n    $time, principal.ip, target.ip, target.port, $service, $severity, security_result.rule_name, security_result.rule_id, $uid\r\norder:\r\n    $time desc",
                     "input": {
                         "relativeTime": {
@@ -680,10 +680,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "c936ce1dde4b8c79a9118be634fc9591497806e19c32ebd60d6b95996194e2e9"
+                    "etag": "48b9359d50675e3fe879b5558691e5d800cac3e14e233d4c0f0cf39074746631"
                 },
                 {
-                    "name": "b4bf8ad7-d850-4722-a63f-b5b9f1c221a0",
+                    "name": "f55a5f8f-1a2f-4f38-b6f0-ff28ae25a028",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"suricata_corelight\"\r\nprincipal.ip!=\"\"\r\nadditional.fields.key = \"alert_severity\"\r\nsecurity_result.category_details!=\"\"\r\nmatch:\r\n    principal.ip\r\noutcome:\r\n    $signature_count=count_distinct(security_result.rule_name)\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $signature_count desc, $count desc",
                     "input": {
                         "relativeTime": {
@@ -691,10 +691,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "01ed6a26abb61327aeec089baa3f4bae400e8fd7134d4b92ea85821f9a7a91ab"
+                    "etag": "042823f21176ace8fc1e6a403b593be0f31466b1b7c66521eeb6dd860a9dc8c0"
                 },
                 {
-                    "name": "35c611e9-ac67-4d3b-88b1-4dadc69c68eb",
+                    "name": "5aa38ea5-5b01-4966-86b2-181dc034ef29",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"suricata_corelight\"\r\nprincipal.ip!=\"\"\r\nadditional.fields.key = \"alert_severity\"\r\nsecurity_result.category_details!=\"\"\r\nmatch:\r\n    security_result.category_details\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc",
                     "input": {
                         "relativeTime": {
@@ -702,10 +702,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "13eb23483368a859e3d936097bb2381e20b9f2f3103ea1e9b8597a771d07bc10"
+                    "etag": "509d1edcd7605645d0839c8e383779ba14299b67af54d7079ee24f861f646668"
                 },
                 {
-                    "name": "7bd3a831-215b-4cf2-8f60-ee35cfa49f58",
+                    "name": "1360c7cf-dc09-4b67-b906-73dae5c3a2df",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"suricata_corelight\"\r\nprincipal.ip!=\"\"\r\nadditional.fields.key = \"alert_severity\"\r\nsecurity_result.category_details!=\"\"\r\nstrings.contains(security_result.summary, \"CVE\") OR strings.contains(re.capture(security_result.description, \"metadata:([^;]+)\"), \"CVE\")\r\noutcome:\r\n    $count=count_distinct(metadata.id)",
                     "input": {
                         "relativeTime": {
@@ -713,10 +713,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "bafd3f72cb784b4df8b7946d18e9ffd8b00c307fb8551d6e7dfdb9395c8f8df9"
+                    "etag": "0c7888bf65a9c6bbe3affeb4cb7c5fbbb85f47622d7381bd9cb45b7e6a10ec25"
                 },
                 {
-                    "name": "579ce7ce-3bdf-4732-8677-31bb80ecd75d",
+                    "name": "51664daa-e420-42fb-84a5-1fcbc3b256b6",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"suricata_corelight\"\r\nprincipal.ip!=\"\"\r\nadditional.fields.key = \"alert_severity\"\r\nsecurity_result.category_details!=\"\"\r\noutcome:\r\n    $count=count_distinct(security_result.rule_name)",
                     "input": {
                         "relativeTime": {
@@ -724,7 +724,7 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "0d59a5e871ade5b536588746377856525b686447c059dc347d9e92d1e24764be"
+                    "etag": "76eb75b3f2e32946e878bca371f59db74e14245e85b33f63b05ccfa0c15fb114"
                 }
             ]
         }
