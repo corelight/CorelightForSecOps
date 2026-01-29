@@ -2,7 +2,7 @@
     "dashboards": [
         {
             "dashboard": {
-                "name": "c726cb96-3728-483c-9a5d-5fe877d2632d",
+                "name": "a14c4066-7213-405c-904d-5ba975e69ed7",
                 "displayName": "Corelight → Data Explorer → Files",
                 "definition": {
                     "filters": [
@@ -20,15 +20,15 @@
                             ],
                             "displayName": "Global Time Filter",
                             "chartIds": [
-                                "5d4ba2d7-9234-4b92-803b-65460793d105",
-                                "9a37b12f-c2ac-4d6f-9d65-fcf7e30887dc",
-                                "9a5844d0-c225-4461-8fbb-62c99760c02e",
-                                "c0aa7dba-1bda-4771-9dc8-2df86709d85c",
-                                "4fb1fab8-deaf-4bcb-b47b-98148993a672",
-                                "756e5325-c457-4fbb-b5f0-7561961d8226",
-                                "ed5fb26f-891a-4e08-b639-36e57f52998d",
-                                "5644c1ef-ed47-4f4d-8b15-fa0499baaa6f",
-                                "08b7a2bc-568a-4b4b-ad6c-16b74ef0e312"
+                                "a690f00b-1b38-44bc-8268-f25c6a94231a",
+                                "baf5800f-755c-47f8-a5da-ad0615e82400",
+                                "aa040953-5e8c-4ca4-a457-1d121b20355d",
+                                "7a6746b7-ecf5-4343-83f3-910356920514",
+                                "86b72b78-5b4e-4b30-9d65-0796612df0e1",
+                                "2fadcee9-18f5-4711-a0a9-fc4201794389",
+                                "9a6b8d8c-40c2-44e8-a8e6-f5fa3815b3d0",
+                                "8e08d356-1322-4848-ae58-0c2d9efaf4a0",
+                                "2cfae3d7-c468-479c-b69a-da5e83587b41"
                             ],
                             "isStandardTimeRangeFilter": true,
                             "isStandardTimeRangeFilterEnabled": true
@@ -47,21 +47,21 @@
                             ],
                             "displayName": "Corelight Sensor",
                             "chartIds": [
-                                "c0aa7dba-1bda-4771-9dc8-2df86709d85c",
-                                "4fb1fab8-deaf-4bcb-b47b-98148993a672",
-                                "5d4ba2d7-9234-4b92-803b-65460793d105",
-                                "9a37b12f-c2ac-4d6f-9d65-fcf7e30887dc",
-                                "756e5325-c457-4fbb-b5f0-7561961d8226",
-                                "5644c1ef-ed47-4f4d-8b15-fa0499baaa6f",
-                                "ed5fb26f-891a-4e08-b639-36e57f52998d",
-                                "08b7a2bc-568a-4b4b-ad6c-16b74ef0e312",
-                                "9a5844d0-c225-4461-8fbb-62c99760c02e"
+                                "7a6746b7-ecf5-4343-83f3-910356920514",
+                                "86b72b78-5b4e-4b30-9d65-0796612df0e1",
+                                "a690f00b-1b38-44bc-8268-f25c6a94231a",
+                                "baf5800f-755c-47f8-a5da-ad0615e82400",
+                                "2fadcee9-18f5-4711-a0a9-fc4201794389",
+                                "8e08d356-1322-4848-ae58-0c2d9efaf4a0",
+                                "9a6b8d8c-40c2-44e8-a8e6-f5fa3815b3d0",
+                                "2cfae3d7-c468-479c-b69a-da5e83587b41",
+                                "aa040953-5e8c-4ca4-a457-1d121b20355d"
                             ]
                         }
                     ],
                     "charts": [
                         {
-                            "dashboardChart": "5d4ba2d7-9234-4b92-803b-65460793d105",
+                            "dashboardChart": "a690f00b-1b38-44bc-8268-f25c6a94231a",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -74,7 +74,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "9a5844d0-c225-4461-8fbb-62c99760c02e",
+                            "dashboardChart": "aa040953-5e8c-4ca4-a457-1d121b20355d",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -87,7 +87,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "9a37b12f-c2ac-4d6f-9d65-fcf7e30887dc",
+                            "dashboardChart": "baf5800f-755c-47f8-a5da-ad0615e82400",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -100,7 +100,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "756e5325-c457-4fbb-b5f0-7561961d8226",
+                            "dashboardChart": "2fadcee9-18f5-4711-a0a9-fc4201794389",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -113,7 +113,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "5644c1ef-ed47-4f4d-8b15-fa0499baaa6f",
+                            "dashboardChart": "8e08d356-1322-4848-ae58-0c2d9efaf4a0",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -126,7 +126,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "4fb1fab8-deaf-4bcb-b47b-98148993a672",
+                            "dashboardChart": "86b72b78-5b4e-4b30-9d65-0796612df0e1",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -139,7 +139,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "c0aa7dba-1bda-4771-9dc8-2df86709d85c",
+                            "dashboardChart": "7a6746b7-ecf5-4343-83f3-910356920514",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -152,7 +152,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "08b7a2bc-568a-4b4b-ad6c-16b74ef0e312",
+                            "dashboardChart": "2cfae3d7-c468-479c-b69a-da5e83587b41",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -165,7 +165,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "ed5fb26f-891a-4e08-b639-36e57f52998d",
+                            "dashboardChart": "9a6b8d8c-40c2-44e8-a8e6-f5fa3815b3d0",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -180,15 +180,15 @@
                     ]
                 },
                 "type": "CUSTOM",
-                "etag": "5cfe5ce36fd46bec4845078ea10817d1a4213cc74a8016201ca38c031b24b715",
+                "etag": "1b44451ae20a45f01410a4f615b9086f397983e30c21b553d7929959fdb0d900",
                 "access": "DASHBOARD_PRIVATE"
             },
             "dashboardCharts": [
                 {
-                    "name": "ed5fb26f-891a-4e08-b639-36e57f52998d",
+                    "name": "9a6b8d8c-40c2-44e8-a8e6-f5fa3815b3d0",
                     "displayName": "Top Receiving (rx_host) Hosts - # Files",
                     "chartDatasource": {
-                        "dashboardQuery": "bfaed226-1e11-402f-adc0-3aeec7919405",
+                        "dashboardQuery": "b5ec5d95-315c-4752-b020-1d05581249be",
                         "dataSources": [
                             "UDM"
                         ]
@@ -222,13 +222,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "61d501365a3766da6088553d9fcfc75d18d480afc5c1cd7e4e7732bc3db003c0"
+                    "etag": "cd14a3819bd217bfda20e605326bf2bbeb90939fd8fb6223dfdba64e0bf8a7f8",
+                    "drillDownConfig": {}
                 },
                 {
-                    "name": "5d4ba2d7-9234-4b92-803b-65460793d105",
+                    "name": "a690f00b-1b38-44bc-8268-f25c6a94231a",
                     "displayName": "Top 20 Mime Types by File Count",
                     "chartDatasource": {
-                        "dashboardQuery": "45b06a2f-55eb-4304-bcd6-2aa33b4275f8",
+                        "dashboardQuery": "e9a5238e-75a1-4ddd-87c9-a5c167fb16c6",
                         "dataSources": [
                             "UDM"
                         ]
@@ -236,12 +237,17 @@
                     "visualization": {
                         "series": [
                             {
+                                "seriesName": "none",
                                 "seriesType": "BAR",
                                 "encode": {
                                     "x": "mime_type",
                                     "y": "count"
                                 },
-                                "dataLabel": {}
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "undefined"
+                                },
+                                "seriesUniqueValue": "none"
                             }
                         ],
                         "xAxes": [
@@ -264,13 +270,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "d15cc47b87339c3f65168b951abbff10ae908bbef77a24c897e4d55a77cf7e20"
+                    "etag": "035f6f6b6fce060fe0e452eccd9a53d202170f242e105d4f68cea5ffaca85941",
+                    "drillDownConfig": {}
                 },
                 {
-                    "name": "756e5325-c457-4fbb-b5f0-7561961d8226",
+                    "name": "2fadcee9-18f5-4711-a0a9-fc4201794389",
                     "displayName": "File Flow - Bytes",
                     "chartDatasource": {
-                        "dashboardQuery": "47905af3-f51a-47e9-9a73-d76012711574",
+                        "dashboardQuery": "19a99a36-1950-4e5e-8d4d-8719b4744261",
                         "dataSources": [
                             "UDM"
                         ]
@@ -286,9 +293,48 @@
                                 },
                                 "dataLabel": {},
                                 "itemStyle": {
-                                    "color": "#1a73e8"
+                                    "color": "#ec453b"
                                 },
                                 "seriesUniqueValue": "internal"
+                            },
+                            {
+                                "seriesName": "sent",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "actual_file_size"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "sent"
+                            },
+                            {
+                                "seriesName": "unknown",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "actual_file_size"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "unknown"
+                            },
+                            {
+                                "seriesName": "received",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "actual_file_size"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#10a3b7"
+                                },
+                                "seriesUniqueValue": "received"
                             }
                         ],
                         "xAxes": [
@@ -315,13 +361,14 @@
                         "groupingType": "Grouped"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "17abc6202c530a10edb7763a59555ec39a9d63f03f6bb87c77f895d977f90ad4"
+                    "etag": "00f4fda32fe64574dcc0e5b3ff2a94a48e352d8cbf437b615e8955227d7a6183",
+                    "drillDownConfig": {}
                 },
                 {
-                    "name": "08b7a2bc-568a-4b4b-ad6c-16b74ef0e312",
+                    "name": "2cfae3d7-c468-479c-b69a-da5e83587b41",
                     "displayName": "Top Receiving (rx_host) Hosts - Bytes",
                     "chartDatasource": {
-                        "dashboardQuery": "d715f960-395e-4e47-9c3d-b1e6dd078bdb",
+                        "dashboardQuery": "06f87bfb-ee98-452c-b820-478b2b3f65a4",
                         "dataSources": [
                             "UDM"
                         ]
@@ -355,13 +402,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "4a719faaadb49fe4c5e3d3f25a4230da66f2cecb2e0b2104f87614329da437e2"
+                    "etag": "1069cf9c2bdd903458329e5e576f6aa78ddc00702497f971e6bb5d1adcb88d3a",
+                    "drillDownConfig": {}
                 },
                 {
-                    "name": "c0aa7dba-1bda-4771-9dc8-2df86709d85c",
+                    "name": "7a6746b7-ecf5-4343-83f3-910356920514",
                     "displayName": "Top Transmitting (tx_host) Hosts - Bytes",
                     "chartDatasource": {
-                        "dashboardQuery": "52443456-d28b-4450-acb7-7760d5e8c006",
+                        "dashboardQuery": "830d834e-d588-49b2-962f-8a5e644b13f0",
                         "dataSources": [
                             "UDM"
                         ]
@@ -395,13 +443,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "d73cea8bf179f2d47244bd4b797a5f99ce8596336e831cd80f21096e3789d44d"
+                    "etag": "c8fe7542cfc20c166fff0f5c5cc58dd44b056fdbb034d49eaa2df58ec5c14c20",
+                    "drillDownConfig": {}
                 },
                 {
-                    "name": "9a37b12f-c2ac-4d6f-9d65-fcf7e30887dc",
+                    "name": "baf5800f-755c-47f8-a5da-ad0615e82400",
                     "displayName": "File Flow - # of Files",
                     "chartDatasource": {
-                        "dashboardQuery": "126474b6-5dae-4c59-92b9-ea9e2fb6473e",
+                        "dashboardQuery": "86a4eb74-24f4-49c4-b04d-06c59bb0a28d",
                         "dataSources": [
                             "UDM"
                         ]
@@ -417,9 +466,48 @@
                                 },
                                 "dataLabel": {},
                                 "itemStyle": {
-                                    "color": "#10a3b7"
+                                    "color": "#ec453b"
                                 },
                                 "seriesUniqueValue": "internal"
+                            },
+                            {
+                                "seriesName": "sent",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "sent"
+                            },
+                            {
+                                "seriesName": "unknown",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "unknown"
+                            },
+                            {
+                                "seriesName": "received",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#10a3b7"
+                                },
+                                "seriesUniqueValue": "received"
                             }
                         ],
                         "xAxes": [
@@ -446,13 +534,14 @@
                         "groupingType": "Grouped"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "836eaa1ae7c22da2b48ece3a83b33676e8aede6eecba0211c9004d52e68f663b"
+                    "etag": "eba6799b3784784960b7ed42fb96988d4df077082598fcefdd345be8d277dba7",
+                    "drillDownConfig": {}
                 },
                 {
-                    "name": "4fb1fab8-deaf-4bcb-b47b-98148993a672",
+                    "name": "86b72b78-5b4e-4b30-9d65-0796612df0e1",
                     "displayName": "Top Transmitting (tx_host) Hosts - # Files",
                     "chartDatasource": {
-                        "dashboardQuery": "b6cb07a6-faef-4028-aac2-2da02f342fbe",
+                        "dashboardQuery": "bd92cf86-8d7c-4b96-8ad6-b0a5c5ebf9aa",
                         "dataSources": [
                             "UDM"
                         ]
@@ -486,13 +575,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "5b5e8eecfd8e9ec3f32e964859bebea45a0a65f57ad609f18741541e4d2b8f0c"
+                    "etag": "29f71ce3ca3e0e5e233b3af31f975596a98d6be64b33e44e005dd47e8c246bf7",
+                    "drillDownConfig": {}
                 },
                 {
-                    "name": "9a5844d0-c225-4461-8fbb-62c99760c02e",
+                    "name": "aa040953-5e8c-4ca4-a457-1d121b20355d",
                     "displayName": "Corelight Mime Type to Filename Check",
                     "chartDatasource": {
-                        "dashboardQuery": "1eb853a6-f581-4431-b4a1-4f435f35ff12",
+                        "dashboardQuery": "b799c71f-460a-43ab-ad87-f12f4305852c",
                         "dataSources": [
                             "UDM"
                         ]
@@ -530,13 +620,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "a9c53b3a09d5551e5f50f970f25a19c250c55ee8e6da1e67edee8ec567175571"
+                    "etag": "c2a2db24029e5572f97996a3f2d1a14d8673b0be9e4145b2bfb5c970a47c7390"
                 },
                 {
-                    "name": "5644c1ef-ed47-4f4d-8b15-fa0499baaa6f",
+                    "name": "8e08d356-1322-4848-ae58-0c2d9efaf4a0",
                     "displayName": "Top File Protocols by File Count",
                     "chartDatasource": {
-                        "dashboardQuery": "daf168cd-43bc-4f55-8dce-32ee6fac6322",
+                        "dashboardQuery": "f34f88f3-dad6-43ce-a1c6-5d7576bdd140",
                         "dataSources": [
                             "UDM"
                         ]
@@ -549,11 +639,34 @@
                                     "value": "count",
                                     "itemName": "app"
                                 },
-                                "dataLabel": {},
+                                "dataLabel": {
+                                    "show": true
+                                },
                                 "radius": [
                                     "0%",
                                     "70%"
-                                ]
+                                ],
+                                "itemStyle": {
+                                    "color": "b=>{const {map:c}=RIf(this.theme);b=YJf(b,qJf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;let d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "HTTP",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "HTTP"
+                                            }
+                                        },
+                                        {
+                                            "key": "SSL",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "SSL"
+                                            }
+                                        }
+                                    ]
+                                }
                             }
                         ],
                         "xAxes": [
@@ -575,56 +688,57 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "033477f32db2d2e652983d664715459b78bd85aaf0f8bae307496e839d8e4799"
+                    "etag": "9205c5328149cb218a039911a452e99d2ea3fba6a1e84f50937be68fbcb93f3c",
+                    "drillDownConfig": {}
                 }
             ],
             "dashboardQueries": [
                 {
-                    "name": "52443456-d28b-4450-acb7-7760d5e8c006",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$is_broadcast!=\"true\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\" \r\nmatch:\r\n    principal.ip\r\noutcome:\r\n    $src_bytes = (cast.as_float(strings.concat(sum(about.file.size), \"\")) * count_distinct(metadata.id)) / count(metadata.id)\r\norder:\r\n    $src_bytes desc \r\nlimit:\r\n    10",
+                    "name": "830d834e-d588-49b2-962f-8a5e644b13f0",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\nprincipal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\" AND target.ip!=\"255.255.255.255\" AND target.ip!=\"0.0.0.0\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\" \r\nmatch:\r\n    principal.ip\r\noutcome:\r\n    $src_bytes = (cast.as_float(strings.concat(sum(about.file.size), \"\")) * count_distinct(metadata.id)) / count(metadata.id)\r\norder:\r\n    $src_bytes desc \r\nlimit:\r\n    10",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "f5bd32801fa801306d84f1a6b8dec1161410d4ce612d272ddc1d593595b8da97"
+                    "etag": "01f097482b20ffe19841fdc19e65c9235b228b95a36c6b4d8586eecd76ce3c17"
                 },
                 {
-                    "name": "126474b6-5dae-4c59-92b9-ea9e2fb6473e",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$is_broadcast!=\"true\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\"\r\n$is_src_internal=if(principal.ip in cidr %internal_cidr_list , \"true\", \"false\")\r\n$is_dest_internal=if(target.ip in cidr %internal_cidr_list , \"true\", \"false\")\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour, $is_src_internal, $is_dest_internal\r\noutcome:\r\n    $directional=array_distinct(if($is_src_internal=\"true\" AND $is_dest_internal=\"false\", \"sent\", \r\n             if($is_src_internal=\"false\" AND $is_dest_internal=\"true\",\"received\", \r\n             if($is_src_internal=\"true\" AND $is_dest_internal=\"true\", \"internal\", \"unknown\"\r\n              ))))\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $date_hour asc",
+                    "name": "86a4eb74-24f4-49c4-b04d-06c59bb0a28d",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\nprincipal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\" AND target.ip!=\"255.255.255.255\" AND target.ip!=\"0.0.0.0\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\"\r\n$is_src_internal=if(principal.ip in cidr %internal_cidr_list , \"true\", \"false\")\r\n$is_dest_internal=if(target.ip in cidr %internal_cidr_list , \"true\", \"false\")\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour, $is_src_internal, $is_dest_internal\r\noutcome:\r\n    $directional=array_distinct(if($is_src_internal=\"true\" AND $is_dest_internal=\"false\", \"sent\", \r\n             if($is_src_internal=\"false\" AND $is_dest_internal=\"true\",\"received\", \r\n             if($is_src_internal=\"true\" AND $is_dest_internal=\"true\", \"internal\", \"unknown\"\r\n              ))))\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $date_hour asc",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "a907bc4422d3587bbfec164286e18c45b63348776e1c6ddf950db0c2a39944b3"
+                    "etag": "e7f1746a21570e48484c3ccda3a9402f0d4519fe641f688d7c4d3e1084bb1f45"
                 },
                 {
-                    "name": "45b06a2f-55eb-4304-bcd6-2aa33b4275f8",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\nobserver.hostname!=\"\"\r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$is_broadcast!=\"true\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\" AND $mime_type!=\"application/pkix-cert\"\r\nmatch:\r\n    $mime_type\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    20",
+                    "name": "e9a5238e-75a1-4ddd-87c9-a5c167fb16c6",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\nobserver.hostname!=\"\"\r\nprincipal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\" AND target.ip!=\"255.255.255.255\" AND target.ip!=\"0.0.0.0\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\" AND $mime_type!=\"application/pkix-cert\"\r\nmatch:\r\n    $mime_type\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    20",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "9e13a796fa4231623c889f6102a1b81f08548b6c2397074bb6a1e26762ce30dd"
+                    "etag": "10a6b56c972b395fe6a55ff7c10ed5a1ea0fee17cbc1b66e890417af850294d0"
                 },
                 {
-                    "name": "47905af3-f51a-47e9-9a73-d76012711574",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$is_broadcast!=\"true\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\"\r\n$is_src_internal=if(principal.ip in cidr %internal_cidr_list , \"true\", \"false\")\r\n$is_dest_internal=if(target.ip in cidr %internal_cidr_list , \"true\", \"false\")\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour, $is_src_internal, $is_dest_internal\r\noutcome:\r\n    $directional=array_distinct(if($is_src_internal=\"true\" AND $is_dest_internal=\"false\", \"sent\", \r\n             if($is_src_internal=\"false\" AND $is_dest_internal=\"true\",\"received\", \r\n             if($is_src_internal=\"true\" AND $is_dest_internal=\"true\", \"internal\", \"unknown\"\r\n              ))))\r\n    $event_ratio = (count(metadata.id) / count_distinct(metadata.id))\r\n    $file_size_sum=sum(about.file.size)\r\n    $actual_file_size = $file_size_sum / $event_ratio\r\norder:\r\n    $date_hour asc",
+                    "name": "19a99a36-1950-4e5e-8d4d-8719b4744261",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\nprincipal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\" AND target.ip!=\"255.255.255.255\" AND target.ip!=\"0.0.0.0\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\"\r\n$is_src_internal=if(principal.ip in cidr %internal_cidr_list , \"true\", \"false\")\r\n$is_dest_internal=if(target.ip in cidr %internal_cidr_list , \"true\", \"false\")\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour, $is_src_internal, $is_dest_internal\r\noutcome:\r\n    $directional=array_distinct(if($is_src_internal=\"true\" AND $is_dest_internal=\"false\", \"sent\", \r\n             if($is_src_internal=\"false\" AND $is_dest_internal=\"true\",\"received\", \r\n             if($is_src_internal=\"true\" AND $is_dest_internal=\"true\", \"internal\", \"unknown\"\r\n              ))))\r\n    $event_ratio = (count(metadata.id) / count_distinct(metadata.id))\r\n    $file_size_sum=sum(about.file.size)\r\n    $actual_file_size = $file_size_sum / $event_ratio\r\norder:\r\n    $date_hour asc",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "663fcbc5a24b8e2eab7b971be14e5952d344d90ef8bbbc866e4f450a9e920194"
+                    "etag": "ce4bd32e01f340524156bb2191305fc04dc756c351d6cf55444c97d1e2afb803"
                 },
                 {
-                    "name": "1eb853a6-f581-4431-b4a1-4f435f35ff12",
+                    "name": "b799c71f-460a-43ab-ad87-f12f4305852c",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\n$mime_type=about.file.mime_type\r\n$mime_type=\"application/x-dosexec\"\r\n$file_name=about.file.names\r\n$file_name!=/.*exe.*/\r\nmatch:\r\n    $mime_type, $file_name\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    15",
                     "input": {
                         "relativeTime": {
@@ -632,51 +746,51 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "e08f667d0612e154683bb946e343dc9af6f9dd6491ec281b64ebcac6470b0dab"
+                    "etag": "b7c40f7b83ecadd102dd18bb760a26bc67f4a15f3ef7ef4e50937417e170dbb7"
                 },
                 {
-                    "name": "d715f960-395e-4e47-9c3d-b1e6dd078bdb",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$is_broadcast!=\"true\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\" \r\nmatch:\r\n    target.ip\r\noutcome:\r\n    $dest_bytes= (cast.as_float(strings.concat(sum(about.file.size), \"\")) * count_distinct(metadata.id)) / count(metadata.id)\r\norder:\r\n    $dest_bytes desc \r\nlimit:\r\n    10",
+                    "name": "06f87bfb-ee98-452c-b820-478b2b3f65a4",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\nprincipal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\" AND target.ip!=\"255.255.255.255\" AND target.ip!=\"0.0.0.0\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\" \r\nmatch:\r\n    target.ip\r\noutcome:\r\n    $dest_bytes= (cast.as_float(strings.concat(sum(about.file.size), \"\")) * count_distinct(metadata.id)) / count(metadata.id)\r\norder:\r\n    $dest_bytes desc \r\nlimit:\r\n    10",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "6079e1b28982485bdf95ccadde985b932926c9ca8f72624af314ede3592d55ea"
+                    "etag": "ab337075e6e841363d9fc9b11b712b99649e9f1c96e1f6f77bb70b973ad68a75"
                 },
                 {
-                    "name": "bfaed226-1e11-402f-adc0-3aeec7919405",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$is_broadcast!=\"true\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\" \r\nmatch:\r\n    target.ip\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
+                    "name": "b5ec5d95-315c-4752-b020-1d05581249be",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\nprincipal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\" AND target.ip!=\"255.255.255.255\" AND target.ip!=\"0.0.0.0\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\" \r\nmatch:\r\n    target.ip\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "ebd2c54ea1fd537f9676ed44b063bd56c8d7d21026a823e1a72ef2b3fb8ac104"
+                    "etag": "6b4d82744095de8268816336bf6ecb6265272f0cb7ca93cd51ca9b58b852e697"
                 },
                 {
-                    "name": "b6cb07a6-faef-4028-aac2-2da02f342fbe",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$is_broadcast!=\"true\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\" \r\nmatch:\r\n    principal.ip\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
+                    "name": "bd92cf86-8d7c-4b96-8ad6-b0a5c5ebf9aa",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\nprincipal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\" AND target.ip!=\"255.255.255.255\" AND target.ip!=\"0.0.0.0\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\" \r\nmatch:\r\n    principal.ip\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "b6e8826113d125aff2a88753c38ef71771a09b42087e71e4e0070d1e933abfef"
+                    "etag": "dfc0337b2d4a94533556eccd324259748f1b0ce202aeccbe3d50f271fde1939e"
                 },
                 {
-                    "name": "daf168cd-43bc-4f55-8dce-32ee6fac6322",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$is_broadcast!=\"true\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\" OR $mime_type!=\"application/pkix-cert\"\r\n$app=about.labels[\"source\"]\r\nmatch:\r\n    $app\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
+                    "name": "f34f88f3-dad6-43ce-a1c6-5d7576bdd140",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"files\" \r\nprincipal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\" AND target.ip!=\"255.255.255.255\" AND target.ip!=\"0.0.0.0\"\r\n$mime_type=about.file.mime_type\r\n$mime_type!=\"\" OR $mime_type!=\"application/pkix-cert\"\r\n$app=about.labels[\"source\"]\r\nmatch:\r\n    $app\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "829fe0d9297b896a6fe386ae664e60c9b6a2c04acd2419b6b51448d2f5f473d7"
+                    "etag": "3dcede70bfcd8427b0e83f4419a45dcd4040d26d942f7390a3d13a3e616d85b4"
                 }
             ]
         }

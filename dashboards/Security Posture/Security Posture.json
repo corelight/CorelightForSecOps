@@ -2,7 +2,7 @@
     "dashboards": [
         {
             "dashboard": {
-                "name": "a680ab9e-a503-471d-929e-d8efbcc54652",
+                "name": "63c89b07-ec71-44aa-80a1-2be13f791603",
                 "displayName": "Corelight → Security Posture",
                 "definition": {
                     "filters": [
@@ -20,42 +20,42 @@
                             ],
                             "displayName": "Global Time Filter",
                             "chartIds": [
-                                "b9c1f8a7-e472-4387-aa51-3e8993f8e218",
-                                "2bc3a325-e841-4d6b-9cfd-9eee6b285222",
-                                "51b4f1c6-a999-43fb-a8a2-9354b1c190e0",
-                                "db549487-9d66-400f-aa50-41b4cfbc5e03",
-                                "03e947ce-86ec-4b49-b16d-86645fa05980",
-                                "df5eca2d-f782-41e2-8f6c-790f7dae28ed",
-                                "f37440ab-7c69-45ef-b57a-a6bb1e702659",
-                                "882e57c0-0ee0-4ae3-98a9-2ef396ec4391",
-                                "c8bb14fc-9264-4c64-a62d-6f9bc412d26a",
-                                "c099f20f-1b29-4d7b-807f-f58cee750c9d",
-                                "8f597aeb-3223-4e1b-a7af-8367f744aa88",
-                                "8b009067-34a9-4646-ad43-3621c15cf09a",
-                                "c4d6236a-76f3-4326-a7fa-4b3bb7a245bb",
-                                "faccfb8a-67e2-459c-a418-8e476b46d84b",
-                                "40505ca5-bdbb-4ea1-bcc6-a592d2655f1f",
-                                "64dfe17e-049f-49a6-bcdf-545ca3818629",
-                                "a96a49f9-a87d-4ed0-b5a3-c1ff86851aaa",
-                                "648158d1-cc83-435b-bd75-d637ecbe640a",
-                                "40dc9b6c-4383-45e9-b0ac-b72dc933b710",
-                                "b910d05d-289f-4cc0-94df-d976666cbde3",
-                                "9fd29f39-6465-4d76-a30e-029bc7457d9a",
-                                "3b999ba0-9e0b-4fa7-a99e-0cef17405724",
-                                "793b34b6-011f-4591-8fdc-551a00d884bb",
-                                "64b59882-6b0b-4694-9260-278d4b1a5262",
-                                "09e7c473-c43b-4e6d-b51d-0fe27c09458c",
-                                "bedd0f55-8c22-43e8-bb69-592779dcba33",
-                                "ea49f8d2-300c-4b68-bae3-76e0f1da2372",
-                                "8932a0eb-b7a8-432f-b706-88f07e577486",
-                                "c44787fb-d56f-4b9d-91ea-c0845d420349",
-                                "d0fa705d-bc2a-4cb4-ba9d-879fa6eda9d4",
-                                "07dbedd7-fce7-4350-a5d8-44e8543983c2",
-                                "3d3061a4-5d71-4ca6-a4ac-64584af5869b",
-                                "3ca4c864-e757-4427-a6a9-74f1cb6a2282",
-                                "65dbfbab-184f-46b9-833e-b16c132f53a6",
-                                "f16e71d4-4d75-4073-8837-4b9641a5af46",
-                                "a6896a24-533f-4c7d-a9e8-8d4c61e40897"
+                                "8332c849-c3b2-4368-bc40-1d0ae28e0344",
+                                "f8368e66-ee75-4bd3-a24c-e228603f78e4",
+                                "7cf89a1f-b085-4264-a568-9c961d06dc25",
+                                "e03f32ac-535e-416f-88fe-355755964f20",
+                                "f97866fb-0848-4589-87a4-a3b596a307b1",
+                                "0bd0c826-2cda-422f-a505-8ac6634c9576",
+                                "ff853a13-305c-43d8-8903-765c5c72e384",
+                                "4e644063-a8f6-4360-92a1-dcc49190011d",
+                                "5bd10bcc-e066-4d8f-b498-018ae81031c9",
+                                "d33d8db5-c0a5-4456-a74d-cd64dc8c3e90",
+                                "6fcea0b2-828c-4eae-aecc-61295bec3634",
+                                "a232c209-bf7b-4182-9c00-222b5821355e",
+                                "37aa89e0-6e28-4f64-9ba5-ba5f74730ebc",
+                                "bdb2e4d4-f476-440b-a1f4-8e6b548e6468",
+                                "0524da24-5741-4240-a0f9-ef099c3ac299",
+                                "d4c509c1-8e0a-4da2-9050-9db76248f2ae",
+                                "02be61d5-03d7-4248-a009-72fa9eb245f4",
+                                "ee042be8-50d3-4816-b40d-6799f06059b0",
+                                "a80cffe8-1921-42b7-be4d-13f95b129363",
+                                "926acd15-1ecb-403a-bbac-c4306103771b",
+                                "d4fbc846-273e-4a87-b9cf-862ca171446b",
+                                "e0eed114-36c7-46c5-8e57-c7d23ebd015e",
+                                "281a200b-6810-469e-a18a-5a63b68b1dc8",
+                                "2bd8bf73-50d0-41be-8725-f69ae1d3a6fe",
+                                "77b08f17-755b-45a9-b75b-7d77b8d18133",
+                                "d8db0de3-00e7-4bc7-94cd-e53046d33e33",
+                                "72db0ce3-b934-4d75-a4a2-d578ee24f9e1",
+                                "cef7bdea-753b-4036-86a4-ec542a13816e",
+                                "c039611b-25f1-4272-9141-00f0b7a3204b",
+                                "252a3a4b-f2b6-4eac-b672-3acbb8ee6923",
+                                "5c0dbbe6-8b58-451e-a991-1c0614d5c230",
+                                "a1762cd4-00b1-484a-82cc-badf04003a09",
+                                "495f956c-719b-470e-9390-c094be2fcdd0",
+                                "8b883541-e68c-4f3b-bd84-684790bc0619",
+                                "6ba7eb13-3fc9-405e-bd81-d0885f0c94bb",
+                                "db880a51-1dd3-4997-b9db-146d92d3f524"
                             ],
                             "isStandardTimeRangeFilter": true,
                             "isStandardTimeRangeFilterEnabled": true
@@ -74,48 +74,48 @@
                             ],
                             "displayName": "Corelight Sensor",
                             "chartIds": [
-                                "b9c1f8a7-e472-4387-aa51-3e8993f8e218",
-                                "2bc3a325-e841-4d6b-9cfd-9eee6b285222",
-                                "51b4f1c6-a999-43fb-a8a2-9354b1c190e0",
-                                "03e947ce-86ec-4b49-b16d-86645fa05980",
-                                "db549487-9d66-400f-aa50-41b4cfbc5e03",
-                                "df5eca2d-f782-41e2-8f6c-790f7dae28ed",
-                                "f37440ab-7c69-45ef-b57a-a6bb1e702659",
-                                "882e57c0-0ee0-4ae3-98a9-2ef396ec4391",
-                                "c8bb14fc-9264-4c64-a62d-6f9bc412d26a",
-                                "c099f20f-1b29-4d7b-807f-f58cee750c9d",
-                                "8f597aeb-3223-4e1b-a7af-8367f744aa88",
-                                "8b009067-34a9-4646-ad43-3621c15cf09a",
-                                "c4d6236a-76f3-4326-a7fa-4b3bb7a245bb",
-                                "faccfb8a-67e2-459c-a418-8e476b46d84b",
-                                "64dfe17e-049f-49a6-bcdf-545ca3818629",
-                                "40505ca5-bdbb-4ea1-bcc6-a592d2655f1f",
-                                "a96a49f9-a87d-4ed0-b5a3-c1ff86851aaa",
-                                "648158d1-cc83-435b-bd75-d637ecbe640a",
-                                "40dc9b6c-4383-45e9-b0ac-b72dc933b710",
-                                "b910d05d-289f-4cc0-94df-d976666cbde3",
-                                "9fd29f39-6465-4d76-a30e-029bc7457d9a",
-                                "3b999ba0-9e0b-4fa7-a99e-0cef17405724",
-                                "793b34b6-011f-4591-8fdc-551a00d884bb",
-                                "64b59882-6b0b-4694-9260-278d4b1a5262",
-                                "09e7c473-c43b-4e6d-b51d-0fe27c09458c",
-                                "bedd0f55-8c22-43e8-bb69-592779dcba33",
-                                "ea49f8d2-300c-4b68-bae3-76e0f1da2372",
-                                "8932a0eb-b7a8-432f-b706-88f07e577486",
-                                "c44787fb-d56f-4b9d-91ea-c0845d420349",
-                                "d0fa705d-bc2a-4cb4-ba9d-879fa6eda9d4",
-                                "07dbedd7-fce7-4350-a5d8-44e8543983c2",
-                                "3ca4c864-e757-4427-a6a9-74f1cb6a2282",
-                                "3d3061a4-5d71-4ca6-a4ac-64584af5869b",
-                                "65dbfbab-184f-46b9-833e-b16c132f53a6",
-                                "f16e71d4-4d75-4073-8837-4b9641a5af46",
-                                "a6896a24-533f-4c7d-a9e8-8d4c61e40897"
+                                "8332c849-c3b2-4368-bc40-1d0ae28e0344",
+                                "f8368e66-ee75-4bd3-a24c-e228603f78e4",
+                                "7cf89a1f-b085-4264-a568-9c961d06dc25",
+                                "f97866fb-0848-4589-87a4-a3b596a307b1",
+                                "e03f32ac-535e-416f-88fe-355755964f20",
+                                "0bd0c826-2cda-422f-a505-8ac6634c9576",
+                                "ff853a13-305c-43d8-8903-765c5c72e384",
+                                "4e644063-a8f6-4360-92a1-dcc49190011d",
+                                "5bd10bcc-e066-4d8f-b498-018ae81031c9",
+                                "d33d8db5-c0a5-4456-a74d-cd64dc8c3e90",
+                                "6fcea0b2-828c-4eae-aecc-61295bec3634",
+                                "a232c209-bf7b-4182-9c00-222b5821355e",
+                                "37aa89e0-6e28-4f64-9ba5-ba5f74730ebc",
+                                "bdb2e4d4-f476-440b-a1f4-8e6b548e6468",
+                                "d4c509c1-8e0a-4da2-9050-9db76248f2ae",
+                                "0524da24-5741-4240-a0f9-ef099c3ac299",
+                                "02be61d5-03d7-4248-a009-72fa9eb245f4",
+                                "ee042be8-50d3-4816-b40d-6799f06059b0",
+                                "a80cffe8-1921-42b7-be4d-13f95b129363",
+                                "926acd15-1ecb-403a-bbac-c4306103771b",
+                                "d4fbc846-273e-4a87-b9cf-862ca171446b",
+                                "e0eed114-36c7-46c5-8e57-c7d23ebd015e",
+                                "281a200b-6810-469e-a18a-5a63b68b1dc8",
+                                "2bd8bf73-50d0-41be-8725-f69ae1d3a6fe",
+                                "77b08f17-755b-45a9-b75b-7d77b8d18133",
+                                "d8db0de3-00e7-4bc7-94cd-e53046d33e33",
+                                "72db0ce3-b934-4d75-a4a2-d578ee24f9e1",
+                                "cef7bdea-753b-4036-86a4-ec542a13816e",
+                                "c039611b-25f1-4272-9141-00f0b7a3204b",
+                                "252a3a4b-f2b6-4eac-b672-3acbb8ee6923",
+                                "5c0dbbe6-8b58-451e-a991-1c0614d5c230",
+                                "495f956c-719b-470e-9390-c094be2fcdd0",
+                                "a1762cd4-00b1-484a-82cc-badf04003a09",
+                                "8b883541-e68c-4f3b-bd84-684790bc0619",
+                                "6ba7eb13-3fc9-405e-bd81-d0885f0c94bb",
+                                "db880a51-1dd3-4997-b9db-146d92d3f524"
                             ]
                         }
                     ],
                     "charts": [
                         {
-                            "dashboardChart": "03e947ce-86ec-4b49-b16d-86645fa05980",
+                            "dashboardChart": "f97866fb-0848-4589-87a4-a3b596a307b1",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 24,
@@ -128,7 +128,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "3b999ba0-9e0b-4fa7-a99e-0cef17405724",
+                            "dashboardChart": "e0eed114-36c7-46c5-8e57-c7d23ebd015e",
                             "chartLayout": {
                                 "startX": 24,
                                 "spanX": 24,
@@ -141,7 +141,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "51b4f1c6-a999-43fb-a8a2-9354b1c190e0",
+                            "dashboardChart": "7cf89a1f-b085-4264-a568-9c961d06dc25",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 24,
@@ -154,7 +154,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "65dbfbab-184f-46b9-833e-b16c132f53a6",
+                            "dashboardChart": "8b883541-e68c-4f3b-bd84-684790bc0619",
                             "chartLayout": {
                                 "startX": 72,
                                 "spanX": 24,
@@ -167,7 +167,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "c44787fb-d56f-4b9d-91ea-c0845d420349",
+                            "dashboardChart": "c039611b-25f1-4272-9141-00f0b7a3204b",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -180,7 +180,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "2bc3a325-e841-4d6b-9cfd-9eee6b285222",
+                            "dashboardChart": "f8368e66-ee75-4bd3-a24c-e228603f78e4",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 19,
@@ -193,7 +193,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "8f597aeb-3223-4e1b-a7af-8367f744aa88",
+                            "dashboardChart": "6fcea0b2-828c-4eae-aecc-61295bec3634",
                             "chartLayout": {
                                 "startX": 57,
                                 "spanX": 19,
@@ -206,7 +206,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "9fd29f39-6465-4d76-a30e-029bc7457d9a",
+                            "dashboardChart": "d4fbc846-273e-4a87-b9cf-862ca171446b",
                             "chartLayout": {
                                 "startX": 38,
                                 "spanX": 19,
@@ -219,7 +219,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "c4d6236a-76f3-4326-a7fa-4b3bb7a245bb",
+                            "dashboardChart": "37aa89e0-6e28-4f64-9ba5-ba5f74730ebc",
                             "chartLayout": {
                                 "startX": 76,
                                 "spanX": 20,
@@ -232,7 +232,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "648158d1-cc83-435b-bd75-d637ecbe640a",
+                            "dashboardChart": "ee042be8-50d3-4816-b40d-6799f06059b0",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -245,7 +245,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "b910d05d-289f-4cc0-94df-d976666cbde3",
+                            "dashboardChart": "926acd15-1ecb-403a-bbac-c4306103771b",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 24,
@@ -258,7 +258,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "882e57c0-0ee0-4ae3-98a9-2ef396ec4391",
+                            "dashboardChart": "4e644063-a8f6-4360-92a1-dcc49190011d",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -271,7 +271,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "a96a49f9-a87d-4ed0-b5a3-c1ff86851aaa",
+                            "dashboardChart": "02be61d5-03d7-4248-a009-72fa9eb245f4",
                             "chartLayout": {
                                 "startX": 24,
                                 "spanX": 24,
@@ -284,7 +284,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "db549487-9d66-400f-aa50-41b4cfbc5e03",
+                            "dashboardChart": "e03f32ac-535e-416f-88fe-355755964f20",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 24,
@@ -297,7 +297,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "bedd0f55-8c22-43e8-bb69-592779dcba33",
+                            "dashboardChart": "d8db0de3-00e7-4bc7-94cd-e53046d33e33",
                             "chartLayout": {
                                 "startX": 72,
                                 "spanX": 24,
@@ -310,7 +310,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "df5eca2d-f782-41e2-8f6c-790f7dae28ed",
+                            "dashboardChart": "0bd0c826-2cda-422f-a505-8ac6634c9576",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 33,
@@ -323,7 +323,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "64b59882-6b0b-4694-9260-278d4b1a5262",
+                            "dashboardChart": "2bd8bf73-50d0-41be-8725-f69ae1d3a6fe",
                             "chartLayout": {
                                 "startX": 33,
                                 "spanX": 32,
@@ -336,7 +336,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "ea49f8d2-300c-4b68-bae3-76e0f1da2372",
+                            "dashboardChart": "72db0ce3-b934-4d75-a4a2-d578ee24f9e1",
                             "chartLayout": {
                                 "startX": 65,
                                 "spanX": 31,
@@ -349,7 +349,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "07dbedd7-fce7-4350-a5d8-44e8543983c2",
+                            "dashboardChart": "5c0dbbe6-8b58-451e-a991-1c0614d5c230",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -362,7 +362,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "f37440ab-7c69-45ef-b57a-a6bb1e702659",
+                            "dashboardChart": "ff853a13-305c-43d8-8903-765c5c72e384",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -375,7 +375,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "c099f20f-1b29-4d7b-807f-f58cee750c9d",
+                            "dashboardChart": "d33d8db5-c0a5-4456-a74d-cd64dc8c3e90",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -388,7 +388,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "faccfb8a-67e2-459c-a418-8e476b46d84b",
+                            "dashboardChart": "bdb2e4d4-f476-440b-a1f4-8e6b548e6468",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 24,
@@ -401,7 +401,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "3ca4c864-e757-4427-a6a9-74f1cb6a2282",
+                            "dashboardChart": "495f956c-719b-470e-9390-c094be2fcdd0",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 24,
@@ -414,7 +414,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "c8bb14fc-9264-4c64-a62d-6f9bc412d26a",
+                            "dashboardChart": "5bd10bcc-e066-4d8f-b498-018ae81031c9",
                             "chartLayout": {
                                 "startX": 72,
                                 "spanX": 24,
@@ -427,7 +427,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "793b34b6-011f-4591-8fdc-551a00d884bb",
+                            "dashboardChart": "281a200b-6810-469e-a18a-5a63b68b1dc8",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -440,7 +440,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "40505ca5-bdbb-4ea1-bcc6-a592d2655f1f",
+                            "dashboardChart": "0524da24-5741-4240-a0f9-ef099c3ac299",
                             "chartLayout": {
                                 "startX": 72,
                                 "spanX": 24,
@@ -453,7 +453,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "3d3061a4-5d71-4ca6-a4ac-64584af5869b",
+                            "dashboardChart": "a1762cd4-00b1-484a-82cc-badf04003a09",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 69,
@@ -466,7 +466,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "a6896a24-533f-4c7d-a9e8-8d4c61e40897",
+                            "dashboardChart": "db880a51-1dd3-4997-b9db-146d92d3f524",
                             "chartLayout": {
                                 "startX": 69,
                                 "spanX": 27,
@@ -479,7 +479,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "8932a0eb-b7a8-432f-b706-88f07e577486",
+                            "dashboardChart": "cef7bdea-753b-4036-86a4-ec542a13816e",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -492,7 +492,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "b9c1f8a7-e472-4387-aa51-3e8993f8e218",
+                            "dashboardChart": "8332c849-c3b2-4368-bc40-1d0ae28e0344",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -505,7 +505,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "64dfe17e-049f-49a6-bcdf-545ca3818629",
+                            "dashboardChart": "d4c509c1-8e0a-4da2-9050-9db76248f2ae",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -518,7 +518,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "d0fa705d-bc2a-4cb4-ba9d-879fa6eda9d4",
+                            "dashboardChart": "252a3a4b-f2b6-4eac-b672-3acbb8ee6923",
                             "chartLayout": {
                                 "startX": 19,
                                 "spanX": 19,
@@ -531,7 +531,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "09e7c473-c43b-4e6d-b51d-0fe27c09458c",
+                            "dashboardChart": "77b08f17-755b-45a9-b75b-7d77b8d18133",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 24,
@@ -544,7 +544,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "40dc9b6c-4383-45e9-b0ac-b72dc933b710",
+                            "dashboardChart": "a80cffe8-1921-42b7-be4d-13f95b129363",
                             "chartLayout": {
                                 "startX": 24,
                                 "spanX": 24,
@@ -557,7 +557,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "8b009067-34a9-4646-ad43-3621c15cf09a",
+                            "dashboardChart": "a232c209-bf7b-4182-9c00-222b5821355e",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 24,
@@ -570,7 +570,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "f16e71d4-4d75-4073-8837-4b9641a5af46",
+                            "dashboardChart": "6ba7eb13-3fc9-405e-bd81-d0885f0c94bb",
                             "chartLayout": {
                                 "startX": 24,
                                 "spanX": 24,
@@ -585,16 +585,16 @@
                     ]
                 },
                 "type": "CUSTOM",
-                "etag": "3b95b12926b90b39d357fe44d560360280f9b02d0ad8d418383786a3c4273fdb",
+                "etag": "1f239bd423a2bad628845f39ddc42397cd15b196d26843659dd9f138321c24cf",
                 "access": "DASHBOARD_PRIVATE"
             },
             "dashboardCharts": [
                 {
-                    "name": "3b999ba0-9e0b-4fa7-a99e-0cef17405724",
+                    "name": "e0eed114-36c7-46c5-8e57-c7d23ebd015e",
                     "displayName": "Unique Source IPs",
                     "description": "Unique Source IPs",
                     "chartDatasource": {
-                        "dashboardQuery": "c0d12d77-8c3c-4051-8fb9-9c2d89228e6e",
+                        "dashboardQuery": "1133d158-0843-4438-a4af-2649262dd6aa",
                         "dataSources": [
                             "UDM"
                         ]
@@ -630,14 +630,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "5f6d48ef9c2e6576ae7848f7f6e972d96374099d886ab217a44b80e211f1f3d5"
+                    "etag": "2921a3adad41e52373d5c466b50462036a3fc6c9daad823a62940be2c4d99a38"
                 },
                 {
-                    "name": "03e947ce-86ec-4b49-b16d-86645fa05980",
+                    "name": "f97866fb-0848-4589-87a4-a3b596a307b1",
                     "displayName": " Suricata Alerts",
                     "description": "All Suricata Alerts",
                     "chartDatasource": {
-                        "dashboardQuery": "21021c87-2589-4cd7-93bd-e8049f0638be",
+                        "dashboardQuery": "20fd36ed-72d0-4fbf-ac06-f3dced3d5bfa",
                         "dataSources": [
                             "UDM"
                         ]
@@ -673,14 +673,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "5c0813b8983d03da195614debdef21f9a1721d06617ab6be091b627a4faf3f61"
+                    "etag": "9687c2355ad96d11f3b560d63b4d8db4c37284e966dfeb8cc289cbc550c8fce1"
                 },
                 {
-                    "name": "faccfb8a-67e2-459c-a418-8e476b46d84b",
+                    "name": "bdb2e4d4-f476-440b-a1f4-8e6b548e6468",
                     "displayName": "Unencrypted Connections",
                     "description": "Unencrypted Connections",
                     "chartDatasource": {
-                        "dashboardQuery": "8a0d36e4-d817-4a9c-8c34-2f41116e035d",
+                        "dashboardQuery": "d22e092e-1faa-419d-89f1-609194a9ea5c",
                         "dataSources": [
                             "UDM"
                         ]
@@ -716,15 +716,15 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "71e1d428edf0146118acf2520e197dc5c0e70123fb1899127102b2ee12dc84e2",
+                    "etag": "6e828ae48b67d3dbba4d411f1a83ff6c71f8c39578325e400c7144f6395cecd6",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "40dc9b6c-4383-45e9-b0ac-b72dc933b710",
+                    "name": "a80cffe8-1921-42b7-be4d-13f95b129363",
                     "displayName": "Unusual Qtypes",
                     "description": "Unusual Qtypes",
                     "chartDatasource": {
-                        "dashboardQuery": "4e73a301-7875-4984-bd9a-5c147e43f10c",
+                        "dashboardQuery": "62ed17c8-6345-4f20-8157-8bc6c9eaa4c8",
                         "dataSources": [
                             "UDM"
                         ]
@@ -760,14 +760,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "c0415d58bd9f7579f05cbc5a271f0ee571a8abb4f583c2b17477cf8d974614f7"
+                    "etag": "0d3cd6dce7b68371ca23f98cf29671ad6948e6a36cb88e483be93069608c6e50"
                 },
                 {
-                    "name": "ea49f8d2-300c-4b68-bae3-76e0f1da2372",
+                    "name": "72db0ce3-b934-4d75-a4a2-d578ee24f9e1",
                     "displayName": "Expiring Certs.",
                     "description": "Expiring Certs.",
                     "chartDatasource": {
-                        "dashboardQuery": "954c3b96-2575-41e5-80c0-b1aa61e2089c",
+                        "dashboardQuery": "eed864f3-3baf-4629-8366-876a88ac9169",
                         "dataSources": [
                             "UDM"
                         ]
@@ -803,15 +803,15 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "dcf374fa2215bf2791c56b9686e5bd9c839429d30c1ca0a15edb25989d90233e",
+                    "etag": "1722d749571fee80e9cb8e90dcd57dbc48f52b061702fc45c59860c3f9976e5e",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "64b59882-6b0b-4694-9260-278d4b1a5262",
+                    "name": "2bd8bf73-50d0-41be-8725-f69ae1d3a6fe",
                     "displayName": "Certs w/ Low Keys",
                     "description": "Certs w/ Low Keys",
                     "chartDatasource": {
-                        "dashboardQuery": "15d4a6fe-557e-4616-81a7-84abc71d5d32",
+                        "dashboardQuery": "8716c912-f0bc-48b3-bf9b-4b908d2e0dda",
                         "dataSources": [
                             "UDM"
                         ]
@@ -847,15 +847,15 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "e948a37bd4bf15aff2d81690306ae558a4eb3485e897193d6a6491f0d64eb543",
+                    "etag": "316ce1ca7cf5ee3ba9a620cc81f36e6a6e018320c7875d6b77d0b3ef6105315e",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "c8bb14fc-9264-4c64-a62d-6f9bc412d26a",
+                    "name": "5bd10bcc-e066-4d8f-b498-018ae81031c9",
                     "displayName": "FTP Sessions",
                     "description": "FTP Sessions",
                     "chartDatasource": {
-                        "dashboardQuery": "8d96b21d-6480-4e60-b35c-f768c64b4c8c",
+                        "dashboardQuery": "24bb0a2f-3170-4775-83e5-992d245b7013",
                         "dataSources": [
                             "UDM"
                         ]
@@ -891,15 +891,15 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "539567bee3cb03374c8c26c633a611986a1d244fb2589e292e4e9468490da935",
+                    "etag": "bab1d7b6d62eeda9ca3f1fcb2ef220272fae9b43d7da37a9271d3270d063afdd",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "bedd0f55-8c22-43e8-bb69-592779dcba33",
+                    "name": "d8db0de3-00e7-4bc7-94cd-e53046d33e33",
                     "displayName": "Avg Alerts Per Source IP",
                     "description": "Avg Alerts Per Source IP",
                     "chartDatasource": {
-                        "dashboardQuery": "6e3d14c0-cf2a-4fe2-9e69-2ee89cbf3ad8",
+                        "dashboardQuery": "43b5e72c-a8ca-44a5-9f6e-eaf53d2ffc66",
                         "dataSources": [
                             "UDM"
                         ]
@@ -935,13 +935,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "dddb9d91bdbdc2dd8dcf3cd78708419c61536b77a09fee92d9e07557e4579069"
+                    "etag": "0b53bad4e12fb3535008eb5c7b6184e32139b3e610ca814aab80424ffbf7872b"
                 },
                 {
-                    "name": "3d3061a4-5d71-4ca6-a4ac-64584af5869b",
+                    "name": "a1762cd4-00b1-484a-82cc-badf04003a09",
                     "displayName": "Geolocation of DNS Responses",
                     "chartDatasource": {
-                        "dashboardQuery": "5a66e4a1-20d4-4221-9c27-32a8e00b11a4",
+                        "dashboardQuery": "3a74631c-cbdf-4431-be6b-d1650ecc2808",
                         "dataSources": [
                             "UDM"
                         ]
@@ -974,13 +974,13 @@
                         }
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "9acd568b5305db1b5148a15699c7954d3facdf0c8c644b47f438b838380e6c08"
+                    "etag": "511e6b66802d63dcdf8c087e4d8686c44cac588bfd171f7a79af8c94a09bddeb"
                 },
                 {
-                    "name": "648158d1-cc83-435b-bd75-d637ecbe640a",
+                    "name": "ee042be8-50d3-4816-b40d-6799f06059b0",
                     "displayName": "Notices Over Time",
                     "chartDatasource": {
-                        "dashboardQuery": "0ddbbf51-408e-4c7d-978a-f57134c325e3",
+                        "dashboardQuery": "4b8ea778-f516-4afe-b5af-fc0d64ab92f6",
                         "dataSources": [
                             "UDM"
                         ]
@@ -1022,14 +1022,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "b0115b431ce5d4f66705ac17c1ac71fb497ff65617c300b3a8c854d6948da3d1"
+                    "etag": "1d95362a82949e430a207c1825b69e28acb1ae8ebe6d646253d491a58623bf57"
                 },
                 {
-                    "name": "8b009067-34a9-4646-ad43-3621c15cf09a",
+                    "name": "a232c209-bf7b-4182-9c00-222b5821355e",
                     "displayName": "NXDOMAIN Responses",
                     "description": "NXDOMAIN Responses",
                     "chartDatasource": {
-                        "dashboardQuery": "7c2fb619-f74a-4b9d-92a6-86db4ab6b2f3",
+                        "dashboardQuery": "ddc94ac8-5075-4246-b98e-18e2e5d0eb2d",
                         "dataSources": [
                             "UDM"
                         ]
@@ -1065,14 +1065,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "a9836cc9d80e7cb1e7349647d2ec69dfa113700e1a04a1859b9f789c30289b56"
+                    "etag": "2ede4301aab72899cc6bd9af52670e454fd3e1f1bb825edb58f44e194ef08abc"
                 },
                 {
-                    "name": "2bc3a325-e841-4d6b-9cfd-9eee6b285222",
+                    "name": "f8368e66-ee75-4bd3-a24c-e228603f78e4",
                     "displayName": " Notices",
                     "description": "Messages Excluding Intel",
                     "chartDatasource": {
-                        "dashboardQuery": "ab3d7cdc-b58c-4f72-9e91-fce95dc7e2d1",
+                        "dashboardQuery": "b14c7ad0-f389-4c11-9f7f-b35f456cc472",
                         "dataSources": [
                             "UDM"
                         ]
@@ -1108,14 +1108,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "fdb3c4f55649c1e79a1f0c9128ed00ddf49d8040890c64ab7a09c158273f4c61"
+                    "etag": "53760e1c7d6236fe90fdab5635553731556e7ed9d98d0007a8a796d42c533631"
                 },
                 {
-                    "name": "df5eca2d-f782-41e2-8f6c-790f7dae28ed",
+                    "name": "0bd0c826-2cda-422f-a505-8ac6634c9576",
                     "displayName": "Self Signed Certs",
                     "description": "Self Signed Certs",
                     "chartDatasource": {
-                        "dashboardQuery": "3c771f58-d86c-4a86-82d0-c3e62a6de189",
+                        "dashboardQuery": "639ef081-fcb2-4363-9304-d2ef37353414",
                         "dataSources": [
                             "UDM"
                         ]
@@ -1151,14 +1151,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "0d9b0e8a7ad696667e59ca37a8ac503047f69044e105f138f720c9b1c92094d0",
+                    "etag": "dcf5bf8bd0adab47cdb14146e5f544e7e4d6f7d95d2c5ff6f97f71c594b49f3f",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "a6896a24-533f-4c7d-a9e8-8d4c61e40897",
+                    "name": "db880a51-1dd3-4997-b9db-146d92d3f524",
                     "displayName": " ",
                     "chartDatasource": {
-                        "dashboardQuery": "f3b60823-6a86-45e1-86cd-2bd83550ff2d",
+                        "dashboardQuery": "7993ca98-d5b7-4863-ba12-0e4ba9d37f6f",
                         "dataSources": [
                             "UDM"
                         ]
@@ -1192,13 +1192,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "13fb0dc747bead9c8a04ac31c05afd94929b24c79a0041f1a0e902c7c35dd37f"
+                    "etag": "92915d8456714072ebabda21d0291a5da61a22f56b785eb1fe593e039b688655"
                 },
                 {
-                    "name": "f37440ab-7c69-45ef-b57a-a6bb1e702659",
+                    "name": "ff853a13-305c-43d8-8903-765c5c72e384",
                     "displayName": "Encrypted Traffic Over Time",
                     "chartDatasource": {
-                        "dashboardQuery": "678aba1b-8bc7-4e1e-b7cb-7a3e67742d18",
+                        "dashboardQuery": "1be9c5ca-5be0-4af6-b5d9-d87b0f599a41",
                         "dataSources": [
                             "UDM"
                         ]
@@ -1240,14 +1240,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "6944c90fbd7490a063d24f94d5da164469f7736d19253a0d88de4dec0e0e5761"
+                    "etag": "bcf27b59239d8dbb1f37b00a60501e409bbb5bf45a2c8344bdba469630161ead"
                 },
                 {
-                    "name": "b910d05d-289f-4cc0-94df-d976666cbde3",
+                    "name": "926acd15-1ecb-403a-bbac-c4306103771b",
                     "displayName": "Threat Intel",
                     "description": "Intel Indicators",
                     "chartDatasource": {
-                        "dashboardQuery": "5504a4a8-2242-4666-8a6b-71ba3cff8da4",
+                        "dashboardQuery": "b616624f-c53d-4866-8c4f-29899fcbf789",
                         "dataSources": [
                             "UDM"
                         ]
@@ -1283,13 +1283,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "298706e2bb1656d5146beaabbd78848c0b28cd4d21daf1abd71746a2a05aeb17"
+                    "etag": "e6df5372fc5bd12e118bb843ac62a8c4f8c3a5ab64f4ac6c98a6bbd66c64144e"
                 },
                 {
-                    "name": "882e57c0-0ee0-4ae3-98a9-2ef396ec4391",
+                    "name": "4e644063-a8f6-4360-92a1-dcc49190011d",
                     "displayName": "Intel Alerts Over Time",
                     "chartDatasource": {
-                        "dashboardQuery": "4e369b31-d85e-4b44-b7cf-ed95e52d84a4",
+                        "dashboardQuery": "3c38ffae-a63f-490b-9a6f-4802a916da65",
                         "dataSources": [
                             "UDM"
                         ]
@@ -1331,13 +1331,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "c1601489e3b80ca28d450d6b603c984bef32d7a9434d128c9e756a75bf683187"
+                    "etag": "f6090dd3fc87753043718a4629b25d2cedc62373ad53668a3dfc19e4698e87c1"
                 },
                 {
-                    "name": "c44787fb-d56f-4b9d-91ea-c0845d420349",
+                    "name": "c039611b-25f1-4272-9141-00f0b7a3204b",
                     "displayName": "Suricata Alerts Over Time",
                     "chartDatasource": {
-                        "dashboardQuery": "d9021760-8911-4f9f-89ac-d0e9e3134df3",
+                        "dashboardQuery": "986ea62f-5281-4719-9f84-a2e60cbdb778",
                         "dataSources": [
                             "UDM"
                         ]
@@ -1379,14 +1379,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "080aaff6607125a4ed13b7588bf5327680f3f24046c5ad15f8c7ce67b534b86e"
+                    "etag": "2ff88423f33f860197602dcf29dc57af4381148ca7c114c0ad87dfc88ed469b4"
                 },
                 {
-                    "name": "65dbfbab-184f-46b9-833e-b16c132f53a6",
+                    "name": "8b883541-e68c-4f3b-bd84-684790bc0619",
                     "displayName": "Unique Signatures",
                     "description": "Unique Signatures",
                     "chartDatasource": {
-                        "dashboardQuery": "f3928ccf-6d4c-4934-a62e-680389548846",
+                        "dashboardQuery": "043c1924-2a96-459b-8077-23a3d2e75452",
                         "dataSources": [
                             "UDM"
                         ]
@@ -1422,14 +1422,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "218ebce270b8463175a384d1410ffa4f4c584cd3c05a668d9daff18a363153ba"
+                    "etag": "d9838cca450c398a222fae3ed1e8b3fc53866af352a9f43c1662c3d6fc6e6d9d"
                 },
                 {
-                    "name": "a96a49f9-a87d-4ed0-b5a3-c1ff86851aaa",
+                    "name": "02be61d5-03d7-4248-a009-72fa9eb245f4",
                     "displayName": "Unique Indicators",
                     "description": "Unique Indicators",
                     "chartDatasource": {
-                        "dashboardQuery": "d9143131-735d-446b-a2c3-40384c092ad5",
+                        "dashboardQuery": "b69bf89b-cf03-4d29-a025-0bf92f9eb634",
                         "dataSources": [
                             "UDM"
                         ]
@@ -1465,13 +1465,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "4228a27c0f9d530164d66ef77de50fa86ad07d7c3457aecb63b1acce70f99349"
+                    "etag": "5648a35dcd8a3be57eff09e0e9a188fc0e8f9fd4cf07a2a3be5c75d09bf09a73"
                 },
                 {
-                    "name": "793b34b6-011f-4591-8fdc-551a00d884bb",
+                    "name": "281a200b-6810-469e-a18a-5a63b68b1dc8",
                     "displayName": "Top Unencrypted Protocols Used",
                     "chartDatasource": {
-                        "dashboardQuery": "14e08e64-fb7b-4a91-8395-bbc6fdf84bee",
+                        "dashboardQuery": "d99b0896-5888-4bef-9d8b-e7784d90d7d0",
                         "dataSources": [
                             "UDM"
                         ]
@@ -2371,13 +2371,13 @@
                         "groupingType": "Grouped"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "b42a4300506493b11dbf15b3d474a81f8527b6584316997d3bea845494e4f42f"
+                    "etag": "fd191c5e484fbfe4505b9dde2ef8a873075a364b5005f8bc5ad7bacae3dae07f"
                 },
                 {
-                    "name": "8932a0eb-b7a8-432f-b706-88f07e577486",
+                    "name": "cef7bdea-753b-4036-86a4-ec542a13816e",
                     "displayName": "Top VPN Destinations by Country",
                     "chartDatasource": {
-                        "dashboardQuery": "777346ba-f77c-4cef-870b-92f80499f4ea",
+                        "dashboardQuery": "58154165-78cd-4dae-b213-9e13b5329f40",
                         "dataSources": [
                             "UDM"
                         ]
@@ -2385,7 +2385,7 @@
                     "visualization": {
                         "series": [
                             {
-                                "seriesName": "Unspecified",
+                                "seriesName": "none",
                                 "seriesType": "BAR",
                                 "encode": {
                                     "x": "country",
@@ -2395,7 +2395,7 @@
                                 "itemStyle": {
                                     "color": "#1a73e8"
                                 },
-                                "seriesUniqueValue": "undefined"
+                                "seriesUniqueValue": "none"
                             }
                         ],
                         "xAxes": [
@@ -2418,14 +2418,15 @@
                         "groupingType": "Grouped"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "26e448c5516cc545159bd3933d514eb7e9f48b4cf2953a2ad690f077bfe34982"
+                    "etag": "3939c3f5f7ae67459a1312a7a1a9a3e379730cee9cd5dfa6c6657dcc9dda57c5",
+                    "drillDownConfig": {}
                 },
                 {
-                    "name": "3ca4c864-e757-4427-a6a9-74f1cb6a2282",
+                    "name": "495f956c-719b-470e-9390-c094be2fcdd0",
                     "displayName": "Telnet Sessions",
                     "description": "Telnet Sessions",
                     "chartDatasource": {
-                        "dashboardQuery": "ba50d4a0-c416-4763-86d2-3badaeaa03ca",
+                        "dashboardQuery": "9b60c9bd-6551-4c57-b7ad-d12704f51b84",
                         "dataSources": [
                             "UDM"
                         ]
@@ -2461,13 +2462,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "e3e31d1cffe2a0ddff4b4d6b6861887d8232d5f82788bf79e22f61be70945057"
+                    "etag": "b4669685da5563d41c3e1575a8a61a18f8ba83457dedeecaa5b576f9c365aa12"
                 },
                 {
-                    "name": "07dbedd7-fce7-4350-a5d8-44e8543983c2",
+                    "name": "5c0dbbe6-8b58-451e-a991-1c0614d5c230",
                     "displayName": "TLS Versions",
                     "chartDatasource": {
-                        "dashboardQuery": "08d4ab9e-5576-46ce-8572-a9f541a3f906",
+                        "dashboardQuery": "eceaa386-3ed3-48d7-aadd-b8036a7b1f9d",
                         "dataSources": [
                             "UDM"
                         ]
@@ -2506,14 +2507,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "997cddb28b0ecea14a5cbb9c5780fd8a0d3986cc37d864768351d807f73a7eb4"
+                    "etag": "52135ddc77a2f441099bbea8b9d9912969a1c45f6bb0688121a0f5ff00c96a05"
                 },
                 {
-                    "name": "c4d6236a-76f3-4326-a7fa-4b3bb7a245bb",
+                    "name": "37aa89e0-6e28-4f64-9ba5-ba5f74730ebc",
                     "displayName": "Unique Note Count",
                     "description": "Unique Note Count",
                     "chartDatasource": {
-                        "dashboardQuery": "146dfb93-1886-4f30-9ee1-ebf3e1b9d825",
+                        "dashboardQuery": "5627a1de-9eb5-4584-aa77-632453b012f3",
                         "dataSources": [
                             "UDM"
                         ]
@@ -2549,14 +2550,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "1f25e9f682f3922c7f0f99f4d6781fa44b10f409921527f2c615302aad2d7a47"
+                    "etag": "0f002b2ff26ddc1e0b64b58e1bd928a3d63a42618d7ad63797e5555bf44271ee"
                 },
                 {
-                    "name": "51b4f1c6-a999-43fb-a8a2-9354b1c190e0",
+                    "name": "7cf89a1f-b085-4264-a568-9c961d06dc25",
                     "displayName": "Unique Destination IPs",
                     "description": "Unique Destination IPs",
                     "chartDatasource": {
-                        "dashboardQuery": "31bb7a4a-8e6e-47c9-817a-6570268fce17",
+                        "dashboardQuery": "641baa8b-6b81-4a13-a184-e31eb9b4c3d8",
                         "dataSources": [
                             "UDM"
                         ]
@@ -2592,14 +2593,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "291d8f3e743169ac84ed5623385207255544d00dd516b27c6a96c0389974a330"
+                    "etag": "0261f1cef2d67dd18938c543ad4731701fd5cfdb3058179fd3eb6aece58184ab"
                 },
                 {
-                    "name": "09e7c473-c43b-4e6d-b51d-0fe27c09458c",
+                    "name": "77b08f17-755b-45a9-b75b-7d77b8d18133",
                     "displayName": "Failed DNS Queries",
                     "description": "Failed DNS Queries",
                     "chartDatasource": {
-                        "dashboardQuery": "399e87fc-f33e-4d12-ad28-7061bdc42554",
+                        "dashboardQuery": "d97add35-add2-468a-b751-d51503f38203",
                         "dataSources": [
                             "UDM"
                         ]
@@ -2635,14 +2636,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "338650beb8cbf2103e89310a28dd3ca088f893106f0240df6469786ed847cf5d"
+                    "etag": "039406e1202eac739a4a578d9431dfc6fbd62c8f766670fded35aa5c2b64105c"
                 },
                 {
-                    "name": "9fd29f39-6465-4d76-a30e-029bc7457d9a",
+                    "name": "d4fbc846-273e-4a87-b9cf-862ca171446b",
                     "displayName": "SSL Certs. Issues",
                     "description": "SSL Certs. Issues",
                     "chartDatasource": {
-                        "dashboardQuery": "3a408f40-ce5e-410e-9d91-ba43b280fdb9",
+                        "dashboardQuery": "deb83f58-2310-43f2-b30f-1d0dca4fc347",
                         "dataSources": [
                             "UDM"
                         ]
@@ -2678,14 +2679,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "0af2c645c2ac84ad2ec7d5dc5e20d4f54e62bd6828af3e5c2c82334061d4fdff"
+                    "etag": "a507ee789851fe9fda4a6b749772f5cf07660c1c6e0e4228e785106790c1483d"
                 },
                 {
-                    "name": "40505ca5-bdbb-4ea1-bcc6-a592d2655f1f",
+                    "name": "0524da24-5741-4240-a0f9-ef099c3ac299",
                     "displayName": "Internal DNS Servers",
                     "description": "Internal DNS Servers",
                     "chartDatasource": {
-                        "dashboardQuery": "837d3f9f-70db-43e1-a0cc-25f115b18033",
+                        "dashboardQuery": "317700ac-2169-4087-9ce5-acf2d935913f",
                         "dataSources": [
                             "UDM"
                         ]
@@ -2721,13 +2722,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "03241b5cc0f050dd12dfa0a11f2494d2f1ebb2737ac26db18105a5bbec94e5b1"
+                    "etag": "fe62d1b879b029f7391b74e67719aaec4d7652b6402e39bc17f3c7ff7595d944"
                 },
                 {
-                    "name": "64dfe17e-049f-49a6-bcdf-545ca3818629",
+                    "name": "d4c509c1-8e0a-4da2-9050-9db76248f2ae",
                     "displayName": "RDP Authentication Attempts",
                     "chartDatasource": {
-                        "dashboardQuery": "9e52fd59-0ce2-47e5-82c5-085ec45c193a",
+                        "dashboardQuery": "740623da-8a53-418c-a16b-946a51b04da3",
                         "dataSources": [
                             "UDM"
                         ]
@@ -2767,15 +2768,15 @@
                         "groupingType": "Grouped"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "12a3517141b3b82891bffd1b253f85af26c3a94fb822989d60e7260fec553147",
+                    "etag": "e4bf90efc584ee0e165c8182d91485240d3c5adef8e58162425cb6d19c1c1846",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "d0fa705d-bc2a-4cb4-ba9d-879fa6eda9d4",
+                    "name": "252a3a4b-f2b6-4eac-b672-3acbb8ee6923",
                     "displayName": "Attack Count",
                     "description": "Attack Count",
                     "chartDatasource": {
-                        "dashboardQuery": "c32fa2a5-b162-4a24-8e57-a5df0ebeda6f",
+                        "dashboardQuery": "ddba3f62-889c-435d-9a34-54e3e3d8b80e",
                         "dataSources": [
                             "UDM"
                         ]
@@ -2811,13 +2812,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "d2abe337d4bdf8a251f0d575a921bee10fa3345cf40d5058a8a47eb7f8f6bcd5"
+                    "etag": "485f32b32ea4a94f71865aad8366ebec689f182d5c97606f1166382898e73def"
                 },
                 {
-                    "name": "c099f20f-1b29-4d7b-807f-f58cee750c9d",
+                    "name": "d33d8db5-c0a5-4456-a74d-cd64dc8c3e90",
                     "displayName": "Internal TLS Versions Profile",
                     "chartDatasource": {
-                        "dashboardQuery": "b30c0a3b-0184-48dc-92bd-8f52cb59663f",
+                        "dashboardQuery": "3435b82a-e901-4146-be36-68e5cbfef05c",
                         "dataSources": [
                             "UDM"
                         ]
@@ -2854,14 +2855,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "30353a9fc83d7965009e699791066549f95c1b3c07528634a2dc41067518b1a6"
+                    "etag": "3884b1f97fdd3e46d2a4caa29de2eba423528f402905f7868bf37815c2f94bdb"
                 },
                 {
-                    "name": "f16e71d4-4d75-4073-8837-4b9641a5af46",
+                    "name": "6ba7eb13-3fc9-405e-bd81-d0885f0c94bb",
                     "displayName": " SMB v1 Connections",
                     "description": "SMB v1 Connections",
                     "chartDatasource": {
-                        "dashboardQuery": "d3bc892e-ffa6-47e7-99a2-fd44d87afe05",
+                        "dashboardQuery": "4c4cbe98-48bd-408c-8ee2-dc0c3d370837",
                         "dataSources": [
                             "UDM"
                         ]
@@ -2897,13 +2898,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "4e617dea9d6b97e9fb927f680ccc94528f0eba5ef94ca22fee02e8c773152a93"
+                    "etag": "31d7dfc0eeeb4a48ab4dd50624c2773b38bbfefc68e5436fc6b6b8d3de893cb8",
+                    "drillDownConfig": {}
                 },
                 {
-                    "name": "b9c1f8a7-e472-4387-aa51-3e8993f8e218",
+                    "name": "8332c849-c3b2-4368-bc40-1d0ae28e0344",
                     "displayName": "Outbound VPN Connections",
                     "chartDatasource": {
-                        "dashboardQuery": "b05c779f-b19f-46c7-9021-bf694daf4053",
+                        "dashboardQuery": "b4968e73-3cea-4fa7-a317-9f55355d491c",
                         "dataSources": [
                             "UDM"
                         ]
@@ -2946,14 +2948,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "f3229a072ca19f31bf2b49823e1b73922dfde9fd442c72af65e8e4665083cd10"
+                    "etag": "14f2ac7f2bea909ffb3f1f5a461d664f418c45446efbc495bd10f805d408a37c"
                 },
                 {
-                    "name": "db549487-9d66-400f-aa50-41b4cfbc5e03",
+                    "name": "e03f32ac-535e-416f-88fe-355755964f20",
                     "displayName": "Avg Alerts Per Indicator",
                     "description": "Avg Alerts Per Indicator",
                     "chartDatasource": {
-                        "dashboardQuery": "9f219418-bdb5-4109-91db-4135cec09b9a",
+                        "dashboardQuery": "7c7a11d2-5181-455c-9c95-59332b22049c",
                         "dataSources": [
                             "UDM"
                         ]
@@ -2989,14 +2991,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "da8b32dde33850a66c98168daf805fd3abe98ac2d0867d8f17812c038ba40401"
+                    "etag": "6c3aa1f39d687cceacc3a882a8f3046cf3ebeea0acacaa7d806421a3618232b9"
                 },
                 {
-                    "name": "8f597aeb-3223-4e1b-a7af-8367f744aa88",
+                    "name": "6fcea0b2-828c-4eae-aecc-61295bec3634",
                     "displayName": "Meterpreter Count",
                     "description": "Meterpreter Count",
                     "chartDatasource": {
-                        "dashboardQuery": "3d4a44e2-1140-48cb-b63a-ddf263047fce",
+                        "dashboardQuery": "451827c0-3f0b-4c03-bbb5-0d246841a494",
                         "dataSources": [
                             "UDM"
                         ]
@@ -3032,12 +3034,12 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "7a1e0a59f585da8f80f818b503759c98d549a838c32fb74b1725750f657b7887"
+                    "etag": "01b2aa848a71c9fd38a73494b1fe682cbc24d1cfbac4a792218064bb40113d85"
                 }
             ],
             "dashboardQueries": [
                 {
-                    "name": "21021c87-2589-4cd7-93bd-e8049f0638be",
+                    "name": "20fd36ed-72d0-4fbf-ac06-f3dced3d5bfa",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"suricata_corelight\" \r\noutcome:\r\n    $count=count_distinct(metadata.id)",
                     "input": {
                         "relativeTime": {
@@ -3045,10 +3047,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "e139a0603df4f1a931233fee5715c67bf273b50a95510109da2daf4c2dc57da6"
+                    "etag": "b74734b49fcb11f21089fb0a728385f4b6fdf7b420e9d3850476554e8bd68272"
                 },
                 {
-                    "name": "4e369b31-d85e-4b44-b7cf-ed95e52d84a4",
+                    "name": "3c38ffae-a63f-490b-9a6f-4802a916da65",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"intel\" \r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $date_hour asc",
                     "input": {
                         "relativeTime": {
@@ -3056,10 +3058,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "5410c050eac2a8e2f37fc82db7a3d67c54b68ddb92a246305418b2d80f05381a"
+                    "etag": "b58bc031b7d2b1421703a05c4f63571c05dcd11d21c913f4560ebcb28ad0d60b"
                 },
                 {
-                    "name": "678aba1b-8bc7-4e1e-b7cb-7a3e67742d18",
+                    "name": "1be9c5ca-5be0-4af6-b5d9-d87b0f599a41",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssl\" \r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $date_hour asc",
                     "input": {
                         "relativeTime": {
@@ -3067,10 +3069,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "0a2d3cad9de57b155a1cfe1e6475c56faa7964fd37f19612e7b41e3ca0066f20"
+                    "etag": "9f5378f23c4b2026de3b84bb342a9f84441d71df0301a342a1c71274ab30da90"
                 },
                 {
-                    "name": "5a66e4a1-20d4-4221-9c27-32a8e00b11a4",
+                    "name": "3a74631c-cbdf-4431-be6b-d1650ecc2808",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"dns\"\r\n$lat = target.ip_geo_artifact.location.region_latitude\r\n$long = target.ip_geo_artifact.location.region_longitude\r\n$lat != 0\r\n$long != 0\r\n$country = if(target.ip_geo_artifact.location.country_or_region!=\"\", target.ip_geo_artifact.location.country_or_region, \"No Country\")\r\nmatch:\r\n    $lat, $long, $country\r\noutcome:\r\n    $count = count(metadata.id)",
                     "input": {
                         "relativeTime": {
@@ -3078,10 +3080,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "c175084e9692f5deb066d4ddc562d210fa62b3823edc83843584bad23b0abe17"
+                    "etag": "ed455d8528d657bfa0b01fbad258bf0bb4b3084ea7204db0db9361132137faac"
                 },
                 {
-                    "name": "15d4a6fe-557e-4616-81a7-84abc71d5d32",
+                    "name": "8716c912-f0bc-48b3-bf9b-4b908d2e0dda",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"x509\" \r\nabout.domain.last_https_certificate.public_key.rsa.key_size < 2048\r\noutcome:\r\n    $count=count_distinct(about.domain.last_https_certificate.thumbprint)",
                     "input": {
                         "relativeTime": {
@@ -3089,10 +3091,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "52b222ec5a1da59bd60dc617cbbf29bd81ffab85d0d3eeba78857756b8857c82"
+                    "etag": "d241e54774c5019670ad911b122105f3fc5031aae3ec1054fbe292eb3f262c98"
                 },
                 {
-                    "name": "d9021760-8911-4f9f-89ac-d0e9e3134df3",
+                    "name": "986ea62f-5281-4719-9f84-a2e60cbdb778",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"suricata_corelight\" \r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $date_hour asc",
                     "input": {
                         "relativeTime": {
@@ -3100,10 +3102,10 @@
                             "startTimeVal": "10"
                         }
                     },
-                    "etag": "e64077114069d5e0e846c400a87aec2fb5bdf6413223268a7345cc0fb9ba527b"
+                    "etag": "f69bca82640dc215486dd3ae64798e327a2d65886d8b498183285cf406c030ae"
                 },
                 {
-                    "name": "5504a4a8-2242-4666-8a6b-71ba3cff8da4",
+                    "name": "b616624f-c53d-4866-8c4f-29899fcbf789",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"intel\" \r\noutcome:\r\n    $count=count_distinct(metadata.id)",
                     "input": {
                         "relativeTime": {
@@ -3111,10 +3113,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "f39e3e1b655e9f5ed0df8cb283df920cadd86cfebb384584ccc618c82dda3da9"
+                    "etag": "4100b904feb759a720ec4c61fafd8cf17ffe93f46fecf212fff8797f66a71bc9"
                 },
                 {
-                    "name": "d9143131-735d-446b-a2c3-40384c092ad5",
+                    "name": "b69bf89b-cf03-4d29-a025-0bf92f9eb634",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"intel\" \r\n$indicators=about.labels[\"indicator\"]\r\noutcome:\r\n    $count=count_distinct($indicators)",
                     "input": {
                         "relativeTime": {
@@ -3122,10 +3124,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "8b46e397dd8e5a6bd4817800729584a5a9210c5003288ea0dfd530f08207a72b"
+                    "etag": "44b66c03e8914212d87dcf3ff011bb49c723d4f39c78292f5c5fadeecab87523"
                 },
                 {
-                    "name": "c32fa2a5-b162-4a24-8e57-a5df0ebeda6f",
+                    "name": "ddba3f62-889c-435d-9a34-54e3e3d8b80e",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type= \"notice\"\r\nsecurity_result.description!=/^Intel/\r\nprincipal.ip!=\"\"\r\n$attack_type=re.capture(security_result.description, `^(?P<attack_type>[^\\s]+)`)\r\n$attack_type=/^ATTACK::/\r\noutcome:\r\n    $count=count_distinct(metadata.id)",
                     "input": {
                         "timeWindow": {
@@ -3133,10 +3135,10 @@
                             "endTime": "2025-03-25T23:59:59Z"
                         }
                     },
-                    "etag": "9b9e9692784e8955719d68507555ebf79630c6c5f6c94d7a0f4cecc997a5b562"
+                    "etag": "7381779a3dc5d8308486c240d19230a81e1fcbbc3424d510e9a328bec2238490"
                 },
                 {
-                    "name": "ba50d4a0-c416-4763-86d2-3badaeaa03ca",
+                    "name": "9b60c9bd-6551-4c57-b7ad-d12704f51b84",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type= /^conn/\r\ntarget.port=23\r\noutcome:\r\n    $count=count_distinct(metadata.id)",
                     "input": {
                         "relativeTime": {
@@ -3144,10 +3146,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "f824f0cd9cf598e63bf2cf61bdfdc68f279aa7b8895780e5dcbff5ac2ef41c82"
+                    "etag": "be4521702e3035c47060439a941547a23eabdc02a342bf7827935c5a2bb13514"
                 },
                 {
-                    "name": "b05c779f-b19f-46c7-9021-bf694daf4053",
+                    "name": "b4968e73-3cea-4fa7-a317-9f55355d491c",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"vpn\"\r\nNOT target.ip in cidr %internal_cidr_list  \r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour\r\noutcome:\r\n    $count = count_distinct(metadata.id)\r\norder:\r\n    $date_hour asc",
                     "input": {
                         "relativeTime": {
@@ -3155,10 +3157,10 @@
                             "startTimeVal": "10"
                         }
                     },
-                    "etag": "3b12305d3d6485e077032ca61ad9aebebe53092950de9f2d23984159936142e9"
+                    "etag": "5878b3bbef896c752ebd782413837b507374557609e973998733f89dce5d9bc6"
                 },
                 {
-                    "name": "ab3d7cdc-b58c-4f72-9e91-fce95dc7e2d1",
+                    "name": "b14c7ad0-f389-4c11-9f7f-b35f456cc472",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"notice\" \r\nsecurity_result.description != /^Intel/\r\nprincipal.ip != \"\"\r\noutcome:\r\n    $count=count_distinct(metadata.id)",
                     "input": {
                         "relativeTime": {
@@ -3166,10 +3168,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "2a4e79f9a0889c24dd39eeb972cca5b8b47571d5ffdc32f415a15acb408f0928"
+                    "etag": "1926e7a5e702276a0fb9a5dba55f1399c178ce4fe99bd8a64a901ddd69a4b90b"
                 },
                 {
-                    "name": "146dfb93-1886-4f30-9ee1-ebf3e1b9d825",
+                    "name": "5627a1de-9eb5-4584-aa77-632453b012f3",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"notice\" \r\noutcome:\r\n    $count=count_distinct(security_result.description)",
                     "input": {
                         "relativeTime": {
@@ -3177,10 +3179,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "f6343de00b8103bcfcf35c59bdd1e78e6c2543cf631a8b856776ee4bda24c069"
+                    "etag": "6f6e1dc37ffffdcab7ec1e70c95ba505043094e35a8681e715715b73e4bc3994"
                 },
                 {
-                    "name": "9e52fd59-0ce2-47e5-82c5-085ec45c193a",
+                    "name": "740623da-8a53-418c-a16b-946a51b04da3",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"rdp\"\r\nsecurity_result.action=\"ALLOW\" OR security_result.action=\"FAIL\"\r\n$auth_result=if(security_result.action=\"ALLOW\", \"Success\", \r\n             if(security_result.action=\"FAIL\", \"Failure\", \"Unknown\"\r\n             ))\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour, $auth_result\r\noutcome:\r\n    $count = count_distinct(metadata.id)\r\norder:\r\n    $date_hour asc",
                     "input": {
                         "relativeTime": {
@@ -3188,10 +3190,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "019a40080ef9e9335cc53d14c61e925884b69e1d148938db9af8cd48c257a9ee"
+                    "etag": "7b5ecae159d7debbe7475a08b18461d8808e8bc572d1bc78c28e20bfce92cbf5"
                 },
                 {
-                    "name": "9f219418-bdb5-4109-91db-4135cec09b9a",
+                    "name": "7c7a11d2-5181-455c-9c95-59332b22049c",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"intel\"\r\n$indicators=about.labels[\"indicator\"]\r\noutcome:\r\n    $avg_alerts_per_indicators=math.round(count_distinct(metadata.id) / count_distinct($indicators), 2)",
                     "input": {
                         "relativeTime": {
@@ -3199,10 +3201,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "deff57cd40ac7c0c79285897d050899fd464954fe7db482ba76845129b1e3462"
+                    "etag": "4be309f934c70cab235e298edbf5f13bc3d3f62774c5da2571c981a228a9b5d6"
                 },
                 {
-                    "name": "6e3d14c0-cf2a-4fe2-9e69-2ee89cbf3ad8",
+                    "name": "43b5e72c-a8ca-44a5-9f6e-eaf53d2ffc66",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"intel\"\r\noutcome:\r\n    $avg_alerts_per_source_ip=math.round(count_distinct(metadata.id) / count_distinct(principal.ip), 2)",
                     "input": {
                         "relativeTime": {
@@ -3210,10 +3212,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "5b0cc7043d733ce4e2ee5cf1dd07303b8dc6a659722f98ea7448a059a41f5f14"
+                    "etag": "408b9329b201747d50fe9751c6cc6095e9829bc3d16e3dbcf3c18820a5b5776f"
                 },
                 {
-                    "name": "0ddbbf51-408e-4c7d-978a-f57134c325e3",
+                    "name": "4b8ea778-f516-4afe-b5af-fc0d64ab92f6",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"notice\" \r\nsecurity_result.description != /^Intel/\r\nprincipal.ip != \"\"\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $date_hour asc",
                     "input": {
                         "relativeTime": {
@@ -3221,10 +3223,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "e0eaa4e1c3cc88cf1192b21b12626456da8e61b464ce394c789b46b77129900a"
+                    "etag": "56b731470528cb64073258faf42f4bed8295a78f7a120199ffbea742fd8d8c71"
                 },
                 {
-                    "name": "4e73a301-7875-4984-bd9a-5c147e43f10c",
+                    "name": "62ed17c8-6345-4f20-8157-8bc6c9eaa4c8",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type= \"dns\"\r\nabout.labels[\"qtype_name\"]=\"ANY\" OR about.labels[\"qtype_name\"]=\"AXFR\" OR about.labels[\"qtype_name\"]=\"IXFR\" OR about.labels[\"qtype_name\"]=\"TXT\"\r\noutcome:\r\n    $unusual_qtypes=count(metadata.id)",
                     "input": {
                         "relativeTime": {
@@ -3232,21 +3234,21 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "8df39a3907ecd25327e308629c03f62fe6328270de7b049903bd6f75b5b15dac"
+                    "etag": "14280db901665b040bacda299f9f198e928b35fc48fa96eec77cf8134ae822a5"
                 },
                 {
-                    "name": "3c771f58-d86c-4a86-82d0-c3e62a6de189",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssl\" \r\n$is_self_signed=if(security_result.description=\"self signed certificate\", \"yes\", \"no\")\r\n$is_self_signed=\"yes\"\r\ntarget.ip in cidr %internal_cidr_list  //Is dest. ip is internal?\r\n$ssl_subject_common_name=network.tls.client.server_name\r\n$ssl_subject_common_name!=\"\"\r\noutcome:\r\n    $count=count_distinct($ssl_subject_common_name)",
+                    "name": "639ef081-fcb2-4363-9304-d2ef37353414",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssl\" \r\nsecurity_result.description=\"self signed certificate\"\r\ntarget.ip in cidr %internal_cidr_list  //Is dest. ip is internal?\r\n$ssl_subject_common_name=network.tls.client.server_name\r\n$ssl_subject_common_name!=\"\"\r\noutcome:\r\n    $count=count_distinct($ssl_subject_common_name)",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "c16e20bcc1e6689ad092bc5c71dd996678626bbfbc200140772401a548c3c1a3"
+                    "etag": "649a2df6e9e4a34ec29752b2a341d237f66852c3340638885af6a02c4a11ebdd"
                 },
                 {
-                    "name": "8d96b21d-6480-4e60-b35c-f768c64b4c8c",
+                    "name": "24bb0a2f-3170-4775-83e5-992d245b7013",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ftp\" \r\noutcome:\r\n    $count_of_uids=count_distinct(network.session_id)",
                     "input": {
                         "relativeTime": {
@@ -3254,10 +3256,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "6ce761e4652f6f10842b85770a49f4ed4e7f2ebed9dc8b2cdee3c2f50c444a9b"
+                    "etag": "9973e68498a34dc63fccb8650fa102232d1e2dc692737b0af2bd3b2be1a47c14"
                 },
                 {
-                    "name": "f3b60823-6a86-45e1-86cd-2bd83550ff2d",
+                    "name": "7993ca98-d5b7-4863-ba12-0e4ba9d37f6f",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"dns\"\r\n$country = if(target.ip_geo_artifact.location.country_or_region!=\"\", target.ip_geo_artifact.location.country_or_region, \"No Country\")\r\nmatch:\r\n    $country\r\noutcome:\r\n    $count = count(metadata.id)\r\norder:\r\n    $count desc",
                     "input": {
                         "relativeTime": {
@@ -3265,10 +3267,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "0bd4b398ac8310f913d39c993a85ce9ecf5b8136d3f0009ca8c84815cd121098"
+                    "etag": "a5939c6c166c2d3c58b6805ff04dbd74eb07a46f3ff515de06f8258a64993d95"
                 },
                 {
-                    "name": "8a0d36e4-d817-4a9c-8c34-2f41116e035d",
+                    "name": "d22e092e-1faa-419d-89f1-609194a9ea5c",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"etc_viz\" \r\nabout.labels[\"viz_stat\"]=\"C\" OR about.labels[\"viz_stat\"]=\"Cc\" OR about.labels[\"viz_stat\"]=\"C!\" OR about.labels[\"viz_stat\"]=\"cc\"\r\noutcome:\r\n    $count_of_uids=count_distinct(network.session_id)",
                     "input": {
                         "relativeTime": {
@@ -3276,10 +3278,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "c415d8964b05b89185b08195205b2876995fe47f4764517ead074f90b0b4a80a"
+                    "etag": "bc4969f5f9657d572e4e2f2a955b0343045d280b0f196ebfe56f2465fe6c00b7"
                 },
                 {
-                    "name": "b30c0a3b-0184-48dc-92bd-8f52cb59663f",
+                    "name": "3435b82a-e901-4146-be36-68e5cbfef05c",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssl\" \r\nprincipal.ip in cidr %internal_cidr_list \r\n$version_status=if(network.tls.version=\"TLSv13\", \"Most Secure\", \r\n                if(network.tls.version=\"TLSv12\", \"Secure\",\r\n                if(network.tls.version=\"DTLSv12\", \"Secure\",\r\n                if(network.tls.version=\"unknown-64282\", \"Unknown\", \"Old Version\"\r\n                ))))\r\nmatch:\r\n    $version_status\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc",
                     "input": {
                         "relativeTime": {
@@ -3287,21 +3289,21 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "a1227df60872a314059070abac7645324fe2e28ec8cd89f428ceee420076cfef"
+                    "etag": "fc41b27fd80578d1cdc3865d6897aea36719609b988658d6631a2d724be13d9a"
                 },
                 {
-                    "name": "d3bc892e-ffa6-47e7-99a2-fd44d87afe05",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"smb_mapping\" OR metadata.product_event_type = \"smb_files\" \r\n$smb_version=if(target.port=139, \"SMBv1\", \r\n             if(target.port=445, \"SMBv2_or_SMBv3\", \"Unknown\"\r\n              ))\r\n$smb_version=\"SMBv1\"\r\noutcome:\r\n    $count=count_distinct(metadata.id)",
+                    "name": "4c4cbe98-48bd-408c-8ee2-dc0c3d370837",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"smb_mapping\" OR metadata.product_event_type = \"smb_files\" \r\ntarget.port=139\r\noutcome:\r\n    $count=count_distinct(metadata.id)",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "5730705aeb35ab3a71f84cec82aa2e5f6c0dee0d9c066bd2ed0eda2b65f7d383"
+                    "etag": "5435104e6f778d9abbf968445b25f6fd3de5cfbb0d7b5cccdcfefd0a013d8fa4"
                 },
                 {
-                    "name": "14e08e64-fb7b-4a91-8395-bbc6fdf84bee",
+                    "name": "d99b0896-5888-4bef-9d8b-e7784d90d7d0",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type= /^conn/\r\n$service=about.labels[\"service\"]\r\n$service!=\"\"\r\n$service!=\"ssl\" AND $service!=\"tls\" AND $service!=\"ssl,http\" AND $service!=\"http,ssl\" AND $service!=\"ssh\" AND $service!=\"https\" AND $service!=\"dtls\" AND $service!=\"ssl,xmpp\" AND $service!=\"spicy_ipsec_ike_udp\" AND $service!=\"spicy_ipsec_udp\" AND $service!=\"spicy_ipsec_ike_udp,spicy_ipsec_udp\" AND $service!=\"spicy_stun_tcp\" AND $service!=\"krb,krb_tcp\"\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour, $service\r\noutcome:\r\n    $unencrypted_traffic_volume=count_distinct(metadata.id)\r\norder:\r\n    $date_hour asc",
                     "input": {
                         "relativeTime": {
@@ -3309,10 +3311,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "be6d1f48baa2ca254674d729eeb62a5867b1e4a6811ca729fd98aab5e51964bb"
+                    "etag": "18491d74e4446c00b237c39c33514d7e9ba3051bee57cd90750627df08a1f903"
                 },
                 {
-                    "name": "31bb7a4a-8e6e-47c9-817a-6570268fce17",
+                    "name": "641baa8b-6b81-4a13-a184-e31eb9b4c3d8",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"suricata_corelight\" \r\noutcome:\r\n    $count=count_distinct(target.ip)",
                     "input": {
                         "relativeTime": {
@@ -3320,21 +3322,21 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "57d9a88362313ec0ffa3060060e6d4bc46f90c287c4d1a7b8041ebe8e780fc14"
+                    "etag": "335376b2cb2234486da4b9cffbf1c9cd2cc0d060ced2bf1f1ef42fb06d62d88d"
                 },
                 {
-                    "name": "777346ba-f77c-4cef-870b-92f80499f4ea",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"vpn\"\r\n$country = if(target.ip_geo_artifact.location.country_or_region!=\"\", target.ip_geo_artifact.location.country_or_region, \"No Country\")\r\n$country != \"No Country\"\r\nmatch:\r\n    $country\r\noutcome:\r\n    $count = count_distinct(target.ip)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
+                    "name": "58154165-78cd-4dae-b213-9e13b5329f40",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"vpn\"\r\ntarget.ip_geo_artifact.location.country_or_region!=\"\"\r\n$country = if(target.ip_geo_artifact.location.country_or_region!=\"\", target.ip_geo_artifact.location.country_or_region, \"No Country\")\r\nmatch:\r\n    $country\r\noutcome:\r\n    $count = count_distinct(target.ip)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "b71d134bc55ef2c86628306d797e7cc29ad43c2236a3a072116d95b711bd34a2"
+                    "etag": "0621a74d6357b7e2f52e67b4e0afc70dd876fb5d16cfc859ab2c99449863ec19"
                 },
                 {
-                    "name": "399e87fc-f33e-4d12-ad28-7061bdc42554",
+                    "name": "d97add35-add2-468a-b751-d51503f38203",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type= \"dns\"\r\nabout.labels[\"rcode_name\"]=\"SERVFAIL\" OR about.labels[\"rcode_name\"]=\"REFUSED\" OR about.labels[\"rcode_name\"]=\"FORMERR\" OR about.labels[\"rcode_name\"]=\"NOTIMP\" OR about.labels[\"rcode_name\"]=\"NOTAUTH\"\r\noutcome:\r\n    $dns_fails=count(about.labels[\"rcode_name\"])",
                     "input": {
                         "relativeTime": {
@@ -3342,10 +3344,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "18b05454ee522c23ba4e6f65680c0edb83b62fbd0a7f0d204cb28bb75a7a5581"
+                    "etag": "1f6724dc7be299b2fb031a19a4ab56b4f95cf642941e7b4929697780780494df"
                 },
                 {
-                    "name": "3d4a44e2-1140-48cb-b63a-ddf263047fce",
+                    "name": "451827c0-3f0b-4c03-bbb5-0d246841a494",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"notice\" \r\nsecurity_result.description = \"MeterpreterDetection::Meterpreter_Detected\"\r\noutcome:\r\n    $count=count_distinct(metadata.id)",
                     "input": {
                         "relativeTime": {
@@ -3353,10 +3355,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "281a45faea3b36b0e47f60a17f762cf0ee745c242f08d66c57c0cf4c7ac73a13"
+                    "etag": "027c7af67d6ee6b51e0ac276c956115c2fa5269a8b7ca43988346ce64c4f44ca"
                 },
                 {
-                    "name": "7c2fb619-f74a-4b9d-92a6-86db4ab6b2f3",
+                    "name": "ddc94ac8-5075-4246-b98e-18e2e5d0eb2d",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type= \"dns\"\r\nabout.labels[\"rcode_name\"]=\"NXDOMAIN\" OR about.labels[\"rcode_name\"]=\"NOERROR\"\r\noutcome:\r\n    $nxdomain_responses=count(metadata.id)",
                     "input": {
                         "relativeTime": {
@@ -3364,10 +3366,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "ec2686ab0880f499d09992483877d1f41c68cfa9154a6b8ffa15d22315a753a2"
+                    "etag": "7fdbd4cf959ad0041af73d8481596b706642043d5e62dc257881ca9bf418a29c"
                 },
                 {
-                    "name": "08d4ab9e-5576-46ce-8572-a9f541a3f906",
+                    "name": "eceaa386-3ed3-48d7-aadd-b8036a7b1f9d",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssl\" \r\n$version_status=if(network.tls.version=\"TLSv13\", \"Most Secure\", \r\n                if(network.tls.version=\"TLSv12\", \"Secure\",\r\n                if(network.tls.version=\"DTLSv12\", \"Secure\",\r\n                if(network.tls.version=\"unknown-64282\", \"Unknown\", \"Old Version\"\r\n                ))))\r\nmatch:\r\n    $version_status\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc",
                     "input": {
                         "relativeTime": {
@@ -3375,10 +3377,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "e91baa0eb15f31bbaabba1cdb9e8b1357bd08de26ab3b362504b82a39d8e9cf2"
+                    "etag": "037e7248150886e5e791d9e39db2b5cdd12f340df08f647308eb49bf762163ab"
                 },
                 {
-                    "name": "f3928ccf-6d4c-4934-a62e-680389548846",
+                    "name": "043c1924-2a96-459b-8077-23a3d2e75452",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"suricata_corelight\" \r\noutcome:\r\n    $count=count_distinct(security_result.rule_id)",
                     "input": {
                         "relativeTime": {
@@ -3386,10 +3388,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "e369de11f1de7e3da67927d648fb077e91cd5a95f9f22fe1b5a583ccbbbb7348"
+                    "etag": "67ccb9ef07996a421e0fb47bdbb05a9ffdecb47b2b3fdb52c6bf452cce11a5da"
                 },
                 {
-                    "name": "c0d12d77-8c3c-4051-8fb9-9c2d89228e6e",
+                    "name": "1133d158-0843-4438-a4af-2649262dd6aa",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"suricata_corelight\" \r\noutcome:\r\n    $count=count_distinct(principal.ip)",
                     "input": {
                         "relativeTime": {
@@ -3397,10 +3399,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "aaa8ff4a0e47b7521a88ebf6c100ab10420971032da4ae8c94e13e7682455a1f"
+                    "etag": "dfb762b9330f568ebb6da7cd4a98bbead762e1d12914377919c5d7f5d2972243"
                 },
                 {
-                    "name": "837d3f9f-70db-43e1-a0cc-25f115b18033",
+                    "name": "317700ac-2169-4087-9ce5-acf2d935913f",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type= \"dns\"\r\ntarget.port=53 OR target.port=5353\r\ntarget.ip!=\"\"\r\ntarget.ip in cidr %internal_cidr_list\r\noutcome:\r\n    $number_of_internal_dns_servers=count_distinct(target.ip)",
                     "input": {
                         "relativeTime": {
@@ -3408,10 +3410,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "e83ac26a7fd62d7bb3bcdefc55a696140a7e4fef6b321016d86b3cec8e56b172"
+                    "etag": "09e22c415da0772fc08604c612c3549675ed35fad58903337104002146a6ebc2"
                 },
                 {
-                    "name": "3a408f40-ce5e-410e-9d91-ba43b280fdb9",
+                    "name": "deb83f58-2310-43f2-b30f-1d0dca4fc347",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"notice\" \r\nsecurity_result.description = \"SSL::Certificate_Expired\" OR security_result.description = \"SSL::Invalid_Server_Cert\" OR security_result.description = \"SSL::Old_Version\"\r\noutcome:\r\n    $count=count_distinct(metadata.id)",
                     "input": {
                         "relativeTime": {
@@ -3419,10 +3421,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "92a029c37abef35d87790fe9b15888c0acea8901c3ad3ff96f7922e4bb9fe304"
+                    "etag": "278f93ff242a6f5e11cd0086c6567b2841c49a28a181795734bed662c4a08428"
                 },
                 {
-                    "name": "954c3b96-2575-41e5-80c0-b1aa61e2089c",
+                    "name": "eed864f3-3baf-4629-8366-876a88ac9169",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"x509\" \r\n$days_to_expire = math.round((about.domain.last_https_certificate.validity.expiry_time.seconds - timestamp.current_seconds()) / 86400, 0)\r\n$days_to_expire > 0 AND $days_to_expire <= 15\r\noutcome:\r\n    $distinct_certs=count_distinct(about.domain.last_https_certificate.thumbprint)",
                     "input": {
                         "relativeTime": {
@@ -3430,7 +3432,7 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "b2b113c6e6be078e7879c0242387fe6dc4c33787ff076f64913477b8390406ca"
+                    "etag": "0889cf1d82d7dfefb67dfdf09701621920ebe2ebbc6d27e63761805ba3e25d1a"
                 }
             ]
         }
