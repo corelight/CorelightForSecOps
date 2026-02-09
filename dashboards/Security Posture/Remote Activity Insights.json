@@ -2,7 +2,7 @@
     "dashboards": [
         {
             "dashboard": {
-                "name": "3b9b300b-8e8c-4dc8-969b-bc3b31b43d02",
+                "name": "f74564e2-3c67-477b-b70c-9ca43363d5a9",
                 "displayName": "Corelight → Data Insights → Remote Activity Insights",
                 "definition": {
                     "filters": [
@@ -20,16 +20,16 @@
                             ],
                             "displayName": "Global Time Filter",
                             "chartIds": [
-                                "daa13044-a597-467a-bba2-b4001e7b0e78",
-                                "39b3b71e-ebc9-43e9-b85b-639b93f05c70",
-                                "34a20195-d66d-4314-ac32-1a806a1ab16c",
-                                "8267b3be-f494-4cc1-9bf9-ee8c75c87ea0",
-                                "95154f0e-cdd7-40d6-bf2b-aa1023a5302b",
-                                "c9007d71-3d38-44f8-a795-fcfb5846f822",
-                                "2c6cf935-57fa-4141-927f-862c6049a07a",
-                                "95f092ee-152a-4439-824d-ed974aed2a5c",
-                                "6fe85796-0749-4d7e-917f-576f3a90400a",
-                                "53b538fa-48ec-43c4-b93d-637eaf2fe233"
+                                "327a4e0e-f7f0-49dd-9865-0000cc683590",
+                                "6dda1711-4996-4b5e-b68a-c3763c9e155a",
+                                "3920e495-fed7-4b34-bd70-963923ab0f5c",
+                                "a13dfc9a-645f-4288-b578-d7aac7f1f253",
+                                "c8f148bb-5ce0-4b69-9adf-dfcc2a350a35",
+                                "20431623-cf1a-42fa-a541-4adcc48c59c7",
+                                "b2e69944-1d71-47ff-a1a8-5b5fb70930cc",
+                                "a2ee2145-c4b8-4b37-a60c-e11964fb5ee0",
+                                "28f1398d-27f4-467f-98e7-b783ab5ae1b9",
+                                "8f6f5a6f-f339-4744-9f19-87f401931319"
                             ],
                             "isStandardTimeRangeFilter": true,
                             "isStandardTimeRangeFilterEnabled": true
@@ -37,7 +37,7 @@
                     ],
                     "charts": [
                         {
-                            "dashboardChart": "c9007d71-3d38-44f8-a795-fcfb5846f822",
+                            "dashboardChart": "20431623-cf1a-42fa-a541-4adcc48c59c7",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -49,7 +49,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "6fe85796-0749-4d7e-917f-576f3a90400a",
+                            "dashboardChart": "28f1398d-27f4-467f-98e7-b783ab5ae1b9",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -61,7 +61,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "2c6cf935-57fa-4141-927f-862c6049a07a",
+                            "dashboardChart": "b2e69944-1d71-47ff-a1a8-5b5fb70930cc",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -73,7 +73,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "39b3b71e-ebc9-43e9-b85b-639b93f05c70",
+                            "dashboardChart": "6dda1711-4996-4b5e-b68a-c3763c9e155a",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -85,7 +85,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "8267b3be-f494-4cc1-9bf9-ee8c75c87ea0",
+                            "dashboardChart": "a13dfc9a-645f-4288-b578-d7aac7f1f253",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -97,7 +97,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "daa13044-a597-467a-bba2-b4001e7b0e78",
+                            "dashboardChart": "327a4e0e-f7f0-49dd-9865-0000cc683590",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -109,7 +109,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "34a20195-d66d-4314-ac32-1a806a1ab16c",
+                            "dashboardChart": "3920e495-fed7-4b34-bd70-963923ab0f5c",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -121,7 +121,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "95f092ee-152a-4439-824d-ed974aed2a5c",
+                            "dashboardChart": "a2ee2145-c4b8-4b37-a60c-e11964fb5ee0",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -133,7 +133,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "95154f0e-cdd7-40d6-bf2b-aa1023a5302b",
+                            "dashboardChart": "c8f148bb-5ce0-4b69-9adf-dfcc2a350a35",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -145,7 +145,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "53b538fa-48ec-43c4-b93d-637eaf2fe233",
+                            "dashboardChart": "8f6f5a6f-f339-4744-9f19-87f401931319",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -159,16 +159,16 @@
                     ]
                 },
                 "type": "CUSTOM",
-                "etag": "e0524fd50402499b7e6dcfb3e5b4c2f0e61911fd5f5329b8ba36f4bfa0b87565",
+                "etag": "4054e4582c92804c89d897606d9f26686de9ee0aa1f247b610cd166d7978018f",
                 "access": "DASHBOARD_PRIVATE"
             },
             "dashboardCharts": [
                 {
-                    "name": "6fe85796-0749-4d7e-917f-576f3a90400a",
+                    "name": "28f1398d-27f4-467f-98e7-b783ab5ae1b9",
                     "displayName": " Identifying Failed RDP Logins",
                     "description": "Monitoring failed RDP logins is essential for detecting unauthorized access attempts. Security teams should analyze patterns of failed entries against user and IP data to identify potential breaches. This focus helps in quickly addressing vulnerabilities in RDP security. Effective monitoring of these incidents is crucial for maintaining system integrity.",
                     "chartDatasource": {
-                        "dashboardQuery": "532512d2-1725-4101-bfd2-75e16a6a1d43",
+                        "dashboardQuery": "57680d35-b65f-40c6-b019-cfd044a1f66e",
                         "dataSources": [
                             "UDM"
                         ]
@@ -204,14 +204,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "465e9839255998e2000c1c423457de1b401d3af29b2a4ef5650a7ea20a353c6c",
+                    "etag": "f64f0620603dfd214cb2ac723225e9886e6c856613e222c135c0665ab520dc65",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "39b3b71e-ebc9-43e9-b85b-639b93f05c70",
+                    "name": "6dda1711-4996-4b5e-b68a-c3763c9e155a",
                     "displayName": " ",
                     "chartDatasource": {
-                        "dashboardQuery": "63e77b08-451b-4054-87df-ffcb34aca26d",
+                        "dashboardQuery": "c2ee4cbc-b6c0-4c74-9e12-80d39fa2df2b",
                         "dataSources": [
                             "UDM"
                         ]
@@ -261,15 +261,15 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "e40030065fb2ec67e85b1e4e62b3c8d28e7f48a1124f70c0c5e5c6c8264f1eae",
+                    "etag": "d96c24222d9ca279929b555bdd94a537c77ebd2940168823da7088521064a3fa",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "95154f0e-cdd7-40d6-bf2b-aa1023a5302b",
+                    "name": "c8f148bb-5ce0-4b69-9adf-dfcc2a350a35",
                     "displayName": " Possible Unauthorized Remote Access Attempts",
                     "description": "Monitoring for \"RW\" (Road Warrior) and \"FW\" (Firewall subversion) inferences is crucial for detecting potential unauthorized access, as these patterns may indicate attempts to bypass security controls. Security teams should prioritize correlating these inferences with internal IP ranges and device logs to identify suspicious activities.",
                     "chartDatasource": {
-                        "dashboardQuery": "45c70baf-7154-414e-804c-d0a5e09207a5",
+                        "dashboardQuery": "4817b565-362f-4328-8615-cf74b215ee84",
                         "dataSources": [
                             "UDM"
                         ]
@@ -305,15 +305,15 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "25e55683048e4c4052ec3914523fc554231105e0a21387e95c6c06a4b0eacb9f",
+                    "etag": "3731c5a4407e166c0dae870e63f5f6993546f0ebf0af3ae7243be5eb52471606",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "c9007d71-3d38-44f8-a795-fcfb5846f822",
+                    "name": "20431623-cf1a-42fa-a541-4adcc48c59c7",
                     "displayName": " RDP Authentication Attempts",
                     "description": "Monitoring RDP authentications is crucial for identifying unauthorized access and distinguishing between successful and failed login attempts. Security teams should analyze trends and cross-reference user activity for rapid response and mitigation.",
                     "chartDatasource": {
-                        "dashboardQuery": "8654f6da-c0c0-4a62-9012-9ea9a91c394c",
+                        "dashboardQuery": "38ef71a0-e41e-4fd6-941f-7fa65fa6ee81",
                         "dataSources": [
                             "UDM"
                         ]
@@ -349,14 +349,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "fdb8d00d6beb5efc3ae7336bf0634d54fc262de34cf9567848c4d6b4ddd93f01",
+                    "etag": "61e67c11f96eecc5e359dfac1a0310ca8617a31cb362b67ef2e7ff4d5ccdeba4",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "daa13044-a597-467a-bba2-b4001e7b0e78",
+                    "name": "327a4e0e-f7f0-49dd-9865-0000cc683590",
                     "displayName": " ",
                     "chartDatasource": {
-                        "dashboardQuery": "8f87281b-2d8b-4783-8532-0804f893d315",
+                        "dashboardQuery": "0749538b-08c0-4ecf-a7d7-77f93fa1db5e",
                         "dataSources": [
                             "UDM"
                         ]
@@ -402,7 +402,7 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "466ac4da7a7d38e5c9261d014d8403b5a790394c060e45ca1ce5c4dc7986d230",
+                    "etag": "b1ed6730a66ff96e889747c8c2f99a6d7b26e59cea85deb4f0fac923d27e14e1",
                     "drillDownConfig": {
                         "leftDrillDowns": [
                             {
@@ -437,10 +437,10 @@
                     }
                 },
                 {
-                    "name": "53b538fa-48ec-43c4-b93d-637eaf2fe233",
+                    "name": "8f6f5a6f-f339-4744-9f19-87f401931319",
                     "displayName": " ",
                     "chartDatasource": {
-                        "dashboardQuery": "0d182617-15f0-4750-b6bf-02c0d28c6b56",
+                        "dashboardQuery": "d3a022e0-44a7-47c1-bd4a-4d235c25f5b7",
                         "dataSources": [
                             "UDM"
                         ]
@@ -498,7 +498,7 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "1250e3071096af811fdd3753ed1f939001de29c697de1f0cbb8e809484b808af",
+                    "etag": "eec91e70ad3cd6d37bddb07f862641e178d6405a9e44612801201f0d7be70c3b",
                     "drillDownConfig": {
                         "leftDrillDowns": [
                             {
@@ -512,11 +512,11 @@
                     }
                 },
                 {
-                    "name": "34a20195-d66d-4314-ac32-1a806a1ab16c",
+                    "name": "3920e495-fed7-4b34-bd70-963923ab0f5c",
                     "displayName": " Suspected Data Exfiltration",
                     "description": "Unmonitored commercial VPNs with atypical traffic patterns or static keys could be used to bypass security controls for data theft. Investigate: Examine VPN sessions with large outgoing transfers, focusing on unusual destinations or protocols.",
                     "chartDatasource": {
-                        "dashboardQuery": "3d5ef21a-07ab-4223-bda3-295b98a0a8c8",
+                        "dashboardQuery": "52dd4173-39aa-494b-8b7d-4df285fdff86",
                         "dataSources": [
                             "UDM"
                         ]
@@ -552,14 +552,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "ec5e82a566ffbd8ccc92d8c227b1b2fa12813f8c6627f920e48ee3b64900ff21",
+                    "etag": "083e6c24bfbfac0aa81eaba550e34281824d6ee536f4fea42142ec15f5bde227",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "95f092ee-152a-4439-824d-ed974aed2a5c",
+                    "name": "a2ee2145-c4b8-4b37-a60c-e11964fb5ee0",
                     "displayName": " ",
                     "chartDatasource": {
-                        "dashboardQuery": "9cf0196a-47f4-4a7a-876f-b95fa89618c6",
+                        "dashboardQuery": "ef0d0817-b729-4e4b-8a96-4ba51a8d78eb",
                         "dataSources": [
                             "UDM"
                         ]
@@ -609,15 +609,15 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "3807723de561c76030b711d7e7203ba3544dbe972f0683d04397824434508d58",
+                    "etag": "22ccd4bc425fd6c7e244464dc7cf991a7f7841b2b1408dd0deb197cf9dc4033f",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "2c6cf935-57fa-4141-927f-862c6049a07a",
+                    "name": "b2e69944-1d71-47ff-a1a8-5b5fb70930cc",
                     "displayName": "Failed vs Successful Authentications",
                     "description": "Total count of RDP success and failed actions within the specified time",
                     "chartDatasource": {
-                        "dashboardQuery": "1522525b-4fe2-4fb3-9eca-c304b9606d99",
+                        "dashboardQuery": "080fa82b-6c14-40f5-9826-54c5c0153fbd",
                         "dataSources": [
                             "UDM"
                         ]
@@ -625,12 +625,30 @@
                     "visualization": {
                         "series": [
                             {
+                                "seriesName": "success",
                                 "seriesType": "LINE",
                                 "encode": {
                                     "x": "date_hour",
                                     "y": "count"
                                 },
-                                "dataLabel": {}
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "success"
+                            },
+                            {
+                                "seriesName": "failure",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "failure"
                             }
                         ],
                         "xAxes": [
@@ -641,7 +659,7 @@
                         ],
                         "yAxes": [
                             {
-                                "axisType": "CATEGORY",
+                                "axisType": "VALUE",
                                 "displayName": "Count"
                             }
                         ],
@@ -657,15 +675,15 @@
                         "groupingType": "Grouped"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "d142575ae55ce1e85c8a78a27c20bcb440d876f4fe828b06a92369e31393d560",
+                    "etag": "5c246c20de734ab460a20b4ede0a7a9fb99e62645296fa084100e69e005ad9bb",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "8267b3be-f494-4cc1-9bf9-ee8c75c87ea0",
+                    "name": "a13dfc9a-645f-4288-b578-d7aac7f1f253",
                     "displayName": " Unusual Remote Activity",
                     "description": "The combination of the \"COM\", \"RW\", and \"NSP\" inferences in a single VPN connection raises questions: Policy Violation: Is the use of commercial VPNs allowed in your organization's security policy? If not, this could indicate a violation. Hidden Activity: Is the non-standard port usage an attempt to mask other activities happening over the VPN tunnel?",
                     "chartDatasource": {
-                        "dashboardQuery": "070d1396-e67b-4b95-a335-829db3a7bdba",
+                        "dashboardQuery": "5f08f22b-62e7-4a0f-a0c8-839e8c92513b",
                         "dataSources": [
                             "UDM"
                         ]
@@ -701,13 +719,13 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "d88d78f3aff3de3bf4a0c78d38d1047548b18f49225e49e5e0375e9495c40872",
+                    "etag": "077d6eaf8641419000fb9700fe4d88c9ebaf91b4e416530703ce45c07d376414",
                     "drillDownConfig": {}
                 }
             ],
             "dashboardQueries": [
                 {
-                    "name": "45c70baf-7154-414e-804c-d0a5e09207a5",
+                    "name": "4817b565-362f-4328-8615-cf74b215ee84",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"vpn\"\r\nabout.labels.key=\"inference\"\r\nabout.labels.value = \"RW\" OR about.labels.value = \"FW\"\r\n\r\noutcome:\r\n    $count = count_distinct(network.session_id)",
                     "input": {
                         "relativeTime": {
@@ -715,32 +733,32 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "84dd75f9192230caaf1853b3d6da57ac11bd06d69d4b8253cc1089b4b66de4f1"
+                    "etag": "59e6295114acce82d1b30e327e709a1337969a3f7b143d203a20f03a66e2a5ee"
                 },
                 {
-                    "name": "1522525b-4fe2-4fb3-9eca-c304b9606d99",
-                    "query": "metadata.vendor_name = \"Corelight\" \r\nmetadata.product_event_type = \"rdp\"\r\n$action=if(about.labels[\"result\"] = \"Success\", \"success\", \r\n            if(about.labels[\"result\"] = \"SSL_NOT_ALLOWED_BY_SERVER\", \"failure\",\r\n            if(security_result.action = \"ALLOW\", \"success\",\r\n            if(security_result.action = \"FAIL\", \"failure\", \"Unknown\"\r\n        ))))\r\n$action!=\"Unknown\"\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour, $action\r\noutcome:\r\n    $count = count(metadata.id)\r\n",
+                    "name": "080fa82b-6c14-40f5-9826-54c5c0153fbd",
+                    "query": "metadata.vendor_name = \"Corelight\" \r\nmetadata.product_event_type = \"rdp\"\r\n$action=if(about.labels[\"result\"] = \"Success\", \"success\", \r\n            if(about.labels[\"result\"] = \"SSL_NOT_ALLOWED_BY_SERVER\", \"failure\",\r\n            if(security_result.action = \"ALLOW\", \"success\",\r\n            if(security_result.action = \"FAIL\", \"failure\", \"Unknown\"\r\n        ))))\r\nabout.labels[\"result\"] = \"Success\" OR about.labels[\"result\"] = \"SSL_NOT_ALLOWED_BY_SERVER\" OR security_result.action = \"ALLOW\" OR security_result.action = \"FAIL\"\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour, $action\r\noutcome:\r\n    $count = count(metadata.id)\r\norder:\r\n    $date_hour",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "ecb1958e4cf34c3bff592d52450582ff23a752260036e2a29779a9f97ef58708"
+                    "etag": "05b203688e9125a0130668e2577c9fbe307c1a4db2a89d44bb9987035a6cdfa5"
                 },
                 {
-                    "name": "8654f6da-c0c0-4a62-9012-9ea9a91c394c",
-                    "query": "metadata.vendor_name = \"Corelight\" \r\nmetadata.product_event_type = \"rdp\"\r\n$action=if(about.labels[\"result\"] = \"Success\", \"success\", \r\n            if(about.labels[\"result\"] = \"SSL_NOT_ALLOWED_BY_SERVER\", \"failure\",\r\n            if(security_result.action = \"ALLOW\", \"Success\",\r\n            if(security_result.action = \"FAIL\", \"failure\", \"Unknown\"\r\n        ))))\r\n$action!=\"Unknown\"\r\noutcome:\r\n    $count = count(metadata.id)",
+                    "name": "38ef71a0-e41e-4fd6-941f-7fa65fa6ee81",
+                    "query": "metadata.vendor_name = \"Corelight\" \r\nmetadata.product_event_type = \"rdp\"\r\n$action=if(about.labels[\"result\"] = \"Success\", \"success\", \r\n            if(about.labels[\"result\"] = \"SSL_NOT_ALLOWED_BY_SERVER\", \"failure\",\r\n            if(security_result.action = \"ALLOW\", \"Success\",\r\n            if(security_result.action = \"FAIL\", \"failure\", \"Unknown\"\r\n        ))))\r\nabout.labels[\"result\"] = \"Success\" OR about.labels[\"result\"] = \"SSL_NOT_ALLOWED_BY_SERVER\" OR security_result.action = \"ALLOW\" OR security_result.action = \"FAIL\"\r\noutcome:\r\n    $count = count(metadata.id)",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "1ea687608315e24679650d02a9786c3b51d3f9121999395cb6f9d636c31d389b"
+                    "etag": "d2f5bcd5bce6dc1f8738d19707c1ce40505dda4a07db372dbf199a9ac9d24fb3"
                 },
                 {
-                    "name": "070d1396-e67b-4b95-a335-829db3a7bdba",
+                    "name": "5f08f22b-62e7-4a0f-a0c8-839e8c92513b",
                     "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"vpn\"\r\nabout.labels.key=\"inference\"\r\nabout.labels.value = \"COM\" OR about.labels.value = \"NSP\" OR about.labels.value = \"RW\"\r\n$combine_count = strings.concat(principal.ip, target.ip, about.labels.value, about.labels[\"vpn_type\"])\r\n\r\noutcome:\r\n    $count=count_distinct($combine_count)",
                     "input": {
                         "relativeTime": {
@@ -748,10 +766,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "820c6a11de3f7ed48a98a87a2ce659f4426d932f89b2d5f93204ef687a096b8b"
+                    "etag": "240cb805228b1eaffc6597408248a986a37d02765ad8d57259b37f1e5cd6f1aa"
                 },
                 {
-                    "name": "532512d2-1725-4101-bfd2-75e16a6a1d43",
+                    "name": "57680d35-b65f-40c6-b019-cfd044a1f66e",
                     "query": "metadata.vendor_name = \"Corelight\" \r\nmetadata.product_event_type = \"rdp\"\r\nabout.labels[\"result\"]=\"SSL_NOT_ALLOWED_BY_SERVER\" OR security_result.action=\"FAIL\"\r\n$cookie=about.labels[\"cookie\"]\r\n$cookie!=\"\"\r\n\r\noutcome:\r\n    $count=count_distinct($cookie)",
                     "input": {
                         "relativeTime": {
@@ -759,10 +777,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "d0ca1d753afba0e8683b8551e884c0a6252f16941a91ce52cf4e71e14f3a40ab"
+                    "etag": "02dc5a9ae0deb61eb503561b93a0dd329e560ca36eb58e2d1bd74868ccc9762b"
                 },
                 {
-                    "name": "0d182617-15f0-4750-b6bf-02c0d28c6b56",
+                    "name": "d3a022e0-44a7-47c1-bd4a-4d235c25f5b7",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"vpn\"\r\nabout.labels.key=\"inference\"\r\nabout.labels.value = \"RW\" OR about.labels.value = \"FW\"\r\n$uid=network.session_id\r\n$protocol_version=if(network.ip_protocol = 88, \"EIGRP\", \r\n                    if(network.ip_protocol = 50, \"ESP\",\r\n                    if(network.ip_protocol = 97, \"ETHERIP\",\r\n                    if(network.ip_protocol = 47, \"GRE\", \r\n                    if(network.ip_protocol = 1, \"ICMP\",\r\n                    if(network.ip_protocol = 58, \"ICMP6\",\r\n                    if(network.ip_protocol = 2, \"IGMP\",\r\n                    if(network.ip_protocol = 41, \"IP6IN4\",\r\n                    if(network.ip_protocol = 103, \"PIM\",\r\n                    if(network.ip_protocol = 132, \"SCTP\",\r\n                    if(network.ip_protocol = 6, \"TCP\",\r\n                    if(network.ip_protocol = 17, \"UDP\",\r\n                    if(network.ip_protocol = 0, \"UNKNOWN_IP_PROTOCOL\",\r\n                    if(network.ip_protocol = 112, \"VRRP\", \"UNKNOWN_IP_PROTOCOL\"\r\n                ))))))))))))))\r\n\r\nmatch:\r\n    $uid\r\n\r\noutcome:\r\n    $Source=array_distinct(principal.ip)\r\n    $Destination=array_distinct(target.ip)\r\n    $proto=array($protocol_version)\r\n    $inferences=array_distinct(about.labels.value)\r\n    $Dest_port=array_distinct(target.port)\r\n    $Bytes=array_distinct(network.sent_bytes)\r\n    $count = count_distinct(metadata.id)",
                     "input": {
                         "relativeTime": {
@@ -770,10 +788,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "067381b4caa6b76488d409f6510bcb69efa25453da0560765ae1ca4d9a18ca21"
+                    "etag": "c88c4272bdfdcb806b68eae2c8c6e1b8ffbf9fc522d8248cf4cd5143229e7db5"
                 },
                 {
-                    "name": "9cf0196a-47f4-4a7a-876f-b95fa89618c6",
+                    "name": "ef0d0817-b729-4e4b-8a96-4ba51a8d78eb",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"vpn\"\r\nabout.labels.key=\"inference\"\r\nabout.labels.value = \"COM\" OR about.labels.value = \"NSP\" OR about.labels.value = \"SK\"\r\n\r\nmatch:\r\n    principal.ip, target.ip\r\n\r\noutcome:\r\n    $inferences=array_distinct(about.labels.value)\r\n    $Responder_Country=array_distinct(target.location.country_or_region)\r\n    $vpn_type=array_distinct(about.labels[\"vpn_type\"])\r\n    $count=count_distinct(metadata.id)",
                     "input": {
                         "relativeTime": {
@@ -781,10 +799,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "d3ac42b3db6e48c0fe817d00fa168b828a8c89e0a8c8926ff3a0355875ec7f74"
+                    "etag": "dc1d239d95a2f49f8ab31123282f9344d2db489e0f1580bef7eb966a307819c8"
                 },
                 {
-                    "name": "8f87281b-2d8b-4783-8532-0804f893d315",
+                    "name": "0749538b-08c0-4ecf-a7d7-77f93fa1db5e",
                     "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"vpn\"\r\nabout.labels.key=\"inference\"\r\nabout.labels.value = \"COM\" OR about.labels.value = \"NSP\" OR about.labels.value = \"RW\"\r\n$vpn_type=about.labels[\"vpn_type\"]\r\n\r\nmatch:\r\n    principal.ip, target.ip, about.labels.value, $vpn_type\r\n\r\noutcome:\r\n    $count=count_distinct(metadata.id)",
                     "input": {
                         "relativeTime": {
@@ -792,10 +810,10 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "227071f2ff9aaba4d03586b9995673cc903a711c422098e9c83471bfef57e862"
+                    "etag": "e36f8aa9e8aaed7384e1436d7db5aaa05ea07e6dcf3a2fe5cba492812c687ddc"
                 },
                 {
-                    "name": "3d5ef21a-07ab-4223-bda3-295b98a0a8c8",
+                    "name": "52dd4173-39aa-494b-8b7d-4df285fdff86",
                     "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"vpn\"\r\nabout.labels.key=\"inference\"\r\nabout.labels.value = \"COM\" OR about.labels.value = \"NSP\" OR about.labels.value = \"SK\"\r\n$combine_count = strings.concat(principal.ip, target.ip)\r\n\r\noutcome:\r\n    $count=count_distinct($combine_count)",
                     "input": {
                         "relativeTime": {
@@ -803,18 +821,18 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "a762fd470b4f0f8a525f8c6c422c2b21934e66ee680859a88be2512296e40870"
+                    "etag": "b453f2ddd82fff0b820da45322721b9aa8320b18a1e764563e01457e93913a87"
                 },
                 {
-                    "name": "63e77b08-451b-4054-87df-ffcb34aca26d",
-                    "query": "metadata.vendor_name = \"Corelight\" \r\nmetadata.product_event_type = \"rdp\"\r\n$result=about.labels[\"result\"]\r\n$auth_success=security_result.action\r\n$result=\"SSL_NOT_ALLOWED_BY_SERVER\" OR $auth_success=\"FAIL\"\r\n$User=about.labels[\"cookie\"]\r\n$User!=\"\"\r\n\r\nmatch:\r\n    $User\r\n\r\noutcome:\r\n    $Source=array_distinct(principal.ip)\r\n    $Destination=array_distinct(target.ip)\r\n    $Auth_Success=array_distinct($auth_success)\r\n    $Result=array_distinct($result)\r\n    $count=count(metadata.id)\r\norder:\r\n    $count desc",
+                    "name": "c2ee4cbc-b6c0-4c74-9e12-80d39fa2df2b",
+                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"rdp\"\r\n$result=about.labels[\"result\"]\r\n$auth_success=if(security_result.action = \"ALLOW\", \"ALLOW\", if(security_result.action = \"ALLOW_WITH_MODIFICATION\", \"ALLOW_WITH_MODIFICATION\", if(security_result.action = \"BLOCK\", \"BLOCK\", if(security_result.action = \"CHALLENGE\", \"CHALLENGE\", if(security_result.action = \"FAIL\", \"FAIL\", if(security_result.action = \"QUARANTINE\", \"QUARANTINE\", \"UNKNOWN_ACTION\"))))))\r\n$result=\"SSL_NOT_ALLOWED_BY_SERVER\" OR security_result.action = \"FAIL\"\r\n$User=about.labels[\"cookie\"]\r\n$User!=\"\"\r\n\r\nmatch:\r\n    $User\r\n\r\noutcome:\r\n    $Source=array_distinct(principal.ip)\r\n    $Destination=array_distinct(target.ip)\r\n    $Auth_Success=array_distinct($auth_success)\r\n    $Result=array_distinct($result)\r\n    $count=count(metadata.id)\r\norder:\r\n    $count desc",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "90ae42b6e5e65572a44b28a02336647f48a6991d16372515647a0dd4c1b7e3cc"
+                    "etag": "2b0a6c18ecb1e95be634fb1f9367135278170431cc1c20e873c3f56e3cebf144"
                 }
             ]
         }
