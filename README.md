@@ -6,7 +6,7 @@ For more information, see [Data ingestion to Chronicle](https://cloud.google.com
 
 ## Before you begin
 
-*  Verify the version of Corelight Sensor. The Corelight Google SecOps parser was designed for version 27.12 and earlier. Later versions of the Corelight Sensor might have additional logs that the parser won't recognize, and those logs might receive limited or no field parsing. However, the log content will still be available in the raw log format in Google SecOps.
+*  Verify the version of Corelight Sensor. The Corelight Google SecOps parser was designed for version 27.13 and earlier. Later versions of the Corelight Sensor might have additional logs that the parser won't recognize, and those logs might receive limited or no field parsing. However, the log content will still be available in the raw log format in Google SecOps.
 *  Ensure that all systems in the deployment architecture are configured with the UTC time zone.
 
 
@@ -31,30 +31,44 @@ The architecture diagram shows the following components:
 *  **Google Security Operations**: Google Security Operations retains and analyzes the logs from
     Corelight Sensor.
 
-### Configure the Corelight log Exporter for Google SecOps 
+### Configure the Google SecOps exporter in Corelight
+Use the Sensor or Fleet Manager web interface to configure the Google SecOps exporter. This configuration uses the API credentials from your Google SecOps instance to establish the secure connection.
 
-1. Sign into Corelight Sensor as an administrator.
+1. Log in to the Fleet Manager or Sensor web interface of Corelight Sensor as an administrator.
 
-2. Select the **Exporters (Dynamic)** tab and select Google SecOps.
+2. Navigate to the exporter configuration area:
+
+    * **Fleet Manager**: Navigate to Policies, select a policy, and click the Export tab.
+    * **Standalone Sensor**: Navigate to Configuration | Export | Export Configuration.
+
+3. In the Create Exporter section, click **Google SecOps**.
 
   ![Deployment architecture](images/dynamic-exporter-step-1.png)
 
-3. Configure the following input parameters:
-  - **Exporter Name**: the name of the exporter.
-  - **Google SecOps Customer ID**: the customer Id of the Google SecOps.
-  - **Google SecOps Namespace**: the unique namespace associated with Google SecOps for organizing and managing data.
-  - **Google SecOps Labels**: a set of key-value pairs representing the labels.
-  - **Region**: the geographical region where Google SecOps is deployed.
-  - **Credentials**: the authentication details required to securely connect and export data to Google SecOps.
-  - **Proxy URL**: the URL of the proxy server used to route traffic between the exporter and Google SecOps.
-  - **Log Type Filter**: specify whether to include or exclude certain log types.
-  - **Zeek Logs**: select which log types to include or exclude by selecting all applicable options.
+4. Configure the following input parameters:
+  - **Name***: A unique name for this exporter instance (for example, SecOps).
+  - **Google SecOps Customer ID***: Your unique customer identifier provided by Google.
+  - **Google SecOps Namespace**: The logical namespace for your Sensor logs in Google SecOps.
+  - **Credentials***: The Google SecOps Service Account Credentials (JSON). (Paste the full JSON content).
+  - **Google SecOps Labels**: User-configured labels to identify the data domain.
+  - **Region***: The GCP region name used by Google SecOps.
+  - **Batch Max Events**: The maximum batch size.
+  - **Batch Timeout Seconds**: The maximum age of a batch.
+  - **Proxy URL**: The network proxy URL, if required.
+  - **Exporter Log Filter**: Select a filter to apply to this exporter instance.
+  - **Log Type Filter**: Include or exclude specific log files by name.
+      * **Exclude**: Removes specified logs. New log types (for example, from packages) will still be exported.
+      * **Include**: Exports only the specified logs. New log types will NOT be exported unless manually added.
 
-  ![Deployment architecture](images/dynamic-exporter-step-2.png)
 
-4. Click **Done**
+  ![Deployment architecture](images/dynamic-exporter-step-2.1.png)
+  ![Deployment architecture](images/dynamic-exporter-step-2.2.png)
+
+5. Click **Done**.
 
   ![Deployment architecture](images/dynamic-exporter-step-3.png)
+
+6. Click **Apply Changes**.
 
 ## Ingesting Logs into Google SecOps Using a Forwarder 
 
@@ -658,6 +672,122 @@ The following table lists the log fields of the <code>conn, conn_red, conn_long,
 <td><code>community_ids (array[string] - vector of string)</code></td>
 <td><code>network.community_id</code></td>
 <td>Iterate through log field <code>community_ids</code>, then<br> if index is equal to <code>0</code> then, <code>community_id</code> log field is mapped to the <code>network.community_id</code> UDM field. <br> Else, <code>community_id_%{index}</code> log field is mapped to the <code>additional.fields.key</code> UDM field and <code>community_id</code> log field is mapped to the <code>additional.fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>capture_metadata.vpc.version</code></td>
+<td><code>about.resource.attribute.labels[vpc_version]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>capture_metadata.vpc.vpc_id</code></td>
+<td><code>about.resource.product_object_id</code></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><code>about.resource.resource_type</code></td>
+<td>If <code>capture_metadata.vpc.vpc_id</code> is present, then <code>about.resource.resource_type</code> UDM field is set to <code>VPC_NETWORK</code>.</td>
+</tr>
+<tr>
+<td><code>capture_source</code></td>
+<td><code>about.resource.attribute.labels[capture_source]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>orig_inst.az</code></td>
+<td><code>principal.location.name</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>orig_inst.id</code></td>
+<td><code>principal.resource.product_object_id</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>orig_inst.name</code></td>
+<td><code>principal.resource.name</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>orig_inst.org_id</code></td>
+<td><code>principal.resource.attribute.labels[org_id]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>orig_inst.sg_ids</code></td>
+<td><code>principal.resource.attribute.labels[sg_id]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>orig_inst.subnet_id</code></td>
+<td><code>principal.resource.attribute.labels[subnet_id]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>orig_inst.vpc_id</code></td>
+<td><code>principal.resource.attribute.labels[vpc_id]</code></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><code>principal.resource.resource_type</code></td>
+<td>If <code>orig_inst.vpc_id</code> is present, then <code>principal.resource.resource_type</code> UDM field is set to <code>VPC_NETWORK</code>.</td>
+</tr>
+<tr>
+<td><code>orig_inst.profile</code></td>
+<td><code>principal.resource.attribute.labels[profile]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>resp_inst.az</code></td>
+<td><code>target.location.name</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>resp_inst.id</code></td>
+<td><code>target.resource.product_object_id</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>resp_inst.name</code></td>
+<td><code>target.resource.name</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>resp_inst.org_id</code></td>
+<td><code>target.resource.attribute.labels[org_id]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>resp_inst.sg_ids</code></td>
+<td><code>target.resource.attribute.labels[sg_id]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>resp_inst.subnet_id</code></td>
+<td><code>target.resource.attribute.labels[subnet_id]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>resp_inst.vpc_id</code></td>
+<td><code>target.resource.attribute.labels[vpc_id]</code></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><code>target.resource.resource_type</code></td>
+<td>If <code>resp_inst.vpc_id</code> is present, then <code>target.resource.resource_type</code> UDM field is set to <code>VPC_NETWORK</code>.</td>
+</tr>
+<tr>
+<td><code>resp_inst.profile</code></td>
+<td><code>target.resource.attribute.labels[profile]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>local_orig</code> and <code>local_resp</code></td>
+<td><code>additional.fields[direction]</code></td>
+<td>If the <code>local_orig</code> log field value is equal to <code>true</code> and <code>local_resp</code> log field value is equal to <code>true</code>, then the <code>additional.fields[direction]</code> UDM field is set to <code>internal</code>.<br><br>Else, if the <code>local_orig</code> log field value is equal to <code>true</code> and <code>local_resp</code> log field value is equal to <code>false</code>, then the <code>additional.fields[direction]</code> UDM field is set to <code>outbound</code>.<br><br>Else, if the <code>local_orig</code> log field value is equal to <code>false</code> and <code>local_resp</code> log field value is equal to <code>false</code>, then the <code>additional.fields[direction]</code> UDM field is set to <code>external</code>.<br><br>Else, if the <code>local_orig</code> log field value is equal to <code>false</code> and <code>local_resp</code> log field value is equal to <code>true</code>, then the <code>additional.fields[direction]</code> UDM field is set to <code>inbound</code>.</td>
 </tr>
 </tbody>
 </table>
@@ -2176,7 +2306,7 @@ The following table lists the log fields of the <code>sip</code> log type and th
 </tr>
 <tr>
 <td><code>call_id (string)</code></td>
-<td><code>network.session_id</code></td>
+<td><code>about.labels[call_id]</code></td>
 <td></td>
 </tr>
 <tr>
@@ -2839,7 +2969,7 @@ The following table lists the log fields of the <code>suricata_corelight</code> 
 </tr>
 <tr>
 <td><code>flow_id (integer - count)</code></td>
-<td><code>network.session_id</code></td>
+<td><code>about.labels[flow_id]</code></td>
 <td></td>
 </tr>
 <tr>
@@ -5952,7 +6082,7 @@ The following table lists the log fields of the <code>enip</code> log type and t
 </tr>
 <tr>
 <td><code>session_handle (string)</code></td>
-<td><code>network.session_id</code></td>
+<td><code>about.labels[session_handle]</code></td>
 <td></td>
 </tr>
 <tr>
@@ -8199,7 +8329,7 @@ The following table lists the log fields of the <code>specific_dns_tunnels</code
 </tr>
 <tr>
 <td><code>session_id (integer - count)</code></td>
-<td><code>network.session_id</code></td>
+<td><code>about.labels[session_id]</code></td>
 <td></td>
 </tr>
 <tr>
@@ -8344,7 +8474,7 @@ The following table lists the log fields of the <code>stun</code> log type and t
 </tr>
 <tr>
 <td><code>trans_id (string)</code></td>
-<td><code>network.session_id</code></td>
+<td><code>metadata.product_log_id</code></td>
 <td></td>
 </tr>
 <tr>
