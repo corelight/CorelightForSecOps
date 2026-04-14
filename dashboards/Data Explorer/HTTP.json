@@ -2,7 +2,7 @@
     "dashboards": [
         {
             "dashboard": {
-                "name": "a0fbb4f5-ec01-4cb7-bd5e-05c899f6eb96",
+                "name": "5d23b43d-67fc-475c-ac11-650ebb1974df",
                 "displayName": "Corelight → Data Explorer → HTTP",
                 "definition": {
                     "filters": [
@@ -20,23 +20,32 @@
                             ],
                             "displayName": "Global Time Filter",
                             "chartIds": [
-                                "e9ee5925-650b-462d-81e6-72d45578c1fa",
-                                "818dfd23-fc63-4380-a1c7-504804829e20",
-                                "5fb15fff-d533-4bdc-8e5c-8d24d4cb3234",
-                                "7ce31b06-1d6c-452b-8fce-ab07deef8ce4",
-                                "80646e47-1eda-4b41-ad29-2c971b728048",
-                                "7415f929-bd56-446d-bc71-7f52ee7066e0",
-                                "eca48731-30a7-447d-be92-776d2d9c683b",
-                                "4d2ba005-3e92-451b-9a97-b2c2b5e1c60f",
-                                "459e8bf6-54e2-4177-92d6-70fcc988637b",
-                                "77f90940-53fe-4284-ba3f-610f0bbf8f70",
-                                "64eea644-a95b-40f4-9ca2-bdcc86e271cd",
-                                "ad6957cb-63ca-479d-bf99-a50063f4ef4d",
-                                "066ed24e-c466-4024-991e-7a64b68ac3ed",
-                                "33fe2aa1-f2f8-4673-9ed4-4a3c6c67ea8a",
-                                "86ef92b5-da06-4757-bcc6-986bd121dd34",
-                                "4a6cee1a-0b29-4b04-a1cd-1c2ed699afca",
-                                "17b19825-a742-4e4e-ba11-73ca5b2818ac"
+                                "412e6a6e-3ef6-4237-a3c3-1bd29dc325db",
+                                "2318c8d1-e64c-45d5-ba27-9a4f982ad9c6",
+                                "ae1ce06d-eabe-4d0a-848a-86aa01edf9f0",
+                                "f18488d7-42f0-4afb-bf71-0060c7fa3148",
+                                "ee6cc27d-01f6-4051-8fd0-29ed0f00ba66",
+                                "127ca8cc-d164-48c5-9b68-640c3443cc25",
+                                "3e2612ee-9849-4f1f-8d9f-9dc779fbce0a",
+                                "d789c8d0-154f-45b3-be7b-16bea4cf8f8c",
+                                "2946ab08-0b8c-4edb-9b2c-63dc7b506c83",
+                                "c8d6c3bb-785e-44a3-958b-d23379521df4",
+                                "f46ca2c1-ff2b-4ac5-afd5-75346eec7fea",
+                                "ea5e31af-7a9e-4cb3-b877-f0a1bebc5217",
+                                "ec50b42a-a31a-4889-8067-7241011453ef",
+                                "7052faff-ead0-4bb8-b619-109277c20fa6",
+                                "0df85185-ebf2-4e57-acf4-5f52d70421ac",
+                                "5eaa0b19-67ba-4bc8-bd54-53c5d84afa4f",
+                                "b0321f1e-e2bd-4420-bc99-8b6d3ca70445",
+                                "364f80be-1999-4aae-8cfc-30e64825f7a6",
+                                "8a3a6399-ab08-4b6c-992b-4c651df6b1e3",
+                                "23921d47-e91d-496b-ba01-619cc37e05a5",
+                                "99259a85-0a6b-48fb-933f-0f591e843c96",
+                                "8163f6a5-0f48-4130-9136-6dc8bea1a754",
+                                "6fefd4f5-cac9-4ba2-ae27-243a415a05f2",
+                                "f2604ec5-ccf0-49ff-83d2-62ddb3e80c88",
+                                "df2c44a6-d9c3-462c-8036-57a6d76975ef",
+                                "259aa844-b8b7-41a3-996d-4b66baa24ae9"
                             ],
                             "isStandardTimeRangeFilter": true,
                             "isStandardTimeRangeFilterEnabled": true
@@ -55,260 +64,420 @@
                             ],
                             "displayName": "Corelight Sensor",
                             "chartIds": [
-                                "459e8bf6-54e2-4177-92d6-70fcc988637b",
-                                "4d2ba005-3e92-451b-9a97-b2c2b5e1c60f",
-                                "eca48731-30a7-447d-be92-776d2d9c683b",
-                                "7415f929-bd56-446d-bc71-7f52ee7066e0",
-                                "80646e47-1eda-4b41-ad29-2c971b728048",
-                                "7ce31b06-1d6c-452b-8fce-ab07deef8ce4",
-                                "818dfd23-fc63-4380-a1c7-504804829e20",
-                                "5fb15fff-d533-4bdc-8e5c-8d24d4cb3234",
-                                "e9ee5925-650b-462d-81e6-72d45578c1fa",
-                                "77f90940-53fe-4284-ba3f-610f0bbf8f70",
-                                "ad6957cb-63ca-479d-bf99-a50063f4ef4d",
-                                "64eea644-a95b-40f4-9ca2-bdcc86e271cd",
-                                "066ed24e-c466-4024-991e-7a64b68ac3ed",
-                                "33fe2aa1-f2f8-4673-9ed4-4a3c6c67ea8a",
-                                "86ef92b5-da06-4757-bcc6-986bd121dd34",
-                                "4a6cee1a-0b29-4b04-a1cd-1c2ed699afca",
-                                "17b19825-a742-4e4e-ba11-73ca5b2818ac"
+                                "2946ab08-0b8c-4edb-9b2c-63dc7b506c83",
+                                "3e2612ee-9849-4f1f-8d9f-9dc779fbce0a",
+                                "127ca8cc-d164-48c5-9b68-640c3443cc25",
+                                "2318c8d1-e64c-45d5-ba27-9a4f982ad9c6",
+                                "ae1ce06d-eabe-4d0a-848a-86aa01edf9f0",
+                                "412e6a6e-3ef6-4237-a3c3-1bd29dc325db",
+                                "c8d6c3bb-785e-44a3-958b-d23379521df4",
+                                "f46ca2c1-ff2b-4ac5-afd5-75346eec7fea",
+                                "ec50b42a-a31a-4889-8067-7241011453ef",
+                                "5eaa0b19-67ba-4bc8-bd54-53c5d84afa4f",
+                                "b0321f1e-e2bd-4420-bc99-8b6d3ca70445",
+                                "8a3a6399-ab08-4b6c-992b-4c651df6b1e3",
+                                "23921d47-e91d-496b-ba01-619cc37e05a5"
+                            ]
+                        },
+                        {
+                            "id": "784a4470-ef89-4a4e-bb7a-19858939768e",
+                            "dataSource": "UDM",
+                            "fieldPath": "metadata.product_event_type",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "NOT_EQUAL",
+                                    "fieldValues": [
+                                        "http_agg"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Show Aggregation",
+                            "chartIds": [
+                                "5eaa0b19-67ba-4bc8-bd54-53c5d84afa4f",
+                                "2318c8d1-e64c-45d5-ba27-9a4f982ad9c6",
+                                "f46ca2c1-ff2b-4ac5-afd5-75346eec7fea",
+                                "2946ab08-0b8c-4edb-9b2c-63dc7b506c83",
+                                "c8d6c3bb-785e-44a3-958b-d23379521df4",
+                                "b0321f1e-e2bd-4420-bc99-8b6d3ca70445",
+                                "ec50b42a-a31a-4889-8067-7241011453ef",
+                                "3e2612ee-9849-4f1f-8d9f-9dc779fbce0a",
+                                "127ca8cc-d164-48c5-9b68-640c3443cc25",
+                                "412e6a6e-3ef6-4237-a3c3-1bd29dc325db",
+                                "ae1ce06d-eabe-4d0a-848a-86aa01edf9f0",
+                                "8a3a6399-ab08-4b6c-992b-4c651df6b1e3",
+                                "23921d47-e91d-496b-ba01-619cc37e05a5"
                             ]
                         }
                     ],
                     "charts": [
                         {
-                            "dashboardChart": "459e8bf6-54e2-4177-92d6-70fcc988637b",
+                            "dashboardChart": "2946ab08-0b8c-4edb-9b2c-63dc7b506c83",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 24,
+                                "startY": 16,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2",
+                                "784a4470-ef89-4a4e-bb7a-19858939768e"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "5eaa0b19-67ba-4bc8-bd54-53c5d84afa4f",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 31,
                                 "startY": 0,
                                 "spanY": 16
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
-                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2"
+                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2",
+                                "784a4470-ef89-4a4e-bb7a-19858939768e"
                             ]
                         },
                         {
-                            "dashboardChart": "4a6cee1a-0b29-4b04-a1cd-1c2ed699afca",
+                            "dashboardChart": "127ca8cc-d164-48c5-9b68-640c3443cc25",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 24,
-                                "startY": 0,
+                                "startY": 16,
                                 "spanY": 16
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
-                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2"
+                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2",
+                                "784a4470-ef89-4a4e-bb7a-19858939768e"
                             ]
                         },
                         {
-                            "dashboardChart": "7415f929-bd56-446d-bc71-7f52ee7066e0",
+                            "dashboardChart": "ec50b42a-a31a-4889-8067-7241011453ef",
                             "chartLayout": {
-                                "startX": 24,
-                                "spanX": 24,
+                                "startX": 31,
+                                "spanX": 33,
                                 "startY": 0,
                                 "spanY": 16
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
-                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2"
+                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2",
+                                "784a4470-ef89-4a4e-bb7a-19858939768e"
                             ]
                         },
                         {
-                            "dashboardChart": "066ed24e-c466-4024-991e-7a64b68ac3ed",
-                            "chartLayout": {
-                                "startX": 72,
-                                "spanX": 24,
-                                "startY": 0,
-                                "spanY": 16
-                            },
-                            "filtersIds": [
-                                "GlobalTimeFilter",
-                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2"
-                            ]
-                        },
-                        {
-                            "dashboardChart": "17b19825-a742-4e4e-ba11-73ca5b2818ac",
+                            "dashboardChart": "b0321f1e-e2bd-4420-bc99-8b6d3ca70445",
                             "chartLayout": {
                                 "startX": 64,
                                 "spanX": 32,
-                                "startY": 16,
+                                "startY": 32,
                                 "spanY": 23
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
-                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2"
+                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2",
+                                "784a4470-ef89-4a4e-bb7a-19858939768e"
                             ]
                         },
                         {
-                            "dashboardChart": "77f90940-53fe-4284-ba3f-610f0bbf8f70",
+                            "dashboardChart": "c8d6c3bb-785e-44a3-958b-d23379521df4",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 32,
-                                "startY": 16,
+                                "startY": 32,
                                 "spanY": 23
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
-                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2"
+                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2",
+                                "784a4470-ef89-4a4e-bb7a-19858939768e"
                             ]
                         },
                         {
-                            "dashboardChart": "e9ee5925-650b-462d-81e6-72d45578c1fa",
+                            "dashboardChart": "412e6a6e-3ef6-4237-a3c3-1bd29dc325db",
                             "chartLayout": {
                                 "startX": 32,
                                 "spanX": 32,
-                                "startY": 16,
+                                "startY": 32,
                                 "spanY": 23
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
-                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2"
+                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2",
+                                "784a4470-ef89-4a4e-bb7a-19858939768e"
                             ]
                         },
                         {
-                            "dashboardChart": "eca48731-30a7-447d-be92-776d2d9c683b",
+                            "dashboardChart": "3e2612ee-9849-4f1f-8d9f-9dc779fbce0a",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
-                                "startY": 39,
+                                "startY": 55,
                                 "spanY": 26
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
-                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2"
+                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2",
+                                "784a4470-ef89-4a4e-bb7a-19858939768e"
                             ]
                         },
                         {
-                            "dashboardChart": "5fb15fff-d533-4bdc-8e5c-8d24d4cb3234",
+                            "dashboardChart": "ae1ce06d-eabe-4d0a-848a-86aa01edf9f0",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
-                                "startY": 39,
+                                "startY": 55,
                                 "spanY": 26
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
-                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2"
+                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2",
+                                "784a4470-ef89-4a4e-bb7a-19858939768e"
                             ]
                         },
                         {
-                            "dashboardChart": "818dfd23-fc63-4380-a1c7-504804829e20",
+                            "dashboardChart": "2318c8d1-e64c-45d5-ba27-9a4f982ad9c6",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
-                                "startY": 65,
+                                "startY": 81,
                                 "spanY": 26
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
-                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2"
+                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2",
+                                "784a4470-ef89-4a4e-bb7a-19858939768e"
                             ]
                         },
                         {
-                            "dashboardChart": "64eea644-a95b-40f4-9ca2-bdcc86e271cd",
+                            "dashboardChart": "f46ca2c1-ff2b-4ac5-afd5-75346eec7fea",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
-                                "startY": 65,
+                                "startY": 81,
                                 "spanY": 26
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
-                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2"
+                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2",
+                                "784a4470-ef89-4a4e-bb7a-19858939768e"
                             ]
                         },
                         {
-                            "dashboardChart": "80646e47-1eda-4b41-ad29-2c971b728048",
+                            "dashboardChart": "ee6cc27d-01f6-4051-8fd0-29ed0f00ba66",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
-                                "startY": 91,
+                                "startY": 111,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "ea5e31af-7a9e-4cb3-b877-f0a1bebc5217",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 111,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "7052faff-ead0-4bb8-b619-109277c20fa6",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 127,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "f18488d7-42f0-4afb-bf71-0060c7fa3148",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 127,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "0df85185-ebf2-4e57-acf4-5f52d70421ac",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 154,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "d789c8d0-154f-45b3-be7b-16bea4cf8f8c",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 154,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "364f80be-1999-4aae-8cfc-30e64825f7a6",
+                            "chartLayout": {
+                                "startX": 64,
+                                "spanX": 32,
+                                "startY": 0,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "23921d47-e91d-496b-ba01-619cc37e05a5",
+                            "chartLayout": {
+                                "startX": 72,
+                                "spanX": 24,
+                                "startY": 16,
                                 "spanY": 16
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
-                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2"
+                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2",
+                                "784a4470-ef89-4a4e-bb7a-19858939768e"
                             ]
                         },
                         {
-                            "dashboardChart": "ad6957cb-63ca-479d-bf99-a50063f4ef4d",
+                            "dashboardChart": "8a3a6399-ab08-4b6c-992b-4c651df6b1e3",
                             "chartLayout": {
-                                "startX": 48,
-                                "spanX": 48,
-                                "startY": 91,
+                                "startX": 24,
+                                "spanX": 24,
+                                "startY": 16,
                                 "spanY": 16
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
-                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2"
+                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2",
+                                "784a4470-ef89-4a4e-bb7a-19858939768e"
                             ]
                         },
                         {
-                            "dashboardChart": "33fe2aa1-f2f8-4673-9ed4-4a3c6c67ea8a",
+                            "dashboardChart": "2a358e37-4cbf-43f2-a3d2-cbd9c87ed9b5",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 107,
+                                "spanY": 4
+                            }
+                        },
+                        {
+                            "dashboardChart": "ebae3df2-18df-4f7d-a3a0-4dd8e1fb6576",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 181,
+                                "spanY": 4
+                            }
+                        },
+                        {
+                            "dashboardChart": "6fefd4f5-cac9-4ba2-ae27-243a415a05f2",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
-                                "startY": 107,
-                                "spanY": 27
+                                "startY": 185,
+                                "spanY": 16
                             },
                             "filtersIds": [
-                                "GlobalTimeFilter",
-                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2"
+                                "GlobalTimeFilter"
                             ]
                         },
                         {
-                            "dashboardChart": "7ce31b06-1d6c-452b-8fce-ab07deef8ce4",
+                            "dashboardChart": "df2c44a6-d9c3-462c-8036-57a6d76975ef",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 185,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "8163f6a5-0f48-4130-9136-6dc8bea1a754",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
-                                "startY": 134,
+                                "startY": 201,
                                 "spanY": 27
                             },
                             "filtersIds": [
-                                "GlobalTimeFilter",
-                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2"
+                                "GlobalTimeFilter"
                             ]
                         },
                         {
-                            "dashboardChart": "86ef92b5-da06-4757-bcc6-986bd121dd34",
+                            "dashboardChart": "f2604ec5-ccf0-49ff-83d2-62ddb3e80c88",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
-                                "startY": 134,
+                                "startY": 201,
                                 "spanY": 27
                             },
                             "filtersIds": [
-                                "GlobalTimeFilter",
-                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2"
+                                "GlobalTimeFilter"
                             ]
                         },
                         {
-                            "dashboardChart": "4d2ba005-3e92-451b-9a97-b2c2b5e1c60f",
+                            "dashboardChart": "259aa844-b8b7-41a3-996d-4b66baa24ae9",
                             "chartLayout": {
-                                "startX": 48,
+                                "startX": 0,
                                 "spanX": 48,
-                                "startY": 107,
+                                "startY": 228,
                                 "spanY": 27
                             },
                             "filtersIds": [
-                                "GlobalTimeFilter",
-                                "d7809cec-dfc4-43cc-b2cb-f57bb5e93da2"
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "99259a85-0a6b-48fb-933f-0f591e843c96",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 228,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
                             ]
                         }
                     ]
                 },
                 "type": "CUSTOM",
-                "etag": "a6b9e251354143edb04a03686cdf98c04e1a43ebc8583216387c60c30ba312a9",
+                "etag": "cff0f9c3721a8adb60776c3cc5ab91087ee43cd64fcfaa8d06282aa2ee4e37e4",
                 "access": "DASHBOARD_PRIVATE"
             },
             "dashboardCharts": [
                 {
-                    "name": "4d2ba005-3e92-451b-9a97-b2c2b5e1c60f",
+                    "name": "d789c8d0-154f-45b3-be7b-16bea4cf8f8c",
                     "displayName": "Local User Agents - Outbound",
                     "chartDatasource": {
-                        "dashboardQuery": "2c907248-756f-4773-b5af-41dd919101fa",
+                        "dashboardQuery": "20d000c2-abd3-43df-92da-35e839e60b59",
                         "dataSources": [
                             "UDM"
                         ]
@@ -342,15 +511,15 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "6201cfe6aea9d4249c4009ca957976e167014982f468631a7a3f1102dcfc0b31",
+                    "etag": "6a80632a93c895e31419642aed4214ecb9e9ca9f54b74f2d1b6c1fbdea13738f",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "066ed24e-c466-4024-991e-7a64b68ac3ed",
+                    "name": "ec50b42a-a31a-4889-8067-7241011453ef",
                     "displayName": "Distinct Connections",
                     "description": "Distinct Connections",
                     "chartDatasource": {
-                        "dashboardQuery": "a6b12ba8-9db7-4b70-b124-b691d9680660",
+                        "dashboardQuery": "b5d78e45-d1f1-4a9e-ba47-ec266a393c98",
                         "dataSources": [
                             "UDM"
                         ]
@@ -386,14 +555,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "358639dacbaed5d16841ebb1e027306a0ba1f79278c3ada6b21128e29ecef781",
+                    "etag": "3b17286478da475c711587130b2fc2871a3709941bc0a9b969d55ec3c98e0f33",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "e9ee5925-650b-462d-81e6-72d45578c1fa",
+                    "name": "412e6a6e-3ef6-4237-a3c3-1bd29dc325db",
                     "displayName": "HTTP Status Code Breakdown",
                     "chartDatasource": {
-                        "dashboardQuery": "da1ed9c3-ebe7-4d13-8428-d5c2756d66ea",
+                        "dashboardQuery": "e4032ae9-e83d-4fbd-a136-dc1597581882",
                         "dataSources": [
                             "UDM"
                         ]
@@ -414,29 +583,22 @@
                                     "70%"
                                 ],
                                 "itemStyle": {
-                                    "color": "b=>{const {map:c}=Cyf(this.theme);b=Jzf(b,bzf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;let d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                    "color": "b=>{const {map:c}=OOf(this.theme);b=JQf(b,nPf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;let d;return(d=\nc.get(b.color))!=null?d:b.color}"
                                 },
                                 "itemColors": {
                                     "colors": [
                                         {
-                                            "key": "Accepted",
-                                            "value": {
-                                                "color": "#1a73e8",
-                                                "label": "Accepted"
-                                            }
-                                        },
-                                        {
-                                            "key": "No Content",
-                                            "value": {
-                                                "color": "#eb730a",
-                                                "label": "No Content"
-                                            }
-                                        },
-                                        {
                                             "key": "OK",
                                             "value": {
-                                                "color": "#10a3b7",
+                                                "color": "#1a73e8",
                                                 "label": "OK"
+                                            }
+                                        },
+                                        {
+                                            "key": "Not Modified",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "Not Modified"
                                             }
                                         }
                                     ]
@@ -462,14 +624,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "ad0d671932429687fb05361088d1965817be95653104eca6ef055cf040babf90",
+                    "etag": "f99268659289ff4ea5a2f845c2e183cfed6b5a7c6c32d879f75d2be90b49f262",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "64eea644-a95b-40f4-9ca2-bdcc86e271cd",
+                    "name": "f46ca2c1-ff2b-4ac5-afd5-75346eec7fea",
                     "displayName": "Host Breakdown By HTTP Status",
                     "chartDatasource": {
-                        "dashboardQuery": "60aaa7a7-6035-4d44-9c5b-462ed394e711",
+                        "dashboardQuery": "61ded318-d5db-4eaf-807f-9f0984d6c868",
                         "dataSources": [
                             "UDM"
                         ]
@@ -511,7 +673,7 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "62f95577dbc672927656b0b9fe3be0eab2bcd0fc148638df6809e09a64368b12",
+                    "etag": "78b7a77e4790d6a66e50b6ae75cb64bdcd3aa9616dc3a90386e561f6e9216dc7",
                     "drillDownConfig": {
                         "leftDrillDowns": [
                             {
@@ -532,10 +694,10 @@
                     }
                 },
                 {
-                    "name": "33fe2aa1-f2f8-4673-9ed4-4a3c6c67ea8a",
+                    "name": "7052faff-ead0-4bb8-b619-109277c20fa6",
                     "displayName": "Local Hosts - Outbound",
                     "chartDatasource": {
-                        "dashboardQuery": "f837e0b6-b2b0-479b-930d-3c5e12d0419e",
+                        "dashboardQuery": "082c048c-af2f-4e9b-b670-fbdd7208d78a",
                         "dataSources": [
                             "UDM"
                         ]
@@ -558,7 +720,7 @@
                         ],
                         "columnDefs": [
                             {
-                                "field": "target_hostname",
+                                "field": "host_header",
                                 "header": "Host Header"
                             },
                             {
@@ -569,14 +731,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "66fb1837a8205c7eb5b00e375a7fd10551f81cb00793c5f86818e01e08289679",
+                    "etag": "2a809d5b58baf539724d92ecc35baa76bc30433e219c1c1cbdc572836652c9df",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "86ef92b5-da06-4757-bcc6-986bd121dd34",
+                    "name": "0df85185-ebf2-4e57-acf4-5f52d70421ac",
                     "displayName": "Local User Agents - Inbound",
                     "chartDatasource": {
-                        "dashboardQuery": "d88a42bb-66d2-4450-8ce1-5e9f442ea353",
+                        "dashboardQuery": "2987686d-f063-406c-a483-79ba4f54c234",
                         "dataSources": [
                             "UDM"
                         ]
@@ -610,14 +772,24 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "d4dd7c793a6da736966b58a2ed56baf007dcc36ba1e9c09f434c626134267adf",
-                    "drillDownConfig": {}
+                    "etag": "18a784736542178a2900b1f80e3a15ca111d4720518b37880b20996b49ae27c5",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "user_agent",
+                                "displayName": "Run Search on User Agent",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            }
+                        ]
+                    }
                 },
                 {
-                    "name": "80646e47-1eda-4b41-ad29-2c971b728048",
+                    "name": "ee6cc27d-01f6-4051-8fd0-29ed0f00ba66",
                     "displayName": "Distinct Host Headers - Inbound",
                     "chartDatasource": {
-                        "dashboardQuery": "60d3946e-8910-4035-80f9-6d2b34b2f129",
+                        "dashboardQuery": "c9c3a84d-45a2-4865-864f-267b75a2c796",
                         "dataSources": [
                             "UDM"
                         ]
@@ -653,15 +825,15 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "2dcf18bfecf2a1f7a3a06e2d84504e00f766a7b762054661ee5d7b6f1f17ba6c",
+                    "etag": "9bb20f0a508f765eaa28ce36588fca5a95560c16fcfc5287e330624e97098748",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "7415f929-bd56-446d-bc71-7f52ee7066e0",
+                    "name": "127ca8cc-d164-48c5-9b68-640c3443cc25",
                     "displayName": "Distinct User Agents",
                     "description": "Distinct User Agents",
                     "chartDatasource": {
-                        "dashboardQuery": "91649f72-5459-4d15-a352-b4cbf3d8f3b4",
+                        "dashboardQuery": "930961b5-5b97-4f21-b9cf-c8807190b8eb",
                         "dataSources": [
                             "UDM"
                         ]
@@ -697,13 +869,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "b65050de99e0bdb8fc51c5418acdd85f0b90bb040d22720235a30d0df90aca70"
+                    "etag": "25eae7194a35f3e63d674e04c996c57a2682c1b6279e8c16c70d56bbdbfef805",
+                    "drillDownConfig": {}
                 },
                 {
-                    "name": "77f90940-53fe-4284-ba3f-610f0bbf8f70",
+                    "name": "c8d6c3bb-785e-44a3-958b-d23379521df4",
                     "displayName": "Top Host Headers by Count",
                     "chartDatasource": {
-                        "dashboardQuery": "c79bfbbf-9cb5-4f39-a03a-24c0949418ed",
+                        "dashboardQuery": "be571514-e31f-4805-a0be-8de6224eab70",
                         "dataSources": [
                             "UDM"
                         ]
@@ -737,24 +910,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "8317bd769a46c3f48ceba6761ebcd315a4289763e71a5a3142adb16ecb36f14c",
-                    "drillDownConfig": {
-                        "leftDrillDowns": [
-                            {
-                                "id": "target_hostname",
-                                "displayName": "Run Search on Host Header",
-                                "defaultSettings": {
-                                    "enabled": true
-                                }
-                            }
-                        ]
-                    }
+                    "etag": "cc562b38c2a7beea5055609e5faa3146922056304edc7474b967ff9301c56473",
+                    "drillDownConfig": {}
                 },
                 {
-                    "name": "17b19825-a742-4e4e-ba11-73ca5b2818ac",
+                    "name": "b0321f1e-e2bd-4420-bc99-8b6d3ca70445",
                     "displayName": "Top Originators",
                     "chartDatasource": {
-                        "dashboardQuery": "d188023e-8d50-4acc-8b27-7c986d76d905",
+                        "dashboardQuery": "884f2718-76f3-4e7b-b26a-850a78c2ab5b",
                         "dataSources": [
                             "UDM"
                         ]
@@ -788,13 +951,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "b4711adacfee057229f76eb09b81ae850a1ca8c8c73e5adb30fdb77fb4f8073b"
+                    "etag": "babfbd685c857fdd07439a83d5853ce3947bcba04c04e85e61e5216e8002ce2e",
+                    "drillDownConfig": {}
                 },
                 {
-                    "name": "5fb15fff-d533-4bdc-8e5c-8d24d4cb3234",
+                    "name": "ae1ce06d-eabe-4d0a-848a-86aa01edf9f0",
                     "displayName": "Rare Host Headers",
                     "chartDatasource": {
-                        "dashboardQuery": "e40cecd8-6bd1-4472-807d-d5e2cf513be4",
+                        "dashboardQuery": "6d9ad7c6-79f4-4251-bc80-2accbf401546",
                         "dataSources": [
                             "UDM"
                         ]
@@ -828,25 +992,15 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "4b3f1009530f3e25b02c654fd0d5c99fdf5652a29b99ac58c59bcf492e17f621",
-                    "drillDownConfig": {
-                        "leftDrillDowns": [
-                            {
-                                "id": "host_header",
-                                "displayName": "Run Search on Host Header",
-                                "defaultSettings": {
-                                    "enabled": true
-                                }
-                            }
-                        ]
-                    }
+                    "etag": "33721740d6c44cdda7dd81bb7081800ef0dc8805ce3b37f5004448be409943d1",
+                    "drillDownConfig": {}
                 },
                 {
-                    "name": "4a6cee1a-0b29-4b04-a1cd-1c2ed699afca",
+                    "name": "5eaa0b19-67ba-4bc8-bd54-53c5d84afa4f",
                     "displayName": "Distinct Hosts",
                     "description": "Distinct Hosts",
                     "chartDatasource": {
-                        "dashboardQuery": "cf637d56-d47b-41b7-bd6b-4d048b7a46d2",
+                        "dashboardQuery": "0ab709f3-b1c4-456b-9c8a-bc78b35c58d5",
                         "dataSources": [
                             "UDM"
                         ]
@@ -882,14 +1036,15 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "e2be100b171c38b3f21d1097a1db5560be0c6919267453373f5395a3d31077d2"
+                    "etag": "3a10bd456f5cca66e528e7b81a601f4b08251d5838c9a4922c37263a2a0f36b5",
+                    "drillDownConfig": {}
                 },
                 {
-                    "name": "459e8bf6-54e2-4177-92d6-70fcc988637b",
+                    "name": "2946ab08-0b8c-4edb-9b2c-63dc7b506c83",
                     "displayName": "Distinct Referrers",
                     "description": "Distinct Referrers",
                     "chartDatasource": {
-                        "dashboardQuery": "9e4a867c-5264-4eb4-a77d-4744af2fe1c1",
+                        "dashboardQuery": "e09d3b83-a49c-4f74-b413-f12254fe6d35",
                         "dataSources": [
                             "UDM"
                         ]
@@ -925,13 +1080,59 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "4505ed9ddf52d06a540274e8debf5a8a1588b5d92205f77377e8e871ba0645af"
+                    "etag": "1a0534fc20cc0b1cf8dbc33073321b684846b9fabc184b2bb0b216c6c13dc1a2",
+                    "drillDownConfig": {}
                 },
                 {
-                    "name": "818dfd23-fc63-4380-a1c7-504804829e20",
+                    "name": "2318c8d1-e64c-45d5-ba27-9a4f982ad9c6",
                     "displayName": "Host Breakdown By HTTP Method",
                     "chartDatasource": {
-                        "dashboardQuery": "7eae5dac-ad99-4bb4-acab-a055988a7684",
+                        "dashboardQuery": "927f8fa8-eaaa-43e0-9ead-ede97d2e2a1c",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "host_header",
+                                "header": "Host Header"
+                            },
+                            {
+                                "field": "method",
+                                "header": "method"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Count"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "fe4a06bb4f53f7817cd126438fc413b1af6946f3059c0eba695858f04caeeea3",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "f18488d7-42f0-4afb-bf71-0060c7fa3148",
+                    "displayName": "Local Hosts - Inbound",
+                    "chartDatasource": {
+                        "dashboardQuery": "3f226926-82d3-4ac1-a38c-b0c4a2be691e",
                         "dataSources": [
                             "UDM"
                         ]
@@ -965,65 +1166,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "58160d54a8fa104977c1b28f251652a6c6d1ecccefbb94ac54807b06814c6ee4",
-                    "drillDownConfig": {
-                        "leftDrillDowns": [
-                            {
-                                "id": "host_header",
-                                "displayName": "Run Search on Host Header",
-                                "defaultSettings": {
-                                    "enabled": true
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    "name": "7ce31b06-1d6c-452b-8fce-ab07deef8ce4",
-                    "displayName": "Local Hosts - Inbound",
-                    "chartDatasource": {
-                        "dashboardQuery": "4b74e507-aa47-487b-a25b-743bc307c1d9",
-                        "dataSources": [
-                            "UDM"
-                        ]
-                    },
-                    "visualization": {
-                        "xAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "yAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "legends": [
-                            {
-                                "legendOrient": "HORIZONTAL"
-                            }
-                        ],
-                        "columnDefs": [
-                            {
-                                "field": "target_hostname",
-                                "header": "Host Header"
-                            },
-                            {
-                                "field": "count",
-                                "header": "Count"
-                            }
-                        ],
-                        "groupingType": "Off"
-                    },
-                    "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "12c67c174528f5eac36c34caf775fad9aaeee40498c92af941adc7c13bd0f097",
+                    "etag": "af61067d36b1c33ec1c4c718a0a829df4fcb23d18968c596acf1a287ad08e881",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "eca48731-30a7-447d-be92-776d2d9c683b",
+                    "name": "3e2612ee-9849-4f1f-8d9f-9dc779fbce0a",
                     "displayName": "Rare User Agents",
                     "chartDatasource": {
-                        "dashboardQuery": "bb76bbbc-5606-4a35-b8f3-91f69b0afd7e",
+                        "dashboardQuery": "4add4ae4-4b94-48bb-aed9-6312122161ad",
                         "dataSources": [
                             "UDM"
                         ]
@@ -1047,7 +1197,7 @@
                         "columnDefs": [
                             {
                                 "field": "user_agent",
-                                "header": "HTTP  User Agent"
+                                "header": "user_agent"
                             },
                             {
                                 "field": "count",
@@ -1057,24 +1207,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "d0fa502abb46ed7c9ea1f62b19cb298c88da926a8e5ca8ba7ebb2371ca19f09c",
-                    "drillDownConfig": {
-                        "leftDrillDowns": [
-                            {
-                                "id": "user_agent",
-                                "displayName": "Run Search on HTTP  User Agent",
-                                "defaultSettings": {
-                                    "enabled": true
-                                }
-                            }
-                        ]
-                    }
+                    "etag": "41db46da91ba95ef8aba027ed949f30eff0d7d8bc2452ef9c46e93214bf50b7c",
+                    "drillDownConfig": {}
                 },
                 {
-                    "name": "ad6957cb-63ca-479d-bf99-a50063f4ef4d",
+                    "name": "ea5e31af-7a9e-4cb3-b877-f0a1bebc5217",
                     "displayName": "Distinct Host Headers - Outbound",
                     "chartDatasource": {
-                        "dashboardQuery": "5c40e631-9026-4115-a995-ca85d8414bdc",
+                        "dashboardQuery": "03ae44fd-26fc-44fc-82a6-01fdba2e2fe5",
                         "dataSources": [
                             "UDM"
                         ]
@@ -1110,197 +1250,703 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "1b25d11671f720266644d4ebcc73268476e548b90c3bb3573685a6b977ed20dd",
+                    "etag": "01959968ddc40494a0baa5ee50130a2d52a0f34b306413d757044f2562d63d0f",
                     "drillDownConfig": {}
+                },
+                {
+                    "name": "23921d47-e91d-496b-ba01-619cc37e05a5",
+                    "displayName": "Average User Agent Length",
+                    "chartDatasource": {
+                        "dashboardQuery": "89c815bc-b383-4efe-86a9-79c6e19c226d",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "avg_aual",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "35da0333f3c9d5686212bf0bef3810f1cef1f55622127915008e00e2610ad485",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "364f80be-1999-4aae-8cfc-30e64825f7a6",
+                    "displayName": "HTTP Aggregation",
+                    "chartDatasource": {
+                        "dashboardQuery": "e9eaf091-dd51-4394-a795-39c4df634667",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "output",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "7c217b2cb2a65ecff6107edaf2d8ebd051ad3d571476ab909f4164767d1f4563",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "8a3a6399-ab08-4b6c-992b-4c651df6b1e3",
+                    "displayName": "Average Body Length",
+                    "chartDatasource": {
+                        "dashboardQuery": "50ec3166-d4c2-484e-bec5-321a678b8f16",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "  ",
+                                "field": "avg_abl",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "4f24d18917f8116bd16ebd3e7829f0c219e0ac01eaf186c80a52b2d8b1c048da",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "df2c44a6-d9c3-462c-8036-57a6d76975ef",
+                    "displayName": "Distinct Host Headers - Outbound (Agg Logs)",
+                    "chartDatasource": {
+                        "dashboardQuery": "13418666-a5c4-4d7f-bc3e-77410863adf4",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "d52a73665d2c1fc7e0bb1aee92492d1be5c645b2dfb9e42224e64ad517a627a3",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "2a358e37-4cbf-43f2-a3d2-cbd9c87ed9b5",
+                    "displayName": "markdown",
+                    "visualization": {
+                        "markdown": {
+                            "content": "## Below panels contains HTTP's non aggregation logs (Only Global Time Filter will be applicable)",
+                            "properties": {
+                                "backgroundColor": "#671440"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_MARKDOWN",
+                    "etag": "18f020f8a3a5377216687a20bb6ff660b9a330ed7926ed819783931c33344e7b"
+                },
+                {
+                    "name": "6fefd4f5-cac9-4ba2-ae27-243a415a05f2",
+                    "displayName": "Distinct Host Headers - Inbound (Agg Logs)",
+                    "chartDatasource": {
+                        "dashboardQuery": "6067325c-f56b-4ab7-a662-de3f77763472",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "195a223615db6f65f788da81ad6135f3b8f8835ddc7a33a7923d107edc84e41d",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "f2604ec5-ccf0-49ff-83d2-62ddb3e80c88",
+                    "displayName": "Local Hosts - Outbound (Agg Logs)",
+                    "chartDatasource": {
+                        "dashboardQuery": "756717d6-b168-4f94-8bf9-99fcee24a0aa",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "host_header",
+                                "header": "Host Header"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Count"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "2fbb6ab73fcef1ff271fa0c6e32d4acb5aa6e8a006b322a7232a65ffc842d17c",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "259aa844-b8b7-41a3-996d-4b66baa24ae9",
+                    "displayName": "Local User Agents - Inbound (Agg Logs)",
+                    "chartDatasource": {
+                        "dashboardQuery": "849a4625-6d3d-4e5e-a3c3-cd5e0d7cd166",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "user_agent",
+                                "header": "User Agent"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Count"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "9e675ff33aab8d2229f567c77e1f5e6de319d3e5af1ea72bb1af87f6b5e889a5",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "99259a85-0a6b-48fb-933f-0f591e843c96",
+                    "displayName": "Local User Agents - Outbound (Agg Logs)",
+                    "chartDatasource": {
+                        "dashboardQuery": "fd3f28cf-0d72-4a9a-8f7c-356814270518",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "user_agent",
+                                "header": "User Agent"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Count"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "bd6a41b4b615926d364069f69c5db83e28c34a9b603f0fefbd8511f792c1a198",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "8163f6a5-0f48-4130-9136-6dc8bea1a754",
+                    "displayName": "Local Hosts - Inbound (Agg Logs)",
+                    "chartDatasource": {
+                        "dashboardQuery": "8e9eab0e-e5cb-4d73-ba23-8ceeb73a5f4b",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "host_header",
+                                "header": "Host Header"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Count"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "dc8acb9a6aece4ed038645bbe7098698dc8d2e3192e197e984d8bb25f37a3aa8",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "ebae3df2-18df-4f7d-a3a0-4dd8e1fb6576",
+                    "displayName": "markdown",
+                    "visualization": {
+                        "markdown": {
+                            "content": "## Below panels contains HTTP's aggregation logs (Only Global Time Filter will be applicable)",
+                            "properties": {
+                                "backgroundColor": "#671440"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_MARKDOWN",
+                    "etag": "ad324e56be3f7e2320f48652075481a4ea63bc19a5c9fb013156e7e24e9b80a4"
                 }
             ],
             "dashboardQueries": [
                 {
-                    "name": "e40cecd8-6bd1-4472-807d-d5e2cf513be4",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n$host_header=target.hostname\r\n$host_header!=\"\"\r\n$combined_fields=strings.concat(network.session_id, target.ip, principal.ip)\r\nmatch:\r\n    $host_header\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count asc \r\nlimit:\r\n    10\r\n",
+                    "name": "6d9ad7c6-79f4-4251-bc80-2accbf401546",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http\" OR metadata.product_event_type = \"http_red\" OR metadata.product_event_type = \"http_agg\"\r\n$host_header=target.hostname\r\n$host_header!=\"\"\r\n$combined_fields=strings.concat(metadata.ingestion_labels.value, target.ip, principal.ip)\r\nmatch:\r\n    $host_header\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count asc \r\nlimit:\r\n    20\r\n",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "f87d941044c4309c06ab1fcae4e0b4f99762a46e0fc712b8638e069c087206b6"
+                    "etag": "db9a97f1d00b2317eea1e1fdb5688668541a168009f170e93d848bad5fb75c54"
                 },
                 {
-                    "name": "d88a42bb-66d2-4450-8ce1-5e9f442ea353",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n((principal.ip in cidr %internal_cidr_list) AND (target.ip in cidr %internal_cidr_list)) OR (not(principal.ip in cidr %internal_cidr_list) AND (target.ip in cidr %internal_cidr_list))\r\n$user_agent=network.http.user_agent\r\n$user_agent!=\"\"\r\n$combined_fields=strings.concat(network.session_id target.ip, principal.ip)\r\nmatch:\r\n    $user_agent\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc ",
+                    "name": "4add4ae4-4b94-48bb-aed9-6312122161ad",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http\" OR metadata.product_event_type = \"http_red\" OR metadata.product_event_type = \"http_agg\"\r\n$user_agent=about.network.http.user_agent\r\n$user_agent!=\"\"\r\n$combined_fields=strings.concat(metadata.ingestion_labels.value, target.ip, principal.ip)\r\nmatch:\r\n    $user_agent\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count asc \r\nlimit:\r\n    20",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "14eade506fbe23ef6f511a0d947e111db0a5a6959538ade00010fffcd38e3acb"
+                    "etag": "4a0de80eb575bde7b7948760b773c7c3560e0feaa03a3bf50d7a72125cd37840"
                 },
                 {
-                    "name": "60d3946e-8910-4035-80f9-6d2b34b2f129",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n((principal.ip in cidr %internal_cidr_list) AND (target.ip in cidr %internal_cidr_list)) OR ( not(principal.ip in cidr %internal_cidr_list) AND (target.ip in cidr %internal_cidr_list))\r\n$host_header=target.hostname\r\n$host_header!=\"\"\r\noutcome:\r\n    $count=count_distinct($host_header)",
+                    "name": "03ae44fd-26fc-44fc-82a6-01fdba2e2fe5",
+                    "query": "$e1.metadata.vendor_name=\"Corelight\"\r\n$e1.metadata.product_event_type=\"conn\" OR $e1.metadata.product_event_type=\"conn_red\" OR $e1.metadata.product_event_type=\"conn_agg\"\r\n$e1.about.labels[\"service\"]=\"http\"\r\n$e1.additional.fields[\"direction\"]= \"outbound\"\r\n$e2.metadata.vendor_name=\"Corelight\"\r\n$e2.metadata.product_event_type = \"http\" OR $e2.metadata.product_event_type = \"http_red\"\r\n$e2.about.network.http.user_agent!=\"\"\r\n\r\n$e1.metadata.ingestion_labels.value = $e2.metadata.ingestion_labels.value\r\n$host_header=$e2.target.hostname\r\n$host_header!=\"\"\r\n\r\noutcome:\r\n    $count=count_distinct($host_header)",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "fc90f5eb84ef4db51b3f05b0e7dbe526ccc4ae04a26465d9fd49fa7cfc629ed0"
+                    "etag": "2cebf2a41de3a4e0c3dd75ea9cbdb6c1a6187f70724afc8a0369bc2d6f0aac2b"
                 },
                 {
-                    "name": "91649f72-5459-4d15-a352-b4cbf3d8f3b4",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http\" \r\noutcome:\r\n    $user_agent=count_distinct(network.http.user_agent)",
+                    "name": "930961b5-5b97-4f21-b9cf-c8807190b8eb",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http\" OR metadata.product_event_type = \"http_red\" OR metadata.product_event_type = \"http_agg\"\r\nabout.network.http.user_agent != \"\"\r\noutcome:\r\n    $user_agent=count_distinct(about.network.http.user_agent)",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "d8647380a78fa542f6bfb1d9f817ff061140b4bc391fad4f0d1e3a1b8af3d877"
+                    "etag": "c0622a0af6ed041c5b7a0fe5ab0c6a26fe3a5afa4d658ddc9a7acea8b3948009"
                 },
                 {
-                    "name": "f837e0b6-b2b0-479b-930d-3c5e12d0419e",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n((principal.ip in cidr %internal_cidr_list) AND not(target.ip in cidr %internal_cidr_list)) OR (not(principal.ip in cidr %internal_cidr_list) AND not(target.ip in cidr %internal_cidr_list))\r\n$target_hostname=target.hostname\r\n$target_hostname!=\"\"\r\n$combined_fields=strings.concat(network.session_id, target.ip, principal.ip)\r\nmatch:\r\n    $target_hostname\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc ",
+                    "name": "3f226926-82d3-4ac1-a38c-b0c4a2be691e",
+                    "query": "$e1.metadata.vendor_name=\"Corelight\"\r\n$e1.metadata.product_event_type=\"conn\" OR $e1.metadata.product_event_type=\"conn_red\" OR $e1.metadata.product_event_type=\"conn_agg\"\r\n$e1.about.labels[\"service\"]=\"http\"\r\n$e1.additional.fields[\"direction\"]= \"inbound\"\r\n$e2.metadata.vendor_name=\"Corelight\"\r\n$e2.metadata.product_event_type = \"http\" OR $e2.metadata.product_event_type = \"http_red\"\r\n$e2.about.network.http.user_agent!=\"\"\r\n\r\n$e1.metadata.ingestion_labels.value = $e2.metadata.ingestion_labels.value\r\n$host_header=$e2.target.hostname\r\n$host_header!=\"\"\r\n$combined_fields=strings.concat($e2.metadata.ingestion_labels.value, $e2.target.ip, $e2.principal.ip)\r\nmatch:\r\n    $host_header\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "164eac62e738a716213c8fc91588c41d18c6e3b511d63714d8e20f3b1b40848a"
+                    "etag": "30f8cd4ff454b3a12129ba963cdbf068a3678a12b7a1e7bc4a70707c36516cc8"
                 },
                 {
-                    "name": "2c907248-756f-4773-b5af-41dd919101fa",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n((principal.ip in cidr %internal_cidr_list) AND not(target.ip in cidr %internal_cidr_list)) OR (not(principal.ip in cidr %internal_cidr_list) AND not(target.ip in cidr %internal_cidr_list))\r\n$user_agent=network.http.user_agent\r\n$user_agent!=\"\"\r\n$combined_fields=strings.concat(network.session_id, target.ip, principal.ip)\r\nmatch:\r\n    $user_agent\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc",
+                    "name": "20d000c2-abd3-43df-92da-35e839e60b59",
+                    "query": "$e1.metadata.vendor_name=\"Corelight\"\r\n$e1.metadata.product_event_type=\"conn\" OR $e1.metadata.product_event_type=\"conn_red\" OR $e1.metadata.product_event_type=\"conn_agg\"\r\n$e1.about.labels[\"service\"]=\"http\"\r\n$e1.additional.fields[\"direction\"]= \"outbound\"\r\n$e2.metadata.vendor_name=\"Corelight\"\r\n$e2.metadata.product_event_type = \"http\" OR $e2.metadata.product_event_type = \"http_red\"\r\n\r\n$e1.metadata.ingestion_labels.value = $e2.metadata.ingestion_labels.value\r\n$user_agent=$e2.about.network.http.user_agent\r\n$user_agent!=\"\"\r\n$combined_fields=strings.concat($e2.metadata.ingestion_labels.value, $e2.target.ip, $e2.principal.ip)\r\nmatch:\r\n    $user_agent\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "b01e8d30ed3039636b81bab775a687edb946a63ffa99792dbf9d92f35b67a874"
+                    "etag": "7e890e8ca13ac170148cca63cc54bcc99d8ae5be9fb6292643ebae726bab741b"
                 },
                 {
-                    "name": "d188023e-8d50-4acc-8b27-7c986d76d905",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"conn\"\r\nnetwork.application_protocol=\"HTTP\"\r\n$principal_ip=principal.ip\r\n$principal_ip!=\"\"\r\nmatch:\r\n    $principal_ip\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10\r\n",
+                    "name": "884f2718-76f3-4e7b-b26a-850a78c2ab5b",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http\" OR metadata.product_event_type = \"http_red\" OR metadata.product_event_type = \"http_agg\"\r\n$principal_ip=principal.ip\r\n$principal_ip!=\"\"\r\nmatch:\r\n    $principal_ip\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10\r\n",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "c736a6609e9220793b4ae4d5e89f78ea97ebe46c5a4c98aea318988e11bc816f"
+                    "etag": "c50869b4a3d0a26faf3f058f31943e04d37b48c6782476d4d27619cf7537886d"
                 },
                 {
-                    "name": "5c40e631-9026-4115-a995-ca85d8414bdc",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n((principal.ip in cidr %internal_cidr_list) AND not(target.ip in cidr %internal_cidr_list)) OR (not(principal.ip in cidr %internal_cidr_list) AND not(target.ip in cidr %internal_cidr_list))\r\n$host_header=target.hostname\r\n$host_header!=\"\"\r\noutcome:\r\n    $count=count_distinct($host_header)",
+                    "name": "c9c3a84d-45a2-4865-864f-267b75a2c796",
+                    "query": "$e1.metadata.vendor_name=\"Corelight\"\r\n$e1.metadata.product_event_type=\"conn\" OR $e1.metadata.product_event_type=\"conn_red\" OR $e1.metadata.product_event_type=\"conn_agg\"\r\n$e1.about.labels[\"service\"]=\"http\"\r\n$e1.additional.fields[\"direction\"]= \"inbound\"\r\n$e2.metadata.vendor_name=\"Corelight\"\r\n$e2.metadata.product_event_type = \"http\" OR $e2.metadata.product_event_type = \"http_red\"\r\n$e2.about.network.http.user_agent!=\"\"\r\n\r\n$e1.metadata.ingestion_labels.value = $e2.metadata.ingestion_labels.value\r\n$host_header=$e2.target.hostname\r\n$host_header!=\"\"\r\n\r\noutcome:\r\n    $count=count_distinct($host_header)",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "1b9dae119f83d2357f607845a79113aeae886d52c7bcca2fdc2a4d8a5b3ae87e"
+                    "etag": "f5e461a017da2144fb00e91fb8585d475af7b87d34c911f37aa0857b9697a05a"
                 },
                 {
-                    "name": "9e4a867c-5264-4eb4-a77d-4744af2fe1c1",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http\" \r\nnetwork.http.referral_url != \"\"\r\noutcome:\r\n    $http_referrer=count_distinct(network.http.referral_url)",
+                    "name": "e09d3b83-a49c-4f74-b413-f12254fe6d35",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http\" OR metadata.product_event_type = \"http_red\" OR metadata.product_event_type = \"http_agg\"\r\nnetwork.http.referral_url != \"\"\r\noutcome:\r\n    $http_referrer=count_distinct(network.http.referral_url)",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "7d290e7a49804a7dfbd71763f74f7780cdf572048b1f7be4ab0d449a7c80bc8d"
+                    "etag": "b39f39ef95f713762b564ed438d6ce6beb653bffe72762246765aedba493c7c6"
                 },
                 {
-                    "name": "a6b12ba8-9db7-4b70-b124-b691d9680660",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http\" \r\noutcome:\r\n    $http_referrer=count_distinct(network.session_id)",
+                    "name": "b5d78e45-d1f1-4a9e-ba47-ec266a393c98",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http\" OR metadata.product_event_type = \"http_red\" OR metadata.product_event_type = \"http_agg\"\r\n$uid = metadata.ingestion_labels.value\r\noutcome:\r\n    $http_referrer=count_distinct($uid)",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "fa349bdf647e093641eea10cf67b7f3fe8d555540c88fec71cebae777bfb169f"
+                    "etag": "de87420efe36b1f1b886357b97f134c582c8919bbddf58f070e8092e54c8f1ef"
                 },
                 {
-                    "name": "4b74e507-aa47-487b-a25b-743bc307c1d9",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n((principal.ip in cidr %internal_cidr_list) AND (target.ip in cidr %internal_cidr_list)) OR (not(principal.ip in cidr %internal_cidr_list) AND (target.ip in cidr %internal_cidr_list))\r\n$target_hostname=target.hostname\r\n$target_hostname!=\"\"\r\n$combined_fields=strings.concat(network.session_id, target.ip, principal.ip)\r\nmatch:\r\n    $target_hostname\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc ",
+                    "name": "082c048c-af2f-4e9b-b670-fbdd7208d78a",
+                    "query": "$e1.metadata.vendor_name=\"Corelight\"\r\n$e1.metadata.product_event_type=\"conn\" OR $e1.metadata.product_event_type=\"conn_red\" OR $e1.metadata.product_event_type=\"conn_agg\"\r\n$e1.about.labels[\"service\"]=\"http\"\r\n$e1.additional.fields[\"direction\"]= \"outbound\"\r\n$e2.metadata.vendor_name=\"Corelight\"\r\n$e2.metadata.product_event_type = \"http\" OR $e2.metadata.product_event_type = \"http_red\"\r\n$e2.about.network.http.user_agent!=\"\"\r\n\r\n$e1.metadata.ingestion_labels.value = $e2.metadata.ingestion_labels.value\r\n$host_header=$e2.target.hostname\r\n$host_header!=\"\"\r\n$combined_fields=strings.concat($e2.metadata.ingestion_labels.value, $e2.target.ip, $e2.principal.ip)\r\nmatch:\r\n    $host_header\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "37ac6d858ab3bba693c23c8e934f8bb993b58998c358fe60a50b68f3fa72a3d8"
+                    "etag": "66c991d2484f053cbfe398e155c54fba2289381c552a8cd3d8024082a0b31b2c"
                 },
                 {
-                    "name": "7eae5dac-ad99-4bb4-acab-a055988a7684",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n$host_header=target.hostname\r\n$host_header!=\"\"\r\n$combined_fields=strings.concat(network.session_id, target.ip, principal.ip)\r\nmatch:\r\n    $host_header\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc ",
+                    "name": "927f8fa8-eaaa-43e0-9ead-ede97d2e2a1c",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http\" OR metadata.product_event_type = \"http_red\" OR metadata.product_event_type = \"http_agg\"\r\n$host_header=target.hostname\r\n$host_header!=\"\"\r\n$method=network.http.method\r\n$method!=\"\"\r\n$combined_fields=strings.concat(metadata.ingestion_labels.value, target.ip, principal.ip)\r\nmatch:\r\n    $host_header, $method\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc ",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "4956933dba5cf81844ae1a7ab62227de6498a3ca7281559f090c006e91f419cd"
+                    "etag": "a09cb399aedee0c5662884b1391aea2eb2701f30cbc3ed6f4beaa893e0e2c9a2"
                 },
                 {
-                    "name": "bb76bbbc-5606-4a35-b8f3-91f69b0afd7e",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n$user_agent=network.http.user_agent\r\n$user_agent!=\"\"\r\n$combined_fields=strings.concat(network.session_id, target.ip, principal.ip)\r\nmatch:\r\n    $user_agent\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count asc \r\nlimit:\r\n    10\r\n",
+                    "name": "2987686d-f063-406c-a483-79ba4f54c234",
+                    "query": "$e1.metadata.vendor_name=\"Corelight\"\r\n$e1.metadata.product_event_type=\"conn\" OR $e1.metadata.product_event_type=\"conn_red\" OR $e1.metadata.product_event_type=\"conn_agg\"\r\n$e1.about.labels[\"service\"]=\"http\"\r\n$e1.additional.fields[\"direction\"]= \"inbound\"\r\n$e2.metadata.vendor_name=\"Corelight\"\r\n$e2.metadata.product_event_type = \"http\" OR $e2.metadata.product_event_type = \"http_red\"\r\n\r\n$e1.metadata.ingestion_labels.value = $e2.metadata.ingestion_labels.value\r\n$user_agent=$e2.about.network.http.user_agent\r\n$user_agent!=\"\"\r\n$combined_fields=strings.concat($e2.metadata.ingestion_labels.value, $e2.target.ip, $e2.principal.ip)\r\nmatch:\r\n    $user_agent\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "7df2b04195bcd46ef02902779b9f769d321093720ac21ef31d7b3fdbc33c7fd9"
+                    "etag": "d0d7ec4a1f9e575abdead47cbf973a4eca5a27837f50a3befab18c4fd80488bd"
                 },
                 {
-                    "name": "c79bfbbf-9cb5-4f39-a03a-24c0949418ed",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n$target_hostname=target.hostname\r\n$target_hostname!=\"\"\r\n$combined_fields=strings.concat(network.session_id, target.ip, principal.ip)\r\nmatch:\r\n    $target_hostname\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10\r\n",
+                    "name": "be571514-e31f-4805-a0be-8de6224eab70",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http\" OR metadata.product_event_type = \"http_red\" OR metadata.product_event_type = \"http_agg\"\r\n$target_hostname=target.hostname\r\n$target_hostname!=\"\"\r\n$combined_fields=strings.concat(metadata.ingestion_labels.value, target.ip, principal.ip)\r\nmatch:\r\n    $target_hostname\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc \r\nlimit:\r\n    20\r\n",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "b8919e0fc5fe9dfb4d897fcb59d91de1d9faf2db6949591804a8274b8ec89012"
+                    "etag": "731e67792089861086cb397fc11405b36e9b2f58d27a694d883fd36cb647347b"
                 },
                 {
-                    "name": "da1ed9c3-ebe7-4d13-8428-d5c2756d66ea",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\n$status_msg=about.labels[\"status_msg\"]\r\n$status_msg!=\"\"\r\n$combined_fields=strings.concat(network.session_id, target.ip, principal.ip)\r\nmatch:\r\n    $status_msg\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10\r\n",
+                    "name": "e4032ae9-e83d-4fbd-a136-dc1597581882",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http\" OR metadata.product_event_type = \"http_red\" OR metadata.product_event_type = \"http_agg\"\r\n$status_msg=about.labels[\"status_msg\"]\r\n$status_msg!=\"\"\r\n$combined_fields=strings.concat(metadata.ingestion_labels.value, target.ip, principal.ip)\r\nmatch:\r\n    $status_msg\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10\r\n",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "e60215b876029b5b6cf33e80dfbcd7304c0d2777495021482b51b7f82c0f70b4"
+                    "etag": "8cab76b83c28d049dbea94f664a70013362bcd17261190103d1f09f1471a56e7"
                 },
                 {
-                    "name": "cf637d56-d47b-41b7-bd6b-4d048b7a46d2",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http\" \r\noutcome:\r\n    $host_header=count_distinct(target.hostname)",
+                    "name": "0ab709f3-b1c4-456b-9c8a-bc78b35c58d5",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http\" OR metadata.product_event_type = \"http_red\" OR metadata.product_event_type = \"http_agg\"\r\ntarget.hostname!=\"\"\r\noutcome:\r\n    $host_header=count_distinct(target.hostname)",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "ff0c0d2449ea40a41c789020cbb6e739ed211b5a7061ea10eef8d72c1fdeb2ac"
+                    "etag": "854ddd8fae48745369e47ad2c2fb574849558a38fb0413148fe7c949b01b0150"
                 },
                 {
-                    "name": "60aaa7a7-6035-4d44-9c5b-462ed394e711",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"http\"\r\nnetwork.http.method!=\"\"\r\n$host_header=target.hostname\r\n$host_header!=\"\"\r\n$status_code=strings.concat(network.http.response_code, \"\")\r\n$status_code!=\"\"\r\n$status_msg=about.labels[\"status_msg\"]\r\n$combined_fields=strings.concat(network.session_id, target.ip, principal.ip)\r\nmatch:\r\n    $host_header, $status_code, $status_msg\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc ",
+                    "name": "61ded318-d5db-4eaf-807f-9f0984d6c868",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http\" OR metadata.product_event_type = \"http_red\" OR metadata.product_event_type = \"http_agg\"\r\nnetwork.http.method!=\"\"\r\n$host_header=target.hostname\r\n$host_header!=\"\"\r\n$status_code=strings.concat(network.http.response_code, \"\")\r\n$status_code!=\"\"\r\n$status_msg=about.labels[\"status_msg\"]\r\n$status_msg!=\"\"\r\n$combined_fields=strings.concat(metadata.ingestion_labels.value, target.ip, principal.ip)\r\nmatch:\r\n    $host_header, $status_code, $status_msg\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc ",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "1449a233e065bae885ffdfdcd097b42d5a22138b3ce4911d2de9dd1a049d86b2"
+                    "etag": "d6e3b392d26ddc3a178701a2593bf3f26e8ed1aa6435136c92b97d939d7876ce"
+                },
+                {
+                    "name": "89c815bc-b383-4efe-86a9-79c6e19c226d",
+                    "query": "metadata.vendor_name=\"Corelight\"\nmetadata.product_event_type = \"http\" OR metadata.product_event_type = \"http_red\" OR metadata.product_event_type = \"http_agg\"\nabout.network.http.user_agent != \"\"\n$user_agent_length = strings.length(about.network.http.user_agent)\n\noutcome:\n    $avg_aual = window.avg($user_agent_length)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "f9836fbb7b9c5b4482cfb1fe4e3cc5bc673b19226ec3b9f208deb3dc8b09a8f2"
+                },
+                {
+                    "name": "50ec3166-d4c2-484e-bec5-321a678b8f16",
+                    "query": "metadata.vendor_name=\"Corelight\"\nmetadata.product_event_type = \"http\" OR metadata.product_event_type = \"http_red\" OR metadata.product_event_type = \"http_agg\"\noutcome:\n    $avg_abl = window.avg(network.received_bytes)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "b7f496902093204dcdbdc2609144d7bfe52e9414b9b0509c313cb5d588bc0350"
+                },
+                {
+                    "name": "e9eaf091-dd51-4394-a795-39c4df634667",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"http_agg\"\r\n$uid = metadata.ingestion_labels.value\r\noutcome:\r\n    $count = count($uid)\r\n    $output = if($count>0, \"HTTP Agg Logs Available\", \"No HTTP Agg Logs\")",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "a6f044130eb7e7bceb108ad4ef7d561df63514d8fd614a6b74a52cb6d5373235"
+                },
+                {
+                    "name": "6067325c-f56b-4ab7-a662-de3f77763472",
+                    "query": "$e1.metadata.vendor_name=\"Corelight\"\r\n$e1.metadata.product_event_type=\"conn\" OR $e1.metadata.product_event_type=\"conn_red\" OR $e1.metadata.product_event_type=\"conn_agg\"\r\n$e1.about.labels[\"service\"]=\"http\"\r\n$e1.additional.fields[\"direction\"]= \"inbound\"\r\n$e2.metadata.vendor_name=\"Corelight\"\r\n$e2.metadata.product_event_type = \"http_agg\"\r\n$e2.about.network.http.user_agent!=\"\"\r\n\r\n$e1.metadata.ingestion_labels.value = $e2.metadata.ingestion_labels.value\r\n$host_header=$e2.target.hostname\r\n$host_header!=\"\"\r\n\r\noutcome:\r\n    $count=count_distinct($host_header)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "35fc3c3fab0bae2e632adafe61033dac1e7218a70169b21300490cc446493418"
+                },
+                {
+                    "name": "8e9eab0e-e5cb-4d73-ba23-8ceeb73a5f4b",
+                    "query": "$e1.metadata.vendor_name=\"Corelight\"\r\n$e1.metadata.product_event_type=\"conn\" OR $e1.metadata.product_event_type=\"conn_red\" OR $e1.metadata.product_event_type=\"conn_agg\"\r\n$e1.about.labels[\"service\"]=\"http\"\r\n$e1.additional.fields[\"direction\"]= \"inbound\"\r\n$e2.metadata.vendor_name=\"Corelight\"\r\n$e2.metadata.product_event_type = \"http_agg\"\r\n$e2.about.network.http.user_agent!=\"\"\r\n\r\n$e1.metadata.ingestion_labels.value = $e2.metadata.ingestion_labels.value\r\n$host_header=$e2.target.hostname\r\n$host_header!=\"\"\r\n$combined_fields=strings.concat($e2.metadata.ingestion_labels.value, $e2.target.ip, $e2.principal.ip)\r\nmatch:\r\n    $host_header\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "abdab4108c93b32b18375d5307673019c1d59440436158e34e728fb02224a2f7"
+                },
+                {
+                    "name": "756717d6-b168-4f94-8bf9-99fcee24a0aa",
+                    "query": "$e1.metadata.vendor_name=\"Corelight\"\r\n$e1.metadata.product_event_type=\"conn\" OR $e1.metadata.product_event_type=\"conn_red\" OR $e1.metadata.product_event_type=\"conn_agg\"\r\n$e1.about.labels[\"service\"]=\"http\"\r\n$e1.additional.fields[\"direction\"]= \"outbound\"\r\n$e2.metadata.vendor_name=\"Corelight\"\r\n$e2.metadata.product_event_type = \"http_agg\"\r\n$e2.about.network.http.user_agent!=\"\"\r\n\r\n$e1.metadata.ingestion_labels.value = $e2.metadata.ingestion_labels.value\r\n$host_header=$e2.target.hostname\r\n$host_header!=\"\"\r\n$combined_fields=strings.concat($e2.metadata.ingestion_labels.value, $e2.target.ip, $e2.principal.ip)\r\nmatch:\r\n    $host_header\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "69df677afd8953395d082e191ff48918a659a4ed53e22c08b99ca675ebecee0a"
+                },
+                {
+                    "name": "13418666-a5c4-4d7f-bc3e-77410863adf4",
+                    "query": "$e1.metadata.vendor_name=\"Corelight\"\r\n$e1.metadata.product_event_type=\"conn\" OR $e1.metadata.product_event_type=\"conn_red\" OR $e1.metadata.product_event_type=\"conn_agg\"\r\n$e1.about.labels[\"service\"]=\"http\"\r\n$e1.additional.fields[\"direction\"]= \"outbound\"\r\n$e2.metadata.vendor_name=\"Corelight\"\r\n$e2.metadata.product_event_type = \"http_agg\"\r\n$e2.about.network.http.user_agent!=\"\"\r\n\r\n$e1.metadata.ingestion_labels.value = $e2.metadata.ingestion_labels.value\r\n$host_header=$e2.target.hostname\r\n$host_header!=\"\"\r\n\r\noutcome:\r\n    $count=count_distinct($host_header)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "c64f5fb392b3565b4f3e08a5ecade3520bf7981f6b3c693d976135470570b042"
+                },
+                {
+                    "name": "849a4625-6d3d-4e5e-a3c3-cd5e0d7cd166",
+                    "query": "$e1.metadata.vendor_name=\"Corelight\"\r\n$e1.metadata.product_event_type=\"conn\" OR $e1.metadata.product_event_type=\"conn_red\" OR $e1.metadata.product_event_type=\"conn_agg\"\r\n$e1.about.labels[\"service\"]=\"http\"\r\n$e1.additional.fields[\"direction\"]= \"inbound\"\r\n$e2.metadata.vendor_name=\"Corelight\"\r\n$e2.metadata.product_event_type = \"http_agg\"\r\n\r\n$e1.metadata.ingestion_labels.value = $e2.metadata.ingestion_labels.value\r\n$user_agent=$e2.about.network.http.user_agent\r\n$user_agent!=\"\"\r\n$combined_fields=strings.concat($e2.metadata.ingestion_labels.value, $e2.target.ip, $e2.principal.ip)\r\nmatch:\r\n    $user_agent\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "5ae25a9c79a493d3d49c3f59e4dc3dabd5699ea9ffbe350f076a3181507be8b2"
+                },
+                {
+                    "name": "fd3f28cf-0d72-4a9a-8f7c-356814270518",
+                    "query": "$e1.metadata.vendor_name=\"Corelight\"\r\n$e1.metadata.product_event_type=\"conn\" OR $e1.metadata.product_event_type=\"conn_red\" OR $e1.metadata.product_event_type=\"conn_agg\"\r\n$e1.about.labels[\"service\"]=\"http\"\r\n$e1.additional.fields[\"direction\"]= \"outbound\"\r\n$e2.metadata.vendor_name=\"Corelight\"\r\n$e2.metadata.product_event_type = \"http_agg\"\r\n\r\n$e1.metadata.ingestion_labels.value = $e2.metadata.ingestion_labels.value\r\n$user_agent=$e2.about.network.http.user_agent\r\n$user_agent!=\"\"\r\n$combined_fields=strings.concat($e2.metadata.ingestion_labels.value, $e2.target.ip, $e2.principal.ip)\r\nmatch:\r\n    $user_agent\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "b0b932ffc992f836d810123f6c5c944c8e24fb13f2dfbe94922f020cb88a2dfb"
                 }
             ]
         }

@@ -2,7 +2,7 @@
     "dashboards": [
         {
             "dashboard": {
-                "name": "6bf274a5-88eb-4b3f-8cfa-433bbde71d0d",
+                "name": "8e2bb617-189b-4a21-8a09-600037ef00cb",
                 "displayName": "Corelight → Data Explorer → Connections",
                 "definition": {
                     "filters": [
@@ -20,13 +20,18 @@
                             ],
                             "displayName": "Global Time Filter",
                             "chartIds": [
-                                "49ec5d17-5d8e-418c-bcc8-2668cc4107e9",
-                                "6b8ed618-a4da-4995-b33a-c48dda296113",
-                                "a9ce5023-9637-4056-ab3f-51124ade1f7c",
-                                "ba8d8144-322e-495f-a8f3-528f7553de21",
-                                "6331cd40-8dd5-4e90-b204-bb6034c7c19b",
-                                "5b2bc67e-109b-4f82-8238-e4436fbed57b",
-                                "2dfd31a2-2b4e-4aca-8c01-31f2a4ad1781"
+                                "a43eed47-a282-4e13-a40c-19dbe3ce60bf",
+                                "728b508b-9fcc-4bf8-8c9d-564be2155cf5",
+                                "108c52cb-4584-463a-b8c8-a8e128e915ca",
+                                "2ee75ea9-5c78-48fd-95b9-ecb7b73c0f17",
+                                "64af4101-f32a-459f-b437-17c09d12a4c0",
+                                "0969f928-5253-4f3f-b0de-204c7e20b52a",
+                                "d714702e-7555-4d70-be1c-983f876e2549",
+                                "8cb1b0da-7c76-4b57-a08a-401b1beae5c2",
+                                "cedb9dc5-5b45-47dd-ae49-1e0ea74245f3",
+                                "c4e08cde-af23-4bcf-a756-74d4f9d47a6e",
+                                "341792d7-3df8-427d-8ae1-a3858a5cc4fd",
+                                "d7dc251f-719a-4b4a-9f70-1aedb5198251"
                             ],
                             "isStandardTimeRangeFilter": true,
                             "isStandardTimeRangeFilterEnabled": true
@@ -45,13 +50,17 @@
                             ],
                             "displayName": "Corelight Sensor",
                             "chartIds": [
-                                "49ec5d17-5d8e-418c-bcc8-2668cc4107e9",
-                                "6b8ed618-a4da-4995-b33a-c48dda296113",
-                                "a9ce5023-9637-4056-ab3f-51124ade1f7c",
-                                "ba8d8144-322e-495f-a8f3-528f7553de21",
-                                "6331cd40-8dd5-4e90-b204-bb6034c7c19b",
-                                "5b2bc67e-109b-4f82-8238-e4436fbed57b",
-                                "2dfd31a2-2b4e-4aca-8c01-31f2a4ad1781"
+                                "a43eed47-a282-4e13-a40c-19dbe3ce60bf",
+                                "728b508b-9fcc-4bf8-8c9d-564be2155cf5",
+                                "108c52cb-4584-463a-b8c8-a8e128e915ca",
+                                "2ee75ea9-5c78-48fd-95b9-ecb7b73c0f17",
+                                "64af4101-f32a-459f-b437-17c09d12a4c0",
+                                "0969f928-5253-4f3f-b0de-204c7e20b52a",
+                                "d714702e-7555-4d70-be1c-983f876e2549",
+                                "8cb1b0da-7c76-4b57-a08a-401b1beae5c2",
+                                "cedb9dc5-5b45-47dd-ae49-1e0ea74245f3",
+                                "c4e08cde-af23-4bcf-a756-74d4f9d47a6e",
+                                "341792d7-3df8-427d-8ae1-a3858a5cc4fd"
                             ]
                         },
                         {
@@ -68,19 +77,19 @@
                             ],
                             "displayName": "Source IP",
                             "chartIds": [
-                                "49ec5d17-5d8e-418c-bcc8-2668cc4107e9",
-                                "6b8ed618-a4da-4995-b33a-c48dda296113",
-                                "a9ce5023-9637-4056-ab3f-51124ade1f7c",
-                                "ba8d8144-322e-495f-a8f3-528f7553de21",
-                                "6331cd40-8dd5-4e90-b204-bb6034c7c19b",
-                                "5b2bc67e-109b-4f82-8238-e4436fbed57b",
-                                "2dfd31a2-2b4e-4aca-8c01-31f2a4ad1781"
+                                "a43eed47-a282-4e13-a40c-19dbe3ce60bf",
+                                "728b508b-9fcc-4bf8-8c9d-564be2155cf5",
+                                "108c52cb-4584-463a-b8c8-a8e128e915ca",
+                                "2ee75ea9-5c78-48fd-95b9-ecb7b73c0f17",
+                                "64af4101-f32a-459f-b437-17c09d12a4c0",
+                                "0969f928-5253-4f3f-b0de-204c7e20b52a",
+                                "d714702e-7555-4d70-be1c-983f876e2549"
                             ]
                         },
                         {
-                            "id": "8d459d40-ac35-42f5-bdbd-e5b9de506a14",
+                            "id": "3bf9a35f-580d-4ee4-96c6-1e01c4339871",
                             "dataSource": "UDM",
-                            "fieldPath": "principal.port",
+                            "fieldPath": "metadata.ingestion_labels.value",
                             "filterOperatorAndFieldValues": [
                                 {
                                     "filterOperator": "EQUAL",
@@ -89,15 +98,19 @@
                                     ]
                                 }
                             ],
-                            "displayName": "Source Port",
+                            "displayName": "Connection UID",
                             "chartIds": [
-                                "49ec5d17-5d8e-418c-bcc8-2668cc4107e9",
-                                "6b8ed618-a4da-4995-b33a-c48dda296113",
-                                "a9ce5023-9637-4056-ab3f-51124ade1f7c",
-                                "ba8d8144-322e-495f-a8f3-528f7553de21",
-                                "6331cd40-8dd5-4e90-b204-bb6034c7c19b",
-                                "5b2bc67e-109b-4f82-8238-e4436fbed57b",
-                                "2dfd31a2-2b4e-4aca-8c01-31f2a4ad1781"
+                                "341792d7-3df8-427d-8ae1-a3858a5cc4fd",
+                                "8cb1b0da-7c76-4b57-a08a-401b1beae5c2",
+                                "cedb9dc5-5b45-47dd-ae49-1e0ea74245f3",
+                                "a43eed47-a282-4e13-a40c-19dbe3ce60bf",
+                                "2ee75ea9-5c78-48fd-95b9-ecb7b73c0f17",
+                                "0969f928-5253-4f3f-b0de-204c7e20b52a",
+                                "64af4101-f32a-459f-b437-17c09d12a4c0",
+                                "728b508b-9fcc-4bf8-8c9d-564be2155cf5",
+                                "108c52cb-4584-463a-b8c8-a8e128e915ca",
+                                "c4e08cde-af23-4bcf-a756-74d4f9d47a6e",
+                                "d714702e-7555-4d70-be1c-983f876e2549"
                             ]
                         },
                         {
@@ -114,13 +127,13 @@
                             ],
                             "displayName": "Destination IP",
                             "chartIds": [
-                                "49ec5d17-5d8e-418c-bcc8-2668cc4107e9",
-                                "a9ce5023-9637-4056-ab3f-51124ade1f7c",
-                                "6b8ed618-a4da-4995-b33a-c48dda296113",
-                                "ba8d8144-322e-495f-a8f3-528f7553de21",
-                                "6331cd40-8dd5-4e90-b204-bb6034c7c19b",
-                                "5b2bc67e-109b-4f82-8238-e4436fbed57b",
-                                "2dfd31a2-2b4e-4aca-8c01-31f2a4ad1781"
+                                "a43eed47-a282-4e13-a40c-19dbe3ce60bf",
+                                "108c52cb-4584-463a-b8c8-a8e128e915ca",
+                                "728b508b-9fcc-4bf8-8c9d-564be2155cf5",
+                                "2ee75ea9-5c78-48fd-95b9-ecb7b73c0f17",
+                                "64af4101-f32a-459f-b437-17c09d12a4c0",
+                                "0969f928-5253-4f3f-b0de-204c7e20b52a",
+                                "d714702e-7555-4d70-be1c-983f876e2549"
                             ]
                         },
                         {
@@ -137,148 +150,254 @@
                             ],
                             "displayName": "Destination Port",
                             "chartIds": [
-                                "49ec5d17-5d8e-418c-bcc8-2668cc4107e9",
-                                "6b8ed618-a4da-4995-b33a-c48dda296113",
-                                "a9ce5023-9637-4056-ab3f-51124ade1f7c",
-                                "ba8d8144-322e-495f-a8f3-528f7553de21",
-                                "6331cd40-8dd5-4e90-b204-bb6034c7c19b",
-                                "5b2bc67e-109b-4f82-8238-e4436fbed57b",
-                                "2dfd31a2-2b4e-4aca-8c01-31f2a4ad1781"
+                                "a43eed47-a282-4e13-a40c-19dbe3ce60bf",
+                                "728b508b-9fcc-4bf8-8c9d-564be2155cf5",
+                                "108c52cb-4584-463a-b8c8-a8e128e915ca",
+                                "2ee75ea9-5c78-48fd-95b9-ecb7b73c0f17",
+                                "64af4101-f32a-459f-b437-17c09d12a4c0",
+                                "0969f928-5253-4f3f-b0de-204c7e20b52a",
+                                "d714702e-7555-4d70-be1c-983f876e2549"
+                            ]
+                        },
+                        {
+                            "id": "81f77ee5-5c88-4764-9f6d-2e1dd0962671",
+                            "dataSource": "UDM",
+                            "fieldPath": "metadata.product_event_type",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "NOT_EQUAL",
+                                    "fieldValues": [
+                                        "conn_agg"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Show Aggregation",
+                            "chartIds": [
+                                "a43eed47-a282-4e13-a40c-19dbe3ce60bf",
+                                "2ee75ea9-5c78-48fd-95b9-ecb7b73c0f17",
+                                "0969f928-5253-4f3f-b0de-204c7e20b52a",
+                                "64af4101-f32a-459f-b437-17c09d12a4c0",
+                                "728b508b-9fcc-4bf8-8c9d-564be2155cf5",
+                                "108c52cb-4584-463a-b8c8-a8e128e915ca",
+                                "d714702e-7555-4d70-be1c-983f876e2549",
+                                "8cb1b0da-7c76-4b57-a08a-401b1beae5c2",
+                                "cedb9dc5-5b45-47dd-ae49-1e0ea74245f3",
+                                "c4e08cde-af23-4bcf-a756-74d4f9d47a6e",
+                                "341792d7-3df8-427d-8ae1-a3858a5cc4fd"
                             ]
                         }
                     ],
                     "charts": [
                         {
-                            "dashboardChart": "49ec5d17-5d8e-418c-bcc8-2668cc4107e9",
+                            "dashboardChart": "a43eed47-a282-4e13-a40c-19dbe3ce60bf",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
-                                "startY": 0,
+                                "startY": 26,
                                 "spanY": 25
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
                                 "63f72959-42b7-4a44-9578-2cb3fff28399",
                                 "65726920-9169-4824-bdb8-e06f418d5abf",
-                                "8d459d40-ac35-42f5-bdbd-e5b9de506a14",
+                                "3bf9a35f-580d-4ee4-96c6-1e01c4339871",
                                 "b0958632-2ec8-485f-b462-6ae11c74ab4f",
-                                "0bdf2189-706a-4f08-b16f-7b9c9aa64e06"
+                                "0bdf2189-706a-4f08-b16f-7b9c9aa64e06",
+                                "81f77ee5-5c88-4764-9f6d-2e1dd0962671"
                             ]
                         },
                         {
-                            "dashboardChart": "2dfd31a2-2b4e-4aca-8c01-31f2a4ad1781",
+                            "dashboardChart": "d714702e-7555-4d70-be1c-983f876e2549",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
-                                "startY": 0,
+                                "startY": 26,
                                 "spanY": 25
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
                                 "63f72959-42b7-4a44-9578-2cb3fff28399",
                                 "65726920-9169-4824-bdb8-e06f418d5abf",
-                                "8d459d40-ac35-42f5-bdbd-e5b9de506a14",
+                                "3bf9a35f-580d-4ee4-96c6-1e01c4339871",
                                 "b0958632-2ec8-485f-b462-6ae11c74ab4f",
-                                "0bdf2189-706a-4f08-b16f-7b9c9aa64e06"
+                                "0bdf2189-706a-4f08-b16f-7b9c9aa64e06",
+                                "81f77ee5-5c88-4764-9f6d-2e1dd0962671"
                             ]
                         },
                         {
-                            "dashboardChart": "6331cd40-8dd5-4e90-b204-bb6034c7c19b",
+                            "dashboardChart": "64af4101-f32a-459f-b437-17c09d12a4c0",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
-                                "startY": 25,
+                                "startY": 51,
                                 "spanY": 27
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
                                 "63f72959-42b7-4a44-9578-2cb3fff28399",
                                 "65726920-9169-4824-bdb8-e06f418d5abf",
-                                "8d459d40-ac35-42f5-bdbd-e5b9de506a14",
+                                "3bf9a35f-580d-4ee4-96c6-1e01c4339871",
                                 "b0958632-2ec8-485f-b462-6ae11c74ab4f",
-                                "0bdf2189-706a-4f08-b16f-7b9c9aa64e06"
+                                "0bdf2189-706a-4f08-b16f-7b9c9aa64e06",
+                                "81f77ee5-5c88-4764-9f6d-2e1dd0962671"
                             ]
                         },
                         {
-                            "dashboardChart": "6b8ed618-a4da-4995-b33a-c48dda296113",
+                            "dashboardChart": "728b508b-9fcc-4bf8-8c9d-564be2155cf5",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
-                                "startY": 25,
+                                "startY": 51,
                                 "spanY": 27
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
                                 "63f72959-42b7-4a44-9578-2cb3fff28399",
                                 "65726920-9169-4824-bdb8-e06f418d5abf",
-                                "8d459d40-ac35-42f5-bdbd-e5b9de506a14",
+                                "3bf9a35f-580d-4ee4-96c6-1e01c4339871",
                                 "b0958632-2ec8-485f-b462-6ae11c74ab4f",
-                                "0bdf2189-706a-4f08-b16f-7b9c9aa64e06"
+                                "0bdf2189-706a-4f08-b16f-7b9c9aa64e06",
+                                "81f77ee5-5c88-4764-9f6d-2e1dd0962671"
                             ]
                         },
                         {
-                            "dashboardChart": "5b2bc67e-109b-4f82-8238-e4436fbed57b",
+                            "dashboardChart": "0969f928-5253-4f3f-b0de-204c7e20b52a",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
-                                "startY": 52,
+                                "startY": 78,
                                 "spanY": 27
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
                                 "63f72959-42b7-4a44-9578-2cb3fff28399",
                                 "65726920-9169-4824-bdb8-e06f418d5abf",
-                                "8d459d40-ac35-42f5-bdbd-e5b9de506a14",
+                                "3bf9a35f-580d-4ee4-96c6-1e01c4339871",
                                 "b0958632-2ec8-485f-b462-6ae11c74ab4f",
-                                "0bdf2189-706a-4f08-b16f-7b9c9aa64e06"
+                                "0bdf2189-706a-4f08-b16f-7b9c9aa64e06",
+                                "81f77ee5-5c88-4764-9f6d-2e1dd0962671"
                             ]
                         },
                         {
-                            "dashboardChart": "a9ce5023-9637-4056-ab3f-51124ade1f7c",
+                            "dashboardChart": "108c52cb-4584-463a-b8c8-a8e128e915ca",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
-                                "startY": 52,
+                                "startY": 78,
                                 "spanY": 27
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
                                 "63f72959-42b7-4a44-9578-2cb3fff28399",
                                 "65726920-9169-4824-bdb8-e06f418d5abf",
-                                "8d459d40-ac35-42f5-bdbd-e5b9de506a14",
+                                "3bf9a35f-580d-4ee4-96c6-1e01c4339871",
                                 "b0958632-2ec8-485f-b462-6ae11c74ab4f",
-                                "0bdf2189-706a-4f08-b16f-7b9c9aa64e06"
+                                "0bdf2189-706a-4f08-b16f-7b9c9aa64e06",
+                                "81f77ee5-5c88-4764-9f6d-2e1dd0962671"
                             ]
                         },
                         {
-                            "dashboardChart": "ba8d8144-322e-495f-a8f3-528f7553de21",
+                            "dashboardChart": "2ee75ea9-5c78-48fd-95b9-ecb7b73c0f17",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
-                                "startY": 79,
+                                "startY": 105,
                                 "spanY": 27
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
                                 "63f72959-42b7-4a44-9578-2cb3fff28399",
                                 "65726920-9169-4824-bdb8-e06f418d5abf",
-                                "8d459d40-ac35-42f5-bdbd-e5b9de506a14",
+                                "3bf9a35f-580d-4ee4-96c6-1e01c4339871",
                                 "b0958632-2ec8-485f-b462-6ae11c74ab4f",
-                                "0bdf2189-706a-4f08-b16f-7b9c9aa64e06"
+                                "0bdf2189-706a-4f08-b16f-7b9c9aa64e06",
+                                "81f77ee5-5c88-4764-9f6d-2e1dd0962671"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "c4e08cde-af23-4bcf-a756-74d4f9d47a6e",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 0,
+                                "spanY": 13
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "63f72959-42b7-4a44-9578-2cb3fff28399",
+                                "3bf9a35f-580d-4ee4-96c6-1e01c4339871",
+                                "81f77ee5-5c88-4764-9f6d-2e1dd0962671"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "8cb1b0da-7c76-4b57-a08a-401b1beae5c2",
+                            "chartLayout": {
+                                "startX": 32,
+                                "spanX": 32,
+                                "startY": 13,
+                                "spanY": 13
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "63f72959-42b7-4a44-9578-2cb3fff28399",
+                                "3bf9a35f-580d-4ee4-96c6-1e01c4339871",
+                                "81f77ee5-5c88-4764-9f6d-2e1dd0962671"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "341792d7-3df8-427d-8ae1-a3858a5cc4fd",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 32,
+                                "startY": 13,
+                                "spanY": 13
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "63f72959-42b7-4a44-9578-2cb3fff28399",
+                                "3bf9a35f-580d-4ee4-96c6-1e01c4339871",
+                                "81f77ee5-5c88-4764-9f6d-2e1dd0962671"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "cedb9dc5-5b45-47dd-ae49-1e0ea74245f3",
+                            "chartLayout": {
+                                "startX": 64,
+                                "spanX": 32,
+                                "startY": 13,
+                                "spanY": 13
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "63f72959-42b7-4a44-9578-2cb3fff28399",
+                                "3bf9a35f-580d-4ee4-96c6-1e01c4339871",
+                                "81f77ee5-5c88-4764-9f6d-2e1dd0962671"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "d7dc251f-719a-4b4a-9f70-1aedb5198251",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 0,
+                                "spanY": 13
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
                             ]
                         }
                     ]
                 },
                 "type": "CUSTOM",
-                "etag": "e1c60f0990359dd0234769c8de72f767c882b2bf51025a65836466b8c7d391a3",
+                "etag": "0f03dddc09db88442e4756a9f7eb55d4d3766c63ee439b50428521c0c14b42d0",
                 "access": "DASHBOARD_PRIVATE"
             },
             "dashboardCharts": [
                 {
-                    "name": "5b2bc67e-109b-4f82-8238-e4436fbed57b",
-                    "displayName": "Top Outbound Data Flow by Originator (id_orig_h) Bytes",
+                    "name": "0969f928-5253-4f3f-b0de-204c7e20b52a",
+                    "displayName": "Top Outbound Data Flows by Originator (src_ip) Bytes",
                     "chartDatasource": {
-                        "dashboardQuery": "71c3f189-1d94-4e04-9c6a-140381611202",
+                        "dashboardQuery": "ee1ce632-acc4-4e1e-bf1b-bf9387fc273d",
                         "dataSources": [
                             "UDM"
                         ]
@@ -317,8 +436,8 @@
                                 "header": "Destination Hostname"
                             },
                             {
-                                "field": "proto",
-                                "header": "Proto"
+                                "field": "distinct_service",
+                                "header": "Service"
                             },
                             {
                                 "field": "orig_byte_sum",
@@ -328,14 +447,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "3d0d48a498fa088b0248e39a4e4aed2c452fb5ec2ac606f3adc5b41b7bf885a3",
+                    "etag": "90ae277dce0b4b966fe5f2bc1ebda92309a20b2830e77d0c6fd0ba22e3a3f7b2",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "ba8d8144-322e-495f-a8f3-528f7553de21",
-                    "displayName": "Open/Active Long Lived Connections (requires Long Connections Pkg)",
+                    "name": "2ee75ea9-5c78-48fd-95b9-ecb7b73c0f17",
+                    "displayName": "Top 100 Open/Active Long Lived Connections",
                     "chartDatasource": {
-                        "dashboardQuery": "3c53d951-1bf2-4268-8978-f9167cf61d47",
+                        "dashboardQuery": "e347962a-b0ae-4835-8c03-ff6a99189a0c",
                         "dataSources": [
                             "UDM"
                         ]
@@ -374,14 +493,18 @@
                                 "header": "Destination IP"
                             },
                             {
-                                "field": "proto",
-                                "header": "Proto"
+                                "field": "target_port",
+                                "header": "Destination Port"
+                            },
+                            {
+                                "field": "distinct_service",
+                                "header": "Service"
                             }
                         ],
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "78f029c4e1fec65271d2e9ec751afa53ffe630b596a3c13383e8b3c011352711",
+                    "etag": "c7cd64e7a65696379af66e755589f21506b2b6a246ba485258828112a9be1bdd",
                     "drillDownConfig": {
                         "leftDrillDowns": [
                             {
@@ -395,10 +518,10 @@
                     }
                 },
                 {
-                    "name": "6331cd40-8dd5-4e90-b204-bb6034c7c19b",
+                    "name": "64af4101-f32a-459f-b437-17c09d12a4c0",
                     "displayName": "Top Originators by (sources) by # of  connections",
                     "chartDatasource": {
-                        "dashboardQuery": "a7e16f57-7856-4a42-8805-b4830dd4c4bd",
+                        "dashboardQuery": "24272f02-14f0-40e5-aa55-b538d8c26d53",
                         "dataSources": [
                             "UDM"
                         ]
@@ -419,7 +542,7 @@
                                     "70%"
                                 ],
                                 "itemStyle": {
-                                    "color": "b=>{const {map:c}=LJf(this.theme);b=GLf(b,kKf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;let d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                    "color": "b=>{const {map:c}=sYf(this.theme);b=ZZf(b,NYf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;let d;return(d=\nc.get(b.color))!=null?d:b.color}"
                                 },
                                 "itemColors": {
                                     "colors": [
@@ -452,14 +575,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "b5a6c6e4d51af4643c8e96c17b206b4f24c603a055e05967d29de70004c93cb0",
+                    "etag": "7b4d03f88e1170a1f7c7d6561bc7aca91bf7d89485b51fc6ae4bb086649a16ff",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "49ec5d17-5d8e-418c-bcc8-2668cc4107e9",
+                    "name": "a43eed47-a282-4e13-a40c-19dbe3ce60bf",
                     "displayName": "Top Services",
                     "chartDatasource": {
-                        "dashboardQuery": "590fd057-2241-4bc1-8366-221512fab8b2",
+                        "dashboardQuery": "a461fde5-e387-4f71-b84b-89019f95621a",
                         "dataSources": [
                             "UDM"
                         ]
@@ -480,43 +603,113 @@
                                     "70%"
                                 ],
                                 "itemStyle": {
-                                    "color": "b=>{const {map:c}=iIf(this.theme);b=pJf(b,IIf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;let d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                    "color": "b=>{const {map:c}=uSf(this.theme);b=tUf(b,YSf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;let d;return(d=\nc.get(b.color))!=null?d:b.color}"
                                 },
                                 "itemColors": {
                                     "colors": [
                                         {
-                                            "key": "dns",
-                                            "value": {
-                                                "color": "#10a3b7",
-                                                "label": "dns"
-                                            }
-                                        },
-                                        {
-                                            "key": "ntp",
+                                            "key": "prodmempr2",
                                             "value": {
                                                 "color": "#1a73e8",
-                                                "label": "ntp"
+                                                "label": "prodmempr2"
                                             }
                                         },
                                         {
-                                            "key": "ssl",
+                                            "key": "Cedar_Hill_Lab",
                                             "value": {
                                                 "color": "#eb730a",
-                                                "label": "ssl"
+                                                "label": "Cedar_Hill_Lab"
                                             }
                                         },
                                         {
-                                            "key": "spicy_stun",
+                                            "key": "tme_vpcflow",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "tme_vpcflow"
+                                            }
+                                        },
+                                        {
+                                            "key": "DNS",
                                             "value": {
                                                 "color": "#ec453b",
-                                                "label": "spicy_stun"
+                                                "label": "DNS"
                                             }
                                         },
                                         {
-                                            "key": "http",
+                                            "key": "HTTP",
                                             "value": {
                                                 "color": "#e51f8f",
-                                                "label": "http"
+                                                "label": "HTTP"
+                                            }
+                                        },
+                                        {
+                                            "key": "SSL",
+                                            "value": {
+                                                "color": "#923ef9",
+                                                "label": "SSL"
+                                            }
+                                        },
+                                        {
+                                            "key": "NTP",
+                                            "value": {
+                                                "color": "#4aa207",
+                                                "label": "NTP"
+                                            }
+                                        },
+                                        {
+                                            "key": "QUIC,SSL",
+                                            "value": {
+                                                "color": "#5350fb",
+                                                "label": "QUIC,SSL"
+                                            }
+                                        },
+                                        {
+                                            "key": "GENEVE",
+                                            "value": {
+                                                "color": "#009886",
+                                                "label": "GENEVE"
+                                            }
+                                        },
+                                        {
+                                            "key": "DHCP",
+                                            "value": {
+                                                "color": "#6f7585",
+                                                "label": "DHCP"
+                                            }
+                                        },
+                                        {
+                                            "key": "SPICY_SSDP",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "SPICY_SSDP"
+                                            }
+                                        },
+                                        {
+                                            "key": "SIP",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "SIP"
+                                            }
+                                        },
+                                        {
+                                            "key": "DTLS",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "DTLS"
+                                            }
+                                        },
+                                        {
+                                            "key": "SPICY_STUN",
+                                            "value": {
+                                                "color": "#ec453b",
+                                                "label": "SPICY_STUN"
+                                            }
+                                        },
+                                        {
+                                            "key": "DNP3_TCP",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "DNP3_TCP"
                                             }
                                         }
                                     ]
@@ -541,19 +734,147 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "a105910f058c28af64a6a47b131bcc1e95a4e0c1485e7bb9cd966f6c42384d53",
+                    "etag": "8e5526a8276c767088dbc2a98e6f0b9ef173f39a47264816a9f43ddcbebdcafc",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "2dfd31a2-2b4e-4aca-8c01-31f2a4ad1781",
+                    "name": "d714702e-7555-4d70-be1c-983f876e2549",
                     "displayName": "Top Responder Ports",
                     "chartDatasource": {
-                        "dashboardQuery": "2cea8d54-6726-4715-bb23-c15923ce3512",
+                        "dashboardQuery": "5c4d2219-319d-44d2-b341-843745b7a4ab",
                         "dataSources": [
                             "UDM"
                         ]
                     },
                     "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "target.port"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "0%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "b=>{const {map:c}=uSf(this.theme);b=tUf(b,YSf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;let d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "443",
+                                            "value": {
+                                                "color": "#0c67df",
+                                                "label": "443"
+                                            }
+                                        },
+                                        {
+                                            "key": "80",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "80"
+                                            }
+                                        },
+                                        {
+                                            "key": "53",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "53"
+                                            }
+                                        },
+                                        {
+                                            "key": "445",
+                                            "value": {
+                                                "color": "#d93025",
+                                                "label": "445"
+                                            }
+                                        },
+                                        {
+                                            "key": "22",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "22"
+                                            }
+                                        },
+                                        {
+                                            "key": "3389",
+                                            "value": {
+                                                "color": "#923ef9",
+                                                "label": "3389"
+                                            }
+                                        },
+                                        {
+                                            "key": "3306",
+                                            "value": {
+                                                "color": "#4aa207",
+                                                "label": "3306"
+                                            }
+                                        },
+                                        {
+                                            "key": "123",
+                                            "value": {
+                                                "color": "#5350fb",
+                                                "label": "123"
+                                            }
+                                        },
+                                        {
+                                            "key": "0",
+                                            "value": {
+                                                "color": "#009886",
+                                                "label": "0"
+                                            }
+                                        },
+                                        {
+                                            "key": "10001",
+                                            "value": {
+                                                "color": "#6f7585",
+                                                "label": "10001"
+                                            }
+                                        },
+                                        {
+                                            "key": "130",
+                                            "value": {
+                                                "color": "#0c67df",
+                                                "label": "130"
+                                            }
+                                        },
+                                        {
+                                            "key": "6081",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "6081"
+                                            }
+                                        },
+                                        {
+                                            "key": "3000",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "3000"
+                                            }
+                                        },
+                                        {
+                                            "key": "8080",
+                                            "value": {
+                                                "color": "#d93025",
+                                                "label": "8080"
+                                            }
+                                        },
+                                        {
+                                            "key": "1",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "1"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
                         "xAxes": [
                             {
                                 "axisType": "VALUE"
@@ -566,30 +887,21 @@
                         ],
                         "legends": [
                             {
+                                "top": 12,
                                 "legendOrient": "HORIZONTAL"
-                            }
-                        ],
-                        "columnDefs": [
-                            {
-                                "field": "target.port",
-                                "header": "Destination Port"
-                            },
-                            {
-                                "field": "count",
-                                "header": "Count"
                             }
                         ],
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "e92f28ac92666ef402d751bf88b7ad2b537c8eb15ac14dcf7cccd0732dbf7a2b",
+                    "etag": "74fe14409a4f2364a10889a26174b6dcb4d637d55e6e61eccc5a631569ae176f",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "a9ce5023-9637-4056-ab3f-51124ade1f7c",
-                    "displayName": "Top Inbound Data Flows by Originator (id_orig_h) Bytes",
+                    "name": "108c52cb-4584-463a-b8c8-a8e128e915ca",
+                    "displayName": "Top Inbound Data Flows by Originator (src_ip) Bytes",
                     "chartDatasource": {
-                        "dashboardQuery": "aeb20ca2-2e9a-4f9c-9e47-865d0c625fad",
+                        "dashboardQuery": "c5f1308c-6d17-4393-8716-4c176fd3ad2b",
                         "dataSources": [
                             "UDM"
                         ]
@@ -628,8 +940,8 @@
                                 "header": "Source Hostname"
                             },
                             {
-                                "field": "proto",
-                                "header": "Proto"
+                                "field": "distinct_service",
+                                "header": "Service"
                             },
                             {
                                 "field": "orig_byte_sum",
@@ -639,14 +951,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "3547b393581b5e7acb971880f3dac90c05dd0c0bb096b6370dcdd9f2dbb933c3",
+                    "etag": "58b5bca9fffadabaa0799328af8ea2d04d8f1bdaa4ec7bc818b3349da81baf3b",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "6b8ed618-a4da-4995-b33a-c48dda296113",
+                    "name": "728b508b-9fcc-4bf8-8c9d-564be2155cf5",
                     "displayName": "Top Responders (destinations) by # of  connections",
                     "chartDatasource": {
-                        "dashboardQuery": "a85f9904-88f2-4544-b2c2-365c5f5aa843",
+                        "dashboardQuery": "f8ccbacf-7ab8-4632-88b6-da8e09ffeaff",
                         "dataSources": [
                             "UDM"
                         ]
@@ -667,15 +979,15 @@
                                     "70%"
                                 ],
                                 "itemStyle": {
-                                    "color": "b=>{const {map:c}=LJf(this.theme);b=GLf(b,kKf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;let d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                    "color": "b=>{const {map:c}=sYf(this.theme);b=ZZf(b,NYf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;let d;return(d=\nc.get(b.color))!=null?d:b.color}"
                                 },
                                 "itemColors": {
                                     "colors": [
                                         {
-                                            "key": "2.2.2.2",
+                                            "key": "1.1.1.1",
                                             "value": {
                                                 "color": "#1a73e8",
-                                                "label": "2.2.2.2"
+                                                "label": "1.1.1.1"
                                             }
                                         }
                                     ]
@@ -700,87 +1012,357 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "22eed4dc4a566abe0fc2bfd2ed9e33cb9de3cd90f88bc843eb99ef2d8c00a239",
+                    "etag": "b9d6bb0e940636585b301ab746117e85725de14835837173a1e313ae7ae93566",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "341792d7-3df8-427d-8ae1-a3858a5cc4fd",
+                    "displayName": "Traffic Connections",
+                    "chartDatasource": {
+                        "dashboardQuery": "cbf4aede-aefe-48dc-a7f9-f408bbab60e7",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "da2f7f278784dbc93e5125d3ffeeca54c6f397cf3246700958dbcd02cba1b2d8",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "cedb9dc5-5b45-47dd-ae49-1e0ea74245f3",
+                    "displayName": "Traffic Destinations",
+                    "chartDatasource": {
+                        "dashboardQuery": "9f4e93b0-f6d5-48ed-835a-be8d0d35fd23",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "0268cef75874b2708d5e82ab2e5ed04f6fefe6e556fa7b60e52695eca91159f7",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "c4e08cde-af23-4bcf-a756-74d4f9d47a6e",
+                    "displayName": "Traffic Volume",
+                    "chartDatasource": {
+                        "dashboardQuery": "f26c3d29-435b-48be-a183-008312cb9651",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "GB",
+                                "field": "total_bytes",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "7fe4ef496a789ce6327a0fed37de4f1efa9c1fad4ab363acc4e926a533e5c15d",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "8cb1b0da-7c76-4b57-a08a-401b1beae5c2",
+                    "displayName": "Traffic Sources",
+                    "chartDatasource": {
+                        "dashboardQuery": "6eb33188-4567-4bcf-a83e-187cef6d54bf",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "3b4a673b7e50cd35a09582234168ba982a3d01842c4d41a85a4d0e4655c8294c",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "d7dc251f-719a-4b4a-9f70-1aedb5198251",
+                    "displayName": "Conn Aggregation",
+                    "chartDatasource": {
+                        "dashboardQuery": "6e5af2a8-0a0c-4385-bf28-fc911b5d1020",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "output",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "f93b86066eab2bb544a7cf8602a173df1ef1e328b855380f1c49c4a75bc4889b",
                     "drillDownConfig": {}
                 }
             ],
             "dashboardQueries": [
                 {
-                    "name": "a7e16f57-7856-4a42-8805-b4830dd4c4bd",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" \r\nobserver.hostname!=\"\"\r\nprincipal.ip!=\"\"\r\ntarget.ip!=\"\"\r\n$service=about.labels[\"service\"]\r\nprincipal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\" AND target.ip!=\"255.255.255.255\" AND target.ip!=\"0.0.0.0\"\r\n$service!=\"\"\r\nmatch:\r\n    principal.ip\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    15",
+                    "name": "24272f02-14f0-40e5-aa55-b538d8c26d53",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" OR metadata.product_event_type = \"conn_red\" OR metadata.product_event_type = \"conn_long\" OR metadata.product_event_type = \"conn_agg\"\r\nobserver.hostname!=\"\"\r\nprincipal.ip!=\"\"\r\ntarget.ip!=\"\"\r\n$service=if(about.namespace!=\"\", about.namespace, \"Unknown\")\r\n(((principal.ip=\"\") OR (principal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\")) AND ((target.ip=\"\") OR (target.ip!=\"0.0.0.0\" AND target.ip!=\"255.255.255.255\"))) OR about.labels[\"local_resp\"] != \"true\"\r\nmatch:\r\n    principal.ip\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    15",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "5b83fedd6a299ba103bce61f055ecb3243650d49b2e5f0eaa1a5b023f3c0da02"
+                    "etag": "7d057601bc7a8eb51a78f46bc080ceb4ff84a637ec594507e2682a81d2f72380"
                 },
                 {
-                    "name": "590fd057-2241-4bc1-8366-221512fab8b2",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" \r\nobserver.hostname!=\"\"\r\nprincipal.ip!=\"\"\r\ntarget.ip!=\"\"\r\n$service=about.labels[\"service\"]\r\nprincipal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\" AND target.ip!=\"255.255.255.255\" AND target.ip!=\"0.0.0.0\"\r\n$service!=\"\"\r\nmatch:\r\n    $service\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    15",
+                    "name": "a461fde5-e387-4f71-b84b-89019f95621a",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" OR metadata.product_event_type = \"conn_red\" OR metadata.product_event_type = \"conn_long\" OR metadata.product_event_type = \"conn_agg\"\r\nobserver.hostname!=\"\"\r\nprincipal.ip!=\"\"\r\ntarget.ip!=\"\"\r\n$service=about.namespace\r\n(((principal.ip=\"\") OR (principal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\")) AND ((target.ip=\"\") OR (target.ip!=\"0.0.0.0\" AND target.ip!=\"255.255.255.255\"))) OR about.labels[\"local_resp\"] != \"true\"\r\n$service!=\"\"\r\nmatch:\r\n    $service\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    15",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "43c185d86a840d2de1cb53a280dbc0a3ffa80125ed67a6ab1b4b6cd7174a7e44"
+                    "etag": "54e113be209bc7a1ae896e0837942134938fe0f09e017d67db344abb8dbf9711"
                 },
                 {
-                    "name": "2cea8d54-6726-4715-bb23-c15923ce3512",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" \r\nobserver.hostname!=\"\"\r\nprincipal.ip!=\"\"\r\ntarget.ip!=\"\"\r\n$service=about.labels[\"service\"]\r\nprincipal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\" AND target.ip!=\"255.255.255.255\" AND target.ip!=\"0.0.0.0\"\r\n$service!=\"\"\r\nmatch:\r\n    target.port\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    15",
+                    "name": "5c4d2219-319d-44d2-b341-843745b7a4ab",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" OR metadata.product_event_type = \"conn_red\" OR metadata.product_event_type = \"conn_long\" OR metadata.product_event_type = \"conn_agg\"\r\nobserver.hostname!=\"\"\r\nprincipal.ip!=\"\"\r\ntarget.ip!=\"\"\r\n$service=if(about.namespace!=\"\", about.namespace, \"Unknown\")\r\n(((principal.ip=\"\") OR (principal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\")) AND ((target.ip=\"\") OR (target.ip!=\"0.0.0.0\" AND target.ip!=\"255.255.255.255\"))) OR about.labels[\"local_resp\"] != \"true\"\r\nmatch:\r\n    target.port\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    15",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "e4a4d1f64c1b9675d2f7fdaa1cd36f29531f9b0f11d5aa28eb4775c29b02349f"
+                    "etag": "fbb2b0cfe8fab0430af1465345325f516b57e4e1068deac5caedd314397fb592"
                 },
                 {
-                    "name": "aeb20ca2-2e9a-4f9c-9e47-865d0c625fad",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" \r\nobserver.hostname!=\"\"\r\nprincipal.ip!=\"\"\r\ntarget.ip!=\"\"\r\n$country_len=strings.length(principal.ip_geo_artifact.location.country_or_region)\r\n$host_len=strings.length(principal.ip_geo_artifact.network.dns_domain)\r\n($host_len=0 AND $country_len=0) OR $host_len > 0\r\n$service=about.labels[\"service\"]\r\nprincipal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\" AND target.ip!=\"255.255.255.255\" AND target.ip!=\"0.0.0.0\"\r\n$service!=\"\"\r\nabout.labels[\"local_orig\"]=\"false\" AND about.labels[\"local_resp\"]=\"true\"\r\n$protocol_string=if(network.ip_protocol=88, \"EIGRP\",\r\nif(network.ip_protocol=50, \"ESP\",\r\nif(network.ip_protocol=97, \"ETHERIP\",\r\nif(network.ip_protocol=47, \"GRE\",\r\nif(network.ip_protocol=1, \"ICMP\",\r\nif(network.ip_protocol=58, \"ICMP6\",\r\nif(network.ip_protocol=2, \"IGMP\",\r\nif(network.ip_protocol=41, \"IP6IN4\",\r\nif(network.ip_protocol=103, \"PIM\",\r\nif(network.ip_protocol=132, \"SCTP\",\r\nif(network.ip_protocol=6, \"TCP\",\r\nif(network.ip_protocol=17, \"UDP\",\r\nif(network.ip_protocol=0, \"UNKNOWN_IP_PROTOCOL\",\r\nif(network.ip_protocol=112, \"VRRP\", \"UNKNOWN_IP_PROTOCOL\"))))))))))))))\r\n$hostname=if(principal.ip_geo_artifact.network.dns_domain!=\"\", principal.ip_geo_artifact.network.dns_domain, \"Unknown\")\r\nmatch:\r\n    principal.ip, target.ip, $hostname,principal.ip_geo_artifact.location.country_or_region\r\noutcome:\r\n    $proto=array_distinct($protocol_string)\r\n    $orig_byte_sum=sum(network.sent_bytes)\r\norder:\r\n    $orig_byte_sum desc \r\nlimit:\r\n    10",
+                    "name": "c5f1308c-6d17-4393-8716-4c176fd3ad2b",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" OR metadata.product_event_type = \"conn_red\" OR metadata.product_event_type = \"conn_long\" OR metadata.product_event_type = \"conn_agg\"\r\nobserver.hostname!=\"\"\r\nprincipal.ip!=\"\"\r\ntarget.ip!=\"\"\r\n$country_len=strings.length(principal.ip_geo_artifact.location.country_or_region)\r\n$host_len=strings.length(principal.ip_geo_artifact.network.dns_domain)\r\n($host_len=0 AND $country_len=0) OR $host_len > 0\r\n$service=if(about.namespace!=\"\", about.namespace, \"Unknown\")\r\n(((principal.ip=\"\") OR (principal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\")) AND ((target.ip=\"\") OR (target.ip!=\"0.0.0.0\" AND target.ip!=\"255.255.255.255\"))) OR about.labels[\"local_resp\"] != \"true\"\r\nabout.labels[\"local_orig\"]=\"false\" AND about.labels[\"local_resp\"]=\"true\"\r\n$hostname=if(principal.ip_geo_artifact.network.dns_domain!=\"\", principal.ip_geo_artifact.network.dns_domain, \"Unknown\")\r\nmatch:\r\n    principal.ip, target.ip, $hostname,principal.ip_geo_artifact.location.country_or_region\r\noutcome:\r\n    $distinct_service=array_distinct($service)\r\n    $orig_byte_sum=sum(cast.as_float(principal.labels[\"orig_ip_bytes\"]))\r\norder:\r\n    $orig_byte_sum desc \r\nlimit:\r\n    10",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "186333092000879298c86aa26dd605b3727d9a5802281115aa2e5f1538a8ce66"
+                    "etag": "91d9b4f91cc6622b5164882d9c3ba5914ba232da88e60071f49d88b3e2278a9e"
                 },
                 {
-                    "name": "a85f9904-88f2-4544-b2c2-365c5f5aa843",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" \r\nobserver.hostname!=\"\"\r\nprincipal.ip!=\"\"\r\ntarget.ip!=\"\"\r\n$service=about.labels[\"service\"]\r\nprincipal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\" AND target.ip!=\"255.255.255.255\" AND target.ip!=\"0.0.0.0\"\r\n$service!=\"\"\r\nmatch:\r\n    target.ip\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    15",
+                    "name": "f8ccbacf-7ab8-4632-88b6-da8e09ffeaff",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" OR metadata.product_event_type = \"conn_red\" OR metadata.product_event_type = \"conn_long\" OR metadata.product_event_type = \"conn_agg\"\r\nobserver.hostname!=\"\"\r\nprincipal.ip!=\"\"\r\ntarget.ip!=\"\"\r\n$service=if(about.namespace!=\"\", about.namespace, \"Unknown\")\r\n(((principal.ip=\"\") OR (principal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\")) AND ((target.ip=\"\") OR (target.ip!=\"0.0.0.0\" AND target.ip!=\"255.255.255.255\"))) OR about.labels[\"local_resp\"] != \"true\"\r\nmatch:\r\n    target.ip\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    15",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "5ae116126c518dc72e720ad39ae4b7743e60066f6f06a1d1355edd384c78b278"
+                    "etag": "a99324c9b339af4c543924b4e448670cc881bde3279b8000d169adfb7e69dd6d"
                 },
                 {
-                    "name": "71c3f189-1d94-4e04-9c6a-140381611202",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" \r\nobserver.hostname!=\"\"\r\nprincipal.ip!=\"\"\r\ntarget.ip!=\"\"\r\n$country_len=strings.length(target.ip_geo_artifact.location.country_or_region)\r\n$host_len=strings.length(target.ip_geo_artifact.network.dns_domain)\r\n($host_len=0 AND $country_len=0) OR $host_len > 0\r\n$service=about.labels[\"service\"]\r\nprincipal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\" AND target.ip!=\"255.255.255.255\" AND target.ip!=\"0.0.0.0\"\r\n$service!=\"\"\r\nabout.labels[\"local_orig\"]=\"true\" and about.labels[\"local_resp\"]=\"false\"\r\n$protocol_string=if(network.ip_protocol=88, \"EIGRP\",\r\nif(network.ip_protocol=50, \"ESP\",\r\nif(network.ip_protocol=97, \"ETHERIP\",\r\nif(network.ip_protocol=47, \"GRE\",\r\nif(network.ip_protocol=1, \"ICMP\",\r\nif(network.ip_protocol=58, \"ICMP6\",\r\nif(network.ip_protocol=2, \"IGMP\",\r\nif(network.ip_protocol=41, \"IP6IN4\",\r\nif(network.ip_protocol=103, \"PIM\",\r\nif(network.ip_protocol=132, \"SCTP\",\r\nif(network.ip_protocol=6, \"TCP\",\r\nif(network.ip_protocol=17, \"UDP\",\r\nif(network.ip_protocol=0, \"UNKNOWN_IP_PROTOCOL\",\r\nif(network.ip_protocol=112, \"VRRP\", \"UNKNOWN_IP_PROTOCOL\"))))))))))))))\r\n$hostname=if(target.ip_geo_artifact.network.dns_domain!=\"\", target.ip_geo_artifact.network.dns_domain, \"Unknown\")\r\nmatch:\r\n    principal.ip, target.ip, $hostname,target.ip_geo_artifact.location.country_or_region\r\noutcome:\r\n    $proto=array_distinct($protocol_string)\r\n    $orig_byte_sum=sum(network.sent_bytes)\r\norder:\r\n    $orig_byte_sum desc \r\nlimit:\r\n    10",
+                    "name": "ee1ce632-acc4-4e1e-bf1b-bf9387fc273d",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" OR metadata.product_event_type = \"conn_red\" OR metadata.product_event_type = \"conn_long\" OR metadata.product_event_type = \"conn_agg\"\r\nobserver.hostname!=\"\"\r\nprincipal.ip!=\"\"\r\ntarget.ip!=\"\"\r\n$country_len=strings.length(target.ip_geo_artifact.location.country_or_region)\r\n$host_len=strings.length(target.ip_geo_artifact.network.dns_domain)\r\n($host_len=0 AND $country_len=0) OR $host_len > 0\r\n$service=about.namespace\r\n(((principal.ip=\"\") OR (principal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\")) AND ((target.ip=\"\") OR (target.ip!=\"0.0.0.0\" AND target.ip!=\"255.255.255.255\"))) OR about.labels[\"local_resp\"] != \"true\"\r\n$service!=\"\"\r\nabout.labels[\"local_orig\"]=\"true\" and about.labels[\"local_resp\"]=\"false\"\r\n$hostname=if(target.ip_geo_artifact.network.dns_domain!=\"\", target.ip_geo_artifact.network.dns_domain, \"Unknown\")\r\nmatch:\r\n    principal.ip, target.ip, $hostname,target.ip_geo_artifact.location.country_or_region\r\noutcome:\r\n    $distinct_service=array_distinct($service)\r\n    $orig_byte_sum=sum(cast.as_float(principal.labels[\"orig_ip_bytes\"]))\r\norder:\r\n    $orig_byte_sum desc \r\nlimit:\r\n    10",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "74d7e32ea88593ee38d4cb5c56d43c7c261c522c8ac681d0cbf68b02ac51b268"
+                    "etag": "d04c39e26c6eff714f6d05048f38f0df79138ad299fb8e0863c12343cb748a81"
                 },
                 {
-                    "name": "3c53d951-1bf2-4268-8978-f9167cf61d47",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" \r\nobserver.hostname!=\"\"\r\nprincipal.ip!=\"\"\r\ntarget.ip!=\"\"\r\n$service=about.labels[\"service\"]\r\n$is_broadcast=if(principal.ip=\"0.0.0.0\" OR principal.ip=\"255.255.255.255\" OR target.ip=\"255.255.255.255\" OR target.ip=\"0.0.0.0\",\"true\",\"false\")\r\n$service!=\"\"\r\n$uid=network.session_id\r\n$protocol_string=if(network.ip_protocol=88, \"EIGRP\",\r\nif(network.ip_protocol=50, \"ESP\",\r\nif(network.ip_protocol=97, \"ETHERIP\",\r\nif(network.ip_protocol=47, \"GRE\",\r\nif(network.ip_protocol=1, \"ICMP\",\r\nif(network.ip_protocol=58, \"ICMP6\",\r\nif(network.ip_protocol=2, \"IGMP\",\r\nif(network.ip_protocol=41, \"IP6IN4\",\r\nif(network.ip_protocol=103, \"PIM\",\r\nif(network.ip_protocol=132, \"SCTP\",\r\nif(network.ip_protocol=6, \"TCP\",\r\nif(network.ip_protocol=17, \"UDP\",\r\nif(network.ip_protocol=0, \"UNKNOWN_IP_PROTOCOL\",\r\nif(network.ip_protocol=112, \"VRRP\", \"UNKNOWN_IP_PROTOCOL\"))))))))))))))\r\n\r\nmatch:\r\n    $uid\r\noutcome:\r\n    $duration=math.round(window.avg(network.session_duration.seconds), 3)\r\n    $principal_ip=array_distinct(principal.ip)\r\n    $target_ip=array_distinct(target.ip)\r\n    $proto=array_distinct($protocol_string)\r\norder:\r\n    $duration desc \r\nlimit:\r\n    10",
+                    "name": "e347962a-b0ae-4835-8c03-ff6a99189a0c",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" OR metadata.product_event_type = \"conn_red\" OR metadata.product_event_type = \"conn_long\" OR metadata.product_event_type = \"conn_agg\"\r\nobserver.hostname!=\"\"\r\nprincipal.ip!=\"\"\r\ntarget.ip!=\"\"\r\n(((principal.ip=\"\") OR (principal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\")) AND ((target.ip=\"\") OR (target.ip!=\"0.0.0.0\" AND target.ip!=\"255.255.255.255\"))) OR about.labels[\"local_resp\"] != \"true\"\r\n$service = if(about.namespace!=\"\", about.namespace, \"Unknown\")\r\n$service!=\"\"\r\n$uid=metadata.ingestion_labels.value\r\n\r\nmatch:\r\n    $uid\r\noutcome:\r\n    $duration=math.round(window.avg(network.session_duration.seconds), 3)\r\n    $principal_ip=array_distinct(principal.ip)\r\n    $target_ip=array_distinct(target.ip)\r\n    $target_port=array_distinct(target.port)\r\n    $distinct_service=array_distinct($service)\r\norder:\r\n    $duration desc \r\nlimit:\r\n    100",
                     "input": {
-                        "timeWindow": {
-                            "startTime": "2025-03-28T00:00:00Z",
-                            "endTime": "2025-03-29T00:00:00Z"
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
                         }
                     },
-                    "etag": "156886a8e23004450b4627f49d399a92f1ae189059f686dbc37eaf5b1bc664c4"
+                    "etag": "da29bcef3a87ae7ada748c8750f2c88162f0b480bcd8b4d4e7c298b0b32d0b68"
+                },
+                {
+                    "name": "f26c3d29-435b-48be-a183-008312cb9651",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" OR metadata.product_event_type = \"conn_red\" OR metadata.product_event_type = \"conn_long\" OR metadata.product_event_type = \"conn_agg\"\r\noutcome:\r\n    $bytes_in = sum(cast.as_float(target.labels[\"resp_ip_bytes\"]))\r\n    $bytes_out = sum(cast.as_float(principal.labels[\"orig_ip_bytes\"]))\r\n    $total_bytes = math.round(($bytes_in + $bytes_out)/1073741824, 2)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "40fbd83f77ef8fd6b790ebc4cc025c2e4913b2ecd3b19dcb60a233676ef5e225"
+                },
+                {
+                    "name": "cbf4aede-aefe-48dc-a7f9-f408bbab60e7",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" OR metadata.product_event_type = \"conn_red\" OR metadata.product_event_type = \"conn_long\" OR metadata.product_event_type = \"conn_agg\"\r\n$uid = metadata.ingestion_labels.value\r\noutcome:\r\n    $count = count_distinct($uid)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "5d260beaf4622e6ee6da45bfb68d3b662d8ed04a5632473d59147d78e0cad937"
+                },
+                {
+                    "name": "6eb33188-4567-4bcf-a83e-187cef6d54bf",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" OR metadata.product_event_type = \"conn_red\" OR metadata.product_event_type = \"conn_long\" OR metadata.product_event_type = \"conn_agg\"\r\nprincipal.ip != \"\"\r\n\r\noutcome:\r\n    $count = count_distinct(principal.ip)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "f4aec51e4551c636942343427c8ecd7f2f316fa7a2a8ec03acc6d5ebf2bf857f"
+                },
+                {
+                    "name": "9f4e93b0-f6d5-48ed-835a-be8d0d35fd23",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn\" OR metadata.product_event_type = \"conn_red\" OR metadata.product_event_type = \"conn_long\" OR metadata.product_event_type = \"conn_agg\"\r\ntarget.ip != \"\"\r\n\r\noutcome:\r\n    $count = count_distinct(target.ip)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "039fd8acf01fb02fccc4537d6d7dc5ba5b43e698e25348bd0cf3b6deaf8150ae"
+                },
+                {
+                    "name": "6e5af2a8-0a0c-4385-bf28-fc911b5d1020",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"conn_agg\"\r\n$uid = metadata.ingestion_labels.value\r\noutcome:\r\n    $count = count($uid)\r\n    $output = if($count>0, \"Conn Agg Logs Available\", \"No Conn Agg Logs\")",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "cbe5ba8746d7d8d180de1cd2814b064b54e88c9db89276169fd472397125346a"
                 }
             ]
         }

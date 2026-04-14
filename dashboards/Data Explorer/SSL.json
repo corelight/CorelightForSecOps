@@ -2,7 +2,7 @@
     "dashboards": [
         {
             "dashboard": {
-                "name": "09b2b3c4-0ace-449f-92a8-5a348c312715",
+                "name": "7d33a1a6-3963-4518-a689-3cfc13bd619d",
                 "displayName": "Corelight → Data Explorer → SSL",
                 "definition": {
                     "filters": [
@@ -20,9 +20,10 @@
                             ],
                             "displayName": "Global Time Filter",
                             "chartIds": [
-                                "34e47bbe-f925-4f1f-84f8-9b4f0f274201",
-                                "29788b50-d3e8-461d-9467-abb11caa4e6e",
-                                "4230f1bf-cc19-4484-880c-a2c48bb4dff6"
+                                "284668e2-6327-4d35-95b3-06aa5ff6543d",
+                                "134c2fac-c5b4-47cf-b139-db955bece132",
+                                "6c45a5ca-5fa1-4917-9d86-f7ff20291441",
+                                "a54587dd-a59a-4e6f-9b21-6286f2937fb9"
                             ],
                             "isStandardTimeRangeFilter": true,
                             "isStandardTimeRangeFilterEnabled": true
@@ -41,28 +42,48 @@
                             ],
                             "displayName": "Corelight Sensor",
                             "chartIds": [
-                                "29788b50-d3e8-461d-9467-abb11caa4e6e",
-                                "34e47bbe-f925-4f1f-84f8-9b4f0f274201",
-                                "4230f1bf-cc19-4484-880c-a2c48bb4dff6"
+                                "134c2fac-c5b4-47cf-b139-db955bece132",
+                                "284668e2-6327-4d35-95b3-06aa5ff6543d",
+                                "6c45a5ca-5fa1-4917-9d86-f7ff20291441"
+                            ]
+                        },
+                        {
+                            "id": "37d97067-70ff-4f85-9b48-c4993463d7ae",
+                            "dataSource": "UDM",
+                            "fieldPath": "metadata.product_event_type",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "NOT_EQUAL",
+                                    "fieldValues": [
+                                        "ssl_agg"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Show Aggregation",
+                            "chartIds": [
+                                "284668e2-6327-4d35-95b3-06aa5ff6543d",
+                                "6c45a5ca-5fa1-4917-9d86-f7ff20291441",
+                                "134c2fac-c5b4-47cf-b139-db955bece132"
                             ]
                         }
                     ],
                     "charts": [
                         {
-                            "dashboardChart": "29788b50-d3e8-461d-9467-abb11caa4e6e",
+                            "dashboardChart": "134c2fac-c5b4-47cf-b139-db955bece132",
                             "chartLayout": {
                                 "startX": 0,
-                                "spanX": 96,
+                                "spanX": 48,
                                 "startY": 27,
-                                "spanY": 26
+                                "spanY": 27
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
-                                "6d1aa83a-bf8a-4c6f-b0d1-5793cac5eb00"
+                                "6d1aa83a-bf8a-4c6f-b0d1-5793cac5eb00",
+                                "37d97067-70ff-4f85-9b48-c4993463d7ae"
                             ]
                         },
                         {
-                            "dashboardChart": "34e47bbe-f925-4f1f-84f8-9b4f0f274201",
+                            "dashboardChart": "284668e2-6327-4d35-95b3-06aa5ff6543d",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -71,11 +92,26 @@
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
-                                "6d1aa83a-bf8a-4c6f-b0d1-5793cac5eb00"
+                                "6d1aa83a-bf8a-4c6f-b0d1-5793cac5eb00",
+                                "37d97067-70ff-4f85-9b48-c4993463d7ae"
                             ]
                         },
                         {
-                            "dashboardChart": "4230f1bf-cc19-4484-880c-a2c48bb4dff6",
+                            "dashboardChart": "6c45a5ca-5fa1-4917-9d86-f7ff20291441",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 27,
+                                "spanY": 27
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "6d1aa83a-bf8a-4c6f-b0d1-5793cac5eb00",
+                                "37d97067-70ff-4f85-9b48-c4993463d7ae"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "a54587dd-a59a-4e6f-9b21-6286f2937fb9",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -83,22 +119,21 @@
                                 "spanY": 27
                             },
                             "filtersIds": [
-                                "GlobalTimeFilter",
-                                "6d1aa83a-bf8a-4c6f-b0d1-5793cac5eb00"
+                                "GlobalTimeFilter"
                             ]
                         }
                     ]
                 },
                 "type": "CUSTOM",
-                "etag": "706030355e52f52a67a9d6f78f3471ac7ed7cd4fb6129d315301c07978c88c0b",
+                "etag": "d175f36e426c393dcff7808129e45aa41a61ddc1ccb2a7426ac04b0c47c406b5",
                 "access": "DASHBOARD_PRIVATE"
             },
             "dashboardCharts": [
                 {
-                    "name": "29788b50-d3e8-461d-9467-abb11caa4e6e",
+                    "name": "134c2fac-c5b4-47cf-b139-db955bece132",
                     "displayName": "Top Ciphers",
                     "chartDatasource": {
-                        "dashboardQuery": "0a2026e9-0f41-41ee-bc14-202da7c9e9fb",
+                        "dashboardQuery": "3971677d-ae9a-44c0-bd03-24207247b3c6",
                         "dataSources": [
                             "UDM"
                         ]
@@ -111,11 +146,27 @@
                                     "value": "count",
                                     "itemName": "cipher"
                                 },
-                                "dataLabel": {},
+                                "dataLabel": {
+                                    "show": true
+                                },
                                 "radius": [
                                     "0%",
                                     "70%"
-                                ]
+                                ],
+                                "itemStyle": {
+                                    "color": "b=>{const {map:c}=uSf(this.theme);b=tUf(b,YSf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;let d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "Dummy_Cipher",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "Dummy_Cipher"
+                                            }
+                                        }
+                                    ]
+                                }
                             }
                         ],
                         "xAxes": [
@@ -137,13 +188,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "f815fc71500c9d7e6fba8d8e5616b2c56c59a1b96b1690989a7edd2a7acb252d"
+                    "etag": "b7abe3d7fdf4ecc77c9482eae9f7db4415a9f57d6d8683525d46da4e55c4c227",
+                    "drillDownConfig": {}
                 },
                 {
-                    "name": "34e47bbe-f925-4f1f-84f8-9b4f0f274201",
+                    "name": "284668e2-6327-4d35-95b3-06aa5ff6543d",
                     "displayName": "Top Certificate Subjects",
                     "chartDatasource": {
-                        "dashboardQuery": "e341cfa8-2908-4757-975f-ae59c2e55739",
+                        "dashboardQuery": "57e7c4c9-040e-42ad-99d3-0b32c0eab047",
                         "dataSources": [
                             "UDM"
                         ]
@@ -166,8 +218,8 @@
                         ],
                         "columnDefs": [
                             {
-                                "field": "server_name",
-                                "header": "Certificate ID"
+                                "field": "c_id",
+                                "header": "Subject"
                             },
                             {
                                 "field": "count",
@@ -177,24 +229,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "73e28d1a5bdb3191288ada95b96ebd0f05c856ce58e83ada69be889d962e2bb7",
-                    "drillDownConfig": {
-                        "leftDrillDowns": [
-                            {
-                                "id": "server_name",
-                                "displayName": "Run Search on Certificate ID",
-                                "defaultSettings": {
-                                    "enabled": true
-                                }
-                            }
-                        ]
-                    }
+                    "etag": "7ae64dab35782deac83ad1fd2f6934e04c50507ed7626209da56fa4f8f949cbc",
+                    "drillDownConfig": {}
                 },
                 {
-                    "name": "4230f1bf-cc19-4484-880c-a2c48bb4dff6",
+                    "name": "6c45a5ca-5fa1-4917-9d86-f7ff20291441",
                     "displayName": "Top Local Responders - Validation Status",
                     "chartDatasource": {
-                        "dashboardQuery": "cc6a3ab6-cfd4-4a5d-b5d1-f715c4ef91dc",
+                        "dashboardQuery": "5a0f62ea-9a78-4c3b-bdb5-15c410392d6c",
                         "dataSources": [
                             "UDM"
                         ]
@@ -228,43 +270,97 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "cdc00ee9c241f7c3f647bb4e835470190ca884b17017fa6a4d1c4e251fdc6dfc",
+                    "etag": "1e9bfea7ee605e89c8bc0ee00039fbaa2b89ae6b756200a2a1000babb94388d8",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "a54587dd-a59a-4e6f-9b21-6286f2937fb9",
+                    "displayName": "SSL Aggregation",
+                    "chartDatasource": {
+                        "dashboardQuery": "13ecd9e8-e835-47ae-91de-1c88dbf72ccb",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "output",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "299ecc4b2c4ad3820192d48edb93b3a02d2a0e23d30650eae2cf64497747b6fc",
                     "drillDownConfig": {}
                 }
             ],
             "dashboardQueries": [
                 {
-                    "name": "cc6a3ab6-cfd4-4a5d-b5d1-f715c4ef91dc",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"ssl\"\r\n$validation_status=security_result.description\r\n$validation_status!=\"\"\r\n((principal.ip in cidr %internal_cidr_list) AND (target.ip in cidr %internal_cidr_list)) OR (not(principal.ip in cidr %internal_cidr_list) AND (target.ip in cidr %internal_cidr_list))\r\nmatch:\r\n    $validation_status\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
+                    "name": "5a0f62ea-9a78-4c3b-bdb5-15c410392d6c",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssl\" OR metadata.product_event_type = \"ssl_red\" OR metadata.product_event_type = \"ssl_agg\"\r\n$validation_status=security_result.description\r\n$validation_status!=\"\"\r\n((principal.ip in cidr %internal_cidr_list) AND (target.ip in cidr %internal_cidr_list)) OR (not(principal.ip in cidr %internal_cidr_list) AND (target.ip in cidr %internal_cidr_list))\r\nmatch:\r\n    $validation_status\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "35117e58b59078f2506ebe2f5b9262dacddbbdd86b2688e01c9ba5466984aa73"
+                    "etag": "6f4875a37a5e16aa9f9d1f6663b0f04790c89bb4239ce3eafc03e4dbbe1f5dee"
                 },
                 {
-                    "name": "0a2026e9-0f41-41ee-bc14-202da7c9e9fb",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"ssl\"\r\n$cipher=network.tls.cipher\r\n$cipher!=\"\"\r\nmatch:\r\n    $cipher\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10\r\n",
+                    "name": "3971677d-ae9a-44c0-bd03-24207247b3c6",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssl\" OR metadata.product_event_type = \"ssl_red\" OR metadata.product_event_type = \"ssl_agg\"\r\n$cipher=network.tls.cipher\r\n$cipher!=\"\"\r\nmatch:\r\n    $cipher\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10\r\n",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "f060c45ea99b65456b389288494c81d8381d3617978421a4187466e42033590e"
+                    "etag": "174efde9eebff5791a96b5f5a7bb748e78d1eabcba89cf1e87b84bb827927bbd"
                 },
                 {
-                    "name": "e341cfa8-2908-4757-975f-ae59c2e55739",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type=\"ssl\"\r\n$server_name=network.tls.client.server_name\r\n$server_name!=\"\"\r\nmatch:\r\n    $server_name\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10\r\n",
+                    "name": "57e7c4c9-040e-42ad-99d3-0b32c0eab047",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssl\" OR metadata.product_event_type = \"ssl_red\" OR metadata.product_event_type = \"ssl_agg\"\r\nnetwork.tls.server.certificate.subject!=\"\" OR network.tls.client.server_name!=\"\"\r\n$c_id=if(network.tls.server.certificate.subject!=\"\", network.tls.server.certificate.subject, network.tls.client.server_name)\r\n$combined_fields=strings.concat(metadata.ingestion_labels.value, target.ip, principal.ip)\r\nmatch:\r\n    $c_id\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10\r\n",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "086b64bec914f909e4ecb1469e72a14c39c0394d452936c6b452048e9efe80a8"
+                    "etag": "cefcbcc9e926ff975aebf0c294573db6572fae8d90898eec797e9c6dd2d7fe92"
+                },
+                {
+                    "name": "13ecd9e8-e835-47ae-91de-1c88dbf72ccb",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"ssl_agg\"\r\n$uid = metadata.ingestion_labels.value\r\noutcome:\r\n    $count = count($uid)\r\n    $output = if($count>0, \"SSL Agg Logs Available\", \"No SSL Agg Logs\")",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "cd2c6bddd31ac1f53b69b9aae30d69636c807934411946c477fe44853ef451fb"
                 }
             ]
         }
