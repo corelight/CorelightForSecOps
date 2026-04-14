@@ -2,7 +2,7 @@
     "dashboards": [
         {
             "dashboard": {
-                "name": "73423d1e-0c82-423b-92be-39642c786092",
+                "name": "7b8b2643-eb56-417d-a6df-4f20c2d4d403",
                 "displayName": "Corelight → Data Explorer → DNS",
                 "definition": {
                     "filters": [
@@ -20,12 +20,16 @@
                             ],
                             "displayName": "Global Time Filter",
                             "chartIds": [
-                                "64cbbd72-6a04-48eb-8ec7-89e2b76dd07f",
-                                "59096583-dfa8-4b8c-bf26-9bc5d5a16c3c",
-                                "9e8a4246-0ee6-453b-8fc8-b5374a2c6974",
-                                "6bcd4a82-dfce-4105-a9b9-5bf1fd01f886",
-                                "d6552a81-7de9-442a-ba56-8d3ac30fa31e",
-                                "6d4dae20-9273-4d1a-bf74-005aaf0e43f2"
+                                "2a9d892b-b282-4db8-a78c-e7f2819ea281",
+                                "e03e59a6-8a4c-4693-910c-ab8a0f698544",
+                                "5c0e6dd8-0f43-47fb-808d-3f3aa7136f23",
+                                "a6107165-0096-4085-9375-6c4ea633fd2d",
+                                "1d5a9c5f-6104-4703-ba81-4ec2a7aff205",
+                                "3ec534c0-52b0-4fa6-8c26-e2fb88cd92bd",
+                                "ab64f554-e380-4d1a-a1d4-f601ed9c49d2",
+                                "d4182dec-1b09-4966-b20c-bd94127e6cb3",
+                                "ef5d802e-275d-4353-9492-e327b54ce204",
+                                "eecee047-27f8-495f-aeac-a533a86af560"
                             ],
                             "isStandardTimeRangeFilter": true,
                             "isStandardTimeRangeFilterEnabled": true
@@ -44,12 +48,15 @@
                             ],
                             "displayName": "Corelight Sensor",
                             "chartIds": [
-                                "64cbbd72-6a04-48eb-8ec7-89e2b76dd07f",
-                                "59096583-dfa8-4b8c-bf26-9bc5d5a16c3c",
-                                "9e8a4246-0ee6-453b-8fc8-b5374a2c6974",
-                                "6bcd4a82-dfce-4105-a9b9-5bf1fd01f886",
-                                "d6552a81-7de9-442a-ba56-8d3ac30fa31e",
-                                "6d4dae20-9273-4d1a-bf74-005aaf0e43f2"
+                                "2a9d892b-b282-4db8-a78c-e7f2819ea281",
+                                "e03e59a6-8a4c-4693-910c-ab8a0f698544",
+                                "5c0e6dd8-0f43-47fb-808d-3f3aa7136f23",
+                                "a6107165-0096-4085-9375-6c4ea633fd2d",
+                                "1d5a9c5f-6104-4703-ba81-4ec2a7aff205",
+                                "3ec534c0-52b0-4fa6-8c26-e2fb88cd92bd",
+                                "eecee047-27f8-495f-aeac-a533a86af560",
+                                "ab64f554-e380-4d1a-a1d4-f601ed9c49d2",
+                                "ef5d802e-275d-4353-9492-e327b54ce204"
                             ]
                         },
                         {
@@ -66,112 +73,203 @@
                             ],
                             "displayName": "Responder Port",
                             "chartIds": [
-                                "64cbbd72-6a04-48eb-8ec7-89e2b76dd07f",
-                                "9e8a4246-0ee6-453b-8fc8-b5374a2c6974",
-                                "59096583-dfa8-4b8c-bf26-9bc5d5a16c3c",
-                                "6bcd4a82-dfce-4105-a9b9-5bf1fd01f886",
-                                "d6552a81-7de9-442a-ba56-8d3ac30fa31e",
-                                "6d4dae20-9273-4d1a-bf74-005aaf0e43f2"
+                                "2a9d892b-b282-4db8-a78c-e7f2819ea281",
+                                "5c0e6dd8-0f43-47fb-808d-3f3aa7136f23",
+                                "e03e59a6-8a4c-4693-910c-ab8a0f698544",
+                                "a6107165-0096-4085-9375-6c4ea633fd2d",
+                                "1d5a9c5f-6104-4703-ba81-4ec2a7aff205",
+                                "3ec534c0-52b0-4fa6-8c26-e2fb88cd92bd",
+                                "ab64f554-e380-4d1a-a1d4-f601ed9c49d2",
+                                "ef5d802e-275d-4353-9492-e327b54ce204",
+                                "eecee047-27f8-495f-aeac-a533a86af560"
+                            ]
+                        },
+                        {
+                            "id": "25bfd3c7-f624-4583-aac9-024d9a69d275",
+                            "dataSource": "UDM",
+                            "fieldPath": "metadata.product_event_type",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "NOT_EQUAL",
+                                    "fieldValues": [
+                                        "dns_agg"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Show Aggregation",
+                            "chartIds": [
+                                "2a9d892b-b282-4db8-a78c-e7f2819ea281",
+                                "e03e59a6-8a4c-4693-910c-ab8a0f698544",
+                                "5c0e6dd8-0f43-47fb-808d-3f3aa7136f23",
+                                "a6107165-0096-4085-9375-6c4ea633fd2d",
+                                "1d5a9c5f-6104-4703-ba81-4ec2a7aff205",
+                                "3ec534c0-52b0-4fa6-8c26-e2fb88cd92bd",
+                                "ab64f554-e380-4d1a-a1d4-f601ed9c49d2",
+                                "ef5d802e-275d-4353-9492-e327b54ce204",
+                                "eecee047-27f8-495f-aeac-a533a86af560"
                             ]
                         }
                     ],
                     "charts": [
                         {
-                            "dashboardChart": "d6552a81-7de9-442a-ba56-8d3ac30fa31e",
+                            "dashboardChart": "1d5a9c5f-6104-4703-ba81-4ec2a7aff205",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 32,
-                                "startY": 0,
+                                "startY": 24,
                                 "spanY": 29
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
                                 "2daad66a-7c79-4981-a2f4-31fddd7a1d3f",
-                                "2e551308-471d-46d6-99f7-12456edd70b0"
+                                "2e551308-471d-46d6-99f7-12456edd70b0",
+                                "25bfd3c7-f624-4583-aac9-024d9a69d275"
                             ]
                         },
                         {
-                            "dashboardChart": "59096583-dfa8-4b8c-bf26-9bc5d5a16c3c",
+                            "dashboardChart": "e03e59a6-8a4c-4693-910c-ab8a0f698544",
                             "chartLayout": {
                                 "startX": 32,
                                 "spanX": 32,
-                                "startY": 0,
+                                "startY": 24,
                                 "spanY": 29
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
                                 "2daad66a-7c79-4981-a2f4-31fddd7a1d3f",
-                                "2e551308-471d-46d6-99f7-12456edd70b0"
+                                "2e551308-471d-46d6-99f7-12456edd70b0",
+                                "25bfd3c7-f624-4583-aac9-024d9a69d275"
                             ]
                         },
                         {
-                            "dashboardChart": "9e8a4246-0ee6-453b-8fc8-b5374a2c6974",
+                            "dashboardChart": "5c0e6dd8-0f43-47fb-808d-3f3aa7136f23",
                             "chartLayout": {
                                 "startX": 64,
                                 "spanX": 32,
-                                "startY": 0,
+                                "startY": 24,
                                 "spanY": 29
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
                                 "2daad66a-7c79-4981-a2f4-31fddd7a1d3f",
-                                "2e551308-471d-46d6-99f7-12456edd70b0"
+                                "2e551308-471d-46d6-99f7-12456edd70b0",
+                                "25bfd3c7-f624-4583-aac9-024d9a69d275"
                             ]
                         },
                         {
-                            "dashboardChart": "6bcd4a82-dfce-4105-a9b9-5bf1fd01f886",
+                            "dashboardChart": "a6107165-0096-4085-9375-6c4ea633fd2d",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 32,
-                                "startY": 29,
+                                "startY": 53,
                                 "spanY": 29
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
                                 "2daad66a-7c79-4981-a2f4-31fddd7a1d3f",
-                                "2e551308-471d-46d6-99f7-12456edd70b0"
+                                "2e551308-471d-46d6-99f7-12456edd70b0",
+                                "25bfd3c7-f624-4583-aac9-024d9a69d275"
                             ]
                         },
                         {
-                            "dashboardChart": "64cbbd72-6a04-48eb-8ec7-89e2b76dd07f",
+                            "dashboardChart": "2a9d892b-b282-4db8-a78c-e7f2819ea281",
                             "chartLayout": {
                                 "startX": 32,
                                 "spanX": 32,
-                                "startY": 29,
+                                "startY": 53,
                                 "spanY": 29
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
                                 "2daad66a-7c79-4981-a2f4-31fddd7a1d3f",
-                                "2e551308-471d-46d6-99f7-12456edd70b0"
+                                "2e551308-471d-46d6-99f7-12456edd70b0",
+                                "25bfd3c7-f624-4583-aac9-024d9a69d275"
                             ]
                         },
                         {
-                            "dashboardChart": "6d4dae20-9273-4d1a-bf74-005aaf0e43f2",
+                            "dashboardChart": "3ec534c0-52b0-4fa6-8c26-e2fb88cd92bd",
                             "chartLayout": {
                                 "startX": 64,
                                 "spanX": 32,
-                                "startY": 29,
+                                "startY": 53,
                                 "spanY": 29
                             },
                             "filtersIds": [
                                 "GlobalTimeFilter",
                                 "2daad66a-7c79-4981-a2f4-31fddd7a1d3f",
-                                "2e551308-471d-46d6-99f7-12456edd70b0"
+                                "2e551308-471d-46d6-99f7-12456edd70b0",
+                                "25bfd3c7-f624-4583-aac9-024d9a69d275"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "eecee047-27f8-495f-aeac-a533a86af560",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 0,
+                                "spanY": 12
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2daad66a-7c79-4981-a2f4-31fddd7a1d3f",
+                                "2e551308-471d-46d6-99f7-12456edd70b0",
+                                "25bfd3c7-f624-4583-aac9-024d9a69d275"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "ab64f554-e380-4d1a-a1d4-f601ed9c49d2",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 12,
+                                "spanY": 12
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2daad66a-7c79-4981-a2f4-31fddd7a1d3f",
+                                "2e551308-471d-46d6-99f7-12456edd70b0",
+                                "25bfd3c7-f624-4583-aac9-024d9a69d275"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "ef5d802e-275d-4353-9492-e327b54ce204",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 12,
+                                "spanY": 12
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "2daad66a-7c79-4981-a2f4-31fddd7a1d3f",
+                                "2e551308-471d-46d6-99f7-12456edd70b0",
+                                "25bfd3c7-f624-4583-aac9-024d9a69d275"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "d4182dec-1b09-4966-b20c-bd94127e6cb3",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 0,
+                                "spanY": 12
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
                             ]
                         }
                     ]
                 },
                 "type": "CUSTOM",
-                "etag": "17fbf6f3e457022a1473d8ec3b26705ebc137d744902518e470e43290e234191",
+                "etag": "3ce8257865b281c36ca4cc6c1cfc0cf9f16e91de2f85fa0a3f819f34bf84995b",
                 "access": "DASHBOARD_PRIVATE"
             },
             "dashboardCharts": [
                 {
-                    "name": "6d4dae20-9273-4d1a-bf74-005aaf0e43f2",
+                    "name": "3ec534c0-52b0-4fa6-8c26-e2fb88cd92bd",
                     "displayName": "Top Reverse Queries by Count to Non-Existent Domains",
                     "chartDatasource": {
-                        "dashboardQuery": "c90f0ad9-4348-44e5-a025-360dec22f802",
+                        "dashboardQuery": "eb5ff049-9489-46a4-9c6d-c71320bd9cbe",
                         "dataSources": [
                             "UDM"
                         ]
@@ -205,14 +303,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "2bab6403c05447a8948c3ac899f634e457aefaeed5a9d71b3b8df1a8f0c2746f",
+                    "etag": "42ffe3106015bc2b192728f0d1f2ad610a01a8c1c1567b800bf19554120d5966",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "64cbbd72-6a04-48eb-8ec7-89e2b76dd07f",
+                    "name": "2a9d892b-b282-4db8-a78c-e7f2819ea281",
                     "displayName": "Top Successful Reverse Queries by Count",
                     "chartDatasource": {
-                        "dashboardQuery": "24454959-e349-4067-9dc7-e96310083984",
+                        "dashboardQuery": "69eb918e-458f-4e97-bc88-9f093b22cf00",
                         "dataSources": [
                             "UDM"
                         ]
@@ -246,14 +344,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "067f479ffc3d14ec9c27dda903d5b8ce5a602f32c2bf0addfd35339472a82a71",
+                    "etag": "d1402789ecc329a14c1a0e50fbe45477c876c29f47be9d13c7af7329f88416c6",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "d6552a81-7de9-442a-ba56-8d3ac30fa31e",
+                    "name": "1d5a9c5f-6104-4703-ba81-4ec2a7aff205",
                     "displayName": "Top Query Types",
                     "chartDatasource": {
-                        "dashboardQuery": "9d49ae7e-85c2-446a-9a07-ed306200961c",
+                        "dashboardQuery": "87c12821-9a20-45c5-9457-77e7fb2cee22",
                         "dataSources": [
                             "UDM"
                         ]
@@ -274,14 +372,14 @@
                                     "70%"
                                 ],
                                 "itemStyle": {
-                                    "color": "b=>{const {map:c}=RIf(this.theme);b=YJf(b,qJf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;let d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                    "color": "b=>{const {map:c}=uSf(this.theme);b=tUf(b,YSf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;let d;return(d=\nc.get(b.color))!=null?d:b.color}"
                                 },
                                 "itemColors": {
                                     "colors": [
                                         {
                                             "key": "A",
                                             "value": {
-                                                "color": "#0c67df",
+                                                "color": "#1a73e8",
                                                 "label": "A"
                                             }
                                         },
@@ -300,38 +398,52 @@
                                             }
                                         },
                                         {
-                                            "key": "AXFR",
+                                            "key": "HTTPS",
                                             "value": {
-                                                "color": "#d93025",
-                                                "label": "AXFR"
+                                                "color": "#ec453b",
+                                                "label": "HTTPS"
                                             }
                                         },
                                         {
-                                            "key": "ANY",
+                                            "key": "*",
                                             "value": {
                                                 "color": "#e51f8f",
-                                                "label": "ANY"
+                                                "label": "*"
+                                            }
+                                        },
+                                        {
+                                            "key": "NIMLOC",
+                                            "value": {
+                                                "color": "#923ef9",
+                                                "label": "NIMLOC"
+                                            }
+                                        },
+                                        {
+                                            "key": "DNSKEY",
+                                            "value": {
+                                                "color": "#4aa207",
+                                                "label": "DNSKEY"
                                             }
                                         },
                                         {
                                             "key": "TXT",
                                             "value": {
-                                                "color": "#923ef9",
+                                                "color": "#5350fb",
                                                 "label": "TXT"
                                             }
                                         },
                                         {
-                                            "key": "IXFR",
+                                            "key": "NBSTAT",
                                             "value": {
-                                                "color": "#4aa207",
-                                                "label": "IXFR"
+                                                "color": "#009886",
+                                                "label": "NBSTAT"
                                             }
                                         },
                                         {
-                                            "key": "HTTPS",
+                                            "key": "DS",
                                             "value": {
-                                                "color": "#5350fb",
-                                                "label": "HTTPS"
+                                                "color": "#6f7585",
+                                                "label": "DS"
                                             }
                                         }
                                     ]
@@ -357,14 +469,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "5a3bf8cdec9ef1e4a6cbddf40a31566892c4991123decf6f15c11cbf6b851068",
+                    "etag": "baf739b2a1386834b8836accc9b1b0787bc29dd273371e7dcda985d1fd435e58",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "9e8a4246-0ee6-453b-8fc8-b5374a2c6974",
+                    "name": "5c0e6dd8-0f43-47fb-808d-3f3aa7136f23",
                     "displayName": "Top 10 Queries by Count to Non-Existent Domains",
                     "chartDatasource": {
-                        "dashboardQuery": "427704ef-8850-4949-825f-b5d2ace84ba3",
+                        "dashboardQuery": "283d1ab8-0784-4026-804d-0ea07e26e923",
                         "dataSources": [
                             "UDM"
                         ]
@@ -398,14 +510,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "340c8a4a13a3bcc0daaa472a79f9bf286784823b6b5f9cbcc2d4ea870ae06893",
+                    "etag": "c1f4c75b8a27c6868bdc770c4b1d45f4d7838f7b97fc27d1cec5aa559ef1e62b",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "6bcd4a82-dfce-4105-a9b9-5bf1fd01f886",
+                    "name": "a6107165-0096-4085-9375-6c4ea633fd2d",
                     "displayName": "Top Originators by Count",
                     "chartDatasource": {
-                        "dashboardQuery": "bcdafcde-f83f-48d1-91a3-ceb3f56e4e9d",
+                        "dashboardQuery": "24d13f00-6762-40c7-93ea-0bb2b466ac43",
                         "dataSources": [
                             "UDM"
                         ]
@@ -439,14 +551,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "e41f3386a2277b14313bcb932388791a9549e18d946c7edcc4c5974b1c7999dc",
+                    "etag": "a0791c9bccde6ec3f6831239622ae97ed99d2acbabe76aadd2afebb86b9bf288",
                     "drillDownConfig": {}
                 },
                 {
-                    "name": "59096583-dfa8-4b8c-bf26-9bc5d5a16c3c",
+                    "name": "e03e59a6-8a4c-4693-910c-ab8a0f698544",
                     "displayName": "Top 10 Queries by Count",
                     "chartDatasource": {
-                        "dashboardQuery": "06faa3a6-d75c-4d9e-abfe-6c28f8ade76d",
+                        "dashboardQuery": "2a2b6539-d9ca-4afa-974e-26729f49ac22",
                         "dataSources": [
                             "UDM"
                         ]
@@ -480,76 +592,292 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "96d6096d29867ad2c62015cbd7bcd9fe57738e5688a8dbd971a03808e16f9ae8",
+                    "etag": "53b10607deb904c24ceb7bb57bdae363ea02114d95b8cb50748280592f386fd4",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "eecee047-27f8-495f-aeac-a533a86af560",
+                    "displayName": "Total DNS Requests",
+                    "chartDatasource": {
+                        "dashboardQuery": "23a19637-f787-4fec-b48a-07251768b971",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "3007a3eb112a3e0fb96c3d67184019f30cbf13ad675aca12ec8b4c48c28e6b48",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "d4182dec-1b09-4966-b20c-bd94127e6cb3",
+                    "displayName": "DNS Aggregation",
+                    "chartDatasource": {
+                        "dashboardQuery": "87f0b65a-584d-42dd-93b8-138e860140db",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "output",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "7cb7407cb4f6b8499b8709a4d14911cf6053b3514867508fa6111a03b3ffd3f4",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "ab64f554-e380-4d1a-a1d4-f601ed9c49d2",
+                    "displayName": "Total DNS Response",
+                    "chartDatasource": {
+                        "dashboardQuery": "6b2beee3-ecef-4394-84e6-5eca216820d5",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "5e83fdd384120c9b86e740c46e32aa5d7840fd51c8ccb9f30c25a1b6ed8fe7eb",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "ef5d802e-275d-4353-9492-e327b54ce204",
+                    "displayName": "Top Non-Existent Domains",
+                    "chartDatasource": {
+                        "dashboardQuery": "d0ddfcb6-81f4-4740-8404-9effdcf72bf7",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "count",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "3cf61adde724e9bc875e3ecada9b37bbe47bca5eac9573fc12215a37f275c87f",
                     "drillDownConfig": {}
                 }
             ],
             "dashboardQueries": [
                 {
-                    "name": "427704ef-8850-4949-825f-b5d2ace84ba3",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"dns\" \r\nobserver.hostname!=\"\"\r\n$record_type=about.labels[\"qtype_name\"]\r\nprincipal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\" AND target.ip!=\"255.255.255.255\" AND target.ip!=\"0.0.0.0\"\r\n$record_type!=\"\" OR $record_type!=\"PTR\"\r\nabout.labels[\"rcode_name\"]=\"NXDOMAIN\"\r\n$query=if(network.dns.questions.name!=\"\", network.dns.questions.name, \"Unknown\")\r\n$combined_fields=strings.concat(about.labels[\"qtype_name\"], principal.ip, about.labels[\"rcode_name\"])\r\nmatch:\r\n    $query\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
+                    "name": "283d1ab8-0784-4026-804d-0ea07e26e923",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"dns\" OR metadata.product_event_type = \"dns_red\" OR metadata.product_event_type = \"dns_agg\"\r\nobserver.hostname!=\"\"\r\n$record_type=about.labels[\"qtype_name\"]\r\n(principal.ip=\"\") OR (principal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\")\r\n(target.ip=\"\") OR (target.ip!=\"0.0.0.0\" AND target.ip!=\"255.255.255.255\")\r\n$record_type!=\"\" OR $record_type!=\"PTR\"\r\nabout.labels[\"rcode_name\"]=\"NXDOMAIN\"\r\n$query=if(network.dns.questions.name!=\"\", network.dns.questions.name, \"Unknown\")\r\n$combined_fields=strings.concat(about.labels[\"qtype_name\"], principal.ip, about.labels[\"rcode_name\"])\r\nmatch:\r\n    $query\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "169fa76e073b467d3cb3f357376ee55e7730c50a6665de473d8960ec4f8fff0e"
+                    "etag": "07ce72dd948367926656e8ca43f106b8fddcfc892cb3d7bb325de304bddaa861"
                 },
                 {
-                    "name": "bcdafcde-f83f-48d1-91a3-ceb3f56e4e9d",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"dns\" \r\nobserver.hostname!=\"\"\r\n$record_type=about.labels[\"qtype_name\"]\r\nprincipal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\" AND target.ip!=\"255.255.255.255\" AND target.ip!=\"0.0.0.0\"\r\n$record_type!=\"\"\r\nmatch:\r\n    principal.ip\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
+                    "name": "24d13f00-6762-40c7-93ea-0bb2b466ac43",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"dns\" OR metadata.product_event_type = \"dns_red\" OR metadata.product_event_type = \"dns_agg\"\r\nobserver.hostname!=\"\"\r\n$record_type=about.labels[\"qtype_name\"]\r\n(principal.ip=\"\") OR (principal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\")\r\n(target.ip=\"\") OR (target.ip!=\"0.0.0.0\" AND target.ip!=\"255.255.255.255\")\r\n$record_type!=\"\"\r\nmatch:\r\n    principal.ip\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "8919026523346c49749b6f5ee7deb7acd7e996c2212786285fe5fb296dfdb942"
+                    "etag": "cce426f8eacc92129df83a26cd0abc83f2549877d103af67128db1fffeddfef6"
                 },
                 {
-                    "name": "06faa3a6-d75c-4d9e-abfe-6c28f8ade76d",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"dns\" \r\nobserver.hostname!=\"\"\r\n$record_type=about.labels[\"qtype_name\"]\r\nprincipal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\" AND target.ip!=\"255.255.255.255\" AND target.ip!=\"0.0.0.0\"\r\n$record_type!=\"\" OR $record_type!=\"PTR\"\r\n$query=if(network.dns.questions.name!=\"\", network.dns.questions.name, \"Unknown\")\r\n$combined_fields=strings.concat(about.labels[\"qtype_name\"], principal.ip, network.dns.questions.name, about.labels[\"rcode_name\"])\r\nmatch:\r\n    $query\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
+                    "name": "2a2b6539-d9ca-4afa-974e-26729f49ac22",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"dns\" OR metadata.product_event_type = \"dns_red\" OR metadata.product_event_type = \"dns_agg\"\r\nobserver.hostname!=\"\"\r\n$record_type=about.labels[\"qtype_name\"]\r\n(principal.ip=\"\") OR (principal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\")\r\n(target.ip=\"\") OR (target.ip!=\"0.0.0.0\" AND target.ip!=\"255.255.255.255\")\r\n$record_type!=\"\" OR $record_type!=\"PTR\"\r\n$query=if(network.dns.questions.name!=\"\", network.dns.questions.name, \"Unknown\")\r\n$combined_fields=strings.concat(about.labels[\"qtype_name\"], principal.ip, network.dns.questions.name, about.labels[\"rcode_name\"])\r\nmatch:\r\n    $query\r\noutcome:\r\n    $count=count_distinct($combined_fields)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "58dc147eb489c292c18bc43ff34b3fc6e5969cb5245fa6df16896d061b1b9f8b"
+                    "etag": "25be50463baf4b2518f8f4eccd50b8d05bc0dee8011a89f3bbbce88b64eca115"
                 },
                 {
-                    "name": "c90f0ad9-4348-44e5-a025-360dec22f802",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"dns\" \r\nobserver.hostname!=\"\"\r\nprincipal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\" AND target.ip!=\"255.255.255.255\" AND target.ip!=\"0.0.0.0\"\r\nabout.labels[\"qtype_name\"]=\"PTR\"\r\nabout.labels[\"rcode_name\"]=\"NXDOMAIN\"\r\nnetwork.dns.questions.name!=\"\"\r\nmatch:\r\n    network.dns.questions.name\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
+                    "name": "eb5ff049-9489-46a4-9c6d-c71320bd9cbe",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"dns\" OR metadata.product_event_type = \"dns_red\" OR metadata.product_event_type = \"dns_agg\"\r\nobserver.hostname!=\"\"\r\n(principal.ip=\"\") OR (principal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\")\r\n(target.ip=\"\") OR (target.ip!=\"0.0.0.0\" AND target.ip!=\"255.255.255.255\")\r\nabout.labels[\"qtype_name\"]=\"PTR\"\r\nabout.labels[\"rcode_name\"]=\"NXDOMAIN\"\r\nnetwork.dns.questions.name!=\"\"\r\nmatch:\r\n    network.dns.questions.name\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "256cf1980eb8a5de9e567604e38adc2ec8ddb6416a6105c984ca63cb9d3c7ac0"
+                    "etag": "f52e2ddb3cbf67fe0c76669f8f83d3a80959404f333bb4f18c44dbaec4b0c625"
                 },
                 {
-                    "name": "24454959-e349-4067-9dc7-e96310083984",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"dns\" \r\nobserver.hostname!=\"\"\r\nprincipal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\" AND target.ip!=\"255.255.255.255\" AND target.ip!=\"0.0.0.0\"\r\nabout.labels[\"qtype_name\"]=\"PTR\"\r\nabout.labels[\"rcode_name\"]=\"NOERROR\"\r\nnetwork.dns.questions.name!=\"\"\r\nmatch:\r\n    network.dns.questions.name\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
+                    "name": "69eb918e-458f-4e97-bc88-9f093b22cf00",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"dns\" OR metadata.product_event_type = \"dns_red\" OR metadata.product_event_type = \"dns_agg\"\r\nobserver.hostname!=\"\"\r\n(principal.ip=\"\") OR (principal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\")\r\n(target.ip=\"\") OR (target.ip!=\"0.0.0.0\" AND target.ip!=\"255.255.255.255\")\r\nabout.labels[\"qtype_name\"]=\"PTR\"\r\nabout.labels[\"rcode_name\"]=\"NOERROR\"\r\nnetwork.dns.questions.name!=\"\"\r\nmatch:\r\n    network.dns.questions.name\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    20",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "bf55c20e15502a5655550fe01d527edf02e3b1b40edd4563cc80a44ee6377970"
+                    "etag": "661117b2885a4407c3bfa425289aec139b14df26a37a4e632bc1fda2c98cbe1b"
                 },
                 {
-                    "name": "9d49ae7e-85c2-446a-9a07-ed306200961c",
-                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"dns\" \r\nobserver.hostname!=\"\"\r\n$record_type=about.labels[\"qtype_name\"]\r\nprincipal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\" AND target.ip!=\"255.255.255.255\" AND target.ip!=\"0.0.0.0\"\r\n$record_type!=\"\"\r\nmatch:\r\n    $record_type\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
+                    "name": "87c12821-9a20-45c5-9457-77e7fb2cee22",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"dns\" OR metadata.product_event_type = \"dns_red\" OR metadata.product_event_type = \"dns_agg\"\r\nobserver.hostname!=\"\"\r\n$record_type=about.labels[\"qtype_name\"]\r\n(principal.ip=\"\") OR (principal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\")\r\n(target.ip=\"\") OR (target.ip!=\"0.0.0.0\" AND target.ip!=\"255.255.255.255\")\r\n$record_type!=\"\"\r\nmatch:\r\n    $record_type\r\noutcome:\r\n    $count=count_distinct(metadata.id)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "6f6303db1cfdf14e79485e42891a3f411c46ac563fd43a292673438a6ec02838"
+                    "etag": "9a714371309af1f7eddaf8d5274b3bb697d88f7a8529e95891e631fb113e43ae"
+                },
+                {
+                    "name": "d0ddfcb6-81f4-4740-8404-9effdcf72bf7",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"dns\" OR metadata.product_event_type = \"dns_red\" OR metadata.product_event_type = \"dns_agg\"\r\n(principal.ip=\"\") OR (principal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\")\r\n(target.ip=\"\") OR (target.ip!=\"0.0.0.0\" AND target.ip!=\"255.255.255.255\")\r\nabout.labels[\"rcode_name\"]=\"NXDOMAIN\"\r\n$combined_fields=strings.concat(metadata.ingestion_labels.value, principal.ip, target.ip)\r\noutcome:\r\n    $count=count_distinct($combined_fields)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "0c5480d12697332acd875c24784aaaf654d47efd3f7118e0cdcb7309c47cae12"
+                },
+                {
+                    "name": "6b2beee3-ecef-4394-84e6-5eca216820d5",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"dns\" OR metadata.product_event_type = \"dns_red\" OR metadata.product_event_type = \"dns_agg\"\r\n(principal.ip=\"\") OR (principal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\")\r\n(target.ip=\"\") OR (target.ip!=\"0.0.0.0\" AND target.ip!=\"255.255.255.255\")\r\nnetwork.dns.answers.name != \"\"\r\noutcome:\r\n    $count=count(network.dns.questions.name)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "5414bac75b353d158d207edb37a25f1be6049e0eba46332c19c55872959c63fa"
+                },
+                {
+                    "name": "23a19637-f787-4fec-b48a-07251768b971",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"dns\" OR metadata.product_event_type = \"dns_red\" OR metadata.product_event_type = \"dns_agg\"\r\n(principal.ip=\"\") OR (principal.ip!=\"0.0.0.0\" AND principal.ip!=\"255.255.255.255\")\r\n(target.ip=\"\") OR (target.ip!=\"0.0.0.0\" AND target.ip!=\"255.255.255.255\")\r\nnetwork.dns.questions.name != \"\"\r\noutcome:\r\n    $count=count(network.dns.questions.name)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "0a218dcee82c47870b522da5f7537e6ca19155aa1840003c6d1f55e53fba5ba0"
+                },
+                {
+                    "name": "87f0b65a-584d-42dd-93b8-138e860140db",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"dns_agg\"\r\n$uid=metadata.ingestion_labels.value\r\n\r\noutcome:\r\n    $count = count($uid)\r\n    $output = if($count>0, \"DNS Agg Logs Available\", \"No DNS Agg Logs\")",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "16a57f687c2dd9e5bd701a60358aa433460d933bd18b192da7f34cdd7f472eb8"
                 }
             ]
         }
