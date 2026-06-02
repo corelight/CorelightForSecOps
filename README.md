@@ -14,9 +14,7 @@ For more information, see [Data ingestion to Chronicle](https://cloud.google.com
 
 The following deployment architecture diagram illustrates how a Corelight Sensor is set up to send logs to Google Security Operations using two different ingestion architectures. It's important to note that each customer deployment may vary from this representation and could be more complex.
 
-An ingestion label identifies the parser which normalizes raw log data
-to structured UDM format. The information in this document applies to the parser
-with the `CORELIGHT` ingestion label.
+An ingestion label identifies the parser which normalizes raw log data to structured UDM format. The information in this document applies to the parser with the `CORELIGHT` ingestion label.
 
 ## Ingesting Logs into Google SecOps using Corelight Exporters 
 
@@ -28,8 +26,7 @@ The architecture diagram shows the following components:
 
 *  **Corelight Sensor exporters**: The [Corelight Sensor exporter](https://docs.corelight.com/docs/sensor/sensor/export/goosecops_exp.html) collects log data from the Sensor, and forwards it to Google Security Operations.
 
-*  **Google Security Operations**: Google Security Operations retains and analyzes the logs from
-    Corelight Sensor.
+*  **Google Security Operations**: Google Security Operations retains and analyzes the logs from Corelight Sensor.
 
 ### Configure the Google SecOps exporter in Corelight
 Use the Sensor or Fleet Manager web interface to configure the Google SecOps exporter. This configuration uses the API credentials from your Google SecOps instance to establish the secure connection.
@@ -80,12 +77,9 @@ The architecture diagram shows the following components:
 
 *  **Corelight Sensor exporter**: The [Corelight Sensor exporter](https://docs.corelight.com/docs/sensor/sensor/export/syslog.html) collects log data from the Sensor, and forwards it to the Google Security Operations forwarder.
 
-*  **Google Security Operations forwarder**: The Google Security Operations forwarder is a lightweight
-   software component, deployed in the customer's network, that supports syslog.
-   The Google Security Operations forwarder forwards the logs to Google Security Operations.
+*  **Google Security Operations forwarder**: The Google Security Operations forwarder is a lightweight software component, deployed in the customer's network, that supports syslog. The Google Security Operations forwarder forwards the logs to Google Security Operations.
 
-*  **Google Security Operations**: Google Security Operations retains and analyzes the logs from
-    Corelight Sensor.
+*  **Google Security Operations**: Google Security Operations retains and analyzes the logs from Corelight Sensor.
 
 ### Configure the Google Security Operations forwarder
 
@@ -129,9 +123,11 @@ The Corelight parser supports the following log types:
  <div class="fixed" translate="no">
   <h4>Log Type</h4>
   <ul>
+    <li>asset_classification</li>
     <li>conn</li>
     <li>conn_long</li>
     <li>conn_red</li>
+    <li>conn_agg</li>
     <li>dce_rpc</li>
     <li>dns</li>
     <li>dns_red</li>
@@ -156,6 +152,12 @@ The Corelight parser supports the following log types:
     <li>bacnet</li>
     <li>cip</li>
     <li>corelight_burst</li>
+    <li>corelight_metrics_bro</li>
+    <li>corelight_metrics_disk</li>
+    <li>corelight_metrics_iface</li>
+    <li>corelight_metrics_memory</li>
+    <li>corelight_metrics_system</li>
+    <li>corelight_metrics_zeek_doctor</li>
     <li>corelight_overall_capture_loss</li>
     <li>corelight_profiling</li>
     <li>datared</li>
@@ -228,7 +230,6 @@ The Corelight parser supports the following log types:
     <li>wireguard</li>
     <li>x509</li>
     <li>x509_red</li>
-    <li>conn_agg</li>
     <li>dns_agg</li>
     <li>files_agg</li>
     <li>http_agg</li>
@@ -243,7 +244,7 @@ The Corelight parser supports the following log types:
   </ul>
 </div>
 
-## Field mapping reference 
+## Field mapping reference
 
 This section explains how the Google Security Operations parser maps Google Security Operations fields to Google Security Operations Unified Data Model (UDM) fields.
 
@@ -376,6 +377,101 @@ The following table lists common fields of the <code>CORELIGHT</code> log and th
 <tr>
 <td><code>ts_last</code></td>
 <td><code>additional.fields [ts_last]</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</devsite-filter>
+</div>
+<h3>Field mapping reference: CORELIGHT - asset_classification</h3>
+
+The following table lists the log fields of the <code>asset_classification</code> log type and their corresponding UDM fields.
+
+<div translate="no">
+<devsite-filter sortable="0">
+<input type="text" placeholder="Type a keyword to find a value.">
+<table class="fixed">
+<thead>
+<tr>
+<th>Log field</th>
+<th>UDM mapping</th>
+<th>Logic</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr>
+<td></td>
+<td><code>metadata.event_type</code></td>
+<td>The <code>metadata.event_type</code> UDM field is set to <code>STATUS_UPDATE</code>.</td>
+</tr>
+<tr>
+<td></td>
+<td><code>metadata.product_name</code></td>
+<td>The <code>metadata.product_name</code> UDM field is set to <code>Zeek</code>.</td>
+</tr>
+<tr>
+<td><code>ip (string - addr)</code></td>
+<td><code>principal.ip</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>mac</code></td>
+<td><code>principal.mac</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>vendor_mac (string)</code></td>
+<td><code>about.asset.hardware.manufacturer</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>device_type (string)</code></td>
+<td><code>about.asset.category</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>os_name (string)</code></td>
+<td><code>about.platform</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>os_name (string)</code></td>
+<td><code>about.asset.attribute.labels</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>type_group (string)</code></td>
+<td><code>about.group.group_display_name</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>type_name (string)</code></td>
+<td><code>about.resource.resource_subtype</code></td>
+<td>The <code>about.resource.resource_type</code> UDM field is set to <code>DEVICE</code></td>
+</tr>
+<tr>
+<td><code>brand (string)</code></td>
+<td><code>about.user.company_name</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>model (string)</code></td>
+<td><code>about.asset.hardware.model</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>confidence (integer)</code></td>
+<td><code>about.security_result.confidence_score</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>os_ver (string)</code></td>
+<td><code>about.platform_version</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>sources (array[string])</code></td>
+<td><code>about.ip_geo_artifact.tags</code></td>
 <td></td>
 </tr>
 </tbody>
@@ -10086,6 +10182,537 @@ The following table lists the log fields of the <code>logschema</code> log type 
 <tr>
 <td><code>avro(string)</code></td>
 <td><code>about.labels [avro]</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</devsite-filter>
+</div>
+
+<h3>Field mapping reference: CORELIGHT - corelight_metrics_bro</h3>
+
+The following table lists the log fields of the <code>corelight_metrics_bro</code> log type and their corresponding UDM fields.
+
+<div translate="no">
+<devsite-filter sortable="0">
+<input type="text" placeholder="Type a keyword to find a value.">
+<table class="fixed">
+<thead>
+<tr>
+<th>Log field</th>
+<th>UDM mapping</th>
+<th>Logic</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr>
+<td></td>
+<td><code>metadata.event_type</code></td>
+<td>The <code>metadata.event_type</code> UDM field is set to <code>GENERIC_EVENT</code>.</td>
+</tr>
+<tr>
+<td></td>
+<td><code>metadata.product_name</code></td>
+<td>The <code>metadata.product_name</code> UDM field is set to <code>zeek</code>.</td>
+</tr>
+<tr>
+<td><code>logs.conn.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_conn_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.dce_rpc.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_dce_rpc_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.dhcp.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_dhcp_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.dnp3.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_dnp3_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.dns.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_dns_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.dpd.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_dpd_entries_per_second] </code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.files.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_files_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.ftp.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_ftp_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.http.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_http_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.irc.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_irc_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.kerberos.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_kerberos_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.modbus.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_modbus_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.mysql.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_mysql_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.ntlm.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_ntlm_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.pe.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_pe_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.radius.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_radius_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.rdp.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_rdp_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.rfb.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_rfb_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.sip.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_sip_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.smb_files.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_smb_files_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.smb_mapping.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_smb_mapping_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.smtp.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_smtp_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.snmp.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_snmp_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.socks.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_socks_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.software.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_software_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.ssh.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_ssh_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.ssl.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_ssl_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.syslog.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_syslog_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.traceroute.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_traceroute_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.tunnel.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_tunnel_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.weird.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_weird_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.x509.entries.per-second (integer)</code></td>
+<td><code>about.labels [logs_x509_entries_per_second]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>files.per-minute (integer)</code></td>
+<td><code>about.labels [files_per_minute]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>files.queued.s3 (integer)</code></td>
+<td><code>about.labels [files_queued_s3]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>files.queued.sftp (integer)</code></td>
+<td><code>about.labels [files_queued_sftp]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>files.total (integer)</code></td>
+<td><code>about.labels [files_total]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.splunk_export.lag (integer)</code></td>
+<td><code>about.labels [logs_splunk_export_lag]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.syslog_export.lag (integer)</code></td>
+<td><code>about.labels [logs_syslog_export_lag]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.json_export.lag (integer)</code></td>
+<td><code>about.labels [logs_json_export_lag]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.kafka_export.lag (integer)</code></td>
+<td><code>about.labels [logs_kafka_export_lag]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.investigator_export.lag (integer)</code></td>
+<td><code>about.labels [logs_investigator_export_lag]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.kinesis_export.lag (integer)</code></td>
+<td><code>about.labels [logs_kinesis_export_lag]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.hec_export.lag (integer)</code></td>
+<td><code>about.labels [logs_hec_export_lag]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>logs.elasticsearch_export.lag (integer)</code></td>
+<td><code>about.labels [logs_elasticsearch_export_lag]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>cpu (integer)</code></td>
+<td><code>about.labels [cpu]</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</devsite-filter>
+</div>
+
+<h3>Field mapping reference: CORELIGHT - corelight_metrics_iface</h3>
+
+The following table lists the log fields of the <code>corelight_metrics_iface</code> log type and their corresponding UDM fields.
+
+<div translate="no">
+<devsite-filter sortable="0">
+<input type="text" placeholder="Type a keyword to find a value.">
+<table class="fixed">
+<thead>
+<tr>
+<th>Log field</th>
+<th>UDM mapping</th>
+<th>Logic</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr>
+<td></td>
+<td><code>metadata.event_type</code></td>
+<td>The <code>metadata.event_type</code> UDM field is set to <code>GENERIC_EVENT</code>.</td>
+</tr>
+<tr>
+<td></td>
+<td><code>metadata.product_name</code></td>
+<td>The <code>metadata.product_name</code> UDM field is set to <code>zeek</code>.</td>
+</tr>
+<tr>
+<td><code>monitor.total.kpps (integer)</code></td>
+<td><code>about.labels [monitor_total_kpps]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>monitor.total.drops.kpps (integer)</code></td>
+<td><code>about.labels [monitor_total_drops_kpps]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>monitor.total.mbps (integer)</code></td>
+<td><code>about.labels [monitor_total_mbps]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>mgmt.in.bytes.mbps (integer)</code></td>
+<td><code>about.labels [mgmt_in_bytes_mbps]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>mgmt.out.bytes.mbps (integer)</code></td>
+<td><code>about.labels [mgmt_out_bytes_mbps]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>mgmt.in.packets.kpps (integer)</code></td>
+<td><code>about.labels [mgmt_in_packets_kpps]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>mgmt.out.packets.kpps (integer)</code></td>
+<td><code>about.labels [mgmt_out_packets_kpps]</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</devsite-filter>
+</div>
+
+<h3>Field mapping reference: CORELIGHT - corelight_metrics_system</h3>
+
+The following table lists the log fields of the <code>corelight_metrics_system</code> log type and their corresponding UDM fields.
+
+<div translate="no">
+<devsite-filter sortable="0">
+<input type="text" placeholder="Type a keyword to find a value.">
+<table class="fixed">
+<thead>
+<tr>
+<th>Log field</th>
+<th>UDM mapping</th>
+<th>Logic</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr>
+<td></td>
+<td><code>metadata.event_type</code></td>
+<td>The <code>metadata.event_type</code> UDM field is set to <code>GENERIC_EVENT</code>.</td>
+</tr>
+<tr>
+<td></td>
+<td><code>metadata.product_name</code></td>
+<td>The <code>metadata.product_name</code> UDM field is set to <code>zeek</code>.</td>
+</tr>
+<tr>
+<td><code>cpu.1.temprature (integer)</code></td>
+<td><code>about.labels [cpu_1_temprature]</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</devsite-filter>
+</div>
+
+<h3>Field mapping reference: CORELIGHT - corelight_metrics_memory</h3>
+
+The following table lists the log fields of the <code>corelight_metrics_memory</code> log type and their corresponding UDM fields.
+
+<div translate="no">
+<devsite-filter sortable="0">
+<input type="text" placeholder="Type a keyword to find a value.">
+<table class="fixed">
+<thead>
+<tr>
+<th>Log field</th>
+<th>UDM mapping</th>
+<th>Logic</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr>
+<td></td>
+<td><code>metadata.event_type</code></td>
+<td>The <code>metadata.event_type</code> UDM field is set to <code>GENERIC_EVENT</code>.</td>
+</tr>
+<tr>
+<td></td>
+<td><code>metadata.product_name</code></td>
+<td>The <code>metadata.product_name</code> UDM field is set to <code>zeek</code>.</td>
+</tr>
+<tr>
+<td><code>usage (integer)</code></td>
+<td><code>about.labels [usage]</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</devsite-filter>
+</div>
+
+<h3>Field mapping reference: CORELIGHT - corelight_metrics_disk</h3>
+
+The following table lists the log fields of the <code>corelight_metrics_disk</code> log type and their corresponding UDM fields.
+
+<div translate="no">
+<devsite-filter sortable="0">
+<input type="text" placeholder="Type a keyword to find a value.">
+<table class="fixed">
+<thead>
+<tr>
+<th>Log field</th>
+<th>UDM mapping</th>
+<th>Logic</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr>
+<td></td>
+<td><code>metadata.event_type</code></td>
+<td>The <code>metadata.event_type</code> UDM field is set to <code>GENERIC_EVENT</code>.</td>
+</tr>
+<tr>
+<td></td>
+<td><code>metadata.product_name</code></td>
+<td>The <code>metadata.product_name</code> UDM field is set to <code>zeek</code>.</td>
+</tr>
+<tr>
+<td><code>usage.data (integer)</code></td>
+<td><code>about.labels [usage_data]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>usage.os (integer)</code></td>
+<td><code>about.labels [usage_os]</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</devsite-filter>
+</div>
+
+<h3>Field mapping reference: CORELIGHT - corelight_metrics_zeek_doctor</h3>
+
+The following table lists the log fields of the <code>corelight_metrics_zeek_doctor</code> log type and their corresponding UDM fields.
+
+<div translate="no">
+<devsite-filter sortable="0">
+<input type="text" placeholder="Type a keyword to find a value.">
+<table class="fixed">
+<thead>
+<tr>
+<th>Log field</th>
+<th>UDM mapping</th>
+<th>Logic</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr>
+<td></td>
+<td><code>metadata.event_type</code></td>
+<td>The <code>metadata.event_type</code> UDM field is set to <code>GENERIC_EVENT</code>.</td>
+</tr>
+<tr>
+<td></td>
+<td><code>metadata.product_name</code></td>
+<td>The <code>metadata.product_name</code> UDM field is set to <code>zeek</code>.</td>
+</tr>
+<tr>
+<td><code>check.bursty.percent (integer)</code></td>
+<td><code>about.labels [check_bursty_percent]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>check.dns_half_duplex_orig.percent (integer)</code></td>
+<td><code>about.labels [check_dns_half_duplex_orig_percent]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>check.dns_half_duplex_resp.percent (integer)</code></td>
+<td><code>about.labels [check_dns_half_duplex_resp_percent]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>check.local_to_local.percent (integer)</code></td>
+<td><code>about.labels [check_local_to_local_percent]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>check.remote_to_remote.percent (integer)</code></td>
+<td><code>about.labels [check_remote_to_remote_percent]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>check.tcp_backscatter.percent (integer)</code></td>
+<td><code>about.labels [check_tcp_backscatter_percent]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>check.tcp_byte_counts_wrong.percent (integer)</code></td>
+<td><code>about.labels [check_tcp_byte_counts_wrong_percent]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>check.tcp_half_duplex.percent (integer)</code></td>
+<td><code>about.labels [check_tcp_half_duplex_percent]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>check.tcp_missed_bytes.percent (integer)</code></td>
+<td><code>about.labels [check_tcp_missed_bytes_percent]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>check.tcp_no_ssl_on_443.percent (integer)</code></td>
+<td><code>about.labels [check_tcp_no_ssl_on_443_percent]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>check.tcp_no_three_way_handshake.percent (integer)</code></td>
+<td><code>about.labels [check_tcp_no_three_way_handshake_percent]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>check.tcp_retransmissions.percent (integer)</code></td>
+<td><code>about.labels [check_tcp_retransmissions_percent]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>check.tcp_scan.percent (integer)</code></td>
+<td><code>about.labels [check_tcp_scan_percent]</code></td>
 <td></td>
 </tr>
 </tbody>

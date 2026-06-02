@@ -1,0 +1,1511 @@
+{
+    "dashboards": [
+        {
+            "dashboard": {
+                "name": "952422b8-97ca-4f38-b28e-6c1620015e66",
+                "displayName": "Corelight → Data Explorer → Asset Classification",
+                "definition": {
+                    "filters": [
+                        {
+                            "id": "GlobalTimeFilter",
+                            "dataSource": "GLOBAL",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "PAST",
+                                    "fieldValues": [
+                                        "1",
+                                        "DAY"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Global Time Filter",
+                            "chartIds": [
+                                "cbe9f32b-5c6c-490b-a93d-c83f8a241b64",
+                                "9376581c-3028-44f0-b850-dd87cf4af44f",
+                                "f849cce3-f5ec-4275-9b55-b672719054f8",
+                                "54f5d1ac-842e-4f65-aee3-c50c50be6771",
+                                "7dba276a-2ebb-4496-a5db-8dde60247610",
+                                "ac8ec30a-309b-48da-b1d9-0ec38ef2d19b",
+                                "530efaf0-6d90-43c0-b16f-9797092651ac",
+                                "1159320d-9b5a-4413-a7ca-3e6fe5598d1a",
+                                "435e1b56-392c-4bc8-b395-1dd3e26d42e6",
+                                "b68282a9-5aa5-4d38-9ea2-5c94b7eeb457",
+                                "4f27e4f8-7742-473b-8771-a88e9dbebfd7",
+                                "e60e62ad-fd3b-4cd1-8760-ac816f33717a",
+                                "4698f722-3538-4d91-bb41-a3e4465e0008"
+                            ],
+                            "isStandardTimeRangeFilter": true,
+                            "isStandardTimeRangeFilterEnabled": true
+                        },
+                        {
+                            "id": "63f72959-42b7-4a44-9578-2cb3fff28399",
+                            "dataSource": "UDM",
+                            "fieldPath": "observer.hostname",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Corelight Sensor",
+                            "chartIds": [
+                                "cbe9f32b-5c6c-490b-a93d-c83f8a241b64",
+                                "9376581c-3028-44f0-b850-dd87cf4af44f",
+                                "54f5d1ac-842e-4f65-aee3-c50c50be6771",
+                                "7dba276a-2ebb-4496-a5db-8dde60247610",
+                                "ac8ec30a-309b-48da-b1d9-0ec38ef2d19b",
+                                "1159320d-9b5a-4413-a7ca-3e6fe5598d1a",
+                                "435e1b56-392c-4bc8-b395-1dd3e26d42e6",
+                                "b68282a9-5aa5-4d38-9ea2-5c94b7eeb457",
+                                "4f27e4f8-7742-473b-8771-a88e9dbebfd7",
+                                "e60e62ad-fd3b-4cd1-8760-ac816f33717a",
+                                "4698f722-3538-4d91-bb41-a3e4465e0008"
+                            ]
+                        },
+                        {
+                            "id": "65726920-9169-4824-bdb8-e06f418d5abf",
+                            "dataSource": "UDM",
+                            "fieldPath": "about.platform",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Operating System",
+                            "chartIds": [
+                                "cbe9f32b-5c6c-490b-a93d-c83f8a241b64",
+                                "9376581c-3028-44f0-b850-dd87cf4af44f",
+                                "54f5d1ac-842e-4f65-aee3-c50c50be6771",
+                                "7dba276a-2ebb-4496-a5db-8dde60247610",
+                                "ac8ec30a-309b-48da-b1d9-0ec38ef2d19b",
+                                "1159320d-9b5a-4413-a7ca-3e6fe5598d1a",
+                                "435e1b56-392c-4bc8-b395-1dd3e26d42e6",
+                                "b68282a9-5aa5-4d38-9ea2-5c94b7eeb457",
+                                "4f27e4f8-7742-473b-8771-a88e9dbebfd7",
+                                "e60e62ad-fd3b-4cd1-8760-ac816f33717a",
+                                "4698f722-3538-4d91-bb41-a3e4465e0008"
+                            ]
+                        },
+                        {
+                            "id": "75964862-c877-473d-841e-cac699137ded",
+                            "dataSource": "UDM",
+                            "fieldPath": "about.group.group_display_name",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Device Type Group",
+                            "chartIds": [
+                                "9376581c-3028-44f0-b850-dd87cf4af44f",
+                                "54f5d1ac-842e-4f65-aee3-c50c50be6771",
+                                "7dba276a-2ebb-4496-a5db-8dde60247610",
+                                "ac8ec30a-309b-48da-b1d9-0ec38ef2d19b",
+                                "cbe9f32b-5c6c-490b-a93d-c83f8a241b64",
+                                "1159320d-9b5a-4413-a7ca-3e6fe5598d1a",
+                                "435e1b56-392c-4bc8-b395-1dd3e26d42e6",
+                                "b68282a9-5aa5-4d38-9ea2-5c94b7eeb457",
+                                "4f27e4f8-7742-473b-8771-a88e9dbebfd7",
+                                "e60e62ad-fd3b-4cd1-8760-ac816f33717a",
+                                "4698f722-3538-4d91-bb41-a3e4465e0008"
+                            ]
+                        },
+                        {
+                            "id": "7dafa5ac-f088-47a4-9746-6def12da162d",
+                            "dataSource": "UDM",
+                            "fieldPath": "about.resource.resource_subtype",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "Device Type Name",
+                            "chartIds": [
+                                "9376581c-3028-44f0-b850-dd87cf4af44f",
+                                "54f5d1ac-842e-4f65-aee3-c50c50be6771",
+                                "7dba276a-2ebb-4496-a5db-8dde60247610",
+                                "ac8ec30a-309b-48da-b1d9-0ec38ef2d19b",
+                                "cbe9f32b-5c6c-490b-a93d-c83f8a241b64",
+                                "1159320d-9b5a-4413-a7ca-3e6fe5598d1a",
+                                "b68282a9-5aa5-4d38-9ea2-5c94b7eeb457",
+                                "4f27e4f8-7742-473b-8771-a88e9dbebfd7",
+                                "e60e62ad-fd3b-4cd1-8760-ac816f33717a",
+                                "4698f722-3538-4d91-bb41-a3e4465e0008",
+                                "435e1b56-392c-4bc8-b395-1dd3e26d42e6"
+                            ]
+                        },
+                        {
+                            "id": "b93e70b2-e5ff-487d-9210-a54bc6018f38",
+                            "dataSource": "UDM",
+                            "fieldPath": "about.ip",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "EQUAL",
+                                    "fieldValues": [
+                                        ""
+                                    ]
+                                }
+                            ],
+                            "displayName": "IP Address",
+                            "chartIds": [
+                                "9376581c-3028-44f0-b850-dd87cf4af44f",
+                                "54f5d1ac-842e-4f65-aee3-c50c50be6771",
+                                "7dba276a-2ebb-4496-a5db-8dde60247610",
+                                "ac8ec30a-309b-48da-b1d9-0ec38ef2d19b",
+                                "cbe9f32b-5c6c-490b-a93d-c83f8a241b64",
+                                "435e1b56-392c-4bc8-b395-1dd3e26d42e6",
+                                "b68282a9-5aa5-4d38-9ea2-5c94b7eeb457",
+                                "4f27e4f8-7742-473b-8771-a88e9dbebfd7",
+                                "e60e62ad-fd3b-4cd1-8760-ac816f33717a",
+                                "4698f722-3538-4d91-bb41-a3e4465e0008",
+                                "1159320d-9b5a-4413-a7ca-3e6fe5598d1a"
+                            ]
+                        }
+                    ],
+                    "charts": [
+                        {
+                            "dashboardChart": "cbe9f32b-5c6c-490b-a93d-c83f8a241b64",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 32,
+                                "startY": 0,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "63f72959-42b7-4a44-9578-2cb3fff28399",
+                                "65726920-9169-4824-bdb8-e06f418d5abf",
+                                "75964862-c877-473d-841e-cac699137ded",
+                                "7dafa5ac-f088-47a4-9746-6def12da162d",
+                                "b93e70b2-e5ff-487d-9210-a54bc6018f38"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "9376581c-3028-44f0-b850-dd87cf4af44f",
+                            "chartLayout": {
+                                "startX": 32,
+                                "spanX": 32,
+                                "startY": 0,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "63f72959-42b7-4a44-9578-2cb3fff28399",
+                                "65726920-9169-4824-bdb8-e06f418d5abf",
+                                "75964862-c877-473d-841e-cac699137ded",
+                                "7dafa5ac-f088-47a4-9746-6def12da162d",
+                                "b93e70b2-e5ff-487d-9210-a54bc6018f38"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "1159320d-9b5a-4413-a7ca-3e6fe5598d1a",
+                            "chartLayout": {
+                                "startX": 64,
+                                "spanX": 32,
+                                "startY": 0,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "63f72959-42b7-4a44-9578-2cb3fff28399",
+                                "65726920-9169-4824-bdb8-e06f418d5abf",
+                                "75964862-c877-473d-841e-cac699137ded",
+                                "7dafa5ac-f088-47a4-9746-6def12da162d",
+                                "b93e70b2-e5ff-487d-9210-a54bc6018f38"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "ac8ec30a-309b-48da-b1d9-0ec38ef2d19b",
+                            "chartLayout": {
+                                "startX": 32,
+                                "spanX": 32,
+                                "startY": 25,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "63f72959-42b7-4a44-9578-2cb3fff28399",
+                                "65726920-9169-4824-bdb8-e06f418d5abf",
+                                "75964862-c877-473d-841e-cac699137ded",
+                                "7dafa5ac-f088-47a4-9746-6def12da162d",
+                                "b93e70b2-e5ff-487d-9210-a54bc6018f38"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "4698f722-3538-4d91-bb41-a3e4465e0008",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 32,
+                                "startY": 25,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "63f72959-42b7-4a44-9578-2cb3fff28399",
+                                "65726920-9169-4824-bdb8-e06f418d5abf",
+                                "75964862-c877-473d-841e-cac699137ded",
+                                "7dafa5ac-f088-47a4-9746-6def12da162d",
+                                "b93e70b2-e5ff-487d-9210-a54bc6018f38"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "7dba276a-2ebb-4496-a5db-8dde60247610",
+                            "chartLayout": {
+                                "startX": 64,
+                                "spanX": 32,
+                                "startY": 25,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "63f72959-42b7-4a44-9578-2cb3fff28399",
+                                "65726920-9169-4824-bdb8-e06f418d5abf",
+                                "75964862-c877-473d-841e-cac699137ded",
+                                "7dafa5ac-f088-47a4-9746-6def12da162d",
+                                "b93e70b2-e5ff-487d-9210-a54bc6018f38"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "530efaf0-6d90-43c0-b16f-9797092651ac",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 41,
+                                "startY": 50,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "4f27e4f8-7742-473b-8771-a88e9dbebfd7",
+                            "chartLayout": {
+                                "startX": 41,
+                                "spanX": 55,
+                                "startY": 50,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "63f72959-42b7-4a44-9578-2cb3fff28399",
+                                "65726920-9169-4824-bdb8-e06f418d5abf",
+                                "75964862-c877-473d-841e-cac699137ded",
+                                "7dafa5ac-f088-47a4-9746-6def12da162d",
+                                "b93e70b2-e5ff-487d-9210-a54bc6018f38"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "f849cce3-f5ec-4275-9b55-b672719054f8",
+                            "chartLayout": {
+                                "startX": 41,
+                                "spanX": 55,
+                                "startY": 75,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "e60e62ad-fd3b-4cd1-8760-ac816f33717a",
+                            "chartLayout": {
+                                "startX": 41,
+                                "spanX": 55,
+                                "startY": 100,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "63f72959-42b7-4a44-9578-2cb3fff28399",
+                                "65726920-9169-4824-bdb8-e06f418d5abf",
+                                "75964862-c877-473d-841e-cac699137ded",
+                                "7dafa5ac-f088-47a4-9746-6def12da162d",
+                                "b93e70b2-e5ff-487d-9210-a54bc6018f38"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "435e1b56-392c-4bc8-b395-1dd3e26d42e6",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 41,
+                                "startY": 100,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "63f72959-42b7-4a44-9578-2cb3fff28399",
+                                "65726920-9169-4824-bdb8-e06f418d5abf",
+                                "75964862-c877-473d-841e-cac699137ded",
+                                "7dafa5ac-f088-47a4-9746-6def12da162d",
+                                "b93e70b2-e5ff-487d-9210-a54bc6018f38"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "b68282a9-5aa5-4d38-9ea2-5c94b7eeb457",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 41,
+                                "startY": 75,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "63f72959-42b7-4a44-9578-2cb3fff28399",
+                                "65726920-9169-4824-bdb8-e06f418d5abf",
+                                "75964862-c877-473d-841e-cac699137ded",
+                                "7dafa5ac-f088-47a4-9746-6def12da162d",
+                                "b93e70b2-e5ff-487d-9210-a54bc6018f38"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "54f5d1ac-842e-4f65-aee3-c50c50be6771",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 125,
+                                "spanY": 26
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter",
+                                "63f72959-42b7-4a44-9578-2cb3fff28399",
+                                "65726920-9169-4824-bdb8-e06f418d5abf",
+                                "75964862-c877-473d-841e-cac699137ded",
+                                "7dafa5ac-f088-47a4-9746-6def12da162d",
+                                "b93e70b2-e5ff-487d-9210-a54bc6018f38"
+                            ]
+                        }
+                    ]
+                },
+                "type": "CUSTOM",
+                "etag": "21729728a2622d85ec57142a3b3077406b7f15e9d5d963775fc32fab4633cc8e",
+                "access": "DASHBOARD_PRIVATE"
+            },
+            "dashboardCharts": [
+                {
+                    "name": "530efaf0-6d90-43c0-b16f-9797092651ac",
+                    "displayName": "Top Applications by Operating System",
+                    "chartDatasource": {
+                        "dashboardQuery": "9a653018-cc47-4e3c-9fcf-eefc554fbccd",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "os_name",
+                                "header": "OS Name"
+                            },
+                            {
+                                "field": "app",
+                                "header": "Application"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Count"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "ac596f09180b6d9c0f328e337fe4bf4e2ee67179bcee51af98003818b169ee18",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "1159320d-9b5a-4413-a7ca-3e6fe5598d1a",
+                    "displayName": "Device Type Breakdown",
+                    "description": "By Unique MAC Addresses",
+                    "chartDatasource": {
+                        "dashboardQuery": "fb73ca1f-8f90-44bc-8fd9-61fcc70cd894",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "brand"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "40%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "b=>{var {map:c}=eig(this.theme);b=Ljg(b,zig(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;var d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "Computer",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "Computer"
+                                            }
+                                        },
+                                        {
+                                            "key": "Virtual Machine",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "Virtual Machine"
+                                            }
+                                        },
+                                        {
+                                            "key": "EMPTY",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "EMPTY"
+                                            }
+                                        },
+                                        {
+                                            "key": "Raspberry",
+                                            "value": {
+                                                "color": "#ec453b",
+                                                "label": "Raspberry"
+                                            }
+                                        },
+                                        {
+                                            "key": "Mobile",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "Mobile"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "fd72c55326e0b247b4078f9b72fc118287c02422a12cc363374d393e8f821d9d",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "b68282a9-5aa5-4d38-9ea2-5c94b7eeb457",
+                    "displayName": "Detected IoT (Audio, Video, Gaming)",
+                    "chartDatasource": {
+                        "dashboardQuery": "4b895ad5-e982-4d47-bc72-b58cf3fe2ded",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "device_type",
+                                "header": "device_type"
+                            },
+                            {
+                                "field": "brand",
+                                "header": "brand"
+                            },
+                            {
+                                "field": "model",
+                                "header": "model"
+                            },
+                            {
+                                "field": "count",
+                                "header": "count"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "fcd854f9c0af46ee1050576338445b08f37a0caf1d4b84011f80fb7ac910f962",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "4f27e4f8-7742-473b-8771-a88e9dbebfd7",
+                    "displayName": "Device Types over Time",
+                    "description": "By Unique MAC Addresses",
+                    "chartDatasource": {
+                        "dashboardQuery": "e61f8cc4-03c2-420b-bd34-d24b2548853d",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "Raspberry",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "Raspberry"
+                            },
+                            {
+                                "seriesName": "Virtual Machine",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "Virtual Machine"
+                            },
+                            {
+                                "seriesName": "Computer",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#10a3b7"
+                                },
+                                "seriesUniqueValue": "Computer"
+                            },
+                            {
+                                "seriesName": "Mobile",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#ec453b"
+                                },
+                                "seriesUniqueValue": "Mobile"
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "Active Assets"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "seriesColumn": [
+                            "type_name"
+                        ],
+                        "groupingType": "Grouped"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "d44c43a72045fd688dec7c544c21eb28adee396ddf41b75289ec9e5e76e9ea16",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "e60e62ad-fd3b-4cd1-8760-ac816f33717a",
+                    "displayName": "Top Models over Time",
+                    "description": "By Unique IP Addresses",
+                    "chartDatasource": {
+                        "dashboardQuery": "aa501e9e-a24d-49a1-9dc6-43fc6371a578",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "count"
+                                },
+                                "dataLabel": {}
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Active Assets"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "seriesColumn": [
+                            "model"
+                        ],
+                        "groupingType": "Grouped"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "20cf9a7d7147879597a0a7892a5bc55eda8fd349984aa510c35a34f5f4b07b63",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "4698f722-3538-4d91-bb41-a3e4465e0008",
+                    "displayName": "Operating System Versions",
+                    "description": "By Unique MAC Addresses",
+                    "chartDatasource": {
+                        "dashboardQuery": "40a154f5-f184-4e30-bcbb-23353ceb76cb",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "os"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "40%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "b=>{var {map:c}=eig(this.theme);b=Ljg(b,zig(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;var d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "Unknown",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "Unknown"
+                                            }
+                                        },
+                                        {
+                                            "key": "Windows",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "Windows"
+                                            }
+                                        },
+                                        {
+                                            "key": "EMPTY",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "EMPTY"
+                                            }
+                                        },
+                                        {
+                                            "key": "iOS",
+                                            "value": {
+                                                "color": "#ec453b",
+                                                "label": "iOS"
+                                            }
+                                        },
+                                        {
+                                            "key": "Raspbian",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "Raspbian"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "7caac4eb22266077101f8a894586bf3b112349d8338776bf47c626ae6077ef5b",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "9376581c-3028-44f0-b850-dd87cf4af44f",
+                    "displayName": "Brand Breakdown",
+                    "description": "By Unique MAC Addresses",
+                    "chartDatasource": {
+                        "dashboardQuery": "4a8d9b69-970d-49e7-9540-af589254a9f7",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "brand"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "40%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "b=>{var {map:c}=eig(this.theme);b=Ljg(b,zig(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;var d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "Unknown",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "Unknown"
+                                            }
+                                        },
+                                        {
+                                            "key": "VMware",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "VMware"
+                                            }
+                                        },
+                                        {
+                                            "key": "Raspberry Pi",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "Raspberry Pi"
+                                            }
+                                        },
+                                        {
+                                            "key": "EMPTY",
+                                            "value": {
+                                                "color": "#ec453b",
+                                                "label": "EMPTY"
+                                            }
+                                        },
+                                        {
+                                            "key": "HP",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "HP"
+                                            }
+                                        },
+                                        {
+                                            "key": "Apple",
+                                            "value": {
+                                                "color": "#923ef9",
+                                                "label": "Apple"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "06652bb00727268566ec2325392c78da1a79c96eb27f606010ee65646f3adaef",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "54f5d1ac-842e-4f65-aee3-c50c50be6771",
+                    "displayName": "Device Inventory with Classifications",
+                    "chartDatasource": {
+                        "dashboardQuery": "86c702c0-bb84-4f97-8a21-de3a2caa088c",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "date_hour",
+                                "header": "Time"
+                            },
+                            {
+                                "field": "principal.ip",
+                                "header": "principal.ip"
+                            },
+                            {
+                                "field": "confidence",
+                                "header": "Confidence"
+                            },
+                            {
+                                "field": "mac",
+                                "header": "MAC"
+                            },
+                            {
+                                "field": "os_name",
+                                "header": "OS Name"
+                            },
+                            {
+                                "field": "os_ver",
+                                "header": "OS Version"
+                            },
+                            {
+                                "field": "type_name",
+                                "header": "Type Name"
+                            },
+                            {
+                                "field": "type_group",
+                                "header": "Type Group"
+                            },
+                            {
+                                "field": "brand",
+                                "header": "Brand"
+                            },
+                            {
+                                "field": "model",
+                                "header": "Model"
+                            },
+                            {
+                                "field": "sources",
+                                "header": "Sources"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "35ee950109178209af10ce998c37dc4c5116bea81a48ab6032139256a0cf2425",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "7dba276a-2ebb-4496-a5db-8dde60247610",
+                    "displayName": "Discovery Source",
+                    "description": "By Unique IP Addresses",
+                    "chartDatasource": {
+                        "dashboardQuery": "fb79dd37-0f68-44a4-a103-23fbe352e05c",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "source"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "40%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "b=>{var {map:c}=eig(this.theme);b=Ljg(b,zig(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;var d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "http",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "http"
+                                            }
+                                        },
+                                        {
+                                            "key": "dhcp",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "dhcp"
+                                            }
+                                        },
+                                        {
+                                            "key": "both",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "both"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "27cd0aac91056aba08bb00648c4d3b25e48d913ddfb088ee5359f3293c9ffb63",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "cbe9f32b-5c6c-490b-a93d-c83f8a241b64",
+                    "displayName": "Total Operating Systems",
+                    "description": "By Unique MAC Addresses",
+                    "chartDatasource": {
+                        "dashboardQuery": "ec3f7655-8329-4369-9d22-5df5fd936896",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "os_name",
+                                "header": "os_name"
+                            },
+                            {
+                                "field": "count",
+                                "header": "count"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "32c0a5fe5ebe313f54f2ddbe82d6aad4f53b0b8b0c11c9796cc6af02bc64b62d",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "435e1b56-392c-4bc8-b395-1dd3e26d42e6",
+                    "displayName": "Classification Details per Host",
+                    "chartDatasource": {
+                        "dashboardQuery": "ce5ab6e7-5e0c-4c41-a5e8-518541bb65c6",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "principal.ip",
+                                "header": "principal.ip"
+                            },
+                            {
+                                "field": "os_name",
+                                "header": "OS Name"
+                            },
+                            {
+                                "field": "type_name",
+                                "header": "Type Name"
+                            },
+                            {
+                                "field": "type_group",
+                                "header": "Type Group"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "d6610060bf68be2ddd120637a5b760356409eef9729256061eb381ee31e38a1a",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "f849cce3-f5ec-4275-9b55-b672719054f8",
+                    "displayName": "Data Transferred by Device Type",
+                    "description": "By IP Address",
+                    "chartDatasource": {
+                        "dashboardQuery": "814fca9b-aac5-4252-acbf-31517f945c5e",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "MOBILE",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "total_bytes"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "MOBILE"
+                            },
+                            {
+                                "seriesName": "LAPTOP",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "total_bytes"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "LAPTOP"
+                            },
+                            {
+                                "seriesName": "RASPBERRY",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "total_bytes"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#10a3b7"
+                                },
+                                "seriesUniqueValue": "RASPBERRY"
+                            },
+                            {
+                                "seriesName": "COMPUTER",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "total_bytes"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#ec453b"
+                                },
+                                "seriesUniqueValue": "COMPUTER"
+                            },
+                            {
+                                "seriesName": "VIRTUAL_MACHINE",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "total_bytes"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#e51f8f"
+                                },
+                                "seriesUniqueValue": "VIRTUAL_MACHINE"
+                            },
+                            {
+                                "seriesName": "TABLET",
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "date_hour",
+                                    "y": "total_bytes"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#923ef9"
+                                },
+                                "seriesUniqueValue": "TABLET"
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "Total Bytes"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "seriesColumn": [
+                            "device_type"
+                        ],
+                        "groupingType": "Grouped"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "b9cadb85057c387ce3def1adaf762cb0c17fc71fda20c5464cf7f782b2c8c20d",
+                    "drillDownConfig": {}
+                },
+                {
+                    "name": "ac8ec30a-309b-48da-b1d9-0ec38ef2d19b",
+                    "displayName": "Device Groupings",
+                    "description": "By Unique IP Addresses",
+                    "chartDatasource": {
+                        "dashboardQuery": "e0d7850f-a7ac-48d8-82fa-3eca4060b94f",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "brand"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "40%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "b=>{var {map:c}=eig(this.theme);b=Ljg(b,zig(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;var d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "Home & Office",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "Home & Office"
+                                            }
+                                        },
+                                        {
+                                            "key": "Mobile",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "Mobile"
+                                            }
+                                        },
+                                        {
+                                            "key": "Server",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "Server"
+                                            }
+                                        },
+                                        {
+                                            "key": "EMPTY",
+                                            "value": {
+                                                "color": "#ec453b",
+                                                "label": "EMPTY"
+                                            }
+                                        },
+                                        {
+                                            "key": "Engineering",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "Engineering"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "a60063622452e289e0893055f7f27705223e5348e4d18517447295e4359f3ff8",
+                    "drillDownConfig": {}
+                }
+            ],
+            "dashboardQueries": [
+                {
+                    "name": "4a8d9b69-970d-49e7-9540-af589254a9f7",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"asset_classification\" \r\n$brand=if(about.user.company_name!=\"\", about.user.company_name, \"Unknown\")\r\nprincipal.mac!=\"\"\r\nmatch:\r\n    $brand\r\noutcome:\r\n    $count=count_distinct(principal.mac)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "76734b4e3aba028ea267f3ba38befa841a4e6ff7096cba5efdbd86df7c4803b5"
+                },
+                {
+                    "name": "814fca9b-aac5-4252-acbf-31517f945c5e",
+                    "query": "$e1.metadata.vendor_name=\"Corelight\"\r\n$e1.metadata.product_event_type = \"asset_classification\"\r\n$e2.metadata.vendor_name=\"Corelight\"\r\n$e2.metadata.product_event_type = \"conn\"\r\n\r\n$e1.principal.ip = $e2.principal.ip\r\n$device_type=if($e1.about.asset.category!=\"\", $e1.about.asset.category, \"Unknown\")\r\n$date_hour=timestamp.get_timestamp($e1.metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\n\r\nmatch:\r\n    $date_hour, $device_type\r\noutcome:\r\n    $bytes_in = sum(cast.as_float($e2.target.labels[\"resp_ip_bytes\"]))\r\n    $bytes_out = sum(cast.as_float($e2.principal.labels[\"orig_ip_bytes\"]))\r\n    $total_bytes = math.round(($bytes_in + $bytes_out)/1073741824, 2)\r\norder:\r\n    $date_hour, $total_bytes asc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "66ac9f4c672162e9442cb6b4779a58f3afd79d820a96e9b9c05eb253aaf23bea"
+                },
+                {
+                    "name": "e0d7850f-a7ac-48d8-82fa-3eca4060b94f",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"asset_classification\" \r\n$brand=if(about.group.group_display_name!=\"\", about.group.group_display_name, \"Unknown\")\r\nmatch:\r\n    $brand\r\noutcome:\r\n    $count=count_distinct(principal.ip)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "803cf39ec9054d52013b63cf1c5e9b57a781cbd698f9a418521af5b6dd47845a"
+                },
+                {
+                    "name": "ec3f7655-8329-4369-9d22-5df5fd936896",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"asset_classification\" \r\n$os_name=if(about.asset.attribute.labels.value!=\"\", about.asset.attribute.labels.value, \"Unknown\")\r\nprincipal.mac!=\"\"\r\nmatch:\r\n    $os_name\r\noutcome:\r\n    $count=count_distinct(principal.mac)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10\r\n",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "fe828a270eeef5749ef5114585d2a0fabd51d8103fa2185f726b8b52ab4c8cc4"
+                },
+                {
+                    "name": "aa501e9e-a24d-49a1-9dc6-43fc6371a578",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"asset_classification\"\r\n$model=if(about.asset.hardware.model!=\"\", about.asset.hardware.model, \"Unknown\")\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nmatch:\r\n    $date_hour, $model\r\noutcome:\r\n    $count=count_distinct(principal.ip)\r\norder:\r\n    $date_hour, $count asc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "a762905e209ad05aa4945bca794244e3abc38eb5600c9223d2748ac471566a52"
+                },
+                {
+                    "name": "40a154f5-f184-4e30-bcbb-23353ceb76cb",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"asset_classification\"\r\n$os= if(about.asset.attribute.labels.value!=\"\" AND about.platform_version!=\"\", strings.concat(about.asset.attribute.labels.value, \" \", about.platform_version), if(about.asset.attribute.labels.value!=\"\", about.asset.attribute.labels.value, \"Unknown\"))\r\nprincipal.mac!=\"\"\r\nmatch:\r\n    $os\r\noutcome:\r\n    $count=count_distinct(principal.mac)\r\norder:\r\n    $count desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "f78521af4f9d6041565687a093217fab10dc4f9b0a38ef533b4d5912b40ac51d"
+                },
+                {
+                    "name": "86c702c0-bb84-4f97-8a21-de3a2caa088c",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"asset_classification\"\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\n$confidence = if(about.security_result.confidence_score>=40, \"High\", if(about.security_result.confidence_score>=20, \"Medium\", if(about.security_result.confidence_score>=1, \"Low\", \"Unknown\")))\r\nmatch:\r\n    $date_hour, principal.ip, $confidence\r\noutcome:\r\n    $mac=array_distinct(if(principal.mac!=\"\", principal.mac, \"Unknown\"))\r\n    $os_name=array_distinct(if(about.asset.attribute.labels.value!=\"\", about.asset.attribute.labels.value, \"Unknown\"))\r\n    $os_ver=array_distinct(if(about.platform_version!=\"\", about.platform_version, \"Unknown\"))\r\n    $type_name=array_distinct(if(about.resource.resource_subtype!=\"\", about.resource.resource_subtype, \"Unknown\"))\r\n    $type_group=array_distinct(if(about.group.group_display_name!=\"\", about.group.group_display_name, \"Unknown\"))\r\n    $brand=array_distinct(if(about.user.company_name!=\"\", about.user.company_name, \"Unknown\"))\r\n    $model=array_distinct(if(about.asset.hardware.model!=\"\", about.asset.hardware.model, \"Unknown\"))\r\n    $sources=array_distinct(if(about.ip_geo_artifact.tags!=\"\", about.ip_geo_artifact.tags, \"Unknown\"))\r\nlimit:\r\n    100",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "7c36ffb602b7c73d47b78617da99a58b46827e62fa3dfaf93a75fd2a475dfa60"
+                },
+                {
+                    "name": "fb79dd37-0f68-44a4-a103-23fbe352e05c",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"asset_classification\"\r\nabout.ip_geo_artifact.tags!=\"\"\r\n$source=if(about.ip_geo_artifact.tags=\"http\" AND about.ip_geo_artifact.tags=\"dhcp\", \"both\", about.ip_geo_artifact.tags)\r\nmatch:\r\n    $source\r\noutcome:\r\n    $count=count_distinct(principal.ip)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "76f67a9c57e47515a3fb7f01156fa02833c96dcda53cae500da48a9cb0e692eb"
+                },
+                {
+                    "name": "9a653018-cc47-4e3c-9fcf-eefc554fbccd",
+                    "query": "$e1.metadata.vendor_name=\"Corelight\"\r\n$e1.metadata.product_event_type = \"asset_classification\"\r\n$e2.metadata.vendor_name=\"Corelight\"\r\n$e2.metadata.product_event_type = \"conn\"\r\n\r\n$e1.principal.ip = $e2.principal.ip\r\n$os_name=if($e1.about.asset.attribute.labels.value!=\"\", $e1.about.asset.attribute.labels.value, \"Unknown\")\r\n$app=if($e2.about.application!=\"\", $e2.about.application, \"Unknown\")\r\n\r\nmatch:\r\n    $os_name, $app\r\noutcome:\r\n    $count=count_distinct($e2.metadata.id)\r\norder:\r\n    $count desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "36f24ab7e87f69a796e4a5fe97d360adcb85831cc1af37c17ff44c22110d09bc"
+                },
+                {
+                    "name": "fb73ca1f-8f90-44bc-8fd9-61fcc70cd894",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"asset_classification\" \r\n$brand=if(about.resource.resource_subtype!=\"\", about.resource.resource_subtype, \"Unknown\")\r\nprincipal.mac!=\"\"\r\nmatch:\r\n    $brand\r\noutcome:\r\n    $count=count_distinct(principal.mac)\r\norder:\r\n    $count desc \r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "c164de63e7b6044ddd86c6bf416465a37bfbbd043759c32d49c5eff6b2f9a2fe"
+                },
+                {
+                    "name": "ce5ab6e7-5e0c-4c41-a5e8-518541bb65c6",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"asset_classification\"\r\n$os = if(about.asset.attribute.labels.value!=\"\", about.asset.attribute.labels.value, \"Unknown\")\r\n$name = if(about.resource.resource_subtype!=\"\", about.resource.resource_subtype, \"Unknown\")\r\n$group = if(about.group.group_display_name!=\"\", about.group.group_display_name, \"Unknown\")\r\nmatch:\r\n    principal.ip\r\noutcome:\r\n    $os_name = array_distinct($os)\r\n    $type_name = array_distinct($name)\r\n    $type_group = array_distinct($group)\r\nlimit:\r\n    100",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "e167ccaaec1b9b7869cee2a09c9f1ef9e50cc23ecafc7587e3f6539a4274a907"
+                },
+                {
+                    "name": "4b895ad5-e982-4d47-bc72-b58cf3fe2ded",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"asset_classification\"\r\nabout.group.group_display_name = \"Audio & Video\" OR about.group.group_display_name = \"Smart Home\" OR about.asset.category = \"GAME_CONSOLE\"\r\n$device_type=if(about.asset.category!=\"\", about.asset.category, \"Unknown\")\r\n$brand=if(about.user.company_name!=\"\", about.user.company_name, \"Unknown\")\r\n$model=if(about.asset.hardware.model!=\"\", about.asset.hardware.model, \"Unknown\")\r\n\r\nmatch:\r\n    $device_type, $brand, $model\r\noutcome:\r\n    $count=count_distinct(principal.ip)\r\norder:\r\n    $count desc\r\nlimit:\r\n    100",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "d2218af62e66b34df80a1273f21b92301988448b3eb9ed6374a7bb33f55bcb60"
+                },
+                {
+                    "name": "e61f8cc4-03c2-420b-bd34-d24b2548853d",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"asset_classification\"\r\n$type_name=if(about.resource.resource_subtype!=\"\", about.resource.resource_subtype, \"Unknown\")\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d : %H\")\r\nprincipal.mac!=\"\"\r\nmatch:\r\n    $date_hour, $type_name\r\noutcome:\r\n    $count=count_distinct(principal.mac)\r\norder:\r\n    $date_hour, $count asc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "9c082e1fbd1639f8e58347b3afbe15354ede6eb634060368c73ab9c776e99cd4"
+                }
+            ]
+        }
+    ]
+}
