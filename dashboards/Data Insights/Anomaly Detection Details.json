@@ -1,0 +1,1766 @@
+{
+    "dashboards": [
+        {
+            "dashboard": {
+                "name": "592abd59-e6af-4dac-ad13-ba1110b60a8b",
+                "displayName": "Corelight → Data Insights → Anomaly Detection Details",
+                "definition": {
+                    "filters": [
+                        {
+                            "id": "GlobalTimeFilter",
+                            "dataSource": "GLOBAL",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "PAST",
+                                    "fieldValues": [
+                                        "1",
+                                        "DAY"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Global Time Filter",
+                            "chartIds": [
+                                "22ea0dfc-4885-47eb-8638-8af88929397b",
+                                "e90ac912-5b31-4264-921b-d5719972d6ba",
+                                "7df63604-7de7-4cad-9447-64a751dbc653",
+                                "52e055be-4048-4374-a323-381f0df2154a",
+                                "ff5c6c0b-1f4c-475b-b85b-fff6240dc736",
+                                "4e0c6005-3fd8-4cc8-bbca-88d67040011c",
+                                "9a6d0bb1-da2a-4125-9ad0-e5451d1e3fb6",
+                                "0612ef81-8071-4d95-b8f6-f04566609dab",
+                                "c7bface2-8cdb-4d9e-a271-fa4566d80116",
+                                "701f7db4-ea4b-46d4-817f-fce8e1d233cd",
+                                "14be000a-6423-4bb0-b058-c5aa77e5c678",
+                                "d73a2af1-d2fb-4794-915f-ced3a2a35bb6",
+                                "e252fcd1-6b3a-4202-accd-24cdb76eeca2",
+                                "64c6ec6d-b66d-466d-9954-d21088686cef",
+                                "a8ebb3ad-782d-4476-90b5-6645dfdb7243",
+                                "852de8a6-f7cf-4d35-8fa2-bd3e7c2e83aa",
+                                "fc61415d-01e8-46e6-8da1-9fc4714712f5",
+                                "35059d34-e555-4e55-8793-54e167b25fbb"
+                            ],
+                            "isStandardTimeRangeFilter": true,
+                            "isStandardTimeRangeFilterEnabled": true
+                        },
+                        {
+                            "id": "63f72959-42b7-4a44-9578-2cb3fff28399",
+                            "dataSource": "GLOBAL",
+                            "displayName": "Corelight Sensor",
+                            "advancedFilterConfig": {
+                                "token": "sensor",
+                                "separator": "|",
+                                "multipleAllowed": true,
+                                "defaultValues": [
+                                    ".*"
+                                ],
+                                "valueSource": {
+                                    "queryOptions": {
+                                        "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"anomaly\"\r\n$sensor = observer.hostname\r\nmatch:\r\n    $sensor",
+                                        "column": "sensor",
+                                        "globalTimeFilterEnabled": true,
+                                        "input": {},
+                                        "dialect": "YL2"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "id": "65726920-9169-4824-bdb8-e06f418d5abf",
+                            "dataSource": "GLOBAL",
+                            "displayName": "Anomaly Detection",
+                            "advancedFilterConfig": {
+                                "token": "anomaly_detection",
+                                "defaultValues": [
+                                    "----"
+                                ],
+                                "valueSource": {
+                                    "queryOptions": {
+                                        "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"anomaly\"\r\n$anomaly_detection = strings.concat(security_result.description, \", \", re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"), \", \", re.replace(security_result.detection_fields[\"item\"], \"/.*\", \"\"))\r\nmatch:\r\n    $anomaly_detection",
+                                        "column": "anomaly_detection",
+                                        "globalTimeFilterEnabled": true,
+                                        "input": {},
+                                        "dialect": "YL2"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "id": "60b58bb4-e373-471e-a51e-c0f541e74cdb",
+                            "dataSource": "GLOBAL",
+                            "displayName": "Connection UID",
+                            "advancedFilterConfig": {
+                                "token": "uid",
+                                "separator": "|",
+                                "multipleAllowed": true,
+                                "defaultValues": [
+                                    ".*"
+                                ],
+                                "valueSource": {
+                                    "queryOptions": {
+                                        "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"anomaly\"\r\n$uid = network.session_id\r\nmatch:\r\n    $uid",
+                                        "column": "uid",
+                                        "globalTimeFilterEnabled": true,
+                                        "input": {},
+                                        "dialect": "YL2"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "id": "65bd0a19-bc5d-43bc-8214-5510263a9392",
+                            "dataSource": "GLOBAL",
+                            "displayName": "Item Score",
+                            "advancedFilterConfig": {
+                                "token": "item_score",
+                                "defaultValues": [
+                                    ".*"
+                                ],
+                                "valueSource": {
+                                    "queryOptions": {
+                                        "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"anomaly\"\r\n$item_score = cast.as_float(cast.as_string(cast.as_int(cast.as_float(security_result.detection_fields[\"item_score\"])*100)))\r\nmatch:\r\n    $item_score\r\noutcome:\r\n    $score = array_distinct($item_score/100)",
+                                        "column": "score",
+                                        "globalTimeFilterEnabled": true,
+                                        "input": {},
+                                        "dialect": "YL2"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "id": "e1797518-64dc-45fa-b290-e56e70103015",
+                            "dataSource": "GLOBAL",
+                            "displayName": "Src IP",
+                            "advancedFilterConfig": {
+                                "token": "src_ip",
+                                "separator": "|",
+                                "multipleAllowed": true,
+                                "defaultValues": [
+                                    ".*"
+                                ],
+                                "valueSource": {
+                                    "queryOptions": {
+                                        "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"notice\" OR metadata.product_event_type = \"suricata_corelight\" OR metadata.product_event_type = \"yara\" OR metadata.product_event_type = \"corelight_ml_results\"\r\nmatch:\r\n    principal.ip",
+                                        "column": "principal.ip",
+                                        "globalTimeFilterEnabled": true,
+                                        "input": {},
+                                        "dialect": "YL2"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "id": "fe0426ee-cd1d-44db-ad93-ea7b1c5495cb",
+                            "dataSource": "GLOBAL",
+                            "displayName": "Dest IP",
+                            "advancedFilterConfig": {
+                                "token": "dest_ip",
+                                "separator": "|",
+                                "multipleAllowed": true,
+                                "defaultValues": [
+                                    ".*"
+                                ],
+                                "valueSource": {
+                                    "queryOptions": {
+                                        "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"notice\" OR metadata.product_event_type = \"suricata_corelight\" OR metadata.product_event_type = \"yara\" OR metadata.product_event_type = \"corelight_ml_results\"\r\nmatch:\r\n    target.ip",
+                                        "column": "target.ip",
+                                        "globalTimeFilterEnabled": true,
+                                        "input": {},
+                                        "dialect": "YL2"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "charts": [
+                        {
+                            "dashboardChart": "22ea0dfc-4885-47eb-8638-8af88929397b",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 9,
+                                "spanY": 19
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "e90ac912-5b31-4264-921b-d5719972d6ba",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 28,
+                                "spanY": 18
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "0612ef81-8071-4d95-b8f6-f04566609dab",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 46,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "4e0c6005-3fd8-4cc8-bbca-88d67040011c",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 46,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "14be000a-6423-4bb0-b058-c5aa77e5c678",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 28,
+                                "spanY": 18
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "ff5c6c0b-1f4c-475b-b85b-fff6240dc736",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 62,
+                                "spanY": 17
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "9a6d0bb1-da2a-4125-9ad0-e5451d1e3fb6",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 96,
+                                "spanY": 26
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "7df63604-7de7-4cad-9447-64a751dbc653",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 122,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "c7bface2-8cdb-4d9e-a271-fa4566d80116",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 156,
+                                "spanY": 26
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "701f7db4-ea4b-46d4-817f-fce8e1d233cd",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 156,
+                                "spanY": 26
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "52e055be-4048-4374-a323-381f0df2154a",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 182,
+                                "spanY": 26
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "2e2d9fba-3f81-47ea-91ff-9a52388fb9d0",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 0,
+                                "spanY": 9
+                            }
+                        },
+                        {
+                            "dashboardChart": "e252fcd1-6b3a-4202-accd-24cdb76eeca2",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 79,
+                                "spanY": 17
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "d73a2af1-d2fb-4794-915f-ced3a2a35bb6",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 79,
+                                "spanY": 17
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "d71b906d-3768-4f0a-b6ed-e98fde49552f",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 147,
+                                "spanY": 9
+                            }
+                        },
+                        {
+                            "dashboardChart": "64c6ec6d-b66d-466d-9954-d21088686cef",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 217,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "a8ebb3ad-782d-4476-90b5-6645dfdb7243",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 242,
+                                "spanY": 23
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "b8a1cf2d-5129-40c5-a839-57b99b6fcd82",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 208,
+                                "spanY": 9
+                            }
+                        },
+                        {
+                            "dashboardChart": "fc61415d-01e8-46e6-8da1-9fc4714712f5",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 265,
+                                "spanY": 23
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "852de8a6-f7cf-4d35-8fa2-bd3e7c2e83aa",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 288,
+                                "spanY": 21
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "2235c441-b577-4822-920b-cc2cd766cad1",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 309,
+                                "spanY": 9
+                            }
+                        },
+                        {
+                            "dashboardChart": "35059d34-e555-4e55-8793-54e167b25fbb",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 318,
+                                "spanY": 28
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        }
+                    ]
+                },
+                "type": "CUSTOM",
+                "etag": "65e44bce425479d5d2f98c5b139f93a72866100ff6a6e955c1d43ec392d3b7f8",
+                "access": "DASHBOARD_PRIVATE"
+            },
+            "dashboardCharts": [
+                {
+                    "name": "64c6ec6d-b66d-466d-9954-d21088686cef",
+                    "displayName": "Inbound Connection Details to $original_entity$",
+                    "description": "Click the IP Address to List Detection Logs",
+                    "chartDatasource": {
+                        "dashboardQuery": "7e7ab784-1a16-461d-aac6-9aceddf28eb0",
+                        "dataSources": [
+                            "UDM",
+                            "DATA_TABLE"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "ip",
+                                "header": "External Originating Host"
+                            },
+                            {
+                                "field": "first_external_access_time",
+                                "header": "First Alert"
+                            },
+                            {
+                                "field": "last_external_access_time",
+                                "header": "Last Alert"
+                            },
+                            {
+                                "field": "bytes_sent",
+                                "header": "Bytes Sent (GB)"
+                            },
+                            {
+                                "field": "bytes_received",
+                                "header": "Bytes Received (GB)"
+                            },
+                            {
+                                "field": "bytes_diff",
+                                "header": "Bytes Difference (GB)"
+                            },
+                            {
+                                "field": "service",
+                                "header": "Service"
+                            },
+                            {
+                                "field": "connections",
+                                "header": "Connections"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "a0a62bddc6a54ad1dd731a3e2b92f0a987e870e8e1276483932bddde176ef345",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "anomaly_detection",
+                        "uid",
+                        "sensor",
+                        "item_score"
+                    ]
+                },
+                {
+                    "name": "e252fcd1-6b3a-4202-accd-24cdb76eeca2",
+                    "displayName": "Anomalous Behavior",
+                    "chartDatasource": {
+                        "dashboardQuery": "5a6289b4-3de6-4fe5-a131-645fe71c7987",
+                        "dataSources": [
+                            "UDM",
+                            "DATA_TABLE"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "anomalous_behavior",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "ef8cf71ef1f44d2fc0617cd0cdc5de5a5e6bc08a0cfbcb10b9d50c2647b53fcc",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "anomaly_detection",
+                        "item_score",
+                        "sensor",
+                        "uid"
+                    ]
+                },
+                {
+                    "name": "22ea0dfc-4885-47eb-8638-8af88929397b",
+                    "displayName": "Alert Category",
+                    "chartDatasource": {
+                        "dashboardQuery": "c780ee0e-b00e-4ecc-be73-19c351cc4c35",
+                        "dataSources": [
+                            "UDM",
+                            "DATA_TABLE"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "anomaly",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "0522eeb7020a31c50e3cb70c9412da93cc871ca2521892bcb88232a578710d5a",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "anomaly_detection",
+                        "item_score",
+                        "sensor",
+                        "uid"
+                    ]
+                },
+                {
+                    "name": "701f7db4-ea4b-46d4-817f-fce8e1d233cd",
+                    "displayName": "Entities seen during baselining period for anomalous item",
+                    "chartDatasource": {
+                        "dashboardQuery": "b687ebc1-2c8a-434d-8dcf-0b20574986c9",
+                        "dataSources": [
+                            "UDM",
+                            "DATA_TABLE"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "timestamp",
+                                "header": "Timestamp"
+                            },
+                            {
+                                "field": "uid",
+                                "header": "UID"
+                            },
+                            {
+                                "field": "item",
+                                "header": "Anomalous item"
+                            },
+                            {
+                                "field": "entities_during_baseline_period",
+                                "header": "Entities during baseline period"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "065582fcdda483136531d7740c5c98b28de3c649c2956c6c0da87a7bd5045e47",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "anomaly_detection",
+                        "item_score",
+                        "sensor",
+                        "uid"
+                    ]
+                },
+                {
+                    "name": "2e2d9fba-3f81-47ea-91ff-9a52388fb9d0",
+                    "displayName": "markdown",
+                    "visualization": {
+                        "markdown": {
+                            "content": "# Detection and Alert Summary\n----\n###  Select an Anomaly Detection filter value to populate the panels below",
+                            "properties": {
+                                "backgroundColor": "#671440"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_MARKDOWN",
+                    "etag": "7543d42bff1d61fd63a8a88977ee4e0b9fae5c02925c1373670062e49ee74ba1"
+                },
+                {
+                    "name": "c7bface2-8cdb-4d9e-a271-fa4566d80116",
+                    "displayName": "Items seen during baselining period for anomalous entity",
+                    "chartDatasource": {
+                        "dashboardQuery": "dc7db0bc-c290-41c3-80d4-47825961b0c4",
+                        "dataSources": [
+                            "UDM",
+                            "DATA_TABLE"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "timestamp",
+                                "header": "Timestamp"
+                            },
+                            {
+                                "field": "items_during_baseline_period",
+                                "header": "Items during baseline period"
+                            },
+                            {
+                                "field": "anomalous_entities",
+                                "header": "Anomalous entities"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "1860de01b6f36707b3c783a0561bca3afdf32668863600d9439df62d1bab3ae8",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "anomaly_detection",
+                        "item_score",
+                        "sensor",
+                        "uid"
+                    ]
+                },
+                {
+                    "name": "d71b906d-3768-4f0a-b6ed-e98fde49552f",
+                    "displayName": "markdown",
+                    "visualization": {
+                        "markdown": {
+                            "content": "# Baseline Data\n----\n### Select an Anomaly Detection filter value to populate the panels below",
+                            "properties": {
+                                "backgroundColor": "#671440"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_MARKDOWN",
+                    "etag": "30fb37500bbfc774998f097f0d7d7b8d2742bc947808421cecd6d282d4d55c55"
+                },
+                {
+                    "name": "a8ebb3ad-782d-4476-90b5-6645dfdb7243",
+                    "displayName": "Outbound Connection Details from $original_entity$",
+                    "description": "Click the IP Address to List Detection Logs",
+                    "chartDatasource": {
+                        "dashboardQuery": "e811aa16-3049-417a-8e47-142b08ac65c6",
+                        "dataSources": [
+                            "UDM",
+                            "DATA_TABLE"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "ip",
+                                "header": "External Responding Host"
+                            },
+                            {
+                                "field": "first_external_access_time",
+                                "header": "First Alert"
+                            },
+                            {
+                                "field": "last_external_access_time",
+                                "header": "Last Alert"
+                            },
+                            {
+                                "field": "bytes_sent",
+                                "header": "Bytes Sent (GB)"
+                            },
+                            {
+                                "field": "bytes_received",
+                                "header": "Bytes Received (GB)"
+                            },
+                            {
+                                "field": "bytes_diff",
+                                "header": "Bytes Difference (GB)"
+                            },
+                            {
+                                "field": "service",
+                                "header": "Service"
+                            },
+                            {
+                                "field": "connections",
+                                "header": "Connections"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "16cab5a7de9d4cefa23c2b41432e13a53b40da3d85b962b02a17f82f2b812fa1",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "anomaly_detection",
+                        "uid",
+                        "sensor",
+                        "item_score"
+                    ]
+                },
+                {
+                    "name": "35059d34-e555-4e55-8793-54e167b25fbb",
+                    "displayName": "Detection Activity from $src_ip$ to $dest_ip$",
+                    "description": "Suricata, Notice, Yara, and Machine Learning Detection logs from $tkn_src_ip$ to $tkn_dest_ip$ between $tkn_time_restriction.earliest$ and $tkn_time_restriction.latest$",
+                    "chartDatasource": {
+                        "dashboardQuery": "0b1414b3-5cbb-4f73-9476-30400bbcf428",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "signature",
+                                "header": "signature"
+                            },
+                            {
+                                "field": "src_ip",
+                                "header": "src ip"
+                            },
+                            {
+                                "field": "dest_ip",
+                                "header": "dest ip"
+                            },
+                            {
+                                "field": "event_type",
+                                "header": "event type"
+                            },
+                            {
+                                "field": "connections",
+                                "header": "connections"
+                            },
+                            {
+                                "field": "first_ts",
+                                "header": "first alert time"
+                            },
+                            {
+                                "field": "latest_ts",
+                                "header": "last alert time"
+                            },
+                            {
+                                "field": "severity_values",
+                                "header": "severity"
+                            },
+                            {
+                                "field": "corelight_detection",
+                                "header": "corelight detection"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "30112c5ac5e1e39dacd1d26a7b3e95225f9bf5438e52cc5444ab6c8e5af05047",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "dest_ip",
+                        "sensor",
+                        "src_ip"
+                    ]
+                },
+                {
+                    "name": "7df63604-7de7-4cad-9447-64a751dbc653",
+                    "displayName": "Anomaly details for entity",
+                    "description": "Click on a \\\"Connection ID\\\" to search Additional Activity to support Investigation Next Steps",
+                    "chartDatasource": {
+                        "dashboardQuery": "f8b2d947-f427-4f70-a73f-20f03ed63377",
+                        "dataSources": [
+                            "UDM",
+                            "DATA_TABLE"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "uid",
+                                "header": "uid"
+                            },
+                            {
+                                "field": "timestamp",
+                                "header": "Alert Timestamp"
+                            },
+                            {
+                                "field": "original_entity",
+                                "header": "Anomalous Entity Host"
+                            },
+                            {
+                                "field": "item",
+                                "header": "Anomalous Service"
+                            },
+                            {
+                                "field": "item_score",
+                                "header": "Engine Confidence"
+                            },
+                            {
+                                "field": "entity",
+                                "header": "Target Subnet"
+                            },
+                            {
+                                "field": "entity_training_items",
+                                "header": "Services during Baseline"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "e50aa469b704dc517b7b0791f27332f3b0584bd620eb2d3504df946dea475b42",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "5248862D-7B83-4705-9B57-0698D28DD856",
+                                "displayName": "Run Search on Source IP",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "original_entity",
+                                    "query": {
+                                        "query": "re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\") = ${original_entity}",
+                                        "dialect": "YL2"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "tokens": [
+                        "anomaly_detection",
+                        "item_score",
+                        "sensor",
+                        "uid"
+                    ]
+                },
+                {
+                    "name": "14be000a-6423-4bb0-b058-c5aa77e5c678",
+                    "displayName": "Significance",
+                    "chartDatasource": {
+                        "dashboardQuery": "5280fed0-968e-4636-a830-cc96794fca18",
+                        "dataSources": [
+                            "UDM",
+                            "DATA_TABLE"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "significance",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "182a3c6283274383ccc1e2c65547a9765ce3e8a736b8da43f9a4471f1b8ada7f",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "anomaly_detection",
+                        "item_score",
+                        "sensor",
+                        "uid"
+                    ]
+                },
+                {
+                    "name": "b8a1cf2d-5129-40c5-a839-57b99b6fcd82",
+                    "displayName": "markdown",
+                    "visualization": {
+                        "markdown": {
+                            "content": "# Additional Activity to support Investigation Next Steps\n----\n### Select an Anomaly Detection filter value to populate the panels below",
+                            "properties": {
+                                "backgroundColor": "#671440"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_MARKDOWN",
+                    "etag": "91805763de62299fc02a44687a50a12e83a8db3d7a9c152d4dfd1143b8a0da7b"
+                },
+                {
+                    "name": "ff5c6c0b-1f4c-475b-b85b-fff6240dc736",
+                    "displayName": "Description",
+                    "chartDatasource": {
+                        "dashboardQuery": "086df58f-eb0c-4156-a331-88cdcc308d99",
+                        "dataSources": [
+                            "UDM",
+                            "DATA_TABLE"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "desc",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "a2aa2744a13bd5ea138502665f09cab1631a793a291980e1ad7eabcb8d3fca17",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "anomaly_detection",
+                        "item_score",
+                        "sensor",
+                        "uid"
+                    ]
+                },
+                {
+                    "name": "852de8a6-f7cf-4d35-8fa2-bd3e7c2e83aa",
+                    "displayName": "Corelight Dynamic Path Search – Outbound (Client)",
+                    "description": "Click the IP Address to List Detection Logs and Search Protocol / Service Sourcetype Logs",
+                    "chartDatasource": {
+                        "dashboardQuery": "aacdb2fd-7882-43dc-b81e-0f1436f3d19e",
+                        "dataSources": [
+                            "UDM",
+                            "DATA_TABLE"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "sourcetype",
+                                "header": "Source Type"
+                            },
+                            {
+                                "field": "src_ip",
+                                "header": "src ip"
+                            },
+                            {
+                                "field": "dest_ip",
+                                "header": "dest ip"
+                            },
+                            {
+                                "field": "dest_port",
+                                "header": "dest port"
+                            },
+                            {
+                                "field": "uid",
+                                "header": "uid"
+                            },
+                            {
+                                "field": "count",
+                                "header": "count"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "06c19ee38c72241a5756f7d659865f2194312ab79862df064bb8a2ae2159f735",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "anomaly_detection",
+                        "uid",
+                        "sensor",
+                        "item_score"
+                    ]
+                },
+                {
+                    "name": "4e0c6005-3fd8-4cc8-bbca-88d67040011c",
+                    "displayName": "First Alert Time",
+                    "chartDatasource": {
+                        "dashboardQuery": "434c4de4-19e5-4a53-8955-e513cd81af07",
+                        "dataSources": [
+                            "UDM",
+                            "DATA_TABLE"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "first_ts",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "286263ed55359aa2e4fd284ede6ffa2fb59a1e3a9b456f11aba838aef60cd5eb",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "anomaly_detection",
+                        "item_score",
+                        "sensor",
+                        "uid"
+                    ]
+                },
+                {
+                    "name": "fc61415d-01e8-46e6-8da1-9fc4714712f5",
+                    "displayName": "Corelight Dynamic Path Search – Inbound (Server)",
+                    "description": "Click the IP Address to List Detection Logs and Search Protocol / Service Sourcetype Logs",
+                    "chartDatasource": {
+                        "dashboardQuery": "a4a2498b-c9d3-40c2-8dd8-cd8c5e4c1333",
+                        "dataSources": [
+                            "UDM",
+                            "DATA_TABLE"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "sourcetype",
+                                "header": "Source Type"
+                            },
+                            {
+                                "field": "src_ip",
+                                "header": "src ip"
+                            },
+                            {
+                                "field": "dest_ip",
+                                "header": "dest ip"
+                            },
+                            {
+                                "field": "dest_port",
+                                "header": "dest port"
+                            },
+                            {
+                                "field": "uid",
+                                "header": "uid"
+                            },
+                            {
+                                "field": "count",
+                                "header": "count"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "2137b3817ebb72bb94fcc3dbd41220d25f97baec2446039fb2276b42529fe359",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "anomaly_detection",
+                        "uid",
+                        "sensor",
+                        "item_score"
+                    ]
+                },
+                {
+                    "name": "e90ac912-5b31-4264-921b-d5719972d6ba",
+                    "displayName": "Number of Alerts",
+                    "chartDatasource": {
+                        "dashboardQuery": "384d8ba4-12cd-4de3-87dd-7c599ee6c711",
+                        "dataSources": [
+                            "UDM",
+                            "DATA_TABLE"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "total_alerts",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "ba8aa8ecf88c6499734ff3fa9e5c5c177861b319cab2f5e51c726bd4490c5824",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "anomaly_detection",
+                        "item_score",
+                        "sensor",
+                        "uid"
+                    ]
+                },
+                {
+                    "name": "d73a2af1-d2fb-4794-915f-ced3a2a35bb6",
+                    "displayName": "Baseline Behavior",
+                    "chartDatasource": {
+                        "dashboardQuery": "60eeb1c2-9a7d-4dba-af44-4c626c726a1a",
+                        "dataSources": [
+                            "UDM",
+                            "DATA_TABLE"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "baseline_behavior",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "61ea458c951eee7d497352d6b13b1ae7391a76932ec4d882189a3b5f52b437aa",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "anomaly_detection",
+                        "item_score",
+                        "sensor",
+                        "uid"
+                    ]
+                },
+                {
+                    "name": "2235c441-b577-4822-920b-cc2cd766cad1",
+                    "displayName": "markdown",
+                    "visualization": {
+                        "markdown": {
+                            "content": "# Additional Activity to support Investigation Next Steps\n----\n### Select Source IP and Destination IP filter values to populate the panel below",
+                            "properties": {
+                                "backgroundColor": "#671440"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_MARKDOWN",
+                    "etag": "328e76a22debef932c8d42084c28a1d1a774487dc34b8c7f8f702d21b263197f"
+                },
+                {
+                    "name": "9a6d0bb1-da2a-4125-9ad0-e5451d1e3fb6",
+                    "displayName": "Alerts per Anomalous Item over Time",
+                    "description": "Number of Anomaly Logs (Alerts) during Global Time Restriction where $original_entity$ used $item$",
+                    "chartDatasource": {
+                        "dashboardQuery": "4407b372-384e-43ae-ab6f-9d2e4a13162d",
+                        "dataSources": [
+                            "UDM",
+                            "DATA_TABLE"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "time_bucket",
+                                    "y": "count"
+                                },
+                                "dataLabel": {}
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Count per Item"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "seriesColumn": [
+                            "security_result.detection_fields[item]_2671260646_value"
+                        ],
+                        "groupingType": "Grouped"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "f346fd15d90247935eb06ad8fb6823d6b4d8cb30db7051b615883f7381c45254",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "anomaly_detection",
+                        "item_score",
+                        "sensor",
+                        "uid"
+                    ]
+                },
+                {
+                    "name": "52e055be-4048-4374-a323-381f0df2154a",
+                    "displayName": "Similar Entities During Baseline Period",
+                    "chartDatasource": {
+                        "dashboardQuery": "4601bd80-8084-45c4-aac3-a711e2effaaf",
+                        "dataSources": [
+                            "UDM",
+                            "DATA_TABLE"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "SANKEY",
+                                "encode": {},
+                                "dataLabel": {},
+                                "sankeyLevels": [
+                                    {
+                                        "source": "Entities",
+                                        "target": "Items",
+                                        "value": "count"
+                                    },
+                                    {
+                                        "source": "Items",
+                                        "target": "Item_Associated_Entities",
+                                        "value": "count"
+                                    }
+                                ]
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "dd3f36cb727dc4e9770759451e16a459857b4cca30d1b9ff2b2bdb2d597b91d7",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "anomaly_detection",
+                        "item_score",
+                        "sensor",
+                        "uid"
+                    ]
+                },
+                {
+                    "name": "0612ef81-8071-4d95-b8f6-f04566609dab",
+                    "displayName": "Last Alert Time",
+                    "chartDatasource": {
+                        "dashboardQuery": "a251005d-bb84-4aac-a6b3-f57440e71b46",
+                        "dataSources": [
+                            "UDM",
+                            "DATA_TABLE"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "last_ts",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "93ecb8ff0c09db34003c16b0ab9e699ee82697574e545c1843e417909b9e1897",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "anomaly_detection",
+                        "item_score",
+                        "sensor",
+                        "uid"
+                    ]
+                }
+            ],
+            "dashboardQueries": [
+                {
+                    "name": "dc7db0bc-c290-41c3-80d4-47825961b0c4",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"anomaly\"\r\n$anomaly_detection = strings.concat(security_result.description, \", \", re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"), \", \", security_result.detection_fields[\"item\"])\r\n$anomaly_detection = /$anomaly_detection$/ nocase\r\nobserver.hostname =  /$sensor$/ nocase\r\nnetwork.session_id = /$uid$/ nocase\r\nsecurity_result.detection_fields[\"item_score\"] =  /$item_score$/ nocase\r\nsecurity_result.rule_name = %corelight_use_cases.use_case\r\n$timestamp = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%B %d, %I:%M:%S %p\", \"UTC\")\r\nmatch:\r\n    $timestamp\r\noutcome:\r\n    $items_during_baseline_period = array_distinct(additional.fields[\"entity_training_item_0\"])\r\n    $anomalous_entities = array_distinct(re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"))",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "67fd26cff921c7a581e2976bde4ad56bc8024751c3e59226558a7e0fe24b2666",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "60eeb1c2-9a7d-4dba-af44-4c626c726a1a",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"anomaly\"\r\n$anomaly_detection = strings.concat(security_result.description, \", \", re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"), \", \", security_result.detection_fields[\"item\"])\r\n$anomaly_detection = /$anomaly_detection$/ nocase\r\nobserver.hostname =  /$sensor$/ nocase\r\nnetwork.session_id = /$uid$/ nocase\r\nsecurity_result.detection_fields[\"item_score\"] = /$item_score$/ nocase\r\nsecurity_result.rule_name = %corelight_use_cases.use_case\r\noutcome:\r\n    $baseline_behavior = array_distinct(%corelight_use_cases.baseline_behavior)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "5339cbe964268741d7eb25be6b7e8acb4c2a26dae4cfcac932a45f91c05310dd",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "086df58f-eb0c-4156-a331-88cdcc308d99",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"anomaly\"\r\n$anomaly_detection = strings.concat(security_result.description, \", \", re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"), \", \", security_result.detection_fields[\"item\"])\r\n$anomaly_detection = /$anomaly_detection$/ nocase\r\nobserver.hostname =  /$sensor$/ nocase\r\nnetwork.session_id = /$uid$/ nocase\r\nsecurity_result.detection_fields[\"item_score\"] =  /$item_score$/ nocase\r\nsecurity_result.rule_name = %corelight_use_cases.use_case\r\noutcome:\r\n    $desc = array_distinct(%corelight_use_cases.description)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "a8ed0ec0bd230f545527742d953530afa8fc2e23925cf0a520c81db03d50f9ae",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "aacdb2fd-7882-43dc-b81e-0f1436f3d19e",
+                    "query": "$e1.metadata.vendor_name=\"Corelight\"\r\n$e1.metadata.product_event_type = \"anomaly\"\r\n$anomaly_detection = strings.concat($e1.security_result.description, \", \", re.replace($e1.additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"), \", \", $e1.security_result.detection_fields[\"item\"])\r\n$anomaly_detection = /$anomaly_detection$/ nocase\r\n$e1.network.session_id = /$uid$/ nocase\r\n$e1.observer.hostname =  /$sensor$/ nocase\r\n$e1.security_result.detection_fields[\"item_score\"] =  /$item_score$/ nocase\r\n$e1.security_result.rule_name = %corelight_use_cases.use_case\r\nre.regex($e1.security_result.detection_fields[\"item\"], \"^client_\")\r\n$entity_ip = re.replace($e1.additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\")\r\n\r\n$e2.metadata.vendor_name=\"Corelight\"\r\n$sourcetype = $e2.metadata.product_event_type\r\n$entity_ip = $e2.principal.ip\r\n$src_ip = $e2.principal.ip\r\n$dest_ip = $e2.target.ip\r\n$dest_port = $e2.target.port\r\n$uid = $e2.network.session_id\r\n\r\nmatch:\r\n    $sourcetype, $src_ip, $dest_ip, $dest_port, $uid\r\noutcome:\r\n    $count = count($e2.network.session_id)\r\norder:\r\n    $count desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "8d0a7ceab2b4dd5c9fea4cce770da0c0f3037245eb02407b15e82a0394153988",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "a251005d-bb84-4aac-a6b3-f57440e71b46",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"anomaly\"\r\n$anomaly_detection = strings.concat(security_result.description, \", \", re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"), \", \", security_result.detection_fields[\"item\"])\r\n$anomaly_detection = /$anomaly_detection$/ nocase\r\nobserver.hostname =  /$sensor$/ nocase\r\nnetwork.session_id = /$uid$/ nocase\r\nsecurity_result.detection_fields[\"item_score\"] =  /$item_score$/ nocase\r\nsecurity_result.rule_name = %corelight_use_cases.use_case\r\nmatch:\r\n    $anomaly_detection\r\noutcome:\r\n    $last_ts = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%B %d, %I:%M:%S %p\")",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "df048cbf1e4887bd2600e885aff25d8dae1e8185617f2d23aafad0c554a6512d",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "f8b2d947-f427-4f70-a73f-20f03ed63377",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"anomaly\"\r\n$anomaly_detection = strings.concat(security_result.description, \", \", re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"), \", \", security_result.detection_fields[\"item\"])\r\n$anomaly_detection = /$anomaly_detection$/ nocase\r\nobserver.hostname =  /$sensor$/ nocase\r\nnetwork.session_id = /$uid$/ nocase\r\nsecurity_result.detection_fields[\"item_score\"] =  /$item_score$/ nocase\r\nsecurity_result.rule_name = %corelight_use_cases.use_case\r\nnetwork.session_id != \"\"\r\n$uid = network.session_id\r\nmatch:\r\n    $uid\r\noutcome:\r\n    $timestamp = array_distinct(timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%B %d, %I:%M:%S %p\", \"UTC\"))\r\n    $original_entity = array_distinct(re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"))\r\n    $item = array_distinct(security_result.detection_fields[\"item\"])\r\n    $item_score = array_distinct(cast.as_float(cast.as_string(cast.as_int(cast.as_float(security_result.detection_fields[\"item_score\"])*100)))/100)\r\n    $entity = array_distinct(additional.fields[\"entity\"])\r\n    $entity_training_items = array_distinct(additional.fields[\"entity_training_item_0\"])",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "fb3e07a98c1a482698b764e0b584c2e659489b9a2f799fe47c2aa4e526b96c6e",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "5280fed0-968e-4636-a830-cc96794fca18",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"anomaly\"\r\n$anomaly_detection = strings.concat(security_result.description, \", \", re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"), \", \", security_result.detection_fields[\"item\"])\r\n$anomaly_detection = /$anomaly_detection$/ nocase\r\nobserver.hostname =  /$sensor$/ nocase\r\nnetwork.session_id = /$uid$/ nocase\r\nsecurity_result.detection_fields[\"item_score\"] =  /$item_score$/ nocase\r\nsecurity_result.rule_name = %corelight_use_cases.use_case\r\noutcome:\r\n    $significance = array_distinct(%corelight_use_cases.significance)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "c64124ea8485898c58ce8b332139a2f55689fdfb61704e71a28018bd135117e7",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "384d8ba4-12cd-4de3-87dd-7c599ee6c711",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"anomaly\"\r\nsecurity_result.rule_name = %corelight_use_cases.use_case\r\n$anomaly_detection = strings.concat(security_result.description, \", \", re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"), \", \", security_result.detection_fields[\"item\"])\r\n$anomaly_detection = /$anomaly_detection$/ nocase\r\nnetwork.session_id = /$uid$/ nocase\r\nobserver.hostname =  /$sensor$/ nocase\r\nsecurity_result.detection_fields[\"item_score\"] =  /$item_score$/ nocase\r\nmatch:\r\n    $anomaly_detection\r\noutcome:\r\n    $total_alerts = count(network.session_id)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "4ec5cd325eb90b935a3ed4c3e7f8fc6238e368d964da63f910dec1eccb56f097",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "5a6289b4-3de6-4fe5-a131-645fe71c7987",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"anomaly\"\r\n$anomaly_detection = strings.concat(security_result.description, \", \", re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"), \", \", security_result.detection_fields[\"item\"])\r\n$anomaly_detection = /$anomaly_detection$/ nocase\r\nobserver.hostname =  /$sensor$/ nocase\r\nnetwork.session_id = /$uid$/ nocase\r\nsecurity_result.detection_fields[\"item_score\"] = /$item_score$/ nocase\r\nsecurity_result.rule_name = %corelight_use_cases.use_case\r\noutcome:\r\n    $anomalous_behavior = array_distinct(%corelight_use_cases.anomalous_behavior)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "218769edcf36d83c3372aac791156727a6d0e67220e417c551878e9f00720e83",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "c780ee0e-b00e-4ecc-be73-19c351cc4c35",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"anomaly\"\r\n$anomaly_detection = strings.concat(security_result.description, \", \", re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"), \", \", security_result.detection_fields[\"item\"])\r\n$anomaly_detection = /$anomaly_detection$/ nocase\r\nobserver.hostname =  /$sensor$/ nocase\r\nnetwork.session_id = /$uid$/ nocase\r\nsecurity_result.detection_fields[\"item_score\"] =  /$item_score$/ nocase\r\nsecurity_result.rule_name = %corelight_use_cases.use_case\r\noutcome:\r\n    $anomaly = array_distinct(security_result.description)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "aaa2f41ea11f289dd6041bce55dfff43c8be7b0c475739aabb14e5a6ec9b2427",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "b687ebc1-2c8a-434d-8dcf-0b20574986c9",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"anomaly\"\r\n$anomaly_detection = strings.concat(security_result.description, \", \", re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"), \", \", security_result.detection_fields[\"item\"])\r\n$anomaly_detection = /$anomaly_detection$/ nocase\r\nobserver.hostname =  /$sensor$/ nocase\r\nnetwork.session_id = /$uid$/ nocase\r\nsecurity_result.detection_fields[\"item_score\"] =  /$item_score$/ nocase\r\nsecurity_result.rule_name = %corelight_use_cases.use_case\r\n$uid = network.session_id\r\nmatch:\r\n    $uid\r\noutcome:\r\n    $timestamp = array_distinct(timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%B %d, %I:%M:%S %p\", \"UTC\"))\r\n    $item = array_distinct(security_result.detection_fields[\"item\"])\r\n    $entities_during_baseline_period = array_distinct(security_result.detection_fields[\"item_assoc_entities_0\"])",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "596490040881e5df8189b4e4ef7eef0b2b0ec094c7dc3c74f6a79c4919719a3f",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "434c4de4-19e5-4a53-8955-e513cd81af07",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"anomaly\"\r\n$anomaly_detection = strings.concat(security_result.description, \", \", re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"), \", \", security_result.detection_fields[\"item\"])\r\n$anomaly_detection = /$anomaly_detection$/ nocase\r\nobserver.hostname =  /$sensor$/ nocase\r\nnetwork.session_id = /$uid$/ nocase\r\nsecurity_result.detection_fields[\"item_score\"] =  /$item_score$/ nocase\r\nsecurity_result.rule_name = %corelight_use_cases.use_case\r\nmatch:\r\n    $anomaly_detection\r\noutcome:\r\n    $first_ts = timestamp.get_timestamp(min(metadata.event_timestamp.seconds), \"%B %d, %I:%M:%S %p\")",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "520171000d4ec59aad3cbcf35cb6693559e6aac4a43f24a1cd3b5a313965136f",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "a4a2498b-c9d3-40c2-8dd8-cd8c5e4c1333",
+                    "query": "$e1.metadata.vendor_name=\"Corelight\"\r\n$e1.metadata.product_event_type = \"anomaly\"\r\n$anomaly_detection = strings.concat($e1.security_result.description, \", \", re.replace($e1.additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"), \", \", $e1.security_result.detection_fields[\"item\"])\r\n$anomaly_detection = /$anomaly_detection$/ nocase\r\n$e1.network.session_id = /$uid$/ nocase\r\n$e1.observer.hostname =  /$sensor$/ nocase\r\n$e1.security_result.detection_fields[\"item_score\"] =  /$item_score$/ nocase\r\n$e1.security_result.rule_name = %corelight_use_cases.use_case\r\nre.regex($e1.security_result.detection_fields[\"item\"], \"^server_\")\r\n$entity_ip = re.replace($e1.additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\")\r\n\r\n$e2.metadata.vendor_name=\"Corelight\"\r\n$sourcetype = $e2.metadata.product_event_type\r\n$entity_ip = $e2.target.ip\r\n$src_ip = $e2.principal.ip\r\n$dest_ip = $e2.target.ip\r\n$dest_port = $e2.target.port\r\n$uid = $e2.network.session_id\r\n\r\nmatch:\r\n    $sourcetype, $src_ip, $dest_ip, $dest_port, $uid\r\noutcome:\r\n    $count = count($e2.network.session_id)\r\norder:\r\n    $count desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "7c5db53aaef15d3904caaf2f49f0e6fd1959e1b081f14d85215f834a7c6f9748",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "7e7ab784-1a16-461d-aac6-9aceddf28eb0",
+                    "query": "$e1.metadata.vendor_name=\"Corelight\"\r\n$e1.metadata.product_event_type = \"anomaly\"\r\n$anomaly_detection = strings.concat($e1.security_result.description, \", \", re.replace($e1.additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"), \", \", $e1.security_result.detection_fields[\"item\"])\r\n$anomaly_detection = /$anomaly_detection$/ nocase\r\n$e1.network.session_id = /$uid$/ nocase\r\n$e1.observer.hostname =  /$sensor$/ nocase\r\n$e1.security_result.detection_fields[\"item_score\"] =  /$item_score$/ nocase\r\n$e1.security_result.rule_name = %corelight_use_cases.use_case\r\n$e1.network.session_id != \"\"\r\nnot re.regex($e1.security_result.detection_fields[\"item\"], \"^client_\")\r\n$entity_ip = re.replace($e1.additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\")\r\n\r\n$e2.metadata.vendor_name=\"Corelight\"\r\n$e2.metadata.product_event_type = \"conn\" OR $e2.metadata.product_event_type = \"conn_red\" OR $e2.metadata.product_event_type = \"conn_agg\"\r\n$e2.additional.fields[\"direction\"] = \"inbound\"\r\n$ip = $e2.principal.ip\r\n$entity_ip = $e2.target.ip\r\nmatch:\r\n    $ip\r\n\r\noutcome:\r\n    $first_external_access_time = timestamp.get_timestamp(min($e2.metadata.event_timestamp.seconds), \"%B %d, %I:%M:%S %p\", \"UTC\")\r\n    $last_external_access_time = timestamp.get_timestamp(max($e2.metadata.event_timestamp.seconds), \"%B %d, %I:%M:%S %p\", \"UTC\")\r\n    $bytes_sent = math.round(sum($e2.network.sent_bytes)/1073741824, 2)\r\n    $bytes_received = math.round(sum($e2.network.received_bytes)/1073741824, 2)\r\n    $bytes_diff = math.round(math.abs(sum($e2.network.received_bytes - $e2.network.sent_bytes)/1073741824), 2)\r\n    $service = array_distinct($e2.network.application_protocol)\r\n    $connections = count($e2.network.session_id)\r\n\r\norder:\r\n    $bytes_diff desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "8dd4582b5804fb2697dabce7dcdb401c7bc1f91c20f439db557196a9ab2763ef",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "e811aa16-3049-417a-8e47-142b08ac65c6",
+                    "query": "$e1.metadata.vendor_name=\"Corelight\"\r\n$e1.metadata.product_event_type = \"anomaly\"\r\n$anomaly_detection = strings.concat($e1.security_result.description, \", \", re.replace($e1.additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"), \", \", $e1.security_result.detection_fields[\"item\"])\r\n$anomaly_detection = /$anomaly_detection$/ nocase\r\n$e1.network.session_id = /$uid$/ nocase\r\n$e1.observer.hostname =  /$sensor$/ nocase\r\n$e1.security_result.detection_fields[\"item_score\"] =  /$item_score$/ nocase\r\n$e1.security_result.rule_name = %corelight_use_cases.use_case\r\n$e1.network.session_id != \"\"\r\nnot re.regex($e1.security_result.detection_fields[\"item\"], \"^server_\")\r\n$entity_ip = re.replace($e1.additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\")\r\n\r\n$e2.metadata.vendor_name=\"Corelight\"\r\n$e2.metadata.product_event_type = \"conn\" OR $e2.metadata.product_event_type = \"conn_red\" OR $e2.metadata.product_event_type = \"conn_agg\"\r\n$e2.additional.fields[\"direction\"] = \"outbound\"\r\n$ip = $e2.target.ip\r\n$entity_ip = $e2.principal.ip\r\n\r\nmatch:\r\n    $ip\r\n\r\noutcome:\r\n    $first_external_access_time = timestamp.get_timestamp(min($e2.metadata.event_timestamp.seconds), \"%B %d, %I:%M:%S %p\", \"UTC\")\r\n    $last_external_access_time = timestamp.get_timestamp(max($e2.metadata.event_timestamp.seconds), \"%B %d, %I:%M:%S %p\", \"UTC\")\r\n    $bytes_sent = math.round(sum($e2.network.sent_bytes)/1073741824, 2)\r\n    $bytes_received = math.round(sum($e2.network.received_bytes)/1073741824, 2)\r\n    $bytes_diff = math.round(math.abs(sum($e2.network.received_bytes - $e2.network.sent_bytes)/1073741824), 2)\r\n    $service = array_distinct($e2.network.application_protocol)\r\n    $connections = count($e2.network.session_id)\r\n\r\norder:\r\n    $bytes_diff desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "c79ef8171d4c83bc89ea8ef1ce41ac723d7b4a51cb6a97b08e94b49d312b8318",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "4407b372-384e-43ae-ab6f-9d2e4a13162d",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"anomaly\"\r\n$anomaly_detection = strings.concat(security_result.description, \", \", re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"), \", \", security_result.detection_fields[\"item\"])\r\n$anomaly_detection = /$anomaly_detection$/ nocase\r\nobserver.hostname =  /$sensor$/ nocase\r\nnetwork.session_id = /$uid$/ nocase\r\nsecurity_result.detection_fields[\"item_score\"] =  /$item_score$/ nocase\r\nsecurity_result.rule_name = %corelight_use_cases.use_case\r\n$time_bucket = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00:00\", \"UTC\")\r\nmatch:\r\n    $time_bucket, security_result.detection_fields[\"item\"]\r\noutcome:\r\n    $count = count(network.session_id)\r\norder:\r\n    $time_bucket asc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "d228e0976c060d0884c8683f93b94a1380ec0f07d65bf58ab85802a6e7231002",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "4601bd80-8084-45c4-aac3-a711e2effaaf",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"anomaly\"\r\n$anomaly_detection = strings.concat(security_result.description, \", \", re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"), \", \", security_result.detection_fields[\"item\"])\r\n$anomaly_detection = /$anomaly_detection$/ nocase\r\nnetwork.session_id = /$uid$/ nocase\r\nobserver.hostname =  /$sensor$/ nocase\r\nsecurity_result.detection_fields[\"item_score\"] =  /$item_score$/ nocase\r\nsecurity_result.rule_name = %corelight_use_cases.use_case\r\n$tier_type = re.capture(strings.concat(strings.concat(\"LC#####\", re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"), \"#####\", security_result.detection_fields[\"item\"]), \", \", strings.concat(\"LC#####\", re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"), \"#####\", strings.concat(additional.fields[\"nn1_train_item\"], \", \",additional.fields[\"nn2_train_item\"], \", \",additional.fields[\"nn3_train_item\"], \", \",additional.fields[\"nn4_train_item\"], \", \",additional.fields[\"nn5_train_item\"], \", \",additional.fields[\"nn6_train_item\"], \", \",additional.fields[\"nn7_train_item\"], \", \",additional.fields[\"nn8_train_item\"], \", \",additional.fields[\"nn9_train_item\"], \", \",additional.fields[\"nn10_train_item\"])), \", \", strings.concat(\"CR#####\", security_result.detection_fields[\"item\"], \"#####\", security_result.detection_fields[\"item_assoc_entities_0\"])), \"^(.*?)#####\")\r\n$left_side = re.capture(strings.concat(strings.concat(\"LC#####\", re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"), \"#####\", security_result.detection_fields[\"item\"]), \", \", strings.concat(\"LC#####\", re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"), \"#####\", strings.concat(additional.fields[\"nn1_train_item\"], \", \",additional.fields[\"nn2_train_item\"], \", \",additional.fields[\"nn3_train_item\"], \", \",additional.fields[\"nn4_train_item\"], \", \",additional.fields[\"nn5_train_item\"], \", \",additional.fields[\"nn6_train_item\"], \", \",additional.fields[\"nn7_train_item\"], \", \",additional.fields[\"nn8_train_item\"], \", \",additional.fields[\"nn9_train_item\"], \", \",additional.fields[\"nn10_train_item\"])), \", \", strings.concat(\"CR#####\", security_result.detection_fields[\"item\"], \"#####\", security_result.detection_fields[\"item_assoc_entities_0\"])), \"^.*?#####(.*?)#####\")\r\n$right_side = re.capture(strings.concat(strings.concat(\"LC#####\", re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"), \"#####\", security_result.detection_fields[\"item\"]), \", \", strings.concat(\"LC#####\", re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\"), \"#####\", strings.concat(additional.fields[\"nn1_train_item\"], \", \",additional.fields[\"nn2_train_item\"], \", \",additional.fields[\"nn3_train_item\"], \", \",additional.fields[\"nn4_train_item\"], \", \",additional.fields[\"nn5_train_item\"], \", \",additional.fields[\"nn6_train_item\"], \", \",additional.fields[\"nn7_train_item\"], \", \",additional.fields[\"nn8_train_item\"], \", \",additional.fields[\"nn9_train_item\"], \", \",additional.fields[\"nn10_train_item\"])), \", \", strings.concat(\"CR#####\", security_result.detection_fields[\"item\"], \"#####\", security_result.detection_fields[\"item_assoc_entities_0\"])), \".*#####(.*)$\")\r\nnetwork.session_id != \"\"\r\n\r\noutcome:\r\n    $Entities = array_distinct(if($tier_type = \"LC\", $left_side, \"\"))\r\n    $Items = array_distinct(if($tier_type = \"LC\", $right_side, $left_side))\r\n    $Item_Associated_Entities = array_distinct(if($tier_type =\"CR\", $right_side, \"\"))\r\n    $count = count(network.session_id)    ",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "b7058dcba7ebca4cdef076f7330f80570a501bb5e26ec71439597f5cb50f76fc",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "0b1414b3-5cbb-4f73-9476-30400bbcf428",
+                    "query": "metadata.vendor_name=\"Corelight\"\r\nmetadata.product_event_type = \"notice\" OR metadata.product_event_type = \"suricata_corelight\" OR metadata.product_event_type = \"yara\" OR metadata.product_event_type = \"corelight_ml_results\"\r\nobserver.hostname = /$sensor$/ nocase\r\nprincipal.ip = /$src_ip$/ nocase\r\ntarget.ip = /$dest_ip$/ nocase\r\n\r\n$signature = strings.coalesce(security_result.rule_name, security_result.summary, additional.fields[\"fuid\"])\r\n$severity = strings.coalesce(security_result.severity_details, security_result.detection_fields[\"severity_level\"], if(security_result.severity=\"CRITICAL\", \"Critical\",if(security_result.severity=\"ERROR\", \"Error\", if(security_result.severity=\"HIGH\", \"High\", if(security_result.severity=\"INFORMATIONAL\", \"Informational\", if(security_result.severity=\"LOW\", \"Low\", if(security_result.severity=\"MEDIUM\", \"Medium\", if(security_result.severity=\"NONE\", \"None\", \"Unknown Severity\"))))))), \"Unknown Severity\")\r\n$uid = metadata.ingestion_labels[\"uid\"]\r\n$detection = strings.concat(strings.coalesce(security_result.rule_name, security_result.summary, additional.fields[\"fuid\"]), \" | \", principal.ip)\r\n$event_type = metadata.product_event_type\r\n$src_ip = principal.ip\r\n$dest_ip = target.ip\r\n$src_ip != \"\" or $dest_ip != \"\"\r\nmatch:\r\n    $signature, $src_ip, $dest_ip, $event_type\r\n\r\noutcome:\r\n    $connections = count($uid)\r\n    $first_ts = timestamp.get_timestamp(min(metadata.event_timestamp.seconds), \"%B %d, %I:%M:%S %p\", \"UTC\")\r\n    $latest_ts = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%B %d, %I:%M:%S %p\", \"UTC\")\r\n    $severity_values = array_distinct($severity)\r\n    $corelight_detection = array_distinct($detection)\r\n\r\norder:\r\n    $first_ts asc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "9a16888e473c529fcca42040c20c7fce9c9461178f7e7bd2b1be81815ae2e5c8",
+                    "dialect": "YL2"
+                }
+            ]
+        }
+    ]
+}
