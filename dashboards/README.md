@@ -14,7 +14,20 @@ Before you begin, ensure the following prerequisites are met:
 
 ## Installation & Configuration
 
-### Create a reference list (For identifying Internal/External IPs)
+### Reference lists and data tables required by dashboards
+
+Some dashboards look up values in Google SecOps reference lists or data tables. Create these before you import the dashboards that use them. If one is missing, the charts that use it return no data.
+
+The names are case-sensitive and must match the table below exactly, because the dashboard queries refer to them by name (for example, `%corelight_use_cases.use_case`).
+
+| Name | Type | Used by dashboard(s) | Contents |
+|------|------|----------------------|----------|
+| `internal_cidr_list` | Reference list (CIDR) | Security Posture, Secure Channel Insights, Name Resolution Insights, Files, SSL | Your internal IP CIDR ranges (see the section above). |
+| `corelight_ai_apps` | Reference list (String) | AI Detection & Response | Identifiers of the GenAI applications to track. |
+| `corelight_geo_attr_countries` | Data table | AI Detection & Response | Maps ISO country codes to country names. Columns: `iso2`, `country`. |
+| `corelight_use_cases` | Data table | Anomaly Detection, Anomaly Detection Details | Describes each Corelight anomaly detection use case. Columns: `use_case`, `description`, `significance`, `baseline_behavior`, `anomalous_behavior`. |
+
+#### Create a reference list (For identifying Internal/External IPs)
 
 1. Head over to the **Google SecOps** Platform
 
@@ -35,6 +48,150 @@ Before you begin, ensure the following prerequisites are met:
 5. Finally, Click on **Save Edits** from the bottom right corner and your CIDR list will be created.
 
 ![image](https://github.com/user-attachments/assets/4af98b59-a14b-4604-be6f-87571c066235)
+
+#### Create the `corelight_ai_apps` reference list
+
+The **AI Detection & Response** dashboard only shows Corelight `conn` events whose application identifier is in this list.
+
+1. In Google SecOps, go to **Detections -> Lists** and click **Create**.
+2. Set **Syntax type** to **String** and set the title to **corelight_ai_apps**.
+3. Add one GenAI application identifier per line and click **Save Edits**.
+
+The dashboard's Risk Tier and Corporate Origin charts classify the identifiers below. Start from this list and add or remove entries to suit your environment:
+
+<details>
+<summary>Suggested <code>corelight_ai_apps</code> entries</summary>
+
+```
+01ai-yi
+adept-ai
+adobe-firefly
+ai21
+alibaba-qwen
+amazon-q
+anthropic
+arthur-ai
+baichuan-ai
+baidu-ernie
+baseten
+braintrust
+bytedance-doubao
+character-ai
+chatgpt
+chroma
+claude
+codeium
+cohere
+crewai
+datarobot
+deepl
+deepseek
+elevenlabs
+fathom
+fireflies-ai
+fireworks-ai
+forefront-ai
+github-copilot
+google-gemini
+gpt4all
+groq
+helicone
+iflytek-spark
+inflection-pi
+kagi
+krisp
+lakera
+leonardo-ai
+lepton-ai
+litellm
+mem-ai
+meta-ai
+microsoft-copilot
+midjourney
+minimax
+mistral
+modal
+moonshot
+notion-ai
+nvidia-ngc
+octoai
+openai
+openrouter
+otter-ai
+phind
+pika
+pinecone
+poe
+portkey
+read-ai
+replicate
+runwayml
+scale-ai
+sensetime
+sourcegraph-cody
+stability-ai
+stepfun
+suno
+synthesia
+tabnine
+tldv
+together-ai
+udio
+wandb
+weaviate
+you-ai
+zapier-ai
+zhipu-ai
+```
+
+</details>
+
+#### Create the data tables
+
+Data tables are imported from a file. Supported formats are **CSV** (comma-separated values, `.csv`) and **TSV** (tab-separated values, `.tsv`). The first row of the file must be a header row whose column names match the columns listed below.
+
+1. In Google SecOps, go to **Investigation -> Data Tables**.
+2. Create a new data table and set its name to the exact name shown below.
+3. You can either type data manually or import your `.csv` or `.tsv` file and save the data table.
+4. Repeat for each data table.
+
+**`corelight_geo_attr_countries`**
+
+| Column | Description |
+|--------|-------------|
+| `iso2` | Two-letter ISO 3166-1 country code. It is matched against `target.ip_geo_artifact.location.country_or_region`. |
+| `country` | Country name that the dashboard displays. |
+
+Example (`corelight_geo_attr_countries.csv`):
+
+```csv
+iso2,country
+US,United States
+GB,United Kingdom
+IN,India
+```
+
+> **Note:** The chart only shows connections whose destination country code is in this table, so include every country you want to see.
+
+**`corelight_use_cases`**
+
+| Column | Description |
+|--------|-------------|
+| `use_case` | Corelight anomaly use case name. It is matched against the `use_case` field of the `anomaly` log (`security_result.rule_name` in UDM). |
+| `description` | What the use case detects. |
+| `significance` | Why an anomaly from this use case matters. |
+| `baseline_behavior` | What the use case learns during its baselining period. |
+| `anomalous_behavior` | What behavior raises the anomaly. |
+
+Example (`corelight_use_cases.csv`):
+
+```csv
+use_case,description,significance,baseline_behavior,anomalous_behavior
+<use_case>,<description>,<significance>,<baseline_behavior>,<anomalous_behavior>
+```
+
+> **Note:** Several charts in **Anomaly Detection** (Anomalies Observed, Anomaly Summary, Detections per Anomaly Type over Time, Detection Breakdown by Anomaly Type and Source IP) and most panels in **Anomaly Detection Details** only show anomalies whose `use_case` has a row in this table. Add a row for every use case that is enabled on your sensors.
+
 
 ### Deploy Dashboards from GitHub Repository
 
