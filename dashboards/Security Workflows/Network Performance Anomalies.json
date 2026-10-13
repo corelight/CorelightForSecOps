@@ -2,7 +2,7 @@
     "dashboards": [
         {
             "dashboard": {
-                "name": "d40837e2-4b35-42b9-97be-0fc2f531863c",
+                "name": "419efa49-c929-459d-b3b1-2c7192d84bb1",
                 "displayName": "Corelight → Security Workflows → Network Performance Anomalies",
                 "definition": {
                     "filters": [
@@ -20,26 +20,26 @@
                             ],
                             "displayName": "Global Time Filter",
                             "chartIds": [
-                                "f8f6104f-4436-48b0-9cce-8c04f41611ff",
-                                "77367414-ef9d-454f-aa6c-f2be24047a44",
-                                "f012cbc2-b7d9-4355-bf25-a5eddf57fba1",
-                                "d163e743-73fc-4edc-82c9-9d973336653f",
-                                "5ee8ddf2-283b-42b5-a71c-a6b47174446e",
-                                "fdbe4a27-cd4c-45d2-b8a1-c47b452056fe",
-                                "4d0a50dd-a74b-45c4-a5d8-68bc30587a34",
-                                "8a82cfcf-2e5b-4d58-8756-f9724300f937",
-                                "b0e9b647-56c2-4ecb-98d3-2b895b1fea54",
-                                "f443ac95-57a4-434b-bb7e-3982416fba99",
-                                "72b6b0a7-1e1f-4e40-80c9-bf3ee574cbb8",
-                                "65411c57-2241-4b89-9224-c822a6d08759",
-                                "5fc1e6af-da65-49a9-9dc2-6f4ed0ee131f",
-                                "387f9d1e-64d0-4a3a-9353-78f6585da834",
-                                "7c84d5c0-8e2b-41c6-a249-f58ece6e2b53",
-                                "a61851ec-6b67-4631-afc7-914988748dec",
-                                "75c308eb-25d6-42d3-ae06-ca3b548bf904",
-                                "17e9e9d3-9641-468b-b4d6-e9425deb9fb3",
-                                "17d0aa34-c255-403e-b8c0-fda1f0a3fe58",
-                                "31e292b8-6a71-4f9f-bfd4-102ed22d135e"
+                                "13876d40-04b2-4342-a197-ae07b883f5b9",
+                                "5831852a-b261-4936-b511-7d8e559b0bf4",
+                                "9f94b5ea-463d-4280-af59-d45765deca24",
+                                "7f34b921-732d-4bd7-bb2a-d6c575dfb6c9",
+                                "bb1610e0-438d-4f38-b4b7-1c96ec282c47",
+                                "33e0dce7-fcd4-4b9a-b79b-4fe0dda540f9",
+                                "45362d2b-54a2-4142-be48-5f63012a2545",
+                                "d4b97772-00f4-4a31-85df-3fd5ecd8608f",
+                                "d4acf065-8c36-465b-b8bf-f65247f85922",
+                                "d7317995-7ba5-469f-b284-78668223cae7",
+                                "2817bce0-d65b-4321-be7d-701cc755ec0b",
+                                "0b6d174a-39ab-4021-adcd-8f11ce54b8a0",
+                                "4c72ae40-ebe7-4252-ad6b-251916c6c292",
+                                "fd15c59c-af89-4fac-853f-a88329c37eb9",
+                                "a3b4b192-f567-4a65-b022-2775f2c0957f",
+                                "78cb015d-7b96-4d4b-8197-55848b2aafd4",
+                                "ad268239-9952-436b-b5bb-c4c8dae5da43",
+                                "9852518b-af28-4aec-b039-c3985faf1800",
+                                "5773c578-aa66-45a6-a04c-b093629d1920",
+                                "ae4ebe68-641d-4823-844e-e7aa4b56bf72"
                             ],
                             "isStandardTimeRangeFilter": true,
                             "isStandardTimeRangeFilterEnabled": true
@@ -91,7 +91,7 @@
                     ],
                     "charts": [
                         {
-                            "dashboardChart": "f8f6104f-4436-48b0-9cce-8c04f41611ff",
+                            "dashboardChart": "13876d40-04b2-4342-a197-ae07b883f5b9",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 32,
@@ -103,7 +103,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "f012cbc2-b7d9-4355-bf25-a5eddf57fba1",
+                            "dashboardChart": "9f94b5ea-463d-4280-af59-d45765deca24",
                             "chartLayout": {
                                 "startX": 64,
                                 "spanX": 32,
@@ -115,7 +115,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "d163e743-73fc-4edc-82c9-9d973336653f",
+                            "dashboardChart": "7f34b921-732d-4bd7-bb2a-d6c575dfb6c9",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 57,
@@ -127,7 +127,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "fdbe4a27-cd4c-45d2-b8a1-c47b452056fe",
+                            "dashboardChart": "33e0dce7-fcd4-4b9a-b79b-4fe0dda540f9",
                             "chartLayout": {
                                 "startX": 57,
                                 "spanX": 39,
@@ -139,7 +139,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "77367414-ef9d-454f-aa6c-f2be24047a44",
+                            "dashboardChart": "5831852a-b261-4936-b511-7d8e559b0bf4",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -151,7 +151,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "5ee8ddf2-283b-42b5-a71c-a6b47174446e",
+                            "dashboardChart": "bb1610e0-438d-4f38-b4b7-1c96ec282c47",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -163,7 +163,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "4d0a50dd-a74b-45c4-a5d8-68bc30587a34",
+                            "dashboardChart": "45362d2b-54a2-4142-be48-5f63012a2545",
                             "chartLayout": {
                                 "startX": 32,
                                 "spanX": 32,
@@ -175,7 +175,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "8192238c-f797-4934-8cfd-7376dece4c21",
+                            "dashboardChart": "8af4f746-415b-4320-a59f-bdf8016849b7",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -184,7 +184,7 @@
                             }
                         },
                         {
-                            "dashboardChart": "ba5f4403-6cba-48ae-ac0c-1d8c739325b0",
+                            "dashboardChart": "8d38e99b-c988-4894-92cc-477d1b6d5fb5",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -193,7 +193,7 @@
                             }
                         },
                         {
-                            "dashboardChart": "8a82cfcf-2e5b-4d58-8756-f9724300f937",
+                            "dashboardChart": "d4b97772-00f4-4a31-85df-3fd5ecd8608f",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -205,7 +205,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "b0e9b647-56c2-4ecb-98d3-2b895b1fea54",
+                            "dashboardChart": "d4acf065-8c36-465b-b8bf-f65247f85922",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -217,7 +217,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "65411c57-2241-4b89-9224-c822a6d08759",
+                            "dashboardChart": "0b6d174a-39ab-4021-adcd-8f11ce54b8a0",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -229,7 +229,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "17d0aa34-c255-403e-b8c0-fda1f0a3fe58",
+                            "dashboardChart": "5773c578-aa66-45a6-a04c-b093629d1920",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -241,7 +241,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "a61851ec-6b67-4631-afc7-914988748dec",
+                            "dashboardChart": "78cb015d-7b96-4d4b-8197-55848b2aafd4",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -253,7 +253,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "17e9e9d3-9641-468b-b4d6-e9425deb9fb3",
+                            "dashboardChart": "9852518b-af28-4aec-b039-c3985faf1800",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -265,7 +265,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "75c308eb-25d6-42d3-ae06-ca3b548bf904",
+                            "dashboardChart": "ad268239-9952-436b-b5bb-c4c8dae5da43",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -277,7 +277,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "8b044d98-4709-456e-9415-1f9e638205aa",
+                            "dashboardChart": "929a0123-febf-44a2-9018-b9ddda961d34",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -286,7 +286,7 @@
                             }
                         },
                         {
-                            "dashboardChart": "5fc1e6af-da65-49a9-9dc2-6f4ed0ee131f",
+                            "dashboardChart": "4c72ae40-ebe7-4252-ad6b-251916c6c292",
                             "chartLayout": {
                                 "startX": 49,
                                 "spanX": 47,
@@ -298,7 +298,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "387f9d1e-64d0-4a3a-9353-78f6585da834",
+                            "dashboardChart": "fd15c59c-af89-4fac-853f-a88329c37eb9",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 49,
@@ -310,7 +310,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "72b6b0a7-1e1f-4e40-80c9-bf3ee574cbb8",
+                            "dashboardChart": "2817bce0-d65b-4321-be7d-701cc755ec0b",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 49,
@@ -322,7 +322,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "7c84d5c0-8e2b-41c6-a249-f58ece6e2b53",
+                            "dashboardChart": "a3b4b192-f567-4a65-b022-2775f2c0957f",
                             "chartLayout": {
                                 "startX": 49,
                                 "spanX": 47,
@@ -334,7 +334,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "8be03820-8e29-4b61-ba93-1ba0cf8fe9b4",
+                            "dashboardChart": "954c3658-5bfd-483f-824e-e124d1f874d3",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -343,7 +343,7 @@
                             }
                         },
                         {
-                            "dashboardChart": "f443ac95-57a4-434b-bb7e-3982416fba99",
+                            "dashboardChart": "d7317995-7ba5-469f-b284-78668223cae7",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -355,7 +355,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "31e292b8-6a71-4f9f-bfd4-102ed22d135e",
+                            "dashboardChart": "ae4ebe68-641d-4823-844e-e7aa4b56bf72",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -369,272 +369,77 @@
                     ]
                 },
                 "type": "CUSTOM",
-                "etag": "6c1948547826c96c56307b69b79d5f3395207838b24c2c32dc12811f5843655b",
+                "etag": "63d4a260378776bb0c10cafd3c80fcadfa052ef5e1d730d3a7a77664df0fac40",
                 "access": "DASHBOARD_PRIVATE"
             },
             "dashboardCharts": [
                 {
-                    "name": "7c84d5c0-8e2b-41c6-a249-f58ece6e2b53",
-                    "displayName": "Which external QUIC services have slow handshakes?",
-                    "description": "QUIC handshake time by SNI, plus external server IPs (triggers QH and QS where local_entity=false).",
-                    "chartDatasource": {
-                        "dashboardQuery": "cfa4a840-7f36-4e13-8562-a57430570e7a",
-                        "dataSources": [
-                            "UDM"
-                        ]
-                    },
-                    "visualization": {
-                        "xAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "yAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "legends": [
-                            {
-                                "legendOrient": "HORIZONTAL"
-                            }
-                        ],
-                        "columnDefs": [
-                            {
-                                "field": "external_entity",
-                                "header": "External QUIC entity"
-                            },
-                            {
-                                "field": "identified_by",
-                                "header": "Identified by"
-                            },
-                            {
-                                "field": "crossings",
-                                "header": "Slow-handshake windows"
-                            },
-                            {
-                                "field": "total_obs",
-                                "header": "Total observations"
-                            },
-                            {
-                                "field": "crossing_rate",
-                                "header": "Crossing rate"
-                            },
-                            {
-                                "field": "worst_handshake_sec",
-                                "header": "Worst handshake (s)"
-                            },
-                            {
-                                "field": "last_seen",
-                                "header": "Last seen"
-                            }
-                        ],
-                        "groupingType": "Off"
-                    },
-                    "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "8c68f6d2b1a8140d8cd43ef383f6bcda35e317bc1d4c7057abd7df69e27c5961",
-                    "drillDownConfig": {},
-                    "tokens": [
-                        "sensor"
-                    ]
-                },
-                {
-                    "name": "65411c57-2241-4b89-9224-c822a6d08759",
-                    "displayName": "Which internal TLS servers have consistently slow handshakes?",
-                    "description": "TLS handshake time aggregated by server IP (trigger TS, local_entity=true).",
-                    "chartDatasource": {
-                        "dashboardQuery": "839f948b-96d7-4c60-b17b-126109f967ed",
-                        "dataSources": [
-                            "UDM"
-                        ]
-                    },
-                    "visualization": {
-                        "xAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "yAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "legends": [
-                            {
-                                "legendOrient": "HORIZONTAL"
-                            }
-                        ],
-                        "columnDefs": [
-                            {
-                                "field": "server_ip",
-                                "header": "Internal TLS server"
-                            },
-                            {
-                                "field": "crossings",
-                                "header": "Slow-handshake windows"
-                            },
-                            {
-                                "field": "total_obs",
-                                "header": "Total observations"
-                            },
-                            {
-                                "field": "crossing_rate",
-                                "header": "Crossing rate"
-                            },
-                            {
-                                "field": "worst_handshake_sec",
-                                "header": "Worst handshake (s)"
-                            },
-                            {
-                                "field": "last_seen",
-                                "header": "Last seen"
-                            }
-                        ],
-                        "groupingType": "Off"
-                    },
-                    "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "856f75eac73a4bedf6940ba784f8d6455dbe62936d0073157012bf2ad0cca3ad",
-                    "drillDownConfig": {},
-                    "tokens": [
-                        "sensor"
-                    ]
-                },
-                {
-                    "name": "77367414-ef9d-454f-aa6c-f2be24047a44",
-                    "displayName": "Is the aggregation pipeline healthy?",
-                    "chartDatasource": {
-                        "dashboardQuery": "aa0b0738-6a47-4829-84aa-be1bd8bc37a3",
-                        "dataSources": [
-                            "UDM"
-                        ]
-                    },
-                    "visualization": {
-                        "series": [
-                            {
-                                "seriesName": "none",
-                                "seriesType": "SCATTERPLOT",
-                                "encode": {
-                                    "x": "time_bucket",
-                                    "y": "r"
-                                },
-                                "dataLabel": {},
-                                "itemStyle": {},
-                                "seriesUniqueValue": "none"
-                            }
-                        ],
-                        "xAxes": [
-                            {
-                                "axisType": "CATEGORY",
-                                "displayName": "Time"
-                            }
-                        ],
-                        "yAxes": [
-                            {
-                                "axisType": "VALUE",
-                                "displayName": "Avg Reply Coverage"
-                            }
-                        ],
-                        "legends": [
-                            {
-                                "legendOrient": "HORIZONTAL"
-                            }
-                        ],
-                        "groupingType": "Off"
-                    },
-                    "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "89007ba9dc8fee3917befcbbdda4f04aedef24503c8812830e83c61080f7fd34",
-                    "drillDownConfig": {},
-                    "tokens": [
-                        "sensor",
-                        "trigger"
-                    ]
-                },
-                {
-                    "name": "d163e743-73fc-4edc-82c9-9d973336653f",
-                    "displayName": "Where are crossings concentrating, by performance question?",
-                    "chartDatasource": {
-                        "dashboardQuery": "a890bac2-7580-49fb-a086-c1b77ece1000",
-                        "dataSources": [
-                            "UDM"
-                        ]
-                    },
-                    "visualization": {
-                        "series": [
-                            {
-                                "seriesType": "LINE",
-                                "encode": {
-                                    "x": "time_bucket",
-                                    "y": "c"
-                                },
-                                "dataLabel": {}
-                            }
-                        ],
-                        "xAxes": [
-                            {
-                                "axisType": "CATEGORY",
-                                "displayName": "Time"
-                            }
-                        ],
-                        "yAxes": [
-                            {
-                                "axisType": "CATEGORY",
-                                "displayName": "Count"
-                            }
-                        ],
-                        "legends": [
-                            {
-                                "top": 12,
-                                "legendOrient": "HORIZONTAL"
-                            }
-                        ],
-                        "seriesColumn": [
-                            "question"
-                        ],
-                        "groupingType": "Grouped"
-                    },
-                    "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "92059551b017fdbd18cbde7967227a35741ba6591e1e5ea5cf1420e41d47c06c",
-                    "drillDownConfig": {
-                        "leftDrillDowns": [
-                            {
-                                "id": "16DACD3F-DE2F-4047-AE9B-4E64EC5EE16D",
-                                "displayName": "Run Search on Original Entity",
-                                "customSettings": {
-                                    "newTab": true,
-                                    "leftClickColumn": "display_entity",
-                                    "query": {
-                                        "query": "re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\") = ${display_entity}",
-                                        "dialect": "YL2"
-                                    }
-                                }
-                            }
-                        ]
-                    },
-                    "tokens": [
-                        "sensor",
-                        "trigger"
-                    ]
-                },
-                {
-                    "name": "8192238c-f797-4934-8cfd-7376dece4c21",
+                    "name": "929a0123-febf-44a2-9018-b9ddda961d34",
                     "displayName": "markdown",
                     "visualization": {
                         "markdown": {
-                            "content": "# Overview",
+                            "content": "# Outside your network (what you don't)",
                             "properties": {
                                 "backgroundColor": "#671440"
                             }
                         }
                     },
                     "tileType": "TILE_TYPE_MARKDOWN",
-                    "etag": "daa9938c69a027366af9faa168119e742e2f8d15cbd38b86e6464fb8918e92a4"
+                    "etag": "adebc42959f75cbbe6e495386f633f39cd2f2e443d099652086b367c058bb135"
                 },
                 {
-                    "name": "5fc1e6af-da65-49a9-9dc2-6f4ed0ee131f",
+                    "name": "9f94b5ea-463d-4280-af59-d45765deca24",
+                    "displayName": "External entities with anomalies",
+                    "chartDatasource": {
+                        "dashboardQuery": "bebcb785-c568-40c3-b862-80df70e91c59",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "external_entities",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "41c70512e8b7727b8a79b97cceea7cb0e5d0310f0bc87b832fee73a66a181395",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "sensor",
+                        "trigger"
+                    ]
+                },
+                {
+                    "name": "4c72ae40-ebe7-4252-ad6b-251916c6c292",
                     "displayName": "Which external TLS services have slow handshakes?",
                     "description": "TLS handshake time by SNI, plus external server IPs (triggers TH and TS where local_entity=false).",
                     "chartDatasource": {
-                        "dashboardQuery": "fe78cd18-f894-4371-adb5-3ee6f8573676",
+                        "dashboardQuery": "835c3cc6-332c-4b24-b3ee-fe982ece8c0f",
                         "dataSources": [
                             "UDM"
                         ]
@@ -688,18 +493,18 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "1b2efda5e02b605a6f0a34a81f5ba447cda072b37198581522446964c84c6148",
+                    "etag": "0f6221d93fd91923265c55fde172cbbe26cb4e37da0f122e8cafdea98d6efdd4",
                     "drillDownConfig": {},
                     "tokens": [
                         "sensor"
                     ]
                 },
                 {
-                    "name": "5ee8ddf2-283b-42b5-a71c-a6b47174446e",
+                    "name": "bb1610e0-438d-4f38-b4b7-1c96ec282c47",
                     "displayName": "Which internal DNS resolvers are under-performing?",
                     "description": "DNS response time aggregated by resolver IP (trigger DS, local_entity=true).",
                     "chartDatasource": {
-                        "dashboardQuery": "774d9d08-9465-4cc0-9ec2-79779914f3a6",
+                        "dashboardQuery": "2391a448-f25e-4022-98af-bfc2a07d039a",
                         "dataSources": [
                             "UDM"
                         ]
@@ -749,220 +554,14 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "7dcbcff88c72daceed114a1921138171a6ff0a7f64260d3c8e6838c0c50f8ce4",
+                    "etag": "17356237a9cb9aed4a5ea6d40740c6cf03bc92f0438b0b092712b13da930a977",
                     "drillDownConfig": {},
                     "tokens": [
                         "sensor"
                     ]
                 },
                 {
-                    "name": "a61851ec-6b67-4631-afc7-914988748dec",
-                    "displayName": "Which internal hosts show degraded path RTT (monitor-to-host)?",
-                    "description": "Server-side and client-side RTT measured from the monitor (triggers RS/RC, local_entity=true).",
-                    "chartDatasource": {
-                        "dashboardQuery": "79e33755-1a5d-4dd9-97fa-7f12edac8fd1",
-                        "dataSources": [
-                            "UDM"
-                        ]
-                    },
-                    "visualization": {
-                        "xAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "yAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "legends": [
-                            {
-                                "legendOrient": "HORIZONTAL"
-                            }
-                        ],
-                        "columnDefs": [
-                            {
-                                "field": "host_ip",
-                                "header": "Internal host"
-                            },
-                            {
-                                "field": "role",
-                                "header": "Measured as"
-                            },
-                            {
-                                "field": "crossings",
-                                "header": "High-RTT windows"
-                            },
-                            {
-                                "field": "total_obs",
-                                "header": "Total observations"
-                            },
-                            {
-                                "field": "crossing_rate",
-                                "header": "Crossing rate"
-                            },
-                            {
-                                "field": "worst_rtt_sec",
-                                "header": "Worst RTT (s)"
-                            },
-                            {
-                                "field": "last_seen",
-                                "header": "Last seen"
-                            }
-                        ],
-                        "groupingType": "Off"
-                    },
-                    "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "ba65b662753b546eec4ba068ebe30d7c8e833f72a54019d3028b1960f73e3f32",
-                    "drillDownConfig": {},
-                    "tokens": [
-                        "sensor"
-                    ]
-                },
-                {
-                    "name": "f8f6104f-4436-48b0-9cce-8c04f41611ff",
-                    "displayName": "Total Threshold crossings",
-                    "chartDatasource": {
-                        "dashboardQuery": "250f43e3-df96-480d-81f9-c79a375a116c",
-                        "dataSources": [
-                            "UDM"
-                        ]
-                    },
-                    "visualization": {
-                        "series": [
-                            {
-                                "seriesType": "TEXT",
-                                "label": " ",
-                                "field": "total_crossings",
-                                "metricTrendConfig": {
-                                    "metricFormat": "METRIC_FORMAT_NUMBER",
-                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
-                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
-                                }
-                            }
-                        ],
-                        "xAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "yAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "legends": [
-                            {
-                                "legendOrient": "HORIZONTAL"
-                            }
-                        ],
-                        "groupingType": "Off"
-                    },
-                    "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "697bb3482deabbf8b31c9b493eb1154aac9c2b89b7f8c4b77a91677bdaa0255e",
-                    "drillDownConfig": {},
-                    "tokens": [
-                        "sensor",
-                        "trigger"
-                    ]
-                },
-                {
-                    "name": "f012cbc2-b7d9-4355-bf25-a5eddf57fba1",
-                    "displayName": "External entities with anomalies",
-                    "chartDatasource": {
-                        "dashboardQuery": "634cd264-d116-4f8b-84b8-be04c5043445",
-                        "dataSources": [
-                            "UDM"
-                        ]
-                    },
-                    "visualization": {
-                        "series": [
-                            {
-                                "seriesType": "TEXT",
-                                "label": " ",
-                                "field": "external_entities",
-                                "metricTrendConfig": {
-                                    "metricFormat": "METRIC_FORMAT_NUMBER",
-                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
-                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
-                                }
-                            }
-                        ],
-                        "xAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "yAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "legends": [
-                            {
-                                "legendOrient": "HORIZONTAL"
-                            }
-                        ],
-                        "groupingType": "Off"
-                    },
-                    "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "18c3791d949b783172eebabf6e2abff15ca2033c2c486c3429cff346cb16ad87",
-                    "drillDownConfig": {},
-                    "tokens": [
-                        "sensor",
-                        "trigger"
-                    ]
-                },
-                {
-                    "name": "8a82cfcf-2e5b-4d58-8756-f9724300f937",
-                    "displayName": "Pipeline / cluster reply coverage",
-                    "chartDatasource": {
-                        "dashboardQuery": "99b9d210-9640-4b06-be26-f608bc3af8ad",
-                        "dataSources": [
-                            "UDM"
-                        ]
-                    },
-                    "visualization": {
-                        "series": [
-                            {
-                                "seriesType": "TEXT",
-                                "label": " %",
-                                "field": "r",
-                                "metricTrendConfig": {
-                                    "metricFormat": "METRIC_FORMAT_NUMBER",
-                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
-                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
-                                }
-                            }
-                        ],
-                        "xAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "yAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "legends": [
-                            {
-                                "legendOrient": "HORIZONTAL"
-                            }
-                        ],
-                        "groupingType": "Off"
-                    },
-                    "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "4f2dea8a95e33da24a5786138d6b86060637e5e2644f0ca1a01555ba51c9ec4e",
-                    "drillDownConfig": {},
-                    "tokens": [
-                        "sensor",
-                        "trigger"
-                    ]
-                },
-                {
-                    "name": "8be03820-8e29-4b61-ba93-1ba0cf8fe9b4",
+                    "name": "954c3658-5bfd-483f-824e-e124d1f874d3",
                     "displayName": "markdown",
                     "visualization": {
                         "markdown": {
@@ -973,28 +572,14 @@
                         }
                     },
                     "tileType": "TILE_TYPE_MARKDOWN",
-                    "etag": "19b59282e623b7fda3724bd7980d31ed3234d9bc8428e5c952abcbc9e633de51"
+                    "etag": "935266ddc6449449eeaba378f66cffa23a754e278eeced1dc17894cdee2428fb"
                 },
                 {
-                    "name": "ba5f4403-6cba-48ae-ac0c-1d8c739325b0",
-                    "displayName": "markdown",
-                    "visualization": {
-                        "markdown": {
-                            "content": "# Inside your network (what you control)",
-                            "properties": {
-                                "backgroundColor": "#671440"
-                            }
-                        }
-                    },
-                    "tileType": "TILE_TYPE_MARKDOWN",
-                    "etag": "a9ea045f3c1daac4153617bbe060010fa76e4381c215d1727489ae93ad31ee2a"
-                },
-                {
-                    "name": "75c308eb-25d6-42d3-ae06-ca3b548bf904",
+                    "name": "ad268239-9952-436b-b5bb-c4c8dae5da43",
                     "displayName": "Which internal hosts are driving the most byte volume?",
                     "description": "IP-level byte volume above threshold (trigger B, local_entity=true).",
                     "chartDatasource": {
-                        "dashboardQuery": "bfca5612-05a9-4f86-810f-ea68de18246d",
+                        "dashboardQuery": "f4b93a11-748d-4051-9d17-56eeaaec922b",
                         "dataSources": [
                             "UDM"
                         ]
@@ -1048,17 +633,17 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "1f719753cffd4d2f5c6cdd0da520dc20e92d5f263aa89d58ba65b7609517b69f",
+                    "etag": "902131ebdd7289bcf4197b9b6f6a9105cf03d14da5cd1af26047b6b51234deae",
                     "drillDownConfig": {},
                     "tokens": [
                         "sensor"
                     ]
                 },
                 {
-                    "name": "fdbe4a27-cd4c-45d2-b8a1-c47b452056fe",
-                    "displayName": "Internal vs external: where are crossings happening?",
+                    "name": "13876d40-04b2-4342-a197-ae07b883f5b9",
+                    "displayName": "Total Threshold crossings",
                     "chartDatasource": {
-                        "dashboardQuery": "990842dc-a2f0-4843-9478-240c36ea7573",
+                        "dashboardQuery": "1106c701-931e-41ae-9392-4a4a0f641d9b",
                         "dataSources": [
                             "UDM"
                         ]
@@ -1066,39 +651,35 @@
                     "visualization": {
                         "series": [
                             {
-                                "seriesType": "BAR",
-                                "encode": {
-                                    "x": "question",
-                                    "y": "crossings"
-                                },
-                                "dataLabel": {}
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "total_crossings",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
                             }
                         ],
                         "xAxes": [
                             {
-                                "axisType": "CATEGORY",
-                                "displayName": "Question"
+                                "axisType": "VALUE"
                             }
                         ],
                         "yAxes": [
                             {
-                                "axisType": "CATEGORY",
-                                "displayName": "Crossings"
+                                "axisType": "VALUE"
                             }
                         ],
                         "legends": [
                             {
-                                "top": 12,
                                 "legendOrient": "HORIZONTAL"
                             }
                         ],
-                        "seriesColumn": [
-                            "scope"
-                        ],
-                        "groupingType": "Grouped"
+                        "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "dd3162b8e37aa8d774a945f21c5df3a9100e9dbcc3d1b8bae855a13b76b3f217",
+                    "etag": "8d6b3c7f6b629fab4521ac823681915423df231177d6546bf19c36c505f80cc4",
                     "drillDownConfig": {},
                     "tokens": [
                         "sensor",
@@ -1106,72 +687,11 @@
                     ]
                 },
                 {
-                    "name": "17d0aa34-c255-403e-b8c0-fda1f0a3fe58",
-                    "displayName": "Which internal HTTP servers have slow request/response times?",
-                    "description": "HTTP request-to-response time aggregated by server IP (trigger HS, local_entity=true).",
-                    "chartDatasource": {
-                        "dashboardQuery": "a4110822-2af0-4427-8f17-d136be5bb37c",
-                        "dataSources": [
-                            "UDM"
-                        ]
-                    },
-                    "visualization": {
-                        "xAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "yAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "legends": [
-                            {
-                                "legendOrient": "HORIZONTAL"
-                            }
-                        ],
-                        "columnDefs": [
-                            {
-                                "field": "server_ip",
-                                "header": "Internal HTTP server"
-                            },
-                            {
-                                "field": "crossings",
-                                "header": "Slow-response windows"
-                            },
-                            {
-                                "field": "total_obs",
-                                "header": "Total observations"
-                            },
-                            {
-                                "field": "crossing_rate",
-                                "header": "Crossing rate"
-                            },
-                            {
-                                "field": "worst_resp_sec",
-                                "header": "Worst request/response (s)"
-                            },
-                            {
-                                "field": "last_seen",
-                                "header": "Last seen"
-                            }
-                        ],
-                        "groupingType": "Off"
-                    },
-                    "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "0da47964b1439709f118986eda2110d7e6949ed3595b187461784edd2efa5302",
-                    "drillDownConfig": {},
-                    "tokens": [
-                        "sensor"
-                    ]
-                },
-                {
-                    "name": "17e9e9d3-9641-468b-b4d6-e9425deb9fb3",
+                    "name": "9852518b-af28-4aec-b039-c3985faf1800",
                     "displayName": "Which internal QUIC servers have slow handshakes?",
                     "description": "QUIC handshake time aggregated by server IP (trigger QS, local_entity=true).",
                     "chartDatasource": {
-                        "dashboardQuery": "f0c8cf4c-57a8-4b2b-b217-2c55b950827d",
+                        "dashboardQuery": "4507feca-5668-447b-8f0b-b87d03db8aa0",
                         "dataSources": [
                             "UDM"
                         ]
@@ -1221,32 +741,18 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "826fd893c6d8b56bdf69895b356d7a99349319ae7be28e95302bb8284b794bdd",
+                    "etag": "e9ce87d4e6aa2c950a1e40e1a314913d9ac5970e88607bd23354b74c2cee0651",
                     "drillDownConfig": {},
                     "tokens": [
                         "sensor"
                     ]
                 },
                 {
-                    "name": "8b044d98-4709-456e-9415-1f9e638205aa",
-                    "displayName": "markdown",
-                    "visualization": {
-                        "markdown": {
-                            "content": "# Outside your network (what you don't)",
-                            "properties": {
-                                "backgroundColor": "#671440"
-                            }
-                        }
-                    },
-                    "tileType": "TILE_TYPE_MARKDOWN",
-                    "etag": "6d95d3f37ff9b0e87edd9a4e63d264b601c488b66a998c26dc372845d5d22f7a"
-                },
-                {
-                    "name": "72b6b0a7-1e1f-4e40-80c9-bf3ee574cbb8",
-                    "displayName": "Which external web hosts are slow (by Host header / server)?",
-                    "description": "HTTP request-to-response time by Host header, plus external server IPs (triggers HH and HS where local_entity=false).",
+                    "name": "0b6d174a-39ab-4021-adcd-8f11ce54b8a0",
+                    "displayName": "Which internal TLS servers have consistently slow handshakes?",
+                    "description": "TLS handshake time aggregated by server IP (trigger TS, local_entity=true).",
                     "chartDatasource": {
-                        "dashboardQuery": "21f475e8-df05-4a2a-b864-6286edcde19e",
+                        "dashboardQuery": "09592e8f-dce5-4262-bd58-bf44878709a1",
                         "dataSources": [
                             "UDM"
                         ]
@@ -1269,16 +775,12 @@
                         ],
                         "columnDefs": [
                             {
-                                "field": "external_entity",
-                                "header": "External HTTP entity"
-                            },
-                            {
-                                "field": "identified_by",
-                                "header": "Identified by"
+                                "field": "server_ip",
+                                "header": "Internal TLS server"
                             },
                             {
                                 "field": "crossings",
-                                "header": "Slow-response windows"
+                                "header": "Slow-handshake windows"
                             },
                             {
                                 "field": "total_obs",
@@ -1289,8 +791,8 @@
                                 "header": "Crossing rate"
                             },
                             {
-                                "field": "worst_resp_sec",
-                                "header": "Worst request/response (s)"
+                                "field": "worst_handshake_sec",
+                                "header": "Worst handshake (s)"
                             },
                             {
                                 "field": "last_seen",
@@ -1300,18 +802,18 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "80d4773798aad33ca65e51c5ae01973a1ca7e2b7fc027e9483875ed8093ac08f",
+                    "etag": "a724e413dc45bc9934fece2d312f093c85f264a0e37e0ad48ff115bbeb166257",
                     "drillDownConfig": {},
                     "tokens": [
                         "sensor"
                     ]
                 },
                 {
-                    "name": "387f9d1e-64d0-4a3a-9353-78f6585da834",
+                    "name": "fd15c59c-af89-4fac-853f-a88329c37eb9",
                     "displayName": "Which external domains are slow to resolve?",
                     "description": "DNS response time by query name, plus external resolver IPs (triggers DD and DS where local_entity=false).",
                     "chartDatasource": {
-                        "dashboardQuery": "cefdb20e-82cc-410e-b7f4-50c557f8dbd7",
+                        "dashboardQuery": "656c5334-3678-464f-8d7c-21860f40ddd1",
                         "dataSources": [
                             "UDM"
                         ]
@@ -1365,111 +867,17 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "2f816d97d97f8543f600ee9c126d0edbd074074ce240875aa5d2affc86e75b1d",
+                    "etag": "ef160ac6f81fd7b76b7ad05aafdb25aa7a9cfdf56284a61af093e1fc12a09e8b",
                     "drillDownConfig": {},
                     "tokens": [
                         "sensor"
                     ]
                 },
                 {
-                    "name": "4d0a50dd-a74b-45c4-a5d8-68bc30587a34",
-                    "displayName": "Internal entities with anomalies",
-                    "chartDatasource": {
-                        "dashboardQuery": "8e82a5a9-bdec-4932-acee-b15d6973e120",
-                        "dataSources": [
-                            "UDM"
-                        ]
-                    },
-                    "visualization": {
-                        "series": [
-                            {
-                                "seriesType": "TEXT",
-                                "label": " ",
-                                "field": "Internal_Entities",
-                                "metricTrendConfig": {
-                                    "metricFormat": "METRIC_FORMAT_NUMBER",
-                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
-                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
-                                }
-                            }
-                        ],
-                        "xAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "yAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "legends": [
-                            {
-                                "legendOrient": "HORIZONTAL"
-                            }
-                        ],
-                        "groupingType": "Off"
-                    },
-                    "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "cefcd2b84d0820204b9d7e8a8b7c24b3d820c9f4426260539b9bd95b372e378c",
-                    "drillDownConfig": {},
-                    "tokens": [
-                        "sensor",
-                        "trigger"
-                    ]
-                },
-                {
-                    "name": "b0e9b647-56c2-4ecb-98d3-2b895b1fea54",
-                    "displayName": "Top performance question",
-                    "chartDatasource": {
-                        "dashboardQuery": "a69ce387-4fd2-4771-9018-c51fbfc956e2",
-                        "dataSources": [
-                            "UDM"
-                        ]
-                    },
-                    "visualization": {
-                        "series": [
-                            {
-                                "seriesType": "TEXT",
-                                "label": " ",
-                                "field": "top_question",
-                                "metricTrendConfig": {
-                                    "metricFormat": "METRIC_FORMAT_NUMBER",
-                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
-                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
-                                }
-                            }
-                        ],
-                        "xAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "yAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "legends": [
-                            {
-                                "legendOrient": "HORIZONTAL"
-                            }
-                        ],
-                        "groupingType": "Off"
-                    },
-                    "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "6db8076cbad10a6b67bfa79f7ea15e921ea76895e0e5de3e04ef4ff3c2270c36",
-                    "drillDownConfig": {},
-                    "tokens": [
-                        "sensor",
-                        "trigger"
-                    ]
-                },
-                {
-                    "name": "31e292b8-6a71-4f9f-bfd4-102ed22d135e",
+                    "name": "ae4ebe68-641d-4823-844e-e7aa4b56bf72",
                     "displayName": "Recent anomaly events (click a row to drill into corelight_conn / search by uid)",
                     "chartDatasource": {
-                        "dashboardQuery": "a72ba65d-6a0a-4d72-9e13-e849f3935438",
+                        "dashboardQuery": "0c234d1a-8918-4b8c-99c0-93cfac714fd8",
                         "dataSources": [
                             "UDM"
                         ]
@@ -1543,7 +951,132 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "ab8e0a040c0f11eba9ff5f53bebda8eb8010ad965195bcd55ccb7460fa9d511d",
+                    "etag": "9de8ae177ef1f8bb462baf4d974d0337e5eea6e52182fce1c0052a8aac7907dc",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "uid",
+                                "displayName": "Run Search on UID",
+                                "defaultSettings": {
+                                    "enabled": true
+                                }
+                            }
+                        ]
+                    },
+                    "tokens": [
+                        "sensor",
+                        "trigger"
+                    ]
+                },
+                {
+                    "name": "2817bce0-d65b-4321-be7d-701cc755ec0b",
+                    "displayName": "Which external web hosts are slow (by Host header / server)?",
+                    "description": "HTTP request-to-response time by Host header, plus external server IPs (triggers HH and HS where local_entity=false).",
+                    "chartDatasource": {
+                        "dashboardQuery": "9e446251-b1f1-4720-8d53-4c3036657077",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "external_entity",
+                                "header": "External HTTP entity"
+                            },
+                            {
+                                "field": "identified_by",
+                                "header": "Identified by"
+                            },
+                            {
+                                "field": "crossings",
+                                "header": "Slow-response windows"
+                            },
+                            {
+                                "field": "total_obs",
+                                "header": "Total observations"
+                            },
+                            {
+                                "field": "crossing_rate",
+                                "header": "Crossing rate"
+                            },
+                            {
+                                "field": "worst_resp_sec",
+                                "header": "Worst request/response (s)"
+                            },
+                            {
+                                "field": "last_seen",
+                                "header": "Last seen"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "5f6f6ccf74892ee75e5b0aec18b7c23b29eeab0ad71682b68e6b9d505d85a824",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "sensor"
+                    ]
+                },
+                {
+                    "name": "5831852a-b261-4936-b511-7d8e559b0bf4",
+                    "displayName": "Is the aggregation pipeline healthy?",
+                    "chartDatasource": {
+                        "dashboardQuery": "2571cdee-bcc3-4041-be0e-3eab0131bba0",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "none",
+                                "seriesType": "SCATTERPLOT",
+                                "encode": {
+                                    "x": "time_bucket",
+                                    "y": "r"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {},
+                                "seriesUniqueValue": "none"
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "Avg Reply Coverage"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "8a195926772c7c04b7736a3ebf01472e767bd9118c564c5e3a418e3b378b05ce",
                     "drillDownConfig": {},
                     "tokens": [
                         "sensor",
@@ -1551,11 +1084,311 @@
                     ]
                 },
                 {
-                    "name": "f443ac95-57a4-434b-bb7e-3982416fba99",
+                    "name": "7f34b921-732d-4bd7-bb2a-d6c575dfb6c9",
+                    "displayName": "Where are crossings concentrating, by performance question?",
+                    "chartDatasource": {
+                        "dashboardQuery": "b359f4ef-f189-444b-a32b-ee04af6d9e4f",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "time_bucket",
+                                    "y": "c"
+                                },
+                                "dataLabel": {}
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Count"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "seriesColumn": [
+                            "question"
+                        ],
+                        "groupingType": "Grouped"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "58782c81c6a7362b14d1e57d3bb5fa5fcb76e9c88465f7751aa4bb9375a2a324",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "16DACD3F-DE2F-4047-AE9B-4E64EC5EE16D",
+                                "displayName": "Run Search on Original Entity",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "display_entity",
+                                    "query": {
+                                        "query": "re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\") = ${display_entity}",
+                                        "dialect": "YL2"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "tokens": [
+                        "sensor",
+                        "trigger"
+                    ]
+                },
+                {
+                    "name": "8af4f746-415b-4320-a59f-bdf8016849b7",
+                    "displayName": "markdown",
+                    "visualization": {
+                        "markdown": {
+                            "content": "# Overview",
+                            "properties": {
+                                "backgroundColor": "#671440"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_MARKDOWN",
+                    "etag": "ab8bdb1871c806ddd4f487b24e0d47ff45553261b4383b614a971cc2ec0d7a21"
+                },
+                {
+                    "name": "45362d2b-54a2-4142-be48-5f63012a2545",
+                    "displayName": "Internal entities with anomalies",
+                    "chartDatasource": {
+                        "dashboardQuery": "de16997e-b743-475d-b50c-fda2b85bd470",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "Internal_Entities",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "c0dbbe6904ec780715f12b91e243adff5961251a75529776a202de037ece3b3b",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "sensor",
+                        "trigger"
+                    ]
+                },
+                {
+                    "name": "d4b97772-00f4-4a31-85df-3fd5ecd8608f",
+                    "displayName": "Pipeline / cluster reply coverage",
+                    "chartDatasource": {
+                        "dashboardQuery": "966909dc-542d-4b5e-bd7f-c02b57fc2f1c",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " %",
+                                "field": "r",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "1a84e679e9f0e1c5021b1577aa8610fb232b6e77d7b1c77f9fe1683ad7f9e150",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "sensor",
+                        "trigger"
+                    ]
+                },
+                {
+                    "name": "a3b4b192-f567-4a65-b022-2775f2c0957f",
+                    "displayName": "Which external QUIC services have slow handshakes?",
+                    "description": "QUIC handshake time by SNI, plus external server IPs (triggers QH and QS where local_entity=false).",
+                    "chartDatasource": {
+                        "dashboardQuery": "abbd70a8-fbe4-4c70-9225-f0c44f6717c9",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "external_entity",
+                                "header": "External QUIC entity"
+                            },
+                            {
+                                "field": "identified_by",
+                                "header": "Identified by"
+                            },
+                            {
+                                "field": "crossings",
+                                "header": "Slow-handshake windows"
+                            },
+                            {
+                                "field": "total_obs",
+                                "header": "Total observations"
+                            },
+                            {
+                                "field": "crossing_rate",
+                                "header": "Crossing rate"
+                            },
+                            {
+                                "field": "worst_handshake_sec",
+                                "header": "Worst handshake (s)"
+                            },
+                            {
+                                "field": "last_seen",
+                                "header": "Last seen"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "7eaf6d263b76791252b348a5643922190235b10f67d1270cc69b535ae85db24d",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "sensor"
+                    ]
+                },
+                {
+                    "name": "5773c578-aa66-45a6-a04c-b093629d1920",
+                    "displayName": "Which internal HTTP servers have slow request/response times?",
+                    "description": "HTTP request-to-response time aggregated by server IP (trigger HS, local_entity=true).",
+                    "chartDatasource": {
+                        "dashboardQuery": "dc016657-3dc3-4846-aa27-45dc0775c054",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "server_ip",
+                                "header": "Internal HTTP server"
+                            },
+                            {
+                                "field": "crossings",
+                                "header": "Slow-response windows"
+                            },
+                            {
+                                "field": "total_obs",
+                                "header": "Total observations"
+                            },
+                            {
+                                "field": "crossing_rate",
+                                "header": "Crossing rate"
+                            },
+                            {
+                                "field": "worst_resp_sec",
+                                "header": "Worst request/response (s)"
+                            },
+                            {
+                                "field": "last_seen",
+                                "header": "Last seen"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "3c459a0084caba9c22119264e20147a319decc2179cafa2913cf074ea04f77ad",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "sensor"
+                    ]
+                },
+                {
+                    "name": "d7317995-7ba5-469f-b284-78668223cae7",
                     "displayName": "Which external destinations are consuming the most bandwidth?",
                     "description": "IP-level byte volume above threshold (trigger B, local_entity=false).",
                     "chartDatasource": {
-                        "dashboardQuery": "a72e17b6-49e1-48d3-82e5-b87b9349139f",
+                        "dashboardQuery": "ad9215ab-3321-402f-aa08-7e840a45c7c1",
                         "dataSources": [
                             "UDM"
                         ]
@@ -1609,112 +1442,211 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "f557766327df8b3a33e1a9fc5f0e3dfbc616a431e21fcbaf2476df533d9717a8",
+                    "etag": "e9dffa0bf1a8496b989129b7af49091e889cd70b37109248a2ee55efff22d7c6",
                     "drillDownConfig": {},
                     "tokens": [
                         "sensor"
+                    ]
+                },
+                {
+                    "name": "8d38e99b-c988-4894-92cc-477d1b6d5fb5",
+                    "displayName": "markdown",
+                    "visualization": {
+                        "markdown": {
+                            "content": "# Inside your network (what you control)",
+                            "properties": {
+                                "backgroundColor": "#671440"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_MARKDOWN",
+                    "etag": "7899e7b056f51c9e3ba9284d3d43efff874bfa72f0340b124fa5bd993d6c7885"
+                },
+                {
+                    "name": "78cb015d-7b96-4d4b-8197-55848b2aafd4",
+                    "displayName": "Which internal hosts show degraded path RTT (monitor-to-host)?",
+                    "description": "Server-side and client-side RTT measured from the monitor (triggers RS/RC, local_entity=true).",
+                    "chartDatasource": {
+                        "dashboardQuery": "d15c3c9d-d58d-4d04-ac5c-407aa93dc075",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "host_ip",
+                                "header": "Internal host"
+                            },
+                            {
+                                "field": "role",
+                                "header": "Measured as"
+                            },
+                            {
+                                "field": "crossings",
+                                "header": "High-RTT windows"
+                            },
+                            {
+                                "field": "total_obs",
+                                "header": "Total observations"
+                            },
+                            {
+                                "field": "crossing_rate",
+                                "header": "Crossing rate"
+                            },
+                            {
+                                "field": "worst_rtt_sec",
+                                "header": "Worst RTT (s)"
+                            },
+                            {
+                                "field": "last_seen",
+                                "header": "Last seen"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "286c1772a1436b687fc2dbba63ae7fd88190840a567ba2a98276cf03000ce1cb",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "sensor"
+                    ]
+                },
+                {
+                    "name": "33e0dce7-fcd4-4b9a-b79b-4fe0dda540f9",
+                    "displayName": "Internal vs external: where are crossings happening?",
+                    "chartDatasource": {
+                        "dashboardQuery": "24c7285d-907f-4fec-8675-5e880d9949f6",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesName": "External Entity",
+                                "seriesType": "BAR",
+                                "encode": {
+                                    "x": "question",
+                                    "y": "crossings"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#1a73e8"
+                                },
+                                "seriesUniqueValue": "External Entity"
+                            },
+                            {
+                                "seriesName": "Internal Entity",
+                                "seriesType": "BAR",
+                                "encode": {
+                                    "x": "question",
+                                    "y": "crossings"
+                                },
+                                "dataLabel": {},
+                                "itemStyle": {
+                                    "color": "#eb730a"
+                                },
+                                "seriesUniqueValue": "Internal Entity"
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Question"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE",
+                                "displayName": "Crossings"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "seriesColumn": [
+                            "scope"
+                        ],
+                        "groupingType": "Grouped"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "f7f768451e53f8ca97c278246a97ddd026e8a07c3e0ecedf79c1f653c3ad0d06",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "sensor",
+                        "trigger"
+                    ]
+                },
+                {
+                    "name": "d4acf065-8c36-465b-b8bf-f65247f85922",
+                    "displayName": "Top performance question",
+                    "chartDatasource": {
+                        "dashboardQuery": "1a6c6ec2-9086-45fd-ae94-314a37a65b55",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "top_question",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "e1035a118eb98d0df7d744ffaed7e9f18b83b12f9fcddc99f6fdd5c7cb39c084",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "sensor",
+                        "trigger"
                     ]
                 }
             ],
             "dashboardQueries": [
                 {
-                    "name": "839f948b-96d7-4c60-b17b-126109f967ed",
-                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = \"TS\"\r\nadditional.fields[\"local_entity\"] = \"true\"\r\n$server_ip = if(principal.hostname != \"-\", principal.hostname, \"unknown\")\r\n\r\nmatch:\r\n    $server_ip\r\noutcome:\r\n    $crossings = sum(cast.as_float(additional.fields[\"crossings\"]))\r\n    $total_obs = sum(cast.as_float(additional.fields[\"total\"]))\r\n    $crossing_rate = math.round($crossings/$total_obs, 3)\r\n    $worst_handshake_sec = math.round(max(if(additional.fields[\"max_val\"] != \"-\" and additional.fields[\"max_val\"] != \"\", cast.as_float(additional.fields[\"max_val\"]), 0.0)), 3)\r\n    $last_seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M:%S\")\r\norder:\r\n   $crossings desc\r\nlimit:\r\n    25",
-                    "input": {
-                        "relativeTime": {
-                            "timeUnit": "DAY",
-                            "startTimeVal": "1"
-                        }
-                    },
-                    "etag": "b3149cf59913a33676e04ec6cedc417d1b75192ceee839cd339cafb4b5021d5f",
-                    "dialect": "YL2"
-                },
-                {
-                    "name": "634cd264-d116-4f8b-84b8-be04c5043445",
-                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = /$trigger$/ nocase\r\n(additional.fields[\"local_entity\"] = \"false\" OR re.regex(additional.fields[\"trigger\"], `^(DD|TH|QH|HH)$`))\r\ncast.as_int(additional.fields[\"crossings\"]) > 0\r\n$entity = if(principal.domain.name != \"-\", principal.domain.name, if(principal.hostname != \"-\", principal.hostname, \"unknown\"))\r\noutcome:\r\n    $external_entities = count_distinct($entity)",
-                    "input": {
-                        "relativeTime": {
-                            "timeUnit": "DAY",
-                            "startTimeVal": "1"
-                        }
-                    },
-                    "etag": "4ae535e10ffcf2265b3b65401198aeb7e8e0dc99fad28b379145a421f48a3393",
-                    "dialect": "YL2"
-                },
-                {
-                    "name": "774d9d08-9465-4cc0-9ec2-79779914f3a6",
-                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = \"DS\"\r\nadditional.fields[\"local_entity\"] = \"true\"\r\n$resolver_ip = if(principal.hostname != \"-\", principal.hostname, \"unknown\")\r\n\r\nmatch:\r\n    $resolver_ip\r\noutcome:\r\n    $crossings = sum(cast.as_float(additional.fields[\"crossings\"]))\r\n    $total_obs = sum(cast.as_float(additional.fields[\"total\"]))\r\n    $crossing_rate = math.round($crossings/$total_obs, 3)\r\n    $worst_resp_sec = math.round(max(if(additional.fields[\"max_val\"] != \"-\" and additional.fields[\"max_val\"] != \"\", cast.as_float(additional.fields[\"max_val\"]), 0.0)), 3)\r\n    $last_seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M:%S\")\r\norder:\r\n   $crossings desc\r\nlimit:\r\n    25",
-                    "input": {
-                        "relativeTime": {
-                            "timeUnit": "DAY",
-                            "startTimeVal": "1"
-                        }
-                    },
-                    "etag": "ab9edcb6275e31e99ef576b31de1c0096f82a66412416c9975965ad4d65c4fcc",
-                    "dialect": "YL2"
-                },
-                {
-                    "name": "bfca5612-05a9-4f86-810f-ea68de18246d",
-                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = \"B\"\r\nadditional.fields[\"local_entity\"] = \"true\"\r\n$host_ip = if(principal.hostname != \"-\", principal.hostname, \"unknown\")\r\n\r\nmatch:\r\n    $host_ip\r\noutcome:\r\n    $crossings = sum(cast.as_float(additional.fields[\"crossings\"]))\r\n    $total_obs = sum(cast.as_float(additional.fields[\"total\"]))\r\n    $sent_bytes = math.round(sum(network.sent_bytes)/1073741824, 2)\r\n    $recv_bytes = math.round(sum(network.received_bytes)/1073741824, 2)\r\n    $crossing_rate = math.round($crossings/$total_obs, 3)\r\n    $last_seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M:%S\")\r\norder:\r\n   $sent_bytes desc\r\nlimit:\r\n    25",
-                    "input": {
-                        "relativeTime": {
-                            "timeUnit": "DAY",
-                            "startTimeVal": "1"
-                        }
-                    },
-                    "etag": "714f618b2f4209bed66598b0bd49dd394e08d7f77cdd4351c9e3048940755855",
-                    "dialect": "YL2"
-                },
-                {
-                    "name": "990842dc-a2f0-4843-9478-240c36ea7573",
-                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = /$trigger$/ nocase\r\n$question = if(re.regex(additional.fields[\"trigger\"], `^(RS|RC)$`), \"Path latency\", if(re.regex(additional.fields[\"trigger\"], `^(DS|DD)$`), \"DNS response time\", if(re.regex(additional.fields[\"trigger\"], `^(TS|TH)$`), \"TLS handshake time\", if(re.regex(additional.fields[\"trigger\"], `^(QS|QH)$`), \"QUIC handshake time\",if(re.regex(additional.fields[\"trigger\"], `^(HS|HH)$`), \"HTTP request/response time\", if(additional.fields[\"trigger\"] = \"B\", \"Byte volume\", \"Other\"))))))\r\n$scope = if(additional.fields[\"local_entity\"] = \"T\", \"Internal Entity\", if(additional.fields[\"local_entity\"] = \"F\", \"External Entity\", if(re.regex(additional.fields[\"trigger\"], `^(DD|TH|QH|HH)$`), \"External Entity\", \"Unknown\")))\r\nmatch:\r\n    $question, $scope\r\noutcome:\r\n    $crossings = sum(cast.as_int(additional.fields[\"crossings\"]))\r\norder:\r\n    $crossings asc",
-                    "input": {
-                        "relativeTime": {
-                            "timeUnit": "DAY",
-                            "startTimeVal": "1"
-                        }
-                    },
-                    "etag": "0aafa0c858285767925c070b96650f81acca1a73be6d7457846ab5c3a65c4189",
-                    "dialect": "YL2"
-                },
-                {
-                    "name": "a69ce387-4fd2-4771-9018-c51fbfc956e2",
-                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = /$trigger$/ nocase\r\n$question = if(re.regex(additional.fields[\"trigger\"], `^(RS|RC)$`), \"Path latency\", if(re.regex(additional.fields[\"trigger\"], `^(DS|DD)$`), \"DNS response time\", if(re.regex(additional.fields[\"trigger\"], `^(TS|TH)$`), \"TLS handshake time\", if(re.regex(additional.fields[\"trigger\"], `^(QS|QH)$`), \"QUIC handshake time\",if(re.regex(additional.fields[\"trigger\"], `^(HS|HH)$`), \"HTTP request/response time\", if(additional.fields[\"trigger\"] = \"B\", \"Byte volume\", \"Other\"))))))\r\nmatch:\r\n    $question\r\noutcome:\r\n    $c = sum(cast.as_int(additional.fields[\"crossings\"]))\r\n    $a = arrays.index_to_str(array_distinct(if(re.regex(additional.fields[\"trigger\"], `^(RS|RC)$`), \"Path latency\", if(re.regex(additional.fields[\"trigger\"], `^(DS|DD)$`), \"DNS response time\", if(re.regex(additional.fields[\"trigger\"], `^(TS|TH)$`), \"TLS handshake time\", if(re.regex(additional.fields[\"trigger\"], `^(QS|QH)$`), \"QUIC handshake time\",if(re.regex(additional.fields[\"trigger\"], `^(HS|HH)$`), \"HTTP request/response time\", if(additional.fields[\"trigger\"] = \"B\", \"Byte volume\", \"Other\"))))))), 0)\r\n    $top_question = strings.concat($a, \" (\", cast.as_string($c), \")\")\r\norder:\r\n    $c desc\r\nlimit:\r\n    1",
-                    "input": {
-                        "relativeTime": {
-                            "timeUnit": "DAY",
-                            "startTimeVal": "1"
-                        }
-                    },
-                    "etag": "82876401bfda0e26ba4c8cc33ebeba3687bbee0cab750f98c9b6424af25fbafc",
-                    "dialect": "YL2"
-                },
-                {
-                    "name": "a72ba65d-6a0a-4d72-9e13-e849f3935438",
-                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = /$trigger$/ nocase\r\n$performance_question = if(additional.fields[\"trigger\"] = \"RS\", \"Server RTT (path latency)\", if(additional.fields[\"trigger\"] = \"RC\", \"Client RTT (path latency)\", if(additional.fields[\"trigger\"] = \"DS\", \"DNS response time (by resolver)\", if(additional.fields[\"trigger\"] = \"DD\", \"DNS response time (by domain)\", if(additional.fields[\"trigger\"] = \"TS\", \"TLS handshake (by server IP)\", if(additional.fields[\"trigger\"] = \"TH\", \"TLS handshake (by SNI)\", if(additional.fields[\"trigger\"] = \"QS\", \"QUIC handshake (by server IP)\", if(additional.fields[\"trigger\"] = \"QH\", \"QUIC handshake (by SNI)\", if(additional.fields[\"trigger\"] = \"HS\", \"HTTP request/response (by server IP)\", if(additional.fields[\"trigger\"] = \"HH\", \"HTTP request/response (by Host header)\", if(additional.fields[\"trigger\"] = \"B\", \"IP byte volume\", \"Unknown\")))))))))))\r\n$uid = network.session_id\r\nmatch:\r\n    $uid\r\noutcome:\r\n    $performance_question_out = array_distinct($performance_question)\r\n    $scope = array_distinct(if(additional.fields[\"local_entity\"] = \"T\", \"Internal\", if(additional.fields[\"local_entity\"] = \"F\", \"External\", if(re.regex(additional.fields[\"trigger\"], `^(DD|TH|QH|HH)$`), \"External (name-based)\", \"Unknown\"))))\r\n    $entity = array_distinct(if(principal.domain.name != \"-\", principal.domain.name, if(principal.hostname != \"-\", principal.hostname, \"unknown\")))\r\n    $crossings = max(cast.as_float(additional.fields[\"crossings\"]))\r\n    $total_obs = max(cast.as_float(additional.fields[\"total\"]))\r\n    $worst_value = math.round(max(if(additional.fields[\"max_val\"] != \"-\" and additional.fields[\"max_val\"] != \"\", cast.as_float(additional.fields[\"max_val\"]), 0.0)), 3)\r\n    $window = max(network.session_duration.seconds)\r\n    $reply_rate = array_distinct(additional.fields[\"reply_rate\"])\r\n    $sensor = array_distinct(observer.hostname)\r\n    $when = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M:%S\")\r\n    $target_dashboard = array_distinct(if(re.regex($performance_question, `^DNS`), \"corelight_data_dns\", if(re.regex($performance_question, `^HTTP`), \"corelight_data_http\", if(re.regex($performance_question, `^TLS`), \"corelight_data_ssl\", if(re.regex($performance_question, `^QUIC|^IP`), \"corelight_data_connections\", \"unknown\")))))\r\norder:\r\n    $when desc\r\nlimit:\r\n    500",
-                    "input": {
-                        "relativeTime": {
-                            "timeUnit": "DAY",
-                            "startTimeVal": "1"
-                        }
-                    },
-                    "etag": "fbf69839c25632d19de034b0e308720ccb051be97a51f9b874e12324b2d09b51",
-                    "dialect": "YL2"
-                },
-                {
-                    "name": "21f475e8-df05-4a2a-b864-6286edcde19e",
-                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\n((additional.fields[\"trigger\"] = \"HS\" and additional.fields[\"local_entity\"] = \"false\") or additional.fields[\"trigger\"] = \"HH\")\r\n$external_entity = if(additional.fields[\"trigger\"] = \"HH\", if(principal.domain.name != \"-\", principal.domain.name, \"unknown\"), if(principal.hostname != \"-\", principal.hostname, \"unknown\"))\r\n$identified_by = if(additional.fields[\"trigger\"] = \"HH\", \"Host header\", \"External server IP\")\r\n\r\nmatch:\r\n    $external_entity, $identified_by\r\noutcome:\r\n    $crossings = sum(cast.as_float(additional.fields[\"crossings\"]))\r\n    $total_obs = sum(cast.as_float(additional.fields[\"total\"]))\r\n    $crossing_rate = math.round($crossings/$total_obs, 3)\r\n    $worst_resp_sec = math.round(max(if(additional.fields[\"max_val\"] != \"-\" and additional.fields[\"max_val\"] != \"\", cast.as_float(additional.fields[\"max_val\"]), 0.0)), 3)\r\n    $last_seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M:%S\")\r\norder:\r\n   $crossings desc\r\nlimit:\r\n    25",
-                    "input": {
-                        "relativeTime": {
-                            "timeUnit": "DAY",
-                            "startTimeVal": "1"
-                        }
-                    },
-                    "etag": "316426aa40be839586db220a348c72532894a215d8b1c270535be773f1e8fe7c",
-                    "dialect": "YL2"
-                },
-                {
-                    "name": "aa0b0738-6a47-4829-84aa-be1bd8bc37a3",
+                    "name": "2571cdee-bcc3-4041-be0e-3eab0131bba0",
                     "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = /$trigger$/ nocase\r\nadditional.fields[\"reply_rate\"] != \"\"\r\n$time_bucket = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00:00\", \"UTC\")\r\n$rep_r = if(cast.as_float(re.capture(additional.fields[\"reply_rate\"], `^(\\d+)/`)) != 0 and cast.as_float(re.capture(additional.fields[\"reply_rate\"], `/(\\d+)$`)) > 0, cast.as_float(re.capture(additional.fields[\"reply_rate\"], `^(\\d+)/`)), 0.0)\r\n$sent_r = if(cast.as_float(re.capture(additional.fields[\"reply_rate\"], `^(\\d+)/`)) != 0 and cast.as_float(re.capture(additional.fields[\"reply_rate\"], `/(\\d+)$`)) > 0, cast.as_float(re.capture(additional.fields[\"reply_rate\"], `/(\\d+)$`)), 1.0)\r\nmatch:\r\n    $time_bucket\r\noutcome:\r\n    $r_sum = sum($rep_r / $sent_r)\r\n    $r_count = count($rep_r / $sent_r)\r\n    $r = math.round($r_sum/$r_count, 2)\r\norder:\r\n    $time_bucket, $r asc",
                     "input": {
                         "relativeTime": {
@@ -1722,71 +1654,23 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "a4851b63040026bd09e649f5af214864ea0351169e05e5f8ed2ca68f4f2a2743",
+                    "etag": "abac2c83f9f336732b7e64ca2ddbf9289e06f902f287b4bbc1781d35b92b6a75",
                     "dialect": "YL2"
                 },
                 {
-                    "name": "cefdb20e-82cc-410e-b7f4-50c557f8dbd7",
-                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\n((additional.fields[\"trigger\"] = \"DS\" and additional.fields[\"local_entity\"] = \"false\") or additional.fields[\"trigger\"] = \"DD\")\r\n$external_entity = if(additional.fields[\"trigger\"] = \"DD\", if(principal.domain.name != \"-\", principal.domain.name, \"unknown\"), if(principal.hostname != \"-\", principal.hostname, \"unknown\"))\r\n$identified_by = if(additional.fields[\"trigger\"] = \"DD\", \"Query name\", \"External resolver IP\")\r\n\r\nmatch:\r\n    $external_entity, $identified_by\r\noutcome:\r\n    $crossings = sum(cast.as_float(additional.fields[\"crossings\"]))\r\n    $total_obs = sum(cast.as_float(additional.fields[\"total\"]))\r\n    $crossing_rate = math.round($crossings/$total_obs, 3)\r\n    $worst_resp_sec = math.round(max(if(additional.fields[\"max_val\"] != \"-\" and additional.fields[\"max_val\"] != \"\", cast.as_float(additional.fields[\"max_val\"]), 0.0)), 3)\r\n    $last_seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M:%S\")\r\norder:\r\n   $crossings desc\r\nlimit:\r\n    25",
+                    "name": "bebcb785-c568-40c3-b862-80df70e91c59",
+                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = /$trigger$/ nocase\r\n(additional.fields[\"local_entity\"] = \"false\" OR re.regex(additional.fields[\"trigger\"], `^(DD|TH|QH|HH)$`))\r\ncast.as_int(additional.fields[\"crossings\"]) > 0\r\n$entity = if(principal.domain.name != \"-\", principal.domain.name, if(principal.hostname != \"-\", principal.hostname, \"unknown\"))\r\noutcome:\r\n    $external_entities = count_distinct($entity)",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "45f9a2c046ea0e2346acf09832bacfdeeb6460478edba8e4dc56ceb645f8d087",
+                    "etag": "d8bceccb906f948c1becabbf510ef05033bd8688920d44abbbf79dceaea8f32e",
                     "dialect": "YL2"
                 },
                 {
-                    "name": "cfa4a840-7f36-4e13-8562-a57430570e7a",
-                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\n((additional.fields[\"trigger\"] = \"QS\" and additional.fields[\"local_entity\"] = \"false\") or additional.fields[\"trigger\"] = \"QH\")\r\n$external_entity = if(additional.fields[\"trigger\"] = \"QH\", if(principal.domain.name != \"-\", principal.domain.name, \"unknown\"), if(principal.hostname != \"-\", principal.hostname, \"unknown\"))\r\n$identified_by = if(additional.fields[\"trigger\"] = \"QH\", \"SNI\", \"External server IP\")\r\n\r\nmatch:\r\n    $external_entity, $identified_by\r\noutcome:\r\n    $crossings = sum(cast.as_float(additional.fields[\"crossings\"]))\r\n    $total_obs = sum(cast.as_float(additional.fields[\"total\"]))\r\n    $crossing_rate = math.round($crossings/$total_obs, 3)\r\n    $worst_handshake_sec = math.round(max(if(additional.fields[\"max_val\"] != \"-\" and additional.fields[\"max_val\"] != \"\", cast.as_float(additional.fields[\"max_val\"]), 0.0)), 3)\r\n    $last_seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M:%S\")\r\norder:\r\n   $crossings desc\r\nlimit:\r\n    25",
-                    "input": {
-                        "relativeTime": {
-                            "timeUnit": "DAY",
-                            "startTimeVal": "1"
-                        }
-                    },
-                    "etag": "e17499d054778a5198e9cd48c068cfb2d4270134c2c2dcef4bf65e9c84a3ce11",
-                    "dialect": "YL2"
-                },
-                {
-                    "name": "79e33755-1a5d-4dd9-97fa-7f12edac8fd1",
-                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = \"RS\" OR additional.fields[\"trigger\"] = \"RC\"\r\nadditional.fields[\"local_entity\"] = \"true\"\r\n$host_ip = if(principal.hostname != \"-\", principal.hostname, \"unknown\")\r\n$role = if(additional.fields[\"trigger\"] = \"RS\", \"Server (RS)\", \"Client (RC)\")\r\n\r\nmatch:\r\n    $host_ip, $role\r\noutcome:\r\n    $crossings = sum(cast.as_float(additional.fields[\"crossings\"]))\r\n    $total_obs = sum(cast.as_float(additional.fields[\"total\"]))\r\n    $crossing_rate = math.round($crossings/$total_obs, 3)\r\n    $worst_rtt_sec = math.round(max(if(additional.fields[\"max_val\"] != \"-\" and additional.fields[\"max_val\"] != \"\", cast.as_float(additional.fields[\"max_val\"]), 0.0)), 3)\r\n    $last_seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M:%S\")\r\norder:\r\n    $crossings desc\r\nlimit:\r\n    25",
-                    "input": {
-                        "relativeTime": {
-                            "timeUnit": "DAY",
-                            "startTimeVal": "1"
-                        }
-                    },
-                    "etag": "110e42cfe186830e80d26c3d9ecfe404f7d1e7378f035b563a0c884c0c8d560b",
-                    "dialect": "YL2"
-                },
-                {
-                    "name": "a4110822-2af0-4427-8f17-d136be5bb37c",
-                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = \"HS\"\r\nadditional.fields[\"local_entity\"] = \"true\"\r\n$server_ip = if(principal.hostname != \"-\", principal.hostname, \"unknown\")\r\n\r\nmatch:\r\n    $server_ip\r\noutcome:\r\n    $crossings = sum(cast.as_float(additional.fields[\"crossings\"]))\r\n    $total_obs = sum(cast.as_float(additional.fields[\"total\"]))\r\n    $crossing_rate = math.round($crossings/$total_obs, 3)\r\n    $worst_resp_sec = math.round(max(if(additional.fields[\"max_val\"] != \"-\" and additional.fields[\"max_val\"] != \"\", cast.as_float(additional.fields[\"max_val\"]), 0.0)), 3)\r\n    $last_seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M:%S\")\r\norder:\r\n    $crossings desc\r\nlimit:\r\n    25",
-                    "input": {
-                        "relativeTime": {
-                            "timeUnit": "DAY",
-                            "startTimeVal": "1"
-                        }
-                    },
-                    "etag": "a73da083cfa0565cd3a7409d914a4887f826b6dd92771045e7f1a66d23167f70",
-                    "dialect": "YL2"
-                },
-                {
-                    "name": "a890bac2-7580-49fb-a086-c1b77ece1000",
-                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = /$trigger$/ nocase\r\n$question = if(re.regex(additional.fields[\"trigger\"], `^(RS|RC)$`), \"Path latency\", if(re.regex(additional.fields[\"trigger\"], `^(DS|DD)$`), \"DNS response time\", if(re.regex(additional.fields[\"trigger\"], `^(TS|TH)$`), \"TLS handshake time\", if(re.regex(additional.fields[\"trigger\"], `^(QS|QH)$`), \"QUIC handshake time\",if(re.regex(additional.fields[\"trigger\"], `^(HS|HH)$`), \"HTTP request/response time\", if(additional.fields[\"trigger\"] = \"B\", \"Byte volume\", \"Other\"))))))\r\n$time_bucket = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00:00\", \"UTC\")\r\nmatch:\r\n    $time_bucket, $question\r\noutcome:\r\n    $c = sum(cast.as_int(additional.fields[\"crossings\"]))\r\norder:\r\n    $time_bucket, $c asc",
-                    "input": {
-                        "relativeTime": {
-                            "timeUnit": "DAY",
-                            "startTimeVal": "1"
-                        }
-                    },
-                    "etag": "3216fa52a475f506dc0f9ca65a2e6ce9182a6d41c1833569c37736619e8fdfe0",
-                    "dialect": "YL2"
-                },
-                {
-                    "name": "fe78cd18-f894-4371-adb5-3ee6f8573676",
+                    "name": "835c3cc6-332c-4b24-b3ee-fe982ece8c0f",
                     "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\n((additional.fields[\"trigger\"] = \"TS\" and additional.fields[\"local_entity\"] = \"false\") or additional.fields[\"trigger\"] = \"TH\")\r\n$external_entity = if(additional.fields[\"trigger\"] = \"TH\", if(principal.domain.name != \"-\", principal.domain.name, \"unknown\"), if(principal.hostname != \"-\", principal.hostname, \"unknown\"))\r\n$identified_by = if(additional.fields[\"trigger\"] = \"TH\", \"SNI\", \"External server IP\")\r\n\r\nmatch:\r\n    $external_entity, $identified_by\r\noutcome:\r\n    $crossings = sum(cast.as_float(additional.fields[\"crossings\"]))\r\n    $total_obs = sum(cast.as_float(additional.fields[\"total\"]))\r\n    $crossing_rate = math.round($crossings/$total_obs, 3)\r\n    $worst_handshake_sec = math.round(max(if(additional.fields[\"max_val\"] != \"-\" and additional.fields[\"max_val\"] != \"\", cast.as_float(additional.fields[\"max_val\"]), 0.0)), 3)\r\n    $last_seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M:%S\")\r\norder:\r\n   $crossings desc\r\nlimit:\r\n    25",
                     "input": {
                         "relativeTime": {
@@ -1794,11 +1678,23 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "7419800bb2dcb84c4c86cd1a5076bacb03011c020d16f31f1fb3130849375ea9",
+                    "etag": "fa2bad0979778eaf5722fb40e691ae8f77c0f26c992c07df3ef9bf86be770e0f",
                     "dialect": "YL2"
                 },
                 {
-                    "name": "8e82a5a9-bdec-4932-acee-b15d6973e120",
+                    "name": "656c5334-3678-464f-8d7c-21860f40ddd1",
+                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\n((additional.fields[\"trigger\"] = \"DS\" and additional.fields[\"local_entity\"] = \"false\") or additional.fields[\"trigger\"] = \"DD\")\r\n$external_entity = if(additional.fields[\"trigger\"] = \"DD\", if(principal.domain.name != \"-\", principal.domain.name, \"unknown\"), if(principal.hostname != \"-\", principal.hostname, \"unknown\"))\r\n$identified_by = if(additional.fields[\"trigger\"] = \"DD\", \"Query name\", \"External resolver IP\")\r\n\r\nmatch:\r\n    $external_entity, $identified_by\r\noutcome:\r\n    $crossings = sum(cast.as_float(additional.fields[\"crossings\"]))\r\n    $total_obs = sum(cast.as_float(additional.fields[\"total\"]))\r\n    $crossing_rate = math.round($crossings/$total_obs, 3)\r\n    $worst_resp_sec = math.round(max(if(additional.fields[\"max_val\"] != \"-\" and additional.fields[\"max_val\"] != \"\", cast.as_float(additional.fields[\"max_val\"]), 0.0)), 3)\r\n    $last_seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M:%S\")\r\norder:\r\n   $crossings desc\r\nlimit:\r\n    25",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "08f49abf75c6947c50ed2b0f8ef5cf3d31f2efa6400585b69ae03de245d755f3",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "de16997e-b743-475d-b50c-fda2b85bd470",
                     "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = /$trigger$/ nocase\r\nadditional.fields[\"local_entity\"] = \"true\"\r\ncast.as_int(additional.fields[\"crossings\"]) > 0\r\n$entity = if(principal.hostname != \"-\", principal.hostname, if(principal.domain.name != \"-\", principal.domain.name, \"unknown\"))\r\noutcome:\r\n    $Internal_Entities = count_distinct($entity)",
                     "input": {
                         "relativeTime": {
@@ -1806,11 +1702,11 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "a3d8e73895fcfc40ba623dfb0370dfb26c886901f9d3eff8e1241485429b6a2e",
+                    "etag": "532b7608a3495bac3dc8d64ef5405821803ad5dd70001ecea101e940f7aa62df",
                     "dialect": "YL2"
                 },
                 {
-                    "name": "99b9d210-9640-4b06-be26-f608bc3af8ad",
+                    "name": "966909dc-542d-4b5e-bd7f-c02b57fc2f1c",
                     "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = /$trigger$/ nocase\r\nadditional.fields[\"reply_rate\"] != \"\"\r\n$rep_r = if(cast.as_float(re.capture(additional.fields[\"reply_rate\"], `^(\\d+)/`)) != 0 and cast.as_float(re.capture(additional.fields[\"reply_rate\"], `/(\\d+)$`)) > 0, cast.as_float(re.capture(additional.fields[\"reply_rate\"], `^(\\d+)/`)), 0.0)\r\n$sent_r = if(cast.as_float(re.capture(additional.fields[\"reply_rate\"], `^(\\d+)/`)) != 0 and cast.as_float(re.capture(additional.fields[\"reply_rate\"], `/(\\d+)$`)) > 0, cast.as_float(re.capture(additional.fields[\"reply_rate\"], `/(\\d+)$`)), 1.0)\r\noutcome:\r\n    $r_sum = sum($rep_r / $sent_r)\r\n    $r_count = count($rep_r / $sent_r)\r\n    $r = math.round($r_sum* 100.0/$r_count, 1)",
                     "input": {
                         "relativeTime": {
@@ -1818,11 +1714,71 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "e0bddb55b589f9338828f5d2321fdff5165789c8290d61c55bfa26986549a0ce",
+                    "etag": "5ab5170a40bb5ceebe04b987fb994f4fc12e53c92ad0708d695b5655093dd85d",
                     "dialect": "YL2"
                 },
                 {
-                    "name": "f0c8cf4c-57a8-4b2b-b217-2c55b950827d",
+                    "name": "dc016657-3dc3-4846-aa27-45dc0775c054",
+                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = \"HS\"\r\nadditional.fields[\"local_entity\"] = \"true\"\r\n$server_ip = if(principal.hostname != \"-\", principal.hostname, \"unknown\")\r\n\r\nmatch:\r\n    $server_ip\r\noutcome:\r\n    $crossings = sum(cast.as_float(additional.fields[\"crossings\"]))\r\n    $total_obs = sum(cast.as_float(additional.fields[\"total\"]))\r\n    $crossing_rate = math.round($crossings/$total_obs, 3)\r\n    $worst_resp_sec = math.round(max(if(additional.fields[\"max_val\"] != \"-\" and additional.fields[\"max_val\"] != \"\", cast.as_float(additional.fields[\"max_val\"]), 0.0)), 3)\r\n    $last_seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M:%S\")\r\norder:\r\n    $crossings desc\r\nlimit:\r\n    25",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "cad84246546cd9cfb98d73fb71533b4877fa68e623035df4a59467e800b78acb",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "9e446251-b1f1-4720-8d53-4c3036657077",
+                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\n((additional.fields[\"trigger\"] = \"HS\" and additional.fields[\"local_entity\"] = \"false\") or additional.fields[\"trigger\"] = \"HH\")\r\n$external_entity = if(additional.fields[\"trigger\"] = \"HH\", if(principal.domain.name != \"-\", principal.domain.name, \"unknown\"), if(principal.hostname != \"-\", principal.hostname, \"unknown\"))\r\n$identified_by = if(additional.fields[\"trigger\"] = \"HH\", \"Host header\", \"External server IP\")\r\n\r\nmatch:\r\n    $external_entity, $identified_by\r\noutcome:\r\n    $crossings = sum(cast.as_float(additional.fields[\"crossings\"]))\r\n    $total_obs = sum(cast.as_float(additional.fields[\"total\"]))\r\n    $crossing_rate = math.round($crossings/$total_obs, 3)\r\n    $worst_resp_sec = math.round(max(if(additional.fields[\"max_val\"] != \"-\" and additional.fields[\"max_val\"] != \"\", cast.as_float(additional.fields[\"max_val\"]), 0.0)), 3)\r\n    $last_seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M:%S\")\r\norder:\r\n   $crossings desc\r\nlimit:\r\n    25",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "cf9f8707a9f2eb4b9efa613d2f2c5909c675423398ffb93166cc65e953ae9f5b",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "b359f4ef-f189-444b-a32b-ee04af6d9e4f",
+                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = /$trigger$/ nocase\r\n$question = if(re.regex(additional.fields[\"trigger\"], `^(RS|RC)$`), \"Path latency\", if(re.regex(additional.fields[\"trigger\"], `^(DS|DD)$`), \"DNS response time\", if(re.regex(additional.fields[\"trigger\"], `^(TS|TH)$`), \"TLS handshake time\", if(re.regex(additional.fields[\"trigger\"], `^(QS|QH)$`), \"QUIC handshake time\",if(re.regex(additional.fields[\"trigger\"], `^(HS|HH)$`), \"HTTP request/response time\", if(additional.fields[\"trigger\"] = \"B\", \"Byte volume\", \"Other\"))))))\r\n$time_bucket = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00:00\", \"UTC\")\r\nmatch:\r\n    $time_bucket, $question\r\noutcome:\r\n    $c = sum(cast.as_int(additional.fields[\"crossings\"]))\r\norder:\r\n    $time_bucket, $c asc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "0a045811e5f59432860fe1743ec7e19fe2077b0165b84fcd9304dded63cef311",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "abbd70a8-fbe4-4c70-9225-f0c44f6717c9",
+                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\n((additional.fields[\"trigger\"] = \"QS\" and additional.fields[\"local_entity\"] = \"false\") or additional.fields[\"trigger\"] = \"QH\")\r\n$external_entity = if(additional.fields[\"trigger\"] = \"QH\", if(principal.domain.name != \"-\", principal.domain.name, \"unknown\"), if(principal.hostname != \"-\", principal.hostname, \"unknown\"))\r\n$identified_by = if(additional.fields[\"trigger\"] = \"QH\", \"SNI\", \"External server IP\")\r\n\r\nmatch:\r\n    $external_entity, $identified_by\r\noutcome:\r\n    $crossings = sum(cast.as_float(additional.fields[\"crossings\"]))\r\n    $total_obs = sum(cast.as_float(additional.fields[\"total\"]))\r\n    $crossing_rate = math.round($crossings/$total_obs, 3)\r\n    $worst_handshake_sec = math.round(max(if(additional.fields[\"max_val\"] != \"-\" and additional.fields[\"max_val\"] != \"\", cast.as_float(additional.fields[\"max_val\"]), 0.0)), 3)\r\n    $last_seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M:%S\")\r\norder:\r\n   $crossings desc\r\nlimit:\r\n    25",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "45eb6254435c9c6fb9c39d854b72ac23e2bf00247b444f8f193ff727eecdf71c",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "d15c3c9d-d58d-4d04-ac5c-407aa93dc075",
+                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = \"RS\" OR additional.fields[\"trigger\"] = \"RC\"\r\nadditional.fields[\"local_entity\"] = \"true\"\r\n$host_ip = if(principal.hostname != \"-\", principal.hostname, \"unknown\")\r\n$role = if(additional.fields[\"trigger\"] = \"RS\", \"Server (RS)\", \"Client (RC)\")\r\n\r\nmatch:\r\n    $host_ip, $role\r\noutcome:\r\n    $crossings = sum(cast.as_float(additional.fields[\"crossings\"]))\r\n    $total_obs = sum(cast.as_float(additional.fields[\"total\"]))\r\n    $crossing_rate = math.round($crossings/$total_obs, 3)\r\n    $worst_rtt_sec = math.round(max(if(additional.fields[\"max_val\"] != \"-\" and additional.fields[\"max_val\"] != \"\", cast.as_float(additional.fields[\"max_val\"]), 0.0)), 3)\r\n    $last_seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M:%S\")\r\norder:\r\n    $crossings desc\r\nlimit:\r\n    25",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "9e8696809ac53c4bf15ea8f3ac3aa22a15c57e5e999de9b8712ec6393990a72d",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "4507feca-5668-447b-8f0b-b87d03db8aa0",
                     "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = \"QS\"\r\nadditional.fields[\"local_entity\"] = \"true\"\r\n$server_ip = if(principal.hostname != \"-\", principal.hostname, \"unknown\")\r\n\r\nmatch:\r\n    $server_ip\r\noutcome:\r\n    $crossings = sum(cast.as_float(additional.fields[\"crossings\"]))\r\n    $total_obs = sum(cast.as_float(additional.fields[\"total\"]))\r\n    $crossing_rate = math.round($crossings/$total_obs, 3)\r\n    $worst_handshake_sec = math.round(max(if(additional.fields[\"max_val\"] != \"-\" and additional.fields[\"max_val\"] != \"\", cast.as_float(additional.fields[\"max_val\"]), 0.0)), 3)\r\n    $last_seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M:%S\")\r\norder:\r\n    $crossings desc\r\nlimit:\r\n    25",
                     "input": {
                         "relativeTime": {
@@ -1830,23 +1786,35 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "395ca9fdbfbfd2af1c1b0121209418bc6336df158d586ef84d2be3952d0b78ff",
+                    "etag": "4ea173ef51a162430b6d20c3d1180cd29ab00e8ec7b1f897ad0a4f2529688a85",
                     "dialect": "YL2"
                 },
                 {
-                    "name": "a72e17b6-49e1-48d3-82e5-b87b9349139f",
-                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = \"B\"\r\nadditional.fields[\"local_entity\"] = \"false\"\r\n$host_ip = if(principal.hostname != \"-\", principal.hostname, \"unknown\")\r\n\r\nmatch:\r\n    $host_ip\r\noutcome:\r\n    $crossings = sum(cast.as_float(additional.fields[\"crossings\"]))\r\n    $total_obs = sum(cast.as_float(additional.fields[\"total\"]))\r\n    $sent_bytes = math.round(sum(network.sent_bytes)/1073741824, 2)\r\n    $recv_bytes = math.round(sum(network.received_bytes)/1073741824, 2)\r\n    $crossing_rate = math.round($crossings/$total_obs, 3)\r\n    $last_seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M:%S\")\r\norder:\r\n   $recv_bytes desc\r\nlimit:\r\n    25",
+                    "name": "09592e8f-dce5-4262-bd58-bf44878709a1",
+                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = \"TS\"\r\nadditional.fields[\"local_entity\"] = \"true\"\r\n$server_ip = if(principal.hostname != \"-\", principal.hostname, \"unknown\")\r\n\r\nmatch:\r\n    $server_ip\r\noutcome:\r\n    $crossings = sum(cast.as_float(additional.fields[\"crossings\"]))\r\n    $total_obs = sum(cast.as_float(additional.fields[\"total\"]))\r\n    $crossing_rate = math.round($crossings/$total_obs, 3)\r\n    $worst_handshake_sec = math.round(max(if(additional.fields[\"max_val\"] != \"-\" and additional.fields[\"max_val\"] != \"\", cast.as_float(additional.fields[\"max_val\"]), 0.0)), 3)\r\n    $last_seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M:%S\")\r\norder:\r\n   $crossings desc\r\nlimit:\r\n    25",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "b6f5b5cdd969c576e431f22db55b8cfacbc5c6823913d8f3993c9bb1bf21c05c",
+                    "etag": "90e5b0155b86884d806f63b7ca7fda2f778200bab1fe0e56d854e215ea46dca7",
                     "dialect": "YL2"
                 },
                 {
-                    "name": "250f43e3-df96-480d-81f9-c79a375a116c",
+                    "name": "2391a448-f25e-4022-98af-bfc2a07d039a",
+                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = \"DS\"\r\nadditional.fields[\"local_entity\"] = \"true\"\r\n$resolver_ip = if(principal.hostname != \"-\", principal.hostname, \"unknown\")\r\n\r\nmatch:\r\n    $resolver_ip\r\noutcome:\r\n    $crossings = sum(cast.as_float(additional.fields[\"crossings\"]))\r\n    $total_obs = sum(cast.as_float(additional.fields[\"total\"]))\r\n    $crossing_rate = math.round($crossings/$total_obs, 3)\r\n    $worst_resp_sec = math.round(max(if(additional.fields[\"max_val\"] != \"-\" and additional.fields[\"max_val\"] != \"\", cast.as_float(additional.fields[\"max_val\"]), 0.0)), 3)\r\n    $last_seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M:%S\")\r\norder:\r\n   $crossings desc\r\nlimit:\r\n    25",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "1f6dc3ac25265f2b1e282217d0bd52b08aa1465cad4720ade7b54526ae331f3c",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "1106c701-931e-41ae-9392-4a4a0f641d9b",
                     "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = /$trigger$/ nocase\r\noutcome:\r\n    $total_crossings = sum(cast.as_int(additional.fields[\"crossings\"]))",
                     "input": {
                         "relativeTime": {
@@ -1854,7 +1822,67 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "2221d0cbb50ebf5397f0600a6f2c74217627b6aeabf6aa99caa003a3518c163e",
+                    "etag": "395b012b8d96809420304debaa30a15e10de5fb22d1dc77654c7907e8d2a947f",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "1a6c6ec2-9086-45fd-ae94-314a37a65b55",
+                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = /$trigger$/ nocase\r\n$question = if(re.regex(additional.fields[\"trigger\"], `^(RS|RC)$`), \"Path latency\", if(re.regex(additional.fields[\"trigger\"], `^(DS|DD)$`), \"DNS response time\", if(re.regex(additional.fields[\"trigger\"], `^(TS|TH)$`), \"TLS handshake time\", if(re.regex(additional.fields[\"trigger\"], `^(QS|QH)$`), \"QUIC handshake time\",if(re.regex(additional.fields[\"trigger\"], `^(HS|HH)$`), \"HTTP request/response time\", if(additional.fields[\"trigger\"] = \"B\", \"Byte volume\", \"Other\"))))))\r\nmatch:\r\n    $question\r\noutcome:\r\n    $c = sum(cast.as_int(additional.fields[\"crossings\"]))\r\n    $a = arrays.index_to_str(array_distinct(if(re.regex(additional.fields[\"trigger\"], `^(RS|RC)$`), \"Path latency\", if(re.regex(additional.fields[\"trigger\"], `^(DS|DD)$`), \"DNS response time\", if(re.regex(additional.fields[\"trigger\"], `^(TS|TH)$`), \"TLS handshake time\", if(re.regex(additional.fields[\"trigger\"], `^(QS|QH)$`), \"QUIC handshake time\",if(re.regex(additional.fields[\"trigger\"], `^(HS|HH)$`), \"HTTP request/response time\", if(additional.fields[\"trigger\"] = \"B\", \"Byte volume\", \"Other\"))))))), 0)\r\n    $top_question = strings.concat($a, \" (\", cast.as_string($c), \")\")\r\norder:\r\n    $c desc\r\nlimit:\r\n    1",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "d15f7c4e5ae75d0caa2164bc5404af9caa0966bd97bb622e50b882d94d884997",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "0c234d1a-8918-4b8c-99c0-93cfac714fd8",
+                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = /$trigger$/ nocase\r\n$performance_question = if(additional.fields[\"trigger\"] = \"RS\", \"Server RTT (path latency)\", if(additional.fields[\"trigger\"] = \"RC\", \"Client RTT (path latency)\", if(additional.fields[\"trigger\"] = \"DS\", \"DNS response time (by resolver)\", if(additional.fields[\"trigger\"] = \"DD\", \"DNS response time (by domain)\", if(additional.fields[\"trigger\"] = \"TS\", \"TLS handshake (by server IP)\", if(additional.fields[\"trigger\"] = \"TH\", \"TLS handshake (by SNI)\", if(additional.fields[\"trigger\"] = \"QS\", \"QUIC handshake (by server IP)\", if(additional.fields[\"trigger\"] = \"QH\", \"QUIC handshake (by SNI)\", if(additional.fields[\"trigger\"] = \"HS\", \"HTTP request/response (by server IP)\", if(additional.fields[\"trigger\"] = \"HH\", \"HTTP request/response (by Host header)\", if(additional.fields[\"trigger\"] = \"B\", \"IP byte volume\", \"Unknown\")))))))))))\r\n$uid = network.session_id\r\nmatch:\r\n    $uid\r\noutcome:\r\n    $performance_question_out = array_distinct($performance_question)\r\n    $scope = array_distinct(if(additional.fields[\"local_entity\"] = \"true\", \"Internal\", if(additional.fields[\"local_entity\"] = \"false\", \"External\", if(re.regex(additional.fields[\"trigger\"], `^(DD|TH|QH|HH)$`), \"External (name-based)\", \"Unknown\"))))\r\n    $entity = array_distinct(if(principal.domain.name != \"-\", principal.domain.name, if(principal.hostname != \"-\", principal.hostname, \"unknown\")))\r\n    $crossings = max(cast.as_float(additional.fields[\"crossings\"]))\r\n    $total_obs = max(cast.as_float(additional.fields[\"total\"]))\r\n    $worst_value = math.round(max(if(additional.fields[\"max_val\"] != \"-\" and additional.fields[\"max_val\"] != \"\", cast.as_float(additional.fields[\"max_val\"]), 0.0)), 3)\r\n    $window = max(network.session_duration.seconds)\r\n    $reply_rate = array_distinct(additional.fields[\"reply_rate\"])\r\n    $sensor = array_distinct(observer.hostname)\r\n    $when = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M:%S\")\r\n    $target_dashboard = array_distinct(if(re.regex($performance_question, `^DNS`), \"corelight_data_dns\", if(re.regex($performance_question, `^HTTP`), \"corelight_data_http\", if(re.regex($performance_question, `^TLS`), \"corelight_data_ssl\", if(re.regex($performance_question, `^QUIC|^IP`), \"corelight_data_connections\", \"unknown\")))))\r\norder:\r\n    $when desc\r\nlimit:\r\n    500",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "7608cc555c43664c1a46cf3beeb9dd78c49ecd45922240fd0408a052e99a967d",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "ad9215ab-3321-402f-aa08-7e840a45c7c1",
+                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = \"B\"\r\nadditional.fields[\"local_entity\"] = \"false\"\r\n$host_ip = if(principal.hostname != \"-\", principal.hostname, \"unknown\")\r\n\r\nmatch:\r\n    $host_ip\r\noutcome:\r\n    $crossings = sum(cast.as_float(additional.fields[\"crossings\"]))\r\n    $total_obs = sum(cast.as_float(additional.fields[\"total\"]))\r\n    $sent_bytes = math.round(sum(network.sent_bytes)/1073741824, 2)\r\n    $recv_bytes = math.round(sum(network.received_bytes)/1073741824, 2)\r\n    $crossing_rate = math.round($crossings/$total_obs, 3)\r\n    $last_seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M:%S\")\r\norder:\r\n   $recv_bytes desc\r\nlimit:\r\n    25",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "666872fead7f79339f83ebb2d6d899abd363af8f665207ace6ea72ed8b43f44b",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "f4b93a11-748d-4051-9d17-56eeaaec922b",
+                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = \"B\"\r\nadditional.fields[\"local_entity\"] = \"true\"\r\n$host_ip = if(principal.hostname != \"-\", principal.hostname, \"unknown\")\r\n\r\nmatch:\r\n    $host_ip\r\noutcome:\r\n    $crossings = sum(cast.as_float(additional.fields[\"crossings\"]))\r\n    $total_obs = sum(cast.as_float(additional.fields[\"total\"]))\r\n    $sent_bytes = math.round(sum(network.sent_bytes)/1073741824, 2)\r\n    $recv_bytes = math.round(sum(network.received_bytes)/1073741824, 2)\r\n    $crossing_rate = math.round($crossings/$total_obs, 3)\r\n    $last_seen = timestamp.get_timestamp(max(metadata.event_timestamp.seconds), \"%Y-%m-%d %H:%M:%S\")\r\norder:\r\n   $sent_bytes desc\r\nlimit:\r\n    25",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "8593284f559f259de62db999318dd8e43216bf2a13dfa916b03a9d8c2ed941a0",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "24c7285d-907f-4fec-8675-5e880d9949f6",
+                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"net_perf\"\r\nobserver.hostname = /$sensor$/ nocase\r\nadditional.fields[\"trigger\"] = /$trigger$/ nocase\r\n$question = if(re.regex(additional.fields[\"trigger\"], `^(RS|RC)$`), \"Path latency\", if(re.regex(additional.fields[\"trigger\"], `^(DS|DD)$`), \"DNS response time\", if(re.regex(additional.fields[\"trigger\"], `^(TS|TH)$`), \"TLS handshake time\", if(re.regex(additional.fields[\"trigger\"], `^(QS|QH)$`), \"QUIC handshake time\",if(re.regex(additional.fields[\"trigger\"], `^(HS|HH)$`), \"HTTP request/response time\", if(additional.fields[\"trigger\"] = \"B\", \"Byte volume\", \"Other\"))))))\r\n$scope = if(additional.fields[\"local_entity\"] = \"true\", \"Internal Entity\", if(additional.fields[\"local_entity\"] = \"false\", \"External Entity\", if(re.regex(additional.fields[\"trigger\"], `^(DD|TH|QH|HH)$`), \"External Entity\", \"Unknown\")))\r\nmatch:\r\n    $question, $scope\r\noutcome:\r\n    $crossings = sum(cast.as_int(additional.fields[\"crossings\"]))\r\norder:\r\n    $crossings asc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "6b5cfcd8c6c0be3804bf46c531f2471dc04519e80270eb23cb7d224a69375af7",
                     "dialect": "YL2"
                 }
             ]

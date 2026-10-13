@@ -2,7 +2,7 @@
     "dashboards": [
         {
             "dashboard": {
-                "name": "195aecb0-fafd-4157-9a4d-8ce3a595562d",
+                "name": "4d52bbe3-0e56-4ac0-8d43-f212d219b831",
                 "displayName": "Corelight → Data Insights → AI Detection & Response",
                 "definition": {
                     "filters": [
@@ -20,18 +20,18 @@
                             ],
                             "displayName": "Global Time Filter",
                             "chartIds": [
-                                "735d921b-7425-4538-aec9-162e0df02eda",
-                                "e536b7e4-abcd-4834-a40c-0334270affa0",
-                                "10752308-5dd1-4d61-84be-6749ba6fe715",
-                                "24863341-7a0a-4db3-ad68-4a037b8c2e11",
-                                "68b9b3c7-c1aa-4537-9838-04374b0892de",
-                                "605de33e-48a7-47a9-bee9-502be2e4db30",
-                                "0d606cb9-4aaf-45bb-b5a2-8c1d7cf811d5",
-                                "d713429d-1463-40a4-b558-44a4c15383a8",
-                                "5196387e-8bd7-4f06-ab45-1612a1cf1bab",
-                                "6873b54a-5c89-4ef7-b0e8-df2b89e49918",
-                                "1f74e184-9651-4e67-8dc2-589b428494bf",
-                                "7ee48e98-7aa8-4a71-a908-81650e90d56a"
+                                "129212de-57ed-43b0-a607-efea9eed7623",
+                                "311e4a1a-3e43-45a2-b70e-207c8453adc5",
+                                "2a298798-de6c-4a35-8afa-036b7bd829cd",
+                                "c3726249-1c42-4dcc-9f9c-6f3142e16a29",
+                                "38fa26d5-2066-493c-9fb0-e3ab04c5b98f",
+                                "2c7938a0-99ee-4d0d-9869-2b3953b17bb1",
+                                "4e9edfc8-d96b-4e2a-89a9-0a4c553d5eda",
+                                "9edc7adc-ce6b-46ad-abd2-7b0090c7edc6",
+                                "6cb906ce-a1b2-49c2-9ad9-b010ea9f8055",
+                                "2a9dbc2d-f466-4115-99f2-d31107f6999f",
+                                "7ae7f1cf-f5a2-42db-bd4e-741aed3dcffe",
+                                "ca987523-0aea-4b99-9c34-6d81ea22093e"
                             ],
                             "isStandardTimeRangeFilter": true,
                             "isStandardTimeRangeFilterEnabled": true
@@ -71,7 +71,7 @@
                                 ],
                                 "valueSource": {
                                     "queryOptions": {
-                                        "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.application in %corelight_ai_apps\r\n$risk_tier = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun|openrouter|litellm|braintrust|portkey|helicone)$`), \"High\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q|crewai|zapier-ai|mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai|chatgpt|google-gemini|claude|anthropic|openai|midjourney|stability-ai|runwayml|elevenlabs|pēika|synthesia|suno|udio|langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"Medium\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai|microsoft-copilot|you-ai|phind|character-ai|kagi|nvidia-ngc|gpt4all|scale-ai|datarobot|adobe-firefly|poe|leonardo-ai|lakera|arthur-ai)$`), \"Low\", \"Unknown\")))\r\nmatch:\r\n    $risk_tier",
+                                        "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nabout.namespace in %corelight_ai_apps\r\n$risk_tier = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun|openrouter|litellm|braintrust|portkey|helicone)$`), \"High\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q|crewai|zapier-ai|mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai|chatgpt|google-gemini|claude|anthropic|openai|midjourney|stability-ai|runwayml|elevenlabs|pika|synthesia|suno|udio|langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"Medium\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai|microsoft-copilot|you-ai|phind|character-ai|kagi|nvidia-ngc|gpt4all|scale-ai|datarobot|adobe-firefly|poe|leonardo-ai|lakera|arthur-ai)$`), \"Low\", \"Unknown\")))\r\nmatch:\r\n    $risk_tier",
                                         "column": "risk_tier",
                                         "globalTimeFilterEnabled": true,
                                         "input": {},
@@ -83,7 +83,7 @@
                     ],
                     "charts": [
                         {
-                            "dashboardChart": "735d921b-7425-4538-aec9-162e0df02eda",
+                            "dashboardChart": "129212de-57ed-43b0-a607-efea9eed7623",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 32,
@@ -95,7 +95,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "24863341-7a0a-4db3-ad68-4a037b8c2e11",
+                            "dashboardChart": "c3726249-1c42-4dcc-9f9c-6f3142e16a29",
                             "chartLayout": {
                                 "startX": 64,
                                 "spanX": 32,
@@ -107,7 +107,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "68b9b3c7-c1aa-4537-9838-04374b0892de",
+                            "dashboardChart": "38fa26d5-2066-493c-9fb0-e3ab04c5b98f",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 57,
@@ -119,7 +119,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "d713429d-1463-40a4-b558-44a4c15383a8",
+                            "dashboardChart": "9edc7adc-ce6b-46ad-abd2-7b0090c7edc6",
                             "chartLayout": {
                                 "startX": 57,
                                 "spanX": 39,
@@ -131,7 +131,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "e536b7e4-abcd-4834-a40c-0334270affa0",
+                            "dashboardChart": "311e4a1a-3e43-45a2-b70e-207c8453adc5",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -143,7 +143,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "605de33e-48a7-47a9-bee9-502be2e4db30",
+                            "dashboardChart": "2c7938a0-99ee-4d0d-9869-2b3953b17bb1",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 48,
@@ -155,7 +155,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "0d606cb9-4aaf-45bb-b5a2-8c1d7cf811d5",
+                            "dashboardChart": "4e9edfc8-d96b-4e2a-89a9-0a4c553d5eda",
                             "chartLayout": {
                                 "startX": 48,
                                 "spanX": 48,
@@ -167,7 +167,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "10752308-5dd1-4d61-84be-6749ba6fe715",
+                            "dashboardChart": "2a298798-de6c-4a35-8afa-036b7bd829cd",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -179,7 +179,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "5196387e-8bd7-4f06-ab45-1612a1cf1bab",
+                            "dashboardChart": "6cb906ce-a1b2-49c2-9ad9-b010ea9f8055",
                             "chartLayout": {
                                 "startX": 32,
                                 "spanX": 32,
@@ -191,7 +191,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "e5447fcf-5f90-410d-a65a-f613455bf602",
+                            "dashboardChart": "6187e242-54bf-42c2-a85c-95d29c8d334c",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -200,7 +200,7 @@
                             }
                         },
                         {
-                            "dashboardChart": "2989591e-3014-49a4-830e-32479c8f2f8d",
+                            "dashboardChart": "c9f64bbb-945b-4814-89e4-dda2ffbfe3e0",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -209,7 +209,7 @@
                             }
                         },
                         {
-                            "dashboardChart": "6873b54a-5c89-4ef7-b0e8-df2b89e49918",
+                            "dashboardChart": "2a9dbc2d-f466-4115-99f2-d31107f6999f",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 42,
@@ -221,7 +221,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "1f74e184-9651-4e67-8dc2-589b428494bf",
+                            "dashboardChart": "7ae7f1cf-f5a2-42db-bd4e-741aed3dcffe",
                             "chartLayout": {
                                 "startX": 42,
                                 "spanX": 54,
@@ -233,7 +233,7 @@
                             ]
                         },
                         {
-                            "dashboardChart": "7ee48e98-7aa8-4a71-a908-81650e90d56a",
+                            "dashboardChart": "ca987523-0aea-4b99-9c34-6d81ea22093e",
                             "chartLayout": {
                                 "startX": 0,
                                 "spanX": 96,
@@ -247,16 +247,16 @@
                     ]
                 },
                 "type": "CUSTOM",
-                "etag": "07242be5c61a7ed8f5747867927d6c239a2fc10faff9689075ba19a180fef828",
+                "etag": "600e386168f3e41da3073fc715c9a89657267176c7072749ac7c862fd21d020b",
                 "access": "DASHBOARD_PRIVATE"
             },
             "dashboardCharts": [
                 {
-                    "name": "0d606cb9-4aaf-45bb-b5a2-8c1d7cf811d5",
-                    "displayName": "Usage by Network Segment",
-                    "description": "Maps internal /24 subnets to GenAI applications they connect to, revealing adoption patterns by network segment.",
+                    "name": "2a298798-de6c-4a35-8afa-036b7bd829cd",
+                    "displayName": "Anomalous GenAI Activity Timeline",
+                    "description": "Scatter plot correlating GenAI connection volume with anomaly scores from Corelight's app_id use case. Points with high item_score indicate statistically unusual activity for that application.",
                     "chartDatasource": {
-                        "dashboardQuery": "8d1f55d5-4f40-4613-bd14-1996a1df40a5",
+                        "dashboardQuery": "caa2eadb-1ae4-4e02-b38f-9e54ce75d628",
                         "dataSources": [
                             "UDM"
                         ]
@@ -264,48 +264,65 @@
                     "visualization": {
                         "series": [
                             {
-                                "seriesType": "SANKEY",
-                                "encode": {},
-                                "dataLabel": {},
-                                "sankeyLevels": [
-                                    {
-                                        "source": "segment",
-                                        "target": "app",
-                                        "value": "count"
-                                    }
-                                ]
+                                "seriesType": "SCATTERPLOT",
+                                "encode": {
+                                    "x": "event_time",
+                                    "y": "item_score"
+                                },
+                                "dataLabel": {}
                             }
                         ],
                         "xAxes": [
                             {
-                                "axisType": "VALUE"
+                                "axisType": "CATEGORY",
+                                "displayName": "Time"
                             }
                         ],
                         "yAxes": [
                             {
-                                "axisType": "VALUE"
+                                "axisType": "CATEGORY",
+                                "displayName": "Anomaly Score"
                             }
                         ],
                         "legends": [
                             {
-                                "legendOrient": "HORIZONTAL"
+                                "right": 12,
+                                "legendOrient": "VERTICAL"
                             }
                         ],
-                        "groupingType": "Off"
+                        "seriesColumn": [
+                            "total_bytes_kb"
+                        ],
+                        "groupingType": "Grouped"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "3309e8a17e8b7404af7e6523ae07170d76f4a42f6c8403289d048574f7bc9a67",
-                    "drillDownConfig": {},
+                    "etag": "2b861ebb85cd50c8fec3b3f2bfb53b2321479835028b294b99b7d07221b24add",
+                    "drillDownConfig": {
+                        "leftDrillDowns": [
+                            {
+                                "id": "49230F8D-4DCB-4A1B-91D1-156761EF2564",
+                                "displayName": "Run Search on Display Entity",
+                                "customSettings": {
+                                    "newTab": true,
+                                    "leftClickColumn": "display_entity",
+                                    "query": {
+                                        "query": "re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\") = ${display_entity}",
+                                        "dialect": "YL2"
+                                    }
+                                }
+                            }
+                        ]
+                    },
                     "tokens": [
                         "sensor"
                     ]
                 },
                 {
-                    "name": "5196387e-8bd7-4f06-ab45-1612a1cf1bab",
+                    "name": "6cb906ce-a1b2-49c2-9ad9-b010ea9f8055",
                     "displayName": "Unique GenAI Tools",
                     "description": "Count of distinct GenAI application identifiers observed in network traffic.",
                     "chartDatasource": {
-                        "dashboardQuery": "c7dd6443-b66b-4a73-82f2-aa8c533be97b",
+                        "dashboardQuery": "b35a6bd7-5b09-4480-9eb9-8764ea1ffa6e",
                         "dataSources": [
                             "UDM"
                         ]
@@ -341,7 +358,7 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "2140669ce5ea528cbf5e6603da27294d8324f942b9031b6c8c83ee21cbf5327d",
+                    "etag": "38d209a17ef77b94982f1e15aac090d0d4dab18f4ff41581a7b27d2c5569de8a",
                     "drillDownConfig": {},
                     "tokens": [
                         "sensor",
@@ -349,220 +366,11 @@
                     ]
                 },
                 {
-                    "name": "d713429d-1463-40a4-b558-44a4c15383a8",
-                    "displayName": "GenAI Distribution",
-                    "description": "Pie chart showing the proportion of GenAI connections by application, filtered by risk tier.",
-                    "chartDatasource": {
-                        "dashboardQuery": "813671cb-a9e0-4da9-84d1-d7ae8f7d1dfa",
-                        "dataSources": [
-                            "UDM"
-                        ]
-                    },
-                    "visualization": {
-                        "series": [
-                            {
-                                "seriesType": "PIE",
-                                "encode": {
-                                    "value": "count",
-                                    "itemName": "app"
-                                },
-                                "dataLabel": {
-                                    "show": true
-                                },
-                                "radius": [
-                                    "40%",
-                                    "70%"
-                                ],
-                                "itemStyle": {
-                                    "color": "b=>{var {map:c}=w0(this.theme);b=P$e(b,yVf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;var d;return(d=\nc.get(b.color))!=null?d:b.color}"
-                                },
-                                "itemColors": {
-                                    "colors": [
-                                        {
-                                            "key": "http",
-                                            "value": {
-                                                "color": "#1a73e8",
-                                                "label": "http"
-                                            }
-                                        },
-                                        {
-                                            "key": "ssl",
-                                            "value": {
-                                                "color": "#eb730a",
-                                                "label": "ssl"
-                                            }
-                                        },
-                                        {
-                                            "key": "dns",
-                                            "value": {
-                                                "color": "#10a3b7",
-                                                "label": "dns"
-                                            }
-                                        },
-                                        {
-                                            "key": "ssh",
-                                            "value": {
-                                                "color": "#ec453b",
-                                                "label": "ssh"
-                                            }
-                                        },
-                                        {
-                                            "key": "ftp",
-                                            "value": {
-                                                "color": "#e51f8f",
-                                                "label": "ftp"
-                                            }
-                                        }
-                                    ]
-                                }
-                            }
-                        ],
-                        "xAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "yAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "legends": [
-                            {
-                                "top": 12,
-                                "legendOrient": "HORIZONTAL"
-                            }
-                        ],
-                        "groupingType": "Off"
-                    },
-                    "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "f2234cf6a282233edc7df8e80fe6d0e723a63dc5d3d570912b01333ae21c3542",
-                    "drillDownConfig": {},
-                    "tokens": [
-                        "risk",
-                        "sensor"
-                    ]
-                },
-                {
-                    "name": "e536b7e4-abcd-4834-a40c-0334270affa0",
-                    "displayName": "Outbound GenAI Outliers (Avg Bytes vs Duration)",
-                    "description": "Scatter plot of bytes sent vs connection duration per GenAI application, useful for spotting unusually large uploads or long-lived sessions.",
-                    "chartDatasource": {
-                        "dashboardQuery": "19896a98-b862-4200-b527-e0b3eab4fa61",
-                        "dataSources": [
-                            "UDM"
-                        ]
-                    },
-                    "visualization": {
-                        "series": [
-                            {
-                                "seriesType": "SCATTERPLOT",
-                                "encode": {
-                                    "x": "duration",
-                                    "y": "bytes_out"
-                                },
-                                "dataLabel": {}
-                            }
-                        ],
-                        "xAxes": [
-                            {
-                                "axisType": "CATEGORY",
-                                "displayName": "Duration"
-                            }
-                        ],
-                        "yAxes": [
-                            {
-                                "axisType": "CATEGORY",
-                                "displayName": "Bytes Out (MB)"
-                            }
-                        ],
-                        "legends": [
-                            {
-                                "top": 12,
-                                "legendOrient": "HORIZONTAL"
-                            }
-                        ],
-                        "seriesColumn": [
-                            "app"
-                        ],
-                        "groupingType": "Grouped"
-                    },
-                    "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "a410774ee895f756dfe3f3587021f4e4e157dd8b0b64c3fbec7d522e08ec7814",
-                    "drillDownConfig": {},
-                    "tokens": [
-                        "risk",
-                        "sensor"
-                    ]
-                },
-                {
-                    "name": "e5447fcf-5f90-410d-a65a-f613455bf602",
-                    "displayName": "markdown",
-                    "visualization": {
-                        "markdown": {
-                            "content": "# AI Governance & Shadow AI Risk",
-                            "properties": {
-                                "backgroundColor": "#671440"
-                            }
-                        }
-                    },
-                    "tileType": "TILE_TYPE_MARKDOWN",
-                    "etag": "36aca7f3c7193032250b0f37f87dca4f937e3d9e2a670d1893861d225fde8e2e"
-                },
-                {
-                    "name": "735d921b-7425-4538-aec9-162e0df02eda",
-                    "displayName": "Total GenAI Connections",
-                    "description": "Total number of connections to known GenAI services within the selected time window.",
-                    "chartDatasource": {
-                        "dashboardQuery": "bad79468-9527-4425-bea7-7dc9f63e0033",
-                        "dataSources": [
-                            "UDM"
-                        ]
-                    },
-                    "visualization": {
-                        "series": [
-                            {
-                                "seriesType": "TEXT",
-                                "label": " ",
-                                "field": "total_connections",
-                                "metricTrendConfig": {
-                                    "metricFormat": "METRIC_FORMAT_NUMBER",
-                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
-                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
-                                }
-                            }
-                        ],
-                        "xAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "yAxes": [
-                            {
-                                "axisType": "VALUE"
-                            }
-                        ],
-                        "legends": [
-                            {
-                                "legendOrient": "HORIZONTAL"
-                            }
-                        ],
-                        "groupingType": "Off"
-                    },
-                    "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "c53aa38dae251ed1b018ecc6380be0338f7260002e5d36fbc0e1b48528903007",
-                    "drillDownConfig": {},
-                    "tokens": [
-                        "risk",
-                        "sensor"
-                    ]
-                },
-                {
-                    "name": "6873b54a-5c89-4ef7-b0e8-df2b89e49918",
+                    "name": "2a9dbc2d-f466-4115-99f2-d31107f6999f",
                     "displayName": "Top Internal Users (GenAI Connections)",
                     "description": "Top internal host IPs ranked by number of connections to GenAI services, highlighting the heaviest users.",
                     "chartDatasource": {
-                        "dashboardQuery": "79095999-a21b-4a73-bf64-36a0e894cb29",
+                        "dashboardQuery": "9b43943c-6d7a-475a-bb27-85479e0aa642",
                         "dataSources": [
                             "UDM"
                         ]
@@ -583,64 +391,29 @@
                                     "70%"
                                 ],
                                 "itemStyle": {
-                                    "color": "b=>{var {map:c}=w0(this.theme);b=P$e(b,yVf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;var d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                    "color": "b=>{var {map:c}=rY(this.theme);b=dwe(b,jkf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;var d;return(d=\nc.get(b.color))!=null?d:b.color}"
                                 },
                                 "itemColors": {
                                     "colors": [
                                         {
-                                            "key": "172.20.241.14",
+                                            "key": "10.50.22.11",
                                             "value": {
                                                 "color": "#1a73e8",
-                                                "label": "172.20.241.14"
-                                            }
-                                        },
-                                        {
-                                            "key": "192.168.100.55",
-                                            "value": {
-                                                "color": "#eb730a",
-                                                "label": "192.168.100.55"
-                                            }
-                                        },
-                                        {
-                                            "key": "172.27.0.88",
-                                            "value": {
-                                                "color": "#10a3b7",
-                                                "label": "172.27.0.88"
-                                            }
-                                        },
-                                        {
-                                            "key": "10.50.21.9",
-                                            "value": {
-                                                "color": "#ec453b",
-                                                "label": "10.50.21.9"
-                                            }
-                                        },
-                                        {
-                                            "key": "10.50.20.14",
-                                            "value": {
-                                                "color": "#e51f8f",
-                                                "label": "10.50.20.14"
-                                            }
-                                        },
-                                        {
-                                            "key": "10.110.100.22",
-                                            "value": {
-                                                "color": "#923ef9",
-                                                "label": "10.110.100.22"
-                                            }
-                                        },
-                                        {
-                                            "key": "172.27.0.145",
-                                            "value": {
-                                                "color": "#4aa207",
-                                                "label": "172.27.0.145"
+                                                "label": "10.50.22.11"
                                             }
                                         },
                                         {
                                             "key": "10.110.100.5",
                                             "value": {
-                                                "color": "#5350fb",
+                                                "color": "#eb730a",
                                                 "label": "10.110.100.5"
+                                            }
+                                        },
+                                        {
+                                            "key": "172.27.0.200",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "172.27.0.200"
                                             }
                                         }
                                     ]
@@ -666,7 +439,7 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "9df8b0888521196f890f1082fe3eb7a9049974ffdb230fce66a2217ea6fa9e7a",
+                    "etag": "44bec4ea7a7b1a9f56f1fcca0fc85fc2c3d106ba8a904433d689f27d74fb087b",
                     "drillDownConfig": {},
                     "tokens": [
                         "sensor",
@@ -674,11 +447,11 @@
                     ]
                 },
                 {
-                    "name": "605de33e-48a7-47a9-bee9-502be2e4db30",
+                    "name": "2c7938a0-99ee-4d0d-9869-2b3953b17bb1",
                     "displayName": "Top GenAI Tools by Bytes Transferred",
                     "description": "Stacked bar chart ranking GenAI applications by total bytes sent and received, identifying the highest-volume data transfer targets.",
                     "chartDatasource": {
-                        "dashboardQuery": "a7e6df0f-276e-43a6-ae52-ea266817693c",
+                        "dashboardQuery": "46e20df4-d025-4a39-b811-61e6f5a8df5c",
                         "dataSources": [
                             "UDM"
                         ]
@@ -716,7 +489,7 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "02783a3a123ccecf1127df21c5616d63f65e488334d2bab5b3cc2ea7da3a51fb",
+                    "etag": "53cdd451d9076f6e7d5a13fd1f1b3ce60d9d375b698e5791366b9ec3ec68d9af",
                     "drillDownConfig": {
                         "leftDrillDowns": [
                             {
@@ -734,11 +507,11 @@
                     ]
                 },
                 {
-                    "name": "24863341-7a0a-4db3-ad68-4a037b8c2e11",
+                    "name": "c3726249-1c42-4dcc-9f9c-6f3142e16a29",
                     "displayName": "Active Internal Hosts",
                     "description": "Count of distinct internal source IPs communicating with GenAI services.",
                     "chartDatasource": {
-                        "dashboardQuery": "7db8cd3a-6cc7-43a5-ac18-8861534bbeab",
+                        "dashboardQuery": "130a775d-a39b-4fad-940b-3555e8dc2739",
                         "dataSources": [
                             "UDM"
                         ]
@@ -774,7 +547,7 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "59bf45791593aada21bc3b927ca91ebfb69b85fc9bd7dff71e82cb5e3e9c5998",
+                    "etag": "693571293d499d5935cf959bff3f644d2668a56573d888c70ed276d65e2eb742",
                     "drillDownConfig": {},
                     "tokens": [
                         "risk",
@@ -782,7 +555,7 @@
                     ]
                 },
                 {
-                    "name": "2989591e-3014-49a4-830e-32479c8f2f8d",
+                    "name": "c9f64bbb-945b-4814-89e4-dda2ffbfe3e0",
                     "displayName": "markdown",
                     "visualization": {
                         "markdown": {
@@ -793,14 +566,14 @@
                         }
                     },
                     "tileType": "TILE_TYPE_MARKDOWN",
-                    "etag": "cc2a4c1f4ff8d2998110f757081f1c7a30393c7c768490dee1db96b2bfc54370"
+                    "etag": "6c8983546f8eb9da654b401b06a5971f3fab575012acd53144e5a6bf607a9320"
                 },
                 {
-                    "name": "1f74e184-9651-4e67-8dc2-589b428494bf",
+                    "name": "7ae7f1cf-f5a2-42db-bd4e-741aed3dcffe",
                     "displayName": "Vendor Risk by Corporate Origin",
                     "description": "Stacked bar chart showing connection volume grouped by risk tier and corporate origin category.",
                     "chartDatasource": {
-                        "dashboardQuery": "4cb65226-b89e-40de-9d25-4b9901de8621",
+                        "dashboardQuery": "c785630d-03b9-4447-87a0-9c01ac9cfda3",
                         "dataSources": [
                             "UDM"
                         ]
@@ -840,7 +613,7 @@
                         "groupingType": "Grouped"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "02c69f5787f92438575bb68e09fe397592aa3a5abbc1448d107237687cc33b86",
+                    "etag": "163445f96d7a74d47801351e2cb3f4d1bc4e566e7aec8b38f6461a1dce0294f3",
                     "drillDownConfig": {},
                     "tokens": [
                         "sensor",
@@ -848,78 +621,11 @@
                     ]
                 },
                 {
-                    "name": "68b9b3c7-c1aa-4537-9838-04374b0892de",
-                    "displayName": "GenAI Connections Over Time",
-                    "description": "Stacked area chart showing connection volume over time broken down by GenAI application, revealing adoption trends and usage spikes.",
-                    "chartDatasource": {
-                        "dashboardQuery": "e713611a-9a99-4c79-9c23-e32596565ebc",
-                        "dataSources": [
-                            "UDM"
-                        ]
-                    },
-                    "visualization": {
-                        "series": [
-                            {
-                                "seriesType": "LINE",
-                                "encode": {
-                                    "x": "time_bucket",
-                                    "y": "count"
-                                },
-                                "dataLabel": {}
-                            }
-                        ],
-                        "xAxes": [
-                            {
-                                "axisType": "CATEGORY",
-                                "displayName": "Time"
-                            }
-                        ],
-                        "yAxes": [
-                            {
-                                "axisType": "CATEGORY",
-                                "displayName": "Count"
-                            }
-                        ],
-                        "legends": [
-                            {
-                                "top": 12,
-                                "legendOrient": "HORIZONTAL"
-                            }
-                        ],
-                        "seriesColumn": [
-                            "app"
-                        ],
-                        "groupingType": "Grouped"
-                    },
-                    "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "6bd570dc211e35b8de6014c789b3bf7efdfa1f986d1866d9150a1669d4563711",
-                    "drillDownConfig": {
-                        "leftDrillDowns": [
-                            {
-                                "id": "16DACD3F-DE2F-4047-AE9B-4E64EC5EE16D",
-                                "displayName": "Run Search on Original Entity",
-                                "customSettings": {
-                                    "newTab": true,
-                                    "leftClickColumn": "display_entity",
-                                    "query": {
-                                        "query": "re.replace(additional.fields[\"original_entity\"], \"/\\\\d{1,2}$\", \"\") = ${display_entity}",
-                                        "dialect": "YL2"
-                                    }
-                                }
-                            }
-                        ]
-                    },
-                    "tokens": [
-                        "risk",
-                        "sensor"
-                    ]
-                },
-                {
-                    "name": "7ee48e98-7aa8-4a71-a908-81650e90d56a",
+                    "name": "ca987523-0aea-4b99-9c34-6d81ea22093e",
                     "displayName": "Shadow AI Stack Rank",
                     "description": "Detailed table of GenAI usage ranked by risk tier and bytes sent. Shows source, destination, protocol, and volume for each application and internal host pair.",
                     "chartDatasource": {
-                        "dashboardQuery": "d98eb1c6-2929-4153-a10a-00cb787b724b",
+                        "dashboardQuery": "97c24e5f-0708-4b63-838d-9c05e6d5bbca",
                         "dataSources": [
                             "UDM",
                             "DATA_TABLE"
@@ -998,7 +704,7 @@
                         "groupingType": "Off"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "1b6d541a4b59a00bd90086e412646d5db9bec17f8ecf9bebd270cb31d0e9c54f",
+                    "etag": "d7be25a8c28d95a537b1be876d6b32502de7be131bf0196220956cff84b770a7",
                     "drillDownConfig": {
                         "leftDrillDowns": [
                             {
@@ -1023,11 +729,203 @@
                     ]
                 },
                 {
-                    "name": "10752308-5dd1-4d61-84be-6749ba6fe715",
-                    "displayName": "Anomalous GenAI Activity Timeline",
-                    "description": "Scatter plot correlating GenAI connection volume with anomaly scores from Corelight's app_id use case. Points with high item_score indicate statistically unusual activity for that application.",
+                    "name": "129212de-57ed-43b0-a607-efea9eed7623",
+                    "displayName": "Total GenAI Connections",
+                    "description": "Total number of connections to known GenAI services within the selected time window.",
                     "chartDatasource": {
-                        "dashboardQuery": "566c99c2-a65f-432a-a461-419975d4ed0a",
+                        "dashboardQuery": "39a3e95e-1275-4e22-b30e-f1628b6a9839",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": " ",
+                                "field": "total_connections",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_NUMBER",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "bd82aea0fa5ac570b1fac3b018cdb2acfc27a5fdfec785a7640b59716b272c36",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "risk",
+                        "sensor"
+                    ]
+                },
+                {
+                    "name": "4e9edfc8-d96b-4e2a-89a9-0a4c553d5eda",
+                    "displayName": "Usage by Network Segment",
+                    "description": "Maps internal /24 subnets to GenAI applications they connect to, revealing adoption patterns by network segment.",
+                    "chartDatasource": {
+                        "dashboardQuery": "0f5ad809-10a8-429d-afef-4ec80d6fed75",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "SANKEY",
+                                "encode": {},
+                                "dataLabel": {},
+                                "sankeyLevels": [
+                                    {
+                                        "source": "segment",
+                                        "target": "app",
+                                        "value": "count"
+                                    }
+                                ]
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "e4704a4660ad960cc4f9d5889ff78e676cc39d0004fccef439174d0ec654f73f",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "sensor"
+                    ]
+                },
+                {
+                    "name": "9edc7adc-ce6b-46ad-abd2-7b0090c7edc6",
+                    "displayName": "GenAI Distribution",
+                    "description": "Pie chart showing the proportion of GenAI connections by application, filtered by risk tier.",
+                    "chartDatasource": {
+                        "dashboardQuery": "1e3fe32a-d376-4c46-aa5e-caee0019d090",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "app"
+                                },
+                                "dataLabel": {
+                                    "show": true
+                                },
+                                "radius": [
+                                    "40%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "b=>{var {map:c}=rY(this.theme);b=dwe(b,jkf(this.form.controls.seriesConfig.getRawValue()),a);a=b.nextColorIndex;var d;return(d=\nc.get(b.color))!=null?d:b.color}"
+                                },
+                                "itemColors": {
+                                    "colors": [
+                                        {
+                                            "key": "http",
+                                            "value": {
+                                                "color": "#1a73e8",
+                                                "label": "http"
+                                            }
+                                        },
+                                        {
+                                            "key": "ssl",
+                                            "value": {
+                                                "color": "#eb730a",
+                                                "label": "ssl"
+                                            }
+                                        },
+                                        {
+                                            "key": "dns",
+                                            "value": {
+                                                "color": "#10a3b7",
+                                                "label": "dns"
+                                            }
+                                        },
+                                        {
+                                            "key": "ftp",
+                                            "value": {
+                                                "color": "#ec453b",
+                                                "label": "ftp"
+                                            }
+                                        },
+                                        {
+                                            "key": "ssh",
+                                            "value": {
+                                                "color": "#e51f8f",
+                                                "label": "ssh"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "0f1a0c0750441858fd1ba3e119191fb41c199d00d65973965b926ad61d566df3",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "risk",
+                        "sensor"
+                    ]
+                },
+                {
+                    "name": "311e4a1a-3e43-45a2-b70e-207c8453adc5",
+                    "displayName": "Outbound GenAI Outliers (Avg Bytes vs Duration)",
+                    "description": "Scatter plot of bytes sent vs connection duration per GenAI application, useful for spotting unusually large uploads or long-lived sessions.",
+                    "chartDatasource": {
+                        "dashboardQuery": "e3779853-b3bf-4f37-ace9-7977d3200b43",
                         "dataSources": [
                             "UDM"
                         ]
@@ -1037,8 +935,60 @@
                             {
                                 "seriesType": "SCATTERPLOT",
                                 "encode": {
-                                    "x": "event_time",
-                                    "y": "item_score"
+                                    "x": "duration",
+                                    "y": "bytes_out"
+                                },
+                                "dataLabel": {}
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Duration"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "CATEGORY",
+                                "displayName": "Bytes Out (MB)"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "seriesColumn": [
+                            "app"
+                        ],
+                        "groupingType": "Grouped"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "2fcba17cb628bc0665af343bee414eeaddc32a40af22f95787cf7219406ed55f",
+                    "drillDownConfig": {},
+                    "tokens": [
+                        "risk",
+                        "sensor"
+                    ]
+                },
+                {
+                    "name": "38fa26d5-2066-493c-9fb0-e3ab04c5b98f",
+                    "displayName": "GenAI Connections Over Time",
+                    "description": "Stacked area chart showing connection volume over time broken down by GenAI application, revealing adoption trends and usage spikes.",
+                    "chartDatasource": {
+                        "dashboardQuery": "a0c123a2-9ffd-4311-9a0d-73d71aa084e3",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "LINE",
+                                "encode": {
+                                    "x": "time_bucket",
+                                    "y": "count"
                                 },
                                 "dataLabel": {}
                             }
@@ -1052,27 +1002,27 @@
                         "yAxes": [
                             {
                                 "axisType": "CATEGORY",
-                                "displayName": "Anomaly Score"
+                                "displayName": "Count"
                             }
                         ],
                         "legends": [
                             {
-                                "right": 12,
-                                "legendOrient": "VERTICAL"
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
                             }
                         ],
                         "seriesColumn": [
-                            "total_bytes_kb"
+                            "app"
                         ],
                         "groupingType": "Grouped"
                     },
                     "tileType": "TILE_TYPE_VISUALIZATION",
-                    "etag": "ff950711a0a8a27e386c803233dc4023b51cc92d1ea3601bf964710f5f0ea8f6",
+                    "etag": "6f7a79bb42768fa07aeba8b97c967506f2a6f8a47039a29f3132ebb19c9a3ee1",
                     "drillDownConfig": {
                         "leftDrillDowns": [
                             {
-                                "id": "49230F8D-4DCB-4A1B-91D1-156761EF2564",
-                                "displayName": "Run Search on Display Entity",
+                                "id": "16DACD3F-DE2F-4047-AE9B-4E64EC5EE16D",
+                                "displayName": "Run Search on Original Entity",
                                 "customSettings": {
                                     "newTab": true,
                                     "leftClickColumn": "display_entity",
@@ -1085,145 +1035,136 @@
                         ]
                     },
                     "tokens": [
+                        "risk",
                         "sensor"
                     ]
+                },
+                {
+                    "name": "6187e242-54bf-42c2-a85c-95d29c8d334c",
+                    "displayName": "markdown",
+                    "visualization": {
+                        "markdown": {
+                            "content": "# AI Governance & Shadow AI Risk",
+                            "properties": {
+                                "backgroundColor": "#671440"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_MARKDOWN",
+                    "etag": "7d6da9ca743cf5f04a12c6c2caa77a09828c96fff7b5c84d9783f82c4fcfd2f3"
                 }
             ],
             "dashboardQueries": [
                 {
-                    "name": "e713611a-9a99-4c79-9c23-e32596565ebc",
-                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nobserver.hostname = /$sensor$/ nocase\r\nabout.namespace in %corelight_ai_apps\r\n$risk_tier = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun|openrouter|litellm|braintrust|portkey|helicone)$`), \"High\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q|crewai|zapier-ai|mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai|chatgpt|google-gemini|claude|anthropic|openai|midjourney|stability-ai|runwayml|elevenlabs|pēika|synthesia|suno|udio|langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"Medium\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai|microsoft-copilot|you-ai|phind|character-ai|kagi|nvidia-ngc|gpt4all|scale-ai|datarobot|adobe-firefly|poe|leonardo-ai|lakera|arthur-ai)$`), \"Low\", \"Unknown\")))\r\n$risk_tier = /$risk$/ nocase\r\n$time_bucket = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00:00\", \"UTC\")\r\n$app = about.namespace\r\nmatch:\r\n    $time_bucket, $app\r\noutcome:\r\n    $count = count(network.session_id)\r\norder:\r\n    $time_bucket, $count asc",
+                    "name": "130a775d-a39b-4fad-940b-3555e8dc2739",
+                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nobserver.hostname = /$sensor$/ nocase\r\nabout.namespace in %corelight_ai_apps\r\n$risk_tier = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun|openrouter|litellm|braintrust|portkey|helicone)$`), \"High\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q|crewai|zapier-ai|mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai|chatgpt|google-gemini|claude|anthropic|openai|midjourney|stability-ai|runwayml|elevenlabs|pika|synthesia|suno|udio|langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"Medium\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai|microsoft-copilot|you-ai|phind|character-ai|kagi|nvidia-ngc|gpt4all|scale-ai|datarobot|adobe-firefly|poe|leonardo-ai|lakera|arthur-ai)$`), \"Low\", \"Unknown\")))\r\n$risk_tier = /$risk$/ nocase\r\nabout.labels[\"local_orig\"] = \"true\"\r\noutcome:\r\n    $active_hosts = count_distinct(principal.ip)",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "269fb89a56b3c675510e0bcc3a56b2381ac406d5d4a3c8a678aed3da511231ad",
+                    "etag": "17bb8721095e7105070ad4ee1ebfa8e9541a56cbc147e8f327248754c3480082",
                     "dialect": "YL2"
                 },
                 {
-                    "name": "d98eb1c6-2929-4153-a10a-00cb787b724b",
-                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nobserver.hostname = /$sensor$/ nocase\r\nabout.namespace in %corelight_ai_apps\r\n$risk_tier = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun|openrouter|litellm|braintrust|portkey|helicone)$`), \"High\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q|crewai|zapier-ai|mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai|chatgpt|google-gemini|claude|anthropic|openai|midjourney|stability-ai|runwayml|elevenlabs|pēika|synthesia|suno|udio|langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"Medium\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai|microsoft-copilot|you-ai|phind|character-ai|kagi|nvidia-ngc|gpt4all|scale-ai|datarobot|adobe-firefly|poe|leonardo-ai|lakera|arthur-ai)$`), \"Low\", \"Unknown\")))\r\n$corporate_origin = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun)$`), \"Chinese AI Providers\", if(re.regex(about.namespace, `^(openrouter|litellm|braintrust|portkey|helicone)$`), \"AI Proxy/Aggregators\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q)$`), \"AI Coding Assistants\", if(re.regex(about.namespace, `^(crewai|zapier-ai)$`), \"AI Agents\", if(re.regex(about.namespace, `^(mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai)$`), \"Commercial LLM APIs\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai)$`), \"Meeting/Productivity\", if(re.regex(about.namespace, `^(chatgpt|google-gemini|claude|anthropic|openai)$`), \"Major Commercial AI\", if(re.regex(about.namespace, `^(midjourney|stability-ai|runwayml|elevenlabs|pika|synthesia|suno|udio)$`), \"AI Image/Video/Audio\", if(re.regex(about.namespace, `^(microsoft-copilot|you-ai|phind|character-ai|kagi)$`), \"AI Search/Assistants\", if(re.regex(about.namespace, `^(nvidia-ngc|gpt4all)$`), \"Model Hubs\", if(re.regex(about.namespace, `^(langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"ML Platforms/Vector DBs\", if(re.regex(about.namespace, `^(scale-ai|datarobot|adobe-firefly|poe|leonardo-ai)$`), \"Enterprise AI\", if(re.regex(about.namespace, `^(lakera|arthur-ai)$`), \"AI Security/Guardrails\", \"Other AI\")))))))))))))\r\n$risk_tier = /$risk$/ nocase\r\n$transport = strings.concat(if(network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`), \"ICMP6\", if(network.ip_protocol = \"EIGRP\", \"EIGRP\", if(network.ip_protocol = \"ESP\", \"ESP\",  if(network.ip_protocol = \"ETHERIP\", \"ETHERIP\", if(network.ip_protocol = \"GRE\", \"GRE\", if(network.ip_protocol = \"ICMP\", \"ICMP\", if(network.ip_protocol = \"ICMP6\", \"ICMP6\",  if(network.ip_protocol = \"IGMP\", \"IGMP\", if(network.ip_protocol = \"IP6IN4\", \"IP6IN4\", if(network.ip_protocol = \"PIM\", \"PIM\", if(network.ip_protocol = \"SCTP\", \"SCTP\", if(network.ip_protocol = \"TCP\", \"TCP\",  if(network.ip_protocol = \"UDP\", \"UDP\", if(network.ip_protocol = \"VRRP\", \"VRRP\", \"Unknown IP Protocol\")))))))))))))), \"/\", cast.as_string(target.port))\r\n$app = about.namespace\r\n$ip = principal.ip\r\ntarget.ip_geo_artifact.location.country_or_region = %corelight_geo_attr_countries.iso2\r\nmatch:\r\n    $app, $risk_tier, $corporate_origin, $ip\r\noutcome:\r\n    $total_bytes_sent = math.round(sum(network.sent_bytes)/1073741824, 2)\r\n    $total_bytes_recv = math.round(sum(network.received_bytes)/1073741824, 2)\r\n    $total_duration = math.round(sum(network.session_duration.seconds)/1000, 2)\r\n    $destinations = array_distinct(target.ip)\r\n    $dest_country = array_distinct(%corelight_geo_attr_countries.country)\r\n    $directionality = array_distinct(additional.fields[\"direction\"])\r\n    $transport_str = array_distinct($transport)\r\n    $service = array_distinct(network.application_protocol)\r\n    $distinct_connections = count_distinct(network.session_id)\r\nlimit:\r\n    100",
+                    "name": "e3779853-b3bf-4f37-ace9-7977d3200b43",
+                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nobserver.hostname = /$sensor$/ nocase\r\nabout.namespace in %corelight_ai_apps\r\n$risk_tier = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun|openrouter|litellm|braintrust|portkey|helicone)$`), \"High\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q|crewai|zapier-ai|mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai|chatgpt|google-gemini|claude|anthropic|openai|midjourney|stability-ai|runwayml|elevenlabs|pika|synthesia|suno|udio|langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"Medium\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai|microsoft-copilot|you-ai|phind|character-ai|kagi|nvidia-ngc|gpt4all|scale-ai|datarobot|adobe-firefly|poe|leonardo-ai|lakera|arthur-ai)$`), \"Low\", \"Unknown\")))\r\n$risk_tier = /$risk$/ nocase\r\n$app = about.namespace\r\n$duration = strings.concat(network.session_duration.seconds, \".\", math.round(network.session_duration.nanos/10000000, 0))\r\nmatch:\r\n    $app, $duration\r\noutcome:\r\n    $bytes_out = math.round(sum(network.sent_bytes)/1048576, 2)\r\n    $duration_int = max(network.session_duration.seconds + network.session_duration.nanos/1000000000)\r\norder:\r\n    $duration_int, $bytes_out asc\r\nlimit:\r\n    10000",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "0a1f6576710c00307a0bdfdbf3e1c77b3b34853278727f2c0e1e7560abf5ef54",
+                    "etag": "d15885211548f512eb27ea39c59c18fe84fc80e42d5ee3d07a38a97c3dc67619",
                     "dialect": "YL2"
                 },
                 {
-                    "name": "566c99c2-a65f-432a-a461-419975d4ed0a",
-                    "query": "$conn.metadata.vendor_name = \"Corelight\"\r\n$conn.metadata.product_event_type = \"conn\"\r\n$conn.observer.hostname = /$sensor$/ nocase\r\n$conn.about.namespace in %corelight_ai_apps\r\n$conn.network.session_id = $uid\r\n\r\n$anomaly.metadata.vendor_name = \"Corelight\"\r\n$anomaly.metadata.product_event_type = \"anomaly\"\r\n$anomaly.observer.hostname = /$sensor$/ nocase\r\n$anomaly.network.session_id = $uid\r\n$score = cast.as_int(cast.as_float($anomaly.security_result.detection_fields[\"item_score\"])*100)\r\nmatch:\r\n    $uid\r\noutcome:\r\n    $app = array_distinct($conn.about.namespace)\r\n    $total_bytes_kb = array_distinct(math.round(($conn.network.sent_bytes + $conn.network.received_bytes)/1024, 2))\r\n    $item_score = max($score/100)\r\n    $use_case_description = array_distinct($anomaly.security_result.description)\r\n    $orig_h = array_distinct($conn.principal.ip)\r\n    $event_time = array_distinct(timestamp.get_timestamp($conn.metadata.event_timestamp.seconds))\r\n    $time = max($conn.metadata.event_timestamp.seconds)\r\ncondition:\r\n    $conn and $anomaly\r\norder:\r\n    $time, $item_score asc\r\nlimit:\r\n    10000",
+                    "name": "46e20df4-d025-4a39-b811-61e6f5a8df5c",
+                    "query": "    metadata.vendor_name = \"Corelight\"\r\n    metadata.product_event_type = \"conn\"\r\n    observer.hostname = /$sensor$/ nocase\r\n    about.namespace in %corelight_ai_apps\r\n    $risk_tier = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun|openrouter|litellm|braintrust|portkey|helicone)$`), \"High\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q|crewai|zapier-ai|mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai|chatgpt|google-gemini|claude|anthropic|openai|midjourney|stability-ai|runwayml|elevenlabs|pika|synthesia|suno|udio|langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"Medium\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai|microsoft-copilot|you-ai|phind|character-ai|kagi|nvidia-ngc|gpt4all|scale-ai|datarobot|adobe-firefly|poe|leonardo-ai|lakera|arthur-ai)$`), \"Low\", \"Unknown\")))\r\n    $risk_tier = /$risk$/ nocase\r\n    $app = about.namespace\r\n    match:\r\n        $app\r\n    outcome:\r\n        $bytes_sent = math.round(sum(network.sent_bytes)/1048576, 2)\r\n        $bytes_received = math.round(sum(network.received_bytes)/1048576, 2)\r\n    order:\r\n        $bytes_sent desc",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "a89bc4fe6bfaa05000db61fd49a01e80e6cef3dc297211f6a35f0f203fc5560b",
+                    "etag": "833f16103fd676229a5ff2163f9578d94c5a1c1dcb935d9a1dd27e6525c85e54",
                     "dialect": "YL2"
                 },
                 {
-                    "name": "c7dd6443-b66b-4a73-82f2-aa8c533be97b",
-                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nobserver.hostname = /$sensor$/ nocase\r\nabout.namespace in %corelight_ai_apps\r\n$risk_tier = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun|openrouter|litellm|braintrust|portkey|helicone)$`), \"High\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q|crewai|zapier-ai|mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai|chatgpt|google-gemini|claude|anthropic|openai|midjourney|stability-ai|runwayml|elevenlabs|pēika|synthesia|suno|udio|langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"Medium\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai|microsoft-copilot|you-ai|phind|character-ai|kagi|nvidia-ngc|gpt4all|scale-ai|datarobot|adobe-firefly|poe|leonardo-ai|lakera|arthur-ai)$`), \"Low\", \"Unknown\")))\r\n$risk_tier = /$risk$/ nocase\r\noutcome:\r\n    $unique_tools = count_distinct(about.namespace)",
+                    "name": "1e3fe32a-d376-4c46-aa5e-caee0019d090",
+                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nobserver.hostname = /$sensor$/ nocase\r\nabout.namespace in %corelight_ai_apps\r\n$risk_tier = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun|openrouter|litellm|braintrust|portkey|helicone)$`), \"High\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q|crewai|zapier-ai|mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai|chatgpt|google-gemini|claude|anthropic|openai|midjourney|stability-ai|runwayml|elevenlabs|pika|synthesia|suno|udio|langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"Medium\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai|microsoft-copilot|you-ai|phind|character-ai|kagi|nvidia-ngc|gpt4all|scale-ai|datarobot|adobe-firefly|poe|leonardo-ai|lakera|arthur-ai)$`), \"Low\", \"Unknown\")))\r\n$risk_tier = /$risk$/ nocase\r\n$app = about.namespace\r\nmatch:\r\n    $app\r\noutcome:\r\n    $count = count(network.session_id)\r\norder:\r\n    $count desc",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "1ee803d30d92bc79de0341a6351104e0c1e9994f9e51986ee50dee3afb4f9d8d",
+                    "etag": "95964264d0a044c048e1fac2b3fa554dc4c1f3495e3b95aa6b3ba8ef2326fc09",
                     "dialect": "YL2"
                 },
                 {
-                    "name": "79095999-a21b-4a73-bf64-36a0e894cb29",
-                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nobserver.hostname = /$sensor$/ nocase\r\nabout.namespace in %corelight_ai_apps\r\n$risk_tier = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun|openrouter|litellm|braintrust|portkey|helicone)$`), \"High\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q|crewai|zapier-ai|mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai|chatgpt|google-gemini|claude|anthropic|openai|midjourney|stability-ai|runwayml|elevenlabs|pēika|synthesia|suno|udio|langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"Medium\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai|microsoft-copilot|you-ai|phind|character-ai|kagi|nvidia-ngc|gpt4all|scale-ai|datarobot|adobe-firefly|poe|leonardo-ai|lakera|arthur-ai)$`), \"Low\", \"Unknown\")))\r\n$risk_tier = /$risk$/ nocase\r\nabout.labels[\"local_orig\"] = \"true\"\r\n$ip = principal.ip\r\nmatch:\r\n    $ip\r\noutcome:\r\n    $count = count(network.session_id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    25",
+                    "name": "c785630d-03b9-4447-87a0-9c01ac9cfda3",
+                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nobserver.hostname = /$sensor$/ nocase\r\nabout.namespace in %corelight_ai_apps\r\n$risk_tier = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun|openrouter|litellm|braintrust|portkey|helicone)$`), \"High\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q|crewai|zapier-ai|mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai|chatgpt|google-gemini|claude|anthropic|openai|midjourney|stability-ai|runwayml|elevenlabs|pika|synthesia|suno|udio|langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"Medium\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai|microsoft-copilot|you-ai|phind|character-ai|kagi|nvidia-ngc|gpt4all|scale-ai|datarobot|adobe-firefly|poe|leonardo-ai|lakera|arthur-ai)$`), \"Low\", \"Unknown\")))\r\n$corporate_origin = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun)$`), \"Chinese AI Providers\", if(re.regex(about.namespace, `^(openrouter|litellm|braintrust|portkey|helicone)$`), \"AI Proxy/Aggregators\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q)$`), \"AI Coding Assistants\", if(re.regex(about.namespace, `^(crewai|zapier-ai)$`), \"AI Agents\", if(re.regex(about.namespace, `^(mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai)$`), \"Commercial LLM APIs\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai)$`), \"Meeting/Productivity\", if(re.regex(about.namespace, `^(chatgpt|google-gemini|claude|anthropic|openai)$`), \"Major Commercial AI\", if(re.regex(about.namespace, `^(midjourney|stability-ai|runwayml|elevenlabs|pika|synthesia|suno|udio)$`), \"AI Image/Video/Audio\", if(re.regex(about.namespace, `^(microsoft-copilot|you-ai|phind|character-ai|kagi)$`), \"AI Search/Assistants\", if(re.regex(about.namespace, `^(nvidia-ngc|gpt4all)$`), \"Model Hubs\", if(re.regex(about.namespace, `^(langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"ML Platforms/Vector DBs\", if(re.regex(about.namespace, `^(scale-ai|datarobot|adobe-firefly|poe|leonardo-ai)$`), \"Enterprise AI\", if(re.regex(about.namespace, `^(lakera|arthur-ai)$`), \"AI Security/Guardrails\", \"Other AI\")))))))))))))\r\n$risk_tier = /$risk$/ nocase\r\nmatch:\r\n    $risk_tier, $corporate_origin\r\noutcome:\r\n    $Connections = count(network.session_id)",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "1772595926aefd211128524d60f55d4c78b78e147fb62aa66ec14b8aaf835ffa",
+                    "etag": "6cbf4c9f06fdb4d741b77078ff14d7ac23ade6ef2e7fef6aa8b8b03a6dcc1ffd",
                     "dialect": "YL2"
                 },
                 {
-                    "name": "a7e6df0f-276e-43a6-ae52-ea266817693c",
-                    "query": "    metadata.vendor_name = \"Corelight\"\r\n    metadata.product_event_type = \"conn\"\r\n    observer.hostname = /$sensor$/ nocase\r\n    about.namespace in %corelight_ai_apps\r\n    $risk_tier = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun|openrouter|litellm|braintrust|portkey|helicone)$`), \"High\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q|crewai|zapier-ai|mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai|chatgpt|google-gemini|claude|anthropic|openai|midjourney|stability-ai|runwayml|elevenlabs|pēika|synthesia|suno|udio|langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"Medium\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai|microsoft-copilot|you-ai|phind|character-ai|kagi|nvidia-ngc|gpt4all|scale-ai|datarobot|adobe-firefly|poe|leonardo-ai|lakera|arthur-ai)$`), \"Low\", \"Unknown\")))\r\n    $risk_tier = /$risk$/ nocase\r\n    $app = about.namespace\r\n    match:\r\n        $app\r\n    outcome:\r\n        $bytes_sent = math.round(sum(network.sent_bytes)/1048576, 2)\r\n        $bytes_received = math.round(sum(network.received_bytes)/1048576, 2)\r\n    order:\r\n        $bytes_sent desc",
+                    "name": "a0c123a2-9ffd-4311-9a0d-73d71aa084e3",
+                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nobserver.hostname = /$sensor$/ nocase\r\nabout.namespace in %corelight_ai_apps\r\n$risk_tier = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun|openrouter|litellm|braintrust|portkey|helicone)$`), \"High\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q|crewai|zapier-ai|mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai|chatgpt|google-gemini|claude|anthropic|openai|midjourney|stability-ai|runwayml|elevenlabs|pika|synthesia|suno|udio|langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"Medium\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai|microsoft-copilot|you-ai|phind|character-ai|kagi|nvidia-ngc|gpt4all|scale-ai|datarobot|adobe-firefly|poe|leonardo-ai|lakera|arthur-ai)$`), \"Low\", \"Unknown\")))\r\n$risk_tier = /$risk$/ nocase\r\n$time_bucket = timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d %H:00:00\", \"UTC\")\r\n$app = about.namespace\r\nmatch:\r\n    $time_bucket, $app\r\noutcome:\r\n    $count = count(network.session_id)\r\norder:\r\n    $time_bucket, $count asc",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "44c9e5a7a784157e6995899d2145c3574389fdccda282030c83438ecc00acb4c",
+                    "etag": "b864994fd9aba80fc9ab1855bf39d5904460d6e0e39260d375c988d2d431e655",
                     "dialect": "YL2"
                 },
                 {
-                    "name": "7db8cd3a-6cc7-43a5-ac18-8861534bbeab",
-                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nobserver.hostname = /$sensor$/ nocase\r\nabout.namespace in %corelight_ai_apps\r\n$risk_tier = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun|openrouter|litellm|braintrust|portkey|helicone)$`), \"High\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q|crewai|zapier-ai|mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai|chatgpt|google-gemini|claude|anthropic|openai|midjourney|stability-ai|runwayml|elevenlabs|pēika|synthesia|suno|udio|langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"Medium\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai|microsoft-copilot|you-ai|phind|character-ai|kagi|nvidia-ngc|gpt4all|scale-ai|datarobot|adobe-firefly|poe|leonardo-ai|lakera|arthur-ai)$`), \"Low\", \"Unknown\")))\r\n$risk_tier = /$risk$/ nocase\r\nabout.labels[\"local_orig\"] = \"true\"\r\noutcome:\r\n    $active_hosts = count_distinct(principal.ip)",
+                    "name": "97c24e5f-0708-4b63-838d-9c05e6d5bbca",
+                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nobserver.hostname = /$sensor$/ nocase\r\nabout.namespace in %corelight_ai_apps\r\n$risk_tier = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun|openrouter|litellm|braintrust|portkey|helicone)$`), \"High\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q|crewai|zapier-ai|mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai|chatgpt|google-gemini|claude|anthropic|openai|midjourney|stability-ai|runwayml|elevenlabs|pika|synthesia|suno|udio|langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"Medium\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai|microsoft-copilot|you-ai|phind|character-ai|kagi|nvidia-ngc|gpt4all|scale-ai|datarobot|adobe-firefly|poe|leonardo-ai|lakera|arthur-ai)$`), \"Low\", \"Unknown\")))\r\n$corporate_origin = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun)$`), \"Chinese AI Providers\", if(re.regex(about.namespace, `^(openrouter|litellm|braintrust|portkey|helicone)$`), \"AI Proxy/Aggregators\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q)$`), \"AI Coding Assistants\", if(re.regex(about.namespace, `^(crewai|zapier-ai)$`), \"AI Agents\", if(re.regex(about.namespace, `^(mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai)$`), \"Commercial LLM APIs\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai)$`), \"Meeting/Productivity\", if(re.regex(about.namespace, `^(chatgpt|google-gemini|claude|anthropic|openai)$`), \"Major Commercial AI\", if(re.regex(about.namespace, `^(midjourney|stability-ai|runwayml|elevenlabs|pika|synthesia|suno|udio)$`), \"AI Image/Video/Audio\", if(re.regex(about.namespace, `^(microsoft-copilot|you-ai|phind|character-ai|kagi)$`), \"AI Search/Assistants\", if(re.regex(about.namespace, `^(nvidia-ngc|gpt4all)$`), \"Model Hubs\", if(re.regex(about.namespace, `^(langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"ML Platforms/Vector DBs\", if(re.regex(about.namespace, `^(scale-ai|datarobot|adobe-firefly|poe|leonardo-ai)$`), \"Enterprise AI\", if(re.regex(about.namespace, `^(lakera|arthur-ai)$`), \"AI Security/Guardrails\", \"Other AI\")))))))))))))\r\n$risk_tier = /$risk$/ nocase\r\n$transport = strings.concat(if(network.ip_protocol = \"ICMP\" AND re.regex(principal.ip, `.*:.*`), \"ICMP6\", if(network.ip_protocol = \"EIGRP\", \"EIGRP\", if(network.ip_protocol = \"ESP\", \"ESP\",  if(network.ip_protocol = \"ETHERIP\", \"ETHERIP\", if(network.ip_protocol = \"GRE\", \"GRE\", if(network.ip_protocol = \"ICMP\", \"ICMP\", if(network.ip_protocol = \"ICMP6\", \"ICMP6\",  if(network.ip_protocol = \"IGMP\", \"IGMP\", if(network.ip_protocol = \"IP6IN4\", \"IP6IN4\", if(network.ip_protocol = \"PIM\", \"PIM\", if(network.ip_protocol = \"SCTP\", \"SCTP\", if(network.ip_protocol = \"TCP\", \"TCP\",  if(network.ip_protocol = \"UDP\", \"UDP\", if(network.ip_protocol = \"VRRP\", \"VRRP\", \"Unknown IP Protocol\")))))))))))))), \"/\", cast.as_string(target.port))\r\n$app = about.namespace\r\n$ip = principal.ip\r\ntarget.ip_geo_artifact.location.country_or_region = %corelight_geo_attr_countries.iso2\r\nmatch:\r\n    $app, $risk_tier, $corporate_origin, $ip\r\noutcome:\r\n    $total_bytes_sent = math.round(sum(network.sent_bytes)/1073741824, 2)\r\n    $total_bytes_recv = math.round(sum(network.received_bytes)/1073741824, 2)\r\n    $total_duration = math.round(sum(network.session_duration.seconds)/1000, 2)\r\n    $destinations = array_distinct(target.ip)\r\n    $dest_country = array_distinct(%corelight_geo_attr_countries.country)\r\n    $directionality = array_distinct(additional.fields[\"direction\"])\r\n    $transport_str = array_distinct($transport)\r\n    $service = array_distinct(network.application_protocol)\r\n    $distinct_connections = count_distinct(network.session_id)\r\nlimit:\r\n    100",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "d1052e2f33e34161a3ac85eb552cb910b74a176dceb14c5c53169c83bb3d1af2",
+                    "etag": "8fa567dced2c2b66b1756491683b573b50b67fb240bf7aef1895a66312e917c5",
                     "dialect": "YL2"
                 },
                 {
-                    "name": "813671cb-a9e0-4da9-84d1-d7ae8f7d1dfa",
-                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nobserver.hostname = /$sensor$/ nocase\r\nabout.namespace in %corelight_ai_apps\r\n$risk_tier = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun|openrouter|litellm|braintrust|portkey|helicone)$`), \"High\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q|crewai|zapier-ai|mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai|chatgpt|google-gemini|claude|anthropic|openai|midjourney|stability-ai|runwayml|elevenlabs|pēika|synthesia|suno|udio|langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"Medium\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai|microsoft-copilot|you-ai|phind|character-ai|kagi|nvidia-ngc|gpt4all|scale-ai|datarobot|adobe-firefly|poe|leonardo-ai|lakera|arthur-ai)$`), \"Low\", \"Unknown\")))\r\n$risk_tier = /$risk$/ nocase\r\n$app = about.namespace\r\nmatch:\r\n    $app\r\noutcome:\r\n    $count = count(network.session_id)\r\norder:\r\n    $count desc",
+                    "name": "caa2eadb-1ae4-4e02-b38f-9e54ce75d628",
+                    "query": "$conn.metadata.vendor_name = \"Corelight\"\r\n$conn.metadata.product_event_type = \"conn\"\r\n$conn.observer.hostname = /$sensor$/ nocase\r\n$conn.about.namespace in %corelight_ai_apps\r\n$conn.network.session_id = $uid\r\n\r\n$anomaly.metadata.vendor_name = \"Corelight\"\r\n$anomaly.metadata.product_event_type = \"anomaly\"\r\n$anomaly.observer.hostname = /$sensor$/ nocase\r\n$anomaly.network.session_id = $uid\r\n$score = cast.as_int(cast.as_float($anomaly.security_result.detection_fields[\"item_score\"])*100)\r\nmatch:\r\n    $uid\r\noutcome:\r\n    $app = array_distinct($conn.about.namespace)\r\n    $total_bytes_kb = array_distinct(math.round(($conn.network.sent_bytes + $conn.network.received_bytes)/1024, 2))\r\n    $item_score = max($score/100)\r\n    $use_case_description = array_distinct($anomaly.security_result.description)\r\n    $orig_h = array_distinct($conn.principal.ip)\r\n    $event_time = array_distinct(timestamp.get_timestamp($conn.metadata.event_timestamp.seconds))\r\n    $time = max($conn.metadata.event_timestamp.seconds)\r\norder:\r\n    $time, $item_score asc\r\nlimit:\r\n    10000",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "3a40f67de16fa38745228c8f3285e883c50aac1c42d6b7097c9bd91b0521a50b",
+                    "etag": "8729b505f49389d564b81099e50be5f2b3107f21bb3a3c3fe47ded51b27f15c9",
                     "dialect": "YL2"
                 },
                 {
-                    "name": "4cb65226-b89e-40de-9d25-4b9901de8621",
-                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nobserver.hostname = /$sensor$/ nocase\r\nabout.namespace in %corelight_ai_apps\r\n$risk_tier = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun|openrouter|litellm|braintrust|portkey|helicone)$`), \"High\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q|crewai|zapier-ai|mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai|chatgpt|google-gemini|claude|anthropic|openai|midjourney|stability-ai|runwayml|elevenlabs|pēika|synthesia|suno|udio|langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"Medium\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai|microsoft-copilot|you-ai|phind|character-ai|kagi|nvidia-ngc|gpt4all|scale-ai|datarobot|adobe-firefly|poe|leonardo-ai|lakera|arthur-ai)$`), \"Low\", \"Unknown\")))\r\n$corporate_origin = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun)$`), \"Chinese AI Providers\", if(re.regex(about.namespace, `^(openrouter|litellm|braintrust|portkey|helicone)$`), \"AI Proxy/Aggregators\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q)$`), \"AI Coding Assistants\", if(re.regex(about.namespace, `^(crewai|zapier-ai)$`), \"AI Agents\", if(re.regex(about.namespace, `^(mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai)$`), \"Commercial LLM APIs\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai)$`), \"Meeting/Productivity\", if(re.regex(about.namespace, `^(chatgpt|google-gemini|claude|anthropic|openai)$`), \"Major Commercial AI\", if(re.regex(about.namespace, `^(midjourney|stability-ai|runwayml|elevenlabs|pika|synthesia|suno|udio)$`), \"AI Image/Video/Audio\", if(re.regex(about.namespace, `^(microsoft-copilot|you-ai|phind|character-ai|kagi)$`), \"AI Search/Assistants\", if(re.regex(about.namespace, `^(nvidia-ngc|gpt4all)$`), \"Model Hubs\", if(re.regex(about.namespace, `^(langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"ML Platforms/Vector DBs\", if(re.regex(about.namespace, `^(scale-ai|datarobot|adobe-firefly|poe|leonardo-ai)$`), \"Enterprise AI\", if(re.regex(about.namespace, `^(lakera|arthur-ai)$`), \"AI Security/Guardrails\", \"Other AI\")))))))))))))\r\n$risk_tier = /$risk$/ nocase\r\nmatch:\r\n    $risk_tier, $corporate_origin\r\noutcome:\r\n    $Connections = count(network.session_id)",
+                    "name": "39a3e95e-1275-4e22-b30e-f1628b6a9839",
+                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nobserver.hostname = /$sensor$/ nocase\r\nabout.namespace in %corelight_ai_apps\r\n$risk_tier = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun|openrouter|litellm|braintrust|portkey|helicone)$`), \"High\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q|crewai|zapier-ai|mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai|chatgpt|google-gemini|claude|anthropic|openai|midjourney|stability-ai|runwayml|elevenlabs|pika|synthesia|suno|udio|langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"Medium\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai|microsoft-copilot|you-ai|phind|character-ai|kagi|nvidia-ngc|gpt4all|scale-ai|datarobot|adobe-firefly|poe|leonardo-ai|lakera|arthur-ai)$`), \"Low\", \"Unknown\")))\r\n$risk_tier = /$risk$/ nocase\r\noutcome:\r\n    $total_connections = count(network.session_id)",
                     "input": {
                         "relativeTime": {
                             "timeUnit": "DAY",
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "4813c4ef929bd2327fd3753e6be53caa0c7818a508ef6f3ec6780bd9d55ca5b9",
+                    "etag": "d9126a1fa577b7924918b83a6a158b1041092a09ecdc40ca9a2767b0ed96466f",
                     "dialect": "YL2"
                 },
                 {
-                    "name": "19896a98-b862-4200-b527-e0b3eab4fa61",
-                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nobserver.hostname = /$sensor$/ nocase\r\nabout.namespace in %corelight_ai_apps\r\n$risk_tier = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun|openrouter|litellm|braintrust|portkey|helicone)$`), \"High\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q|crewai|zapier-ai|mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai|chatgpt|google-gemini|claude|anthropic|openai|midjourney|stability-ai|runwayml|elevenlabs|pēika|synthesia|suno|udio|langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"Medium\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai|microsoft-copilot|you-ai|phind|character-ai|kagi|nvidia-ngc|gpt4all|scale-ai|datarobot|adobe-firefly|poe|leonardo-ai|lakera|arthur-ai)$`), \"Low\", \"Unknown\")))\r\n$risk_tier = /$risk$/ nocase\r\n$app = about.namespace\r\n$duration = strings.concat(network.session_duration.seconds, \".\", math.round(network.session_duration.nanos/10000000, 0))\r\nmatch:\r\n    $app, $duration\r\noutcome:\r\n    $bytes_out = math.round(sum(network.sent_bytes)/1048576, 2)\r\n    $duration_int = max(network.session_duration.seconds + network.session_duration.nanos/1000000000)\r\norder:\r\n    $duration_int, $bytes_out asc\r\nlimit:\r\n    10000",
-                    "input": {
-                        "relativeTime": {
-                            "timeUnit": "DAY",
-                            "startTimeVal": "1"
-                        }
-                    },
-                    "etag": "4eb109e572778857017a4e2b3f6d73b0c7cdb688ad126cfd9e762fb989f772b8",
-                    "dialect": "YL2"
-                },
-                {
-                    "name": "bad79468-9527-4425-bea7-7dc9f63e0033",
-                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nobserver.hostname = /$sensor$/ nocase\r\nabout.namespace in %corelight_ai_apps\r\n$risk_tier = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun|openrouter|litellm|braintrust|portkey|helicone)$`), \"High\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q|crewai|zapier-ai|mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai|chatgpt|google-gemini|claude|anthropic|openai|midjourney|stability-ai|runwayml|elevenlabs|pēika|synthesia|suno|udio|langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"Medium\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai|microsoft-copilot|you-ai|phind|character-ai|kagi|nvidia-ngc|gpt4all|scale-ai|datarobot|adobe-firefly|poe|leonardo-ai|lakera|arthur-ai)$`), \"Low\", \"Unknown\")))\r\n$risk_tier = /$risk$/ nocase\r\noutcome:\r\n    $total_connections = count(network.session_id)",
-                    "input": {
-                        "relativeTime": {
-                            "timeUnit": "DAY",
-                            "startTimeVal": "1"
-                        }
-                    },
-                    "etag": "42b446b4d6a0d0c88851cdc8ec3f23968953649fc2a7feca12aa709a7bb26227",
-                    "dialect": "YL2"
-                },
-                {
-                    "name": "8d1f55d5-4f40-4613-bd14-1996a1df40a5",
+                    "name": "0f5ad809-10a8-429d-afef-4ec80d6fed75",
                     "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nobserver.hostname = /$sensor$/ nocase\r\nabout.namespace in %corelight_ai_apps\r\n$segment = re.replace(principal.ip, `\\.[0-9]{1,3}$`, \".0/24\")\r\n$app = about.namespace\r\nmatch:\r\n    $segment, $app\r\noutcome:\r\n    $count = count(network.session_id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    50",
                     "input": {
                         "relativeTime": {
@@ -1231,7 +1172,31 @@
                             "startTimeVal": "1"
                         }
                     },
-                    "etag": "de0e2b17009d088989aa79c4f0b88201175f670811d591fd193fe0121dfb9086",
+                    "etag": "2c2ac6f47f0ff79e05e9b24911c235466be6f0bf0e2da91eec93b3c3984955e5",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "b35a6bd7-5b09-4480-9eb9-8764ea1ffa6e",
+                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nobserver.hostname = /$sensor$/ nocase\r\nabout.namespace in %corelight_ai_apps\r\n$risk_tier = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun|openrouter|litellm|braintrust|portkey|helicone)$`), \"High\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q|crewai|zapier-ai|mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai|chatgpt|google-gemini|claude|anthropic|openai|midjourney|stability-ai|runwayml|elevenlabs|pika|synthesia|suno|udio|langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"Medium\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai|microsoft-copilot|you-ai|phind|character-ai|kagi|nvidia-ngc|gpt4all|scale-ai|datarobot|adobe-firefly|poe|leonardo-ai|lakera|arthur-ai)$`), \"Low\", \"Unknown\")))\r\n$risk_tier = /$risk$/ nocase\r\noutcome:\r\n    $unique_tools = count_distinct(about.namespace)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "b90793ae0b4ac1c6a3d3efa67e31d78f81dc6a7f11ad9c7d5edb6d1c9f900ecb",
+                    "dialect": "YL2"
+                },
+                {
+                    "name": "9b43943c-6d7a-475a-bb27-85479e0aa642",
+                    "query": "metadata.vendor_name = \"Corelight\"\r\nmetadata.product_event_type = \"conn\"\r\nobserver.hostname = /$sensor$/ nocase\r\nabout.namespace in %corelight_ai_apps\r\n$risk_tier = if(re.regex(about.namespace, `^(moonshot|zhipu-ai|alibaba-qwen|baidu-ernie|bytedance-doubao|minimax|01ai-yi|sensetime|iflytek-spark|baichuan-ai|stepfun|openrouter|litellm|braintrust|portkey|helicone)$`), \"High\", if(re.regex(about.namespace, `^(github-copilot|codeium|tabnine|sourcegraph-cody|amazon-q|crewai|zapier-ai|mistral|cohere|deepseek|groq|together-ai|fireworks-ai|replicate|ai21|inflection-pi|lepton-ai|octoai|meta-ai|deepl|forefront-ai|adept-ai|chatgpt|google-gemini|claude|anthropic|openai|midjourney|stability-ai|runwayml|elevenlabs|pika|synthesia|suno|udio|langsmith|pinecone|chroma|wandb|baseten|modal|weaviate)$`), \"Medium\", if(re.regex(about.namespace, `^(otter-ai|fireflies-ai|notion-ai|krisp|tldv|fathom|read-ai|mem-ai|microsoft-copilot|you-ai|phind|character-ai|kagi|nvidia-ngc|gpt4all|scale-ai|datarobot|adobe-firefly|poe|leonardo-ai|lakera|arthur-ai)$`), \"Low\", \"Unknown\")))\r\n$risk_tier = /$risk$/ nocase\r\nabout.labels[\"local_orig\"] = \"true\"\r\n$ip = principal.ip\r\nmatch:\r\n    $ip\r\noutcome:\r\n    $count = count(network.session_id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    25",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "1"
+                        }
+                    },
+                    "etag": "e3e18d6288af9e977ec62dbe7caf5bd4a4e479e3ed70038d05811a7537752ad7",
                     "dialect": "YL2"
                 }
             ]
