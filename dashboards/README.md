@@ -22,10 +22,9 @@ The names are case-sensitive and must match the table below exactly, because the
 
 | Name | Type | Used by dashboard(s) | Contents |
 |------|------|----------------------|----------|
-| `internal_cidr_list` | Reference list (CIDR) | Security Posture, Secure Channel Insights, Name Resolution Insights, Files, SSL | Your internal IP CIDR ranges (see the section above). |
+| `internal_cidr_list` | Reference list (CIDR) | Security Posture, Secure Channel Insights, Name Resolution Insights, Files, SSL | Your internal IP CIDR ranges (see the section below). |
 | `corelight_ai_apps` | Reference list (String) | AI Detection & Response | Identifiers of the GenAI applications to track. |
-| `corelight_geo_attr_countries` | Data table | AI Detection & Response | Maps ISO country codes to country names. Columns: `iso2`, `country`. |
-| `corelight_use_cases` | Data table | Anomaly Detection, Anomaly Detection Details | Describes each Corelight anomaly detection use case. Columns: `use_case`, `description`, `significance`, `baseline_behavior`, `anomalous_behavior`. |
+| `corelight_use_cases` | Data table | Anomaly Detection, Anomaly Detection Details | Describes each Corelight anomaly detection use case. Columns: `target_dashboard`, `use_case`, `description`, `significance`, `baseline_behavior`, `anomalous_behavior`. |
 
 #### Create a reference list (For identifying Internal/External IPs)
 
@@ -63,85 +62,93 @@ The dashboard's Risk Tier and Corporate Origin charts classify the identifiers b
 <summary>Suggested <code>corelight_ai_apps</code> entries</summary>
 
 ```
-01ai-yi
-adept-ai
-adobe-firefly
-ai21
-alibaba-qwen
-amazon-q
-anthropic
-arthur-ai
-baichuan-ai
-baidu-ernie
-baseten
-braintrust
-bytedance-doubao
-character-ai
 chatgpt
-chroma
-claude
-codeium
-cohere
-crewai
-datarobot
-deepl
-deepseek
-elevenlabs
-fathom
-fireflies-ai
-fireworks-ai
-forefront-ai
-github-copilot
 google-gemini
-gpt4all
-groq
-helicone
-iflytek-spark
-inflection-pi
-kagi
-krisp
-lakera
-leonardo-ai
-lepton-ai
-litellm
-mem-ai
-meta-ai
-microsoft-copilot
-midjourney
-minimax
-mistral
-modal
-moonshot
-notion-ai
-nvidia-ngc
-octoai
+claude
+anthropic
 openai
-openrouter
-otter-ai
-phind
-pika
-pinecone
-poe
-portkey
-read-ai
-replicate
-runwayml
-scale-ai
-sensetime
-sourcegraph-cody
-stability-ai
-stepfun
-suno
-synthesia
-tabnine
-tldv
-together-ai
-udio
-wandb
-weaviate
-you-ai
-zapier-ai
+cursor
+ollama
+github
+grok
+huggingface
+perplexity
+sora
+moonshot
 zhipu-ai
+alibaba-qwen
+baidu-ernie
+bytedance-doubao
+minimax
+01ai-yi
+sensetime
+iflytek-spark
+baichuan-ai
+stepfun
+openrouter
+litellm
+braintrust
+portkey
+helicone
+github-copilot
+codeium
+tabnine
+sourcegraph-cody
+amazon-q
+mistral
+cohere
+deepseek
+groq
+together-ai
+fireworks-ai
+replicate
+ai21
+inflection-pi
+lepton-ai
+octoai
+meta-ai
+deepl
+forefront-ai
+adept-ai
+otter-ai
+fireflies-ai
+notion-ai
+krisp
+tldv
+fathom
+read-ai
+mem-ai
+crewai
+zapier-ai
+midjourney
+stability-ai
+runwayml
+elevenlabs
+pika
+synthesia
+suno
+udio
+microsoft-copilot
+you-ai
+phind
+character-ai
+kagi
+nvidia-ngc
+gpt4all
+langsmith
+pinecone
+chroma
+wandb
+baseten
+modal
+weaviate
+scale-ai
+datarobot
+adobe-firefly
+poe
+leonardo-ai
+lakera
+arthur-ai
 ```
 
 </details>
@@ -153,42 +160,34 @@ Data tables are imported from a file. Supported formats are **CSV** (comma-separ
 1. In Google SecOps, go to **Investigation -> Data Tables**.
 2. Create a new data table and set its name to the exact name shown below.
 3. You can either type data manually or import your `.csv` or `.tsv` file and save the data table.
-4. Repeat for each data table.
-
-**`corelight_geo_attr_countries`**
-
-| Column | Description |
-|--------|-------------|
-| `iso2` | Two-letter ISO 3166-1 country code. It is matched against `target.ip_geo_artifact.location.country_or_region`. |
-| `country` | Country name that the dashboard displays. |
-
-Example (`corelight_geo_attr_countries.csv`):
-
-```csv
-iso2,country
-US,United States
-GB,United Kingdom
-IN,India
-```
-
-> **Note:** The chart only shows connections whose destination country code is in this table, so include every country you want to see.
 
 **`corelight_use_cases`**
 
 | Column | Description |
 |--------|-------------|
+| `target_dashboard` | Name of the dashboard that shows the details for this use case. |
 | `use_case` | Corelight anomaly use case name. It is matched against the `use_case` field of the `anomaly` log (`security_result.rule_name` in UDM). |
 | `description` | What the use case detects. |
 | `significance` | Why an anomaly from this use case matters. |
 | `baseline_behavior` | What the use case learns during its baselining period. |
 | `anomalous_behavior` | What behavior raises the anomaly. |
 
-Example (`corelight_use_cases.csv`):
+<details>
+<summary>Suggested <code>corelight_use_cases</code> entries</summary>
 
-```csv
-use_case,description,significance,baseline_behavior,anomalous_behavior
-<use_case>,<description>,<significance>,<baseline_behavior>,<anomalous_behavior>
 ```
+target_dashboard,use_case,description,significance,anomalous_behavior,baseline_behavior
+corelight_insights_anomaly_details_http_user_agents,http_user_agents,A host is observed using an anomalous or unexpected HTTP user agent. This could indicate unauthorized or malicious activity on the network.,"The use of an anomalous HTTP user agent can indicate unauthorized access or malicious activity, as adversaries might employ user agents that are either non-standard or atypical for the given host.",":original_entity: used :item:, a user agent they and similar entities had not used during baselining",:entity: used :entity_training_items_combined: for HTTP connections during baselining
+corelight_insights_anomaly_details_ssh_connections,ssh_connections,A host established an SSH connection to an unexpected subnet. This may indicate lateral movement or unauthorized access attempts.,Anomalous SSH connections to unexpected subnets can indicate lateral movement by adversaries or unauthorized access to sensitive resources.,":original_entity: established an SSH connection to subnet :item:, a destination they and similar entities had not connected to during baselining",:entity: established SSH connections to these :entity_training_items_combined: during baselining
+corelight_insights_anomaly_details_ssh_clients,ssh_clients,A host established an SSH connection using an unexpected or anomalous SSH client. This could indicate the use of malicious tools or unauthorized access.,"The use of an anomalous SSH client can indicate malicious activity, as adversaries might employ SSH clients that are either non-standard or atypical for the given host.",":original_entity: used SSH client :item:, an SSH client they and similar entities had not used during baselining",:entity: used :entity_training_items_combined: during baselining
+corelight_insights_anomaly_details_ew_servers_services,ew_servers_services,"A host communicated with another internal subnet over an anomalous or unexpected network service, indicating potential lateral movement or misconfiguration.",Anomalous services between internal subnets can indicate lateral movement by adversaries or unauthorized access to resources.,":original_entity: used :item:, a service they and similar entities had not used during baselining",:entity: communicated with internal subnet using :entity_training_items_combined: during baselining
+corelight_insights_anomaly_details_ns_servers_services,ns_servers_services,An internet-facing server found in connections with an unexpected network service. This may indicate exploitation or misconfiguration.,Internet-facing servers can be exploited by adversaries to gain unauthorized access or disrupt operations.,":original_entity: used :item:, a service they and similar entities had not used during baselining",:entity: used :entity_training_items_combined: during baselining
+corelight_insights_anomaly_details_rdp,rdp,A host established an RDP connection to an unexpected subnet using an unusual SSL/TLS fingerprint.,"Anomalous RDP connections to unexpected destinations can indicate lateral movement by adversaries, unauthorized remote access, or compromise of legitimate credentials for unauthorized system access.",":original_entity: used RDP or Port 3389/tcp to connect to :item: for at least 15 seconds, a subnet to which it had unexpectedly connected using an unusual SSL/TLS fingerprint",:entity: used :entity_training_items_combined: during baselining
+corelight_insights_anomaly_details_admin_shares,admin_shares,"A host accessed an unexpected administrative network share (ADMIN$, IPC$, SYSVOL, NETLOGON).","Anomalous administrative share access can indicate lateral movement by adversaries or unauthorized access to sensitive administrative resources and network infrastructure.",":original_entity: unexpectedly accessed :item:, an administrative network share (ADMIN$, IPC$, SYSVOL, NETLOGON) in a way that deviated from its baseline",:entity: used :entity_training_items_combined: during baselining
+corelight_insights_anomaly_details_exe_files,exe_files,"A host downloaded an unexpected executable file from an external or internal source.","Anomalous executable downloads can indicate malicious tool transfer, malware distribution, or unauthorized software installation that could be used for persistence or lateral movement.",":original_entity: transferred :item:, an executable file they and similar entities had not used during baselining",:entity: used :entity_training_items_combined: during baselining
+```
+
+</details>
 
 > **Note:** Several charts in **Anomaly Detection** (Anomalies Observed, Anomaly Summary, Detections per Anomaly Type over Time, Detection Breakdown by Anomaly Type and Source IP) and most panels in **Anomaly Detection Details** only show anomalies whose `use_case` has a row in this table. Add a row for every use case that is enabled on your sensors.
 
