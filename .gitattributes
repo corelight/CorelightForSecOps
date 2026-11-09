@@ -1,0 +1,16 @@
+# Normalize all text files to LF in the repository and on checkout.
+# Prevents CRLF/LF churn across contributors/OSes (e.g. the line-ending
+# flip that dominated PR #31's diff). Corelight CBN parser configs and
+# Google SecOps dashboard JSON are consumed as LF, so LF is canonical.
+* text=auto eol=lf
+
+# Binary assets: never normalize or diff as text.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.pdf  binary
+*.zip  binary
+*.gz   binary
+*.tgz  binary
