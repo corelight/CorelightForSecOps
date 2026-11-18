@@ -241,6 +241,9 @@ The Corelight parser supports the following log types:
     <li>telnet</li>
     <li>websocket</li>
     <li>first_seen</li>
+    <li>yara</li>
+    <li>corelight_ml_results</li>
+    <li>net_perf</li>
   </ul>
 </div>
 
@@ -11368,6 +11371,286 @@ The following table lists the log fields of the <code>first_seen</code> log type
 <tr>
 <td><code>history (number - interval)</code></td>
 <td><code>security_result.detection_fields[history]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code></code></td>
+<td><code>metadata.event_type</code></td>
+<td>The <code>metadata.event_type</code> UDM field is set to <code>GENERIC_EVENT</code>.</td>
+</tr>
+</tbody>
+</table>
+</devsite-filter>
+</div>
+<h3>Field mapping reference: CORELIGHT - yara</h3>
+
+The following table lists the log fields of the <code>yara</code> log type and their corresponding UDM fields.
+
+<div translate="no">
+<devsite-filter sortable="0">
+<input type="text" placeholder="Type a keyword to find a value.">
+<table class="fixed">
+<thead>
+<tr>
+<th>Log field</th>
+<th>UDM mapping</th>
+<th>Logic</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr>
+<td><code>mime_type</code></td>
+<td><code>about.file.mime_type</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>file_name</code></td>
+<td><code>about.file.names</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>md5</code></td>
+<td><code>about.file.md5</code></td>
+<td>If the <code>md5</code> log field value matches the regular expression pattern <code>^[a-f0-9]{32}$</code>, then the <code>md5</code> log field is mapped to the <code>about.file.md5</code> UDM field.</td>
+</tr>
+<tr>
+<td><code>sha1</code></td>
+<td><code>about.file.sha1</code></td>
+<td>If the <code>sha1</code> log field value matches the regular expression pattern <code>^[a-f0-9]{40}$</code>, then the <code>sha1</code> log field is mapped to the <code>about.file.sha1</code> UDM field.</td>
+</tr>
+<tr>
+<td><code>sha256</code></td>
+<td><code>about.file.sha256</code></td>
+<td>If the <code>sha256</code> log field value matches the regular expression pattern <code>^[a-f0-9]{64}$</code>, then the <code>sha256</code> log field is mapped to the <code>about.file.sha256</code> UDM field.</td>
+</tr>
+<tr>
+<td><code>last_seen_ts</code></td>
+<td><code>additional.fields[last_seen_ts]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>fuid</code></td>
+<td><code>additional.fields[fuid]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>source</code></td>
+<td><code>additional.fields[file_source]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>archive_path</code></td>
+<td><code>additional.fields[archive_path]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>file_matches</code></td>
+<td><code>additional.fields[file_matches]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>match_rule</code></td>
+<td><code>security_result.rule_name</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>match_namespace</code></td>
+<td><code>security_result.detection_fields[match_namespace]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>match_tags (array[string] - vector of string)</code></td>
+<td><code>security_result.detection_fields[match_tags]</code></td>
+<td>Iterate through log field <code>match_tags</code>, then <br><code>match_tags_%{index}</code> log field is mapped to the <code>security_result.detection_fields.key</code> UDM field and <code>match_tags</code> log field is mapped to the <code>security_result.detection_fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code>match_meta (array[string] - vector of string)</code></td>
+<td><code>security_result.detection_fields[match_meta]</code></td>
+<td>Iterate through log field <code>match_meta</code>, then <br><code>match_meta_%{index}</code> log field is mapped to the <code>security_result.detection_fields.key</code> UDM field and <code>match_meta</code> log field is mapped to the <code>security_result.detection_fields.value</code> UDM field.<br></td>
+</tr>
+<tr>
+<td><code></code></td>
+<td><code>metadata.event_type</code></td>
+<td>If the <code>principal</code> and <code>target</code> are present, then the <code>metadata.event_type</code> UDM field is set to <code>NETWORK_UNCATEGORIZED</code>.<br>Else, if only the <code>principal</code> is present, then the <code>metadata.event_type</code> UDM field is set to <code>STATUS_UPDATE</code>.<br>Else, the <code>metadata.event_type</code> UDM field is set to <code>GENERIC_EVENT</code>.</td>
+</tr>
+</tbody>
+</table>
+</devsite-filter>
+</div>
+<h3>Field mapping reference: CORELIGHT - corelight_ml_results</h3>
+
+The following table lists the log fields of the <code>corelight_ml_results</code> log type and their corresponding UDM fields.
+
+<div translate="no">
+<devsite-filter sortable="0">
+<input type="text" placeholder="Type a keyword to find a value.">
+<table class="fixed">
+<thead>
+<tr>
+<th>Log field</th>
+<th>UDM mapping</th>
+<th>Logic</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr>
+<td><code>domain (string)</code></td>
+<td><code>about.domain.name</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>model_version</code></td>
+<td><code>metadata.product_version</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>predicted_tag_name (string)</code></td>
+<td><code>security_result.rule_name</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>predicted_tag_id</code></td>
+<td><code>security_result.detection_fields[predicted_tag_id]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>predicted_probability (number - double)</code></td>
+<td><code>security_result.detection_fields[predicted_probability]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>attack_probability</code></td>
+<td><code>security_result.detection_fields[attack_probability]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>probability_distribution</code></td>
+<td><code>security_result.detection_fields[probability_distribution]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>feature_contribution</code></td>
+<td><code>security_result.detection_fields[feature_contribution]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>feature_values</code></td>
+<td><code>security_result.detection_fields[feature_values]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>feature_importance</code></td>
+<td><code>security_result.detection_fields[feature_importance]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>feature_differences</code></td>
+<td><code>security_result.detection_fields[feature_differences]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>pipeline</code></td>
+<td><code>additional.fields[pipeline]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>path (string)</code></td>
+<td><code>additional.fields[path]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>entity</code></td>
+<td><code>additional.fields[entity]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>nearest_ref_domain</code></td>
+<td><code>additional.fields[nearest_ref_domain]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>model_alias</code></td>
+<td><code>additional.fields[model_alias]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code></code></td>
+<td><code>metadata.event_type</code></td>
+<td>If the <code>principal</code> and <code>target</code> are present, then the <code>metadata.event_type</code> UDM field is set to <code>NETWORK_UNCATEGORIZED</code>.<br>Else, if only the <code>principal</code> is present, then the <code>metadata.event_type</code> UDM field is set to <code>STATUS_UPDATE</code>.<br>Else, the <code>metadata.event_type</code> UDM field is set to <code>GENERIC_EVENT</code>.</td>
+</tr>
+</tbody>
+</table>
+</devsite-filter>
+</div>
+<h3>Field mapping reference: CORELIGHT - net_perf</h3>
+
+The following table lists the log fields of the <code>net_perf</code> log type and their corresponding UDM fields.
+
+<div translate="no">
+<devsite-filter sortable="0">
+<input type="text" placeholder="Type a keyword to find a value.">
+<table class="fixed">
+<thead>
+<tr>
+<th>Log field</th>
+<th>UDM mapping</th>
+<th>Logic</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr>
+<td><code>host</code></td>
+<td><code>principal.hostname</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>domain</code></td>
+<td><code>principal.domain.name</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>window</code></td>
+<td><code>network.session_duration</code></td>
+<td>The integer part of the <code>window</code> log field is mapped to the <code>network.session_duration.seconds</code> UDM field and the fractional part is mapped to the <code>network.session_duration.nanos</code> UDM field.</td>
+</tr>
+<tr>
+<td><code>sent_bytes</code></td>
+<td><code>network.sent_bytes</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>recv_bytes</code></td>
+<td><code>network.received_bytes</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>trigger</code></td>
+<td><code>additional.fields[trigger]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>local_entity</code></td>
+<td><code>additional.fields[local_entity]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>total</code></td>
+<td><code>additional.fields[total]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>crossings</code></td>
+<td><code>additional.fields[crossings]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>max_val</code></td>
+<td><code>additional.fields[max_val]</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>reply_rate</code></td>
+<td><code>additional.fields[reply_rate]</code></td>
 <td></td>
 </tr>
 <tr>
